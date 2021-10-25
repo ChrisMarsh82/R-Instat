@@ -23,7 +23,7 @@ Imports System.ComponentModel
 Imports System.Runtime.Serialization.Formatters.Binary
 
 Public Class frmMain
-    Public clsRLink As New RLink
+    Public clsRLink As RLink
     Public clsGrids As New clsGridLink
     Public strStaticPath As String
     Public strHelpFilePath As String = "Help\R-Instat.chm"
@@ -34,6 +34,7 @@ Public Class frmMain
     Public strCurrentDataFrame As String
     Public dlgLastDialog As Form
     Public strSaveFilePath As String = ""
+    Public clsOutputLogger As OutputLogger
     Private mnuItems As New List(Of Form)
     Private ctrActive As Control
     Private WithEvents timer As New System.Windows.Forms.Timer
@@ -73,6 +74,8 @@ Public Class frmMain
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
+        clsOutputLogger = New OutputLogger
+        clsRLink = New RLink(clsOutputLogger)
     End Sub
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -95,12 +98,13 @@ Public Class frmMain
         Thread.CurrentThread.CurrentCulture = New CultureInfo("en-GB")
 
         ucrDataViewer.StartupMenuItemsVisibility(False)
-        InitialiseOutputWindow()
         clsGrids.SetDataViewer(ucrDataViewer)
         clsGrids.SetMetadata(ucrDataFrameMeta.grdMetaData)
         clsGrids.SetVariablesMetadata(ucrColumnMeta.grdVariables)
 
         clsRLink.SetLog(ucrLogWindow.txtLog)
+
+        ucrOutput.SetLogger(clsOutputLogger)
 
         SetToDefaultLayout()
 
@@ -176,6 +180,7 @@ Public Class frmMain
             strCurrLang = Me.clsInstatOptions.strLanguageCultureCode
         End If
 
+        ucrOutput.SetInstatOptions(clsInstatOptions)
         isMaximised = True 'Need to get the windowstate when the application is loaded
     End Sub
 
@@ -285,12 +290,6 @@ Public Class frmMain
         End If
         Return bClose
     End Function
-
-    Private Sub InitialiseOutputWindow()
-        clsRLink.SetOutput(ucrOutput.ucrRichTextBox)
-        'TEST temporary : creating the temporary graphs 
-        clsRLink.rtbOutput.CreateTempDirectory()
-    End Sub
 
     Private Sub LoadInstatOptions()
         If File.Exists(Path.Combine(strAppDataPath, strInstatOptionsFile)) Then
@@ -737,8 +736,6 @@ Public Class frmMain
         If ctrActive IsNot Nothing Then
             If ctrActive.Equals(ucrDataViewer) Then
                 ucrDataViewer.SelectAllText()
-            ElseIf ctrActive.Equals(ucrOutput) Then
-                ucrOutput.SelectAllText()
             ElseIf ctrActive.Equals(ucrColumnMeta) Then
                 ucrColumnMeta.SelectAllText()
             ElseIf ctrActive.Equals(ucrDataFrameMeta) Then
@@ -809,11 +806,11 @@ Public Class frmMain
     End Sub
 
     Private Sub mnuToolsClearOutputWindow_Click(sender As Object, e As EventArgs) Handles mnuToolsClearOutputWindow.Click
-        Dim rstResponse As DialogResult
-        rstResponse = MessageBox.Show("Are you sure you want to clear the Output Window?", "Clear Output Window", MessageBoxButtons.YesNo)
-        If rstResponse = DialogResult.Yes Then
-            ucrOutput.ucrRichTextBox.rtbOutput.Document.Blocks.Clear() 'To b checked
-        End If
+        'Dim rstResponse As DialogResult
+        'rstResponse = MessageBox.Show("Are you sure you want to clear the Output Window?", "Clear Output Window", MessageBoxButtons.YesNo)
+        'If rstResponse = DialogResult.Yes Then
+        '    ucrOutput.ucrRichTextBox.rtbOutput.Document.Blocks.Clear() 'To b checked
+        'End If
     End Sub
 
     Private Sub mnuOrganiseDataObjectDeleteMetadata_Click(sender As Object, e As EventArgs) Handles mnuPrepareDataObjectDeleteMetadata.Click
@@ -979,26 +976,7 @@ Public Class frmMain
     End Sub
 
     Private Sub mnuFileSaveAsOutputAs_Click(sender As Object, e As EventArgs) Handles mnuFileSaveAsOutputAs.Click
-        'Saves the content of the output window in RichTextFormat.
-        Using dlgSaveFile As New SaveFileDialog
-            dlgSaveFile.Title = "Save Output Window"
-            dlgSaveFile.Filter = "Rich Text Format (*.rtf)|*.rtf"
-            If Not String.IsNullOrEmpty(strCurrentOutputFileName) Then
-                dlgSaveFile.FileName = Path.GetFileName(strCurrentOutputFileName)
-                dlgSaveFile.InitialDirectory = Path.GetDirectoryName(strCurrentOutputFileName)
-            Else
-                dlgSaveFile.InitialDirectory = clsInstatOptions.strWorkingDirectory
-            End If
-            If DialogResult.OK = dlgSaveFile.ShowDialog() Then
-                Try
-                    'Send file name string specifying the location to save the rtf in.
-                    ucrOutput.ucrRichTextBox.SaveRtf(dlgSaveFile.FileName)
-                    strCurrentOutputFileName = dlgSaveFile.FileName
-                Catch
-                    MsgBox("Could not save the output window." & Environment.NewLine & "The file may be in use by another program or you may not have access to write to the specified location.", MsgBoxStyle.Critical)
-                End Try
-            End If
-        End Using
+        ucrOutput.UcrOutputPages.SaveTab()
     End Sub
 
     Private Sub mnuFileSaveAsLogAs_Click(sender As Object, e As EventArgs) Handles mnuFileSaveAsLogAs.Click
@@ -2383,8 +2361,6 @@ Public Class frmMain
     Private Sub mnuEditCopy_Click(sender As Object, e As EventArgs) Handles mnuEditCopy.Click, mnuTbCopy.ButtonClick, mnuSubTbCopy.Click
         If ctrActive.Equals(ucrDataViewer) Then
             ucrDataViewer.CopyRange()
-        ElseIf ctrActive.Equals(ucrOutput) Then
-            ucrOutput.CopyContent()
         ElseIf ctrActive.Equals(ucrColumnMeta) Then
             ucrColumnMeta.CopyRange()
         ElseIf ctrActive.Equals(ucrDataFrameMeta) Then

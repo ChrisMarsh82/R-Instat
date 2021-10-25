@@ -127,7 +127,7 @@ Public Class Translations
     ''' <returns>   The full path of the SQLite translations database file. </returns>
     '''--------------------------------------------------------------------------------------------
     Private Shared Function GetDbPath() As String
-        Dim strTranslationsPath As String = String.Concat(System.Windows.Forms.Application.StartupPath, "\translations")
+        Dim strTranslationsPath As String = String.Concat(System.Windows.Forms.Application.StartupPath, "/translations")
         Dim strDbFile As String = "rInstatTranslations.db"
         Dim strDbPath As String = System.IO.Path.Combine(strTranslationsPath, strDbFile)
         Return strDbPath
