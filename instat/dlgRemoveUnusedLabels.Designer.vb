@@ -48,38 +48,39 @@ Partial Class dlgRemoveUnusedLabels
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(2, 266)
+        Me.ucrBase.Location = New System.Drawing.Point(3, 327)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 53)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 65)
         Me.ucrBase.TabIndex = 0
         '
         'ucrDataFrame
         '
         Me.ucrDataFrame.bDropUnusedFilterLevels = False
         Me.ucrDataFrame.bUseCurrentFilter = True
-        Me.ucrDataFrame.Location = New System.Drawing.Point(2, 2)
+        Me.ucrDataFrame.Location = New System.Drawing.Point(3, 2)
         Me.ucrDataFrame.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrDataFrame.Name = "ucrDataFrame"
-        Me.ucrDataFrame.Size = New System.Drawing.Size(127, 41)
+        Me.ucrDataFrame.Size = New System.Drawing.Size(169, 50)
         Me.ucrDataFrame.TabIndex = 1
         '
         'ucrAddRemove
         '
         Me.ucrAddRemove.bShowHiddenColumns = False
-        Me.ucrAddRemove.Location = New System.Drawing.Point(2, 59)
+        Me.ucrAddRemove.Location = New System.Drawing.Point(3, 73)
         Me.ucrAddRemove.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrAddRemove.Name = "ucrAddRemove"
-        Me.ucrAddRemove.Size = New System.Drawing.Size(217, 146)
+        Me.ucrAddRemove.Size = New System.Drawing.Size(289, 180)
         Me.ucrAddRemove.TabIndex = 2
         '
         'ucrSelectedVariable
         '
         Me.ucrSelectedVariable.frmParent = Me
-        Me.ucrSelectedVariable.Location = New System.Drawing.Point(234, 103)
+        Me.ucrSelectedVariable.Location = New System.Drawing.Point(312, 127)
         Me.ucrSelectedVariable.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectedVariable.Name = "ucrSelectedVariable"
         Me.ucrSelectedVariable.Selector = Nothing
-        Me.ucrSelectedVariable.Size = New System.Drawing.Size(106, 26)
+        Me.ucrSelectedVariable.Size = New System.Drawing.Size(141, 32)
         Me.ucrSelectedVariable.strNcFilePath = ""
         Me.ucrSelectedVariable.TabIndex = 3
         Me.ucrSelectedVariable.ucrSelector = Nothing
@@ -87,9 +88,10 @@ Partial Class dlgRemoveUnusedLabels
         'lblSelectedVariable
         '
         Me.lblSelectedVariable.AutoSize = True
-        Me.lblSelectedVariable.Location = New System.Drawing.Point(241, 85)
+        Me.lblSelectedVariable.Location = New System.Drawing.Point(321, 105)
+        Me.lblSelectedVariable.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSelectedVariable.Name = "lblSelectedVariable"
-        Me.lblSelectedVariable.Size = New System.Drawing.Size(87, 13)
+        Me.lblSelectedVariable.Size = New System.Drawing.Size(112, 16)
         Me.lblSelectedVariable.TabIndex = 4
         Me.lblSelectedVariable.Tag = "selected_variable"
         Me.lblSelectedVariable.Text = "selected variable"
@@ -97,17 +99,18 @@ Partial Class dlgRemoveUnusedLabels
         'lblInfo
         '
         Me.lblInfo.AutoSize = True
-        Me.lblInfo.Location = New System.Drawing.Point(13, 205)
+        Me.lblInfo.Location = New System.Drawing.Point(17, 252)
+        Me.lblInfo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblInfo.Name = "lblInfo"
-        Me.lblInfo.Size = New System.Drawing.Size(220, 13)
+        Me.lblInfo.Size = New System.Drawing.Size(274, 16)
         Me.lblInfo.TabIndex = 5
         Me.lblInfo.Text = "An order,level,count control to be added later"
         '
         'dlgRemoveUnusedLabels
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(415, 319)
+        Me.ClientSize = New System.Drawing.Size(553, 394)
         Me.Controls.Add(Me.lblInfo)
         Me.Controls.Add(Me.lblSelectedVariable)
         Me.Controls.Add(Me.ucrSelectedVariable)
@@ -115,6 +118,7 @@ Partial Class dlgRemoveUnusedLabels
         Me.Controls.Add(Me.ucrDataFrame)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgRemoveUnusedLabels"

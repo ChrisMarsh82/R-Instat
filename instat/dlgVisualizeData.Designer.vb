@@ -52,9 +52,10 @@ Partial Class dlgVisualizeData
         Me.rdoVisDat.FlatAppearance.BorderSize = 2
         Me.rdoVisDat.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ActiveCaption
         Me.rdoVisDat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.rdoVisDat.Location = New System.Drawing.Point(60, 11)
+        Me.rdoVisDat.Location = New System.Drawing.Point(80, 14)
+        Me.rdoVisDat.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoVisDat.Name = "rdoVisDat"
-        Me.rdoVisDat.Size = New System.Drawing.Size(100, 28)
+        Me.rdoVisDat.Size = New System.Drawing.Size(133, 34)
         Me.rdoVisDat.TabIndex = 1
         Me.rdoVisDat.TabStop = True
         Me.rdoVisDat.Text = "Data"
@@ -68,9 +69,10 @@ Partial Class dlgVisualizeData
         Me.rdoVisMiss.FlatAppearance.BorderSize = 2
         Me.rdoVisMiss.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ActiveCaption
         Me.rdoVisMiss.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.rdoVisMiss.Location = New System.Drawing.Point(156, 11)
+        Me.rdoVisMiss.Location = New System.Drawing.Point(208, 14)
+        Me.rdoVisMiss.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoVisMiss.Name = "rdoVisMiss"
-        Me.rdoVisMiss.Size = New System.Drawing.Size(100, 28)
+        Me.rdoVisMiss.Size = New System.Drawing.Size(133, 34)
         Me.rdoVisMiss.TabIndex = 2
         Me.rdoVisMiss.TabStop = True
         Me.rdoVisMiss.Text = "Missing"
@@ -84,9 +86,10 @@ Partial Class dlgVisualizeData
         Me.rdoVisGuess.FlatAppearance.BorderSize = 2
         Me.rdoVisGuess.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ActiveCaption
         Me.rdoVisGuess.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.rdoVisGuess.Location = New System.Drawing.Point(252, 11)
+        Me.rdoVisGuess.Location = New System.Drawing.Point(336, 14)
+        Me.rdoVisGuess.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoVisGuess.Name = "rdoVisGuess"
-        Me.rdoVisGuess.Size = New System.Drawing.Size(100, 28)
+        Me.rdoVisGuess.Size = New System.Drawing.Size(133, 34)
         Me.rdoVisGuess.TabIndex = 3
         Me.rdoVisGuess.TabStop = True
         Me.rdoVisGuess.Text = "Guess"
@@ -96,9 +99,10 @@ Partial Class dlgVisualizeData
         'rdoWholeDataFrame
         '
         Me.rdoWholeDataFrame.AutoSize = True
-        Me.rdoWholeDataFrame.Location = New System.Drawing.Point(260, 69)
+        Me.rdoWholeDataFrame.Location = New System.Drawing.Point(347, 85)
+        Me.rdoWholeDataFrame.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoWholeDataFrame.Name = "rdoWholeDataFrame"
-        Me.rdoWholeDataFrame.Size = New System.Drawing.Size(80, 17)
+        Me.rdoWholeDataFrame.Size = New System.Drawing.Size(104, 20)
         Me.rdoWholeDataFrame.TabIndex = 6
         Me.rdoWholeDataFrame.TabStop = True
         Me.rdoWholeDataFrame.Text = "Data Frame"
@@ -106,9 +110,10 @@ Partial Class dlgVisualizeData
         '
         'rdoSelectedColumn
         '
-        Me.rdoSelectedColumn.Location = New System.Drawing.Point(260, 92)
+        Me.rdoSelectedColumn.Location = New System.Drawing.Point(347, 113)
+        Me.rdoSelectedColumn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoSelectedColumn.Name = "rdoSelectedColumn"
-        Me.rdoSelectedColumn.Size = New System.Drawing.Size(174, 24)
+        Me.rdoSelectedColumn.Size = New System.Drawing.Size(232, 30)
         Me.rdoSelectedColumn.TabIndex = 7
         Me.rdoSelectedColumn.TabStop = True
         Me.rdoSelectedColumn.Text = "Selected Variables"
@@ -117,36 +122,40 @@ Partial Class dlgVisualizeData
         'lblMaximumSize
         '
         Me.lblMaximumSize.AutoSize = True
-        Me.lblMaximumSize.Location = New System.Drawing.Point(7, 296)
+        Me.lblMaximumSize.Location = New System.Drawing.Point(9, 364)
+        Me.lblMaximumSize.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblMaximumSize.Name = "lblMaximumSize"
-        Me.lblMaximumSize.Size = New System.Drawing.Size(77, 13)
+        Me.lblMaximumSize.Size = New System.Drawing.Size(97, 16)
         Me.lblMaximumSize.TabIndex = 14
         Me.lblMaximumSize.Text = "Maximum Size:"
         '
         'lblMillionDataPoints
         '
         Me.lblMillionDataPoints.AutoSize = True
-        Me.lblMillionDataPoints.Location = New System.Drawing.Point(162, 296)
+        Me.lblMillionDataPoints.Location = New System.Drawing.Point(216, 364)
+        Me.lblMillionDataPoints.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblMillionDataPoints.Name = "lblMillionDataPoints"
-        Me.lblMillionDataPoints.Size = New System.Drawing.Size(94, 13)
+        Me.lblMillionDataPoints.Size = New System.Drawing.Size(118, 16)
         Me.lblMillionDataPoints.TabIndex = 16
         Me.lblMillionDataPoints.Text = "Million Data Points"
         '
         'lblPaltte
         '
         Me.lblPaltte.AutoSize = True
-        Me.lblPaltte.Location = New System.Drawing.Point(7, 269)
+        Me.lblPaltte.Location = New System.Drawing.Point(9, 331)
+        Me.lblPaltte.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPaltte.Name = "lblPaltte"
-        Me.lblPaltte.Size = New System.Drawing.Size(43, 13)
+        Me.lblPaltte.Size = New System.Drawing.Size(53, 16)
         Me.lblPaltte.TabIndex = 12
         Me.lblPaltte.Text = "Palette:"
         '
         'lblSampling
         '
         Me.lblSampling.AutoSize = True
-        Me.lblSampling.Location = New System.Drawing.Point(191, 244)
+        Me.lblSampling.Location = New System.Drawing.Point(255, 300)
+        Me.lblSampling.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSampling.Name = "lblSampling"
-        Me.lblSampling.Size = New System.Drawing.Size(94, 13)
+        Me.lblSampling.Size = New System.Drawing.Size(119, 16)
         Me.lblSampling.TabIndex = 9
         Me.lblSampling.Text = "Sampling Fraction:"
         '
@@ -154,31 +163,34 @@ Partial Class dlgVisualizeData
         '
         Me.ucrNudAdjustSize.DecimalPlaces = New Decimal(New Integer() {1, 0, 0, 0})
         Me.ucrNudAdjustSize.Increment = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.ucrNudAdjustSize.Location = New System.Drawing.Point(156, 325)
+        Me.ucrNudAdjustSize.Location = New System.Drawing.Point(208, 400)
+        Me.ucrNudAdjustSize.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrNudAdjustSize.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
         Me.ucrNudAdjustSize.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
         Me.ucrNudAdjustSize.Name = "ucrNudAdjustSize"
-        Me.ucrNudAdjustSize.Size = New System.Drawing.Size(50, 20)
+        Me.ucrNudAdjustSize.Size = New System.Drawing.Size(67, 25)
         Me.ucrNudAdjustSize.TabIndex = 20
         Me.ucrNudAdjustSize.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'ucrChkAdjustSize
         '
         Me.ucrChkAdjustSize.Checked = False
-        Me.ucrChkAdjustSize.Location = New System.Drawing.Point(10, 325)
+        Me.ucrChkAdjustSize.Location = New System.Drawing.Point(13, 400)
+        Me.ucrChkAdjustSize.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkAdjustSize.Name = "ucrChkAdjustSize"
-        Me.ucrChkAdjustSize.Size = New System.Drawing.Size(130, 20)
+        Me.ucrChkAdjustSize.Size = New System.Drawing.Size(173, 25)
         Me.ucrChkAdjustSize.TabIndex = 19
         '
         'ucrNudSamplingFunction
         '
         Me.ucrNudSamplingFunction.DecimalPlaces = New Decimal(New Integer() {1, 0, 0, 0})
         Me.ucrNudSamplingFunction.Increment = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.ucrNudSamplingFunction.Location = New System.Drawing.Point(330, 242)
+        Me.ucrNudSamplingFunction.Location = New System.Drawing.Point(440, 298)
+        Me.ucrNudSamplingFunction.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrNudSamplingFunction.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
         Me.ucrNudSamplingFunction.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
         Me.ucrNudSamplingFunction.Name = "ucrNudSamplingFunction"
-        Me.ucrNudSamplingFunction.Size = New System.Drawing.Size(50, 20)
+        Me.ucrNudSamplingFunction.Size = New System.Drawing.Size(67, 25)
         Me.ucrNudSamplingFunction.TabIndex = 10
         Me.ucrNudSamplingFunction.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
@@ -186,20 +198,22 @@ Partial Class dlgVisualizeData
         '
         Me.ucrNudMaximumSize.DecimalPlaces = New Decimal(New Integer() {0, 0, 0, 0})
         Me.ucrNudMaximumSize.Increment = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.ucrNudMaximumSize.Location = New System.Drawing.Point(109, 293)
+        Me.ucrNudMaximumSize.Location = New System.Drawing.Point(145, 361)
+        Me.ucrNudMaximumSize.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrNudMaximumSize.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
         Me.ucrNudMaximumSize.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
         Me.ucrNudMaximumSize.Name = "ucrNudMaximumSize"
-        Me.ucrNudMaximumSize.Size = New System.Drawing.Size(50, 20)
+        Me.ucrNudMaximumSize.Size = New System.Drawing.Size(67, 25)
         Me.ucrNudMaximumSize.TabIndex = 15
         Me.ucrNudMaximumSize.Value = New Decimal(New Integer() {0, 0, 0, 0})
         '
         'ucrChkSortVariables
         '
         Me.ucrChkSortVariables.Checked = False
-        Me.ucrChkSortVariables.Location = New System.Drawing.Point(10, 242)
+        Me.ucrChkSortVariables.Location = New System.Drawing.Point(13, 298)
+        Me.ucrChkSortVariables.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkSortVariables.Name = "ucrChkSortVariables"
-        Me.ucrChkSortVariables.Size = New System.Drawing.Size(145, 20)
+        Me.ucrChkSortVariables.Size = New System.Drawing.Size(193, 25)
         Me.ucrChkSortVariables.TabIndex = 11
         '
         'ucrInputComboboxPalette
@@ -207,43 +221,46 @@ Partial Class dlgVisualizeData
         Me.ucrInputComboboxPalette.AddQuotesIfUnrecognised = True
         Me.ucrInputComboboxPalette.GetSetSelectedIndex = -1
         Me.ucrInputComboboxPalette.IsReadOnly = False
-        Me.ucrInputComboboxPalette.Location = New System.Drawing.Point(55, 266)
+        Me.ucrInputComboboxPalette.Location = New System.Drawing.Point(73, 327)
+        Me.ucrInputComboboxPalette.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputComboboxPalette.Name = "ucrInputComboboxPalette"
-        Me.ucrInputComboboxPalette.Size = New System.Drawing.Size(85, 21)
+        Me.ucrInputComboboxPalette.Size = New System.Drawing.Size(113, 26)
         Me.ucrInputComboboxPalette.TabIndex = 13
         '
         'ucrReceiverVisualizeData
         '
         Me.ucrReceiverVisualizeData.frmParent = Me
-        Me.ucrReceiverVisualizeData.Location = New System.Drawing.Point(260, 119)
+        Me.ucrReceiverVisualizeData.Location = New System.Drawing.Point(347, 146)
         Me.ucrReceiverVisualizeData.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverVisualizeData.Name = "ucrReceiverVisualizeData"
         Me.ucrReceiverVisualizeData.Selector = Nothing
-        Me.ucrReceiverVisualizeData.Size = New System.Drawing.Size(120, 100)
+        Me.ucrReceiverVisualizeData.Size = New System.Drawing.Size(160, 123)
         Me.ucrReceiverVisualizeData.strNcFilePath = ""
         Me.ucrReceiverVisualizeData.TabIndex = 8
         Me.ucrReceiverVisualizeData.ucrSelector = Nothing
         '
         'ucrPnlSelectData
         '
-        Me.ucrPnlSelectData.Location = New System.Drawing.Point(258, 69)
+        Me.ucrPnlSelectData.Location = New System.Drawing.Point(344, 85)
+        Me.ucrPnlSelectData.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrPnlSelectData.Name = "ucrPnlSelectData"
-        Me.ucrPnlSelectData.Size = New System.Drawing.Size(142, 49)
+        Me.ucrPnlSelectData.Size = New System.Drawing.Size(189, 60)
         Me.ucrPnlSelectData.TabIndex = 5
         '
         'ucrPnlVisualizeData
         '
-        Me.ucrPnlVisualizeData.Location = New System.Drawing.Point(44, 1)
+        Me.ucrPnlVisualizeData.Location = New System.Drawing.Point(59, 1)
+        Me.ucrPnlVisualizeData.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrPnlVisualizeData.Name = "ucrPnlVisualizeData"
-        Me.ucrPnlVisualizeData.Size = New System.Drawing.Size(324, 46)
+        Me.ucrPnlVisualizeData.Size = New System.Drawing.Size(432, 57)
         Me.ucrPnlVisualizeData.TabIndex = 0
         '
         'ucrSaveGraph
         '
-        Me.ucrSaveGraph.Location = New System.Drawing.Point(10, 353)
-        Me.ucrSaveGraph.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ucrSaveGraph.Location = New System.Drawing.Point(13, 434)
+        Me.ucrSaveGraph.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.ucrSaveGraph.Name = "ucrSaveGraph"
-        Me.ucrSaveGraph.Size = New System.Drawing.Size(319, 24)
+        Me.ucrSaveGraph.Size = New System.Drawing.Size(425, 30)
         Me.ucrSaveGraph.TabIndex = 17
         '
         'ucrSelectorVisualizeData
@@ -251,24 +268,25 @@ Partial Class dlgVisualizeData
         Me.ucrSelectorVisualizeData.bDropUnusedFilterLevels = False
         Me.ucrSelectorVisualizeData.bShowHiddenColumns = False
         Me.ucrSelectorVisualizeData.bUseCurrentFilter = True
-        Me.ucrSelectorVisualizeData.Location = New System.Drawing.Point(10, 50)
+        Me.ucrSelectorVisualizeData.Location = New System.Drawing.Point(13, 62)
         Me.ucrSelectorVisualizeData.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorVisualizeData.Name = "ucrSelectorVisualizeData"
-        Me.ucrSelectorVisualizeData.Size = New System.Drawing.Size(210, 180)
+        Me.ucrSelectorVisualizeData.Size = New System.Drawing.Size(280, 222)
         Me.ucrSelectorVisualizeData.TabIndex = 4
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(10, 385)
+        Me.ucrBase.Location = New System.Drawing.Point(13, 474)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 52)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 64)
         Me.ucrBase.TabIndex = 18
         '
         'dlgVisualizeData
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(418, 441)
+        Me.ClientSize = New System.Drawing.Size(557, 544)
         Me.Controls.Add(Me.ucrNudAdjustSize)
         Me.Controls.Add(Me.ucrChkAdjustSize)
         Me.Controls.Add(Me.lblSampling)
@@ -291,6 +309,7 @@ Partial Class dlgVisualizeData
         Me.Controls.Add(Me.ucrSelectorVisualizeData)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgVisualizeData"

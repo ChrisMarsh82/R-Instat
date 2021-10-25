@@ -67,9 +67,11 @@ Partial Class dlgOneSample
         Me.grpAnalysis.Controls.Add(Me.cboParameters)
         Me.grpAnalysis.Controls.Add(Me.lblModels)
         Me.grpAnalysis.Controls.Add(Me.cboModels)
-        Me.grpAnalysis.Location = New System.Drawing.Point(237, 78)
+        Me.grpAnalysis.Location = New System.Drawing.Point(316, 96)
+        Me.grpAnalysis.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpAnalysis.Name = "grpAnalysis"
-        Me.grpAnalysis.Size = New System.Drawing.Size(220, 153)
+        Me.grpAnalysis.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpAnalysis.Size = New System.Drawing.Size(293, 188)
         Me.grpAnalysis.TabIndex = 3
         Me.grpAnalysis.TabStop = False
         Me.grpAnalysis.Tag = "Analysis"
@@ -77,17 +79,19 @@ Partial Class dlgOneSample
         '
         'nudValue
         '
-        Me.nudValue.Location = New System.Drawing.Point(157, 121)
+        Me.nudValue.Location = New System.Drawing.Point(209, 149)
+        Me.nudValue.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudValue.Name = "nudValue"
-        Me.nudValue.Size = New System.Drawing.Size(50, 20)
+        Me.nudValue.Size = New System.Drawing.Size(67, 22)
         Me.nudValue.TabIndex = 7
         '
         'lblValue
         '
         Me.lblValue.AutoSize = True
-        Me.lblValue.Location = New System.Drawing.Point(120, 124)
+        Me.lblValue.Location = New System.Drawing.Point(160, 153)
+        Me.lblValue.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblValue.Name = "lblValue"
-        Me.lblValue.Size = New System.Drawing.Size(37, 13)
+        Me.lblValue.Size = New System.Drawing.Size(46, 16)
         Me.lblValue.TabIndex = 5
         Me.lblValue.Tag = "Value:"
         Me.lblValue.Text = "Value:"
@@ -96,9 +100,10 @@ Partial Class dlgOneSample
         'chkSignificanceTest
         '
         Me.chkSignificanceTest.AutoSize = True
-        Me.chkSignificanceTest.Location = New System.Drawing.Point(6, 123)
+        Me.chkSignificanceTest.Location = New System.Drawing.Point(8, 151)
+        Me.chkSignificanceTest.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkSignificanceTest.Name = "chkSignificanceTest"
-        Me.chkSignificanceTest.Size = New System.Drawing.Size(108, 17)
+        Me.chkSignificanceTest.Size = New System.Drawing.Size(137, 21)
         Me.chkSignificanceTest.TabIndex = 4
         Me.chkSignificanceTest.Tag = "Significance_test"
         Me.chkSignificanceTest.Text = "Significance Test"
@@ -107,9 +112,10 @@ Partial Class dlgOneSample
         'lblParameters
         '
         Me.lblParameters.AutoSize = True
-        Me.lblParameters.Location = New System.Drawing.Point(6, 74)
+        Me.lblParameters.Location = New System.Drawing.Point(8, 91)
+        Me.lblParameters.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblParameters.Name = "lblParameters"
-        Me.lblParameters.Size = New System.Drawing.Size(58, 13)
+        Me.lblParameters.Size = New System.Drawing.Size(74, 16)
         Me.lblParameters.TabIndex = 2
         Me.lblParameters.Tag = "Parameter:"
         Me.lblParameters.Text = "Parameter:"
@@ -118,17 +124,19 @@ Partial Class dlgOneSample
         '
         Me.cboParameters.FormattingEnabled = True
         Me.cboParameters.Items.AddRange(New Object() {"Mean            " & Global.Microsoft.VisualBasic.ChrW(9) & "   (t-interval)", "Mean, known variance (z-interval)", "Variance        " & Global.Microsoft.VisualBasic.ChrW(9) & "    (F-interval)"})
-        Me.cboParameters.Location = New System.Drawing.Point(6, 90)
+        Me.cboParameters.Location = New System.Drawing.Point(8, 111)
+        Me.cboParameters.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboParameters.Name = "cboParameters"
-        Me.cboParameters.Size = New System.Drawing.Size(201, 21)
+        Me.cboParameters.Size = New System.Drawing.Size(267, 24)
         Me.cboParameters.TabIndex = 3
         '
         'lblModels
         '
         Me.lblModels.AutoSize = True
-        Me.lblModels.Location = New System.Drawing.Point(6, 23)
+        Me.lblModels.Location = New System.Drawing.Point(8, 28)
+        Me.lblModels.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblModels.Name = "lblModels"
-        Me.lblModels.Size = New System.Drawing.Size(44, 13)
+        Me.lblModels.Size = New System.Drawing.Size(56, 16)
         Me.lblModels.TabIndex = 0
         Me.lblModels.Tag = "Models:"
         Me.lblModels.Text = "Models:"
@@ -137,18 +145,20 @@ Partial Class dlgOneSample
         '
         Me.cboModels.FormattingEnabled = True
         Me.cboModels.Items.AddRange(New Object() {"Normal", "Proportional", "Poisson"})
-        Me.cboModels.Location = New System.Drawing.Point(6, 39)
+        Me.cboModels.Location = New System.Drawing.Point(8, 48)
+        Me.cboModels.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboModels.Name = "cboModels"
-        Me.cboModels.Size = New System.Drawing.Size(201, 21)
+        Me.cboModels.Size = New System.Drawing.Size(267, 24)
         Me.cboModels.TabIndex = 1
         Me.cboModels.Tag = ""
         '
         'lblDataColumn
         '
         Me.lblDataColumn.AutoSize = True
-        Me.lblDataColumn.Location = New System.Drawing.Point(240, 24)
+        Me.lblDataColumn.Location = New System.Drawing.Point(320, 30)
+        Me.lblDataColumn.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDataColumn.Name = "lblDataColumn"
-        Me.lblDataColumn.Size = New System.Drawing.Size(71, 13)
+        Me.lblDataColumn.Size = New System.Drawing.Size(88, 16)
         Me.lblDataColumn.TabIndex = 1
         Me.lblDataColumn.Tag = "Data_Column:"
         Me.lblDataColumn.Text = "Data Column:"
@@ -156,9 +166,11 @@ Partial Class dlgOneSample
         'grpGraphs
         '
         Me.grpGraphs.Controls.Add(Me.lblGraphs)
-        Me.grpGraphs.Location = New System.Drawing.Point(9, 201)
+        Me.grpGraphs.Location = New System.Drawing.Point(12, 247)
+        Me.grpGraphs.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpGraphs.Name = "grpGraphs"
-        Me.grpGraphs.Size = New System.Drawing.Size(211, 66)
+        Me.grpGraphs.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpGraphs.Size = New System.Drawing.Size(281, 81)
         Me.grpGraphs.TabIndex = 4
         Me.grpGraphs.TabStop = False
         Me.grpGraphs.Tag = "Graphs"
@@ -167,18 +179,20 @@ Partial Class dlgOneSample
         'lblGraphs
         '
         Me.lblGraphs.AutoSize = True
-        Me.lblGraphs.Location = New System.Drawing.Point(6, 35)
+        Me.lblGraphs.Location = New System.Drawing.Point(8, 43)
+        Me.lblGraphs.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblGraphs.Name = "lblGraphs"
-        Me.lblGraphs.Size = New System.Drawing.Size(97, 13)
+        Me.lblGraphs.Size = New System.Drawing.Size(125, 16)
         Me.lblGraphs.TabIndex = 0
         Me.lblGraphs.Text = "To be implemented"
         '
         'cmdOptions
         '
         Me.cmdOptions.Enabled = False
-        Me.cmdOptions.Location = New System.Drawing.Point(334, 244)
+        Me.cmdOptions.Location = New System.Drawing.Point(445, 300)
+        Me.cmdOptions.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdOptions.Name = "cmdOptions"
-        Me.cmdOptions.Size = New System.Drawing.Size(73, 23)
+        Me.cmdOptions.Size = New System.Drawing.Size(97, 28)
         Me.cmdOptions.TabIndex = 5
         Me.cmdOptions.Tag = "Options..."
         Me.cmdOptions.Text = "Options..."
@@ -186,35 +200,40 @@ Partial Class dlgOneSample
         '
         'ucrReceiverDataColumn
         '
-        Me.ucrReceiverDataColumn.Location = New System.Drawing.Point(238, 39)
+        Me.ucrReceiverDataColumn.frmParent = Me
+        Me.ucrReceiverDataColumn.Location = New System.Drawing.Point(317, 48)
         Me.ucrReceiverDataColumn.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverDataColumn.Name = "ucrReceiverDataColumn"
         Me.ucrReceiverDataColumn.Selector = Nothing
-        Me.ucrReceiverDataColumn.Size = New System.Drawing.Size(110, 26)
+        Me.ucrReceiverDataColumn.Size = New System.Drawing.Size(147, 32)
+        Me.ucrReceiverDataColumn.strNcFilePath = ""
         Me.ucrReceiverDataColumn.TabIndex = 2
+        Me.ucrReceiverDataColumn.ucrSelector = Nothing
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(10, 278)
+        Me.ucrBase.Location = New System.Drawing.Point(13, 342)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(405, 53)
+        Me.ucrBase.Size = New System.Drawing.Size(540, 65)
         Me.ucrBase.TabIndex = 6
         '
         'ucBaseOneSample
         '
+        Me.ucBaseOneSample.bDropUnusedFilterLevels = False
         Me.ucBaseOneSample.bShowHiddenColumns = False
         Me.ucBaseOneSample.bUseCurrentFilter = True
-        Me.ucBaseOneSample.Location = New System.Drawing.Point(10, 10)
+        Me.ucBaseOneSample.Location = New System.Drawing.Point(13, 12)
         Me.ucBaseOneSample.Margin = New System.Windows.Forms.Padding(0)
         Me.ucBaseOneSample.Name = "ucBaseOneSample"
-        Me.ucBaseOneSample.Size = New System.Drawing.Size(210, 180)
+        Me.ucBaseOneSample.Size = New System.Drawing.Size(280, 222)
         Me.ucBaseOneSample.TabIndex = 0
         '
         'dlgOneSample
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(469, 339)
+        Me.ClientSize = New System.Drawing.Size(626, 417)
         Me.Controls.Add(Me.ucBaseOneSample)
         Me.Controls.Add(Me.ucrReceiverDataColumn)
         Me.Controls.Add(Me.ucrBase)
@@ -223,6 +242,7 @@ Partial Class dlgOneSample
         Me.Controls.Add(Me.lblDataColumn)
         Me.Controls.Add(Me.grpAnalysis)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgOneSample"

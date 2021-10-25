@@ -43,18 +43,20 @@ Partial Class dlgSite
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(12, 197)
+        Me.ucrBase.Location = New System.Drawing.Point(16, 242)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 61)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 75)
         Me.ucrBase.TabIndex = 0
         '
         'dlgSite
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(429, 264)
+        Me.ClientSize = New System.Drawing.Size(572, 326)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgSite"

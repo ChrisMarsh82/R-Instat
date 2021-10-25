@@ -37,24 +37,27 @@ Partial Class dlgHelpVignettes
         Me.ucrInputComboPackage.AddQuotesIfUnrecognised = True
         Me.ucrInputComboPackage.GetSetSelectedIndex = -1
         Me.ucrInputComboPackage.IsReadOnly = False
-        Me.ucrInputComboPackage.Location = New System.Drawing.Point(175, 62)
+        Me.ucrInputComboPackage.Location = New System.Drawing.Point(233, 76)
+        Me.ucrInputComboPackage.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputComboPackage.Name = "ucrInputComboPackage"
-        Me.ucrInputComboPackage.Size = New System.Drawing.Size(137, 21)
+        Me.ucrInputComboPackage.Size = New System.Drawing.Size(183, 26)
         Me.ucrInputComboPackage.TabIndex = 4
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(10, 145)
+        Me.ucrBase.Location = New System.Drawing.Point(13, 178)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 52)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 64)
         Me.ucrBase.TabIndex = 7
         '
         'lblPackage
         '
         Me.lblPackage.AutoSize = True
-        Me.lblPackage.Location = New System.Drawing.Point(20, 62)
+        Me.lblPackage.Location = New System.Drawing.Point(27, 76)
+        Me.lblPackage.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPackage.Name = "lblPackage"
-        Me.lblPackage.Size = New System.Drawing.Size(84, 13)
+        Me.lblPackage.Size = New System.Drawing.Size(106, 16)
         Me.lblPackage.TabIndex = 3
         Me.lblPackage.Text = "Package Name:"
         '
@@ -66,9 +69,10 @@ Partial Class dlgHelpVignettes
         Me.rdoHelp.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ActiveCaption
         Me.rdoHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.rdoHelp.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.rdoHelp.Location = New System.Drawing.Point(132, 12)
+        Me.rdoHelp.Location = New System.Drawing.Point(176, 15)
+        Me.rdoHelp.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoHelp.Name = "rdoHelp"
-        Me.rdoHelp.Size = New System.Drawing.Size(91, 27)
+        Me.rdoHelp.Size = New System.Drawing.Size(121, 33)
         Me.rdoHelp.TabIndex = 1
         Me.rdoHelp.TabStop = True
         Me.rdoHelp.Text = "Help"
@@ -83,9 +87,10 @@ Partial Class dlgHelpVignettes
         Me.rdoVignettes.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ActiveCaption
         Me.rdoVignettes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.rdoVignettes.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.rdoVignettes.Location = New System.Drawing.Point(221, 12)
+        Me.rdoVignettes.Location = New System.Drawing.Point(295, 15)
+        Me.rdoVignettes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoVignettes.Name = "rdoVignettes"
-        Me.rdoVignettes.Size = New System.Drawing.Size(91, 27)
+        Me.rdoVignettes.Size = New System.Drawing.Size(121, 33)
         Me.rdoVignettes.TabIndex = 2
         Me.rdoVignettes.TabStop = True
         Me.rdoVignettes.Text = "Vignettes"
@@ -94,9 +99,10 @@ Partial Class dlgHelpVignettes
         '
         'ucrPnlHelpVignettes
         '
-        Me.ucrPnlHelpVignettes.Location = New System.Drawing.Point(103, 8)
+        Me.ucrPnlHelpVignettes.Location = New System.Drawing.Point(137, 10)
+        Me.ucrPnlHelpVignettes.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrPnlHelpVignettes.Name = "ucrPnlHelpVignettes"
-        Me.ucrPnlHelpVignettes.Size = New System.Drawing.Size(231, 36)
+        Me.ucrPnlHelpVignettes.Size = New System.Drawing.Size(308, 44)
         Me.ucrPnlHelpVignettes.TabIndex = 0
         '
         'ucrInputFunctionName
@@ -104,24 +110,26 @@ Partial Class dlgHelpVignettes
         Me.ucrInputFunctionName.AddQuotesIfUnrecognised = True
         Me.ucrInputFunctionName.IsMultiline = False
         Me.ucrInputFunctionName.IsReadOnly = False
-        Me.ucrInputFunctionName.Location = New System.Drawing.Point(175, 100)
+        Me.ucrInputFunctionName.Location = New System.Drawing.Point(233, 123)
+        Me.ucrInputFunctionName.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputFunctionName.Name = "ucrInputFunctionName"
-        Me.ucrInputFunctionName.Size = New System.Drawing.Size(137, 21)
+        Me.ucrInputFunctionName.Size = New System.Drawing.Size(183, 26)
         Me.ucrInputFunctionName.TabIndex = 6
         '
         'ucrChkFunction
         '
         Me.ucrChkFunction.Checked = False
-        Me.ucrChkFunction.Location = New System.Drawing.Point(23, 100)
+        Me.ucrChkFunction.Location = New System.Drawing.Point(31, 123)
+        Me.ucrChkFunction.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkFunction.Name = "ucrChkFunction"
-        Me.ucrChkFunction.Size = New System.Drawing.Size(146, 20)
+        Me.ucrChkFunction.Size = New System.Drawing.Size(195, 25)
         Me.ucrChkFunction.TabIndex = 5
         '
         'dlgHelpVignettes
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(436, 207)
+        Me.ClientSize = New System.Drawing.Size(581, 256)
         Me.Controls.Add(Me.ucrInputFunctionName)
         Me.Controls.Add(Me.ucrChkFunction)
         Me.Controls.Add(Me.rdoHelp)
@@ -131,6 +139,7 @@ Partial Class dlgHelpVignettes
         Me.Controls.Add(Me.ucrBase)
         Me.Controls.Add(Me.ucrInputComboPackage)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "dlgHelpVignettes"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Packages Documenation"

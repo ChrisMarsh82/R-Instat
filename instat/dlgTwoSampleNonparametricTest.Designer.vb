@@ -60,19 +60,21 @@ Partial Class dlgTwoSampleNonparametricTest
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(12, 365)
+        Me.ucrBase.Location = New System.Drawing.Point(16, 449)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 53)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 65)
         Me.ucrBase.TabIndex = 0
         '
         'ucrTwoSampleSelector
         '
+        Me.ucrTwoSampleSelector.bDropUnusedFilterLevels = False
         Me.ucrTwoSampleSelector.bShowHiddenColumns = False
-        Me.ucrTwoSampleSelector.bUseCurrentFilter = False
-        Me.ucrTwoSampleSelector.Location = New System.Drawing.Point(8, 107)
+        Me.ucrTwoSampleSelector.bUseCurrentFilter = True
+        Me.ucrTwoSampleSelector.Location = New System.Drawing.Point(11, 132)
         Me.ucrTwoSampleSelector.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrTwoSampleSelector.Name = "ucrTwoSampleSelector"
-        Me.ucrTwoSampleSelector.Size = New System.Drawing.Size(242, 179)
+        Me.ucrTwoSampleSelector.Size = New System.Drawing.Size(323, 220)
         Me.ucrTwoSampleSelector.TabIndex = 1
         '
         'grpLayoutOfData
@@ -80,9 +82,11 @@ Partial Class dlgTwoSampleNonparametricTest
         Me.grpLayoutOfData.Controls.Add(Me.rdotwoColinSamedataframe)
         Me.grpLayoutOfData.Controls.Add(Me.rdoTwoColinSeparateDataFrame)
         Me.grpLayoutOfData.Controls.Add(Me.rdoDataColandFactorCol)
-        Me.grpLayoutOfData.Location = New System.Drawing.Point(13, 5)
+        Me.grpLayoutOfData.Location = New System.Drawing.Point(17, 6)
+        Me.grpLayoutOfData.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpLayoutOfData.Name = "grpLayoutOfData"
-        Me.grpLayoutOfData.Size = New System.Drawing.Size(428, 100)
+        Me.grpLayoutOfData.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpLayoutOfData.Size = New System.Drawing.Size(571, 123)
         Me.grpLayoutOfData.TabIndex = 2
         Me.grpLayoutOfData.TabStop = False
         Me.grpLayoutOfData.Tag = "Layout_Of_Data"
@@ -91,9 +95,10 @@ Partial Class dlgTwoSampleNonparametricTest
         'rdotwoColinSamedataframe
         '
         Me.rdotwoColinSamedataframe.AutoSize = True
-        Me.rdotwoColinSamedataframe.Location = New System.Drawing.Point(7, 66)
+        Me.rdotwoColinSamedataframe.Location = New System.Drawing.Point(9, 81)
+        Me.rdotwoColinSamedataframe.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdotwoColinSamedataframe.Name = "rdotwoColinSamedataframe"
-        Me.rdotwoColinSamedataframe.Size = New System.Drawing.Size(188, 17)
+        Me.rdotwoColinSamedataframe.Size = New System.Drawing.Size(240, 20)
         Me.rdotwoColinSamedataframe.TabIndex = 0
         Me.rdotwoColinSamedataframe.TabStop = True
         Me.rdotwoColinSamedataframe.Tag = "Two_Columns_in_Same_Data_Frame"
@@ -103,9 +108,10 @@ Partial Class dlgTwoSampleNonparametricTest
         'rdoTwoColinSeparateDataFrame
         '
         Me.rdoTwoColinSeparateDataFrame.AutoSize = True
-        Me.rdoTwoColinSeparateDataFrame.Location = New System.Drawing.Point(7, 43)
+        Me.rdoTwoColinSeparateDataFrame.Location = New System.Drawing.Point(9, 53)
+        Me.rdoTwoColinSeparateDataFrame.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoTwoColinSeparateDataFrame.Name = "rdoTwoColinSeparateDataFrame"
-        Me.rdoTwoColinSeparateDataFrame.Size = New System.Drawing.Size(209, 17)
+        Me.rdoTwoColinSeparateDataFrame.Size = New System.Drawing.Size(267, 20)
         Me.rdoTwoColinSeparateDataFrame.TabIndex = 0
         Me.rdoTwoColinSeparateDataFrame.TabStop = True
         Me.rdoTwoColinSeparateDataFrame.Tag = "Two_Columns_in_Separate_Data_Frames"
@@ -115,9 +121,10 @@ Partial Class dlgTwoSampleNonparametricTest
         'rdoDataColandFactorCol
         '
         Me.rdoDataColandFactorCol.AutoSize = True
-        Me.rdoDataColandFactorCol.Location = New System.Drawing.Point(7, 20)
+        Me.rdoDataColandFactorCol.Location = New System.Drawing.Point(9, 25)
+        Me.rdoDataColandFactorCol.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoDataColandFactorCol.Name = "rdoDataColandFactorCol"
-        Me.rdoDataColandFactorCol.Size = New System.Drawing.Size(178, 17)
+        Me.rdoDataColandFactorCol.Size = New System.Drawing.Size(225, 20)
         Me.rdoDataColandFactorCol.TabIndex = 0
         Me.rdoDataColandFactorCol.TabStop = True
         Me.rdoDataColandFactorCol.Tag = "Data_Column_and_Factor_Column"
@@ -127,9 +134,10 @@ Partial Class dlgTwoSampleNonparametricTest
         'rdoSignTest
         '
         Me.rdoSignTest.AutoSize = True
-        Me.rdoSignTest.Location = New System.Drawing.Point(235, 124)
+        Me.rdoSignTest.Location = New System.Drawing.Point(313, 153)
+        Me.rdoSignTest.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoSignTest.Name = "rdoSignTest"
-        Me.rdoSignTest.Size = New System.Drawing.Size(70, 17)
+        Me.rdoSignTest.Size = New System.Drawing.Size(90, 20)
         Me.rdoSignTest.TabIndex = 3
         Me.rdoSignTest.TabStop = True
         Me.rdoSignTest.Tag = "Sign_Test"
@@ -139,9 +147,10 @@ Partial Class dlgTwoSampleNonparametricTest
         'rdoWilcoxon
         '
         Me.rdoWilcoxon.AutoSize = True
-        Me.rdoWilcoxon.Location = New System.Drawing.Point(347, 124)
+        Me.rdoWilcoxon.Location = New System.Drawing.Point(463, 153)
+        Me.rdoWilcoxon.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoWilcoxon.Name = "rdoWilcoxon"
-        Me.rdoWilcoxon.Size = New System.Drawing.Size(69, 17)
+        Me.rdoWilcoxon.Size = New System.Drawing.Size(88, 20)
         Me.rdoWilcoxon.TabIndex = 3
         Me.rdoWilcoxon.TabStop = True
         Me.rdoWilcoxon.Tag = "Wilcoxon"
@@ -151,49 +160,59 @@ Partial Class dlgTwoSampleNonparametricTest
         'lblVariable
         '
         Me.lblVariable.AutoSize = True
-        Me.lblVariable.Location = New System.Drawing.Point(256, 156)
+        Me.lblVariable.Location = New System.Drawing.Point(341, 192)
+        Me.lblVariable.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblVariable.Name = "lblVariable"
-        Me.lblVariable.Size = New System.Drawing.Size(45, 13)
+        Me.lblVariable.Size = New System.Drawing.Size(59, 16)
         Me.lblVariable.TabIndex = 4
         Me.lblVariable.Tag = "Variable"
         Me.lblVariable.Text = "Variable"
         '
         'ucrReceiverVariable
         '
-        Me.ucrReceiverVariable.Location = New System.Drawing.Point(259, 173)
+        Me.ucrReceiverVariable.frmParent = Me
+        Me.ucrReceiverVariable.Location = New System.Drawing.Point(345, 213)
         Me.ucrReceiverVariable.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverVariable.Name = "ucrReceiverVariable"
         Me.ucrReceiverVariable.Selector = Nothing
-        Me.ucrReceiverVariable.Size = New System.Drawing.Size(106, 26)
+        Me.ucrReceiverVariable.Size = New System.Drawing.Size(141, 32)
+        Me.ucrReceiverVariable.strNcFilePath = ""
         Me.ucrReceiverVariable.TabIndex = 5
+        Me.ucrReceiverVariable.ucrSelector = Nothing
         '
         'lblFactor
         '
         Me.lblFactor.AutoSize = True
-        Me.lblFactor.Location = New System.Drawing.Point(256, 210)
+        Me.lblFactor.Location = New System.Drawing.Point(341, 258)
+        Me.lblFactor.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblFactor.Name = "lblFactor"
-        Me.lblFactor.Size = New System.Drawing.Size(37, 13)
+        Me.lblFactor.Size = New System.Drawing.Size(46, 16)
         Me.lblFactor.TabIndex = 4
         Me.lblFactor.Tag = "Factor"
         Me.lblFactor.Text = "Factor"
         '
         'ucrReceiverFactor
         '
-        Me.ucrReceiverFactor.Location = New System.Drawing.Point(259, 227)
+        Me.ucrReceiverFactor.frmParent = Me
+        Me.ucrReceiverFactor.Location = New System.Drawing.Point(345, 279)
         Me.ucrReceiverFactor.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverFactor.Name = "ucrReceiverFactor"
         Me.ucrReceiverFactor.Selector = Nothing
-        Me.ucrReceiverFactor.Size = New System.Drawing.Size(106, 26)
+        Me.ucrReceiverFactor.Size = New System.Drawing.Size(141, 32)
+        Me.ucrReceiverFactor.strNcFilePath = ""
         Me.ucrReceiverFactor.TabIndex = 5
+        Me.ucrReceiverFactor.ucrSelector = Nothing
         '
         'grpTypeOfTest
         '
         Me.grpTypeOfTest.Controls.Add(Me.rdoOneSidedy2)
         Me.grpTypeOfTest.Controls.Add(Me.rdoOnesidedy1)
         Me.grpTypeOfTest.Controls.Add(Me.rdoTwoSided)
-        Me.grpTypeOfTest.Location = New System.Drawing.Point(13, 293)
+        Me.grpTypeOfTest.Location = New System.Drawing.Point(17, 361)
+        Me.grpTypeOfTest.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpTypeOfTest.Name = "grpTypeOfTest"
-        Me.grpTypeOfTest.Size = New System.Drawing.Size(428, 66)
+        Me.grpTypeOfTest.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpTypeOfTest.Size = New System.Drawing.Size(571, 81)
         Me.grpTypeOfTest.TabIndex = 6
         Me.grpTypeOfTest.TabStop = False
         Me.grpTypeOfTest.Tag = "Type_of_Test"
@@ -202,9 +221,10 @@ Partial Class dlgTwoSampleNonparametricTest
         'rdoOneSidedy2
         '
         Me.rdoOneSidedy2.AutoSize = True
-        Me.rdoOneSidedy2.Location = New System.Drawing.Point(222, 20)
+        Me.rdoOneSidedy2.Location = New System.Drawing.Point(296, 25)
+        Me.rdoOneSidedy2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoOneSidedy2.Name = "rdoOneSidedy2"
-        Me.rdoOneSidedy2.Size = New System.Drawing.Size(112, 17)
+        Me.rdoOneSidedy2.Size = New System.Drawing.Size(144, 20)
         Me.rdoOneSidedy2.TabIndex = 0
         Me.rdoOneSidedy2.TabStop = True
         Me.rdoOneSidedy2.Tag = "One_Sided _y1y2"
@@ -214,9 +234,10 @@ Partial Class dlgTwoSampleNonparametricTest
         'rdoOnesidedy1
         '
         Me.rdoOnesidedy1.AutoSize = True
-        Me.rdoOnesidedy1.Location = New System.Drawing.Point(89, 20)
+        Me.rdoOnesidedy1.Location = New System.Drawing.Point(119, 25)
+        Me.rdoOnesidedy1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoOnesidedy1.Name = "rdoOnesidedy1"
-        Me.rdoOnesidedy1.Size = New System.Drawing.Size(112, 17)
+        Me.rdoOnesidedy1.Size = New System.Drawing.Size(144, 20)
         Me.rdoOnesidedy1.TabIndex = 0
         Me.rdoOnesidedy1.TabStop = True
         Me.rdoOnesidedy1.Tag = "One_Sided _y1_y2)"
@@ -226,9 +247,10 @@ Partial Class dlgTwoSampleNonparametricTest
         'rdoTwoSided
         '
         Me.rdoTwoSided.AutoSize = True
-        Me.rdoTwoSided.Location = New System.Drawing.Point(7, 20)
+        Me.rdoTwoSided.Location = New System.Drawing.Point(9, 25)
+        Me.rdoTwoSided.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoTwoSided.Name = "rdoTwoSided"
-        Me.rdoTwoSided.Size = New System.Drawing.Size(76, 17)
+        Me.rdoTwoSided.Size = New System.Drawing.Size(99, 20)
         Me.rdoTwoSided.TabIndex = 0
         Me.rdoTwoSided.TabStop = True
         Me.rdoTwoSided.Tag = "Two_Sided"
@@ -237,9 +259,9 @@ Partial Class dlgTwoSampleNonparametricTest
         '
         'dlgTwoSampleNonparametricTest
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(444, 418)
+        Me.ClientSize = New System.Drawing.Size(592, 515)
         Me.Controls.Add(Me.grpTypeOfTest)
         Me.Controls.Add(Me.ucrReceiverFactor)
         Me.Controls.Add(Me.lblFactor)
@@ -251,6 +273,7 @@ Partial Class dlgTwoSampleNonparametricTest
         Me.Controls.Add(Me.ucrTwoSampleSelector)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgTwoSampleNonparametricTest"

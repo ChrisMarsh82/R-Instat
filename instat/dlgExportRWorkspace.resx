@@ -123,10 +123,14 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblDataFrames.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 13</value>
+    <value>9, 16</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblDataFrames.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblDataFrames.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 13</value>
+    <value>97, 16</value>
   </data>
   <data name="lblDataFrames.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -150,10 +154,13 @@
     <value>True</value>
   </data>
   <data name="lblSelectedDataFrames.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 44</value>
+    <value>329, 54</value>
+  </data>
+  <data name="lblSelectedDataFrames.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblSelectedDataFrames.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 13</value>
+    <value>146, 16</value>
   </data>
   <data name="lblSelectedDataFrames.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -174,14 +181,13 @@
     <value>1</value>
   </data>
   <data name="ucrSelectorForDataFrames.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 30</value>
+    <value>13, 37</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ucrSelectorForDataFrames.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrSelectorForDataFrames.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 147</value>
+    <value>284, 181</value>
   </data>
   <data name="ucrSelectorForDataFrames.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -199,13 +205,13 @@
     <value>8</value>
   </data>
   <data name="ucrChkGraphs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 193</value>
+    <value>13, 238</value>
   </data>
   <data name="ucrChkGraphs.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+    <value>5, 6, 5, 6</value>
   </data>
   <data name="ucrChkGraphs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>193, 20</value>
+    <value>257, 25</value>
   </data>
   <data name="ucrChkGraphs.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -223,13 +229,13 @@
     <value>3</value>
   </data>
   <data name="ucrChkModels.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 219</value>
+    <value>13, 270</value>
   </data>
   <data name="ucrChkModels.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+    <value>5, 6, 5, 6</value>
   </data>
   <data name="ucrChkModels.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 20</value>
+    <value>171, 25</value>
   </data>
   <data name="ucrChkModels.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -247,13 +253,13 @@
     <value>4</value>
   </data>
   <data name="ucrChkMetadata.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 167</value>
+    <value>13, 206</value>
   </data>
   <data name="ucrChkMetadata.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+    <value>5, 6, 5, 6</value>
   </data>
   <data name="ucrChkMetadata.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 20</value>
+    <value>193, 25</value>
   </data>
   <data name="ucrChkMetadata.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -274,29 +280,34 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>417, 335</value>
+    <value>556, 412</value>
   </data>
   <data name="ucrFilePath.FilePathBrowseText" xml:space="preserve">
     <value>Unable to load DLL 'SQLite.Interop.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)
 A problem occured attempting to translate string 'Unable to load DLL 'SQLite.Interop.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)
-A problem occured attempting to translate string 'Browse' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\translations\rInstatTranslations.db.' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\translations\rInstatTranslations.db.</value>
+A problem occured attempting to translate string 'Unable to load DLL 'SQLite.Interop.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)
+A problem occured attempting to translate string 'Browse' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\translations\rInstatTranslations.db.' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\translations\rInstatTranslations.db.' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE/translations\rInstatTranslations.db.</value>
   </data>
   <data name="ucrFilePath.FilePathLabel" xml:space="preserve">
     <value>Unable to load DLL 'SQLite.Interop.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)
 A problem occured attempting to translate string 'Unable to load DLL 'SQLite.Interop.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)
-A problem occured attempting to translate string 'Export File:' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\translations\rInstatTranslations.db.' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\translations\rInstatTranslations.db.</value>
+A problem occured attempting to translate string 'Unable to load DLL 'SQLite.Interop.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)
+A problem occured attempting to translate string 'Export File:' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\translations\rInstatTranslations.db.' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\translations\rInstatTranslations.db.' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE/translations\rInstatTranslations.db.</value>
   </data>
   <data name="ucrFilePath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 245</value>
+    <value>19, 302</value>
+  </data>
+  <data name="ucrFilePath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrFilePath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 26</value>
+    <value>533, 32</value>
   </data>
   <data name="ucrFilePath.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -314,13 +325,13 @@ A problem occured attempting to translate string 'Export File:' to language en u
     <value>0</value>
   </data>
   <data name="ucrBase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 278</value>
+    <value>13, 342</value>
   </data>
   <data name="ucrBase.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+    <value>5, 6, 5, 6</value>
   </data>
   <data name="ucrBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>404, 52</value>
+    <value>539, 64</value>
   </data>
   <data name="ucrBase.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -337,6 +348,9 @@ A problem occured attempting to translate string 'Export File:' to language en u
   <data name="&gt;&gt;ucrBase.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
@@ -350,13 +364,13 @@ A problem occured attempting to translate string 'Export File:' to language en u
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ucrReceiverMultiple.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 60</value>
+    <value>333, 74</value>
   </data>
   <data name="ucrReceiverMultiple.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrReceiverMultiple.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 100</value>
+    <value>160, 123</value>
   </data>
   <data name="ucrReceiverMultiple.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>

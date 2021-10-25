@@ -35,18 +35,20 @@ Partial Class dlgImportShapeFiles
         '
         Me.lblFile.AutoSize = True
         Me.lblFile.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblFile.Location = New System.Drawing.Point(7, 23)
+        Me.lblFile.Location = New System.Drawing.Point(9, 28)
+        Me.lblFile.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblFile.Name = "lblFile"
-        Me.lblFile.Size = New System.Drawing.Size(26, 13)
+        Me.lblFile.Size = New System.Drawing.Size(33, 16)
         Me.lblFile.TabIndex = 0
         Me.lblFile.Text = "File:"
         '
         'cmdBrowse
         '
         Me.cmdBrowse.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.cmdBrowse.Location = New System.Drawing.Point(291, 18)
+        Me.cmdBrowse.Location = New System.Drawing.Point(388, 22)
+        Me.cmdBrowse.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdBrowse.Name = "cmdBrowse"
-        Me.cmdBrowse.Size = New System.Drawing.Size(122, 23)
+        Me.cmdBrowse.Size = New System.Drawing.Size(163, 28)
         Me.cmdBrowse.TabIndex = 2
         Me.cmdBrowse.Text = "Browse"
         Me.cmdBrowse.UseVisualStyleBackColor = True
@@ -54,9 +56,10 @@ Partial Class dlgImportShapeFiles
         'cmdLibrary
         '
         Me.cmdLibrary.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.cmdLibrary.Location = New System.Drawing.Point(291, 60)
+        Me.cmdLibrary.Location = New System.Drawing.Point(388, 74)
+        Me.cmdLibrary.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdLibrary.Name = "cmdLibrary"
-        Me.cmdLibrary.Size = New System.Drawing.Size(122, 23)
+        Me.cmdLibrary.Size = New System.Drawing.Size(163, 28)
         Me.cmdLibrary.TabIndex = 3
         Me.cmdLibrary.Text = "From Library"
         Me.cmdLibrary.UseVisualStyleBackColor = True
@@ -64,26 +67,26 @@ Partial Class dlgImportShapeFiles
         'ucrChkSplitGeometry
         '
         Me.ucrChkSplitGeometry.Checked = False
-        Me.ucrChkSplitGeometry.Location = New System.Drawing.Point(7, 89)
-        Me.ucrChkSplitGeometry.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ucrChkSplitGeometry.Location = New System.Drawing.Point(9, 110)
+        Me.ucrChkSplitGeometry.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.ucrChkSplitGeometry.Name = "ucrChkSplitGeometry"
-        Me.ucrChkSplitGeometry.Size = New System.Drawing.Size(150, 20)
+        Me.ucrChkSplitGeometry.Size = New System.Drawing.Size(200, 25)
         Me.ucrChkSplitGeometry.TabIndex = 5
         '
         'ucrSaveDataframeName
         '
-        Me.ucrSaveDataframeName.Location = New System.Drawing.Point(7, 60)
-        Me.ucrSaveDataframeName.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ucrSaveDataframeName.Location = New System.Drawing.Point(9, 74)
+        Me.ucrSaveDataframeName.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.ucrSaveDataframeName.Name = "ucrSaveDataframeName"
-        Me.ucrSaveDataframeName.Size = New System.Drawing.Size(270, 24)
+        Me.ucrSaveDataframeName.Size = New System.Drawing.Size(360, 30)
         Me.ucrSaveDataframeName.TabIndex = 4
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(7, 120)
-        Me.ucrBase.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ucrBase.Location = New System.Drawing.Point(9, 148)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(397, 52)
+        Me.ucrBase.Size = New System.Drawing.Size(529, 64)
         Me.ucrBase.TabIndex = 6
         '
         'ucrInputFilePath
@@ -91,17 +94,17 @@ Partial Class dlgImportShapeFiles
         Me.ucrInputFilePath.AddQuotesIfUnrecognised = True
         Me.ucrInputFilePath.IsMultiline = False
         Me.ucrInputFilePath.IsReadOnly = False
-        Me.ucrInputFilePath.Location = New System.Drawing.Point(49, 18)
-        Me.ucrInputFilePath.Margin = New System.Windows.Forms.Padding(9, 12, 9, 12)
+        Me.ucrInputFilePath.Location = New System.Drawing.Point(65, 22)
+        Me.ucrInputFilePath.Margin = New System.Windows.Forms.Padding(12, 15, 12, 15)
         Me.ucrInputFilePath.Name = "ucrInputFilePath"
-        Me.ucrInputFilePath.Size = New System.Drawing.Size(239, 23)
+        Me.ucrInputFilePath.Size = New System.Drawing.Size(319, 28)
         Me.ucrInputFilePath.TabIndex = 1
         '
         'dlgImportShapeFiles
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(419, 174)
+        Me.ClientSize = New System.Drawing.Size(559, 215)
         Me.Controls.Add(Me.ucrChkSplitGeometry)
         Me.Controls.Add(Me.ucrSaveDataframeName)
         Me.Controls.Add(Me.cmdLibrary)
@@ -110,6 +113,7 @@ Partial Class dlgImportShapeFiles
         Me.Controls.Add(Me.ucrInputFilePath)
         Me.Controls.Add(Me.lblFile)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgImportShapeFiles"

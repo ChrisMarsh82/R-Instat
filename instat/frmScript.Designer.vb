@@ -45,30 +45,33 @@ Partial Class frmScript
         'txtScript
         '
         Me.txtScript.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.txtScript.Location = New System.Drawing.Point(0, 55)
+        Me.txtScript.Location = New System.Drawing.Point(0, 70)
+        Me.txtScript.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtScript.Multiline = True
         Me.txtScript.Name = "txtScript"
         Me.txtScript.ReadOnly = True
-        Me.txtScript.Size = New System.Drawing.Size(548, 290)
+        Me.txtScript.Size = New System.Drawing.Size(731, 356)
         Me.txtScript.TabIndex = 0
         '
         'cmdClear
         '
         Me.cmdClear.Dock = System.Windows.Forms.DockStyle.Right
-        Me.cmdClear.Location = New System.Drawing.Point(444, 0)
+        Me.cmdClear.Location = New System.Drawing.Point(592, 0)
+        Me.cmdClear.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdClear.Name = "cmdClear"
-        Me.cmdClear.Size = New System.Drawing.Size(104, 55)
+        Me.cmdClear.Size = New System.Drawing.Size(139, 70)
         Me.cmdClear.TabIndex = 1
         Me.cmdClear.Text = "Clear contents"
         Me.cmdClear.UseVisualStyleBackColor = True
         '
         'frmScript
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(548, 345)
+        Me.ClientSize = New System.Drawing.Size(731, 426)
         Me.Controls.Add(Me.cmdClear)
         Me.Controls.Add(Me.txtScript)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmScript"
         Me.ShowIcon = False
         Me.Tag = "Script_Window"

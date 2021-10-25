@@ -76,12 +76,13 @@ Partial Class dlgContrasts
         Me.grdLayoutForContrasts.SheetTabContextMenuStrip = Nothing
         Me.grdLayoutForContrasts.SheetTabNewButtonVisible = True
         Me.grdLayoutForContrasts.SheetTabVisible = True
-        Me.grdLayoutForContrasts.SheetTabWidth = 60
+        Me.grdLayoutForContrasts.SheetTabWidth = 80
         Me.grdLayoutForContrasts.ShowScrollEndSpacing = True
         '
         'ucrInputContrastName
         '
         Me.ucrInputContrastName.AddQuotesIfUnrecognised = True
+        Me.ucrInputContrastName.GetSetSelectedIndex = -1
         Me.ucrInputContrastName.IsReadOnly = False
         resources.ApplyResources(Me.ucrInputContrastName, "ucrInputContrastName")
         Me.ucrInputContrastName.Name = "ucrInputContrastName"

@@ -47,19 +47,20 @@ Partial Class dlgOneVarCompareModels
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(10, 204)
+        Me.ucrBase.Location = New System.Drawing.Point(13, 251)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 52)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 64)
         Me.ucrBase.TabIndex = 4
         '
         'ucrReceiverCompareModels
         '
         Me.ucrReceiverCompareModels.frmParent = Me
-        Me.ucrReceiverCompareModels.Location = New System.Drawing.Point(250, 60)
+        Me.ucrReceiverCompareModels.Location = New System.Drawing.Point(333, 74)
         Me.ucrReceiverCompareModels.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverCompareModels.Name = "ucrReceiverCompareModels"
         Me.ucrReceiverCompareModels.Selector = Nothing
-        Me.ucrReceiverCompareModels.Size = New System.Drawing.Size(120, 100)
+        Me.ucrReceiverCompareModels.Size = New System.Drawing.Size(160, 123)
         Me.ucrReceiverCompareModels.strNcFilePath = ""
         Me.ucrReceiverCompareModels.TabIndex = 2
         Me.ucrReceiverCompareModels.ucrSelector = Nothing
@@ -69,17 +70,18 @@ Partial Class dlgOneVarCompareModels
         Me.ucrSelectorOneVarCompModels.bDropUnusedFilterLevels = False
         Me.ucrSelectorOneVarCompModels.bShowHiddenColumns = False
         Me.ucrSelectorOneVarCompModels.bUseCurrentFilter = True
-        Me.ucrSelectorOneVarCompModels.Location = New System.Drawing.Point(10, 10)
+        Me.ucrSelectorOneVarCompModels.Location = New System.Drawing.Point(13, 12)
         Me.ucrSelectorOneVarCompModels.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorOneVarCompModels.Name = "ucrSelectorOneVarCompModels"
-        Me.ucrSelectorOneVarCompModels.Size = New System.Drawing.Size(210, 180)
+        Me.ucrSelectorOneVarCompModels.Size = New System.Drawing.Size(280, 222)
         Me.ucrSelectorOneVarCompModels.TabIndex = 0
         '
         'cmdDisplayObjects
         '
-        Me.cmdDisplayObjects.Location = New System.Drawing.Point(283, 176)
+        Me.cmdDisplayObjects.Location = New System.Drawing.Point(377, 217)
+        Me.cmdDisplayObjects.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdDisplayObjects.Name = "cmdDisplayObjects"
-        Me.cmdDisplayObjects.Size = New System.Drawing.Size(125, 23)
+        Me.cmdDisplayObjects.Size = New System.Drawing.Size(167, 28)
         Me.cmdDisplayObjects.TabIndex = 3
         Me.cmdDisplayObjects.Text = "Display Objects..."
         Me.cmdDisplayObjects.UseVisualStyleBackColor = True
@@ -87,23 +89,25 @@ Partial Class dlgOneVarCompareModels
         'lblReceiver
         '
         Me.lblReceiver.AutoSize = True
-        Me.lblReceiver.Location = New System.Drawing.Point(250, 45)
+        Me.lblReceiver.Location = New System.Drawing.Point(333, 55)
+        Me.lblReceiver.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblReceiver.Name = "lblReceiver"
-        Me.lblReceiver.Size = New System.Drawing.Size(97, 13)
+        Me.lblReceiver.Size = New System.Drawing.Size(122, 16)
         Me.lblReceiver.TabIndex = 1
         Me.lblReceiver.Text = "Selected Object(s):"
         '
         'dlgOneVarCompareModels
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(417, 262)
+        Me.ClientSize = New System.Drawing.Size(556, 322)
         Me.Controls.Add(Me.lblReceiver)
         Me.Controls.Add(Me.cmdDisplayObjects)
         Me.Controls.Add(Me.ucrSelectorOneVarCompModels)
         Me.Controls.Add(Me.ucrReceiverCompareModels)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgOneVarCompareModels"

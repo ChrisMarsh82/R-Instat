@@ -41,7 +41,8 @@ Partial Class dlgPasteNewDataFrame
         Me.grdDataPreview.BackColor = System.Drawing.Color.White
         Me.grdDataPreview.ColumnHeaderContextMenuStrip = Nothing
         Me.grdDataPreview.LeadHeaderContextMenuStrip = Nothing
-        Me.grdDataPreview.Location = New System.Drawing.Point(10, 35)
+        Me.grdDataPreview.Location = New System.Drawing.Point(13, 43)
+        Me.grdDataPreview.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grdDataPreview.Name = "grdDataPreview"
         Me.grdDataPreview.Readonly = True
         Me.grdDataPreview.RowHeaderContextMenuStrip = Nothing
@@ -49,44 +50,48 @@ Partial Class dlgPasteNewDataFrame
         Me.grdDataPreview.SheetTabContextMenuStrip = Nothing
         Me.grdDataPreview.SheetTabNewButtonVisible = False
         Me.grdDataPreview.SheetTabVisible = True
-        Me.grdDataPreview.SheetTabWidth = 60
+        Me.grdDataPreview.SheetTabWidth = 80
         Me.grdDataPreview.ShowScrollEndSpacing = True
-        Me.grdDataPreview.Size = New System.Drawing.Size(572, 166)
+        Me.grdDataPreview.Size = New System.Drawing.Size(763, 204)
         Me.grdDataPreview.TabIndex = 14
         '
         'lblPreviewHeader
         '
         Me.lblPreviewHeader.AutoSize = True
-        Me.lblPreviewHeader.Location = New System.Drawing.Point(10, 15)
+        Me.lblPreviewHeader.Location = New System.Drawing.Point(13, 18)
+        Me.lblPreviewHeader.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPreviewHeader.Name = "lblPreviewHeader"
-        Me.lblPreviewHeader.Size = New System.Drawing.Size(119, 13)
+        Me.lblPreviewHeader.Size = New System.Drawing.Size(148, 16)
         Me.lblPreviewHeader.TabIndex = 18
         Me.lblPreviewHeader.Text = "Preview of copied data:"
         '
         'btnRefreshPreview
         '
         Me.btnRefreshPreview.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.btnRefreshPreview.Location = New System.Drawing.Point(470, 10)
+        Me.btnRefreshPreview.Location = New System.Drawing.Point(627, 12)
+        Me.btnRefreshPreview.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnRefreshPreview.Name = "btnRefreshPreview"
-        Me.btnRefreshPreview.Size = New System.Drawing.Size(100, 23)
+        Me.btnRefreshPreview.Size = New System.Drawing.Size(133, 28)
         Me.btnRefreshPreview.TabIndex = 3
         Me.btnRefreshPreview.Text = "Refresh Preview"
         Me.btnRefreshPreview.UseVisualStyleBackColor = True
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(10, 276)
+        Me.ucrBase.Location = New System.Drawing.Point(13, 340)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 52)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 64)
         Me.ucrBase.TabIndex = 5
         '
         'lblLinesToPreview
         '
         Me.lblLinesToPreview.AutoSize = True
         Me.lblLinesToPreview.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblLinesToPreview.Location = New System.Drawing.Point(320, 15)
+        Me.lblLinesToPreview.Location = New System.Drawing.Point(427, 18)
+        Me.lblLinesToPreview.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblLinesToPreview.Name = "lblLinesToPreview"
-        Me.lblLinesToPreview.Size = New System.Drawing.Size(88, 13)
+        Me.lblLinesToPreview.Size = New System.Drawing.Size(108, 16)
         Me.lblLinesToPreview.TabIndex = 22
         Me.lblLinesToPreview.Text = "Lines to Preview:"
         '
@@ -94,65 +99,67 @@ Partial Class dlgPasteNewDataFrame
         '
         Me.ucrNudPreviewLines.DecimalPlaces = New Decimal(New Integer() {0, 0, 0, 0})
         Me.ucrNudPreviewLines.Increment = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.ucrNudPreviewLines.Location = New System.Drawing.Point(413, 10)
-        Me.ucrNudPreviewLines.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ucrNudPreviewLines.Location = New System.Drawing.Point(551, 12)
+        Me.ucrNudPreviewLines.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.ucrNudPreviewLines.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.ucrNudPreviewLines.Minimum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.ucrNudPreviewLines.Name = "ucrNudPreviewLines"
-        Me.ucrNudPreviewLines.Size = New System.Drawing.Size(50, 20)
+        Me.ucrNudPreviewLines.Size = New System.Drawing.Size(67, 25)
         Me.ucrNudPreviewLines.TabIndex = 2
         Me.ucrNudPreviewLines.Value = New Decimal(New Integer() {10, 0, 0, 0})
         '
         'ucrChkRowHeader
         '
         Me.ucrChkRowHeader.Checked = False
-        Me.ucrChkRowHeader.Location = New System.Drawing.Point(146, 12)
+        Me.ucrChkRowHeader.Location = New System.Drawing.Point(195, 15)
+        Me.ucrChkRowHeader.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkRowHeader.Name = "ucrChkRowHeader"
-        Me.ucrChkRowHeader.Size = New System.Drawing.Size(169, 20)
+        Me.ucrChkRowHeader.Size = New System.Drawing.Size(225, 25)
         Me.ucrChkRowHeader.TabIndex = 1
         '
         'lblConfirmText
         '
         Me.lblConfirmText.AutoSize = True
         Me.lblConfirmText.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblConfirmText.Location = New System.Drawing.Point(10, 215)
-        Me.lblConfirmText.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblConfirmText.Location = New System.Drawing.Point(13, 265)
         Me.lblConfirmText.Name = "lblConfirmText"
-        Me.lblConfirmText.Size = New System.Drawing.Size(189, 13)
+        Me.lblConfirmText.Size = New System.Drawing.Size(232, 16)
         Me.lblConfirmText.TabIndex = 24
         Me.lblConfirmText.Text = "Click Ok to paste data to new columns"
         '
         'ucrSaveNewDFName
         '
-        Me.ucrSaveNewDFName.Location = New System.Drawing.Point(10, 243)
-        Me.ucrSaveNewDFName.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ucrSaveNewDFName.Location = New System.Drawing.Point(13, 299)
+        Me.ucrSaveNewDFName.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.ucrSaveNewDFName.Name = "ucrSaveNewDFName"
-        Me.ucrSaveNewDFName.Size = New System.Drawing.Size(246, 24)
+        Me.ucrSaveNewDFName.Size = New System.Drawing.Size(328, 30)
         Me.ucrSaveNewDFName.TabIndex = 4
         '
         'panelNoDataPreview
         '
         Me.panelNoDataPreview.Controls.Add(Me.lblNoDataPreview)
-        Me.panelNoDataPreview.Location = New System.Drawing.Point(10, 35)
+        Me.panelNoDataPreview.Location = New System.Drawing.Point(13, 43)
+        Me.panelNoDataPreview.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.panelNoDataPreview.Name = "panelNoDataPreview"
-        Me.panelNoDataPreview.Size = New System.Drawing.Size(572, 166)
+        Me.panelNoDataPreview.Size = New System.Drawing.Size(763, 204)
         Me.panelNoDataPreview.TabIndex = 26
         '
         'lblNoDataPreview
         '
         Me.lblNoDataPreview.AutoSize = True
         Me.lblNoDataPreview.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNoDataPreview.Location = New System.Drawing.Point(121, 64)
+        Me.lblNoDataPreview.Location = New System.Drawing.Point(161, 79)
+        Me.lblNoDataPreview.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblNoDataPreview.Name = "lblNoDataPreview"
-        Me.lblNoDataPreview.Size = New System.Drawing.Size(168, 25)
+        Me.lblNoDataPreview.Size = New System.Drawing.Size(252, 37)
         Me.lblNoDataPreview.TabIndex = 0
         Me.lblNoDataPreview.Text = "No Data Loaded"
         '
         'dlgPasteNewDataFrame
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(599, 339)
+        Me.ClientSize = New System.Drawing.Size(800, 417)
         Me.Controls.Add(Me.panelNoDataPreview)
         Me.Controls.Add(Me.ucrSaveNewDFName)
         Me.Controls.Add(Me.lblConfirmText)
@@ -164,7 +171,7 @@ Partial Class dlgPasteNewDataFrame
         Me.Controls.Add(Me.btnRefreshPreview)
         Me.Controls.Add(Me.grdDataPreview)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "dlgPasteNewDataFrame"
         Me.Text = "Paste Data to New Data Frame"
         Me.panelNoDataPreview.ResumeLayout(False)

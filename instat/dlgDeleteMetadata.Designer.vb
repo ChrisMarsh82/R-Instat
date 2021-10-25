@@ -52,6 +52,7 @@ Partial Class dlgDeleteMetadata
         '
         'ucrSelectorForDeleteMetadata
         '
+        Me.ucrSelectorForDeleteMetadata.bDropUnusedFilterLevels = False
         Me.ucrSelectorForDeleteMetadata.bShowHiddenColumns = False
         Me.ucrSelectorForDeleteMetadata.bUseCurrentFilter = True
         resources.ApplyResources(Me.ucrSelectorForDeleteMetadata, "ucrSelectorForDeleteMetadata")

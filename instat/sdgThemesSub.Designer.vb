@@ -78,10 +78,11 @@ Partial Class sdgThemesSub
         Me.TabThemes.Controls.Add(Me.tbPanel)
         Me.TabThemes.Controls.Add(Me.tbBackground)
         Me.TabThemes.Controls.Add(Me.tbLegend)
-        Me.TabThemes.Location = New System.Drawing.Point(2, 3)
+        Me.TabThemes.Location = New System.Drawing.Point(3, 4)
+        Me.TabThemes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabThemes.Name = "TabThemes"
         Me.TabThemes.SelectedIndex = 0
-        Me.TabThemes.Size = New System.Drawing.Size(527, 487)
+        Me.TabThemes.Size = New System.Drawing.Size(703, 599)
         Me.TabThemes.TabIndex = 0
         '
         'tbTitles
@@ -89,33 +90,37 @@ Partial Class sdgThemesSub
         Me.tbTitles.Controls.Add(Me.ucrThemeTitleYAxis)
         Me.tbTitles.Controls.Add(Me.ucrThemeTitleXAxis)
         Me.tbTitles.Controls.Add(Me.ucrPlotTitle)
-        Me.tbTitles.Location = New System.Drawing.Point(4, 22)
+        Me.tbTitles.Location = New System.Drawing.Point(4, 25)
+        Me.tbTitles.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbTitles.Name = "tbTitles"
-        Me.tbTitles.Padding = New System.Windows.Forms.Padding(3)
-        Me.tbTitles.Size = New System.Drawing.Size(519, 461)
+        Me.tbTitles.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbTitles.Size = New System.Drawing.Size(695, 570)
         Me.tbTitles.TabIndex = 0
         Me.tbTitles.Text = "Titles"
         Me.tbTitles.UseVisualStyleBackColor = True
         '
         'ucrThemeTitleYAxis
         '
-        Me.ucrThemeTitleYAxis.Location = New System.Drawing.Point(0, 228)
+        Me.ucrThemeTitleYAxis.Location = New System.Drawing.Point(0, 281)
+        Me.ucrThemeTitleYAxis.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrThemeTitleYAxis.Name = "ucrThemeTitleYAxis"
-        Me.ucrThemeTitleYAxis.Size = New System.Drawing.Size(259, 227)
+        Me.ucrThemeTitleYAxis.Size = New System.Drawing.Size(345, 279)
         Me.ucrThemeTitleYAxis.TabIndex = 3
         '
         'ucrThemeTitleXAxis
         '
-        Me.ucrThemeTitleXAxis.Location = New System.Drawing.Point(259, 3)
+        Me.ucrThemeTitleXAxis.Location = New System.Drawing.Point(345, 4)
+        Me.ucrThemeTitleXAxis.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrThemeTitleXAxis.Name = "ucrThemeTitleXAxis"
-        Me.ucrThemeTitleXAxis.Size = New System.Drawing.Size(260, 231)
+        Me.ucrThemeTitleXAxis.Size = New System.Drawing.Size(347, 284)
         Me.ucrThemeTitleXAxis.TabIndex = 2
         '
         'ucrPlotTitle
         '
-        Me.ucrPlotTitle.Location = New System.Drawing.Point(0, 3)
+        Me.ucrPlotTitle.Location = New System.Drawing.Point(0, 4)
+        Me.ucrPlotTitle.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrPlotTitle.Name = "ucrPlotTitle"
-        Me.ucrPlotTitle.Size = New System.Drawing.Size(255, 224)
+        Me.ucrPlotTitle.Size = New System.Drawing.Size(340, 276)
         Me.ucrPlotTitle.TabIndex = 1
         '
         'tbLabels
@@ -123,33 +128,37 @@ Partial Class sdgThemesSub
         Me.tbLabels.Controls.Add(Me.ucrThemeLeftYAxis)
         Me.tbLabels.Controls.Add(Me.ucrThemeBottomXAxis)
         Me.tbLabels.Controls.Add(Me.ucrThemeAxesTickLabels)
-        Me.tbLabels.Location = New System.Drawing.Point(4, 22)
+        Me.tbLabels.Location = New System.Drawing.Point(4, 25)
+        Me.tbLabels.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbLabels.Name = "tbLabels"
-        Me.tbLabels.Padding = New System.Windows.Forms.Padding(3)
-        Me.tbLabels.Size = New System.Drawing.Size(519, 461)
+        Me.tbLabels.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbLabels.Size = New System.Drawing.Size(695, 570)
         Me.tbLabels.TabIndex = 1
         Me.tbLabels.Text = "Labels"
         Me.tbLabels.UseVisualStyleBackColor = True
         '
         'ucrThemeLeftYAxis
         '
-        Me.ucrThemeLeftYAxis.Location = New System.Drawing.Point(254, 32)
+        Me.ucrThemeLeftYAxis.Location = New System.Drawing.Point(339, 39)
+        Me.ucrThemeLeftYAxis.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrThemeLeftYAxis.Name = "ucrThemeLeftYAxis"
-        Me.ucrThemeLeftYAxis.Size = New System.Drawing.Size(259, 226)
+        Me.ucrThemeLeftYAxis.Size = New System.Drawing.Size(345, 278)
         Me.ucrThemeLeftYAxis.TabIndex = 4
         '
         'ucrThemeBottomXAxis
         '
-        Me.ucrThemeBottomXAxis.Location = New System.Drawing.Point(0, 32)
+        Me.ucrThemeBottomXAxis.Location = New System.Drawing.Point(0, 39)
+        Me.ucrThemeBottomXAxis.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrThemeBottomXAxis.Name = "ucrThemeBottomXAxis"
-        Me.ucrThemeBottomXAxis.Size = New System.Drawing.Size(259, 224)
+        Me.ucrThemeBottomXAxis.Size = New System.Drawing.Size(345, 276)
         Me.ucrThemeBottomXAxis.TabIndex = 3
         '
         'ucrThemeAxesTickLabels
         '
-        Me.ucrThemeAxesTickLabels.Location = New System.Drawing.Point(0, 32)
+        Me.ucrThemeAxesTickLabels.Location = New System.Drawing.Point(0, 39)
+        Me.ucrThemeAxesTickLabels.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrThemeAxesTickLabels.Name = "ucrThemeAxesTickLabels"
-        Me.ucrThemeAxesTickLabels.Size = New System.Drawing.Size(255, 228)
+        Me.ucrThemeAxesTickLabels.Size = New System.Drawing.Size(340, 281)
         Me.ucrThemeAxesTickLabels.TabIndex = 2
         '
         'tbAxes
@@ -160,53 +169,60 @@ Partial Class sdgThemesSub
         Me.tbAxes.Controls.Add(Me.ucrTickMarksXAxis)
         Me.tbAxes.Controls.Add(Me.ucrThemeAxesLines)
         Me.tbAxes.Controls.Add(Me.ucrTickMarksAxes)
-        Me.tbAxes.Location = New System.Drawing.Point(4, 22)
+        Me.tbAxes.Location = New System.Drawing.Point(4, 25)
+        Me.tbAxes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbAxes.Name = "tbAxes"
-        Me.tbAxes.Size = New System.Drawing.Size(519, 461)
+        Me.tbAxes.Size = New System.Drawing.Size(695, 570)
         Me.tbAxes.TabIndex = 2
         Me.tbAxes.Text = "Axes"
         Me.tbAxes.UseVisualStyleBackColor = True
         '
         'ucrYAxisLines
         '
-        Me.ucrYAxisLines.Location = New System.Drawing.Point(260, 197)
+        Me.ucrYAxisLines.Location = New System.Drawing.Point(347, 242)
+        Me.ucrYAxisLines.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrYAxisLines.Name = "ucrYAxisLines"
-        Me.ucrYAxisLines.Size = New System.Drawing.Size(254, 124)
+        Me.ucrYAxisLines.Size = New System.Drawing.Size(339, 153)
         Me.ucrYAxisLines.TabIndex = 1
         '
         'ucrTickMarksYAxis
         '
-        Me.ucrTickMarksYAxis.Location = New System.Drawing.Point(258, 32)
+        Me.ucrTickMarksYAxis.Location = New System.Drawing.Point(344, 39)
+        Me.ucrTickMarksYAxis.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrTickMarksYAxis.Name = "ucrTickMarksYAxis"
-        Me.ucrTickMarksYAxis.Size = New System.Drawing.Size(255, 123)
+        Me.ucrTickMarksYAxis.Size = New System.Drawing.Size(340, 151)
         Me.ucrTickMarksYAxis.TabIndex = 0
         '
         'ucrXAxisLines
         '
-        Me.ucrXAxisLines.Location = New System.Drawing.Point(0, 197)
+        Me.ucrXAxisLines.Location = New System.Drawing.Point(0, 242)
+        Me.ucrXAxisLines.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrXAxisLines.Name = "ucrXAxisLines"
-        Me.ucrXAxisLines.Size = New System.Drawing.Size(254, 124)
+        Me.ucrXAxisLines.Size = New System.Drawing.Size(339, 153)
         Me.ucrXAxisLines.TabIndex = 1
         '
         'ucrTickMarksXAxis
         '
-        Me.ucrTickMarksXAxis.Location = New System.Drawing.Point(0, 32)
+        Me.ucrTickMarksXAxis.Location = New System.Drawing.Point(0, 39)
+        Me.ucrTickMarksXAxis.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrTickMarksXAxis.Name = "ucrTickMarksXAxis"
-        Me.ucrTickMarksXAxis.Size = New System.Drawing.Size(254, 124)
+        Me.ucrTickMarksXAxis.Size = New System.Drawing.Size(339, 153)
         Me.ucrTickMarksXAxis.TabIndex = 0
         '
         'ucrThemeAxesLines
         '
-        Me.ucrThemeAxesLines.Location = New System.Drawing.Point(3, 197)
+        Me.ucrThemeAxesLines.Location = New System.Drawing.Point(4, 242)
+        Me.ucrThemeAxesLines.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrThemeAxesLines.Name = "ucrThemeAxesLines"
-        Me.ucrThemeAxesLines.Size = New System.Drawing.Size(253, 122)
+        Me.ucrThemeAxesLines.Size = New System.Drawing.Size(337, 150)
         Me.ucrThemeAxesLines.TabIndex = 8
         '
         'ucrTickMarksAxes
         '
-        Me.ucrTickMarksAxes.Location = New System.Drawing.Point(3, 32)
+        Me.ucrTickMarksAxes.Location = New System.Drawing.Point(4, 39)
+        Me.ucrTickMarksAxes.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrTickMarksAxes.Name = "ucrTickMarksAxes"
-        Me.ucrTickMarksAxes.Size = New System.Drawing.Size(257, 122)
+        Me.ucrTickMarksAxes.Size = New System.Drawing.Size(343, 150)
         Me.ucrTickMarksAxes.TabIndex = 4
         '
         'tbPanel
@@ -214,57 +230,64 @@ Partial Class sdgThemesSub
         Me.tbPanel.Controls.Add(Me.ucrPanelGridMinor)
         Me.tbPanel.Controls.Add(Me.ucrPanelGridMajor)
         Me.tbPanel.Controls.Add(Me.ucrPanelGrid)
-        Me.tbPanel.Location = New System.Drawing.Point(4, 22)
+        Me.tbPanel.Location = New System.Drawing.Point(4, 25)
+        Me.tbPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbPanel.Name = "tbPanel"
-        Me.tbPanel.Size = New System.Drawing.Size(519, 461)
+        Me.tbPanel.Size = New System.Drawing.Size(695, 570)
         Me.tbPanel.TabIndex = 3
         Me.tbPanel.Text = "Panel"
         Me.tbPanel.UseVisualStyleBackColor = True
         '
         'ucrPanelGridMinor
         '
-        Me.ucrPanelGridMinor.Location = New System.Drawing.Point(261, 31)
+        Me.ucrPanelGridMinor.Location = New System.Drawing.Point(348, 38)
+        Me.ucrPanelGridMinor.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrPanelGridMinor.Name = "ucrPanelGridMinor"
-        Me.ucrPanelGridMinor.Size = New System.Drawing.Size(254, 124)
+        Me.ucrPanelGridMinor.Size = New System.Drawing.Size(339, 153)
         Me.ucrPanelGridMinor.TabIndex = 4
         '
         'ucrPanelGridMajor
         '
-        Me.ucrPanelGridMajor.Location = New System.Drawing.Point(6, 31)
+        Me.ucrPanelGridMajor.Location = New System.Drawing.Point(8, 38)
+        Me.ucrPanelGridMajor.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrPanelGridMajor.Name = "ucrPanelGridMajor"
-        Me.ucrPanelGridMajor.Size = New System.Drawing.Size(254, 124)
+        Me.ucrPanelGridMajor.Size = New System.Drawing.Size(339, 153)
         Me.ucrPanelGridMajor.TabIndex = 3
         '
         'ucrPanelGrid
         '
-        Me.ucrPanelGrid.Location = New System.Drawing.Point(3, 31)
+        Me.ucrPanelGrid.Location = New System.Drawing.Point(4, 38)
+        Me.ucrPanelGrid.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrPanelGrid.Name = "ucrPanelGrid"
-        Me.ucrPanelGrid.Size = New System.Drawing.Size(254, 124)
+        Me.ucrPanelGrid.Size = New System.Drawing.Size(339, 153)
         Me.ucrPanelGrid.TabIndex = 2
         '
         'tbBackground
         '
         Me.tbBackground.Controls.Add(Me.ucrPanelBackground)
         Me.tbBackground.Controls.Add(Me.ucrPanelBorder)
-        Me.tbBackground.Location = New System.Drawing.Point(4, 22)
+        Me.tbBackground.Location = New System.Drawing.Point(4, 25)
+        Me.tbBackground.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbBackground.Name = "tbBackground"
-        Me.tbBackground.Size = New System.Drawing.Size(519, 461)
+        Me.tbBackground.Size = New System.Drawing.Size(695, 570)
         Me.tbBackground.TabIndex = 4
         Me.tbBackground.Text = "Background"
         Me.tbBackground.UseVisualStyleBackColor = True
         '
         'ucrPanelBackground
         '
-        Me.ucrPanelBackground.Location = New System.Drawing.Point(0, 144)
+        Me.ucrPanelBackground.Location = New System.Drawing.Point(0, 177)
+        Me.ucrPanelBackground.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrPanelBackground.Name = "ucrPanelBackground"
-        Me.ucrPanelBackground.Size = New System.Drawing.Size(253, 132)
+        Me.ucrPanelBackground.Size = New System.Drawing.Size(337, 162)
         Me.ucrPanelBackground.TabIndex = 1
         '
         'ucrPanelBorder
         '
-        Me.ucrPanelBorder.Location = New System.Drawing.Point(0, 6)
+        Me.ucrPanelBorder.Location = New System.Drawing.Point(0, 7)
+        Me.ucrPanelBorder.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrPanelBorder.Name = "ucrPanelBorder"
-        Me.ucrPanelBorder.Size = New System.Drawing.Size(253, 132)
+        Me.ucrPanelBorder.Size = New System.Drawing.Size(337, 162)
         Me.ucrPanelBorder.TabIndex = 0
         '
         'tbLegend
@@ -272,9 +295,10 @@ Partial Class sdgThemesSub
         Me.tbLegend.Controls.Add(Me.GroupBox1)
         Me.tbLegend.Controls.Add(Me.grpLegendPosition)
         Me.tbLegend.Controls.Add(Me.ucrChkRemoveLegend)
-        Me.tbLegend.Location = New System.Drawing.Point(4, 22)
+        Me.tbLegend.Location = New System.Drawing.Point(4, 25)
+        Me.tbLegend.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbLegend.Name = "tbLegend"
-        Me.tbLegend.Size = New System.Drawing.Size(519, 461)
+        Me.tbLegend.Size = New System.Drawing.Size(695, 570)
         Me.tbLegend.TabIndex = 5
         Me.tbLegend.Text = "Legend"
         Me.tbLegend.UseVisualStyleBackColor = True
@@ -282,9 +306,11 @@ Partial Class sdgThemesSub
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.ucrChkLegTitleTextSize)
-        Me.GroupBox1.Location = New System.Drawing.Point(6, 126)
+        Me.GroupBox1.Location = New System.Drawing.Point(8, 155)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(413, 100)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(551, 123)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
@@ -292,9 +318,10 @@ Partial Class sdgThemesSub
         'ucrChkLegTitleTextSize
         '
         Me.ucrChkLegTitleTextSize.Checked = False
-        Me.ucrChkLegTitleTextSize.Location = New System.Drawing.Point(3, 19)
+        Me.ucrChkLegTitleTextSize.Location = New System.Drawing.Point(4, 23)
+        Me.ucrChkLegTitleTextSize.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkLegTitleTextSize.Name = "ucrChkLegTitleTextSize"
-        Me.ucrChkLegTitleTextSize.Size = New System.Drawing.Size(100, 20)
+        Me.ucrChkLegTitleTextSize.Size = New System.Drawing.Size(133, 25)
         Me.ucrChkLegTitleTextSize.TabIndex = 5
         '
         'grpLegendPosition
@@ -307,9 +334,11 @@ Partial Class sdgThemesSub
         Me.grpLegendPosition.Controls.Add(Me.ucrrdoSpecific)
         Me.grpLegendPosition.Controls.Add(Me.UcrInputComboBox1)
         Me.grpLegendPosition.Controls.Add(Me.lblLegendPosition)
-        Me.grpLegendPosition.Location = New System.Drawing.Point(6, 36)
+        Me.grpLegendPosition.Location = New System.Drawing.Point(8, 44)
+        Me.grpLegendPosition.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpLegendPosition.Name = "grpLegendPosition"
-        Me.grpLegendPosition.Size = New System.Drawing.Size(413, 84)
+        Me.grpLegendPosition.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpLegendPosition.Size = New System.Drawing.Size(551, 103)
         Me.grpLegendPosition.TabIndex = 3
         Me.grpLegendPosition.TabStop = False
         Me.grpLegendPosition.Text = "Legend Position"
@@ -317,18 +346,20 @@ Partial Class sdgThemesSub
         'lblYCoord
         '
         Me.lblYCoord.AutoSize = True
-        Me.lblYCoord.Location = New System.Drawing.Point(329, 52)
+        Me.lblYCoord.Location = New System.Drawing.Point(439, 64)
+        Me.lblYCoord.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblYCoord.Name = "lblYCoord"
-        Me.lblYCoord.Size = New System.Drawing.Size(15, 13)
+        Me.lblYCoord.Size = New System.Drawing.Size(18, 16)
         Me.lblYCoord.TabIndex = 8
         Me.lblYCoord.Text = "y:"
         '
         'lblXCoord
         '
         Me.lblXCoord.AutoSize = True
-        Me.lblXCoord.Location = New System.Drawing.Point(239, 52)
+        Me.lblXCoord.Location = New System.Drawing.Point(319, 64)
+        Me.lblXCoord.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblXCoord.Name = "lblXCoord"
-        Me.lblXCoord.Size = New System.Drawing.Size(15, 13)
+        Me.lblXCoord.Size = New System.Drawing.Size(17, 16)
         Me.lblXCoord.TabIndex = 7
         Me.lblXCoord.Text = "x:"
         '
@@ -336,11 +367,12 @@ Partial Class sdgThemesSub
         '
         Me.UcrNud2.DecimalPlaces = New Decimal(New Integer() {0, 0, 0, 0})
         Me.UcrNud2.Increment = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.UcrNud2.Location = New System.Drawing.Point(348, 52)
+        Me.UcrNud2.Location = New System.Drawing.Point(464, 64)
+        Me.UcrNud2.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.UcrNud2.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
         Me.UcrNud2.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
         Me.UcrNud2.Name = "UcrNud2"
-        Me.UcrNud2.Size = New System.Drawing.Size(50, 20)
+        Me.UcrNud2.Size = New System.Drawing.Size(67, 25)
         Me.UcrNud2.TabIndex = 6
         Me.UcrNud2.Value = New Decimal(New Integer() {0, 0, 0, 0})
         '
@@ -348,26 +380,29 @@ Partial Class sdgThemesSub
         '
         Me.UcrNud1.DecimalPlaces = New Decimal(New Integer() {0, 0, 0, 0})
         Me.UcrNud1.Increment = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.UcrNud1.Location = New System.Drawing.Point(258, 51)
+        Me.UcrNud1.Location = New System.Drawing.Point(344, 63)
+        Me.UcrNud1.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.UcrNud1.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
         Me.UcrNud1.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
         Me.UcrNud1.Name = "UcrNud1"
-        Me.UcrNud1.Size = New System.Drawing.Size(50, 20)
+        Me.UcrNud1.Size = New System.Drawing.Size(67, 25)
         Me.UcrNud1.TabIndex = 4
         Me.UcrNud1.Value = New Decimal(New Integer() {0, 0, 0, 0})
         '
         'ucRdoCoordinated
         '
-        Me.ucRdoCoordinated.Location = New System.Drawing.Point(220, 19)
+        Me.ucRdoCoordinated.Location = New System.Drawing.Point(293, 23)
+        Me.ucRdoCoordinated.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucRdoCoordinated.Name = "ucRdoCoordinated"
-        Me.ucRdoCoordinated.Size = New System.Drawing.Size(100, 20)
+        Me.ucRdoCoordinated.Size = New System.Drawing.Size(133, 25)
         Me.ucRdoCoordinated.TabIndex = 5
         '
         'ucrrdoSpecific
         '
-        Me.ucrrdoSpecific.Location = New System.Drawing.Point(9, 19)
+        Me.ucrrdoSpecific.Location = New System.Drawing.Point(12, 23)
+        Me.ucrrdoSpecific.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrrdoSpecific.Name = "ucrrdoSpecific"
-        Me.ucrrdoSpecific.Size = New System.Drawing.Size(100, 20)
+        Me.ucrrdoSpecific.Size = New System.Drawing.Size(133, 25)
         Me.ucrrdoSpecific.TabIndex = 4
         '
         'UcrInputComboBox1
@@ -375,43 +410,48 @@ Partial Class sdgThemesSub
         Me.UcrInputComboBox1.AddQuotesIfUnrecognised = True
         Me.UcrInputComboBox1.GetSetSelectedIndex = -1
         Me.UcrInputComboBox1.IsReadOnly = False
-        Me.UcrInputComboBox1.Location = New System.Drawing.Point(59, 51)
+        Me.UcrInputComboBox1.Location = New System.Drawing.Point(79, 63)
+        Me.UcrInputComboBox1.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.UcrInputComboBox1.Name = "UcrInputComboBox1"
-        Me.UcrInputComboBox1.Size = New System.Drawing.Size(137, 21)
+        Me.UcrInputComboBox1.Size = New System.Drawing.Size(183, 26)
         Me.UcrInputComboBox1.TabIndex = 0
         '
         'lblLegendPosition
         '
         Me.lblLegendPosition.AutoSize = True
-        Me.lblLegendPosition.Location = New System.Drawing.Point(6, 52)
+        Me.lblLegendPosition.Location = New System.Drawing.Point(8, 64)
+        Me.lblLegendPosition.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblLegendPosition.Name = "lblLegendPosition"
-        Me.lblLegendPosition.Size = New System.Drawing.Size(47, 13)
+        Me.lblLegendPosition.Size = New System.Drawing.Size(59, 16)
         Me.lblLegendPosition.TabIndex = 1
         Me.lblLegendPosition.Text = "Position:"
         '
         'ucrChkRemoveLegend
         '
         Me.ucrChkRemoveLegend.Checked = False
-        Me.ucrChkRemoveLegend.Location = New System.Drawing.Point(9, 10)
+        Me.ucrChkRemoveLegend.Location = New System.Drawing.Point(12, 12)
+        Me.ucrChkRemoveLegend.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkRemoveLegend.Name = "ucrChkRemoveLegend"
-        Me.ucrChkRemoveLegend.Size = New System.Drawing.Size(100, 20)
+        Me.ucrChkRemoveLegend.Size = New System.Drawing.Size(133, 25)
         Me.ucrChkRemoveLegend.TabIndex = 2
         '
         'ucrBaseSubdialog
         '
-        Me.ucrBaseSubdialog.Location = New System.Drawing.Point(182, 494)
+        Me.ucrBaseSubdialog.Location = New System.Drawing.Point(243, 608)
+        Me.ucrBaseSubdialog.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBaseSubdialog.Name = "ucrBaseSubdialog"
-        Me.ucrBaseSubdialog.Size = New System.Drawing.Size(157, 30)
+        Me.ucrBaseSubdialog.Size = New System.Drawing.Size(209, 37)
         Me.ucrBaseSubdialog.TabIndex = 2
         '
         'sdgThemesSub
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(531, 529)
+        Me.ClientSize = New System.Drawing.Size(708, 652)
         Me.Controls.Add(Me.ucrBaseSubdialog)
         Me.Controls.Add(Me.TabThemes)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "sdgThemesSub"

@@ -51,35 +51,40 @@ Partial Class dlgExpand
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(13, 227)
+        Me.ucrBase.Location = New System.Drawing.Point(17, 279)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 57)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 70)
         Me.ucrBase.TabIndex = 0
         '
         'ucrAddRemove
         '
         Me.ucrAddRemove.bShowHiddenColumns = False
-        Me.ucrAddRemove.Location = New System.Drawing.Point(12, 12)
+        Me.ucrAddRemove.Location = New System.Drawing.Point(16, 15)
         Me.ucrAddRemove.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrAddRemove.Name = "ucrAddRemove"
-        Me.ucrAddRemove.Size = New System.Drawing.Size(203, 127)
+        Me.ucrAddRemove.Size = New System.Drawing.Size(271, 156)
         Me.ucrAddRemove.TabIndex = 1
         '
         'ucrReceiverExpand
         '
-        Me.ucrReceiverExpand.Location = New System.Drawing.Point(243, 28)
+        Me.ucrReceiverExpand.frmParent = Me
+        Me.ucrReceiverExpand.Location = New System.Drawing.Point(324, 34)
         Me.ucrReceiverExpand.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverExpand.Name = "ucrReceiverExpand"
         Me.ucrReceiverExpand.Selector = Nothing
-        Me.ucrReceiverExpand.Size = New System.Drawing.Size(121, 94)
+        Me.ucrReceiverExpand.Size = New System.Drawing.Size(161, 116)
+        Me.ucrReceiverExpand.strNcFilePath = ""
         Me.ucrReceiverExpand.TabIndex = 2
+        Me.ucrReceiverExpand.ucrSelector = Nothing
         '
         'lblInto
         '
         Me.lblInto.AutoSize = True
-        Me.lblInto.Location = New System.Drawing.Point(290, 12)
+        Me.lblInto.Location = New System.Drawing.Point(387, 15)
+        Me.lblInto.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblInto.Name = "lblInto"
-        Me.lblInto.Size = New System.Drawing.Size(25, 13)
+        Me.lblInto.Size = New System.Drawing.Size(29, 16)
         Me.lblInto.TabIndex = 3
         Me.lblInto.Tag = "Into"
         Me.lblInto.Text = "Into"
@@ -87,25 +92,28 @@ Partial Class dlgExpand
         'cboMatchingColumn
         '
         Me.cboMatchingColumn.FormattingEnabled = True
-        Me.cboMatchingColumn.Location = New System.Drawing.Point(12, 177)
+        Me.cboMatchingColumn.Location = New System.Drawing.Point(16, 218)
+        Me.cboMatchingColumn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboMatchingColumn.Name = "cboMatchingColumn"
-        Me.cboMatchingColumn.Size = New System.Drawing.Size(121, 21)
+        Me.cboMatchingColumn.Size = New System.Drawing.Size(160, 24)
         Me.cboMatchingColumn.TabIndex = 4
         '
         'cboWithColumn
         '
         Me.cboWithColumn.FormattingEnabled = True
-        Me.cboWithColumn.Location = New System.Drawing.Point(243, 177)
+        Me.cboWithColumn.Location = New System.Drawing.Point(324, 218)
+        Me.cboWithColumn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboWithColumn.Name = "cboWithColumn"
-        Me.cboWithColumn.Size = New System.Drawing.Size(121, 21)
+        Me.cboWithColumn.Size = New System.Drawing.Size(160, 24)
         Me.cboWithColumn.TabIndex = 4
         '
         'lblWithColumn
         '
         Me.lblWithColumn.AutoSize = True
-        Me.lblWithColumn.Location = New System.Drawing.Point(249, 151)
+        Me.lblWithColumn.Location = New System.Drawing.Point(332, 186)
+        Me.lblWithColumn.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblWithColumn.Name = "lblWithColumn"
-        Me.lblWithColumn.Size = New System.Drawing.Size(66, 13)
+        Me.lblWithColumn.Size = New System.Drawing.Size(80, 16)
         Me.lblWithColumn.TabIndex = 3
         Me.lblWithColumn.Tag = "With_column"
         Me.lblWithColumn.Text = "With column"
@@ -113,9 +121,10 @@ Partial Class dlgExpand
         'rdoMatchingColumn
         '
         Me.rdoMatchingColumn.AutoSize = True
-        Me.rdoMatchingColumn.Location = New System.Drawing.Point(13, 151)
+        Me.rdoMatchingColumn.Location = New System.Drawing.Point(17, 186)
+        Me.rdoMatchingColumn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoMatchingColumn.Name = "rdoMatchingColumn"
-        Me.rdoMatchingColumn.Size = New System.Drawing.Size(106, 17)
+        Me.rdoMatchingColumn.Size = New System.Drawing.Size(133, 20)
         Me.rdoMatchingColumn.TabIndex = 5
         Me.rdoMatchingColumn.TabStop = True
         Me.rdoMatchingColumn.Tag = "Matching_column"
@@ -125,9 +134,10 @@ Partial Class dlgExpand
         'rdoMatchingValues
         '
         Me.rdoMatchingValues.AutoSize = True
-        Me.rdoMatchingValues.Location = New System.Drawing.Point(12, 204)
+        Me.rdoMatchingValues.Location = New System.Drawing.Point(16, 251)
+        Me.rdoMatchingValues.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoMatchingValues.Name = "rdoMatchingValues"
-        Me.rdoMatchingValues.Size = New System.Drawing.Size(144, 17)
+        Me.rdoMatchingValues.Size = New System.Drawing.Size(179, 20)
         Me.rdoMatchingValues.TabIndex = 5
         Me.rdoMatchingValues.TabStop = True
         Me.rdoMatchingValues.Tag = "or_MatchingValues_1_to_n"
@@ -136,9 +146,9 @@ Partial Class dlgExpand
         '
         'dlgExpand
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(431, 289)
+        Me.ClientSize = New System.Drawing.Size(575, 357)
         Me.Controls.Add(Me.rdoMatchingValues)
         Me.Controls.Add(Me.rdoMatchingColumn)
         Me.Controls.Add(Me.cboWithColumn)
@@ -149,6 +159,7 @@ Partial Class dlgExpand
         Me.Controls.Add(Me.ucrAddRemove)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgExpand"

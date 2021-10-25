@@ -123,10 +123,14 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblSelectedObject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 45</value>
+    <value>333, 55</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblSelectedObject.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblSelectedObject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 13</value>
+    <value>96, 16</value>
   </data>
   <data name="lblSelectedObject.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -150,10 +154,13 @@
     <value>True</value>
   </data>
   <data name="rdoStructure.Location" type="System.Drawing.Point, System.Drawing">
-    <value>256, 116</value>
+    <value>341, 143</value>
+  </data>
+  <data name="rdoStructure.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="rdoStructure.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 17</value>
+    <value>85, 20</value>
   </data>
   <data name="rdoStructure.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -177,10 +184,13 @@
     <value>True</value>
   </data>
   <data name="rdoAllContents.Location" type="System.Drawing.Point, System.Drawing">
-    <value>256, 136</value>
+    <value>341, 167</value>
+  </data>
+  <data name="rdoAllContents.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="rdoAllContents.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 17</value>
+    <value>103, 20</value>
   </data>
   <data name="rdoAllContents.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -204,10 +214,13 @@
     <value>True</value>
   </data>
   <data name="rdoComponent.Location" type="System.Drawing.Point, System.Drawing">
-    <value>256, 158</value>
+    <value>341, 194</value>
+  </data>
+  <data name="rdoComponent.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="rdoComponent.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 17</value>
+    <value>102, 20</value>
   </data>
   <data name="rdoComponent.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -231,10 +244,13 @@
     <value>True</value>
   </data>
   <data name="rdoPrint.Location" type="System.Drawing.Point, System.Drawing">
-    <value>256, 94</value>
+    <value>341, 116</value>
+  </data>
+  <data name="rdoPrint.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="rdoPrint.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 17</value>
+    <value>59, 20</value>
   </data>
   <data name="rdoPrint.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -258,20 +274,19 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>416, 262</value>
+    <value>556, 322</value>
   </data>
   <data name="ucrSelectorForViewObject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 10</value>
+    <value>13, 12</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ucrSelectorForViewObject.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrSelectorForViewObject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 180</value>
+    <value>280, 222</value>
   </data>
   <data name="ucrSelectorForViewObject.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -289,13 +304,13 @@
     <value>6</value>
   </data>
   <data name="ucrBase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 206</value>
+    <value>13, 254</value>
   </data>
   <data name="ucrBase.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+    <value>5, 6, 5, 6</value>
   </data>
   <data name="ucrBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>410, 52</value>
+    <value>547, 64</value>
   </data>
   <data name="ucrBase.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -313,13 +328,13 @@
     <value>7</value>
   </data>
   <data name="ucrPnlContentsToView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 90</value>
+    <value>333, 111</value>
   </data>
   <data name="ucrPnlContentsToView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 8, 6, 8</value>
+    <value>8, 10, 8, 10</value>
   </data>
   <data name="ucrPnlContentsToView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 100</value>
+    <value>160, 123</value>
   </data>
   <data name="ucrPnlContentsToView.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -336,6 +351,9 @@
   <data name="&gt;&gt;ucrPnlContentsToView.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
@@ -349,13 +367,13 @@
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ucrReceiverSelectedObject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 60</value>
+    <value>333, 74</value>
   </data>
   <data name="ucrReceiverSelectedObject.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrReceiverSelectedObject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
+    <value>160, 25</value>
   </data>
   <data name="ucrReceiverSelectedObject.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>

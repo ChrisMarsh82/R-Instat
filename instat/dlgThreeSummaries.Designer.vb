@@ -69,17 +69,19 @@ Partial Class dlgThreeSummaries
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(12, 303)
+        Me.ucrBase.Location = New System.Drawing.Point(16, 373)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 63)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 78)
         Me.ucrBase.TabIndex = 0
         '
         'lblLinetype
         '
         Me.lblLinetype.AutoSize = True
-        Me.lblLinetype.Location = New System.Drawing.Point(12, 214)
+        Me.lblLinetype.Location = New System.Drawing.Point(16, 263)
+        Me.lblLinetype.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblLinetype.Name = "lblLinetype"
-        Me.lblLinetype.Size = New System.Drawing.Size(39, 13)
+        Me.lblLinetype.Size = New System.Drawing.Size(49, 16)
         Me.lblLinetype.TabIndex = 1
         Me.lblLinetype.Tag = "Line_type"
         Me.lblLinetype.Text = "Label1"
@@ -87,9 +89,10 @@ Partial Class dlgThreeSummaries
         'lblLineWidth
         '
         Me.lblLineWidth.AutoSize = True
-        Me.lblLineWidth.Location = New System.Drawing.Point(54, 265)
+        Me.lblLineWidth.Location = New System.Drawing.Point(72, 326)
+        Me.lblLineWidth.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblLineWidth.Name = "lblLineWidth"
-        Me.lblLineWidth.Size = New System.Drawing.Size(39, 13)
+        Me.lblLineWidth.Size = New System.Drawing.Size(49, 16)
         Me.lblLineWidth.TabIndex = 2
         Me.lblLineWidth.Tag = "Line_Width"
         Me.lblLineWidth.Text = "Label2"
@@ -97,18 +100,20 @@ Partial Class dlgThreeSummaries
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(367, 17)
+        Me.Label3.Location = New System.Drawing.Point(489, 21)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(125, 13)
+        Me.Label3.Size = New System.Drawing.Size(158, 16)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Data list not implemented"
         '
         'lblTitle
         '
         Me.lblTitle.AutoSize = True
-        Me.lblTitle.Location = New System.Drawing.Point(54, 20)
+        Me.lblTitle.Location = New System.Drawing.Point(72, 25)
+        Me.lblTitle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(39, 13)
+        Me.lblTitle.Size = New System.Drawing.Size(49, 16)
         Me.lblTitle.TabIndex = 4
         Me.lblTitle.Tag = "Title"
         Me.lblTitle.Text = "Label4"
@@ -116,18 +121,20 @@ Partial Class dlgThreeSummaries
         'lblVariable
         '
         Me.lblVariable.AutoSize = True
-        Me.lblVariable.Location = New System.Drawing.Point(54, 42)
+        Me.lblVariable.Location = New System.Drawing.Point(72, 52)
+        Me.lblVariable.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblVariable.Name = "lblVariable"
-        Me.lblVariable.Size = New System.Drawing.Size(39, 13)
+        Me.lblVariable.Size = New System.Drawing.Size(49, 16)
         Me.lblVariable.TabIndex = 5
         Me.lblVariable.Text = "Label5"
         '
         'lblYlabel
         '
         Me.lblYlabel.AutoSize = True
-        Me.lblYlabel.Location = New System.Drawing.Point(54, 62)
+        Me.lblYlabel.Location = New System.Drawing.Point(72, 76)
+        Me.lblYlabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblYlabel.Name = "lblYlabel"
-        Me.lblYlabel.Size = New System.Drawing.Size(39, 13)
+        Me.lblYlabel.Size = New System.Drawing.Size(49, 16)
         Me.lblYlabel.TabIndex = 6
         Me.lblYlabel.Tag = "Y_label"
         Me.lblYlabel.Text = "Label6"
@@ -135,9 +142,10 @@ Partial Class dlgThreeSummaries
         'lblPlotType
         '
         Me.lblPlotType.AutoSize = True
-        Me.lblPlotType.Location = New System.Drawing.Point(231, 256)
+        Me.lblPlotType.Location = New System.Drawing.Point(308, 315)
+        Me.lblPlotType.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPlotType.Name = "lblPlotType"
-        Me.lblPlotType.Size = New System.Drawing.Size(39, 13)
+        Me.lblPlotType.Size = New System.Drawing.Size(49, 16)
         Me.lblPlotType.TabIndex = 7
         Me.lblPlotType.Tag = "Plot_Type"
         Me.lblPlotType.Text = "Label7"
@@ -145,9 +153,10 @@ Partial Class dlgThreeSummaries
         'lblMaximum
         '
         Me.lblMaximum.AutoSize = True
-        Me.lblMaximum.Location = New System.Drawing.Point(6, 22)
+        Me.lblMaximum.Location = New System.Drawing.Point(8, 27)
+        Me.lblMaximum.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblMaximum.Name = "lblMaximum"
-        Me.lblMaximum.Size = New System.Drawing.Size(39, 13)
+        Me.lblMaximum.Size = New System.Drawing.Size(49, 16)
         Me.lblMaximum.TabIndex = 8
         Me.lblMaximum.Tag = "Mean"
         Me.lblMaximum.Text = "Label8"
@@ -155,89 +164,101 @@ Partial Class dlgThreeSummaries
         'lblMean
         '
         Me.lblMean.AutoSize = True
-        Me.lblMean.Location = New System.Drawing.Point(91, 55)
+        Me.lblMean.Location = New System.Drawing.Point(121, 68)
+        Me.lblMean.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblMean.Name = "lblMean"
-        Me.lblMean.Size = New System.Drawing.Size(39, 13)
+        Me.lblMean.Size = New System.Drawing.Size(49, 16)
         Me.lblMean.TabIndex = 9
         Me.lblMean.Text = "Label9"
         '
         'lblMinimum
         '
         Me.lblMinimum.AutoSize = True
-        Me.lblMinimum.Location = New System.Drawing.Point(6, 87)
+        Me.lblMinimum.Location = New System.Drawing.Point(8, 107)
+        Me.lblMinimum.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblMinimum.Name = "lblMinimum"
-        Me.lblMinimum.Size = New System.Drawing.Size(45, 13)
+        Me.lblMinimum.Size = New System.Drawing.Size(56, 16)
         Me.lblMinimum.TabIndex = 10
         Me.lblMinimum.Text = "Label10"
         '
         'nudlineWidth
         '
-        Me.nudlineWidth.Location = New System.Drawing.Point(142, 254)
+        Me.nudlineWidth.Location = New System.Drawing.Point(189, 313)
+        Me.nudlineWidth.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudlineWidth.Name = "nudlineWidth"
-        Me.nudlineWidth.Size = New System.Drawing.Size(49, 20)
+        Me.nudlineWidth.Size = New System.Drawing.Size(65, 22)
         Me.nudlineWidth.TabIndex = 11
         '
         'nudPlotCharacter
         '
-        Me.nudPlotCharacter.Location = New System.Drawing.Point(195, 207)
+        Me.nudPlotCharacter.Location = New System.Drawing.Point(260, 255)
+        Me.nudPlotCharacter.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudPlotCharacter.Name = "nudPlotCharacter"
-        Me.nudPlotCharacter.Size = New System.Drawing.Size(49, 20)
+        Me.nudPlotCharacter.Size = New System.Drawing.Size(65, 22)
         Me.nudPlotCharacter.TabIndex = 12
         '
         'nudLineType
         '
-        Me.nudLineType.Location = New System.Drawing.Point(66, 207)
+        Me.nudLineType.Location = New System.Drawing.Point(88, 255)
+        Me.nudLineType.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudLineType.Name = "nudLineType"
-        Me.nudLineType.Size = New System.Drawing.Size(49, 20)
+        Me.nudLineType.Size = New System.Drawing.Size(65, 22)
         Me.nudLineType.TabIndex = 13
         '
         'txtColourMaximum
         '
-        Me.txtColourMaximum.Location = New System.Drawing.Point(109, 19)
+        Me.txtColourMaximum.Location = New System.Drawing.Point(145, 23)
+        Me.txtColourMaximum.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtColourMaximum.Name = "txtColourMaximum"
-        Me.txtColourMaximum.Size = New System.Drawing.Size(100, 20)
+        Me.txtColourMaximum.Size = New System.Drawing.Size(132, 22)
         Me.txtColourMaximum.TabIndex = 16
         '
         'txtColourMean
         '
-        Me.txtColourMean.Location = New System.Drawing.Point(183, 52)
+        Me.txtColourMean.Location = New System.Drawing.Point(244, 64)
+        Me.txtColourMean.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtColourMean.Name = "txtColourMean"
-        Me.txtColourMean.Size = New System.Drawing.Size(100, 20)
+        Me.txtColourMean.Size = New System.Drawing.Size(132, 22)
         Me.txtColourMean.TabIndex = 17
         '
         'txtPlotType
         '
-        Me.txtPlotType.Location = New System.Drawing.Point(289, 249)
+        Me.txtPlotType.Location = New System.Drawing.Point(385, 306)
+        Me.txtPlotType.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtPlotType.Name = "txtPlotType"
-        Me.txtPlotType.Size = New System.Drawing.Size(149, 20)
+        Me.txtPlotType.Size = New System.Drawing.Size(197, 22)
         Me.txtPlotType.TabIndex = 18
         '
         'txtColourMinimum
         '
-        Me.txtColourMinimum.Location = New System.Drawing.Point(109, 87)
+        Me.txtColourMinimum.Location = New System.Drawing.Point(145, 107)
+        Me.txtColourMinimum.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtColourMinimum.Name = "txtColourMinimum"
-        Me.txtColourMinimum.Size = New System.Drawing.Size(100, 20)
+        Me.txtColourMinimum.Size = New System.Drawing.Size(132, 22)
         Me.txtColourMinimum.TabIndex = 19
         '
         'txtYlabel
         '
-        Me.txtYlabel.Location = New System.Drawing.Point(142, 59)
+        Me.txtYlabel.Location = New System.Drawing.Point(189, 73)
+        Me.txtYlabel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtYlabel.Name = "txtYlabel"
-        Me.txtYlabel.Size = New System.Drawing.Size(210, 20)
+        Me.txtYlabel.Size = New System.Drawing.Size(279, 22)
         Me.txtYlabel.TabIndex = 20
         '
         'txtVariable
         '
-        Me.txtVariable.Location = New System.Drawing.Point(142, 39)
+        Me.txtVariable.Location = New System.Drawing.Point(189, 48)
+        Me.txtVariable.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtVariable.Name = "txtVariable"
-        Me.txtVariable.Size = New System.Drawing.Size(210, 20)
+        Me.txtVariable.Size = New System.Drawing.Size(279, 22)
         Me.txtVariable.TabIndex = 21
         '
         'txtTitle
         '
-        Me.txtTitle.Location = New System.Drawing.Point(142, 17)
+        Me.txtTitle.Location = New System.Drawing.Point(189, 21)
+        Me.txtTitle.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtTitle.Name = "txtTitle"
-        Me.txtTitle.Size = New System.Drawing.Size(210, 20)
+        Me.txtTitle.Size = New System.Drawing.Size(279, 22)
         Me.txtTitle.TabIndex = 22
         '
         'grpColour
@@ -248,9 +269,11 @@ Partial Class dlgThreeSummaries
         Me.grpColour.Controls.Add(Me.lblMinimum)
         Me.grpColour.Controls.Add(Me.lblMean)
         Me.grpColour.Controls.Add(Me.lblMaximum)
-        Me.grpColour.Location = New System.Drawing.Point(12, 94)
+        Me.grpColour.Location = New System.Drawing.Point(16, 116)
+        Me.grpColour.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpColour.Name = "grpColour"
-        Me.grpColour.Size = New System.Drawing.Size(411, 107)
+        Me.grpColour.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpColour.Size = New System.Drawing.Size(548, 132)
         Me.grpColour.TabIndex = 23
         Me.grpColour.TabStop = False
         Me.grpColour.Tag = "Colour"
@@ -259,18 +282,19 @@ Partial Class dlgThreeSummaries
         'lblPlotCharacter
         '
         Me.lblPlotCharacter.AutoSize = True
-        Me.lblPlotCharacter.Location = New System.Drawing.Point(152, 214)
+        Me.lblPlotCharacter.Location = New System.Drawing.Point(203, 263)
+        Me.lblPlotCharacter.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPlotCharacter.Name = "lblPlotCharacter"
-        Me.lblPlotCharacter.Size = New System.Drawing.Size(39, 13)
+        Me.lblPlotCharacter.Size = New System.Drawing.Size(49, 16)
         Me.lblPlotCharacter.TabIndex = 24
         Me.lblPlotCharacter.Tag = "lblPlotCharacter"
         Me.lblPlotCharacter.Text = "Label4"
         '
         'dlgThreeSummaries
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(555, 378)
+        Me.ClientSize = New System.Drawing.Size(740, 466)
         Me.Controls.Add(Me.lblPlotCharacter)
         Me.Controls.Add(Me.grpColour)
         Me.Controls.Add(Me.txtTitle)
@@ -289,6 +313,7 @@ Partial Class dlgThreeSummaries
         Me.Controls.Add(Me.lblLinetype)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgThreeSummaries"

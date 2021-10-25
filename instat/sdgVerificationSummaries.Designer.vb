@@ -55,9 +55,10 @@ Partial Class sdgVerificationSummaries
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(212, 268)
+        Me.ucrBase.Location = New System.Drawing.Point(283, 330)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(154, 30)
+        Me.ucrBase.Size = New System.Drawing.Size(205, 37)
         Me.ucrBase.TabIndex = 1
         '
         'tbSummaries
@@ -65,38 +66,42 @@ Partial Class sdgVerificationSummaries
         Me.tbSummaries.Controls.Add(Me.tbContinuous)
         Me.tbSummaries.Controls.Add(Me.tbBinary)
         Me.tbSummaries.Controls.Add(Me.tbCategorical)
-        Me.tbSummaries.Location = New System.Drawing.Point(12, 12)
+        Me.tbSummaries.Location = New System.Drawing.Point(16, 15)
+        Me.tbSummaries.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbSummaries.Name = "tbSummaries"
         Me.tbSummaries.SelectedIndex = 0
-        Me.tbSummaries.Size = New System.Drawing.Size(557, 255)
+        Me.tbSummaries.Size = New System.Drawing.Size(743, 314)
         Me.tbSummaries.TabIndex = 0
         '
         'tbContinuous
         '
         Me.tbContinuous.Controls.Add(Me.ucrContinuousVerification)
-        Me.tbContinuous.Location = New System.Drawing.Point(4, 22)
+        Me.tbContinuous.Location = New System.Drawing.Point(4, 25)
+        Me.tbContinuous.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbContinuous.Name = "tbContinuous"
-        Me.tbContinuous.Padding = New System.Windows.Forms.Padding(3)
-        Me.tbContinuous.Size = New System.Drawing.Size(549, 229)
+        Me.tbContinuous.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbContinuous.Size = New System.Drawing.Size(735, 285)
         Me.tbContinuous.TabIndex = 0
         Me.tbContinuous.Text = "Continuous"
         Me.tbContinuous.UseVisualStyleBackColor = True
         '
         'ucrContinuousVerification
         '
-        Me.ucrContinuousVerification.Location = New System.Drawing.Point(-1, 6)
+        Me.ucrContinuousVerification.Location = New System.Drawing.Point(-1, 7)
+        Me.ucrContinuousVerification.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrContinuousVerification.Name = "ucrContinuousVerification"
-        Me.ucrContinuousVerification.Size = New System.Drawing.Size(544, 192)
+        Me.ucrContinuousVerification.Size = New System.Drawing.Size(725, 236)
         Me.ucrContinuousVerification.TabIndex = 0
         '
         'tbBinary
         '
         Me.tbBinary.Controls.Add(Me.grpOrdinary)
         Me.tbBinary.Controls.Add(Me.grpExtreme)
-        Me.tbBinary.Location = New System.Drawing.Point(4, 22)
+        Me.tbBinary.Location = New System.Drawing.Point(4, 25)
+        Me.tbBinary.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbBinary.Name = "tbBinary"
-        Me.tbBinary.Padding = New System.Windows.Forms.Padding(3)
-        Me.tbBinary.Size = New System.Drawing.Size(549, 229)
+        Me.tbBinary.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbBinary.Size = New System.Drawing.Size(735, 285)
         Me.tbBinary.TabIndex = 1
         Me.tbBinary.Text = "Binary"
         Me.tbBinary.UseVisualStyleBackColor = True
@@ -110,9 +115,11 @@ Partial Class sdgVerificationSummaries
         Me.grpOrdinary.Controls.Add(Me.ucrChkEquitableThreatScore)
         Me.grpOrdinary.Controls.Add(Me.ucrChkPercentCorrect)
         Me.grpOrdinary.Controls.Add(Me.ucrChkThreatScore)
-        Me.grpOrdinary.Location = New System.Drawing.Point(6, 6)
+        Me.grpOrdinary.Location = New System.Drawing.Point(8, 7)
+        Me.grpOrdinary.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpOrdinary.Name = "grpOrdinary"
-        Me.grpOrdinary.Size = New System.Drawing.Size(537, 104)
+        Me.grpOrdinary.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpOrdinary.Size = New System.Drawing.Size(716, 128)
         Me.grpOrdinary.TabIndex = 13
         Me.grpOrdinary.TabStop = False
         Me.grpOrdinary.Text = "Ordinary"
@@ -120,57 +127,64 @@ Partial Class sdgVerificationSummaries
         'ucrChkHitRate
         '
         Me.ucrChkHitRate.Checked = False
-        Me.ucrChkHitRate.Location = New System.Drawing.Point(6, 19)
+        Me.ucrChkHitRate.Location = New System.Drawing.Point(8, 23)
+        Me.ucrChkHitRate.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkHitRate.Name = "ucrChkHitRate"
-        Me.ucrChkHitRate.Size = New System.Drawing.Size(136, 20)
+        Me.ucrChkHitRate.Size = New System.Drawing.Size(181, 25)
         Me.ucrChkHitRate.TabIndex = 4
         '
         'ucrChkFalseAlarmRatio
         '
         Me.ucrChkFalseAlarmRatio.Checked = False
-        Me.ucrChkFalseAlarmRatio.Location = New System.Drawing.Point(6, 79)
+        Me.ucrChkFalseAlarmRatio.Location = New System.Drawing.Point(8, 97)
+        Me.ucrChkFalseAlarmRatio.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkFalseAlarmRatio.Name = "ucrChkFalseAlarmRatio"
-        Me.ucrChkFalseAlarmRatio.Size = New System.Drawing.Size(118, 20)
+        Me.ucrChkFalseAlarmRatio.Size = New System.Drawing.Size(157, 25)
         Me.ucrChkFalseAlarmRatio.TabIndex = 1
         '
         'ucrChkBias
         '
         Me.ucrChkBias.Checked = False
-        Me.ucrChkBias.Location = New System.Drawing.Point(185, 59)
+        Me.ucrChkBias.Location = New System.Drawing.Point(247, 73)
+        Me.ucrChkBias.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkBias.Name = "ucrChkBias"
-        Me.ucrChkBias.Size = New System.Drawing.Size(100, 20)
+        Me.ucrChkBias.Size = New System.Drawing.Size(133, 25)
         Me.ucrChkBias.TabIndex = 6
         '
         'ucrChkHeidkeSkillScore
         '
         Me.ucrChkHeidkeSkillScore.Checked = False
-        Me.ucrChkHeidkeSkillScore.Location = New System.Drawing.Point(185, 19)
+        Me.ucrChkHeidkeSkillScore.Location = New System.Drawing.Point(247, 23)
+        Me.ucrChkHeidkeSkillScore.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkHeidkeSkillScore.Name = "ucrChkHeidkeSkillScore"
-        Me.ucrChkHeidkeSkillScore.Size = New System.Drawing.Size(100, 20)
+        Me.ucrChkHeidkeSkillScore.Size = New System.Drawing.Size(133, 25)
         Me.ucrChkHeidkeSkillScore.TabIndex = 8
         '
         'ucrChkEquitableThreatScore
         '
         Me.ucrChkEquitableThreatScore.Checked = False
-        Me.ucrChkEquitableThreatScore.Location = New System.Drawing.Point(6, 59)
+        Me.ucrChkEquitableThreatScore.Location = New System.Drawing.Point(8, 73)
+        Me.ucrChkEquitableThreatScore.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkEquitableThreatScore.Name = "ucrChkEquitableThreatScore"
-        Me.ucrChkEquitableThreatScore.Size = New System.Drawing.Size(136, 20)
+        Me.ucrChkEquitableThreatScore.Size = New System.Drawing.Size(181, 25)
         Me.ucrChkEquitableThreatScore.TabIndex = 2
         '
         'ucrChkPercentCorrect
         '
         Me.ucrChkPercentCorrect.Checked = False
-        Me.ucrChkPercentCorrect.Location = New System.Drawing.Point(185, 39)
+        Me.ucrChkPercentCorrect.Location = New System.Drawing.Point(247, 48)
+        Me.ucrChkPercentCorrect.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkPercentCorrect.Name = "ucrChkPercentCorrect"
-        Me.ucrChkPercentCorrect.Size = New System.Drawing.Size(100, 20)
+        Me.ucrChkPercentCorrect.Size = New System.Drawing.Size(133, 25)
         Me.ucrChkPercentCorrect.TabIndex = 7
         '
         'ucrChkThreatScore
         '
         Me.ucrChkThreatScore.Checked = False
-        Me.ucrChkThreatScore.Location = New System.Drawing.Point(6, 39)
+        Me.ucrChkThreatScore.Location = New System.Drawing.Point(8, 48)
+        Me.ucrChkThreatScore.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkThreatScore.Name = "ucrChkThreatScore"
-        Me.ucrChkThreatScore.Size = New System.Drawing.Size(136, 20)
+        Me.ucrChkThreatScore.Size = New System.Drawing.Size(181, 25)
         Me.ucrChkThreatScore.TabIndex = 3
         '
         'grpExtreme
@@ -179,9 +193,11 @@ Partial Class sdgVerificationSummaries
         Me.grpExtreme.Controls.Add(Me.ucrChkExremalDependencyIndex)
         Me.grpExtreme.Controls.Add(Me.ucrChkExtremeDependencyScore)
         Me.grpExtreme.Controls.Add(Me.ucrChkSymmetricExtremalDependenceIndex)
-        Me.grpExtreme.Location = New System.Drawing.Point(6, 109)
+        Me.grpExtreme.Location = New System.Drawing.Point(8, 134)
+        Me.grpExtreme.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpExtreme.Name = "grpExtreme"
-        Me.grpExtreme.Size = New System.Drawing.Size(537, 71)
+        Me.grpExtreme.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpExtreme.Size = New System.Drawing.Size(716, 87)
         Me.grpExtreme.TabIndex = 12
         Me.grpExtreme.TabStop = False
         Me.grpExtreme.Text = "Extreme"
@@ -189,33 +205,37 @@ Partial Class sdgVerificationSummaries
         'ucrChkSymmetricExtremeDependencyScore
         '
         Me.ucrChkSymmetricExtremeDependencyScore.Checked = False
-        Me.ucrChkSymmetricExtremeDependencyScore.Location = New System.Drawing.Point(6, 19)
+        Me.ucrChkSymmetricExtremeDependencyScore.Location = New System.Drawing.Point(8, 23)
+        Me.ucrChkSymmetricExtremeDependencyScore.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkSymmetricExtremeDependencyScore.Name = "ucrChkSymmetricExtremeDependencyScore"
-        Me.ucrChkSymmetricExtremeDependencyScore.Size = New System.Drawing.Size(171, 20)
+        Me.ucrChkSymmetricExtremeDependencyScore.Size = New System.Drawing.Size(228, 25)
         Me.ucrChkSymmetricExtremeDependencyScore.TabIndex = 10
         '
         'ucrChkExremalDependencyIndex
         '
         Me.ucrChkExremalDependencyIndex.Checked = False
-        Me.ucrChkExremalDependencyIndex.Location = New System.Drawing.Point(185, 45)
+        Me.ucrChkExremalDependencyIndex.Location = New System.Drawing.Point(247, 55)
+        Me.ucrChkExremalDependencyIndex.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkExremalDependencyIndex.Name = "ucrChkExremalDependencyIndex"
-        Me.ucrChkExremalDependencyIndex.Size = New System.Drawing.Size(181, 20)
+        Me.ucrChkExremalDependencyIndex.Size = New System.Drawing.Size(241, 25)
         Me.ucrChkExremalDependencyIndex.TabIndex = 9
         '
         'ucrChkExtremeDependencyScore
         '
         Me.ucrChkExtremeDependencyScore.Checked = False
-        Me.ucrChkExtremeDependencyScore.Location = New System.Drawing.Point(6, 45)
+        Me.ucrChkExtremeDependencyScore.Location = New System.Drawing.Point(8, 55)
+        Me.ucrChkExtremeDependencyScore.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkExtremeDependencyScore.Name = "ucrChkExtremeDependencyScore"
-        Me.ucrChkExtremeDependencyScore.Size = New System.Drawing.Size(171, 20)
+        Me.ucrChkExtremeDependencyScore.Size = New System.Drawing.Size(228, 25)
         Me.ucrChkExtremeDependencyScore.TabIndex = 11
         '
         'ucrChkSymmetricExtremalDependenceIndex
         '
         Me.ucrChkSymmetricExtremalDependenceIndex.Checked = False
-        Me.ucrChkSymmetricExtremalDependenceIndex.Location = New System.Drawing.Point(185, 19)
+        Me.ucrChkSymmetricExtremalDependenceIndex.Location = New System.Drawing.Point(247, 23)
+        Me.ucrChkSymmetricExtremalDependenceIndex.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkSymmetricExtremalDependenceIndex.Name = "ucrChkSymmetricExtremalDependenceIndex"
-        Me.ucrChkSymmetricExtremalDependenceIndex.Size = New System.Drawing.Size(179, 20)
+        Me.ucrChkSymmetricExtremalDependenceIndex.Size = New System.Drawing.Size(239, 25)
         Me.ucrChkSymmetricExtremalDependenceIndex.TabIndex = 5
         '
         'tbCategorical
@@ -224,10 +244,11 @@ Partial Class sdgVerificationSummaries
         Me.tbCategorical.Controls.Add(Me.ucrChkCatHeidkeSkillScore)
         Me.tbCategorical.Controls.Add(Me.ucrChkCatPierceSkillScore)
         Me.tbCategorical.Controls.Add(Me.ucrChkGerrityScore)
-        Me.tbCategorical.Location = New System.Drawing.Point(4, 22)
+        Me.tbCategorical.Location = New System.Drawing.Point(4, 25)
+        Me.tbCategorical.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbCategorical.Name = "tbCategorical"
-        Me.tbCategorical.Padding = New System.Windows.Forms.Padding(3)
-        Me.tbCategorical.Size = New System.Drawing.Size(549, 229)
+        Me.tbCategorical.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbCategorical.Size = New System.Drawing.Size(735, 285)
         Me.tbCategorical.TabIndex = 2
         Me.tbCategorical.Text = "Categorical"
         Me.tbCategorical.UseVisualStyleBackColor = True
@@ -235,43 +256,48 @@ Partial Class sdgVerificationSummaries
         'ucrChkCatPercentCorrect
         '
         Me.ucrChkCatPercentCorrect.Checked = False
-        Me.ucrChkCatPercentCorrect.Location = New System.Drawing.Point(14, 18)
+        Me.ucrChkCatPercentCorrect.Location = New System.Drawing.Point(19, 22)
+        Me.ucrChkCatPercentCorrect.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkCatPercentCorrect.Name = "ucrChkCatPercentCorrect"
-        Me.ucrChkCatPercentCorrect.Size = New System.Drawing.Size(100, 20)
+        Me.ucrChkCatPercentCorrect.Size = New System.Drawing.Size(133, 25)
         Me.ucrChkCatPercentCorrect.TabIndex = 4
         '
         'ucrChkCatHeidkeSkillScore
         '
         Me.ucrChkCatHeidkeSkillScore.Checked = False
-        Me.ucrChkCatHeidkeSkillScore.Location = New System.Drawing.Point(14, 40)
+        Me.ucrChkCatHeidkeSkillScore.Location = New System.Drawing.Point(19, 49)
+        Me.ucrChkCatHeidkeSkillScore.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkCatHeidkeSkillScore.Name = "ucrChkCatHeidkeSkillScore"
-        Me.ucrChkCatHeidkeSkillScore.Size = New System.Drawing.Size(100, 20)
+        Me.ucrChkCatHeidkeSkillScore.Size = New System.Drawing.Size(133, 25)
         Me.ucrChkCatHeidkeSkillScore.TabIndex = 3
         '
         'ucrChkCatPierceSkillScore
         '
         Me.ucrChkCatPierceSkillScore.Checked = False
-        Me.ucrChkCatPierceSkillScore.Location = New System.Drawing.Point(135, 18)
+        Me.ucrChkCatPierceSkillScore.Location = New System.Drawing.Point(180, 22)
+        Me.ucrChkCatPierceSkillScore.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkCatPierceSkillScore.Name = "ucrChkCatPierceSkillScore"
-        Me.ucrChkCatPierceSkillScore.Size = New System.Drawing.Size(100, 20)
+        Me.ucrChkCatPierceSkillScore.Size = New System.Drawing.Size(133, 25)
         Me.ucrChkCatPierceSkillScore.TabIndex = 2
         '
         'ucrChkGerrityScore
         '
         Me.ucrChkGerrityScore.Checked = False
-        Me.ucrChkGerrityScore.Location = New System.Drawing.Point(135, 42)
+        Me.ucrChkGerrityScore.Location = New System.Drawing.Point(180, 52)
+        Me.ucrChkGerrityScore.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkGerrityScore.Name = "ucrChkGerrityScore"
-        Me.ucrChkGerrityScore.Size = New System.Drawing.Size(100, 20)
+        Me.ucrChkGerrityScore.Size = New System.Drawing.Size(133, 25)
         Me.ucrChkGerrityScore.TabIndex = 1
         '
         'sdgVerificationSummaries
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(578, 300)
+        Me.ClientSize = New System.Drawing.Size(771, 370)
         Me.Controls.Add(Me.tbSummaries)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "sdgVerificationSummaries"

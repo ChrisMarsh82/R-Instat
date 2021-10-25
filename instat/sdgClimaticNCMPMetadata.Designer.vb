@@ -34,29 +34,31 @@ Partial Class sdgClimaticNCMPMetadata
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(124, 200)
+        Me.ucrBase.Location = New System.Drawing.Point(165, 246)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(156, 30)
+        Me.ucrBase.Size = New System.Drawing.Size(208, 37)
         Me.ucrBase.TabIndex = 7
         '
         'lblStation
         '
         Me.lblStation.AutoSize = True
         Me.lblStation.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblStation.Location = New System.Drawing.Point(237, 44)
+        Me.lblStation.Location = New System.Drawing.Point(316, 54)
+        Me.lblStation.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblStation.Name = "lblStation"
-        Me.lblStation.Size = New System.Drawing.Size(43, 13)
+        Me.lblStation.Size = New System.Drawing.Size(52, 16)
         Me.lblStation.TabIndex = 1
         Me.lblStation.Text = "Station:"
         '
         'ucrReceiverLongitude
         '
         Me.ucrReceiverLongitude.frmParent = Me
-        Me.ucrReceiverLongitude.Location = New System.Drawing.Point(238, 147)
+        Me.ucrReceiverLongitude.Location = New System.Drawing.Point(317, 181)
         Me.ucrReceiverLongitude.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverLongitude.Name = "ucrReceiverLongitude"
         Me.ucrReceiverLongitude.Selector = Nothing
-        Me.ucrReceiverLongitude.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverLongitude.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverLongitude.strNcFilePath = ""
         Me.ucrReceiverLongitude.TabIndex = 6
         Me.ucrReceiverLongitude.ucrSelector = Nothing
@@ -64,11 +66,11 @@ Partial Class sdgClimaticNCMPMetadata
         'ucrReceiverLatitude
         '
         Me.ucrReceiverLatitude.frmParent = Me
-        Me.ucrReceiverLatitude.Location = New System.Drawing.Point(238, 103)
+        Me.ucrReceiverLatitude.Location = New System.Drawing.Point(317, 127)
         Me.ucrReceiverLatitude.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverLatitude.Name = "ucrReceiverLatitude"
         Me.ucrReceiverLatitude.Selector = Nothing
-        Me.ucrReceiverLatitude.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverLatitude.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverLatitude.strNcFilePath = ""
         Me.ucrReceiverLatitude.TabIndex = 4
         Me.ucrReceiverLatitude.ucrSelector = Nothing
@@ -77,9 +79,10 @@ Partial Class sdgClimaticNCMPMetadata
         '
         Me.lblLong.AutoSize = True
         Me.lblLong.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblLong.Location = New System.Drawing.Point(237, 132)
+        Me.lblLong.Location = New System.Drawing.Point(316, 162)
+        Me.lblLong.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblLong.Name = "lblLong"
-        Me.lblLong.Size = New System.Drawing.Size(57, 13)
+        Me.lblLong.Size = New System.Drawing.Size(70, 16)
         Me.lblLong.TabIndex = 5
         Me.lblLong.Text = "Longitude:"
         '
@@ -87,20 +90,21 @@ Partial Class sdgClimaticNCMPMetadata
         '
         Me.lblLat.AutoSize = True
         Me.lblLat.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblLat.Location = New System.Drawing.Point(237, 88)
+        Me.lblLat.Location = New System.Drawing.Point(316, 108)
+        Me.lblLat.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblLat.Name = "lblLat"
-        Me.lblLat.Size = New System.Drawing.Size(45, 13)
+        Me.lblLat.Size = New System.Drawing.Size(53, 16)
         Me.lblLat.TabIndex = 3
         Me.lblLat.Text = "Latitute:"
         '
         'ucrReceiverStation
         '
         Me.ucrReceiverStation.frmParent = Me
-        Me.ucrReceiverStation.Location = New System.Drawing.Point(238, 59)
+        Me.ucrReceiverStation.Location = New System.Drawing.Point(317, 73)
         Me.ucrReceiverStation.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverStation.Name = "ucrReceiverStation"
         Me.ucrReceiverStation.Selector = Nothing
-        Me.ucrReceiverStation.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverStation.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverStation.strNcFilePath = ""
         Me.ucrReceiverStation.TabIndex = 2
         Me.ucrReceiverStation.ucrSelector = Nothing
@@ -110,17 +114,17 @@ Partial Class sdgClimaticNCMPMetadata
         Me.ucrSelectorMetadata.bDropUnusedFilterLevels = False
         Me.ucrSelectorMetadata.bShowHiddenColumns = False
         Me.ucrSelectorMetadata.bUseCurrentFilter = True
-        Me.ucrSelectorMetadata.Location = New System.Drawing.Point(9, 9)
+        Me.ucrSelectorMetadata.Location = New System.Drawing.Point(12, 11)
         Me.ucrSelectorMetadata.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorMetadata.Name = "ucrSelectorMetadata"
-        Me.ucrSelectorMetadata.Size = New System.Drawing.Size(213, 188)
+        Me.ucrSelectorMetadata.Size = New System.Drawing.Size(284, 231)
         Me.ucrSelectorMetadata.TabIndex = 0
         '
         'sdgClimaticNCMPMetadata
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(388, 233)
+        Me.ClientSize = New System.Drawing.Size(518, 287)
         Me.Controls.Add(Me.lblStation)
         Me.Controls.Add(Me.ucrReceiverLongitude)
         Me.Controls.Add(Me.ucrReceiverLatitude)
@@ -130,6 +134,7 @@ Partial Class sdgClimaticNCMPMetadata
         Me.Controls.Add(Me.ucrSelectorMetadata)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "sdgClimaticNCMPMetadata"

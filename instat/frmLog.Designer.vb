@@ -45,20 +45,22 @@ Partial Class frmLog
         '
         Me.txtLog.Dock = System.Windows.Forms.DockStyle.Fill
         Me.txtLog.Location = New System.Drawing.Point(0, 0)
+        Me.txtLog.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtLog.Multiline = True
         Me.txtLog.Name = "txtLog"
         Me.txtLog.ReadOnly = True
         Me.txtLog.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.txtLog.Size = New System.Drawing.Size(531, 415)
+        Me.txtLog.Size = New System.Drawing.Size(708, 512)
         Me.txtLog.TabIndex = 0
         Me.txtLog.TabStop = False
         '
         'frmLog
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(531, 415)
+        Me.ClientSize = New System.Drawing.Size(708, 512)
         Me.Controls.Add(Me.txtLog)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmLog"
         Me.ShowIcon = False
         Me.Text = "Log Window"

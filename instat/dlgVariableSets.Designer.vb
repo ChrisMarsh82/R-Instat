@@ -39,9 +39,10 @@ Partial Class dlgVariableSets
         'lblSelectedSet
         '
         Me.lblSelectedSet.AutoSize = True
-        Me.lblSelectedSet.Location = New System.Drawing.Point(244, 47)
+        Me.lblSelectedSet.Location = New System.Drawing.Point(325, 58)
+        Me.lblSelectedSet.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSelectedSet.Name = "lblSelectedSet"
-        Me.lblSelectedSet.Size = New System.Drawing.Size(71, 13)
+        Me.lblSelectedSet.Size = New System.Drawing.Size(88, 16)
         Me.lblSelectedSet.TabIndex = 14
         Me.lblSelectedSet.Tag = ""
         Me.lblSelectedSet.Text = "Selected Set:"
@@ -53,9 +54,10 @@ Partial Class dlgVariableSets
         Me.rdoDelete.FlatAppearance.BorderSize = 2
         Me.rdoDelete.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ActiveCaption
         Me.rdoDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.rdoDelete.Location = New System.Drawing.Point(259, 9)
+        Me.rdoDelete.Location = New System.Drawing.Point(345, 11)
+        Me.rdoDelete.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoDelete.Name = "rdoDelete"
-        Me.rdoDelete.Size = New System.Drawing.Size(111, 28)
+        Me.rdoDelete.Size = New System.Drawing.Size(148, 34)
         Me.rdoDelete.TabIndex = 19
         Me.rdoDelete.TabStop = True
         Me.rdoDelete.Tag = ""
@@ -70,9 +72,10 @@ Partial Class dlgVariableSets
         Me.rdoEdit.FlatAppearance.BorderSize = 2
         Me.rdoEdit.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ActiveCaption
         Me.rdoEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.rdoEdit.Location = New System.Drawing.Point(151, 9)
+        Me.rdoEdit.Location = New System.Drawing.Point(201, 11)
+        Me.rdoEdit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoEdit.Name = "rdoEdit"
-        Me.rdoEdit.Size = New System.Drawing.Size(111, 28)
+        Me.rdoEdit.Size = New System.Drawing.Size(148, 34)
         Me.rdoEdit.TabIndex = 18
         Me.rdoEdit.TabStop = True
         Me.rdoEdit.Tag = ""
@@ -87,9 +90,10 @@ Partial Class dlgVariableSets
         Me.rdoMake.FlatAppearance.BorderSize = 2
         Me.rdoMake.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ActiveCaption
         Me.rdoMake.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.rdoMake.Location = New System.Drawing.Point(42, 9)
+        Me.rdoMake.Location = New System.Drawing.Point(56, 11)
+        Me.rdoMake.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoMake.Name = "rdoMake"
-        Me.rdoMake.Size = New System.Drawing.Size(111, 28)
+        Me.rdoMake.Size = New System.Drawing.Size(148, 34)
         Me.rdoMake.TabIndex = 17
         Me.rdoMake.TabStop = True
         Me.rdoMake.Tag = ""
@@ -100,9 +104,10 @@ Partial Class dlgVariableSets
         'lblSetName
         '
         Me.lblSetName.AutoSize = True
-        Me.lblSetName.Location = New System.Drawing.Point(246, 218)
+        Me.lblSetName.Location = New System.Drawing.Point(328, 268)
+        Me.lblSetName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSetName.Name = "lblSetName"
-        Me.lblSetName.Size = New System.Drawing.Size(82, 13)
+        Me.lblSetName.Size = New System.Drawing.Size(101, 16)
         Me.lblSetName.TabIndex = 20
         Me.lblSetName.Tag = ""
         Me.lblSetName.Text = "Set New Name:"
@@ -110,9 +115,10 @@ Partial Class dlgVariableSets
         'lblVariables
         '
         Me.lblVariables.AutoSize = True
-        Me.lblVariables.Location = New System.Drawing.Point(244, 93)
+        Me.lblVariables.Location = New System.Drawing.Point(325, 114)
+        Me.lblVariables.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblVariables.Name = "lblVariables"
-        Me.lblVariables.Size = New System.Drawing.Size(50, 13)
+        Me.lblVariables.Size = New System.Drawing.Size(66, 16)
         Me.lblVariables.TabIndex = 23
         Me.lblVariables.Tag = ""
         Me.lblVariables.Text = "Variables"
@@ -122,20 +128,20 @@ Partial Class dlgVariableSets
         Me.ucrInputSetNewName.AddQuotesIfUnrecognised = True
         Me.ucrInputSetNewName.IsMultiline = False
         Me.ucrInputSetNewName.IsReadOnly = False
-        Me.ucrInputSetNewName.Location = New System.Drawing.Point(246, 234)
-        Me.ucrInputSetNewName.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ucrInputSetNewName.Location = New System.Drawing.Point(328, 288)
+        Me.ucrInputSetNewName.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.ucrInputSetNewName.Name = "ucrInputSetNewName"
-        Me.ucrInputSetNewName.Size = New System.Drawing.Size(137, 21)
+        Me.ucrInputSetNewName.Size = New System.Drawing.Size(183, 26)
         Me.ucrInputSetNewName.TabIndex = 24
         '
         'ucrReceiverSelectedSet
         '
         Me.ucrReceiverSelectedSet.frmParent = Me
-        Me.ucrReceiverSelectedSet.Location = New System.Drawing.Point(244, 62)
+        Me.ucrReceiverSelectedSet.Location = New System.Drawing.Point(325, 76)
         Me.ucrReceiverSelectedSet.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverSelectedSet.Name = "ucrReceiverSelectedSet"
         Me.ucrReceiverSelectedSet.Selector = Nothing
-        Me.ucrReceiverSelectedSet.Size = New System.Drawing.Size(137, 20)
+        Me.ucrReceiverSelectedSet.Size = New System.Drawing.Size(183, 25)
         Me.ucrReceiverSelectedSet.strNcFilePath = ""
         Me.ucrReceiverSelectedSet.TabIndex = 15
         Me.ucrReceiverSelectedSet.ucrSelector = Nothing
@@ -143,46 +149,47 @@ Partial Class dlgVariableSets
         'ucrReceiverMultipleVariables
         '
         Me.ucrReceiverMultipleVariables.frmParent = Me
-        Me.ucrReceiverMultipleVariables.Location = New System.Drawing.Point(244, 110)
+        Me.ucrReceiverMultipleVariables.Location = New System.Drawing.Point(325, 135)
         Me.ucrReceiverMultipleVariables.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverMultipleVariables.Name = "ucrReceiverMultipleVariables"
         Me.ucrReceiverMultipleVariables.Selector = Nothing
-        Me.ucrReceiverMultipleVariables.Size = New System.Drawing.Size(137, 100)
+        Me.ucrReceiverMultipleVariables.Size = New System.Drawing.Size(183, 123)
         Me.ucrReceiverMultipleVariables.strNcFilePath = ""
         Me.ucrReceiverMultipleVariables.TabIndex = 21
         Me.ucrReceiverMultipleVariables.ucrSelector = Nothing
         '
         'ucrSelectorVariableSets
         '
+        Me.ucrSelectorVariableSets.bDropUnusedFilterLevels = False
         Me.ucrSelectorVariableSets.bShowHiddenColumns = False
         Me.ucrSelectorVariableSets.bUseCurrentFilter = True
-        Me.ucrSelectorVariableSets.Location = New System.Drawing.Point(10, 47)
+        Me.ucrSelectorVariableSets.Location = New System.Drawing.Point(13, 58)
         Me.ucrSelectorVariableSets.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorVariableSets.Name = "ucrSelectorVariableSets"
-        Me.ucrSelectorVariableSets.Size = New System.Drawing.Size(210, 180)
+        Me.ucrSelectorVariableSets.Size = New System.Drawing.Size(280, 222)
         Me.ucrSelectorVariableSets.TabIndex = 13
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(10, 259)
-        Me.ucrBase.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ucrBase.Location = New System.Drawing.Point(13, 319)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 52)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 64)
         Me.ucrBase.TabIndex = 16
         '
         'ucrPnlOptions
         '
-        Me.ucrPnlOptions.Location = New System.Drawing.Point(21, 3)
-        Me.ucrPnlOptions.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ucrPnlOptions.Location = New System.Drawing.Point(28, 4)
+        Me.ucrPnlOptions.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.ucrPnlOptions.Name = "ucrPnlOptions"
-        Me.ucrPnlOptions.Size = New System.Drawing.Size(383, 39)
+        Me.ucrPnlOptions.Size = New System.Drawing.Size(511, 48)
         Me.ucrPnlOptions.TabIndex = 12
         '
         'dlgVariableSets
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(424, 315)
+        Me.ClientSize = New System.Drawing.Size(565, 389)
         Me.Controls.Add(Me.lblSelectedSet)
         Me.Controls.Add(Me.ucrInputSetNewName)
         Me.Controls.Add(Me.ucrReceiverSelectedSet)
@@ -196,7 +203,7 @@ Partial Class dlgVariableSets
         Me.Controls.Add(Me.ucrBase)
         Me.Controls.Add(Me.ucrPnlOptions)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgVariableSets"

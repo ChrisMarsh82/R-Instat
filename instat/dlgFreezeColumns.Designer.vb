@@ -46,50 +46,56 @@ Partial Class dlgFreezeColumns
         '
         'ucrSelectorByDataFrameAddRemoveforFreezeColumns
         '
+        Me.ucrSelectorByDataFrameAddRemoveforFreezeColumns.bDropUnusedFilterLevels = False
         Me.ucrSelectorByDataFrameAddRemoveforFreezeColumns.bShowHiddenColumns = False
         Me.ucrSelectorByDataFrameAddRemoveforFreezeColumns.bUseCurrentFilter = True
-        Me.ucrSelectorByDataFrameAddRemoveforFreezeColumns.Location = New System.Drawing.Point(10, 10)
+        Me.ucrSelectorByDataFrameAddRemoveforFreezeColumns.Location = New System.Drawing.Point(13, 12)
         Me.ucrSelectorByDataFrameAddRemoveforFreezeColumns.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorByDataFrameAddRemoveforFreezeColumns.Name = "ucrSelectorByDataFrameAddRemoveforFreezeColumns"
-        Me.ucrSelectorByDataFrameAddRemoveforFreezeColumns.Size = New System.Drawing.Size(210, 180)
+        Me.ucrSelectorByDataFrameAddRemoveforFreezeColumns.Size = New System.Drawing.Size(280, 222)
         Me.ucrSelectorByDataFrameAddRemoveforFreezeColumns.TabIndex = 0
         '
         'ucrReceiverMultipleforFreezeColumns
         '
         Me.ucrReceiverMultipleforFreezeColumns.frmParent = Me
-        Me.ucrReceiverMultipleforFreezeColumns.Location = New System.Drawing.Point(259, 60)
+        Me.ucrReceiverMultipleforFreezeColumns.Location = New System.Drawing.Point(345, 74)
         Me.ucrReceiverMultipleforFreezeColumns.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverMultipleforFreezeColumns.Name = "ucrReceiverMultipleforFreezeColumns"
         Me.ucrReceiverMultipleforFreezeColumns.Selector = Nothing
-        Me.ucrReceiverMultipleforFreezeColumns.Size = New System.Drawing.Size(120, 100)
+        Me.ucrReceiverMultipleforFreezeColumns.Size = New System.Drawing.Size(160, 123)
+        Me.ucrReceiverMultipleforFreezeColumns.strNcFilePath = ""
         Me.ucrReceiverMultipleforFreezeColumns.TabIndex = 2
+        Me.ucrReceiverMultipleforFreezeColumns.ucrSelector = Nothing
         '
         'ucrBaseforFreezeColumns
         '
-        Me.ucrBaseforFreezeColumns.Location = New System.Drawing.Point(10, 211)
+        Me.ucrBaseforFreezeColumns.Location = New System.Drawing.Point(13, 260)
+        Me.ucrBaseforFreezeColumns.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBaseforFreezeColumns.Name = "ucrBaseforFreezeColumns"
-        Me.ucrBaseforFreezeColumns.Size = New System.Drawing.Size(410, 52)
+        Me.ucrBaseforFreezeColumns.Size = New System.Drawing.Size(547, 64)
         Me.ucrBaseforFreezeColumns.TabIndex = 3
         '
         'lblFreezeColumns
         '
         Me.lblFreezeColumns.AutoSize = True
-        Me.lblFreezeColumns.Location = New System.Drawing.Point(262, 41)
+        Me.lblFreezeColumns.Location = New System.Drawing.Point(349, 50)
+        Me.lblFreezeColumns.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblFreezeColumns.Name = "lblFreezeColumns"
-        Me.lblFreezeColumns.Size = New System.Drawing.Size(85, 13)
+        Me.lblFreezeColumns.Size = New System.Drawing.Size(108, 16)
         Me.lblFreezeColumns.TabIndex = 1
         Me.lblFreezeColumns.Text = "Freeze Columns:"
         '
         'dlgFreezeColumns
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(418, 271)
+        Me.ClientSize = New System.Drawing.Size(557, 335)
         Me.Controls.Add(Me.lblFreezeColumns)
         Me.Controls.Add(Me.ucrBaseforFreezeColumns)
         Me.Controls.Add(Me.ucrReceiverMultipleforFreezeColumns)
         Me.Controls.Add(Me.ucrSelectorByDataFrameAddRemoveforFreezeColumns)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgFreezeColumns"

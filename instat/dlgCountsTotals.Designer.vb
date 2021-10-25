@@ -43,18 +43,20 @@ Partial Class dlgCountsTotals
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(12, 231)
+        Me.ucrBase.Location = New System.Drawing.Point(16, 284)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 53)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 65)
         Me.ucrBase.TabIndex = 0
         '
         'dlgCountsTotals
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(438, 296)
+        Me.ClientSize = New System.Drawing.Size(584, 365)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgCountsTotals"

@@ -127,10 +127,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblNumberofRows.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 108</value>
+    <value>9, 133</value>
+  </data>
+  <data name="lblNumberofRows.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblNumberofRows.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 13</value>
+    <value>110, 16</value>
   </data>
   <data name="lblNumberofRows.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -157,10 +160,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblColumnsToDelete.Location" type="System.Drawing.Point, System.Drawing">
-    <value>254, 89</value>
+    <value>339, 110</value>
+  </data>
+  <data name="lblColumnsToDelete.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblColumnsToDelete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 13</value>
+    <value>120, 16</value>
   </data>
   <data name="lblColumnsToDelete.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -187,10 +193,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblFrom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 143</value>
+    <value>9, 176</value>
+  </data>
+  <data name="lblFrom.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblFrom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 13</value>
+    <value>85, 16</value>
   </data>
   <data name="lblFrom.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -220,10 +229,13 @@
     <value>NoControl</value>
   </data>
   <data name="rdoColumns.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 12</value>
+    <value>140, 15</value>
+  </data>
+  <data name="rdoColumns.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="rdoColumns.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 28</value>
+    <value>133, 34</value>
   </data>
   <data name="rdoColumns.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -262,10 +274,13 @@
     <value>NoControl</value>
   </data>
   <data name="rdoRows.Location" type="System.Drawing.Point, System.Drawing">
-    <value>203, 12</value>
+    <value>271, 15</value>
+  </data>
+  <data name="rdoRows.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="rdoRows.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 28</value>
+    <value>133, 34</value>
   </data>
   <data name="rdoRows.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -295,10 +310,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblTo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 169</value>
+    <value>68, 208</value>
+  </data>
+  <data name="lblTo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblTo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 13</value>
+    <value>28, 16</value>
   </data>
   <data name="lblTo.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -319,10 +337,13 @@
     <value>0</value>
   </data>
   <data name="ucrNudTo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>80, 165</value>
+    <value>107, 203</value>
+  </data>
+  <data name="ucrNudTo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrNudTo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 20</value>
+    <value>109, 25</value>
   </data>
   <data name="ucrNudTo.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -340,10 +361,13 @@
     <value>1</value>
   </data>
   <data name="ucrPnlColumnsOrRows.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 11</value>
+    <value>129, 14</value>
+  </data>
+  <data name="ucrPnlColumnsOrRows.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrPnlColumnsOrRows.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 29</value>
+    <value>285, 36</value>
   </data>
   <data name="ucrPnlColumnsOrRows.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -361,10 +385,13 @@
     <value>4</value>
   </data>
   <data name="ucrDataFrameLengthForDeleteRows.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 104</value>
+    <value>133, 128</value>
+  </data>
+  <data name="ucrDataFrameLengthForDeleteRows.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrDataFrameLengthForDeleteRows.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 24</value>
+    <value>83, 30</value>
   </data>
   <data name="ucrDataFrameLengthForDeleteRows.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -382,10 +409,13 @@
     <value>5</value>
   </data>
   <data name="ucrNudFrom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>80, 139</value>
+    <value>107, 171</value>
+  </data>
+  <data name="ucrNudFrom.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrNudFrom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 20</value>
+    <value>109, 25</value>
   </data>
   <data name="ucrNudFrom.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -403,13 +433,13 @@
     <value>8</value>
   </data>
   <data name="ucrSelectorForDeleteColumns.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 43</value>
+    <value>12, 53</value>
   </data>
   <data name="ucrSelectorForDeleteColumns.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrSelectorForDeleteColumns.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 180</value>
+    <value>280, 222</value>
   </data>
   <data name="ucrSelectorForDeleteColumns.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -430,16 +460,19 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>416, 299</value>
+    <value>555, 369</value>
   </data>
   <data name="ucrBase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 243</value>
+    <value>12, 299</value>
+  </data>
+  <data name="ucrBase.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>410, 52</value>
+    <value>547, 64</value>
   </data>
   <data name="ucrBase.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -456,6 +489,9 @@
   <data name="&gt;&gt;ucrBase.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
@@ -469,13 +505,13 @@
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ucrReceiverForColumnsToDelete.Location" type="System.Drawing.Point, System.Drawing">
-    <value>254, 104</value>
+    <value>339, 128</value>
   </data>
   <data name="ucrReceiverForColumnsToDelete.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrReceiverForColumnsToDelete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 100</value>
+    <value>160, 123</value>
   </data>
   <data name="ucrReceiverForColumnsToDelete.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>

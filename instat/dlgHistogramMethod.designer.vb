@@ -44,28 +44,31 @@ Partial Class dlgHistogramMethod
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(12, 203)
+        Me.ucrBase.Location = New System.Drawing.Point(16, 250)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 60)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 74)
         Me.ucrBase.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(94, 34)
+        Me.Label1.Location = New System.Drawing.Point(125, 42)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(125, 13)
+        Me.Label1.Size = New System.Drawing.Size(158, 16)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Data list not implemented"
         '
         'dlgHistogramMethod
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(434, 275)
+        Me.ClientSize = New System.Drawing.Size(579, 339)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgHistogramMethod"

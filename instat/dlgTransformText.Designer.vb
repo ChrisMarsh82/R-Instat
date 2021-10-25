@@ -54,10 +54,8 @@ Partial Class dlgTransformText
         Me.ucrNudLastWord = New instat.ucrNud()
         Me.ucrInputPad = New instat.ucrInputComboBox()
         Me.lblPad = New System.Windows.Forms.Label()
-        Me.ucrNudTo = New instat.ucrNud()
         Me.ucrReceiverFirstWord = New instat.ucrReceiverSingle()
         Me.rdoBothPad = New System.Windows.Forms.RadioButton()
-        Me.ucrNudFirstWord = New instat.ucrNud()
         Me.ucrNudFrom = New instat.ucrNud()
         Me.rdoRightPad = New System.Windows.Forms.RadioButton()
         Me.rdoLeftPad = New System.Windows.Forms.RadioButton()
@@ -66,6 +64,8 @@ Partial Class dlgTransformText
         Me.ucrInputTo = New instat.ucrInputComboBox()
         Me.lblWidth = New System.Windows.Forms.Label()
         Me.lblTo = New System.Windows.Forms.Label()
+        Me.ucrNudFirstWord = New instat.ucrNud()
+        Me.ucrNudTo = New instat.ucrNud()
         Me.ucrReceiverTransformText = New instat.ucrReceiverSingle()
         Me.ucrBase = New instat.ucrButtons()
         Me.ucrNewColName = New instat.ucrSave()
@@ -195,16 +195,6 @@ Partial Class dlgTransformText
         resources.ApplyResources(Me.lblPad, "lblPad")
         Me.lblPad.Name = "lblPad"
         '
-        'ucrNudTo
-        '
-        Me.ucrNudTo.DecimalPlaces = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.ucrNudTo.Increment = New Decimal(New Integer() {1, 0, 0, 0})
-        resources.ApplyResources(Me.ucrNudTo, "ucrNudTo")
-        Me.ucrNudTo.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
-        Me.ucrNudTo.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.ucrNudTo.Name = "ucrNudTo"
-        Me.ucrNudTo.Value = New Decimal(New Integer() {0, 0, 0, 0})
-        '
         'ucrReceiverFirstWord
         '
         Me.ucrReceiverFirstWord.frmParent = Me
@@ -220,16 +210,6 @@ Partial Class dlgTransformText
         Me.rdoBothPad.Name = "rdoBothPad"
         Me.rdoBothPad.TabStop = True
         Me.rdoBothPad.UseVisualStyleBackColor = True
-        '
-        'ucrNudFirstWord
-        '
-        Me.ucrNudFirstWord.DecimalPlaces = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.ucrNudFirstWord.Increment = New Decimal(New Integer() {1, 0, 0, 0})
-        resources.ApplyResources(Me.ucrNudFirstWord, "ucrNudFirstWord")
-        Me.ucrNudFirstWord.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
-        Me.ucrNudFirstWord.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
-        Me.ucrNudFirstWord.Name = "ucrNudFirstWord"
-        Me.ucrNudFirstWord.Value = New Decimal(New Integer() {0, 0, 0, 0})
         '
         'ucrNudFrom
         '
@@ -287,6 +267,26 @@ Partial Class dlgTransformText
         '
         resources.ApplyResources(Me.lblTo, "lblTo")
         Me.lblTo.Name = "lblTo"
+        '
+        'ucrNudFirstWord
+        '
+        Me.ucrNudFirstWord.DecimalPlaces = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.ucrNudFirstWord.Increment = New Decimal(New Integer() {1, 0, 0, 0})
+        resources.ApplyResources(Me.ucrNudFirstWord, "ucrNudFirstWord")
+        Me.ucrNudFirstWord.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
+        Me.ucrNudFirstWord.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.ucrNudFirstWord.Name = "ucrNudFirstWord"
+        Me.ucrNudFirstWord.Value = New Decimal(New Integer() {0, 0, 0, 0})
+        '
+        'ucrNudTo
+        '
+        Me.ucrNudTo.DecimalPlaces = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.ucrNudTo.Increment = New Decimal(New Integer() {1, 0, 0, 0})
+        resources.ApplyResources(Me.ucrNudTo, "ucrNudTo")
+        Me.ucrNudTo.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
+        Me.ucrNudTo.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.ucrNudTo.Name = "ucrNudTo"
+        Me.ucrNudTo.Value = New Decimal(New Integer() {0, 0, 0, 0})
         '
         'ucrReceiverTransformText
         '

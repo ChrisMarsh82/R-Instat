@@ -123,10 +123,14 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblSeparator.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 167</value>
+    <value>331, 206</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblSeparator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblSeparator.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 13</value>
+    <value>71, 16</value>
   </data>
   <data name="lblSeparator.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -150,10 +154,13 @@
     <value>True</value>
   </data>
   <data name="lblColumnsToCobine.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 46</value>
+    <value>331, 57</value>
+  </data>
+  <data name="lblColumnsToCobine.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblColumnsToCobine.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 13</value>
+    <value>134, 16</value>
   </data>
   <data name="lblColumnsToCobine.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -174,14 +181,13 @@
     <value>2</value>
   </data>
   <data name="ucrSaveColumn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 209</value>
+    <value>13, 257</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ucrSaveColumn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+    <value>5, 6, 5, 6</value>
   </data>
   <data name="ucrSaveColumn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 22</value>
+    <value>373, 27</value>
   </data>
   <data name="ucrSaveColumn.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -199,10 +205,13 @@
     <value>0</value>
   </data>
   <data name="ucrInputSeparator.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 182</value>
+    <value>329, 224</value>
+  </data>
+  <data name="ucrInputSeparator.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 7, 9, 7</value>
   </data>
   <data name="ucrInputSeparator.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 21</value>
+    <value>160, 26</value>
   </data>
   <data name="ucrInputSeparator.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -223,19 +232,19 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>415, 297</value>
+    <value>553, 367</value>
   </data>
   <data name="ucrSelectorForCombineText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 10</value>
+    <value>13, 12</value>
   </data>
   <data name="ucrSelectorForCombineText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrSelectorForCombineText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 180</value>
+    <value>280, 222</value>
   </data>
   <data name="ucrSelectorForCombineText.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -253,10 +262,13 @@
     <value>5</value>
   </data>
   <data name="ucrBase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 236</value>
+    <value>13, 290</value>
+  </data>
+  <data name="ucrBase.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>410, 52</value>
+    <value>547, 64</value>
   </data>
   <data name="ucrBase.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -273,6 +285,9 @@
   <data name="&gt;&gt;ucrBase.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
@@ -286,13 +301,13 @@
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ucrReceiverCombineText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 61</value>
+    <value>329, 75</value>
   </data>
   <data name="ucrReceiverCombineText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrReceiverCombineText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 100</value>
+    <value>160, 123</value>
   </data>
   <data name="ucrReceiverCombineText.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>

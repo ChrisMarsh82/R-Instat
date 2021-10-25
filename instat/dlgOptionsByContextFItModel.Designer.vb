@@ -53,37 +53,39 @@ Partial Class dlgOptionsByContextFitModel
         '
         'ucrSaveModel
         '
-        Me.ucrSaveModel.Location = New System.Drawing.Point(10, 403)
-        Me.ucrSaveModel.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ucrSaveModel.Location = New System.Drawing.Point(13, 496)
+        Me.ucrSaveModel.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.ucrSaveModel.Name = "ucrSaveModel"
-        Me.ucrSaveModel.Size = New System.Drawing.Size(319, 24)
+        Me.ucrSaveModel.Size = New System.Drawing.Size(425, 30)
         Me.ucrSaveModel.TabIndex = 15
         '
         'ucrChkConvertToNumeric
         '
         Me.ucrChkConvertToNumeric.Checked = False
-        Me.ucrChkConvertToNumeric.Location = New System.Drawing.Point(242, 85)
+        Me.ucrChkConvertToNumeric.Location = New System.Drawing.Point(323, 105)
+        Me.ucrChkConvertToNumeric.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkConvertToNumeric.Name = "ucrChkConvertToNumeric"
-        Me.ucrChkConvertToNumeric.Size = New System.Drawing.Size(136, 20)
+        Me.ucrChkConvertToNumeric.Size = New System.Drawing.Size(181, 25)
         Me.ucrChkConvertToNumeric.TabIndex = 3
         '
         'ucrReceiverResponse
         '
         Me.ucrReceiverResponse.frmParent = Me
-        Me.ucrReceiverResponse.Location = New System.Drawing.Point(242, 60)
+        Me.ucrReceiverResponse.Location = New System.Drawing.Point(323, 74)
         Me.ucrReceiverResponse.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverResponse.Name = "ucrReceiverResponse"
         Me.ucrReceiverResponse.Selector = Nothing
-        Me.ucrReceiverResponse.Size = New System.Drawing.Size(121, 20)
+        Me.ucrReceiverResponse.Size = New System.Drawing.Size(161, 25)
         Me.ucrReceiverResponse.strNcFilePath = ""
         Me.ucrReceiverResponse.TabIndex = 2
         Me.ucrReceiverResponse.ucrSelector = Nothing
         '
         'cmdModelOptions
         '
-        Me.cmdModelOptions.Location = New System.Drawing.Point(415, 374)
+        Me.cmdModelOptions.Location = New System.Drawing.Point(553, 460)
+        Me.cmdModelOptions.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdModelOptions.Name = "cmdModelOptions"
-        Me.cmdModelOptions.Size = New System.Drawing.Size(120, 23)
+        Me.cmdModelOptions.Size = New System.Drawing.Size(160, 28)
         Me.cmdModelOptions.TabIndex = 13
         Me.cmdModelOptions.Tag = "Model_Options"
         Me.cmdModelOptions.Text = "Model Options..."
@@ -92,9 +94,10 @@ Partial Class dlgOptionsByContextFitModel
         'lblModelPreview
         '
         Me.lblModelPreview.AutoSize = True
-        Me.lblModelPreview.Location = New System.Drawing.Point(10, 378)
+        Me.lblModelPreview.Location = New System.Drawing.Point(13, 465)
+        Me.lblModelPreview.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblModelPreview.Name = "lblModelPreview"
-        Me.lblModelPreview.Size = New System.Drawing.Size(80, 13)
+        Me.lblModelPreview.Size = New System.Drawing.Size(100, 16)
         Me.lblModelPreview.TabIndex = 11
         Me.lblModelPreview.Tag = "Model_Preview"
         Me.lblModelPreview.Text = "Model Preview:"
@@ -104,16 +107,18 @@ Partial Class dlgOptionsByContextFitModel
         Me.ucrModelPreview.AddQuotesIfUnrecognised = True
         Me.ucrModelPreview.IsMultiline = False
         Me.ucrModelPreview.IsReadOnly = False
-        Me.ucrModelPreview.Location = New System.Drawing.Point(120, 376)
+        Me.ucrModelPreview.Location = New System.Drawing.Point(160, 463)
+        Me.ucrModelPreview.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrModelPreview.Name = "ucrModelPreview"
-        Me.ucrModelPreview.Size = New System.Drawing.Size(289, 21)
+        Me.ucrModelPreview.Size = New System.Drawing.Size(385, 26)
         Me.ucrModelPreview.TabIndex = 12
         '
         'cmdDisplayOptions
         '
-        Me.cmdDisplayOptions.Location = New System.Drawing.Point(415, 403)
+        Me.cmdDisplayOptions.Location = New System.Drawing.Point(553, 496)
+        Me.cmdDisplayOptions.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdDisplayOptions.Name = "cmdDisplayOptions"
-        Me.cmdDisplayOptions.Size = New System.Drawing.Size(120, 23)
+        Me.cmdDisplayOptions.Size = New System.Drawing.Size(160, 28)
         Me.cmdDisplayOptions.TabIndex = 14
         Me.cmdDisplayOptions.Tag = "Display_Options"
         Me.cmdDisplayOptions.Text = "Display Options..."
@@ -121,18 +126,20 @@ Partial Class dlgOptionsByContextFitModel
         '
         'ucrDistributionChoice
         '
-        Me.ucrDistributionChoice.Location = New System.Drawing.Point(10, 207)
+        Me.ucrDistributionChoice.Location = New System.Drawing.Point(13, 255)
+        Me.ucrDistributionChoice.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrDistributionChoice.Name = "ucrDistributionChoice"
-        Me.ucrDistributionChoice.Size = New System.Drawing.Size(213, 31)
+        Me.ucrDistributionChoice.Size = New System.Drawing.Size(284, 38)
         Me.ucrDistributionChoice.TabIndex = 8
         '
         'lblResponse
         '
         Me.lblResponse.AutoSize = True
         Me.lblResponse.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblResponse.Location = New System.Drawing.Point(242, 45)
+        Me.lblResponse.Location = New System.Drawing.Point(323, 55)
+        Me.lblResponse.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblResponse.Name = "lblResponse"
-        Me.lblResponse.Size = New System.Drawing.Size(99, 13)
+        Me.lblResponse.Size = New System.Drawing.Size(128, 16)
         Me.lblResponse.TabIndex = 1
         Me.lblResponse.Tag = "Response_Variable"
         Me.lblResponse.Text = "Response Variable:"
@@ -142,17 +149,18 @@ Partial Class dlgOptionsByContextFitModel
         Me.ucrSelectorFitModel.bDropUnusedFilterLevels = False
         Me.ucrSelectorFitModel.bShowHiddenColumns = False
         Me.ucrSelectorFitModel.bUseCurrentFilter = True
-        Me.ucrSelectorFitModel.Location = New System.Drawing.Point(10, 10)
+        Me.ucrSelectorFitModel.Location = New System.Drawing.Point(13, 12)
         Me.ucrSelectorFitModel.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorFitModel.Name = "ucrSelectorFitModel"
-        Me.ucrSelectorFitModel.Size = New System.Drawing.Size(214, 185)
+        Me.ucrSelectorFitModel.Size = New System.Drawing.Size(285, 228)
         Me.ucrSelectorFitModel.TabIndex = 0
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(10, 429)
+        Me.ucrBase.Location = New System.Drawing.Point(13, 528)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(404, 54)
+        Me.ucrBase.Size = New System.Drawing.Size(539, 66)
         Me.ucrBase.TabIndex = 0
         '
         'grpContexts
@@ -167,9 +175,11 @@ Partial Class dlgOptionsByContextFitModel
         Me.grpContexts.Controls.Add(Me.ucrReceiverContext3)
         Me.grpContexts.Controls.Add(Me.ucrReceiverContext2)
         Me.grpContexts.Controls.Add(Me.lblContext2)
-        Me.grpContexts.Location = New System.Drawing.Point(407, 23)
+        Me.grpContexts.Location = New System.Drawing.Point(543, 28)
+        Me.grpContexts.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpContexts.Name = "grpContexts"
-        Me.grpContexts.Size = New System.Drawing.Size(136, 308)
+        Me.grpContexts.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpContexts.Size = New System.Drawing.Size(181, 379)
         Me.grpContexts.TabIndex = 10
         Me.grpContexts.TabStop = False
         Me.grpContexts.Text = "Contexts"
@@ -177,38 +187,41 @@ Partial Class dlgOptionsByContextFitModel
         'lblContext1
         '
         Me.lblContext1.AutoSize = True
-        Me.lblContext1.Location = New System.Drawing.Point(8, 22)
+        Me.lblContext1.Location = New System.Drawing.Point(11, 27)
+        Me.lblContext1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblContext1.Name = "lblContext1"
-        Me.lblContext1.Size = New System.Drawing.Size(72, 13)
+        Me.lblContext1.Size = New System.Drawing.Size(87, 16)
         Me.lblContext1.TabIndex = 0
         Me.lblContext1.Text = "Main Context:"
         '
         'lblContext4
         '
         Me.lblContext4.AutoSize = True
-        Me.lblContext4.Location = New System.Drawing.Point(8, 144)
+        Me.lblContext4.Location = New System.Drawing.Point(11, 177)
+        Me.lblContext4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblContext4.Name = "lblContext4"
-        Me.lblContext4.Size = New System.Drawing.Size(79, 13)
+        Me.lblContext4.Size = New System.Drawing.Size(95, 16)
         Me.lblContext4.TabIndex = 6
         Me.lblContext4.Text = "Fourth Context:"
         '
         'lblContextsOther
         '
         Me.lblContextsOther.AutoSize = True
-        Me.lblContextsOther.Location = New System.Drawing.Point(8, 187)
+        Me.lblContextsOther.Location = New System.Drawing.Point(11, 230)
+        Me.lblContextsOther.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblContextsOther.Name = "lblContextsOther"
-        Me.lblContextsOther.Size = New System.Drawing.Size(80, 13)
+        Me.lblContextsOther.Size = New System.Drawing.Size(97, 16)
         Me.lblContextsOther.TabIndex = 8
         Me.lblContextsOther.Text = "Other Contexts:"
         '
         'ucrReceiverContext4
         '
         Me.ucrReceiverContext4.frmParent = Me
-        Me.ucrReceiverContext4.Location = New System.Drawing.Point(8, 159)
+        Me.ucrReceiverContext4.Location = New System.Drawing.Point(11, 196)
         Me.ucrReceiverContext4.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverContext4.Name = "ucrReceiverContext4"
         Me.ucrReceiverContext4.Selector = Nothing
-        Me.ucrReceiverContext4.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverContext4.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverContext4.strNcFilePath = ""
         Me.ucrReceiverContext4.TabIndex = 7
         Me.ucrReceiverContext4.ucrSelector = Nothing
@@ -216,11 +229,11 @@ Partial Class dlgOptionsByContextFitModel
         'ucrReceiverContextOther
         '
         Me.ucrReceiverContextOther.frmParent = Me
-        Me.ucrReceiverContextOther.Location = New System.Drawing.Point(8, 202)
+        Me.ucrReceiverContextOther.Location = New System.Drawing.Point(11, 249)
         Me.ucrReceiverContextOther.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverContextOther.Name = "ucrReceiverContextOther"
         Me.ucrReceiverContextOther.Selector = Nothing
-        Me.ucrReceiverContextOther.Size = New System.Drawing.Size(120, 100)
+        Me.ucrReceiverContextOther.Size = New System.Drawing.Size(160, 123)
         Me.ucrReceiverContextOther.strNcFilePath = ""
         Me.ucrReceiverContextOther.TabIndex = 9
         Me.ucrReceiverContextOther.ucrSelector = Nothing
@@ -228,20 +241,21 @@ Partial Class dlgOptionsByContextFitModel
         'lblContext3
         '
         Me.lblContext3.AutoSize = True
-        Me.lblContext3.Location = New System.Drawing.Point(8, 104)
+        Me.lblContext3.Location = New System.Drawing.Point(11, 128)
+        Me.lblContext3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblContext3.Name = "lblContext3"
-        Me.lblContext3.Size = New System.Drawing.Size(73, 13)
+        Me.lblContext3.Size = New System.Drawing.Size(89, 16)
         Me.lblContext3.TabIndex = 4
         Me.lblContext3.Text = "Third Context:"
         '
         'ucrReceiverContext1
         '
         Me.ucrReceiverContext1.frmParent = Me
-        Me.ucrReceiverContext1.Location = New System.Drawing.Point(8, 37)
+        Me.ucrReceiverContext1.Location = New System.Drawing.Point(11, 46)
         Me.ucrReceiverContext1.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverContext1.Name = "ucrReceiverContext1"
         Me.ucrReceiverContext1.Selector = Nothing
-        Me.ucrReceiverContext1.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverContext1.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverContext1.strNcFilePath = ""
         Me.ucrReceiverContext1.TabIndex = 1
         Me.ucrReceiverContext1.ucrSelector = Nothing
@@ -249,11 +263,11 @@ Partial Class dlgOptionsByContextFitModel
         'ucrReceiverContext3
         '
         Me.ucrReceiverContext3.frmParent = Me
-        Me.ucrReceiverContext3.Location = New System.Drawing.Point(8, 119)
+        Me.ucrReceiverContext3.Location = New System.Drawing.Point(11, 146)
         Me.ucrReceiverContext3.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverContext3.Name = "ucrReceiverContext3"
         Me.ucrReceiverContext3.Selector = Nothing
-        Me.ucrReceiverContext3.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverContext3.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverContext3.strNcFilePath = ""
         Me.ucrReceiverContext3.TabIndex = 5
         Me.ucrReceiverContext3.ucrSelector = Nothing
@@ -261,11 +275,11 @@ Partial Class dlgOptionsByContextFitModel
         'ucrReceiverContext2
         '
         Me.ucrReceiverContext2.frmParent = Me
-        Me.ucrReceiverContext2.Location = New System.Drawing.Point(8, 79)
+        Me.ucrReceiverContext2.Location = New System.Drawing.Point(11, 97)
         Me.ucrReceiverContext2.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverContext2.Name = "ucrReceiverContext2"
         Me.ucrReceiverContext2.Selector = Nothing
-        Me.ucrReceiverContext2.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverContext2.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverContext2.strNcFilePath = ""
         Me.ucrReceiverContext2.TabIndex = 3
         Me.ucrReceiverContext2.ucrSelector = Nothing
@@ -273,20 +287,21 @@ Partial Class dlgOptionsByContextFitModel
         'lblContext2
         '
         Me.lblContext2.AutoSize = True
-        Me.lblContext2.Location = New System.Drawing.Point(8, 64)
+        Me.lblContext2.Location = New System.Drawing.Point(11, 79)
+        Me.lblContext2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblContext2.Name = "lblContext2"
-        Me.lblContext2.Size = New System.Drawing.Size(86, 13)
+        Me.lblContext2.Size = New System.Drawing.Size(105, 16)
         Me.lblContext2.TabIndex = 2
         Me.lblContext2.Text = "Second Context:"
         '
         'ucrReceiverBlocking
         '
         Me.ucrReceiverBlocking.frmParent = Me
-        Me.ucrReceiverBlocking.Location = New System.Drawing.Point(242, 134)
+        Me.ucrReceiverBlocking.Location = New System.Drawing.Point(323, 165)
         Me.ucrReceiverBlocking.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverBlocking.Name = "ucrReceiverBlocking"
         Me.ucrReceiverBlocking.Selector = Nothing
-        Me.ucrReceiverBlocking.Size = New System.Drawing.Size(120, 100)
+        Me.ucrReceiverBlocking.Size = New System.Drawing.Size(160, 123)
         Me.ucrReceiverBlocking.strNcFilePath = ""
         Me.ucrReceiverBlocking.TabIndex = 5
         Me.ucrReceiverBlocking.ucrSelector = Nothing
@@ -294,38 +309,40 @@ Partial Class dlgOptionsByContextFitModel
         'lblBlockingVariables
         '
         Me.lblBlockingVariables.AutoSize = True
-        Me.lblBlockingVariables.Location = New System.Drawing.Point(242, 119)
+        Me.lblBlockingVariables.Location = New System.Drawing.Point(323, 146)
+        Me.lblBlockingVariables.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblBlockingVariables.Name = "lblBlockingVariables"
-        Me.lblBlockingVariables.Size = New System.Drawing.Size(97, 13)
+        Me.lblBlockingVariables.Size = New System.Drawing.Size(124, 16)
         Me.lblBlockingVariables.TabIndex = 4
         Me.lblBlockingVariables.Text = "Blocking Variables:"
         '
         'lblOptions
         '
         Me.lblOptions.AutoSize = True
-        Me.lblOptions.Location = New System.Drawing.Point(242, 242)
+        Me.lblOptions.Location = New System.Drawing.Point(323, 298)
+        Me.lblOptions.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblOptions.Name = "lblOptions"
-        Me.lblOptions.Size = New System.Drawing.Size(46, 13)
+        Me.lblOptions.Size = New System.Drawing.Size(57, 16)
         Me.lblOptions.TabIndex = 6
         Me.lblOptions.Text = "Options:"
         '
         'ucrReceiverOptions
         '
         Me.ucrReceiverOptions.frmParent = Me
-        Me.ucrReceiverOptions.Location = New System.Drawing.Point(242, 257)
+        Me.ucrReceiverOptions.Location = New System.Drawing.Point(323, 316)
         Me.ucrReceiverOptions.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverOptions.Name = "ucrReceiverOptions"
         Me.ucrReceiverOptions.Selector = Nothing
-        Me.ucrReceiverOptions.Size = New System.Drawing.Size(120, 100)
+        Me.ucrReceiverOptions.Size = New System.Drawing.Size(160, 123)
         Me.ucrReceiverOptions.strNcFilePath = ""
         Me.ucrReceiverOptions.TabIndex = 7
         Me.ucrReceiverOptions.ucrSelector = Nothing
         '
         'dlgOptionsByContextFitModel
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(553, 486)
+        Me.ClientSize = New System.Drawing.Size(737, 599)
         Me.Controls.Add(Me.lblOptions)
         Me.Controls.Add(Me.ucrReceiverOptions)
         Me.Controls.Add(Me.lblBlockingVariables)
@@ -343,6 +360,7 @@ Partial Class dlgOptionsByContextFitModel
         Me.Controls.Add(Me.ucrSelectorFitModel)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgOptionsByContextFitModel"

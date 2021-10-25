@@ -94,6 +94,7 @@ Partial Class dlgRenameObjects
         'ucrInputType
         '
         Me.ucrInputType.AddQuotesIfUnrecognised = True
+        Me.ucrInputType.GetSetSelectedIndex = -1
         Me.ucrInputType.IsReadOnly = False
         resources.ApplyResources(Me.ucrInputType, "ucrInputType")
         Me.ucrInputType.Name = "ucrInputType"

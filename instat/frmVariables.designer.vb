@@ -48,23 +48,26 @@ Partial Class frmVariables
         Me.grdVariables.Dock = System.Windows.Forms.DockStyle.Fill
         Me.grdVariables.LeadHeaderContextMenuStrip = Nothing
         Me.grdVariables.Location = New System.Drawing.Point(0, 0)
+        Me.grdVariables.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grdVariables.Name = "grdVariables"
         Me.grdVariables.RowHeaderContextMenuStrip = Nothing
         Me.grdVariables.Script = Nothing
         Me.grdVariables.SheetTabContextMenuStrip = Nothing
         Me.grdVariables.SheetTabNewButtonVisible = True
         Me.grdVariables.SheetTabVisible = True
-        Me.grdVariables.SheetTabWidth = 300
-        Me.grdVariables.Size = New System.Drawing.Size(344, 138)
+        Me.grdVariables.SheetTabWidth = 400
+        Me.grdVariables.ShowScrollEndSpacing = True
+        Me.grdVariables.Size = New System.Drawing.Size(459, 171)
         Me.grdVariables.TabIndex = 2
         Me.grdVariables.Text = "Variables"
         '
         'frmVariables
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(344, 138)
+        Me.ClientSize = New System.Drawing.Size(459, 171)
         Me.Controls.Add(Me.grdVariables)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmVariables"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Column Metadata"

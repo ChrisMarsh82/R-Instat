@@ -63,6 +63,7 @@ Partial Class dlgReorderLevels
         '
         'ucrSelectorFactorLevelsToReorder
         '
+        Me.ucrSelectorFactorLevelsToReorder.bDropUnusedFilterLevels = False
         Me.ucrSelectorFactorLevelsToReorder.bShowHiddenColumns = False
         Me.ucrSelectorFactorLevelsToReorder.bUseCurrentFilter = True
         resources.ApplyResources(Me.ucrSelectorFactorLevelsToReorder, "ucrSelectorFactorLevelsToReorder")

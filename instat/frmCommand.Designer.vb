@@ -49,30 +49,33 @@ Partial Class frmCommand
         '
         Me.txtCommand.Dock = System.Windows.Forms.DockStyle.Fill
         Me.txtCommand.Location = New System.Drawing.Point(0, 0)
+        Me.txtCommand.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtCommand.Name = "txtCommand"
         Me.txtCommand.ReadOnly = True
-        Me.txtCommand.Size = New System.Drawing.Size(631, 261)
+        Me.txtCommand.Size = New System.Drawing.Size(841, 322)
         Me.txtCommand.TabIndex = 0
         Me.txtCommand.Text = ""
         '
         'mnuContextRTB
         '
+        Me.mnuContextRTB.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.mnuContextRTB.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CopyRTB})
         Me.mnuContextRTB.Name = "mnuContextRTB"
-        Me.mnuContextRTB.Size = New System.Drawing.Size(103, 26)
+        Me.mnuContextRTB.Size = New System.Drawing.Size(127, 36)
         '
         'CopyRTB
         '
         Me.CopyRTB.Name = "CopyRTB"
-        Me.CopyRTB.Size = New System.Drawing.Size(102, 22)
+        Me.CopyRTB.Size = New System.Drawing.Size(126, 32)
         Me.CopyRTB.Text = "Copy"
         '
         'frmCommand
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(631, 261)
+        Me.ClientSize = New System.Drawing.Size(841, 322)
         Me.Controls.Add(Me.txtCommand)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmCommand"
         Me.ShowIcon = False
         Me.Tag = "Output_Window"

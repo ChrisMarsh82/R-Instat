@@ -125,6 +125,9 @@
   <data name="SplitContainer1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="SplitContainer1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="SplitContainer1.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
@@ -132,13 +135,13 @@
     <value>374, 18</value>
   </metadata>
   <data name="ToolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 6</value>
+    <value>185, 6</value>
   </data>
   <data name="mnuCopy.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+C</value>
   </data>
   <data name="mnuCopy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 22</value>
+    <value>188, 32</value>
   </data>
   <data name="mnuCopy.Text" xml:space="preserve">
     <value>Copy</value>
@@ -147,22 +150,22 @@
     <value>Ctrl+V</value>
   </data>
   <data name="mnuPaste.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 22</value>
+    <value>188, 32</value>
   </data>
   <data name="mnuPaste.Text" xml:space="preserve">
     <value>Paste</value>
   </data>
   <data name="ToolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 6</value>
+    <value>185, 6</value>
   </data>
   <data name="mnuComment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 22</value>
+    <value>188, 32</value>
   </data>
   <data name="mnuComment.Text" xml:space="preserve">
     <value>Comment</value>
   </data>
   <data name="cellContextMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 82</value>
+    <value>189, 112</value>
   </data>
   <data name="&gt;&gt;cellContextMenuStrip.Name" xml:space="preserve">
     <value>cellContextMenuStrip</value>
@@ -176,8 +179,11 @@
   <data name="grdDataEntry.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="grdDataEntry.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="grdDataEntry.Size" type="System.Drawing.Size, System.Drawing">
-    <value>647, 251</value>
+    <value>863, 309</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="grdDataEntry.TabIndex" type="System.Int32, mscorlib">
@@ -190,7 +196,7 @@
     <value>grdDataEntry</value>
   </data>
   <data name="&gt;&gt;grdDataEntry.Type" xml:space="preserve">
-    <value>unvell.ReoGrid.ReoGridControl, unvell.ReoGrid, Version=2.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>unvell.ReoGrid.ReoGridControl, unvell.ReoGrid, Version=3.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;grdDataEntry.Parent" xml:space="preserve">
     <value>SplitContainer1.Panel1</value>
@@ -211,10 +217,13 @@
     <value>0</value>
   </data>
   <data name="ucrChkAddFlagFieldData.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 10</value>
+    <value>247, 12</value>
+  </data>
+  <data name="ucrChkAddFlagFieldData.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrChkAddFlagFieldData.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 20</value>
+    <value>195, 25</value>
   </data>
   <data name="ucrChkAddFlagFieldData.TabIndex" type="System.Int32, mscorlib">
     <value>91</value>
@@ -235,10 +244,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdComment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>337, 7</value>
+    <value>449, 9</value>
+  </data>
+  <data name="cmdComment.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="cmdComment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 24</value>
+    <value>120, 30</value>
   </data>
   <data name="cmdComment.TabIndex" type="System.Int32, mscorlib">
     <value>90</value>
@@ -265,10 +277,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdTransform.Location" type="System.Drawing.Point, System.Drawing">
-    <value>431, 7</value>
+    <value>575, 9</value>
+  </data>
+  <data name="cmdTransform.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="cmdTransform.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 24</value>
+    <value>139, 30</value>
   </data>
   <data name="cmdTransform.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
@@ -298,10 +313,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdReset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>541, 7</value>
+    <value>721, 9</value>
+  </data>
+  <data name="cmdReset.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="cmdReset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 24</value>
+    <value>96, 30</value>
   </data>
   <data name="cmdReset.TabIndex" type="System.Int32, mscorlib">
     <value>88</value>
@@ -325,13 +343,13 @@
     <value>3</value>
   </data>
   <data name="ucrSdgBaseButtons.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 6</value>
+    <value>17, 7</value>
   </data>
   <data name="ucrSdgBaseButtons.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrSdgBaseButtons.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 30</value>
+    <value>205, 37</value>
   </data>
   <data name="ucrSdgBaseButtons.TabIndex" type="System.Int32, mscorlib">
     <value>87</value>
@@ -361,10 +379,13 @@
     <value>1</value>
   </data>
   <data name="SplitContainer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>647, 295</value>
+    <value>863, 364</value>
   </data>
   <data name="SplitContainer1.SplitterDistance" type="System.Int32, mscorlib">
-    <value>251</value>
+    <value>309</value>
+  </data>
+  <data name="SplitContainer1.SplitterWidth" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="SplitContainer1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -385,10 +406,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>647, 295</value>
+    <value>863, 364</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>

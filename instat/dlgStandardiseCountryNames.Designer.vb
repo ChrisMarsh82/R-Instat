@@ -47,51 +47,55 @@ Partial Class dlgStandardiseCountryNames
         'lblCountryNames
         '
         Me.lblCountryNames.AutoSize = True
-        Me.lblCountryNames.Location = New System.Drawing.Point(267, 45)
+        Me.lblCountryNames.Location = New System.Drawing.Point(356, 55)
+        Me.lblCountryNames.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCountryNames.Name = "lblCountryNames"
-        Me.lblCountryNames.Size = New System.Drawing.Size(82, 13)
+        Me.lblCountryNames.Size = New System.Drawing.Size(103, 16)
         Me.lblCountryNames.TabIndex = 1
         Me.lblCountryNames.Text = "Country Names:"
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(10, 198)
+        Me.ucrBase.Location = New System.Drawing.Point(13, 244)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 52)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 64)
         Me.ucrBase.TabIndex = 3
         '
         'ucrReceiverCountryNames
         '
         Me.ucrReceiverCountryNames.frmParent = Me
-        Me.ucrReceiverCountryNames.Location = New System.Drawing.Point(267, 60)
+        Me.ucrReceiverCountryNames.Location = New System.Drawing.Point(356, 74)
         Me.ucrReceiverCountryNames.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverCountryNames.Name = "ucrReceiverCountryNames"
         Me.ucrReceiverCountryNames.Selector = Nothing
-        Me.ucrReceiverCountryNames.Size = New System.Drawing.Size(120, 100)
+        Me.ucrReceiverCountryNames.Size = New System.Drawing.Size(160, 123)
         Me.ucrReceiverCountryNames.strNcFilePath = ""
         Me.ucrReceiverCountryNames.TabIndex = 2
         Me.ucrReceiverCountryNames.ucrSelector = Nothing
         '
         'ucrSelectorStandardiseCountry
         '
+        Me.ucrSelectorStandardiseCountry.bDropUnusedFilterLevels = False
         Me.ucrSelectorStandardiseCountry.bShowHiddenColumns = False
         Me.ucrSelectorStandardiseCountry.bUseCurrentFilter = True
-        Me.ucrSelectorStandardiseCountry.Location = New System.Drawing.Point(10, 10)
+        Me.ucrSelectorStandardiseCountry.Location = New System.Drawing.Point(13, 12)
         Me.ucrSelectorStandardiseCountry.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorStandardiseCountry.Name = "ucrSelectorStandardiseCountry"
-        Me.ucrSelectorStandardiseCountry.Size = New System.Drawing.Size(210, 180)
+        Me.ucrSelectorStandardiseCountry.Size = New System.Drawing.Size(280, 222)
         Me.ucrSelectorStandardiseCountry.TabIndex = 0
         '
         'dlgStandardiseCountryNames
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(416, 253)
+        Me.ClientSize = New System.Drawing.Size(555, 312)
         Me.Controls.Add(Me.lblCountryNames)
         Me.Controls.Add(Me.ucrBase)
         Me.Controls.Add(Me.ucrReceiverCountryNames)
         Me.Controls.Add(Me.ucrSelectorStandardiseCountry)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgStandardiseCountryNames"

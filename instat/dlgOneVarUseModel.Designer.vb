@@ -51,17 +51,19 @@ Partial Class dlgOneVarUseModel
         'lblReceiverObject
         '
         Me.lblReceiverObject.AutoSize = True
-        Me.lblReceiverObject.Location = New System.Drawing.Point(239, 45)
+        Me.lblReceiverObject.Location = New System.Drawing.Point(319, 55)
+        Me.lblReceiverObject.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblReceiverObject.Name = "lblReceiverObject"
-        Me.lblReceiverObject.Size = New System.Drawing.Size(86, 13)
+        Me.lblReceiverObject.Size = New System.Drawing.Size(107, 16)
         Me.lblReceiverObject.TabIndex = 1
         Me.lblReceiverObject.Text = "Selected Object:"
         '
         'cmdFitModelandBootstrap
         '
-        Me.cmdFitModelandBootstrap.Location = New System.Drawing.Point(333, 200)
+        Me.cmdFitModelandBootstrap.Location = New System.Drawing.Point(444, 246)
+        Me.cmdFitModelandBootstrap.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdFitModelandBootstrap.Name = "cmdFitModelandBootstrap"
-        Me.cmdFitModelandBootstrap.Size = New System.Drawing.Size(76, 23)
+        Me.cmdFitModelandBootstrap.Size = New System.Drawing.Size(101, 28)
         Me.cmdFitModelandBootstrap.TabIndex = 7
         Me.cmdFitModelandBootstrap.Text = "Options"
         Me.cmdFitModelandBootstrap.UseVisualStyleBackColor = True
@@ -69,59 +71,64 @@ Partial Class dlgOneVarUseModel
         'ucrChkProduceBootstrap
         '
         Me.ucrChkProduceBootstrap.Checked = False
-        Me.ucrChkProduceBootstrap.Location = New System.Drawing.Point(239, 88)
+        Me.ucrChkProduceBootstrap.Location = New System.Drawing.Point(319, 108)
+        Me.ucrChkProduceBootstrap.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkProduceBootstrap.Name = "ucrChkProduceBootstrap"
-        Me.ucrChkProduceBootstrap.Size = New System.Drawing.Size(172, 20)
+        Me.ucrChkProduceBootstrap.Size = New System.Drawing.Size(229, 25)
         Me.ucrChkProduceBootstrap.TabIndex = 3
         '
         'ucrSaveObjects
         '
-        Me.ucrSaveObjects.Location = New System.Drawing.Point(239, 114)
+        Me.ucrSaveObjects.Location = New System.Drawing.Point(319, 140)
+        Me.ucrSaveObjects.Margin = New System.Windows.Forms.Padding(7, 7, 7, 7)
         Me.ucrSaveObjects.Name = "ucrSaveObjects"
-        Me.ucrSaveObjects.Size = New System.Drawing.Size(189, 24)
+        Me.ucrSaveObjects.Size = New System.Drawing.Size(252, 30)
         Me.ucrSaveObjects.TabIndex = 4
         '
         'ucrNewDataFrameName
         '
-        Me.ucrNewDataFrameName.Location = New System.Drawing.Point(10, 200)
+        Me.ucrNewDataFrameName.Location = New System.Drawing.Point(13, 246)
+        Me.ucrNewDataFrameName.Margin = New System.Windows.Forms.Padding(7, 7, 7, 7)
         Me.ucrNewDataFrameName.Name = "ucrNewDataFrameName"
-        Me.ucrNewDataFrameName.Size = New System.Drawing.Size(265, 24)
+        Me.ucrNewDataFrameName.Size = New System.Drawing.Size(353, 30)
         Me.ucrNewDataFrameName.TabIndex = 6
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(10, 230)
+        Me.ucrBase.Location = New System.Drawing.Point(13, 283)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 52)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 64)
         Me.ucrBase.TabIndex = 8
         '
         'ucrReceiverObject
         '
         Me.ucrReceiverObject.frmParent = Me
-        Me.ucrReceiverObject.Location = New System.Drawing.Point(239, 60)
+        Me.ucrReceiverObject.Location = New System.Drawing.Point(319, 74)
         Me.ucrReceiverObject.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverObject.Name = "ucrReceiverObject"
         Me.ucrReceiverObject.Selector = Nothing
-        Me.ucrReceiverObject.Size = New System.Drawing.Size(138, 20)
+        Me.ucrReceiverObject.Size = New System.Drawing.Size(184, 25)
         Me.ucrReceiverObject.strNcFilePath = ""
         Me.ucrReceiverObject.TabIndex = 2
         Me.ucrReceiverObject.ucrSelector = Nothing
         '
         'ucrSelectorUseModel
         '
+        Me.ucrSelectorUseModel.bDropUnusedFilterLevels = False
         Me.ucrSelectorUseModel.bShowHiddenColumns = False
         Me.ucrSelectorUseModel.bUseCurrentFilter = True
-        Me.ucrSelectorUseModel.Location = New System.Drawing.Point(10, 10)
+        Me.ucrSelectorUseModel.Location = New System.Drawing.Point(13, 12)
         Me.ucrSelectorUseModel.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorUseModel.Name = "ucrSelectorUseModel"
-        Me.ucrSelectorUseModel.Size = New System.Drawing.Size(210, 180)
+        Me.ucrSelectorUseModel.Size = New System.Drawing.Size(280, 222)
         Me.ucrSelectorUseModel.TabIndex = 0
         '
         'dlgOneVarUseModel
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(417, 289)
+        Me.ClientSize = New System.Drawing.Size(556, 357)
         Me.Controls.Add(Me.ucrChkProduceBootstrap)
         Me.Controls.Add(Me.ucrSaveObjects)
         Me.Controls.Add(Me.ucrNewDataFrameName)
@@ -131,6 +138,7 @@ Partial Class dlgOneVarUseModel
         Me.Controls.Add(Me.ucrSelectorUseModel)
         Me.Controls.Add(Me.cmdFitModelandBootstrap)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgOneVarUseModel"

@@ -82,26 +82,29 @@ Partial Class dlgCliPlot
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(82, 323)
+        Me.ucrBase.Location = New System.Drawing.Point(109, 398)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 53)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 65)
         Me.ucrBase.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(134, 9)
+        Me.Label1.Location = New System.Drawing.Point(179, 11)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(125, 13)
+        Me.Label1.Size = New System.Drawing.Size(158, 16)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Data list not implemented"
         '
         'chkByfactor
         '
         Me.chkByfactor.AutoSize = True
-        Me.chkByfactor.Location = New System.Drawing.Point(307, 241)
+        Me.chkByfactor.Location = New System.Drawing.Point(409, 297)
+        Me.chkByfactor.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkByfactor.Name = "chkByfactor"
-        Me.chkByfactor.Size = New System.Drawing.Size(81, 17)
+        Me.chkByfactor.Size = New System.Drawing.Size(102, 21)
         Me.chkByfactor.TabIndex = 3
         Me.chkByfactor.Tag = "By_factor"
         Me.chkByfactor.Text = "CheckBox1"
@@ -110,9 +113,10 @@ Partial Class dlgCliPlot
         'chkInheritAES
         '
         Me.chkInheritAES.AutoSize = True
-        Me.chkInheritAES.Location = New System.Drawing.Point(307, 264)
+        Me.chkInheritAES.Location = New System.Drawing.Point(409, 325)
+        Me.chkInheritAES.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkInheritAES.Name = "chkInheritAES"
-        Me.chkInheritAES.Size = New System.Drawing.Size(81, 17)
+        Me.chkInheritAES.Size = New System.Drawing.Size(102, 21)
         Me.chkInheritAES.TabIndex = 4
         Me.chkInheritAES.Tag = "Inherit_AES"
         Me.chkInheritAES.Text = "CheckBox2"
@@ -121,9 +125,10 @@ Partial Class dlgCliPlot
         'chkRemoveNA
         '
         Me.chkRemoveNA.AutoSize = True
-        Me.chkRemoveNA.Location = New System.Drawing.Point(433, 241)
+        Me.chkRemoveNA.Location = New System.Drawing.Point(577, 297)
+        Me.chkRemoveNA.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkRemoveNA.Name = "chkRemoveNA"
-        Me.chkRemoveNA.Size = New System.Drawing.Size(81, 17)
+        Me.chkRemoveNA.Size = New System.Drawing.Size(102, 21)
         Me.chkRemoveNA.TabIndex = 5
         Me.chkRemoveNA.Tag = "Remove_NA"
         Me.chkRemoveNA.Text = "CheckBox3"
@@ -132,9 +137,10 @@ Partial Class dlgCliPlot
         'chkStationName
         '
         Me.chkStationName.AutoSize = True
-        Me.chkStationName.Location = New System.Drawing.Point(433, 264)
+        Me.chkStationName.Location = New System.Drawing.Point(577, 325)
+        Me.chkStationName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkStationName.Name = "chkStationName"
-        Me.chkStationName.Size = New System.Drawing.Size(81, 17)
+        Me.chkStationName.Size = New System.Drawing.Size(102, 21)
         Me.chkStationName.TabIndex = 6
         Me.chkStationName.Tag = "Station_Name"
         Me.chkStationName.Text = "CheckBox4"
@@ -142,45 +148,51 @@ Partial Class dlgCliPlot
         '
         'txtXLim
         '
-        Me.txtXLim.Location = New System.Drawing.Point(103, 128)
+        Me.txtXLim.Location = New System.Drawing.Point(137, 158)
+        Me.txtXLim.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtXLim.Name = "txtXLim"
-        Me.txtXLim.Size = New System.Drawing.Size(100, 20)
+        Me.txtXLim.Size = New System.Drawing.Size(132, 22)
         Me.txtXLim.TabIndex = 7
         '
         'txtPosition
         '
-        Me.txtPosition.Location = New System.Drawing.Point(103, 99)
+        Me.txtPosition.Location = New System.Drawing.Point(137, 122)
+        Me.txtPosition.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtPosition.Name = "txtPosition"
-        Me.txtPosition.Size = New System.Drawing.Size(100, 20)
+        Me.txtPosition.Size = New System.Drawing.Size(132, 22)
         Me.txtPosition.TabIndex = 8
         '
         'txtVariableY
         '
-        Me.txtVariableY.Location = New System.Drawing.Point(402, 63)
+        Me.txtVariableY.Location = New System.Drawing.Point(536, 78)
+        Me.txtVariableY.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtVariableY.Name = "txtVariableY"
-        Me.txtVariableY.Size = New System.Drawing.Size(100, 20)
+        Me.txtVariableY.Size = New System.Drawing.Size(132, 22)
         Me.txtVariableY.TabIndex = 9
         '
         'txtVariableX
         '
-        Me.txtVariableX.Location = New System.Drawing.Point(103, 63)
+        Me.txtVariableX.Location = New System.Drawing.Point(137, 78)
+        Me.txtVariableX.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtVariableX.Name = "txtVariableX"
-        Me.txtVariableX.Size = New System.Drawing.Size(100, 20)
+        Me.txtVariableX.Size = New System.Drawing.Size(132, 22)
         Me.txtVariableX.TabIndex = 10
         '
         'txtTitle
         '
-        Me.txtTitle.Location = New System.Drawing.Point(103, 37)
+        Me.txtTitle.Location = New System.Drawing.Point(137, 46)
+        Me.txtTitle.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtTitle.Name = "txtTitle"
-        Me.txtTitle.Size = New System.Drawing.Size(100, 20)
+        Me.txtTitle.Size = New System.Drawing.Size(132, 22)
         Me.txtTitle.TabIndex = 11
         '
         'lblTitle
         '
         Me.lblTitle.AutoSize = True
-        Me.lblTitle.Location = New System.Drawing.Point(12, 37)
+        Me.lblTitle.Location = New System.Drawing.Point(16, 46)
+        Me.lblTitle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(39, 13)
+        Me.lblTitle.Size = New System.Drawing.Size(49, 16)
         Me.lblTitle.TabIndex = 12
         Me.lblTitle.Tag = "Title"
         Me.lblTitle.Text = "Label2"
@@ -188,9 +200,10 @@ Partial Class dlgCliPlot
         'lblVariableX
         '
         Me.lblVariableX.AutoSize = True
-        Me.lblVariableX.Location = New System.Drawing.Point(12, 70)
+        Me.lblVariableX.Location = New System.Drawing.Point(16, 86)
+        Me.lblVariableX.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblVariableX.Name = "lblVariableX"
-        Me.lblVariableX.Size = New System.Drawing.Size(39, 13)
+        Me.lblVariableX.Size = New System.Drawing.Size(49, 16)
         Me.lblVariableX.TabIndex = 13
         Me.lblVariableX.Tag = "Variable_X"
         Me.lblVariableX.Text = "Label3"
@@ -198,9 +211,10 @@ Partial Class dlgCliPlot
         'lblVariableY
         '
         Me.lblVariableY.AutoSize = True
-        Me.lblVariableY.Location = New System.Drawing.Point(304, 70)
+        Me.lblVariableY.Location = New System.Drawing.Point(405, 86)
+        Me.lblVariableY.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblVariableY.Name = "lblVariableY"
-        Me.lblVariableY.Size = New System.Drawing.Size(39, 13)
+        Me.lblVariableY.Size = New System.Drawing.Size(49, 16)
         Me.lblVariableY.TabIndex = 14
         Me.lblVariableY.Tag = "Variable_Y"
         Me.lblVariableY.Text = "Label4"
@@ -208,9 +222,10 @@ Partial Class dlgCliPlot
         'lblPosition
         '
         Me.lblPosition.AutoSize = True
-        Me.lblPosition.Location = New System.Drawing.Point(12, 102)
+        Me.lblPosition.Location = New System.Drawing.Point(16, 126)
+        Me.lblPosition.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPosition.Name = "lblPosition"
-        Me.lblPosition.Size = New System.Drawing.Size(39, 13)
+        Me.lblPosition.Size = New System.Drawing.Size(49, 16)
         Me.lblPosition.TabIndex = 15
         Me.lblPosition.Tag = "Position"
         Me.lblPosition.Text = "Label5"
@@ -218,9 +233,10 @@ Partial Class dlgCliPlot
         'lblXLimits
         '
         Me.lblXLimits.AutoSize = True
-        Me.lblXLimits.Location = New System.Drawing.Point(12, 135)
+        Me.lblXLimits.Location = New System.Drawing.Point(16, 166)
+        Me.lblXLimits.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblXLimits.Name = "lblXLimits"
-        Me.lblXLimits.Size = New System.Drawing.Size(39, 13)
+        Me.lblXLimits.Size = New System.Drawing.Size(49, 16)
         Me.lblXLimits.TabIndex = 16
         Me.lblXLimits.Tag = "X_Limits"
         Me.lblXLimits.Text = "Label6"
@@ -228,58 +244,65 @@ Partial Class dlgCliPlot
         'lblYAxis
         '
         Me.lblYAxis.AutoSize = True
-        Me.lblYAxis.Location = New System.Drawing.Point(12, 187)
+        Me.lblYAxis.Location = New System.Drawing.Point(16, 230)
+        Me.lblYAxis.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblYAxis.Name = "lblYAxis"
-        Me.lblYAxis.Size = New System.Drawing.Size(39, 13)
+        Me.lblYAxis.Size = New System.Drawing.Size(49, 16)
         Me.lblYAxis.TabIndex = 17
         Me.lblYAxis.Tag = "Y_Axis"
         Me.lblYAxis.Text = "Label7"
         '
         'txtYAxis
         '
-        Me.txtYAxis.Location = New System.Drawing.Point(103, 180)
+        Me.txtYAxis.Location = New System.Drawing.Point(137, 222)
+        Me.txtYAxis.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtYAxis.Name = "txtYAxis"
-        Me.txtYAxis.Size = New System.Drawing.Size(100, 20)
+        Me.txtYAxis.Size = New System.Drawing.Size(132, 22)
         Me.txtYAxis.TabIndex = 18
         Me.txtYAxis.Tag = ""
         '
         'txtXAxis
         '
-        Me.txtXAxis.Location = New System.Drawing.Point(402, 180)
+        Me.txtXAxis.Location = New System.Drawing.Point(536, 222)
+        Me.txtXAxis.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtXAxis.Name = "txtXAxis"
-        Me.txtXAxis.Size = New System.Drawing.Size(100, 20)
+        Me.txtXAxis.Size = New System.Drawing.Size(132, 22)
         Me.txtXAxis.TabIndex = 19
         '
         'lblXAxis
         '
         Me.lblXAxis.AutoSize = True
-        Me.lblXAxis.Location = New System.Drawing.Point(304, 187)
+        Me.lblXAxis.Location = New System.Drawing.Point(405, 230)
+        Me.lblXAxis.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblXAxis.Name = "lblXAxis"
-        Me.lblXAxis.Size = New System.Drawing.Size(39, 13)
+        Me.lblXAxis.Size = New System.Drawing.Size(49, 16)
         Me.lblXAxis.TabIndex = 20
         Me.lblXAxis.Tag = "X_Axis"
         Me.lblXAxis.Text = "Label8"
         '
         'nudLineType
         '
-        Me.nudLineType.Location = New System.Drawing.Point(103, 241)
+        Me.nudLineType.Location = New System.Drawing.Point(137, 297)
+        Me.nudLineType.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudLineType.Name = "nudLineType"
-        Me.nudLineType.Size = New System.Drawing.Size(46, 20)
+        Me.nudLineType.Size = New System.Drawing.Size(61, 22)
         Me.nudLineType.TabIndex = 22
         '
         'nudSize
         '
-        Me.nudSize.Location = New System.Drawing.Point(103, 261)
+        Me.nudSize.Location = New System.Drawing.Point(137, 321)
+        Me.nudSize.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudSize.Name = "nudSize"
-        Me.nudSize.Size = New System.Drawing.Size(46, 20)
+        Me.nudSize.Size = New System.Drawing.Size(61, 22)
         Me.nudSize.TabIndex = 23
         '
         'lblLineType
         '
         Me.lblLineType.AutoSize = True
-        Me.lblLineType.Location = New System.Drawing.Point(12, 245)
+        Me.lblLineType.Location = New System.Drawing.Point(16, 302)
+        Me.lblLineType.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblLineType.Name = "lblLineType"
-        Me.lblLineType.Size = New System.Drawing.Size(45, 13)
+        Me.lblLineType.Size = New System.Drawing.Size(56, 16)
         Me.lblLineType.TabIndex = 25
         Me.lblLineType.Tag = "Line_Type"
         Me.lblLineType.Text = "Label10"
@@ -287,9 +310,10 @@ Partial Class dlgCliPlot
         'lblSize
         '
         Me.lblSize.AutoSize = True
-        Me.lblSize.Location = New System.Drawing.Point(12, 268)
+        Me.lblSize.Location = New System.Drawing.Point(16, 330)
+        Me.lblSize.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSize.Name = "lblSize"
-        Me.lblSize.Size = New System.Drawing.Size(45, 13)
+        Me.lblSize.Size = New System.Drawing.Size(56, 16)
         Me.lblSize.TabIndex = 26
         Me.lblSize.Tag = "Size"
         Me.lblSize.Text = "Label11"
@@ -297,47 +321,53 @@ Partial Class dlgCliPlot
         'lblStat
         '
         Me.lblStat.AutoSize = True
-        Me.lblStat.Location = New System.Drawing.Point(304, 102)
+        Me.lblStat.Location = New System.Drawing.Point(405, 126)
+        Me.lblStat.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblStat.Name = "lblStat"
-        Me.lblStat.Size = New System.Drawing.Size(45, 13)
+        Me.lblStat.Size = New System.Drawing.Size(56, 16)
         Me.lblStat.TabIndex = 27
         Me.lblStat.Tag = "Stat"
         Me.lblStat.Text = "Label12"
         '
         'txtStat
         '
-        Me.txtStat.Location = New System.Drawing.Point(402, 95)
+        Me.txtStat.Location = New System.Drawing.Point(536, 117)
+        Me.txtStat.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtStat.Name = "txtStat"
-        Me.txtStat.Size = New System.Drawing.Size(100, 20)
+        Me.txtStat.Size = New System.Drawing.Size(132, 22)
         Me.txtStat.TabIndex = 28
         '
         'txtYLim
         '
-        Me.txtYLim.Location = New System.Drawing.Point(402, 121)
+        Me.txtYLim.Location = New System.Drawing.Point(536, 149)
+        Me.txtYLim.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtYLim.Name = "txtYLim"
-        Me.txtYLim.Size = New System.Drawing.Size(100, 20)
+        Me.txtYLim.Size = New System.Drawing.Size(132, 22)
         Me.txtYLim.TabIndex = 29
         '
         'txtColour
         '
-        Me.txtColour.Location = New System.Drawing.Point(402, 147)
+        Me.txtColour.Location = New System.Drawing.Point(536, 181)
+        Me.txtColour.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtColour.Name = "txtColour"
-        Me.txtColour.Size = New System.Drawing.Size(100, 20)
+        Me.txtColour.Size = New System.Drawing.Size(132, 22)
         Me.txtColour.TabIndex = 30
         '
         'txtDataperiodLabel
         '
-        Me.txtDataperiodLabel.Location = New System.Drawing.Point(103, 154)
+        Me.txtDataperiodLabel.Location = New System.Drawing.Point(137, 190)
+        Me.txtDataperiodLabel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtDataperiodLabel.Name = "txtDataperiodLabel"
-        Me.txtDataperiodLabel.Size = New System.Drawing.Size(100, 20)
+        Me.txtDataperiodLabel.Size = New System.Drawing.Size(132, 22)
         Me.txtDataperiodLabel.TabIndex = 31
         '
         'lblDataperiodLabel
         '
         Me.lblDataperiodLabel.AutoSize = True
-        Me.lblDataperiodLabel.Location = New System.Drawing.Point(12, 161)
+        Me.lblDataperiodLabel.Location = New System.Drawing.Point(16, 198)
+        Me.lblDataperiodLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDataperiodLabel.Name = "lblDataperiodLabel"
-        Me.lblDataperiodLabel.Size = New System.Drawing.Size(45, 13)
+        Me.lblDataperiodLabel.Size = New System.Drawing.Size(56, 16)
         Me.lblDataperiodLabel.TabIndex = 32
         Me.lblDataperiodLabel.Tag = "Data_period_Label"
         Me.lblDataperiodLabel.Text = "Label13"
@@ -345,9 +375,10 @@ Partial Class dlgCliPlot
         'lblYLim
         '
         Me.lblYLim.AutoSize = True
-        Me.lblYLim.Location = New System.Drawing.Point(304, 128)
+        Me.lblYLim.Location = New System.Drawing.Point(405, 158)
+        Me.lblYLim.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblYLim.Name = "lblYLim"
-        Me.lblYLim.Size = New System.Drawing.Size(45, 13)
+        Me.lblYLim.Size = New System.Drawing.Size(56, 16)
         Me.lblYLim.TabIndex = 33
         Me.lblYLim.Tag = "Y_Limits"
         Me.lblYLim.Text = "Label14"
@@ -355,68 +386,75 @@ Partial Class dlgCliPlot
         'lblColour
         '
         Me.lblColour.AutoSize = True
-        Me.lblColour.Location = New System.Drawing.Point(304, 154)
+        Me.lblColour.Location = New System.Drawing.Point(405, 190)
+        Me.lblColour.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblColour.Name = "lblColour"
-        Me.lblColour.Size = New System.Drawing.Size(45, 13)
+        Me.lblColour.Size = New System.Drawing.Size(56, 16)
         Me.lblColour.TabIndex = 34
         Me.lblColour.Text = "Label15"
         '
         'lblFactorVariable
         '
         Me.lblFactorVariable.AutoSize = True
-        Me.lblFactorVariable.Location = New System.Drawing.Point(12, 216)
+        Me.lblFactorVariable.Location = New System.Drawing.Point(16, 266)
+        Me.lblFactorVariable.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblFactorVariable.Name = "lblFactorVariable"
-        Me.lblFactorVariable.Size = New System.Drawing.Size(39, 13)
+        Me.lblFactorVariable.Size = New System.Drawing.Size(49, 16)
         Me.lblFactorVariable.TabIndex = 35
         Me.lblFactorVariable.Tag = "Factor_Variable"
         Me.lblFactorVariable.Text = "Label2"
         '
         'txtFactorVariable
         '
-        Me.txtFactorVariable.Location = New System.Drawing.Point(103, 209)
+        Me.txtFactorVariable.Location = New System.Drawing.Point(137, 257)
+        Me.txtFactorVariable.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtFactorVariable.Name = "txtFactorVariable"
-        Me.txtFactorVariable.Size = New System.Drawing.Size(100, 20)
+        Me.txtFactorVariable.Size = New System.Drawing.Size(132, 22)
         Me.txtFactorVariable.TabIndex = 36
         '
         'txtVariableName
         '
-        Me.txtVariableName.Location = New System.Drawing.Point(402, 33)
+        Me.txtVariableName.Location = New System.Drawing.Point(536, 41)
+        Me.txtVariableName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtVariableName.Name = "txtVariableName"
-        Me.txtVariableName.Size = New System.Drawing.Size(100, 20)
+        Me.txtVariableName.Size = New System.Drawing.Size(132, 22)
         Me.txtVariableName.TabIndex = 37
         '
         'lblVariableName
         '
         Me.lblVariableName.AutoSize = True
-        Me.lblVariableName.Location = New System.Drawing.Point(304, 40)
+        Me.lblVariableName.Location = New System.Drawing.Point(405, 49)
+        Me.lblVariableName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblVariableName.Name = "lblVariableName"
-        Me.lblVariableName.Size = New System.Drawing.Size(39, 13)
+        Me.lblVariableName.Size = New System.Drawing.Size(49, 16)
         Me.lblVariableName.TabIndex = 38
         Me.lblVariableName.Tag = "Variable_Name"
         Me.lblVariableName.Text = "Label2"
         '
         'txtShowLegend
         '
-        Me.txtShowLegend.Location = New System.Drawing.Point(103, 297)
+        Me.txtShowLegend.Location = New System.Drawing.Point(137, 366)
+        Me.txtShowLegend.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtShowLegend.Name = "txtShowLegend"
-        Me.txtShowLegend.Size = New System.Drawing.Size(100, 20)
+        Me.txtShowLegend.Size = New System.Drawing.Size(132, 22)
         Me.txtShowLegend.TabIndex = 39
         '
         'lblShowLegend
         '
         Me.lblShowLegend.AutoSize = True
-        Me.lblShowLegend.Location = New System.Drawing.Point(12, 304)
+        Me.lblShowLegend.Location = New System.Drawing.Point(16, 374)
+        Me.lblShowLegend.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblShowLegend.Name = "lblShowLegend"
-        Me.lblShowLegend.Size = New System.Drawing.Size(39, 13)
+        Me.lblShowLegend.Size = New System.Drawing.Size(49, 16)
         Me.lblShowLegend.TabIndex = 40
         Me.lblShowLegend.Tag = "Show_Legend"
         Me.lblShowLegend.Text = "Label2"
         '
         'dlgCliPlot
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(564, 378)
+        Me.ClientSize = New System.Drawing.Size(752, 466)
         Me.Controls.Add(Me.lblShowLegend)
         Me.Controls.Add(Me.txtShowLegend)
         Me.Controls.Add(Me.lblVariableName)
@@ -456,6 +494,7 @@ Partial Class dlgCliPlot
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgCliPlot"

@@ -37,35 +37,39 @@ Partial Class frmConvertToNumeric
         '
         'lblPossibleSolutions
         '
-        Me.lblPossibleSolutions.Location = New System.Drawing.Point(13, 30)
+        Me.lblPossibleSolutions.Location = New System.Drawing.Point(17, 37)
+        Me.lblPossibleSolutions.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPossibleSolutions.Name = "lblPossibleSolutions"
-        Me.lblPossibleSolutions.Size = New System.Drawing.Size(423, 103)
+        Me.lblPossibleSolutions.Size = New System.Drawing.Size(564, 127)
         Me.lblPossibleSolutions.TabIndex = 4
         Me.lblPossibleSolutions.Text = resources.GetString("lblPossibleSolutions.Text")
         '
         'cmdNormalConvert
         '
-        Me.cmdNormalConvert.Location = New System.Drawing.Point(100, 143)
+        Me.cmdNormalConvert.Location = New System.Drawing.Point(133, 176)
+        Me.cmdNormalConvert.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdNormalConvert.Name = "cmdNormalConvert"
-        Me.cmdNormalConvert.Size = New System.Drawing.Size(96, 23)
+        Me.cmdNormalConvert.Size = New System.Drawing.Size(128, 28)
         Me.cmdNormalConvert.TabIndex = 6
         Me.cmdNormalConvert.Text = "Normal Convert"
         Me.cmdNormalConvert.UseVisualStyleBackColor = True
         '
         'cmdLabelledConvert
         '
-        Me.cmdLabelledConvert.Location = New System.Drawing.Point(197, 143)
+        Me.cmdLabelledConvert.Location = New System.Drawing.Point(263, 176)
+        Me.cmdLabelledConvert.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdLabelledConvert.Name = "cmdLabelledConvert"
-        Me.cmdLabelledConvert.Size = New System.Drawing.Size(96, 23)
+        Me.cmdLabelledConvert.Size = New System.Drawing.Size(128, 28)
         Me.cmdLabelledConvert.TabIndex = 7
         Me.cmdLabelledConvert.Text = "Labelled Convert"
         Me.cmdLabelledConvert.UseVisualStyleBackColor = True
         '
         'cmdHelp
         '
-        Me.cmdHelp.Location = New System.Drawing.Point(302, 143)
+        Me.cmdHelp.Location = New System.Drawing.Point(403, 176)
+        Me.cmdHelp.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdHelp.Name = "cmdHelp"
-        Me.cmdHelp.Size = New System.Drawing.Size(66, 23)
+        Me.cmdHelp.Size = New System.Drawing.Size(88, 28)
         Me.cmdHelp.TabIndex = 8
         Me.cmdHelp.Text = "Help"
         Me.cmdHelp.UseVisualStyleBackColor = True
@@ -74,16 +78,18 @@ Partial Class frmConvertToNumeric
         '
         Me.lblN.AutoSize = True
         Me.lblN.ForeColor = System.Drawing.Color.Red
-        Me.lblN.Location = New System.Drawing.Point(261, 9)
+        Me.lblN.Location = New System.Drawing.Point(348, 11)
+        Me.lblN.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblN.Name = "lblN"
-        Me.lblN.Size = New System.Drawing.Size(0, 13)
+        Me.lblN.Size = New System.Drawing.Size(0, 16)
         Me.lblN.TabIndex = 3
         '
         'cmdCancel
         '
-        Me.cmdCancel.Location = New System.Drawing.Point(370, 143)
+        Me.cmdCancel.Location = New System.Drawing.Point(493, 176)
+        Me.cmdCancel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdCancel.Name = "cmdCancel"
-        Me.cmdCancel.Size = New System.Drawing.Size(66, 23)
+        Me.cmdCancel.Size = New System.Drawing.Size(88, 28)
         Me.cmdCancel.TabIndex = 9
         Me.cmdCancel.Text = "Cancel"
         Me.cmdCancel.UseVisualStyleBackColor = True
@@ -91,9 +97,10 @@ Partial Class frmConvertToNumeric
         'lblColumn
         '
         Me.lblColumn.AutoSize = True
-        Me.lblColumn.Location = New System.Drawing.Point(16, 8)
+        Me.lblColumn.Location = New System.Drawing.Point(21, 10)
+        Me.lblColumn.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblColumn.Name = "lblColumn"
-        Me.lblColumn.Size = New System.Drawing.Size(48, 13)
+        Me.lblColumn.Size = New System.Drawing.Size(59, 16)
         Me.lblColumn.TabIndex = 0
         Me.lblColumn.Text = "Column: "
         '
@@ -101,34 +108,37 @@ Partial Class frmConvertToNumeric
         '
         Me.lblColumnName.AutoSize = True
         Me.lblColumnName.ForeColor = System.Drawing.Color.Red
-        Me.lblColumnName.Location = New System.Drawing.Point(63, 8)
+        Me.lblColumnName.Location = New System.Drawing.Point(84, 10)
+        Me.lblColumnName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblColumnName.Name = "lblColumnName"
-        Me.lblColumnName.Size = New System.Drawing.Size(0, 13)
+        Me.lblColumnName.Size = New System.Drawing.Size(0, 16)
         Me.lblColumnName.TabIndex = 1
         '
         'lblNumber
         '
         Me.lblNumber.AutoSize = True
-        Me.lblNumber.Location = New System.Drawing.Point(138, 8)
+        Me.lblNumber.Location = New System.Drawing.Point(184, 10)
+        Me.lblNumber.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblNumber.Name = "lblNumber"
-        Me.lblNumber.Size = New System.Drawing.Size(123, 13)
+        Me.lblNumber.Size = New System.Drawing.Size(152, 16)
         Me.lblNumber.TabIndex = 2
         Me.lblNumber.Text = "Number of non-numeric: "
         '
         'cmdInspectValues
         '
-        Me.cmdInspectValues.Location = New System.Drawing.Point(3, 143)
+        Me.cmdInspectValues.Location = New System.Drawing.Point(4, 176)
+        Me.cmdInspectValues.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdInspectValues.Name = "cmdInspectValues"
-        Me.cmdInspectValues.Size = New System.Drawing.Size(96, 23)
+        Me.cmdInspectValues.Size = New System.Drawing.Size(128, 28)
         Me.cmdInspectValues.TabIndex = 5
         Me.cmdInspectValues.Text = "Inspect Values"
         Me.cmdInspectValues.UseVisualStyleBackColor = True
         '
         'frmConvertToNumeric
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(440, 171)
+        Me.ClientSize = New System.Drawing.Size(587, 211)
         Me.Controls.Add(Me.cmdInspectValues)
         Me.Controls.Add(Me.lblNumber)
         Me.Controls.Add(Me.lblColumnName)
@@ -140,6 +150,7 @@ Partial Class frmConvertToNumeric
         Me.Controls.Add(Me.cmdNormalConvert)
         Me.Controls.Add(Me.lblPossibleSolutions)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmConvertToNumeric"

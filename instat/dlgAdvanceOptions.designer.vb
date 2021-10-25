@@ -57,9 +57,10 @@ Partial Class dlgAdvanceOptions
         'chkMessages
         '
         Me.chkMessages.AutoSize = True
-        Me.chkMessages.Location = New System.Drawing.Point(329, 161)
+        Me.chkMessages.Location = New System.Drawing.Point(439, 198)
+        Me.chkMessages.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkMessages.Name = "chkMessages"
-        Me.chkMessages.Size = New System.Drawing.Size(81, 17)
+        Me.chkMessages.Size = New System.Drawing.Size(102, 21)
         Me.chkMessages.TabIndex = 0
         Me.chkMessages.Tag = "Messages"
         Me.chkMessages.Text = "CheckBox1"
@@ -68,9 +69,10 @@ Partial Class dlgAdvanceOptions
         'chkConvert
         '
         Me.chkConvert.AutoSize = True
-        Me.chkConvert.Location = New System.Drawing.Point(191, 161)
+        Me.chkConvert.Location = New System.Drawing.Point(255, 198)
+        Me.chkConvert.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkConvert.Name = "chkConvert"
-        Me.chkConvert.Size = New System.Drawing.Size(81, 17)
+        Me.chkConvert.Size = New System.Drawing.Size(102, 21)
         Me.chkConvert.TabIndex = 1
         Me.chkConvert.Tag = "Convert"
         Me.chkConvert.Text = "CheckBox2"
@@ -79,9 +81,10 @@ Partial Class dlgAdvanceOptions
         'chkCreate
         '
         Me.chkCreate.AutoSize = True
-        Me.chkCreate.Location = New System.Drawing.Point(42, 161)
+        Me.chkCreate.Location = New System.Drawing.Point(56, 198)
+        Me.chkCreate.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkCreate.Name = "chkCreate"
-        Me.chkCreate.Size = New System.Drawing.Size(81, 17)
+        Me.chkCreate.Size = New System.Drawing.Size(102, 21)
         Me.chkCreate.TabIndex = 2
         Me.chkCreate.Tag = "Create"
         Me.chkCreate.Text = "CheckBox3"
@@ -89,33 +92,37 @@ Partial Class dlgAdvanceOptions
         '
         'txtDataTimePeriods
         '
-        Me.txtDataTimePeriods.Location = New System.Drawing.Point(159, 64)
+        Me.txtDataTimePeriods.Location = New System.Drawing.Point(212, 79)
+        Me.txtDataTimePeriods.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtDataTimePeriods.Name = "txtDataTimePeriods"
-        Me.txtDataTimePeriods.Size = New System.Drawing.Size(100, 20)
+        Me.txtDataTimePeriods.Size = New System.Drawing.Size(132, 22)
         Me.txtDataTimePeriods.TabIndex = 5
         Me.txtDataTimePeriods.Tag = "Data_Time_Periods"
         '
         'txtImportedFrom
         '
-        Me.txtImportedFrom.Location = New System.Drawing.Point(159, 38)
+        Me.txtImportedFrom.Location = New System.Drawing.Point(212, 47)
+        Me.txtImportedFrom.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtImportedFrom.Name = "txtImportedFrom"
-        Me.txtImportedFrom.Size = New System.Drawing.Size(100, 20)
+        Me.txtImportedFrom.Size = New System.Drawing.Size(132, 22)
         Me.txtImportedFrom.TabIndex = 6
         Me.txtImportedFrom.Tag = "Imported_From"
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(159, 12)
+        Me.TextBox4.Location = New System.Drawing.Point(212, 15)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(132, 22)
         Me.TextBox4.TabIndex = 7
         '
         'lblClimateObjectMetaData
         '
         Me.lblClimateObjectMetaData.AutoSize = True
-        Me.lblClimateObjectMetaData.Location = New System.Drawing.Point(39, 15)
+        Me.lblClimateObjectMetaData.Location = New System.Drawing.Point(52, 18)
+        Me.lblClimateObjectMetaData.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblClimateObjectMetaData.Name = "lblClimateObjectMetaData"
-        Me.lblClimateObjectMetaData.Size = New System.Drawing.Size(39, 13)
+        Me.lblClimateObjectMetaData.Size = New System.Drawing.Size(49, 16)
         Me.lblClimateObjectMetaData.TabIndex = 8
         Me.lblClimateObjectMetaData.Tag = "Climate_Object_Meta_Data"
         Me.lblClimateObjectMetaData.Text = "Label1"
@@ -123,9 +130,10 @@ Partial Class dlgAdvanceOptions
         'lblDataTimePeriods
         '
         Me.lblDataTimePeriods.AutoSize = True
-        Me.lblDataTimePeriods.Location = New System.Drawing.Point(39, 67)
+        Me.lblDataTimePeriods.Location = New System.Drawing.Point(52, 82)
+        Me.lblDataTimePeriods.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDataTimePeriods.Name = "lblDataTimePeriods"
-        Me.lblDataTimePeriods.Size = New System.Drawing.Size(39, 13)
+        Me.lblDataTimePeriods.Size = New System.Drawing.Size(49, 16)
         Me.lblDataTimePeriods.TabIndex = 9
         Me.lblDataTimePeriods.Tag = "Data_Time_Periods"
         Me.lblDataTimePeriods.Text = "Label2"
@@ -133,35 +141,39 @@ Partial Class dlgAdvanceOptions
         'lblImportedFrom
         '
         Me.lblImportedFrom.AutoSize = True
-        Me.lblImportedFrom.Location = New System.Drawing.Point(39, 45)
+        Me.lblImportedFrom.Location = New System.Drawing.Point(52, 55)
+        Me.lblImportedFrom.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblImportedFrom.Name = "lblImportedFrom"
-        Me.lblImportedFrom.Size = New System.Drawing.Size(39, 13)
+        Me.lblImportedFrom.Size = New System.Drawing.Size(49, 16)
         Me.lblImportedFrom.TabIndex = 10
         Me.lblImportedFrom.Tag = "Imported_From"
         Me.lblImportedFrom.Text = "Label3"
         '
         'txtDataTablesMetaData
         '
-        Me.txtDataTablesMetaData.Location = New System.Drawing.Point(159, 116)
+        Me.txtDataTablesMetaData.Location = New System.Drawing.Point(212, 143)
+        Me.txtDataTablesMetaData.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtDataTablesMetaData.Name = "txtDataTablesMetaData"
-        Me.txtDataTablesMetaData.Size = New System.Drawing.Size(100, 20)
+        Me.txtDataTablesMetaData.Size = New System.Drawing.Size(132, 22)
         Me.txtDataTablesMetaData.TabIndex = 11
         Me.txtDataTablesMetaData.Tag = "Data_Tables_Meta_Data"
         '
         'txtDataTablesVariables
         '
-        Me.txtDataTablesVariables.Location = New System.Drawing.Point(159, 90)
+        Me.txtDataTablesVariables.Location = New System.Drawing.Point(212, 111)
+        Me.txtDataTablesVariables.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtDataTablesVariables.Name = "txtDataTablesVariables"
-        Me.txtDataTablesVariables.Size = New System.Drawing.Size(100, 20)
+        Me.txtDataTablesVariables.Size = New System.Drawing.Size(132, 22)
         Me.txtDataTablesVariables.TabIndex = 12
         Me.txtDataTablesVariables.Tag = "Data_Tables_Variables"
         '
         'lblDataTablesVariables
         '
         Me.lblDataTablesVariables.AutoSize = True
-        Me.lblDataTablesVariables.Location = New System.Drawing.Point(39, 93)
+        Me.lblDataTablesVariables.Location = New System.Drawing.Point(52, 114)
+        Me.lblDataTablesVariables.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDataTablesVariables.Name = "lblDataTablesVariables"
-        Me.lblDataTablesVariables.Size = New System.Drawing.Size(39, 13)
+        Me.lblDataTablesVariables.Size = New System.Drawing.Size(49, 16)
         Me.lblDataTablesVariables.TabIndex = 13
         Me.lblDataTablesVariables.Tag = "Data_Tables_Variables"
         Me.lblDataTablesVariables.Text = "Label1"
@@ -169,25 +181,27 @@ Partial Class dlgAdvanceOptions
         'lblDataTablesMetaData
         '
         Me.lblDataTablesMetaData.AutoSize = True
-        Me.lblDataTablesMetaData.Location = New System.Drawing.Point(39, 122)
+        Me.lblDataTablesMetaData.Location = New System.Drawing.Point(52, 150)
+        Me.lblDataTablesMetaData.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDataTablesMetaData.Name = "lblDataTablesMetaData"
-        Me.lblDataTablesMetaData.Size = New System.Drawing.Size(39, 13)
+        Me.lblDataTablesMetaData.Size = New System.Drawing.Size(49, 16)
         Me.lblDataTablesMetaData.TabIndex = 14
         Me.lblDataTablesMetaData.Tag = "Data_Tables_Meta_Data"
         Me.lblDataTablesMetaData.Text = "Label2"
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(12, 211)
+        Me.ucrBase.Location = New System.Drawing.Point(16, 260)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 53)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 65)
         Me.ucrBase.TabIndex = 15
         '
         'dlgAdvanceOptions
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(470, 262)
+        Me.ClientSize = New System.Drawing.Size(626, 322)
         Me.Controls.Add(Me.ucrBase)
         Me.Controls.Add(Me.lblDataTablesMetaData)
         Me.Controls.Add(Me.lblDataTablesVariables)
@@ -203,6 +217,7 @@ Partial Class dlgAdvanceOptions
         Me.Controls.Add(Me.chkConvert)
         Me.Controls.Add(Me.chkMessages)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgAdvanceOptions"

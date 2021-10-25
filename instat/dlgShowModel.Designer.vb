@@ -60,18 +60,20 @@ Partial Class dlgShowModel
         'lblQuantValues
         '
         Me.lblQuantValues.AutoSize = True
-        Me.lblQuantValues.Location = New System.Drawing.Point(243, 57)
+        Me.lblQuantValues.Location = New System.Drawing.Point(324, 70)
+        Me.lblQuantValues.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblQuantValues.Name = "lblQuantValues"
-        Me.lblQuantValues.Size = New System.Drawing.Size(42, 13)
+        Me.lblQuantValues.Size = New System.Drawing.Size(53, 16)
         Me.lblQuantValues.TabIndex = 8
         Me.lblQuantValues.Text = "Values:"
         '
         'lblProbValues
         '
         Me.lblProbValues.AutoSize = True
-        Me.lblProbValues.Location = New System.Drawing.Point(243, 57)
+        Me.lblProbValues.Location = New System.Drawing.Point(324, 70)
+        Me.lblProbValues.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblProbValues.Name = "lblProbValues"
-        Me.lblProbValues.Size = New System.Drawing.Size(66, 13)
+        Me.lblProbValues.Size = New System.Drawing.Size(86, 16)
         Me.lblProbValues.TabIndex = 4
         Me.lblProbValues.Text = "Probabilities:"
         '
@@ -82,9 +84,10 @@ Partial Class dlgShowModel
         Me.rdoProbabilities.FlatAppearance.BorderSize = 2
         Me.rdoProbabilities.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ActiveCaption
         Me.rdoProbabilities.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.rdoProbabilities.Location = New System.Drawing.Point(233, 15)
+        Me.rdoProbabilities.Location = New System.Drawing.Point(311, 18)
+        Me.rdoProbabilities.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoProbabilities.Name = "rdoProbabilities"
-        Me.rdoProbabilities.Size = New System.Drawing.Size(128, 27)
+        Me.rdoProbabilities.Size = New System.Drawing.Size(171, 33)
         Me.rdoProbabilities.TabIndex = 2
         Me.rdoProbabilities.TabStop = True
         Me.rdoProbabilities.Text = "Probabilities"
@@ -98,9 +101,10 @@ Partial Class dlgShowModel
         Me.rdoQuantiles.FlatAppearance.BorderSize = 2
         Me.rdoQuantiles.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ActiveCaption
         Me.rdoQuantiles.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.rdoQuantiles.Location = New System.Drawing.Point(105, 15)
+        Me.rdoQuantiles.Location = New System.Drawing.Point(140, 18)
+        Me.rdoQuantiles.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoQuantiles.Name = "rdoQuantiles"
-        Me.rdoQuantiles.Size = New System.Drawing.Size(128, 27)
+        Me.rdoQuantiles.Size = New System.Drawing.Size(171, 33)
         Me.rdoQuantiles.TabIndex = 1
         Me.rdoQuantiles.TabStop = True
         Me.rdoQuantiles.Text = "Quantiles"
@@ -109,9 +113,10 @@ Partial Class dlgShowModel
         '
         'cmdDistributionOptions
         '
-        Me.cmdDistributionOptions.Location = New System.Drawing.Point(385, 248)
+        Me.cmdDistributionOptions.Location = New System.Drawing.Point(513, 305)
+        Me.cmdDistributionOptions.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdDistributionOptions.Name = "cmdDistributionOptions"
-        Me.cmdDistributionOptions.Size = New System.Drawing.Size(100, 25)
+        Me.cmdDistributionOptions.Size = New System.Drawing.Size(133, 31)
         Me.cmdDistributionOptions.TabIndex = 12
         Me.cmdDistributionOptions.Text = "Graphics Options"
         Me.cmdDistributionOptions.UseVisualStyleBackColor = True
@@ -119,9 +124,10 @@ Partial Class dlgShowModel
         'rdoGraph
         '
         Me.rdoGraph.AutoSize = True
-        Me.rdoGraph.Location = New System.Drawing.Point(25, 242)
+        Me.rdoGraph.Location = New System.Drawing.Point(33, 298)
+        Me.rdoGraph.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoGraph.Name = "rdoGraph"
-        Me.rdoGraph.Size = New System.Drawing.Size(54, 17)
+        Me.rdoGraph.Size = New System.Drawing.Size(70, 20)
         Me.rdoGraph.TabIndex = 8
         Me.rdoGraph.TabStop = True
         Me.rdoGraph.Text = "Graph"
@@ -130,9 +136,10 @@ Partial Class dlgShowModel
         'rdoValues
         '
         Me.rdoValues.AutoSize = True
-        Me.rdoValues.Location = New System.Drawing.Point(121, 242)
+        Me.rdoValues.Location = New System.Drawing.Point(161, 298)
+        Me.rdoValues.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoValues.Name = "rdoValues"
-        Me.rdoValues.Size = New System.Drawing.Size(57, 17)
+        Me.rdoValues.Size = New System.Drawing.Size(75, 20)
         Me.rdoValues.TabIndex = 9
         Me.rdoValues.TabStop = True
         Me.rdoValues.Text = "Values"
@@ -140,40 +147,43 @@ Partial Class dlgShowModel
         '
         'ucrSaveNewColumn
         '
-        Me.ucrSaveNewColumn.Location = New System.Drawing.Point(9, 285)
-        Me.ucrSaveNewColumn.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ucrSaveNewColumn.Location = New System.Drawing.Point(12, 351)
+        Me.ucrSaveNewColumn.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.ucrSaveNewColumn.Name = "ucrSaveNewColumn"
-        Me.ucrSaveNewColumn.Size = New System.Drawing.Size(321, 24)
+        Me.ucrSaveNewColumn.Size = New System.Drawing.Size(428, 30)
         Me.ucrSaveNewColumn.TabIndex = 11
         '
         'ucrPnlGraphValues
         '
-        Me.ucrPnlGraphValues.Location = New System.Drawing.Point(9, 234)
+        Me.ucrPnlGraphValues.Location = New System.Drawing.Point(12, 288)
+        Me.ucrPnlGraphValues.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrPnlGraphValues.Name = "ucrPnlGraphValues"
-        Me.ucrPnlGraphValues.Size = New System.Drawing.Size(214, 31)
+        Me.ucrPnlGraphValues.Size = New System.Drawing.Size(285, 38)
         Me.ucrPnlGraphValues.TabIndex = 7
         '
         'ucrSaveGraph
         '
-        Me.ucrSaveGraph.Location = New System.Drawing.Point(9, 285)
-        Me.ucrSaveGraph.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ucrSaveGraph.Location = New System.Drawing.Point(12, 351)
+        Me.ucrSaveGraph.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.ucrSaveGraph.Name = "ucrSaveGraph"
-        Me.ucrSaveGraph.Size = New System.Drawing.Size(278, 24)
+        Me.ucrSaveGraph.Size = New System.Drawing.Size(371, 30)
         Me.ucrSaveGraph.TabIndex = 9
         '
         'ucrChkEnterValues
         '
         Me.ucrChkEnterValues.Checked = False
-        Me.ucrChkEnterValues.Location = New System.Drawing.Point(9, 265)
+        Me.ucrChkEnterValues.Location = New System.Drawing.Point(12, 326)
+        Me.ucrChkEnterValues.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkEnterValues.Name = "ucrChkEnterValues"
-        Me.ucrChkEnterValues.Size = New System.Drawing.Size(224, 20)
+        Me.ucrChkEnterValues.Size = New System.Drawing.Size(299, 25)
         Me.ucrChkEnterValues.TabIndex = 10
         '
         'ucrPnlDistributionType
         '
-        Me.ucrPnlDistributionType.Location = New System.Drawing.Point(95, 10)
+        Me.ucrPnlDistributionType.Location = New System.Drawing.Point(127, 12)
+        Me.ucrPnlDistributionType.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrPnlDistributionType.Name = "ucrPnlDistributionType"
-        Me.ucrPnlDistributionType.Size = New System.Drawing.Size(273, 36)
+        Me.ucrPnlDistributionType.Size = New System.Drawing.Size(364, 44)
         Me.ucrPnlDistributionType.TabIndex = 0
         '
         'ucrInputValuesOrProbabilities
@@ -181,16 +191,18 @@ Partial Class dlgShowModel
         Me.ucrInputValuesOrProbabilities.AddQuotesIfUnrecognised = True
         Me.ucrInputValuesOrProbabilities.GetSetSelectedIndex = -1
         Me.ucrInputValuesOrProbabilities.IsReadOnly = False
-        Me.ucrInputValuesOrProbabilities.Location = New System.Drawing.Point(246, 74)
+        Me.ucrInputValuesOrProbabilities.Location = New System.Drawing.Point(328, 91)
+        Me.ucrInputValuesOrProbabilities.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputValuesOrProbabilities.Name = "ucrInputValuesOrProbabilities"
-        Me.ucrInputValuesOrProbabilities.Size = New System.Drawing.Size(137, 21)
+        Me.ucrInputValuesOrProbabilities.Size = New System.Drawing.Size(183, 26)
         Me.ucrInputValuesOrProbabilities.TabIndex = 5
         '
         'ucrDistributionAndParameters
         '
-        Me.ucrDistributionAndParameters.Location = New System.Drawing.Point(241, 101)
+        Me.ucrDistributionAndParameters.Location = New System.Drawing.Point(321, 124)
+        Me.ucrDistributionAndParameters.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrDistributionAndParameters.Name = "ucrDistributionAndParameters"
-        Me.ucrDistributionAndParameters.Size = New System.Drawing.Size(247, 147)
+        Me.ucrDistributionAndParameters.Size = New System.Drawing.Size(329, 181)
         Me.ucrDistributionAndParameters.TabIndex = 6
         '
         'ucrSelectorShowModel
@@ -198,36 +210,37 @@ Partial Class dlgShowModel
         Me.ucrSelectorShowModel.bDropUnusedFilterLevels = False
         Me.ucrSelectorShowModel.bShowHiddenColumns = False
         Me.ucrSelectorShowModel.bUseCurrentFilter = True
-        Me.ucrSelectorShowModel.Location = New System.Drawing.Point(9, 49)
+        Me.ucrSelectorShowModel.Location = New System.Drawing.Point(12, 60)
         Me.ucrSelectorShowModel.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorShowModel.Name = "ucrSelectorShowModel"
-        Me.ucrSelectorShowModel.Size = New System.Drawing.Size(210, 180)
+        Me.ucrSelectorShowModel.Size = New System.Drawing.Size(280, 222)
         Me.ucrSelectorShowModel.TabIndex = 3
         '
         'ucrReceiverProbabilitiesOrValues
         '
         Me.ucrReceiverProbabilitiesOrValues.frmParent = Me
-        Me.ucrReceiverProbabilitiesOrValues.Location = New System.Drawing.Point(246, 74)
+        Me.ucrReceiverProbabilitiesOrValues.Location = New System.Drawing.Point(328, 91)
         Me.ucrReceiverProbabilitiesOrValues.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverProbabilitiesOrValues.Name = "ucrReceiverProbabilitiesOrValues"
         Me.ucrReceiverProbabilitiesOrValues.Selector = Nothing
-        Me.ucrReceiverProbabilitiesOrValues.Size = New System.Drawing.Size(137, 20)
+        Me.ucrReceiverProbabilitiesOrValues.Size = New System.Drawing.Size(183, 25)
         Me.ucrReceiverProbabilitiesOrValues.strNcFilePath = ""
         Me.ucrReceiverProbabilitiesOrValues.TabIndex = 2
         Me.ucrReceiverProbabilitiesOrValues.ucrSelector = Nothing
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(9, 311)
+        Me.ucrBase.Location = New System.Drawing.Point(12, 383)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 52)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 64)
         Me.ucrBase.TabIndex = 13
         '
         'dlgShowModel
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(500, 372)
+        Me.ClientSize = New System.Drawing.Size(667, 459)
         Me.Controls.Add(Me.ucrSaveNewColumn)
         Me.Controls.Add(Me.rdoValues)
         Me.Controls.Add(Me.rdoGraph)
@@ -246,6 +259,7 @@ Partial Class dlgShowModel
         Me.Controls.Add(Me.ucrReceiverProbabilitiesOrValues)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgShowModel"

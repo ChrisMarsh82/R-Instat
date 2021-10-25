@@ -46,18 +46,20 @@ Partial Class frmGraphDisplay
         '
         Me.pctGraph.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pctGraph.Location = New System.Drawing.Point(0, 0)
+        Me.pctGraph.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pctGraph.Name = "pctGraph"
-        Me.pctGraph.Size = New System.Drawing.Size(484, 461)
+        Me.pctGraph.Size = New System.Drawing.Size(646, 567)
         Me.pctGraph.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pctGraph.TabIndex = 0
         Me.pctGraph.TabStop = False
         '
         'frmGraphDisplay
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(484, 461)
+        Me.ClientSize = New System.Drawing.Size(646, 567)
         Me.Controls.Add(Me.pctGraph)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmGraphDisplay"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent

@@ -29,26 +29,29 @@ Partial Class dlgCopySpecial
         'UcrCheck2
         '
         Me.UcrCheck2.Checked = False
-        Me.UcrCheck2.Location = New System.Drawing.Point(68, 63)
+        Me.UcrCheck2.Location = New System.Drawing.Point(91, 78)
+        Me.UcrCheck2.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.UcrCheck2.Name = "UcrCheck2"
-        Me.UcrCheck2.Size = New System.Drawing.Size(100, 20)
+        Me.UcrCheck2.Size = New System.Drawing.Size(133, 25)
         Me.UcrCheck2.TabIndex = 2
         '
         'UcrCheck1
         '
         Me.UcrCheck1.Checked = False
-        Me.UcrCheck1.Location = New System.Drawing.Point(68, 26)
+        Me.UcrCheck1.Location = New System.Drawing.Point(91, 32)
+        Me.UcrCheck1.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.UcrCheck1.Name = "UcrCheck1"
-        Me.UcrCheck1.Size = New System.Drawing.Size(100, 20)
+        Me.UcrCheck1.Size = New System.Drawing.Size(133, 25)
         Me.UcrCheck1.TabIndex = 1
         '
         'dlgCopySpecial
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(384, 182)
+        Me.ClientSize = New System.Drawing.Size(512, 225)
         Me.Controls.Add(Me.UcrCheck2)
         Me.Controls.Add(Me.UcrCheck1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "dlgCopySpecial"
         Me.Text = "dlgCopySpecial"
         Me.ResumeLayout(False)

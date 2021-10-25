@@ -62,28 +62,32 @@ Partial Class dlgSelectAndStuck
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(45, 272)
+        Me.ucrBase.Location = New System.Drawing.Point(60, 335)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(413, 61)
+        Me.ucrBase.Size = New System.Drawing.Size(551, 75)
         Me.ucrBase.TabIndex = 0
         '
         'ucrAddRemove1
         '
         Me.ucrAddRemove1.bShowHiddenColumns = False
-        Me.ucrAddRemove1.Location = New System.Drawing.Point(10, 12)
+        Me.ucrAddRemove1.Location = New System.Drawing.Point(13, 15)
         Me.ucrAddRemove1.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrAddRemove1.Name = "ucrAddRemove1"
-        Me.ucrAddRemove1.Size = New System.Drawing.Size(203, 109)
+        Me.ucrAddRemove1.Size = New System.Drawing.Size(271, 134)
         Me.ucrAddRemove1.TabIndex = 1
         '
         'ucrReceiverSelectAndStuck
         '
-        Me.ucrReceiverSelectAndStuck.Location = New System.Drawing.Point(219, 12)
+        Me.ucrReceiverSelectAndStuck.frmParent = Me
+        Me.ucrReceiverSelectAndStuck.Location = New System.Drawing.Point(292, 15)
         Me.ucrReceiverSelectAndStuck.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverSelectAndStuck.Name = "ucrReceiverSelectAndStuck"
         Me.ucrReceiverSelectAndStuck.Selector = Nothing
-        Me.ucrReceiverSelectAndStuck.Size = New System.Drawing.Size(121, 109)
+        Me.ucrReceiverSelectAndStuck.Size = New System.Drawing.Size(161, 134)
+        Me.ucrReceiverSelectAndStuck.strNcFilePath = ""
         Me.ucrReceiverSelectAndStuck.TabIndex = 2
+        Me.ucrReceiverSelectAndStuck.ucrSelector = Nothing
         '
         'grpAppend
         '
@@ -92,9 +96,11 @@ Partial Class dlgSelectAndStuck
         Me.grpAppend.Controls.Add(Me.rdoAll)
         Me.grpAppend.Controls.Add(Me.rdoLast)
         Me.grpAppend.Controls.Add(Me.rdoFirst)
-        Me.grpAppend.Location = New System.Drawing.Point(24, 127)
+        Me.grpAppend.Location = New System.Drawing.Point(32, 156)
+        Me.grpAppend.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpAppend.Name = "grpAppend"
-        Me.grpAppend.Size = New System.Drawing.Size(113, 88)
+        Me.grpAppend.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpAppend.Size = New System.Drawing.Size(151, 108)
         Me.grpAppend.TabIndex = 3
         Me.grpAppend.TabStop = False
         Me.grpAppend.Tag = "Append"
@@ -102,24 +108,27 @@ Partial Class dlgSelectAndStuck
         '
         'txtLast
         '
-        Me.txtLast.Location = New System.Drawing.Point(66, 40)
+        Me.txtLast.Location = New System.Drawing.Point(88, 49)
+        Me.txtLast.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtLast.Name = "txtLast"
-        Me.txtLast.Size = New System.Drawing.Size(18, 20)
+        Me.txtLast.Size = New System.Drawing.Size(23, 22)
         Me.txtLast.TabIndex = 7
         '
         'txtFirst
         '
-        Me.txtFirst.Location = New System.Drawing.Point(66, 17)
+        Me.txtFirst.Location = New System.Drawing.Point(88, 21)
+        Me.txtFirst.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtFirst.Name = "txtFirst"
-        Me.txtFirst.Size = New System.Drawing.Size(18, 20)
+        Me.txtFirst.Size = New System.Drawing.Size(23, 22)
         Me.txtFirst.TabIndex = 7
         '
         'rdoAll
         '
         Me.rdoAll.AutoSize = True
-        Me.rdoAll.Location = New System.Drawing.Point(6, 65)
+        Me.rdoAll.Location = New System.Drawing.Point(8, 80)
+        Me.rdoAll.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoAll.Name = "rdoAll"
-        Me.rdoAll.Size = New System.Drawing.Size(36, 17)
+        Me.rdoAll.Size = New System.Drawing.Size(48, 20)
         Me.rdoAll.TabIndex = 0
         Me.rdoAll.TabStop = True
         Me.rdoAll.Tag = "All"
@@ -129,9 +138,10 @@ Partial Class dlgSelectAndStuck
         'rdoLast
         '
         Me.rdoLast.AutoSize = True
-        Me.rdoLast.Location = New System.Drawing.Point(6, 43)
+        Me.rdoLast.Location = New System.Drawing.Point(8, 53)
+        Me.rdoLast.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoLast.Name = "rdoLast"
-        Me.rdoLast.Size = New System.Drawing.Size(45, 17)
+        Me.rdoLast.Size = New System.Drawing.Size(58, 20)
         Me.rdoLast.TabIndex = 0
         Me.rdoLast.TabStop = True
         Me.rdoLast.Tag = "Last"
@@ -141,9 +151,10 @@ Partial Class dlgSelectAndStuck
         'rdoFirst
         '
         Me.rdoFirst.AutoSize = True
-        Me.rdoFirst.Location = New System.Drawing.Point(7, 20)
+        Me.rdoFirst.Location = New System.Drawing.Point(9, 25)
+        Me.rdoFirst.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoFirst.Name = "rdoFirst"
-        Me.rdoFirst.Size = New System.Drawing.Size(44, 17)
+        Me.rdoFirst.Size = New System.Drawing.Size(58, 20)
         Me.rdoFirst.TabIndex = 0
         Me.rdoFirst.TabStop = True
         Me.rdoFirst.Tag = "First"
@@ -154,9 +165,11 @@ Partial Class dlgSelectAndStuck
         '
         Me.grpConditionForSelection.Controls.Add(Me.cboConditionForSelection)
         Me.grpConditionForSelection.Controls.Add(Me.chkShowCalculator)
-        Me.grpConditionForSelection.Location = New System.Drawing.Point(24, 221)
+        Me.grpConditionForSelection.Location = New System.Drawing.Point(32, 272)
+        Me.grpConditionForSelection.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpConditionForSelection.Name = "grpConditionForSelection"
-        Me.grpConditionForSelection.Size = New System.Drawing.Size(384, 45)
+        Me.grpConditionForSelection.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpConditionForSelection.Size = New System.Drawing.Size(512, 55)
         Me.grpConditionForSelection.TabIndex = 4
         Me.grpConditionForSelection.TabStop = False
         Me.grpConditionForSelection.Tag = "Condtion_for_selection"
@@ -165,17 +178,19 @@ Partial Class dlgSelectAndStuck
         'cboConditionForSelection
         '
         Me.cboConditionForSelection.FormattingEnabled = True
-        Me.cboConditionForSelection.Location = New System.Drawing.Point(6, 19)
+        Me.cboConditionForSelection.Location = New System.Drawing.Point(8, 23)
+        Me.cboConditionForSelection.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboConditionForSelection.Name = "cboConditionForSelection"
-        Me.cboConditionForSelection.Size = New System.Drawing.Size(183, 21)
+        Me.cboConditionForSelection.Size = New System.Drawing.Size(243, 24)
         Me.cboConditionForSelection.TabIndex = 0
         '
         'chkShowCalculator
         '
         Me.chkShowCalculator.AutoSize = True
-        Me.chkShowCalculator.Location = New System.Drawing.Point(206, 23)
+        Me.chkShowCalculator.Location = New System.Drawing.Point(275, 28)
+        Me.chkShowCalculator.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkShowCalculator.Name = "chkShowCalculator"
-        Me.chkShowCalculator.Size = New System.Drawing.Size(102, 17)
+        Me.chkShowCalculator.Size = New System.Drawing.Size(128, 21)
         Me.chkShowCalculator.TabIndex = 0
         Me.chkShowCalculator.Tag = "Show_calculator"
         Me.chkShowCalculator.Text = "Show calculator"
@@ -184,17 +199,19 @@ Partial Class dlgSelectAndStuck
         'cboInto
         '
         Me.cboInto.FormattingEnabled = True
-        Me.cboInto.Location = New System.Drawing.Point(346, 37)
+        Me.cboInto.Location = New System.Drawing.Point(461, 46)
+        Me.cboInto.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboInto.Name = "cboInto"
-        Me.cboInto.Size = New System.Drawing.Size(121, 21)
+        Me.cboInto.Size = New System.Drawing.Size(160, 24)
         Me.cboInto.TabIndex = 5
         '
         'lblInto
         '
         Me.lblInto.AutoSize = True
-        Me.lblInto.Location = New System.Drawing.Point(357, 12)
+        Me.lblInto.Location = New System.Drawing.Point(476, 15)
+        Me.lblInto.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblInto.Name = "lblInto"
-        Me.lblInto.Size = New System.Drawing.Size(25, 13)
+        Me.lblInto.Size = New System.Drawing.Size(29, 16)
         Me.lblInto.TabIndex = 6
         Me.lblInto.Tag = "Into"
         Me.lblInto.Text = "Into"
@@ -202,25 +219,28 @@ Partial Class dlgSelectAndStuck
         'cboCarry
         '
         Me.cboCarry.FormattingEnabled = True
-        Me.cboCarry.Location = New System.Drawing.Point(173, 157)
+        Me.cboCarry.Location = New System.Drawing.Point(231, 193)
+        Me.cboCarry.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboCarry.Name = "cboCarry"
-        Me.cboCarry.Size = New System.Drawing.Size(121, 21)
+        Me.cboCarry.Size = New System.Drawing.Size(160, 24)
         Me.cboCarry.TabIndex = 5
         '
         'cboCarryInto
         '
         Me.cboCarryInto.FormattingEnabled = True
-        Me.cboCarryInto.Location = New System.Drawing.Point(337, 157)
+        Me.cboCarryInto.Location = New System.Drawing.Point(449, 193)
+        Me.cboCarryInto.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboCarryInto.Name = "cboCarryInto"
-        Me.cboCarryInto.Size = New System.Drawing.Size(121, 21)
+        Me.cboCarryInto.Size = New System.Drawing.Size(160, 24)
         Me.cboCarryInto.TabIndex = 5
         '
         'lblCarry
         '
         Me.lblCarry.AutoSize = True
-        Me.lblCarry.Location = New System.Drawing.Point(174, 127)
+        Me.lblCarry.Location = New System.Drawing.Point(232, 156)
+        Me.lblCarry.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCarry.Name = "lblCarry"
-        Me.lblCarry.Size = New System.Drawing.Size(31, 13)
+        Me.lblCarry.Size = New System.Drawing.Size(40, 16)
         Me.lblCarry.TabIndex = 6
         Me.lblCarry.Tag = "Carry"
         Me.lblCarry.Text = "Carry"
@@ -228,18 +248,19 @@ Partial Class dlgSelectAndStuck
         'lblCarryInto
         '
         Me.lblCarryInto.AutoSize = True
-        Me.lblCarryInto.Location = New System.Drawing.Point(357, 127)
+        Me.lblCarryInto.Location = New System.Drawing.Point(476, 156)
+        Me.lblCarryInto.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCarryInto.Name = "lblCarryInto"
-        Me.lblCarryInto.Size = New System.Drawing.Size(25, 13)
+        Me.lblCarryInto.Size = New System.Drawing.Size(29, 16)
         Me.lblCarryInto.TabIndex = 6
         Me.lblCarryInto.Tag = "Into"
         Me.lblCarryInto.Text = "Into"
         '
         'dlgSelectAndStuck
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(500, 329)
+        Me.ClientSize = New System.Drawing.Size(667, 406)
         Me.Controls.Add(Me.lblCarryInto)
         Me.Controls.Add(Me.lblCarry)
         Me.Controls.Add(Me.lblInto)
@@ -252,6 +273,7 @@ Partial Class dlgSelectAndStuck
         Me.Controls.Add(Me.ucrAddRemove1)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgSelectAndStuck"

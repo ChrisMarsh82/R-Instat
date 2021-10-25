@@ -44,26 +44,31 @@ Partial Class dlgCreateClimateObject
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(12, 108)
+        Me.ucrBase.Location = New System.Drawing.Point(16, 133)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 56)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 69)
         Me.ucrBase.TabIndex = 0
         '
         'ucrDataFrameImportClimateObject
         '
-        Me.ucrDataFrameImportClimateObject.Location = New System.Drawing.Point(12, 23)
+        Me.ucrDataFrameImportClimateObject.bDropUnusedFilterLevels = False
+        Me.ucrDataFrameImportClimateObject.bUseCurrentFilter = True
+        Me.ucrDataFrameImportClimateObject.Location = New System.Drawing.Point(16, 28)
+        Me.ucrDataFrameImportClimateObject.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrDataFrameImportClimateObject.Name = "ucrDataFrameImportClimateObject"
-        Me.ucrDataFrameImportClimateObject.Size = New System.Drawing.Size(127, 41)
+        Me.ucrDataFrameImportClimateObject.Size = New System.Drawing.Size(169, 50)
         Me.ucrDataFrameImportClimateObject.TabIndex = 1
         '
         'dlgCreateClimateObject
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(433, 186)
+        Me.ClientSize = New System.Drawing.Size(577, 230)
         Me.Controls.Add(Me.ucrDataFrameImportClimateObject)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgCreateClimateObject"

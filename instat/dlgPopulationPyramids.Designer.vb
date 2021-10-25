@@ -51,87 +51,102 @@ Partial Class dlgPopulationPyramids
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(10, 244)
+        Me.ucrBase.Location = New System.Drawing.Point(13, 300)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 52)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 64)
         Me.ucrBase.TabIndex = 0
         '
         'ucrPopulationPyramidselector
         '
+        Me.ucrPopulationPyramidselector.bDropUnusedFilterLevels = False
         Me.ucrPopulationPyramidselector.bShowHiddenColumns = False
         Me.ucrPopulationPyramidselector.bUseCurrentFilter = True
-        Me.ucrPopulationPyramidselector.Location = New System.Drawing.Point(10, 10)
+        Me.ucrPopulationPyramidselector.Location = New System.Drawing.Point(13, 12)
         Me.ucrPopulationPyramidselector.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrPopulationPyramidselector.Name = "ucrPopulationPyramidselector"
-        Me.ucrPopulationPyramidselector.Size = New System.Drawing.Size(210, 180)
+        Me.ucrPopulationPyramidselector.Size = New System.Drawing.Size(280, 222)
         Me.ucrPopulationPyramidselector.TabIndex = 1
         '
         'lblXVariable
         '
         Me.lblXVariable.AutoSize = True
-        Me.lblXVariable.Location = New System.Drawing.Point(255, 25)
+        Me.lblXVariable.Location = New System.Drawing.Point(340, 31)
+        Me.lblXVariable.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblXVariable.Name = "lblXVariable"
-        Me.lblXVariable.Size = New System.Drawing.Size(55, 13)
+        Me.lblXVariable.Size = New System.Drawing.Size(70, 16)
         Me.lblXVariable.TabIndex = 2
         Me.lblXVariable.Text = "X Variable"
         '
         'ucrXVariableReceiver
         '
-        Me.ucrXVariableReceiver.Location = New System.Drawing.Point(258, 42)
+        Me.ucrXVariableReceiver.frmParent = Me
+        Me.ucrXVariableReceiver.Location = New System.Drawing.Point(344, 52)
         Me.ucrXVariableReceiver.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrXVariableReceiver.Name = "ucrXVariableReceiver"
         Me.ucrXVariableReceiver.Selector = Nothing
-        Me.ucrXVariableReceiver.Size = New System.Drawing.Size(120, 20)
+        Me.ucrXVariableReceiver.Size = New System.Drawing.Size(160, 25)
+        Me.ucrXVariableReceiver.strNcFilePath = ""
         Me.ucrXVariableReceiver.TabIndex = 3
+        Me.ucrXVariableReceiver.ucrSelector = Nothing
         '
         'lblYVariable
         '
         Me.lblYVariable.AutoSize = True
-        Me.lblYVariable.Location = New System.Drawing.Point(255, 76)
+        Me.lblYVariable.Location = New System.Drawing.Point(340, 94)
+        Me.lblYVariable.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblYVariable.Name = "lblYVariable"
-        Me.lblYVariable.Size = New System.Drawing.Size(55, 13)
+        Me.lblYVariable.Size = New System.Drawing.Size(71, 16)
         Me.lblYVariable.TabIndex = 2
         Me.lblYVariable.Text = "Y Variable"
         '
         'ucrYVariableReceiver
         '
-        Me.ucrYVariableReceiver.Location = New System.Drawing.Point(258, 92)
+        Me.ucrYVariableReceiver.frmParent = Me
+        Me.ucrYVariableReceiver.Location = New System.Drawing.Point(344, 113)
         Me.ucrYVariableReceiver.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrYVariableReceiver.Name = "ucrYVariableReceiver"
         Me.ucrYVariableReceiver.Selector = Nothing
-        Me.ucrYVariableReceiver.Size = New System.Drawing.Size(120, 20)
+        Me.ucrYVariableReceiver.Size = New System.Drawing.Size(160, 25)
+        Me.ucrYVariableReceiver.strNcFilePath = ""
         Me.ucrYVariableReceiver.TabIndex = 3
+        Me.ucrYVariableReceiver.ucrSelector = Nothing
         '
         'lblSecondFactor
         '
         Me.lblSecondFactor.AutoSize = True
-        Me.lblSecondFactor.Location = New System.Drawing.Point(255, 125)
+        Me.lblSecondFactor.Location = New System.Drawing.Point(340, 154)
+        Me.lblSecondFactor.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSecondFactor.Name = "lblSecondFactor"
-        Me.lblSecondFactor.Size = New System.Drawing.Size(77, 13)
+        Me.lblSecondFactor.Size = New System.Drawing.Size(96, 16)
         Me.lblSecondFactor.TabIndex = 2
         Me.lblSecondFactor.Text = "Second Factor"
         '
         'ucrSecondFactorReceiver
         '
-        Me.ucrSecondFactorReceiver.Location = New System.Drawing.Point(258, 142)
+        Me.ucrSecondFactorReceiver.frmParent = Me
+        Me.ucrSecondFactorReceiver.Location = New System.Drawing.Point(344, 175)
         Me.ucrSecondFactorReceiver.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSecondFactorReceiver.Name = "ucrSecondFactorReceiver"
         Me.ucrSecondFactorReceiver.Selector = Nothing
-        Me.ucrSecondFactorReceiver.Size = New System.Drawing.Size(120, 20)
+        Me.ucrSecondFactorReceiver.Size = New System.Drawing.Size(160, 25)
+        Me.ucrSecondFactorReceiver.strNcFilePath = ""
         Me.ucrSecondFactorReceiver.TabIndex = 3
+        Me.ucrSecondFactorReceiver.ucrSelector = Nothing
         '
         'ucrSavePopulationPyramid
         '
-        Me.ucrSavePopulationPyramid.Location = New System.Drawing.Point(10, 209)
+        Me.ucrSavePopulationPyramid.Location = New System.Drawing.Point(13, 257)
+        Me.ucrSavePopulationPyramid.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrSavePopulationPyramid.Name = "ucrSavePopulationPyramid"
-        Me.ucrSavePopulationPyramid.Size = New System.Drawing.Size(265, 20)
+        Me.ucrSavePopulationPyramid.Size = New System.Drawing.Size(353, 25)
         Me.ucrSavePopulationPyramid.TabIndex = 4
         '
         'dlgPopulationPyramids
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(421, 298)
+        Me.ClientSize = New System.Drawing.Size(561, 367)
         Me.Controls.Add(Me.ucrSavePopulationPyramid)
         Me.Controls.Add(Me.ucrSecondFactorReceiver)
         Me.Controls.Add(Me.lblSecondFactor)
@@ -142,6 +157,7 @@ Partial Class dlgPopulationPyramids
         Me.Controls.Add(Me.ucrPopulationPyramidselector)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgPopulationPyramids"

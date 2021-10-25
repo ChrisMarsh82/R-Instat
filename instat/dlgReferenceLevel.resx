@@ -127,10 +127,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblFactorSelected.Location" type="System.Drawing.Point, System.Drawing">
-    <value>255, 12</value>
+    <value>340, 15</value>
+  </data>
+  <data name="lblFactorSelected.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblFactorSelected.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 13</value>
+    <value>106, 16</value>
   </data>
   <data name="lblFactorSelected.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -154,19 +157,19 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>531, 305</value>
+    <value>708, 376</value>
   </data>
   <data name="ucrSelectorForReferenceLevels.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 10</value>
+    <value>13, 12</value>
   </data>
   <data name="ucrSelectorForReferenceLevels.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrSelectorForReferenceLevels.Size" type="System.Drawing.Size, System.Drawing">
-    <value>242, 194</value>
+    <value>323, 239</value>
   </data>
   <data name="ucrSelectorForReferenceLevels.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -187,10 +190,13 @@
     <value>True</value>
   </data>
   <data name="ucrFactorReferenceLevels.Location" type="System.Drawing.Point, System.Drawing">
-    <value>255, 58</value>
+    <value>340, 71</value>
+  </data>
+  <data name="ucrFactorReferenceLevels.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrFactorReferenceLevels.Size" type="System.Drawing.Size, System.Drawing">
-    <value>267, 181</value>
+    <value>355, 222</value>
   </data>
   <data name="ucrFactorReferenceLevels.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -208,10 +214,13 @@
     <value>2</value>
   </data>
   <data name="ucrBase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 250</value>
+    <value>13, 308</value>
+  </data>
+  <data name="ucrBase.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>410, 53</value>
+    <value>547, 65</value>
   </data>
   <data name="ucrBase.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -228,8 +237,8 @@
   <data name="&gt;&gt;ucrBase.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -244,13 +253,13 @@
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ucrReceiverReferenceLevels.Location" type="System.Drawing.Point, System.Drawing">
-    <value>255, 28</value>
+    <value>340, 34</value>
   </data>
   <data name="ucrReceiverReferenceLevels.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrReceiverReferenceLevels.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 26</value>
+    <value>169, 32</value>
   </data>
   <data name="ucrReceiverReferenceLevels.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>

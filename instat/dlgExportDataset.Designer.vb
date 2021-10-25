@@ -89,10 +89,10 @@ Partial Class dlgExportDataset
         '
         Me.ucrFilePath.DefaultFileSuggestionName = ""
         Me.ucrFilePath.FilePath = ""
-        Me.ucrFilePath.FilePathBrowseText = "Browse"
+        Me.ucrFilePath.FilePathBrowseText = resources.GetString("ucrFilePath.FilePathBrowseText")
         Me.ucrFilePath.FilePathDialogFilter = resources.GetString("ucrFilePath.FilePathDialogFilter")
         Me.ucrFilePath.FilePathDialogTitle = "Export Data File"
-        Me.ucrFilePath.FilePathLabel = "Export File(s):"
+        Me.ucrFilePath.FilePathLabel = resources.GetString("ucrFilePath.FilePathLabel")
         Me.ucrFilePath.FolderBrowse = False
         resources.ApplyResources(Me.ucrFilePath, "ucrFilePath")
         Me.ucrFilePath.Name = "ucrFilePath"

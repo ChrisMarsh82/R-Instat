@@ -88,18 +88,20 @@ Partial Class dlgCliBoxplot
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(129, 9)
+        Me.Label1.Location = New System.Drawing.Point(172, 11)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(125, 13)
+        Me.Label1.Size = New System.Drawing.Size(158, 16)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Data list not implemented"
         '
         'chkVarwidth
         '
         Me.chkVarwidth.AutoSize = True
-        Me.chkVarwidth.Location = New System.Drawing.Point(6, 42)
+        Me.chkVarwidth.Location = New System.Drawing.Point(8, 52)
+        Me.chkVarwidth.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkVarwidth.Name = "chkVarwidth"
-        Me.chkVarwidth.Size = New System.Drawing.Size(95, 17)
+        Me.chkVarwidth.Size = New System.Drawing.Size(122, 21)
         Me.chkVarwidth.TabIndex = 3
         Me.chkVarwidth.Tag = "Variable_Width"
         Me.chkVarwidth.Text = "Variable Width"
@@ -108,9 +110,10 @@ Partial Class dlgCliBoxplot
         'chkAdd
         '
         Me.chkAdd.AutoSize = True
-        Me.chkAdd.Location = New System.Drawing.Point(6, 19)
+        Me.chkAdd.Location = New System.Drawing.Point(8, 23)
+        Me.chkAdd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkAdd.Name = "chkAdd"
-        Me.chkAdd.Size = New System.Drawing.Size(45, 17)
+        Me.chkAdd.Size = New System.Drawing.Size(59, 21)
         Me.chkAdd.TabIndex = 4
         Me.chkAdd.Tag = "add"
         Me.chkAdd.Text = "Add"
@@ -119,9 +122,10 @@ Partial Class dlgCliBoxplot
         'chkNotch
         '
         Me.chkNotch.AutoSize = True
-        Me.chkNotch.Location = New System.Drawing.Point(6, 65)
+        Me.chkNotch.Location = New System.Drawing.Point(8, 80)
+        Me.chkNotch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkNotch.Name = "chkNotch"
-        Me.chkNotch.Size = New System.Drawing.Size(55, 17)
+        Me.chkNotch.Size = New System.Drawing.Size(69, 21)
         Me.chkNotch.TabIndex = 5
         Me.chkNotch.Tag = "Notch"
         Me.chkNotch.Text = "Notch"
@@ -130,9 +134,10 @@ Partial Class dlgCliBoxplot
         'chkOutline
         '
         Me.chkOutline.AutoSize = True
-        Me.chkOutline.Location = New System.Drawing.Point(6, 88)
+        Me.chkOutline.Location = New System.Drawing.Point(8, 108)
+        Me.chkOutline.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkOutline.Name = "chkOutline"
-        Me.chkOutline.Size = New System.Drawing.Size(59, 17)
+        Me.chkOutline.Size = New System.Drawing.Size(75, 21)
         Me.chkOutline.TabIndex = 6
         Me.chkOutline.Tag = "Outline"
         Me.chkOutline.Text = "Outline"
@@ -141,9 +146,10 @@ Partial Class dlgCliBoxplot
         'chkPlot
         '
         Me.chkPlot.AutoSize = True
-        Me.chkPlot.Location = New System.Drawing.Point(61, 19)
+        Me.chkPlot.Location = New System.Drawing.Point(81, 23)
+        Me.chkPlot.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkPlot.Name = "chkPlot"
-        Me.chkPlot.Size = New System.Drawing.Size(44, 17)
+        Me.chkPlot.Size = New System.Drawing.Size(57, 21)
         Me.chkPlot.TabIndex = 7
         Me.chkPlot.Tag = "Plot"
         Me.chkPlot.Text = "Plot"
@@ -152,9 +158,10 @@ Partial Class dlgCliBoxplot
         'chkFactorLevel
         '
         Me.chkFactorLevel.AutoSize = True
-        Me.chkFactorLevel.Location = New System.Drawing.Point(132, 65)
+        Me.chkFactorLevel.Location = New System.Drawing.Point(176, 80)
+        Me.chkFactorLevel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkFactorLevel.Name = "chkFactorLevel"
-        Me.chkFactorLevel.Size = New System.Drawing.Size(85, 17)
+        Me.chkFactorLevel.Size = New System.Drawing.Size(108, 21)
         Me.chkFactorLevel.TabIndex = 8
         Me.chkFactorLevel.Tag = "Factor_Level"
         Me.chkFactorLevel.Text = "Factor Level"
@@ -170,9 +177,11 @@ Partial Class dlgCliBoxplot
         Me.grpOptions.Controls.Add(Me.chkNotch)
         Me.grpOptions.Controls.Add(Me.chkOutline)
         Me.grpOptions.Controls.Add(Me.chkPlot)
-        Me.grpOptions.Location = New System.Drawing.Point(256, 148)
+        Me.grpOptions.Location = New System.Drawing.Point(341, 182)
+        Me.grpOptions.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpOptions.Name = "grpOptions"
-        Me.grpOptions.Size = New System.Drawing.Size(251, 116)
+        Me.grpOptions.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpOptions.Size = New System.Drawing.Size(335, 143)
         Me.grpOptions.TabIndex = 9
         Me.grpOptions.TabStop = False
         Me.grpOptions.Text = "Options"
@@ -180,9 +189,10 @@ Partial Class dlgCliBoxplot
         'chkMonthAbbreviations
         '
         Me.chkMonthAbbreviations.AutoSize = True
-        Me.chkMonthAbbreviations.Location = New System.Drawing.Point(132, 19)
+        Me.chkMonthAbbreviations.Location = New System.Drawing.Point(176, 23)
+        Me.chkMonthAbbreviations.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkMonthAbbreviations.Name = "chkMonthAbbreviations"
-        Me.chkMonthAbbreviations.Size = New System.Drawing.Size(123, 17)
+        Me.chkMonthAbbreviations.Size = New System.Drawing.Size(156, 21)
         Me.chkMonthAbbreviations.TabIndex = 10
         Me.chkMonthAbbreviations.Tag = "Month_Abbreviations"
         Me.chkMonthAbbreviations.Text = "Month Abbreviations"
@@ -191,9 +201,10 @@ Partial Class dlgCliBoxplot
         'chkHorizontal
         '
         Me.chkHorizontal.AutoSize = True
-        Me.chkHorizontal.Location = New System.Drawing.Point(132, 42)
+        Me.chkHorizontal.Location = New System.Drawing.Point(176, 52)
+        Me.chkHorizontal.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkHorizontal.Name = "chkHorizontal"
-        Me.chkHorizontal.Size = New System.Drawing.Size(73, 17)
+        Me.chkHorizontal.Size = New System.Drawing.Size(94, 21)
         Me.chkHorizontal.TabIndex = 9
         Me.chkHorizontal.Tag = "Horizontal"
         Me.chkHorizontal.Text = "Horizontal"
@@ -201,31 +212,35 @@ Partial Class dlgCliBoxplot
         '
         'nudRange
         '
-        Me.nudRange.Location = New System.Drawing.Point(449, 273)
+        Me.nudRange.Location = New System.Drawing.Point(599, 336)
+        Me.nudRange.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudRange.Name = "nudRange"
-        Me.nudRange.Size = New System.Drawing.Size(58, 20)
+        Me.nudRange.Size = New System.Drawing.Size(77, 22)
         Me.nudRange.TabIndex = 11
         '
         'nudWhisklty
         '
-        Me.nudWhisklty.Location = New System.Drawing.Point(132, 268)
+        Me.nudWhisklty.Location = New System.Drawing.Point(176, 330)
+        Me.nudWhisklty.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudWhisklty.Name = "nudWhisklty"
-        Me.nudWhisklty.Size = New System.Drawing.Size(58, 20)
+        Me.nudWhisklty.Size = New System.Drawing.Size(77, 22)
         Me.nudWhisklty.TabIndex = 12
         '
         'nudThreshold
         '
-        Me.nudThreshold.Location = New System.Drawing.Point(272, 270)
+        Me.nudThreshold.Location = New System.Drawing.Point(363, 332)
+        Me.nudThreshold.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudThreshold.Name = "nudThreshold"
-        Me.nudThreshold.Size = New System.Drawing.Size(58, 20)
+        Me.nudThreshold.Size = New System.Drawing.Size(77, 22)
         Me.nudThreshold.TabIndex = 13
         '
         'lblRange
         '
         Me.lblRange.AutoSize = True
-        Me.lblRange.Location = New System.Drawing.Point(355, 277)
+        Me.lblRange.Location = New System.Drawing.Point(473, 341)
+        Me.lblRange.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblRange.Name = "lblRange"
-        Me.lblRange.Size = New System.Drawing.Size(39, 13)
+        Me.lblRange.Size = New System.Drawing.Size(49, 16)
         Me.lblRange.TabIndex = 14
         Me.lblRange.Tag = "Range"
         Me.lblRange.Text = "Range"
@@ -233,9 +248,10 @@ Partial Class dlgCliBoxplot
         'lblThreshold
         '
         Me.lblThreshold.AutoSize = True
-        Me.lblThreshold.Location = New System.Drawing.Point(212, 275)
+        Me.lblThreshold.Location = New System.Drawing.Point(283, 338)
+        Me.lblThreshold.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblThreshold.Name = "lblThreshold"
-        Me.lblThreshold.Size = New System.Drawing.Size(54, 13)
+        Me.lblThreshold.Size = New System.Drawing.Size(69, 16)
         Me.lblThreshold.TabIndex = 15
         Me.lblThreshold.Tag = "Threshold"
         Me.lblThreshold.Text = "Threshold"
@@ -243,9 +259,10 @@ Partial Class dlgCliBoxplot
         'lblWhiskLineType
         '
         Me.lblWhiskLineType.AutoSize = True
-        Me.lblWhiskLineType.Location = New System.Drawing.Point(30, 272)
+        Me.lblWhiskLineType.Location = New System.Drawing.Point(40, 335)
+        Me.lblWhiskLineType.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblWhiskLineType.Name = "lblWhiskLineType"
-        Me.lblWhiskLineType.Size = New System.Drawing.Size(87, 13)
+        Me.lblWhiskLineType.Size = New System.Drawing.Size(108, 16)
         Me.lblWhiskLineType.TabIndex = 16
         Me.lblWhiskLineType.Tag = "Whisk_line_type"
         Me.lblWhiskLineType.Text = "Whisk Line Type"
@@ -253,9 +270,10 @@ Partial Class dlgCliBoxplot
         'lblTitle
         '
         Me.lblTitle.AutoSize = True
-        Me.lblTitle.Location = New System.Drawing.Point(30, 43)
+        Me.lblTitle.Location = New System.Drawing.Point(40, 53)
+        Me.lblTitle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(27, 13)
+        Me.lblTitle.Size = New System.Drawing.Size(34, 16)
         Me.lblTitle.TabIndex = 14
         Me.lblTitle.Tag = "Title"
         Me.lblTitle.Text = "Title"
@@ -263,9 +281,10 @@ Partial Class dlgCliBoxplot
         'lblVariable
         '
         Me.lblVariable.AutoSize = True
-        Me.lblVariable.Location = New System.Drawing.Point(30, 69)
+        Me.lblVariable.Location = New System.Drawing.Point(40, 85)
+        Me.lblVariable.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblVariable.Name = "lblVariable"
-        Me.lblVariable.Size = New System.Drawing.Size(45, 13)
+        Me.lblVariable.Size = New System.Drawing.Size(59, 16)
         Me.lblVariable.TabIndex = 15
         Me.lblVariable.Tag = "Variable"
         Me.lblVariable.Text = "Variable"
@@ -273,9 +292,10 @@ Partial Class dlgCliBoxplot
         'lblYLabel
         '
         Me.lblYLabel.AutoSize = True
-        Me.lblYLabel.Location = New System.Drawing.Point(30, 95)
+        Me.lblYLabel.Location = New System.Drawing.Point(40, 117)
+        Me.lblYLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblYLabel.Name = "lblYLabel"
-        Me.lblYLabel.Size = New System.Drawing.Size(43, 13)
+        Me.lblYLabel.Size = New System.Drawing.Size(54, 16)
         Me.lblYLabel.TabIndex = 16
         Me.lblYLabel.Tag = "Y_Label"
         Me.lblYLabel.Text = "Y Label"
@@ -283,9 +303,10 @@ Partial Class dlgCliBoxplot
         'lblXLabel
         '
         Me.lblXLabel.AutoSize = True
-        Me.lblXLabel.Location = New System.Drawing.Point(32, 121)
+        Me.lblXLabel.Location = New System.Drawing.Point(43, 149)
+        Me.lblXLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblXLabel.Name = "lblXLabel"
-        Me.lblXLabel.Size = New System.Drawing.Size(43, 13)
+        Me.lblXLabel.Size = New System.Drawing.Size(53, 16)
         Me.lblXLabel.TabIndex = 17
         Me.lblXLabel.Tag = "X_Label"
         Me.lblXLabel.Text = "X Label"
@@ -293,9 +314,10 @@ Partial Class dlgCliBoxplot
         'lblDataPeriodLabel
         '
         Me.lblDataPeriodLabel.AutoSize = True
-        Me.lblDataPeriodLabel.Location = New System.Drawing.Point(25, 148)
+        Me.lblDataPeriodLabel.Location = New System.Drawing.Point(33, 182)
+        Me.lblDataPeriodLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDataPeriodLabel.Name = "lblDataPeriodLabel"
-        Me.lblDataPeriodLabel.Size = New System.Drawing.Size(92, 13)
+        Me.lblDataPeriodLabel.Size = New System.Drawing.Size(117, 16)
         Me.lblDataPeriodLabel.TabIndex = 18
         Me.lblDataPeriodLabel.Tag = "Data_Period_Label"
         Me.lblDataPeriodLabel.Text = "Data Period Label"
@@ -303,9 +325,10 @@ Partial Class dlgCliBoxplot
         'lblFactor
         '
         Me.lblFactor.AutoSize = True
-        Me.lblFactor.Location = New System.Drawing.Point(30, 174)
+        Me.lblFactor.Location = New System.Drawing.Point(40, 214)
+        Me.lblFactor.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblFactor.Name = "lblFactor"
-        Me.lblFactor.Size = New System.Drawing.Size(37, 13)
+        Me.lblFactor.Size = New System.Drawing.Size(46, 16)
         Me.lblFactor.TabIndex = 19
         Me.lblFactor.Tag = "Factor"
         Me.lblFactor.Text = "Factor"
@@ -313,9 +336,10 @@ Partial Class dlgCliBoxplot
         'lblWidth
         '
         Me.lblWidth.AutoSize = True
-        Me.lblWidth.Location = New System.Drawing.Point(30, 201)
+        Me.lblWidth.Location = New System.Drawing.Point(40, 247)
+        Me.lblWidth.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblWidth.Name = "lblWidth"
-        Me.lblWidth.Size = New System.Drawing.Size(35, 13)
+        Me.lblWidth.Size = New System.Drawing.Size(42, 16)
         Me.lblWidth.TabIndex = 20
         Me.lblWidth.Tag = "Width"
         Me.lblWidth.Text = "Width"
@@ -323,9 +347,10 @@ Partial Class dlgCliBoxplot
         'lblColour
         '
         Me.lblColour.AutoSize = True
-        Me.lblColour.Location = New System.Drawing.Point(30, 229)
+        Me.lblColour.Location = New System.Drawing.Point(40, 282)
+        Me.lblColour.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblColour.Name = "lblColour"
-        Me.lblColour.Size = New System.Drawing.Size(37, 13)
+        Me.lblColour.Size = New System.Drawing.Size(47, 16)
         Me.lblColour.TabIndex = 21
         Me.lblColour.Tag = "Colour"
         Me.lblColour.Text = "Colour"
@@ -333,9 +358,10 @@ Partial Class dlgCliBoxplot
         'lblBorder
         '
         Me.lblBorder.AutoSize = True
-        Me.lblBorder.Location = New System.Drawing.Point(241, 95)
+        Me.lblBorder.Location = New System.Drawing.Point(321, 117)
+        Me.lblBorder.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblBorder.Name = "lblBorder"
-        Me.lblBorder.Size = New System.Drawing.Size(38, 13)
+        Me.lblBorder.Size = New System.Drawing.Size(49, 16)
         Me.lblBorder.TabIndex = 22
         Me.lblBorder.Tag = "Border"
         Me.lblBorder.Text = "Border"
@@ -343,9 +369,10 @@ Partial Class dlgCliBoxplot
         'lblAT
         '
         Me.lblAT.AutoSize = True
-        Me.lblAT.Location = New System.Drawing.Point(241, 69)
+        Me.lblAT.Location = New System.Drawing.Point(321, 85)
+        Me.lblAT.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblAT.Name = "lblAT"
-        Me.lblAT.Size = New System.Drawing.Size(21, 13)
+        Me.lblAT.Size = New System.Drawing.Size(26, 16)
         Me.lblAT.TabIndex = 23
         Me.lblAT.Tag = "AT"
         Me.lblAT.Text = "AT"
@@ -353,9 +380,10 @@ Partial Class dlgCliBoxplot
         'lblLog
         '
         Me.lblLog.AutoSize = True
-        Me.lblLog.Location = New System.Drawing.Point(241, 43)
+        Me.lblLog.Location = New System.Drawing.Point(321, 53)
+        Me.lblLog.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblLog.Name = "lblLog"
-        Me.lblLog.Size = New System.Drawing.Size(25, 13)
+        Me.lblLog.Size = New System.Drawing.Size(31, 16)
         Me.lblLog.TabIndex = 24
         Me.lblLog.Tag = "Log"
         Me.lblLog.Text = "Log"
@@ -363,121 +391,159 @@ Partial Class dlgCliBoxplot
         'lblpars
         '
         Me.lblpars.AutoSize = True
-        Me.lblpars.Location = New System.Drawing.Point(241, 121)
+        Me.lblpars.Location = New System.Drawing.Point(321, 149)
+        Me.lblpars.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblpars.Name = "lblpars"
-        Me.lblpars.Size = New System.Drawing.Size(28, 13)
+        Me.lblpars.Size = New System.Drawing.Size(36, 16)
         Me.lblpars.TabIndex = 25
         Me.lblpars.Tag = "pars"
         Me.lblpars.Text = "Pars"
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(33, 296)
+        Me.ucrBase.Location = New System.Drawing.Point(44, 364)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 62)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 76)
         Me.ucrBase.TabIndex = 0
         '
         'ucrInputTitle
         '
+        Me.ucrInputTitle.AddQuotesIfUnrecognised = True
+        Me.ucrInputTitle.IsMultiline = False
         Me.ucrInputTitle.IsReadOnly = False
-        Me.ucrInputTitle.Location = New System.Drawing.Point(128, 36)
+        Me.ucrInputTitle.Location = New System.Drawing.Point(171, 44)
+        Me.ucrInputTitle.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputTitle.Name = "ucrInputTitle"
-        Me.ucrInputTitle.Size = New System.Drawing.Size(107, 21)
+        Me.ucrInputTitle.Size = New System.Drawing.Size(143, 26)
         Me.ucrInputTitle.TabIndex = 27
         '
         'ucrInputDataPeriod
         '
+        Me.ucrInputDataPeriod.AddQuotesIfUnrecognised = True
+        Me.ucrInputDataPeriod.IsMultiline = False
         Me.ucrInputDataPeriod.IsReadOnly = False
-        Me.ucrInputDataPeriod.Location = New System.Drawing.Point(128, 140)
+        Me.ucrInputDataPeriod.Location = New System.Drawing.Point(171, 172)
+        Me.ucrInputDataPeriod.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputDataPeriod.Name = "ucrInputDataPeriod"
-        Me.ucrInputDataPeriod.Size = New System.Drawing.Size(107, 21)
+        Me.ucrInputDataPeriod.Size = New System.Drawing.Size(143, 26)
         Me.ucrInputDataPeriod.TabIndex = 27
         '
         'ucrInputVariable
         '
+        Me.ucrInputVariable.AddQuotesIfUnrecognised = True
+        Me.ucrInputVariable.IsMultiline = False
         Me.ucrInputVariable.IsReadOnly = False
-        Me.ucrInputVariable.Location = New System.Drawing.Point(128, 61)
+        Me.ucrInputVariable.Location = New System.Drawing.Point(171, 75)
+        Me.ucrInputVariable.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputVariable.Name = "ucrInputVariable"
-        Me.ucrInputVariable.Size = New System.Drawing.Size(107, 21)
+        Me.ucrInputVariable.Size = New System.Drawing.Size(143, 26)
         Me.ucrInputVariable.TabIndex = 27
         '
         'ucrInputXLabel
         '
+        Me.ucrInputXLabel.AddQuotesIfUnrecognised = True
+        Me.ucrInputXLabel.IsMultiline = False
         Me.ucrInputXLabel.IsReadOnly = False
-        Me.ucrInputXLabel.Location = New System.Drawing.Point(128, 113)
+        Me.ucrInputXLabel.Location = New System.Drawing.Point(171, 139)
+        Me.ucrInputXLabel.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputXLabel.Name = "ucrInputXLabel"
-        Me.ucrInputXLabel.Size = New System.Drawing.Size(107, 21)
+        Me.ucrInputXLabel.Size = New System.Drawing.Size(143, 26)
         Me.ucrInputXLabel.TabIndex = 27
         '
         'ucrInputWidth
         '
+        Me.ucrInputWidth.AddQuotesIfUnrecognised = True
+        Me.ucrInputWidth.IsMultiline = False
         Me.ucrInputWidth.IsReadOnly = False
-        Me.ucrInputWidth.Location = New System.Drawing.Point(128, 193)
+        Me.ucrInputWidth.Location = New System.Drawing.Point(171, 238)
+        Me.ucrInputWidth.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputWidth.Name = "ucrInputWidth"
-        Me.ucrInputWidth.Size = New System.Drawing.Size(107, 21)
+        Me.ucrInputWidth.Size = New System.Drawing.Size(143, 26)
         Me.ucrInputWidth.TabIndex = 28
         '
         'ucrInputYLabel
         '
+        Me.ucrInputYLabel.AddQuotesIfUnrecognised = True
+        Me.ucrInputYLabel.IsMultiline = False
         Me.ucrInputYLabel.IsReadOnly = False
-        Me.ucrInputYLabel.Location = New System.Drawing.Point(128, 87)
+        Me.ucrInputYLabel.Location = New System.Drawing.Point(171, 107)
+        Me.ucrInputYLabel.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputYLabel.Name = "ucrInputYLabel"
-        Me.ucrInputYLabel.Size = New System.Drawing.Size(107, 21)
+        Me.ucrInputYLabel.Size = New System.Drawing.Size(143, 26)
         Me.ucrInputYLabel.TabIndex = 29
         '
         'ucrInputFactorLab
         '
+        Me.ucrInputFactorLab.AddQuotesIfUnrecognised = True
+        Me.ucrInputFactorLab.IsMultiline = False
         Me.ucrInputFactorLab.IsReadOnly = False
-        Me.ucrInputFactorLab.Location = New System.Drawing.Point(128, 166)
+        Me.ucrInputFactorLab.Location = New System.Drawing.Point(171, 204)
+        Me.ucrInputFactorLab.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputFactorLab.Name = "ucrInputFactorLab"
-        Me.ucrInputFactorLab.Size = New System.Drawing.Size(107, 21)
+        Me.ucrInputFactorLab.Size = New System.Drawing.Size(143, 26)
         Me.ucrInputFactorLab.TabIndex = 30
         '
         'ucrInputColour
         '
+        Me.ucrInputColour.AddQuotesIfUnrecognised = True
+        Me.ucrInputColour.IsMultiline = False
         Me.ucrInputColour.IsReadOnly = False
-        Me.ucrInputColour.Location = New System.Drawing.Point(128, 221)
+        Me.ucrInputColour.Location = New System.Drawing.Point(171, 272)
+        Me.ucrInputColour.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputColour.Name = "ucrInputColour"
-        Me.ucrInputColour.Size = New System.Drawing.Size(107, 21)
+        Me.ucrInputColour.Size = New System.Drawing.Size(143, 26)
         Me.ucrInputColour.TabIndex = 31
         '
         'ucrInputLog
         '
+        Me.ucrInputLog.AddQuotesIfUnrecognised = True
+        Me.ucrInputLog.IsMultiline = False
         Me.ucrInputLog.IsReadOnly = False
-        Me.ucrInputLog.Location = New System.Drawing.Point(282, 35)
+        Me.ucrInputLog.Location = New System.Drawing.Point(376, 43)
+        Me.ucrInputLog.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputLog.Name = "ucrInputLog"
-        Me.ucrInputLog.Size = New System.Drawing.Size(91, 21)
+        Me.ucrInputLog.Size = New System.Drawing.Size(121, 26)
         Me.ucrInputLog.TabIndex = 32
         '
         'ucrInputAt
         '
+        Me.ucrInputAt.AddQuotesIfUnrecognised = True
+        Me.ucrInputAt.IsMultiline = False
         Me.ucrInputAt.IsReadOnly = False
-        Me.ucrInputAt.Location = New System.Drawing.Point(282, 63)
+        Me.ucrInputAt.Location = New System.Drawing.Point(376, 78)
+        Me.ucrInputAt.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputAt.Name = "ucrInputAt"
-        Me.ucrInputAt.Size = New System.Drawing.Size(91, 21)
+        Me.ucrInputAt.Size = New System.Drawing.Size(121, 26)
         Me.ucrInputAt.TabIndex = 33
         '
         'ucrInputBorder
         '
+        Me.ucrInputBorder.AddQuotesIfUnrecognised = True
+        Me.ucrInputBorder.IsMultiline = False
         Me.ucrInputBorder.IsReadOnly = False
-        Me.ucrInputBorder.Location = New System.Drawing.Point(282, 86)
+        Me.ucrInputBorder.Location = New System.Drawing.Point(376, 106)
+        Me.ucrInputBorder.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputBorder.Name = "ucrInputBorder"
-        Me.ucrInputBorder.Size = New System.Drawing.Size(91, 21)
+        Me.ucrInputBorder.Size = New System.Drawing.Size(121, 26)
         Me.ucrInputBorder.TabIndex = 34
         '
         'ucrInputPars
         '
+        Me.ucrInputPars.AddQuotesIfUnrecognised = True
+        Me.ucrInputPars.IsMultiline = False
         Me.ucrInputPars.IsReadOnly = False
-        Me.ucrInputPars.Location = New System.Drawing.Point(282, 112)
+        Me.ucrInputPars.Location = New System.Drawing.Point(376, 138)
+        Me.ucrInputPars.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputPars.Name = "ucrInputPars"
-        Me.ucrInputPars.Size = New System.Drawing.Size(91, 21)
+        Me.ucrInputPars.Size = New System.Drawing.Size(121, 26)
         Me.ucrInputPars.TabIndex = 35
         '
         'dlgCliBoxplot
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(518, 359)
+        Me.ClientSize = New System.Drawing.Size(691, 442)
         Me.Controls.Add(Me.ucrInputPars)
         Me.Controls.Add(Me.ucrInputBorder)
         Me.Controls.Add(Me.ucrInputAt)
@@ -512,6 +578,7 @@ Partial Class dlgCliBoxplot
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgCliBoxplot"

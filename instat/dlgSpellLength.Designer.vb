@@ -58,9 +58,10 @@ Partial Class dlgSpellLengths
         'chkPrintTable
         '
         Me.chkPrintTable.AutoSize = True
-        Me.chkPrintTable.Location = New System.Drawing.Point(133, 184)
+        Me.chkPrintTable.Location = New System.Drawing.Point(177, 226)
+        Me.chkPrintTable.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkPrintTable.Name = "chkPrintTable"
-        Me.chkPrintTable.Size = New System.Drawing.Size(81, 17)
+        Me.chkPrintTable.Size = New System.Drawing.Size(102, 21)
         Me.chkPrintTable.TabIndex = 1
         Me.chkPrintTable.Tag = "Print_Table"
         Me.chkPrintTable.Text = "CheckBox1"
@@ -69,9 +70,10 @@ Partial Class dlgSpellLengths
         'chkMonthAbbreviations
         '
         Me.chkMonthAbbreviations.AutoSize = True
-        Me.chkMonthAbbreviations.Location = New System.Drawing.Point(334, 184)
+        Me.chkMonthAbbreviations.Location = New System.Drawing.Point(445, 226)
+        Me.chkMonthAbbreviations.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkMonthAbbreviations.Name = "chkMonthAbbreviations"
-        Me.chkMonthAbbreviations.Size = New System.Drawing.Size(81, 17)
+        Me.chkMonthAbbreviations.Size = New System.Drawing.Size(102, 21)
         Me.chkMonthAbbreviations.TabIndex = 2
         Me.chkMonthAbbreviations.Tag = "Month_Abbreviations"
         Me.chkMonthAbbreviations.Text = "CheckBox2"
@@ -80,9 +82,10 @@ Partial Class dlgSpellLengths
         'chkRemoveNA
         '
         Me.chkRemoveNA.AutoSize = True
-        Me.chkRemoveNA.Location = New System.Drawing.Point(133, 234)
+        Me.chkRemoveNA.Location = New System.Drawing.Point(177, 288)
+        Me.chkRemoveNA.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkRemoveNA.Name = "chkRemoveNA"
-        Me.chkRemoveNA.Size = New System.Drawing.Size(81, 17)
+        Me.chkRemoveNA.Size = New System.Drawing.Size(102, 21)
         Me.chkRemoveNA.TabIndex = 3
         Me.chkRemoveNA.Tag = "Remove_NA"
         Me.chkRemoveNA.Text = "CheckBox3"
@@ -91,9 +94,10 @@ Partial Class dlgSpellLengths
         'chkSeparate
         '
         Me.chkSeparate.AutoSize = True
-        Me.chkSeparate.Location = New System.Drawing.Point(334, 234)
+        Me.chkSeparate.Location = New System.Drawing.Point(445, 288)
+        Me.chkSeparate.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkSeparate.Name = "chkSeparate"
-        Me.chkSeparate.Size = New System.Drawing.Size(81, 17)
+        Me.chkSeparate.Size = New System.Drawing.Size(102, 21)
         Me.chkSeparate.TabIndex = 4
         Me.chkSeparate.Tag = "Separate"
         Me.chkSeparate.Text = "CheckBox4"
@@ -102,18 +106,20 @@ Partial Class dlgSpellLengths
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(93, 9)
+        Me.Label1.Location = New System.Drawing.Point(124, 11)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(125, 13)
+        Me.Label1.Size = New System.Drawing.Size(158, 16)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Data list not implemented"
         '
         'Threshold
         '
         Me.Threshold.AutoSize = True
-        Me.Threshold.Location = New System.Drawing.Point(29, 45)
+        Me.Threshold.Location = New System.Drawing.Point(39, 55)
+        Me.Threshold.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Threshold.Name = "Threshold"
-        Me.Threshold.Size = New System.Drawing.Size(39, 13)
+        Me.Threshold.Size = New System.Drawing.Size(49, 16)
         Me.Threshold.TabIndex = 6
         Me.Threshold.Tag = "Threshold"
         Me.Threshold.Text = "Label2"
@@ -121,9 +127,10 @@ Partial Class dlgSpellLengths
         'lblYearList
         '
         Me.lblYearList.AutoSize = True
-        Me.lblYearList.Location = New System.Drawing.Point(29, 107)
+        Me.lblYearList.Location = New System.Drawing.Point(39, 132)
+        Me.lblYearList.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblYearList.Name = "lblYearList"
-        Me.lblYearList.Size = New System.Drawing.Size(39, 13)
+        Me.lblYearList.Size = New System.Drawing.Size(49, 16)
         Me.lblYearList.TabIndex = 7
         Me.lblYearList.Tag = "Year_List"
         Me.lblYearList.Text = "Label3"
@@ -131,9 +138,10 @@ Partial Class dlgSpellLengths
         'lblDOYearList
         '
         Me.lblDOYearList.AutoSize = True
-        Me.lblDOYearList.Location = New System.Drawing.Point(29, 78)
+        Me.lblDOYearList.Location = New System.Drawing.Point(39, 96)
+        Me.lblDOYearList.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDOYearList.Name = "lblDOYearList"
-        Me.lblDOYearList.Size = New System.Drawing.Size(39, 13)
+        Me.lblDOYearList.Size = New System.Drawing.Size(49, 16)
         Me.lblDOYearList.TabIndex = 9
         Me.lblDOYearList.Tag = "DOY_List"
         Me.lblDOYearList.Text = "Label5"
@@ -141,55 +149,61 @@ Partial Class dlgSpellLengths
         'nudThreshold
         '
         Me.nudThreshold.Increment = New Decimal(New Integer() {1, 0, 0, 131072})
-        Me.nudThreshold.Location = New System.Drawing.Point(133, 45)
+        Me.nudThreshold.Location = New System.Drawing.Point(177, 55)
+        Me.nudThreshold.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudThreshold.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.nudThreshold.Name = "nudThreshold"
-        Me.nudThreshold.Size = New System.Drawing.Size(58, 20)
+        Me.nudThreshold.Size = New System.Drawing.Size(77, 22)
         Me.nudThreshold.TabIndex = 11
         '
         'txtListYears
         '
-        Me.txtListYears.Location = New System.Drawing.Point(133, 104)
+        Me.txtListYears.Location = New System.Drawing.Point(177, 128)
+        Me.txtListYears.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtListYears.Name = "txtListYears"
-        Me.txtListYears.Size = New System.Drawing.Size(100, 20)
+        Me.txtListYears.Size = New System.Drawing.Size(132, 22)
         Me.txtListYears.TabIndex = 12
         '
         'txtDOYearList
         '
-        Me.txtDOYearList.Location = New System.Drawing.Point(133, 78)
+        Me.txtDOYearList.Location = New System.Drawing.Point(177, 96)
+        Me.txtDOYearList.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtDOYearList.Name = "txtDOYearList"
-        Me.txtDOYearList.Size = New System.Drawing.Size(100, 20)
+        Me.txtDOYearList.Size = New System.Drawing.Size(132, 22)
         Me.txtDOYearList.TabIndex = 13
         '
         'txtDataframeNames
         '
-        Me.txtDataframeNames.Location = New System.Drawing.Point(133, 130)
+        Me.txtDataframeNames.Location = New System.Drawing.Point(177, 160)
+        Me.txtDataframeNames.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtDataframeNames.Name = "txtDataframeNames"
-        Me.txtDataframeNames.Size = New System.Drawing.Size(100, 20)
+        Me.txtDataframeNames.Size = New System.Drawing.Size(132, 22)
         Me.txtDataframeNames.TabIndex = 14
         '
         'lblDataframeNames
         '
         Me.lblDataframeNames.AutoSize = True
-        Me.lblDataframeNames.Location = New System.Drawing.Point(29, 133)
+        Me.lblDataframeNames.Location = New System.Drawing.Point(39, 164)
+        Me.lblDataframeNames.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDataframeNames.Name = "lblDataframeNames"
-        Me.lblDataframeNames.Size = New System.Drawing.Size(39, 13)
+        Me.lblDataframeNames.Size = New System.Drawing.Size(49, 16)
         Me.lblDataframeNames.TabIndex = 15
         Me.lblDataframeNames.Tag = "Dataframe_Names"
         Me.lblDataframeNames.Text = "Label2"
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(53, 304)
+        Me.ucrBase.Location = New System.Drawing.Point(71, 374)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 51)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 63)
         Me.ucrBase.TabIndex = 0
         '
         'dlgSpellLengths
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(511, 367)
+        Me.ClientSize = New System.Drawing.Size(681, 453)
         Me.Controls.Add(Me.lblDataframeNames)
         Me.Controls.Add(Me.txtDataframeNames)
         Me.Controls.Add(Me.txtDOYearList)
@@ -205,6 +219,7 @@ Partial Class dlgSpellLengths
         Me.Controls.Add(Me.chkPrintTable)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgSpellLengths"

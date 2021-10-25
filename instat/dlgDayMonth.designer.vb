@@ -51,18 +51,20 @@ Partial Class dlgDayMonth
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(40, 22)
+        Me.Label1.Location = New System.Drawing.Point(53, 27)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(87, 13)
+        Me.Label1.Size = New System.Drawing.Size(110, 16)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Not Implemented"
         '
         'lblColumnName
         '
         Me.lblColumnName.AutoSize = True
-        Me.lblColumnName.Location = New System.Drawing.Point(40, 75)
+        Me.lblColumnName.Location = New System.Drawing.Point(53, 92)
+        Me.lblColumnName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblColumnName.Name = "lblColumnName"
-        Me.lblColumnName.Size = New System.Drawing.Size(73, 13)
+        Me.lblColumnName.Size = New System.Drawing.Size(93, 16)
         Me.lblColumnName.TabIndex = 5
         Me.lblColumnName.Tag = "Column_Name"
         Me.lblColumnName.Text = "Column Name"
@@ -70,9 +72,10 @@ Partial Class dlgDayMonth
         'lblTimePeriod
         '
         Me.lblTimePeriod.AutoSize = True
-        Me.lblTimePeriod.Location = New System.Drawing.Point(40, 102)
+        Me.lblTimePeriod.Location = New System.Drawing.Point(53, 126)
+        Me.lblTimePeriod.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblTimePeriod.Name = "lblTimePeriod"
-        Me.lblTimePeriod.Size = New System.Drawing.Size(63, 13)
+        Me.lblTimePeriod.Size = New System.Drawing.Size(82, 16)
         Me.lblTimePeriod.TabIndex = 6
         Me.lblTimePeriod.Tag = "Time_Period"
         Me.lblTimePeriod.Text = "Time Period"
@@ -80,49 +83,60 @@ Partial Class dlgDayMonth
         'lblRequiredTimeFormat
         '
         Me.lblRequiredTimeFormat.AutoSize = True
-        Me.lblRequiredTimeFormat.Location = New System.Drawing.Point(40, 129)
+        Me.lblRequiredTimeFormat.Location = New System.Drawing.Point(53, 159)
+        Me.lblRequiredTimeFormat.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblRequiredTimeFormat.Name = "lblRequiredTimeFormat"
-        Me.lblRequiredTimeFormat.Size = New System.Drawing.Size(111, 13)
+        Me.lblRequiredTimeFormat.Size = New System.Drawing.Size(143, 16)
         Me.lblRequiredTimeFormat.TabIndex = 7
         Me.lblRequiredTimeFormat.Tag = "Required_Time_Format"
         Me.lblRequiredTimeFormat.Text = "Required Time Format"
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(12, 148)
+        Me.ucrBase.Location = New System.Drawing.Point(16, 182)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 51)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 63)
         Me.ucrBase.TabIndex = 0
         '
         'ucrInputColumnName1
         '
+        Me.ucrInputColumnName1.AddQuotesIfUnrecognised = True
+        Me.ucrInputColumnName1.IsMultiline = False
         Me.ucrInputColumnName1.IsReadOnly = False
-        Me.ucrInputColumnName1.Location = New System.Drawing.Point(161, 67)
+        Me.ucrInputColumnName1.Location = New System.Drawing.Point(215, 82)
+        Me.ucrInputColumnName1.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputColumnName1.Name = "ucrInputColumnName1"
-        Me.ucrInputColumnName1.Size = New System.Drawing.Size(100, 21)
+        Me.ucrInputColumnName1.Size = New System.Drawing.Size(133, 26)
         Me.ucrInputColumnName1.TabIndex = 8
         '
         'ucrInputTimePeriod
         '
+        Me.ucrInputTimePeriod.AddQuotesIfUnrecognised = True
+        Me.ucrInputTimePeriod.IsMultiline = False
         Me.ucrInputTimePeriod.IsReadOnly = False
-        Me.ucrInputTimePeriod.Location = New System.Drawing.Point(161, 94)
+        Me.ucrInputTimePeriod.Location = New System.Drawing.Point(215, 116)
+        Me.ucrInputTimePeriod.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputTimePeriod.Name = "ucrInputTimePeriod"
-        Me.ucrInputTimePeriod.Size = New System.Drawing.Size(100, 21)
+        Me.ucrInputTimePeriod.Size = New System.Drawing.Size(133, 26)
         Me.ucrInputTimePeriod.TabIndex = 9
         '
         'ucrInputRequiredTimeFormat
         '
+        Me.ucrInputRequiredTimeFormat.AddQuotesIfUnrecognised = True
+        Me.ucrInputRequiredTimeFormat.IsMultiline = False
         Me.ucrInputRequiredTimeFormat.IsReadOnly = False
-        Me.ucrInputRequiredTimeFormat.Location = New System.Drawing.Point(161, 121)
+        Me.ucrInputRequiredTimeFormat.Location = New System.Drawing.Point(215, 149)
+        Me.ucrInputRequiredTimeFormat.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputRequiredTimeFormat.Name = "ucrInputRequiredTimeFormat"
-        Me.ucrInputRequiredTimeFormat.Size = New System.Drawing.Size(100, 21)
+        Me.ucrInputRequiredTimeFormat.Size = New System.Drawing.Size(133, 26)
         Me.ucrInputRequiredTimeFormat.TabIndex = 10
         '
         'dlgDayMonth
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(441, 211)
+        Me.ClientSize = New System.Drawing.Size(588, 261)
         Me.Controls.Add(Me.ucrInputRequiredTimeFormat)
         Me.Controls.Add(Me.ucrInputTimePeriod)
         Me.Controls.Add(Me.ucrInputColumnName1)
@@ -132,6 +146,7 @@ Partial Class dlgDayMonth
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgDayMonth"

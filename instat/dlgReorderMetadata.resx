@@ -119,10 +119,14 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ucrBase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 227</value>
+    <value>13, 279</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ucrBase.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>410, 52</value>
+    <value>547, 64</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ucrBase.TabIndex" type="System.Int32, mscorlib">
@@ -141,14 +145,13 @@
     <value>2</value>
   </data>
   <data name="ucrDataFrameReoderMetadata.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 10</value>
+    <value>13, 12</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ucrDataFrameReoderMetadata.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrDataFrameReoderMetadata.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 50</value>
+    <value>203, 62</value>
   </data>
   <data name="ucrDataFrameReoderMetadata.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -169,10 +172,13 @@
     <value>True</value>
   </data>
   <data name="lblMetataDataColumns.Location" type="System.Drawing.Point, System.Drawing">
-    <value>173, 25</value>
+    <value>231, 31</value>
+  </data>
+  <data name="lblMetataDataColumns.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblMetataDataColumns.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 13</value>
+    <value>123, 16</value>
   </data>
   <data name="lblMetataDataColumns.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -193,10 +199,13 @@
     <value>0</value>
   </data>
   <data name="ucrReorderMetadata.Location" type="System.Drawing.Point, System.Drawing">
-    <value>173, 40</value>
+    <value>231, 49</value>
+  </data>
+  <data name="ucrReorderMetadata.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrReorderMetadata.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 181</value>
+    <value>279, 223</value>
   </data>
   <data name="ucrReorderMetadata.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -217,10 +226,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>416, 284</value>
+    <value>555, 351</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

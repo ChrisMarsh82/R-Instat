@@ -63,27 +63,31 @@ Partial Class dlgSelect
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(12, 229)
+        Me.ucrBase.Location = New System.Drawing.Point(16, 282)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 58)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 71)
         Me.ucrBase.TabIndex = 0
         '
         'grpSelectCriteria
         '
         Me.grpSelectCriteria.Controls.Add(Me.rdoSelectbyfactor)
         Me.grpSelectCriteria.Controls.Add(Me.rdoSelectbycondition)
-        Me.grpSelectCriteria.Location = New System.Drawing.Point(12, 2)
+        Me.grpSelectCriteria.Location = New System.Drawing.Point(16, 2)
+        Me.grpSelectCriteria.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpSelectCriteria.Name = "grpSelectCriteria"
-        Me.grpSelectCriteria.Size = New System.Drawing.Size(406, 32)
+        Me.grpSelectCriteria.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpSelectCriteria.Size = New System.Drawing.Size(541, 39)
         Me.grpSelectCriteria.TabIndex = 5
         Me.grpSelectCriteria.TabStop = False
         '
         'rdoSelectbyfactor
         '
         Me.rdoSelectbyfactor.AutoSize = True
-        Me.rdoSelectbyfactor.Location = New System.Drawing.Point(249, 11)
+        Me.rdoSelectbyfactor.Location = New System.Drawing.Point(332, 14)
+        Me.rdoSelectbyfactor.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoSelectbyfactor.Name = "rdoSelectbyfactor"
-        Me.rdoSelectbyfactor.Size = New System.Drawing.Size(133, 17)
+        Me.rdoSelectbyfactor.Size = New System.Drawing.Size(168, 20)
         Me.rdoSelectbyfactor.TabIndex = 1
         Me.rdoSelectbyfactor.TabStop = True
         Me.rdoSelectbyfactor.Tag = "Select_by_factor_values"
@@ -93,9 +97,10 @@ Partial Class dlgSelect
         'rdoSelectbycondition
         '
         Me.rdoSelectbycondition.AutoSize = True
-        Me.rdoSelectbycondition.Location = New System.Drawing.Point(6, 11)
+        Me.rdoSelectbycondition.Location = New System.Drawing.Point(8, 14)
+        Me.rdoSelectbycondition.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoSelectbycondition.Name = "rdoSelectbycondition"
-        Me.rdoSelectbycondition.Size = New System.Drawing.Size(115, 17)
+        Me.rdoSelectbycondition.Size = New System.Drawing.Size(146, 20)
         Me.rdoSelectbycondition.TabIndex = 0
         Me.rdoSelectbycondition.TabStop = True
         Me.rdoSelectbycondition.Tag = "Select_by_condition"
@@ -104,41 +109,51 @@ Partial Class dlgSelect
         '
         'txtInto
         '
-        Me.txtInto.Location = New System.Drawing.Point(327, 56)
+        Me.txtInto.Location = New System.Drawing.Point(436, 69)
+        Me.txtInto.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtInto.Name = "txtInto"
-        Me.txtInto.Size = New System.Drawing.Size(95, 20)
+        Me.txtInto.Size = New System.Drawing.Size(125, 22)
         Me.txtInto.TabIndex = 9
         '
         'lblInto
         '
         Me.lblInto.AutoSize = True
-        Me.lblInto.Location = New System.Drawing.Point(358, 40)
+        Me.lblInto.Location = New System.Drawing.Point(477, 49)
+        Me.lblInto.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblInto.Name = "lblInto"
-        Me.lblInto.Size = New System.Drawing.Size(25, 13)
+        Me.lblInto.Size = New System.Drawing.Size(29, 16)
         Me.lblInto.TabIndex = 8
         Me.lblInto.Tag = "Into"
         Me.lblInto.Text = "Into"
         '
         'UcrSelectorAddRemove1
         '
-        Me.UcrSelectorAddRemove1.Location = New System.Drawing.Point(1, 40)
+        Me.UcrSelectorAddRemove1.bShowHiddenColumns = False
+        Me.UcrSelectorAddRemove1.Location = New System.Drawing.Point(1, 49)
+        Me.UcrSelectorAddRemove1.Margin = New System.Windows.Forms.Padding(0)
         Me.UcrSelectorAddRemove1.Name = "UcrSelectorAddRemove1"
-        Me.UcrSelectorAddRemove1.Size = New System.Drawing.Size(203, 127)
+        Me.UcrSelectorAddRemove1.Size = New System.Drawing.Size(271, 156)
         Me.UcrSelectorAddRemove1.TabIndex = 10
         '
         'UcrReceiverMultiple1
         '
-        Me.UcrReceiverMultiple1.Location = New System.Drawing.Point(200, 40)
+        Me.UcrReceiverMultiple1.frmParent = Me
+        Me.UcrReceiverMultiple1.Location = New System.Drawing.Point(267, 49)
+        Me.UcrReceiverMultiple1.Margin = New System.Windows.Forms.Padding(0)
         Me.UcrReceiverMultiple1.Name = "UcrReceiverMultiple1"
-        Me.UcrReceiverMultiple1.Size = New System.Drawing.Size(121, 128)
+        Me.UcrReceiverMultiple1.Selector = Nothing
+        Me.UcrReceiverMultiple1.Size = New System.Drawing.Size(161, 158)
+        Me.UcrReceiverMultiple1.strNcFilePath = ""
         Me.UcrReceiverMultiple1.TabIndex = 11
+        Me.UcrReceiverMultiple1.ucrSelector = Nothing
         '
         'chkTranspose
         '
         Me.chkTranspose.AutoSize = True
-        Me.chkTranspose.Location = New System.Drawing.Point(328, 83)
+        Me.chkTranspose.Location = New System.Drawing.Point(437, 102)
+        Me.chkTranspose.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkTranspose.Name = "chkTranspose"
-        Me.chkTranspose.Size = New System.Drawing.Size(76, 17)
+        Me.chkTranspose.Size = New System.Drawing.Size(100, 21)
         Me.chkTranspose.TabIndex = 12
         Me.chkTranspose.Tag = "Transpose"
         Me.chkTranspose.Text = "Transpose"
@@ -147,9 +162,10 @@ Partial Class dlgSelect
         'chkAppend
         '
         Me.chkAppend.AutoSize = True
-        Me.chkAppend.Location = New System.Drawing.Point(328, 107)
+        Me.chkAppend.Location = New System.Drawing.Point(437, 132)
+        Me.chkAppend.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkAppend.Name = "chkAppend"
-        Me.chkAppend.Size = New System.Drawing.Size(63, 17)
+        Me.chkAppend.Size = New System.Drawing.Size(82, 21)
         Me.chkAppend.TabIndex = 13
         Me.chkAppend.Tag = "Append"
         Me.chkAppend.Text = "Append"
@@ -159,9 +175,11 @@ Partial Class dlgSelect
         '
         Me.grpCondition.Controls.Add(Me.chkShowCalculator)
         Me.grpCondition.Controls.Add(Me.ComboBox1)
-        Me.grpCondition.Location = New System.Drawing.Point(27, 174)
+        Me.grpCondition.Location = New System.Drawing.Point(36, 214)
+        Me.grpCondition.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpCondition.Name = "grpCondition"
-        Me.grpCondition.Size = New System.Drawing.Size(356, 49)
+        Me.grpCondition.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpCondition.Size = New System.Drawing.Size(475, 60)
         Me.grpCondition.TabIndex = 14
         Me.grpCondition.TabStop = False
         Me.grpCondition.Tag = "Condition_for_Selection"
@@ -170,9 +188,10 @@ Partial Class dlgSelect
         'chkShowCalculator
         '
         Me.chkShowCalculator.AutoSize = True
-        Me.chkShowCalculator.Location = New System.Drawing.Point(216, 19)
+        Me.chkShowCalculator.Location = New System.Drawing.Point(288, 23)
+        Me.chkShowCalculator.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkShowCalculator.Name = "chkShowCalculator"
-        Me.chkShowCalculator.Size = New System.Drawing.Size(103, 17)
+        Me.chkShowCalculator.Size = New System.Drawing.Size(130, 21)
         Me.chkShowCalculator.TabIndex = 1
         Me.chkShowCalculator.Tag = "Show_Calculator"
         Me.chkShowCalculator.Text = "Show Calculator"
@@ -181,9 +200,10 @@ Partial Class dlgSelect
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(16, 19)
+        Me.ComboBox1.Location = New System.Drawing.Point(21, 23)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(160, 24)
         Me.ComboBox1.TabIndex = 0
         '
         'grpFactor
@@ -192,9 +212,11 @@ Partial Class dlgSelect
         Me.grpFactor.Controls.Add(Me.lblFactorLevels)
         Me.grpFactor.Controls.Add(Me.lblFactor)
         Me.grpFactor.Controls.Add(Me.cmbFactors)
-        Me.grpFactor.Location = New System.Drawing.Point(18, 174)
+        Me.grpFactor.Location = New System.Drawing.Point(24, 214)
+        Me.grpFactor.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpFactor.Name = "grpFactor"
-        Me.grpFactor.Size = New System.Drawing.Size(354, 52)
+        Me.grpFactor.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpFactor.Size = New System.Drawing.Size(472, 64)
         Me.grpFactor.TabIndex = 15
         Me.grpFactor.TabStop = False
         Me.grpFactor.Tag = "Factor_Values_for_Selection"
@@ -202,17 +224,19 @@ Partial Class dlgSelect
         '
         'txtFactorLevels
         '
-        Me.txtFactorLevels.Location = New System.Drawing.Point(224, 19)
+        Me.txtFactorLevels.Location = New System.Drawing.Point(299, 23)
+        Me.txtFactorLevels.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtFactorLevels.Name = "txtFactorLevels"
-        Me.txtFactorLevels.Size = New System.Drawing.Size(100, 20)
+        Me.txtFactorLevels.Size = New System.Drawing.Size(132, 22)
         Me.txtFactorLevels.TabIndex = 4
         '
         'lblFactorLevels
         '
         Me.lblFactorLevels.AutoSize = True
-        Me.lblFactorLevels.Location = New System.Drawing.Point(173, 15)
+        Me.lblFactorLevels.Location = New System.Drawing.Point(231, 18)
+        Me.lblFactorLevels.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblFactorLevels.Name = "lblFactorLevels"
-        Me.lblFactorLevels.Size = New System.Drawing.Size(43, 26)
+        Me.lblFactorLevels.Size = New System.Drawing.Size(52, 32)
         Me.lblFactorLevels.TabIndex = 3
         Me.lblFactorLevels.Tag = "Factor_Levels"
         Me.lblFactorLevels.Text = "Factor  " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Levels"
@@ -220,9 +244,10 @@ Partial Class dlgSelect
         'lblFactor
         '
         Me.lblFactor.AutoSize = True
-        Me.lblFactor.Location = New System.Drawing.Point(6, 23)
+        Me.lblFactor.Location = New System.Drawing.Point(8, 28)
+        Me.lblFactor.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblFactor.Name = "lblFactor"
-        Me.lblFactor.Size = New System.Drawing.Size(37, 13)
+        Me.lblFactor.Size = New System.Drawing.Size(46, 16)
         Me.lblFactor.TabIndex = 2
         Me.lblFactor.Tag = "Factor"
         Me.lblFactor.Text = "Factor"
@@ -230,16 +255,17 @@ Partial Class dlgSelect
         'cmbFactors
         '
         Me.cmbFactors.FormattingEnabled = True
-        Me.cmbFactors.Location = New System.Drawing.Point(49, 20)
+        Me.cmbFactors.Location = New System.Drawing.Point(65, 25)
+        Me.cmbFactors.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmbFactors.Name = "cmbFactors"
-        Me.cmbFactors.Size = New System.Drawing.Size(85, 21)
+        Me.cmbFactors.Size = New System.Drawing.Size(112, 24)
         Me.cmbFactors.TabIndex = 0
         '
         'dlgSelect
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(429, 286)
+        Me.ClientSize = New System.Drawing.Size(572, 353)
         Me.Controls.Add(Me.grpFactor)
         Me.Controls.Add(Me.grpCondition)
         Me.Controls.Add(Me.chkAppend)
@@ -251,6 +277,7 @@ Partial Class dlgSelect
         Me.Controls.Add(Me.grpSelectCriteria)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgSelect"

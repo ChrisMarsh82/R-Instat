@@ -61,44 +61,49 @@ Partial Class dlgWindrose
         'lblXVariable
         '
         Me.lblXVariable.AutoSize = True
-        Me.lblXVariable.Location = New System.Drawing.Point(260, 45)
+        Me.lblXVariable.Location = New System.Drawing.Point(347, 55)
+        Me.lblXVariable.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblXVariable.Name = "lblXVariable"
-        Me.lblXVariable.Size = New System.Drawing.Size(69, 13)
+        Me.lblXVariable.Size = New System.Drawing.Size(86, 16)
         Me.lblXVariable.TabIndex = 1
         Me.lblXVariable.Text = "Wind Speed:"
         '
         'lblYVariable
         '
         Me.lblYVariable.AutoSize = True
-        Me.lblYVariable.Location = New System.Drawing.Point(260, 93)
+        Me.lblYVariable.Location = New System.Drawing.Point(347, 114)
+        Me.lblYVariable.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblYVariable.Name = "lblYVariable"
-        Me.lblYVariable.Size = New System.Drawing.Size(80, 13)
+        Me.lblYVariable.Size = New System.Drawing.Size(98, 16)
         Me.lblYVariable.TabIndex = 3
         Me.lblYVariable.Text = "Wind Direction:"
         '
         'lblFacet
         '
         Me.lblFacet.AutoSize = True
-        Me.lblFacet.Location = New System.Drawing.Point(260, 140)
+        Me.lblFacet.Location = New System.Drawing.Point(347, 172)
+        Me.lblFacet.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblFacet.Name = "lblFacet"
-        Me.lblFacet.Size = New System.Drawing.Size(37, 13)
+        Me.lblFacet.Size = New System.Drawing.Size(45, 16)
         Me.lblFacet.TabIndex = 5
         Me.lblFacet.Text = "Facet:"
         '
         'lblNoOfColumns
         '
         Me.lblNoOfColumns.AutoSize = True
-        Me.lblNoOfColumns.Location = New System.Drawing.Point(259, 180)
+        Me.lblNoOfColumns.Location = New System.Drawing.Point(345, 222)
+        Me.lblNoOfColumns.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblNoOfColumns.Name = "lblNoOfColumns"
-        Me.lblNoOfColumns.Size = New System.Drawing.Size(102, 13)
+        Me.lblNoOfColumns.Size = New System.Drawing.Size(128, 16)
         Me.lblNoOfColumns.TabIndex = 7
         Me.lblNoOfColumns.Text = "Number of Columns:"
         '
         'cmdWindroseOptions
         '
-        Me.cmdWindroseOptions.Location = New System.Drawing.Point(10, 198)
+        Me.cmdWindroseOptions.Location = New System.Drawing.Point(13, 244)
+        Me.cmdWindroseOptions.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdWindroseOptions.Name = "cmdWindroseOptions"
-        Me.cmdWindroseOptions.Size = New System.Drawing.Size(148, 23)
+        Me.cmdWindroseOptions.Size = New System.Drawing.Size(197, 28)
         Me.cmdWindroseOptions.TabIndex = 11
         Me.cmdWindroseOptions.Text = "Windrose Options"
         Me.cmdWindroseOptions.UseVisualStyleBackColor = True
@@ -106,27 +111,30 @@ Partial Class dlgWindrose
         'lblGraphTitle
         '
         Me.lblGraphTitle.AutoSize = True
-        Me.lblGraphTitle.Location = New System.Drawing.Point(7, 234)
+        Me.lblGraphTitle.Location = New System.Drawing.Point(9, 288)
+        Me.lblGraphTitle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblGraphTitle.Name = "lblGraphTitle"
-        Me.lblGraphTitle.Size = New System.Drawing.Size(59, 13)
+        Me.lblGraphTitle.Size = New System.Drawing.Size(74, 16)
         Me.lblGraphTitle.TabIndex = 18
         Me.lblGraphTitle.Text = "Graph Title"
         '
         'lblGraphSubtitle
         '
         Me.lblGraphSubtitle.AutoSize = True
-        Me.lblGraphSubtitle.Location = New System.Drawing.Point(7, 261)
+        Me.lblGraphSubtitle.Location = New System.Drawing.Point(9, 321)
+        Me.lblGraphSubtitle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblGraphSubtitle.Name = "lblGraphSubtitle"
-        Me.lblGraphSubtitle.Size = New System.Drawing.Size(81, 13)
+        Me.lblGraphSubtitle.Size = New System.Drawing.Size(101, 16)
         Me.lblGraphSubtitle.TabIndex = 18
         Me.lblGraphSubtitle.Text = "Graph Sub Title"
         '
         'lblGraphCaption
         '
         Me.lblGraphCaption.AutoSize = True
-        Me.lblGraphCaption.Location = New System.Drawing.Point(7, 288)
+        Me.lblGraphCaption.Location = New System.Drawing.Point(9, 354)
+        Me.lblGraphCaption.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblGraphCaption.Name = "lblGraphCaption"
-        Me.lblGraphCaption.Size = New System.Drawing.Size(75, 13)
+        Me.lblGraphCaption.Size = New System.Drawing.Size(94, 16)
         Me.lblGraphCaption.TabIndex = 18
         Me.lblGraphCaption.Text = "Graph Caption"
         '
@@ -135,9 +143,10 @@ Partial Class dlgWindrose
         Me.ucrInputCaption.AddQuotesIfUnrecognised = True
         Me.ucrInputCaption.IsMultiline = False
         Me.ucrInputCaption.IsReadOnly = False
-        Me.ucrInputCaption.Location = New System.Drawing.Point(155, 287)
+        Me.ucrInputCaption.Location = New System.Drawing.Point(207, 353)
+        Me.ucrInputCaption.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputCaption.Name = "ucrInputCaption"
-        Me.ucrInputCaption.Size = New System.Drawing.Size(215, 21)
+        Me.ucrInputCaption.Size = New System.Drawing.Size(287, 26)
         Me.ucrInputCaption.TabIndex = 17
         '
         'ucrInputSubTitle
@@ -145,9 +154,10 @@ Partial Class dlgWindrose
         Me.ucrInputSubTitle.AddQuotesIfUnrecognised = True
         Me.ucrInputSubTitle.IsMultiline = False
         Me.ucrInputSubTitle.IsReadOnly = False
-        Me.ucrInputSubTitle.Location = New System.Drawing.Point(155, 260)
+        Me.ucrInputSubTitle.Location = New System.Drawing.Point(207, 320)
+        Me.ucrInputSubTitle.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputSubTitle.Name = "ucrInputSubTitle"
-        Me.ucrInputSubTitle.Size = New System.Drawing.Size(215, 21)
+        Me.ucrInputSubTitle.Size = New System.Drawing.Size(287, 26)
         Me.ucrInputSubTitle.TabIndex = 16
         '
         'ucrInputTitle
@@ -155,51 +165,53 @@ Partial Class dlgWindrose
         Me.ucrInputTitle.AddQuotesIfUnrecognised = True
         Me.ucrInputTitle.IsMultiline = False
         Me.ucrInputTitle.IsReadOnly = False
-        Me.ucrInputTitle.Location = New System.Drawing.Point(155, 230)
+        Me.ucrInputTitle.Location = New System.Drawing.Point(207, 283)
+        Me.ucrInputTitle.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputTitle.Name = "ucrInputTitle"
-        Me.ucrInputTitle.Size = New System.Drawing.Size(215, 21)
+        Me.ucrInputTitle.Size = New System.Drawing.Size(287, 26)
         Me.ucrInputTitle.TabIndex = 15
         '
         'ucrReceiverFacet
         '
         Me.ucrReceiverFacet.frmParent = Me
-        Me.ucrReceiverFacet.Location = New System.Drawing.Point(260, 155)
+        Me.ucrReceiverFacet.Location = New System.Drawing.Point(347, 191)
         Me.ucrReceiverFacet.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverFacet.Name = "ucrReceiverFacet"
         Me.ucrReceiverFacet.Selector = Nothing
-        Me.ucrReceiverFacet.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverFacet.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverFacet.strNcFilePath = ""
         Me.ucrReceiverFacet.TabIndex = 6
         Me.ucrReceiverFacet.ucrSelector = Nothing
         '
         'ucrSaveGraph
         '
-        Me.ucrSaveGraph.Location = New System.Drawing.Point(10, 319)
-        Me.ucrSaveGraph.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ucrSaveGraph.Location = New System.Drawing.Point(13, 393)
+        Me.ucrSaveGraph.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.ucrSaveGraph.Name = "ucrSaveGraph"
-        Me.ucrSaveGraph.Size = New System.Drawing.Size(319, 24)
+        Me.ucrSaveGraph.Size = New System.Drawing.Size(425, 30)
         Me.ucrSaveGraph.TabIndex = 9
         '
         'ucrNudNoOfColumns
         '
         Me.ucrNudNoOfColumns.DecimalPlaces = New Decimal(New Integer() {0, 0, 0, 0})
         Me.ucrNudNoOfColumns.Increment = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.ucrNudNoOfColumns.Location = New System.Drawing.Point(362, 178)
+        Me.ucrNudNoOfColumns.Location = New System.Drawing.Point(483, 219)
+        Me.ucrNudNoOfColumns.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrNudNoOfColumns.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
         Me.ucrNudNoOfColumns.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
         Me.ucrNudNoOfColumns.Name = "ucrNudNoOfColumns"
-        Me.ucrNudNoOfColumns.Size = New System.Drawing.Size(46, 20)
+        Me.ucrNudNoOfColumns.Size = New System.Drawing.Size(61, 25)
         Me.ucrNudNoOfColumns.TabIndex = 8
         Me.ucrNudNoOfColumns.Value = New Decimal(New Integer() {0, 0, 0, 0})
         '
         'ucrReceiverWindDirection
         '
         Me.ucrReceiverWindDirection.frmParent = Me
-        Me.ucrReceiverWindDirection.Location = New System.Drawing.Point(260, 108)
+        Me.ucrReceiverWindDirection.Location = New System.Drawing.Point(347, 133)
         Me.ucrReceiverWindDirection.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverWindDirection.Name = "ucrReceiverWindDirection"
         Me.ucrReceiverWindDirection.Selector = Nothing
-        Me.ucrReceiverWindDirection.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverWindDirection.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverWindDirection.strNcFilePath = ""
         Me.ucrReceiverWindDirection.TabIndex = 4
         Me.ucrReceiverWindDirection.ucrSelector = Nothing
@@ -207,11 +219,11 @@ Partial Class dlgWindrose
         'ucrReceiverWindSpeed
         '
         Me.ucrReceiverWindSpeed.frmParent = Me
-        Me.ucrReceiverWindSpeed.Location = New System.Drawing.Point(260, 60)
+        Me.ucrReceiverWindSpeed.Location = New System.Drawing.Point(347, 74)
         Me.ucrReceiverWindSpeed.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverWindSpeed.Name = "ucrReceiverWindSpeed"
         Me.ucrReceiverWindSpeed.Selector = Nothing
-        Me.ucrReceiverWindSpeed.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverWindSpeed.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverWindSpeed.strNcFilePath = ""
         Me.ucrReceiverWindSpeed.TabIndex = 2
         Me.ucrReceiverWindSpeed.ucrSelector = Nothing
@@ -221,24 +233,25 @@ Partial Class dlgWindrose
         Me.ucrWindRoseSelector.bDropUnusedFilterLevels = False
         Me.ucrWindRoseSelector.bShowHiddenColumns = False
         Me.ucrWindRoseSelector.bUseCurrentFilter = True
-        Me.ucrWindRoseSelector.Location = New System.Drawing.Point(10, 10)
+        Me.ucrWindRoseSelector.Location = New System.Drawing.Point(13, 12)
         Me.ucrWindRoseSelector.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrWindRoseSelector.Name = "ucrWindRoseSelector"
-        Me.ucrWindRoseSelector.Size = New System.Drawing.Size(210, 180)
+        Me.ucrWindRoseSelector.Size = New System.Drawing.Size(280, 222)
         Me.ucrWindRoseSelector.TabIndex = 0
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(10, 349)
+        Me.ucrBase.Location = New System.Drawing.Point(13, 430)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 52)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 64)
         Me.ucrBase.TabIndex = 10
         '
         'dlgWindrose
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(420, 406)
+        Me.ClientSize = New System.Drawing.Size(560, 501)
         Me.Controls.Add(Me.lblGraphCaption)
         Me.Controls.Add(Me.lblGraphSubtitle)
         Me.Controls.Add(Me.lblGraphTitle)
@@ -258,6 +271,7 @@ Partial Class dlgWindrose
         Me.Controls.Add(Me.ucrWindRoseSelector)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgWindrose"

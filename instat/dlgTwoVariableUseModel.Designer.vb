@@ -51,9 +51,10 @@ Partial Class dlgTwoVariableUseModel
         'lblModeltoUse
         '
         Me.lblModeltoUse.AutoSize = True
-        Me.lblModeltoUse.Location = New System.Drawing.Point(257, 37)
+        Me.lblModeltoUse.Location = New System.Drawing.Point(343, 46)
+        Me.lblModeltoUse.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblModeltoUse.Name = "lblModeltoUse"
-        Me.lblModeltoUse.Size = New System.Drawing.Size(84, 13)
+        Me.lblModeltoUse.Size = New System.Drawing.Size(106, 16)
         Me.lblModeltoUse.TabIndex = 1
         Me.lblModeltoUse.Tag = "Selected_Model:"
         Me.lblModeltoUse.Text = "Selected Model:"
@@ -62,9 +63,10 @@ Partial Class dlgTwoVariableUseModel
         '
         Me.lblModelFormula.AutoSize = True
         Me.lblModelFormula.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblModelFormula.Location = New System.Drawing.Point(12, 202)
+        Me.lblModelFormula.Location = New System.Drawing.Point(16, 249)
+        Me.lblModelFormula.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblModelFormula.Name = "lblModelFormula"
-        Me.lblModelFormula.Size = New System.Drawing.Size(79, 13)
+        Me.lblModelFormula.Size = New System.Drawing.Size(101, 16)
         Me.lblModelFormula.TabIndex = 4
         Me.lblModelFormula.Text = "Model Formula:"
         '
@@ -72,9 +74,10 @@ Partial Class dlgTwoVariableUseModel
         '
         Me.cmdPredict.Enabled = False
         Me.cmdPredict.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.cmdPredict.Location = New System.Drawing.Point(278, 168)
+        Me.cmdPredict.Location = New System.Drawing.Point(371, 207)
+        Me.cmdPredict.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdPredict.Name = "cmdPredict"
-        Me.cmdPredict.Size = New System.Drawing.Size(132, 23)
+        Me.cmdPredict.Size = New System.Drawing.Size(176, 28)
         Me.cmdPredict.TabIndex = 3
         Me.cmdPredict.Tag = "Predict..."
         Me.cmdPredict.Text = "Predict..."
@@ -83,9 +86,10 @@ Partial Class dlgTwoVariableUseModel
         'cmdDisplayOptions
         '
         Me.cmdDisplayOptions.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.cmdDisplayOptions.Location = New System.Drawing.Point(278, 197)
+        Me.cmdDisplayOptions.Location = New System.Drawing.Point(371, 242)
+        Me.cmdDisplayOptions.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdDisplayOptions.Name = "cmdDisplayOptions"
-        Me.cmdDisplayOptions.Size = New System.Drawing.Size(132, 23)
+        Me.cmdDisplayOptions.Size = New System.Drawing.Size(176, 28)
         Me.cmdDisplayOptions.TabIndex = 6
         Me.cmdDisplayOptions.Tag = "Display_Options..."
         Me.cmdDisplayOptions.Text = "Display Options..."
@@ -96,19 +100,20 @@ Partial Class dlgTwoVariableUseModel
         Me.ucrModel.AddQuotesIfUnrecognised = True
         Me.ucrModel.IsMultiline = False
         Me.ucrModel.IsReadOnly = False
-        Me.ucrModel.Location = New System.Drawing.Point(118, 198)
+        Me.ucrModel.Location = New System.Drawing.Point(157, 244)
+        Me.ucrModel.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrModel.Name = "ucrModel"
-        Me.ucrModel.Size = New System.Drawing.Size(154, 21)
+        Me.ucrModel.Size = New System.Drawing.Size(205, 26)
         Me.ucrModel.TabIndex = 5
         '
         'ucrReceiverUseModel
         '
         Me.ucrReceiverUseModel.frmParent = Me
-        Me.ucrReceiverUseModel.Location = New System.Drawing.Point(256, 52)
+        Me.ucrReceiverUseModel.Location = New System.Drawing.Point(341, 64)
         Me.ucrReceiverUseModel.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverUseModel.Name = "ucrReceiverUseModel"
         Me.ucrReceiverUseModel.Selector = Nothing
-        Me.ucrReceiverUseModel.Size = New System.Drawing.Size(120, 22)
+        Me.ucrReceiverUseModel.Size = New System.Drawing.Size(160, 27)
         Me.ucrReceiverUseModel.strNcFilePath = ""
         Me.ucrReceiverUseModel.TabIndex = 2
         Me.ucrReceiverUseModel.ucrSelector = Nothing
@@ -118,24 +123,25 @@ Partial Class dlgTwoVariableUseModel
         Me.ucrSelectorUseModel.bDropUnusedFilterLevels = False
         Me.ucrSelectorUseModel.bShowHiddenColumns = False
         Me.ucrSelectorUseModel.bUseCurrentFilter = True
-        Me.ucrSelectorUseModel.Location = New System.Drawing.Point(10, 10)
+        Me.ucrSelectorUseModel.Location = New System.Drawing.Point(13, 12)
         Me.ucrSelectorUseModel.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorUseModel.Name = "ucrSelectorUseModel"
-        Me.ucrSelectorUseModel.Size = New System.Drawing.Size(210, 180)
+        Me.ucrSelectorUseModel.Size = New System.Drawing.Size(280, 222)
         Me.ucrSelectorUseModel.TabIndex = 0
         '
         'ucrBaseUseModel
         '
-        Me.ucrBaseUseModel.Location = New System.Drawing.Point(10, 226)
+        Me.ucrBaseUseModel.Location = New System.Drawing.Point(13, 278)
+        Me.ucrBaseUseModel.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBaseUseModel.Name = "ucrBaseUseModel"
-        Me.ucrBaseUseModel.Size = New System.Drawing.Size(410, 52)
+        Me.ucrBaseUseModel.Size = New System.Drawing.Size(547, 64)
         Me.ucrBaseUseModel.TabIndex = 7
         '
         'dlgTwoVariableUseModel
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(418, 283)
+        Me.ClientSize = New System.Drawing.Size(557, 349)
         Me.Controls.Add(Me.ucrModel)
         Me.Controls.Add(Me.lblModelFormula)
         Me.Controls.Add(Me.cmdPredict)
@@ -145,6 +151,7 @@ Partial Class dlgTwoVariableUseModel
         Me.Controls.Add(Me.ucrSelectorUseModel)
         Me.Controls.Add(Me.ucrBaseUseModel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgTwoVariableUseModel"

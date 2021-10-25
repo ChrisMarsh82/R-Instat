@@ -75,7 +75,7 @@ Partial Class sdgClimaticDataEntry
         Me.grdDataEntry.SheetTabContextMenuStrip = Nothing
         Me.grdDataEntry.SheetTabNewButtonVisible = True
         Me.grdDataEntry.SheetTabVisible = True
-        Me.grdDataEntry.SheetTabWidth = 154
+        Me.grdDataEntry.SheetTabWidth = 205
         Me.grdDataEntry.ShowScrollEndSpacing = True
         '
         'cellContextMenuStrip

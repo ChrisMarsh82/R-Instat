@@ -127,10 +127,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblMetadataProp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>263, 45</value>
+    <value>351, 55</value>
+  </data>
+  <data name="lblMetadataProp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblMetadataProp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 13</value>
+    <value>122, 16</value>
   </data>
   <data name="lblMetadataProp.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -151,10 +154,13 @@
     <value>1</value>
   </data>
   <data name="ucrChkRemoveColours.Location" type="System.Drawing.Point, System.Drawing">
-    <value>263, 84</value>
+    <value>351, 103</value>
+  </data>
+  <data name="ucrChkRemoveColours.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrChkRemoveColours.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 20</value>
+    <value>196, 25</value>
   </data>
   <data name="ucrChkRemoveColours.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -175,19 +181,19 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>422, 261</value>
+    <value>563, 322</value>
   </data>
   <data name="ucrSelectorColourByMetadata.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 10</value>
+    <value>13, 12</value>
   </data>
   <data name="ucrSelectorColourByMetadata.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrSelectorColourByMetadata.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 180</value>
+    <value>280, 222</value>
   </data>
   <data name="ucrSelectorColourByMetadata.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -205,10 +211,13 @@
     <value>3</value>
   </data>
   <data name="ucrBase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 201</value>
+    <value>16, 247</value>
+  </data>
+  <data name="ucrBase.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>410, 52</value>
+    <value>547, 64</value>
   </data>
   <data name="ucrBase.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -225,8 +234,8 @@
   <data name="&gt;&gt;ucrBase.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -241,13 +250,13 @@
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ucrReceiverMetadataProperty.Location" type="System.Drawing.Point, System.Drawing">
-    <value>263, 60</value>
+    <value>351, 74</value>
   </data>
   <data name="ucrReceiverMetadataProperty.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrReceiverMetadataProperty.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
+    <value>160, 25</value>
   </data>
   <data name="ucrReceiverMetadataProperty.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>

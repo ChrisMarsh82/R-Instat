@@ -127,10 +127,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblThemetoEdit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>240, 58</value>
+    <value>320, 71</value>
+  </data>
+  <data name="lblThemetoEdit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblThemetoEdit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 13</value>
+    <value>94, 16</value>
   </data>
   <data name="lblThemetoEdit.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -154,10 +157,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdThemeOptions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 131</value>
+    <value>324, 161</value>
+  </data>
+  <data name="cmdThemeOptions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="cmdThemeOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 23</value>
+    <value>160, 28</value>
   </data>
   <data name="cmdThemeOptions.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -181,10 +187,13 @@
     <value>False</value>
   </data>
   <data name="ucrChkDeleteTheme.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 107</value>
+    <value>324, 132</value>
+  </data>
+  <data name="ucrChkDeleteTheme.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrChkDeleteTheme.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 18</value>
+    <value>193, 22</value>
   </data>
   <data name="ucrChkDeleteTheme.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -202,10 +211,13 @@
     <value>1</value>
   </data>
   <data name="ucrSaveTheme.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 182</value>
+    <value>12, 224</value>
+  </data>
+  <data name="ucrSaveTheme.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
   </data>
   <data name="ucrSaveTheme.Size" type="System.Drawing.Size, System.Drawing">
-    <value>254, 24</value>
+    <value>339, 30</value>
   </data>
   <data name="ucrSaveTheme.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -226,19 +238,19 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>423, 279</value>
+    <value>564, 344</value>
   </data>
   <data name="ucrSelectorThemes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 32</value>
+    <value>12, 39</value>
   </data>
   <data name="ucrSelectorThemes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrSelectorThemes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 147</value>
+    <value>280, 181</value>
   </data>
   <data name="ucrSelectorThemes.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -256,10 +268,13 @@
     <value>0</value>
   </data>
   <data name="ucrBase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 212</value>
+    <value>12, 261</value>
+  </data>
+  <data name="ucrBase.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>410, 53</value>
+    <value>547, 65</value>
   </data>
   <data name="ucrBase.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -276,6 +291,9 @@
   <data name="&gt;&gt;ucrBase.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
@@ -289,13 +307,13 @@
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ucrReceiverThemetoEdit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 73</value>
+    <value>324, 90</value>
   </data>
   <data name="ucrReceiverThemetoEdit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrReceiverThemetoEdit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
+    <value>160, 25</value>
   </data>
   <data name="ucrReceiverThemetoEdit.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>

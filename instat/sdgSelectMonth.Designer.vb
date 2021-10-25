@@ -31,9 +31,10 @@ Partial Class sdgSelectMonth
         '
         Me.lblSelectMonth.AutoSize = True
         Me.lblSelectMonth.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblSelectMonth.Location = New System.Drawing.Point(18, 23)
+        Me.lblSelectMonth.Location = New System.Drawing.Point(24, 28)
+        Me.lblSelectMonth.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSelectMonth.Name = "lblSelectMonth"
-        Me.lblSelectMonth.Size = New System.Drawing.Size(120, 13)
+        Me.lblSelectMonth.Size = New System.Drawing.Size(147, 16)
         Me.lblSelectMonth.TabIndex = 14
         Me.lblSelectMonth.Text = "Select Month(s) to Omit:"
         '
@@ -42,29 +43,32 @@ Partial Class sdgSelectMonth
         Me.ucrMonthAsFactor.AutoSize = True
         Me.ucrMonthAsFactor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ucrMonthAsFactor.clsReceiver = Nothing
-        Me.ucrMonthAsFactor.Location = New System.Drawing.Point(14, 40)
+        Me.ucrMonthAsFactor.Location = New System.Drawing.Point(19, 49)
+        Me.ucrMonthAsFactor.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrMonthAsFactor.Name = "ucrMonthAsFactor"
         Me.ucrMonthAsFactor.shtCurrSheet = Nothing
-        Me.ucrMonthAsFactor.Size = New System.Drawing.Size(231, 219)
+        Me.ucrMonthAsFactor.Size = New System.Drawing.Size(307, 269)
         Me.ucrMonthAsFactor.TabIndex = 3
         Me.ucrMonthAsFactor.ucrChkLevels = Nothing
         '
         'ucrBaseSdg
         '
-        Me.ucrBaseSdg.Location = New System.Drawing.Point(53, 265)
+        Me.ucrBaseSdg.Location = New System.Drawing.Point(71, 326)
+        Me.ucrBaseSdg.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBaseSdg.Name = "ucrBaseSdg"
-        Me.ucrBaseSdg.Size = New System.Drawing.Size(154, 30)
+        Me.ucrBaseSdg.Size = New System.Drawing.Size(205, 37)
         Me.ucrBaseSdg.TabIndex = 0
         '
         'sdgSelectMonth
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(259, 298)
+        Me.ClientSize = New System.Drawing.Size(346, 367)
         Me.Controls.Add(Me.lblSelectMonth)
         Me.Controls.Add(Me.ucrMonthAsFactor)
         Me.Controls.Add(Me.ucrBaseSdg)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "sdgSelectMonth"

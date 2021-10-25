@@ -119,10 +119,14 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ucrBaseSdgParallelPlot.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 89</value>
+    <value>39, 110</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ucrBaseSdgParallelPlot.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrBaseSdgParallelPlot.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 30</value>
+    <value>204, 37</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ucrBaseSdgParallelPlot.TabIndex" type="System.Int32, mscorlib">
@@ -141,10 +145,13 @@
     <value>4</value>
   </data>
   <data name="ucrInputMissing.Location" type="System.Drawing.Point, System.Drawing">
-    <value>74, 18</value>
+    <value>99, 22</value>
+  </data>
+  <data name="ucrInputMissing.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 7, 9, 7</value>
   </data>
   <data name="ucrInputMissing.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 21</value>
+    <value>169, 26</value>
   </data>
   <data name="ucrInputMissing.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -162,10 +169,13 @@
     <value>3</value>
   </data>
   <data name="ucrInputOrder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>74, 47</value>
+    <value>99, 58</value>
+  </data>
+  <data name="ucrInputOrder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 7, 9, 7</value>
   </data>
   <data name="ucrInputOrder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 21</value>
+    <value>171, 26</value>
   </data>
   <data name="ucrInputOrder.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -186,10 +196,13 @@
     <value>True</value>
   </data>
   <data name="lblMissing.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 21</value>
+    <value>11, 26</value>
+  </data>
+  <data name="lblMissing.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblMissing.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 13</value>
+    <value>57, 16</value>
   </data>
   <data name="lblMissing.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -212,15 +225,17 @@
   <data name="lblOrder.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lblOrder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lblOrder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 47</value>
+    <value>11, 58</value>
+  </data>
+  <data name="lblOrder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblOrder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 13</value>
+    <value>45, 16</value>
   </data>
   <data name="lblOrder.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -244,10 +259,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>213, 121</value>
+    <value>284, 150</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

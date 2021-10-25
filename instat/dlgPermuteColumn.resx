@@ -123,10 +123,14 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblSelected.Location" type="System.Drawing.Point, System.Drawing">
-    <value>238, 45</value>
+    <value>317, 55</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblSelected.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblSelected.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 13</value>
+    <value>119, 16</value>
   </data>
   <data name="lblSelected.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -150,10 +154,13 @@
     <value>True</value>
   </data>
   <data name="lblNumberOfColumns.Location" type="System.Drawing.Point, System.Drawing">
-    <value>239, 117</value>
+    <value>319, 144</value>
+  </data>
+  <data name="lblNumberOfColumns.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblNumberOfColumns.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 13</value>
+    <value>128, 16</value>
   </data>
   <data name="lblNumberOfColumns.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -174,10 +181,13 @@
     <value>4</value>
   </data>
   <data name="ucrChkSetSeed.Location" type="System.Drawing.Point, System.Drawing">
-    <value>242, 90</value>
+    <value>323, 111</value>
+  </data>
+  <data name="ucrChkSetSeed.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrChkSetSeed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 20</value>
+    <value>155, 25</value>
   </data>
   <data name="ucrChkSetSeed.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -195,10 +205,13 @@
     <value>0</value>
   </data>
   <data name="ucrNudSetSeed.Location" type="System.Drawing.Point, System.Drawing">
-    <value>364, 88</value>
+    <value>485, 108</value>
+  </data>
+  <data name="ucrNudSetSeed.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrNudSetSeed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 20</value>
+    <value>67, 25</value>
   </data>
   <data name="ucrNudSetSeed.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -216,10 +229,13 @@
     <value>1</value>
   </data>
   <data name="ucrNudNumberofColumns.Location" type="System.Drawing.Point, System.Drawing">
-    <value>364, 117</value>
+    <value>485, 144</value>
+  </data>
+  <data name="ucrNudNumberofColumns.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrNudNumberofColumns.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 20</value>
+    <value>67, 25</value>
   </data>
   <data name="ucrNudNumberofColumns.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -237,14 +253,13 @@
     <value>2</value>
   </data>
   <data name="ucrSavePermute.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 196</value>
+    <value>13, 241</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ucrSavePermute.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+    <value>5, 6, 5, 6</value>
   </data>
   <data name="ucrSavePermute.Size" type="System.Drawing.Size, System.Drawing">
-    <value>329, 22</value>
+    <value>439, 27</value>
   </data>
   <data name="ucrSavePermute.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -265,19 +280,19 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>419, 282</value>
+    <value>560, 347</value>
   </data>
   <data name="ucrPermuteRowsSelector.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 10</value>
+    <value>13, 12</value>
   </data>
   <data name="ucrPermuteRowsSelector.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrPermuteRowsSelector.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 180</value>
+    <value>280, 222</value>
   </data>
   <data name="ucrPermuteRowsSelector.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -295,10 +310,13 @@
     <value>7</value>
   </data>
   <data name="ucrBase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 224</value>
+    <value>13, 276</value>
+  </data>
+  <data name="ucrBase.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>410, 52</value>
+    <value>547, 64</value>
   </data>
   <data name="ucrBase.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -315,6 +333,9 @@
   <data name="&gt;&gt;ucrBase.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
@@ -328,13 +349,13 @@
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ucrReceiverPermuteRows.Location" type="System.Drawing.Point, System.Drawing">
-    <value>242, 60</value>
+    <value>323, 74</value>
   </data>
   <data name="ucrReceiverPermuteRows.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrReceiverPermuteRows.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
+    <value>160, 25</value>
   </data>
   <data name="ucrReceiverPermuteRows.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>

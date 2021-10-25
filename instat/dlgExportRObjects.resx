@@ -127,10 +127,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblObjects.Location" type="System.Drawing.Point, System.Drawing">
-    <value>263, 45</value>
+    <value>351, 55</value>
+  </data>
+  <data name="lblObjects.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblObjects.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 13</value>
+    <value>114, 16</value>
   </data>
   <data name="lblObjects.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -152,17 +155,22 @@
   </data>
   <data name="ucrFilePath.FilePathBrowseText" xml:space="preserve">
     <value>Unable to load DLL 'SQLite.Interop.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)
-A problem occured attempting to translate string 'Browse' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\translations\rInstatTranslations.db.</value>
+A problem occured attempting to translate string 'Unable to load DLL 'SQLite.Interop.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)
+A problem occured attempting to translate string 'Browse' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\translations\rInstatTranslations.db.' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE/translations\rInstatTranslations.db.</value>
   </data>
   <data name="ucrFilePath.FilePathLabel" xml:space="preserve">
     <value>Unable to load DLL 'SQLite.Interop.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)
-A problem occured attempting to translate string 'Export File:' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\translations\rInstatTranslations.db.</value>
+A problem occured attempting to translate string 'Unable to load DLL 'SQLite.Interop.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)
+A problem occured attempting to translate string 'Export File:' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\translations\rInstatTranslations.db.' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE/translations\rInstatTranslations.db.</value>
   </data>
   <data name="ucrFilePath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 199</value>
+    <value>19, 245</value>
+  </data>
+  <data name="ucrFilePath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrFilePath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>394, 26</value>
+    <value>525, 32</value>
   </data>
   <data name="ucrFilePath.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -183,19 +191,19 @@ A problem occured attempting to translate string 'Export File:' to language en u
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>423, 288</value>
+    <value>564, 355</value>
   </data>
   <data name="ucrSelectorObjects.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 10</value>
+    <value>13, 12</value>
   </data>
   <data name="ucrSelectorObjects.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrSelectorObjects.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 180</value>
+    <value>280, 222</value>
   </data>
   <data name="ucrSelectorObjects.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -213,13 +221,13 @@ A problem occured attempting to translate string 'Export File:' to language en u
     <value>3</value>
   </data>
   <data name="ucrBase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 232</value>
+    <value>13, 286</value>
   </data>
   <data name="ucrBase.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+    <value>5, 6, 5, 6</value>
   </data>
   <data name="ucrBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>412, 52</value>
+    <value>549, 64</value>
   </data>
   <data name="ucrBase.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -236,6 +244,9 @@ A problem occured attempting to translate string 'Export File:' to language en u
   <data name="&gt;&gt;ucrBase.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
@@ -249,13 +260,13 @@ A problem occured attempting to translate string 'Export File:' to language en u
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ucrReceiverMultipleObjects.Location" type="System.Drawing.Point, System.Drawing">
-    <value>267, 60</value>
+    <value>356, 74</value>
   </data>
   <data name="ucrReceiverMultipleObjects.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrReceiverMultipleObjects.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 100</value>
+    <value>160, 123</value>
   </data>
   <data name="ucrReceiverMultipleObjects.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>

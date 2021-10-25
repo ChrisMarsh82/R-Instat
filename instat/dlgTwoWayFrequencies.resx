@@ -123,10 +123,14 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblRowFactor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>260, 78</value>
+    <value>347, 96</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblRowFactor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblRowFactor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 13</value>
+    <value>141, 16</value>
   </data>
   <data name="lblRowFactor.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -150,10 +154,13 @@
     <value>True</value>
   </data>
   <data name="lblColumnFactor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>260, 121</value>
+    <value>347, 149</value>
+  </data>
+  <data name="lblColumnFactor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblColumnFactor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 13</value>
+    <value>97, 16</value>
   </data>
   <data name="lblColumnFactor.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -173,7 +180,6 @@
   <data name="&gt;&gt;lblColumnFactor.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="rdoTable.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -181,10 +187,13 @@
     <value>Flat</value>
   </data>
   <data name="rdoTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>66, 12</value>
+    <value>88, 15</value>
+  </data>
+  <data name="rdoTable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="rdoTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 28</value>
+    <value>133, 34</value>
   </data>
   <data name="rdoTable.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -217,10 +226,13 @@
     <value>Flat</value>
   </data>
   <data name="rdoGraph.Location" type="System.Drawing.Point, System.Drawing">
-    <value>164, 12</value>
+    <value>219, 15</value>
+  </data>
+  <data name="rdoGraph.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="rdoGraph.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 28</value>
+    <value>133, 34</value>
   </data>
   <data name="rdoGraph.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -243,6 +255,18 @@
   <data name="&gt;&gt;rdoGraph.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="ucrChkCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 38</value>
+  </data>
+  <data name="ucrChkCount.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
+  </data>
+  <data name="ucrChkCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 25</value>
+  </data>
+  <data name="ucrChkCount.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;ucrChkCount.Name" xml:space="preserve">
     <value>ucrChkCount</value>
   </data>
@@ -254,6 +278,18 @@
   </data>
   <data name="&gt;&gt;ucrChkCount.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="ucrChkCell.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 130</value>
+  </data>
+  <data name="ucrChkCell.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
+  </data>
+  <data name="ucrChkCell.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 25</value>
+  </data>
+  <data name="ucrChkCell.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;ucrChkCell.Name" xml:space="preserve">
     <value>ucrChkCell</value>
@@ -267,6 +303,18 @@
   <data name="&gt;&gt;ucrChkCell.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="ucrChkColumn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 98</value>
+  </data>
+  <data name="ucrChkColumn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
+  </data>
+  <data name="ucrChkColumn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 25</value>
+  </data>
+  <data name="ucrChkColumn.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
   <data name="&gt;&gt;ucrChkColumn.Name" xml:space="preserve">
     <value>ucrChkColumn</value>
   </data>
@@ -278,6 +326,18 @@
   </data>
   <data name="&gt;&gt;ucrChkColumn.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="ucrChkRow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 66</value>
+  </data>
+  <data name="ucrChkRow.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
+  </data>
+  <data name="ucrChkRow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 25</value>
+  </data>
+  <data name="ucrChkRow.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;ucrChkRow.Name" xml:space="preserve">
     <value>ucrChkRow</value>
@@ -292,10 +352,16 @@
     <value>3</value>
   </data>
   <data name="grpFreqTypeTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 166</value>
+    <value>331, 204</value>
+  </data>
+  <data name="grpFreqTypeTable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpFreqTypeTable.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpFreqTypeTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 143</value>
+    <value>155, 176</value>
   </data>
   <data name="grpFreqTypeTable.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -315,95 +381,14 @@
   <data name="&gt;&gt;grpFreqTypeTable.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="ucrChkCount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 31</value>
-  </data>
-  <data name="ucrChkCount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 20</value>
-  </data>
-  <data name="ucrChkCount.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ucrChkCount.Name" xml:space="preserve">
-    <value>ucrChkCount</value>
-  </data>
-  <data name="&gt;&gt;ucrChkCount.Type" xml:space="preserve">
-    <value>instat.ucrCheck, instat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ucrChkCount.Parent" xml:space="preserve">
-    <value>grpFreqTypeTable</value>
-  </data>
-  <data name="&gt;&gt;ucrChkCount.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="ucrChkCell.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 106</value>
-  </data>
-  <data name="ucrChkCell.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 20</value>
-  </data>
-  <data name="ucrChkCell.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;ucrChkCell.Name" xml:space="preserve">
-    <value>ucrChkCell</value>
-  </data>
-  <data name="&gt;&gt;ucrChkCell.Type" xml:space="preserve">
-    <value>instat.ucrCheck, instat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ucrChkCell.Parent" xml:space="preserve">
-    <value>grpFreqTypeTable</value>
-  </data>
-  <data name="&gt;&gt;ucrChkCell.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="ucrChkColumn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 80</value>
-  </data>
-  <data name="ucrChkColumn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 20</value>
-  </data>
-  <data name="ucrChkColumn.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;ucrChkColumn.Name" xml:space="preserve">
-    <value>ucrChkColumn</value>
-  </data>
-  <data name="&gt;&gt;ucrChkColumn.Type" xml:space="preserve">
-    <value>instat.ucrCheck, instat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ucrChkColumn.Parent" xml:space="preserve">
-    <value>grpFreqTypeTable</value>
-  </data>
-  <data name="&gt;&gt;ucrChkColumn.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="ucrChkRow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 54</value>
-  </data>
-  <data name="ucrChkRow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 20</value>
-  </data>
-  <data name="ucrChkRow.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;ucrChkRow.Name" xml:space="preserve">
-    <value>ucrChkRow</value>
-  </data>
-  <data name="&gt;&gt;ucrChkRow.Type" xml:space="preserve">
-    <value>instat.ucrCheck, instat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ucrChkRow.Parent" xml:space="preserve">
-    <value>grpFreqTypeTable</value>
-  </data>
-  <data name="&gt;&gt;ucrChkRow.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="cmdOptions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 229</value>
+    <value>13, 282</value>
+  </data>
+  <data name="cmdOptions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="cmdOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 23</value>
+    <value>159, 28</value>
   </data>
   <data name="cmdOptions.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -433,10 +418,13 @@
     <value>Flat</value>
   </data>
   <data name="rdoBoth.Location" type="System.Drawing.Point, System.Drawing">
-    <value>262, 12</value>
+    <value>349, 15</value>
+  </data>
+  <data name="rdoBoth.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="rdoBoth.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 28</value>
+    <value>133, 34</value>
   </data>
   <data name="rdoBoth.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -459,98 +447,17 @@
   <data name="&gt;&gt;rdoBoth.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;rdoCount.Name" xml:space="preserve">
-    <value>rdoCount</value>
-  </data>
-  <data name="&gt;&gt;rdoCount.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rdoCount.Parent" xml:space="preserve">
-    <value>grpFreqTypeGraph</value>
-  </data>
-  <data name="&gt;&gt;rdoCount.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;rdoCell.Name" xml:space="preserve">
-    <value>rdoCell</value>
-  </data>
-  <data name="&gt;&gt;rdoCell.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rdoCell.Parent" xml:space="preserve">
-    <value>grpFreqTypeGraph</value>
-  </data>
-  <data name="&gt;&gt;rdoCell.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;rdoRow.Name" xml:space="preserve">
-    <value>rdoRow</value>
-  </data>
-  <data name="&gt;&gt;rdoRow.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rdoRow.Parent" xml:space="preserve">
-    <value>grpFreqTypeGraph</value>
-  </data>
-  <data name="&gt;&gt;rdoRow.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;rdoColumn.Name" xml:space="preserve">
-    <value>rdoColumn</value>
-  </data>
-  <data name="&gt;&gt;rdoColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rdoColumn.Parent" xml:space="preserve">
-    <value>grpFreqTypeGraph</value>
-  </data>
-  <data name="&gt;&gt;rdoColumn.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;ucrPnlFreqType.Name" xml:space="preserve">
-    <value>ucrPnlFreqType</value>
-  </data>
-  <data name="&gt;&gt;ucrPnlFreqType.Type" xml:space="preserve">
-    <value>instat.UcrPanel, instat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ucrPnlFreqType.Parent" xml:space="preserve">
-    <value>grpFreqTypeGraph</value>
-  </data>
-  <data name="&gt;&gt;ucrPnlFreqType.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="grpFreqTypeGraph.Location" type="System.Drawing.Point, System.Drawing">
-    <value>368, 166</value>
-  </data>
-  <data name="grpFreqTypeGraph.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 143</value>
-  </data>
-  <data name="grpFreqTypeGraph.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="grpFreqTypeGraph.Text" xml:space="preserve">
-    <value>Graph Frequencies</value>
-  </data>
-  <data name="&gt;&gt;grpFreqTypeGraph.Name" xml:space="preserve">
-    <value>grpFreqTypeGraph</value>
-  </data>
-  <data name="&gt;&gt;grpFreqTypeGraph.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grpFreqTypeGraph.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;grpFreqTypeGraph.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="rdoCount.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="rdoCount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 31</value>
+    <value>13, 38</value>
+  </data>
+  <data name="rdoCount.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="rdoCount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 17</value>
+    <value>67, 20</value>
   </data>
   <data name="rdoCount.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -574,10 +481,13 @@
     <value>True</value>
   </data>
   <data name="rdoCell.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 106</value>
+    <value>12, 130</value>
+  </data>
+  <data name="rdoCell.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="rdoCell.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 17</value>
+    <value>79, 20</value>
   </data>
   <data name="rdoCell.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -601,10 +511,13 @@
     <value>True</value>
   </data>
   <data name="rdoRow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 54</value>
+    <value>13, 66</value>
+  </data>
+  <data name="rdoRow.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="rdoRow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 17</value>
+    <value>83, 20</value>
   </data>
   <data name="rdoRow.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -628,10 +541,13 @@
     <value>True</value>
   </data>
   <data name="rdoColumn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 80</value>
+    <value>12, 98</value>
+  </data>
+  <data name="rdoColumn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="rdoColumn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 17</value>
+    <value>101, 20</value>
   </data>
   <data name="rdoColumn.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -652,10 +568,13 @@
     <value>3</value>
   </data>
   <data name="ucrPnlFreqType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 31</value>
+    <value>12, 38</value>
+  </data>
+  <data name="ucrPnlFreqType.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrPnlFreqType.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 106</value>
+    <value>144, 130</value>
   </data>
   <data name="ucrPnlFreqType.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -672,14 +591,44 @@
   <data name="&gt;&gt;ucrPnlFreqType.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="grpFreqTypeGraph.Location" type="System.Drawing.Point, System.Drawing">
+    <value>491, 204</value>
+  </data>
+  <data name="grpFreqTypeGraph.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpFreqTypeGraph.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpFreqTypeGraph.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 176</value>
+  </data>
+  <data name="grpFreqTypeGraph.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="grpFreqTypeGraph.Text" xml:space="preserve">
+    <value>Graph Frequencies</value>
+  </data>
+  <data name="&gt;&gt;grpFreqTypeGraph.Name" xml:space="preserve">
+    <value>grpFreqTypeGraph</value>
+  </data>
+  <data name="&gt;&gt;grpFreqTypeGraph.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpFreqTypeGraph.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpFreqTypeGraph.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="ucrSaveGraph.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 350</value>
+    <value>12, 431</value>
   </data>
   <data name="ucrSaveGraph.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+    <value>5, 6, 5, 6</value>
   </data>
   <data name="ucrSaveGraph.Size" type="System.Drawing.Size, System.Drawing">
-    <value>314, 24</value>
+    <value>419, 30</value>
   </data>
   <data name="ucrSaveGraph.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -697,13 +646,13 @@
     <value>1</value>
   </data>
   <data name="ucrSelectorTwoWayFrequencies.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 43</value>
+    <value>12, 53</value>
   </data>
   <data name="ucrSelectorTwoWayFrequencies.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrSelectorTwoWayFrequencies.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 180</value>
+    <value>280, 222</value>
   </data>
   <data name="ucrSelectorTwoWayFrequencies.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -721,10 +670,13 @@
     <value>4</value>
   </data>
   <data name="ucrChkFlip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 289</value>
+    <value>12, 356</value>
+  </data>
+  <data name="ucrChkFlip.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrChkFlip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 20</value>
+    <value>244, 25</value>
   </data>
   <data name="ucrChkFlip.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -742,10 +694,13 @@
     <value>6</value>
   </data>
   <data name="ucrPnlFreqDisplay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>42, 11</value>
+    <value>56, 14</value>
+  </data>
+  <data name="ucrPnlFreqDisplay.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrPnlFreqDisplay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>349, 29</value>
+    <value>465, 36</value>
   </data>
   <data name="ucrPnlFreqDisplay.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -763,10 +718,13 @@
     <value>11</value>
   </data>
   <data name="ucrChkWeights.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 262</value>
+    <value>12, 322</value>
+  </data>
+  <data name="ucrChkWeights.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrChkWeights.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>133, 25</value>
   </data>
   <data name="ucrChkWeights.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -787,16 +745,19 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>489, 439</value>
+    <value>652, 541</value>
   </data>
   <data name="ucrChkFacetGrid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 315</value>
+    <value>12, 388</value>
+  </data>
+  <data name="ucrChkFacetGrid.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrChkFacetGrid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>282, 20</value>
+    <value>376, 25</value>
   </data>
   <data name="ucrChkFacetGrid.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -814,13 +775,13 @@
     <value>0</value>
   </data>
   <data name="ucrReceiverColumnFactor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>263, 136</value>
+    <value>351, 167</value>
   </data>
   <data name="ucrReceiverColumnFactor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrReceiverColumnFactor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 20</value>
+    <value>161, 25</value>
   </data>
   <data name="ucrReceiverColumnFactor.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -838,13 +799,13 @@
     <value>15</value>
   </data>
   <data name="ucrReceiverRowFactor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>263, 93</value>
+    <value>351, 114</value>
   </data>
   <data name="ucrReceiverRowFactor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrReceiverRowFactor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 20</value>
+    <value>161, 25</value>
   </data>
   <data name="ucrReceiverRowFactor.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -862,10 +823,13 @@
     <value>16</value>
   </data>
   <data name="ucrBase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 384</value>
+    <value>12, 473</value>
+  </data>
+  <data name="ucrBase.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>410, 52</value>
+    <value>547, 64</value>
   </data>
   <data name="ucrBase.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -882,6 +846,9 @@
   <data name="&gt;&gt;ucrBase.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
@@ -895,13 +862,13 @@
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ucrReceiverWeights.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 265</value>
+    <value>151, 326</value>
   </data>
   <data name="ucrReceiverWeights.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrReceiverWeights.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
+    <value>160, 25</value>
   </data>
   <data name="ucrReceiverWeights.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>

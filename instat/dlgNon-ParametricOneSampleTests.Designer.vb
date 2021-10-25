@@ -58,34 +58,38 @@ Partial Class dlgNon_ParametricOneSampleTests
         'lblDataColumn
         '
         Me.lblDataColumn.AutoSize = True
-        Me.lblDataColumn.Location = New System.Drawing.Point(271, 83)
+        Me.lblDataColumn.Location = New System.Drawing.Point(361, 102)
+        Me.lblDataColumn.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDataColumn.Name = "lblDataColumn"
-        Me.lblDataColumn.Size = New System.Drawing.Size(67, 13)
+        Me.lblDataColumn.Size = New System.Drawing.Size(83, 16)
         Me.lblDataColumn.TabIndex = 3
         Me.lblDataColumn.Tag = "Data_column"
         Me.lblDataColumn.Text = "Data column"
         '
         'nudMedian
         '
-        Me.nudMedian.Location = New System.Drawing.Point(287, 178)
+        Me.nudMedian.Location = New System.Drawing.Point(383, 219)
+        Me.nudMedian.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudMedian.Name = "nudMedian"
-        Me.nudMedian.Size = New System.Drawing.Size(68, 20)
+        Me.nudMedian.Size = New System.Drawing.Size(91, 22)
         Me.nudMedian.TabIndex = 4
         '
         'nudConfidenceInterval
         '
-        Me.nudConfidenceInterval.Location = New System.Drawing.Point(287, 205)
+        Me.nudConfidenceInterval.Location = New System.Drawing.Point(383, 252)
+        Me.nudConfidenceInterval.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudConfidenceInterval.Name = "nudConfidenceInterval"
-        Me.nudConfidenceInterval.Size = New System.Drawing.Size(68, 20)
+        Me.nudConfidenceInterval.Size = New System.Drawing.Size(91, 22)
         Me.nudConfidenceInterval.TabIndex = 5
         Me.nudConfidenceInterval.Value = New Decimal(New Integer() {95, 0, 0, 0})
         '
         'lblMedian
         '
         Me.lblMedian.AutoSize = True
-        Me.lblMedian.Location = New System.Drawing.Point(157, 182)
+        Me.lblMedian.Location = New System.Drawing.Point(209, 224)
+        Me.lblMedian.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblMedian.Name = "lblMedian"
-        Me.lblMedian.Size = New System.Drawing.Size(116, 13)
+        Me.lblMedian.Size = New System.Drawing.Size(149, 16)
         Me.lblMedian.TabIndex = 6
         Me.lblMedian.Tag = "Assumed_median_value"
         Me.lblMedian.Text = "Assumed median value"
@@ -93,9 +97,10 @@ Partial Class dlgNon_ParametricOneSampleTests
         'lblConfidenceInterval
         '
         Me.lblConfidenceInterval.AutoSize = True
-        Me.lblConfidenceInterval.Location = New System.Drawing.Point(172, 208)
+        Me.lblConfidenceInterval.Location = New System.Drawing.Point(229, 256)
+        Me.lblConfidenceInterval.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblConfidenceInterval.Name = "lblConfidenceInterval"
-        Me.lblConfidenceInterval.Size = New System.Drawing.Size(98, 13)
+        Me.lblConfidenceInterval.Size = New System.Drawing.Size(122, 16)
         Me.lblConfidenceInterval.TabIndex = 7
         Me.lblConfidenceInterval.Tag = "Confidence_interval"
         Me.lblConfidenceInterval.Text = "Confidence interval"
@@ -105,9 +110,11 @@ Partial Class dlgNon_ParametricOneSampleTests
         Me.grpTypeOfTest.Controls.Add(Me.rdoLessThan)
         Me.grpTypeOfTest.Controls.Add(Me.rdoGreaterThan)
         Me.grpTypeOfTest.Controls.Add(Me.rdoTwoSided)
-        Me.grpTypeOfTest.Location = New System.Drawing.Point(2, 251)
+        Me.grpTypeOfTest.Location = New System.Drawing.Point(3, 309)
+        Me.grpTypeOfTest.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpTypeOfTest.Name = "grpTypeOfTest"
-        Me.grpTypeOfTest.Size = New System.Drawing.Size(405, 43)
+        Me.grpTypeOfTest.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpTypeOfTest.Size = New System.Drawing.Size(540, 53)
         Me.grpTypeOfTest.TabIndex = 8
         Me.grpTypeOfTest.TabStop = False
         Me.grpTypeOfTest.Tag = "Type_of_test"
@@ -116,9 +123,10 @@ Partial Class dlgNon_ParametricOneSampleTests
         'rdoLessThan
         '
         Me.rdoLessThan.AutoSize = True
-        Me.rdoLessThan.Location = New System.Drawing.Point(263, 18)
+        Me.rdoLessThan.Location = New System.Drawing.Point(351, 22)
+        Me.rdoLessThan.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoLessThan.Name = "rdoLessThan"
-        Me.rdoLessThan.Size = New System.Drawing.Size(71, 17)
+        Me.rdoLessThan.Size = New System.Drawing.Size(90, 20)
         Me.rdoLessThan.TabIndex = 2
         Me.rdoLessThan.TabStop = True
         Me.rdoLessThan.Tag = "Less_than"
@@ -128,9 +136,10 @@ Partial Class dlgNon_ParametricOneSampleTests
         'rdoGreaterThan
         '
         Me.rdoGreaterThan.AutoSize = True
-        Me.rdoGreaterThan.Location = New System.Drawing.Point(124, 18)
+        Me.rdoGreaterThan.Location = New System.Drawing.Point(165, 22)
+        Me.rdoGreaterThan.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoGreaterThan.Name = "rdoGreaterThan"
-        Me.rdoGreaterThan.Size = New System.Drawing.Size(84, 17)
+        Me.rdoGreaterThan.Size = New System.Drawing.Size(106, 20)
         Me.rdoGreaterThan.TabIndex = 1
         Me.rdoGreaterThan.TabStop = True
         Me.rdoGreaterThan.Tag = "Greater_than"
@@ -140,9 +149,10 @@ Partial Class dlgNon_ParametricOneSampleTests
         'rdoTwoSided
         '
         Me.rdoTwoSided.AutoSize = True
-        Me.rdoTwoSided.Location = New System.Drawing.Point(11, 18)
+        Me.rdoTwoSided.Location = New System.Drawing.Point(15, 22)
+        Me.rdoTwoSided.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoTwoSided.Name = "rdoTwoSided"
-        Me.rdoTwoSided.Size = New System.Drawing.Size(74, 17)
+        Me.rdoTwoSided.Size = New System.Drawing.Size(96, 20)
         Me.rdoTwoSided.TabIndex = 0
         Me.rdoTwoSided.TabStop = True
         Me.rdoTwoSided.Tag = "Two_sided"
@@ -151,35 +161,40 @@ Partial Class dlgNon_ParametricOneSampleTests
         '
         'ucrReceiverDataColumn
         '
-        Me.ucrReceiverDataColumn.Location = New System.Drawing.Point(265, 97)
+        Me.ucrReceiverDataColumn.frmParent = Me
+        Me.ucrReceiverDataColumn.Location = New System.Drawing.Point(353, 119)
         Me.ucrReceiverDataColumn.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverDataColumn.Name = "ucrReceiverDataColumn"
         Me.ucrReceiverDataColumn.Selector = Nothing
-        Me.ucrReceiverDataColumn.Size = New System.Drawing.Size(106, 26)
+        Me.ucrReceiverDataColumn.Size = New System.Drawing.Size(141, 32)
+        Me.ucrReceiverDataColumn.strNcFilePath = ""
         Me.ucrReceiverDataColumn.TabIndex = 2
+        Me.ucrReceiverDataColumn.ucrSelector = Nothing
         '
         'ucrSelectorNPOneSample
         '
+        Me.ucrSelectorNPOneSample.bDropUnusedFilterLevels = False
         Me.ucrSelectorNPOneSample.bShowHiddenColumns = False
-        Me.ucrSelectorNPOneSample.bUseCurrentFilter = False
-        Me.ucrSelectorNPOneSample.Location = New System.Drawing.Point(2, 2)
+        Me.ucrSelectorNPOneSample.bUseCurrentFilter = True
+        Me.ucrSelectorNPOneSample.Location = New System.Drawing.Point(3, 2)
         Me.ucrSelectorNPOneSample.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorNPOneSample.Name = "ucrSelectorNPOneSample"
-        Me.ucrSelectorNPOneSample.Size = New System.Drawing.Size(242, 179)
+        Me.ucrSelectorNPOneSample.Size = New System.Drawing.Size(323, 220)
         Me.ucrSelectorNPOneSample.TabIndex = 1
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(2, 311)
+        Me.ucrBase.Location = New System.Drawing.Point(3, 383)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 56)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 69)
         Me.ucrBase.TabIndex = 0
         '
         'dlgNon_ParametricOneSampleTests
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(412, 368)
+        Me.ClientSize = New System.Drawing.Size(549, 454)
         Me.Controls.Add(Me.grpTypeOfTest)
         Me.Controls.Add(Me.lblConfidenceInterval)
         Me.Controls.Add(Me.lblMedian)
@@ -190,6 +205,7 @@ Partial Class dlgNon_ParametricOneSampleTests
         Me.Controls.Add(Me.ucrSelectorNPOneSample)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgNon_ParametricOneSampleTests"

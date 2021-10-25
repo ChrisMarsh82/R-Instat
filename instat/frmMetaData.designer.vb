@@ -49,33 +49,37 @@ Partial Class frmMetaData
         Me.grdMetaData.Dock = System.Windows.Forms.DockStyle.Fill
         Me.grdMetaData.LeadHeaderContextMenuStrip = Nothing
         Me.grdMetaData.Location = New System.Drawing.Point(0, 0)
+        Me.grdMetaData.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grdMetaData.Name = "grdMetaData"
         Me.grdMetaData.RowHeaderContextMenuStrip = Nothing
         Me.grdMetaData.Script = Nothing
         Me.grdMetaData.SheetTabContextMenuStrip = Nothing
         Me.grdMetaData.SheetTabNewButtonVisible = False
         Me.grdMetaData.SheetTabVisible = False
-        Me.grdMetaData.SheetTabWidth = 100
-        Me.grdMetaData.Size = New System.Drawing.Size(477, 317)
+        Me.grdMetaData.SheetTabWidth = 133
+        Me.grdMetaData.ShowScrollEndSpacing = True
+        Me.grdMetaData.Size = New System.Drawing.Size(636, 391)
         Me.grdMetaData.TabIndex = 1
         Me.grdMetaData.Text = "Meta Data"
         '
         'txtMetadata
         '
-        Me.txtMetadata.Location = New System.Drawing.Point(213, 11)
+        Me.txtMetadata.Location = New System.Drawing.Point(284, 14)
+        Me.txtMetadata.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtMetadata.Multiline = True
         Me.txtMetadata.Name = "txtMetadata"
         Me.txtMetadata.ReadOnly = True
-        Me.txtMetadata.Size = New System.Drawing.Size(205, 100)
+        Me.txtMetadata.Size = New System.Drawing.Size(272, 122)
         Me.txtMetadata.TabIndex = 2
         '
         'frmMetaData
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(477, 317)
+        Me.ClientSize = New System.Drawing.Size(636, 391)
         Me.Controls.Add(Me.grdMetaData)
         Me.Controls.Add(Me.txtMetadata)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmMetaData"
         Me.ShowIcon = False
         Me.Text = "Data frame Metadata"

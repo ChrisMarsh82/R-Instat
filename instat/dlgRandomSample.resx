@@ -123,10 +123,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblSampleSize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>276, 155</value>
+    <value>368, 191</value>
+  </data>
+  <data name="lblSampleSize.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblSampleSize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 13</value>
+    <value>157, 16</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lblSampleSize.TabIndex" type="System.Int32, mscorlib">
@@ -151,10 +154,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblNumberofSamples.Location" type="System.Drawing.Point, System.Drawing">
-    <value>276, 128</value>
+    <value>368, 158</value>
+  </data>
+  <data name="lblNumberofSamples.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblNumberofSamples.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 13</value>
+    <value>157, 16</value>
   </data>
   <data name="lblNumberofSamples.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -175,13 +181,13 @@
     <value>5</value>
   </data>
   <data name="ucrSaveRandomSample.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 219</value>
+    <value>13, 270</value>
   </data>
   <data name="ucrSaveRandomSample.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+    <value>5, 6, 5, 6</value>
   </data>
   <data name="ucrSaveRandomSample.Size" type="System.Drawing.Size, System.Drawing">
-    <value>365, 22</value>
+    <value>487, 27</value>
   </data>
   <data name="ucrSaveRandomSample.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -199,10 +205,13 @@
     <value>0</value>
   </data>
   <data name="ucrNudNumberOfSamples.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 126</value>
+    <value>533, 155</value>
+  </data>
+  <data name="ucrNudNumberOfSamples.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrNudNumberOfSamples.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 20</value>
+    <value>67, 25</value>
   </data>
   <data name="ucrNudNumberOfSamples.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -220,10 +229,13 @@
     <value>1</value>
   </data>
   <data name="ucrNudSeed.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 100</value>
+    <value>533, 123</value>
+  </data>
+  <data name="ucrNudSeed.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrNudSeed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 20</value>
+    <value>67, 25</value>
   </data>
   <data name="ucrNudSeed.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -241,10 +253,13 @@
     <value>2</value>
   </data>
   <data name="ucrChkSetSeed.Location" type="System.Drawing.Point, System.Drawing">
-    <value>276, 101</value>
+    <value>368, 124</value>
+  </data>
+  <data name="ucrChkSetSeed.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrChkSetSeed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 20</value>
+    <value>157, 25</value>
   </data>
   <data name="ucrChkSetSeed.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -262,10 +277,13 @@
     <value>3</value>
   </data>
   <data name="ucrSampleSize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 152</value>
+    <value>533, 187</value>
+  </data>
+  <data name="ucrSampleSize.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrSampleSize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 23</value>
+    <value>73, 28</value>
   </data>
   <data name="ucrSampleSize.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -283,13 +301,13 @@
     <value>4</value>
   </data>
   <data name="ucrSelectorRandomSamples.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 10</value>
+    <value>13, 12</value>
   </data>
   <data name="ucrSelectorRandomSamples.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrSelectorRandomSamples.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 40</value>
+    <value>204, 49</value>
   </data>
   <data name="ucrSelectorRandomSamples.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -307,10 +325,13 @@
     <value>7</value>
   </data>
   <data name="ucrDistWithParameters.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 55</value>
+    <value>13, 68</value>
+  </data>
+  <data name="ucrDistWithParameters.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 7, 9, 7</value>
   </data>
   <data name="ucrDistWithParameters.Size" type="System.Drawing.Size, System.Drawing">
-    <value>248, 156</value>
+    <value>331, 192</value>
   </data>
   <data name="ucrDistWithParameters.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -328,10 +349,13 @@
     <value>8</value>
   </data>
   <data name="ucrBase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 248</value>
+    <value>13, 305</value>
+  </data>
+  <data name="ucrBase.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>410, 52</value>
+    <value>547, 64</value>
   </data>
   <data name="ucrBase.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -352,10 +376,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>479, 300</value>
+    <value>639, 370</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

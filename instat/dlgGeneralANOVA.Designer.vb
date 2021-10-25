@@ -56,9 +56,10 @@ Partial Class dlgGeneralANOVA
         'rdoAnalysis
         '
         Me.rdoAnalysis.AutoSize = True
-        Me.rdoAnalysis.Location = New System.Drawing.Point(46, 10)
+        Me.rdoAnalysis.Location = New System.Drawing.Point(61, 12)
+        Me.rdoAnalysis.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoAnalysis.Name = "rdoAnalysis"
-        Me.rdoAnalysis.Size = New System.Drawing.Size(63, 17)
+        Me.rdoAnalysis.Size = New System.Drawing.Size(84, 20)
         Me.rdoAnalysis.TabIndex = 1
         Me.rdoAnalysis.TabStop = True
         Me.rdoAnalysis.Tag = "Analysis"
@@ -68,9 +69,10 @@ Partial Class dlgGeneralANOVA
         'rdoReplicates
         '
         Me.rdoReplicates.AutoSize = True
-        Me.rdoReplicates.Location = New System.Drawing.Point(255, 10)
+        Me.rdoReplicates.Location = New System.Drawing.Point(340, 12)
+        Me.rdoReplicates.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoReplicates.Name = "rdoReplicates"
-        Me.rdoReplicates.Size = New System.Drawing.Size(75, 17)
+        Me.rdoReplicates.Size = New System.Drawing.Size(98, 20)
         Me.rdoReplicates.TabIndex = 2
         Me.rdoReplicates.TabStop = True
         Me.rdoReplicates.Tag = "Replicates"
@@ -80,9 +82,10 @@ Partial Class dlgGeneralANOVA
         'lblYVariable
         '
         Me.lblYVariable.AutoSize = True
-        Me.lblYVariable.Location = New System.Drawing.Point(255, 69)
+        Me.lblYVariable.Location = New System.Drawing.Point(340, 85)
+        Me.lblYVariable.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblYVariable.Name = "lblYVariable"
-        Me.lblYVariable.Size = New System.Drawing.Size(54, 13)
+        Me.lblYVariable.Size = New System.Drawing.Size(69, 16)
         Me.lblYVariable.TabIndex = 7
         Me.lblYVariable.Tag = "Y_variable"
         Me.lblYVariable.Text = "Y variable"
@@ -90,9 +93,10 @@ Partial Class dlgGeneralANOVA
         'lblTreatmentFactor
         '
         Me.lblTreatmentFactor.AutoSize = True
-        Me.lblTreatmentFactor.Location = New System.Drawing.Point(255, 111)
+        Me.lblTreatmentFactor.Location = New System.Drawing.Point(340, 137)
+        Me.lblTreatmentFactor.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblTreatmentFactor.Name = "lblTreatmentFactor"
-        Me.lblTreatmentFactor.Size = New System.Drawing.Size(99, 13)
+        Me.lblTreatmentFactor.Size = New System.Drawing.Size(122, 16)
         Me.lblTreatmentFactor.TabIndex = 8
         Me.lblTreatmentFactor.Tag = "Treatment_structure"
         Me.lblTreatmentFactor.Text = "Treatment structure"
@@ -100,9 +104,10 @@ Partial Class dlgGeneralANOVA
         'lblLayout
         '
         Me.lblLayout.AutoSize = True
-        Me.lblLayout.Location = New System.Drawing.Point(255, 154)
+        Me.lblLayout.Location = New System.Drawing.Point(340, 190)
+        Me.lblLayout.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblLayout.Name = "lblLayout"
-        Me.lblLayout.Size = New System.Drawing.Size(39, 13)
+        Me.lblLayout.Size = New System.Drawing.Size(48, 16)
         Me.lblLayout.TabIndex = 9
         Me.lblLayout.Tag = "Layout"
         Me.lblLayout.Text = "Layout"
@@ -110,9 +115,10 @@ Partial Class dlgGeneralANOVA
         'chkSaveModel
         '
         Me.chkSaveModel.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.chkSaveModel.Location = New System.Drawing.Point(10, 255)
+        Me.chkSaveModel.Location = New System.Drawing.Point(13, 314)
+        Me.chkSaveModel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkSaveModel.Name = "chkSaveModel"
-        Me.chkSaveModel.Size = New System.Drawing.Size(92, 24)
+        Me.chkSaveModel.Size = New System.Drawing.Size(123, 30)
         Me.chkSaveModel.TabIndex = 10
         Me.chkSaveModel.Tag = "Save_Model"
         Me.chkSaveModel.Text = "Save Model"
@@ -121,9 +127,10 @@ Partial Class dlgGeneralANOVA
         'cmdGeneralANOVAOptions
         '
         Me.cmdGeneralANOVAOptions.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.cmdGeneralANOVAOptions.Location = New System.Drawing.Point(10, 223)
+        Me.cmdGeneralANOVAOptions.Location = New System.Drawing.Point(13, 274)
+        Me.cmdGeneralANOVAOptions.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdGeneralANOVAOptions.Name = "cmdGeneralANOVAOptions"
-        Me.cmdGeneralANOVAOptions.Size = New System.Drawing.Size(145, 23)
+        Me.cmdGeneralANOVAOptions.Size = New System.Drawing.Size(193, 28)
         Me.cmdGeneralANOVAOptions.TabIndex = 12
         Me.cmdGeneralANOVAOptions.Tag = "General_ANOVA_Options..."
         Me.cmdGeneralANOVAOptions.Text = "General ANOVA Options..."
@@ -131,60 +138,72 @@ Partial Class dlgGeneralANOVA
         '
         'ucrModelName
         '
-        Me.ucrModelName.Location = New System.Drawing.Point(101, 256)
+        Me.ucrModelName.Location = New System.Drawing.Point(135, 315)
+        Me.ucrModelName.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrModelName.Name = "ucrModelName"
-        Me.ucrModelName.Size = New System.Drawing.Size(149, 23)
+        Me.ucrModelName.Size = New System.Drawing.Size(199, 28)
         Me.ucrModelName.TabIndex = 11
         '
         'ucrReceiverYVariable
         '
-        Me.ucrReceiverYVariable.Location = New System.Drawing.Point(255, 85)
+        Me.ucrReceiverYVariable.frmParent = Me
+        Me.ucrReceiverYVariable.Location = New System.Drawing.Point(340, 105)
         Me.ucrReceiverYVariable.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverYVariable.Name = "ucrReceiverYVariable"
         Me.ucrReceiverYVariable.Selector = Nothing
-        Me.ucrReceiverYVariable.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverYVariable.Size = New System.Drawing.Size(160, 25)
+        Me.ucrReceiverYVariable.strNcFilePath = ""
         Me.ucrReceiverYVariable.TabIndex = 6
+        Me.ucrReceiverYVariable.ucrSelector = Nothing
         '
         'ucrReceiverTreatmentStructure
         '
-        Me.ucrReceiverTreatmentStructure.Location = New System.Drawing.Point(255, 127)
+        Me.ucrReceiverTreatmentStructure.frmParent = Me
+        Me.ucrReceiverTreatmentStructure.Location = New System.Drawing.Point(340, 156)
         Me.ucrReceiverTreatmentStructure.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverTreatmentStructure.Name = "ucrReceiverTreatmentStructure"
         Me.ucrReceiverTreatmentStructure.Selector = Nothing
-        Me.ucrReceiverTreatmentStructure.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverTreatmentStructure.Size = New System.Drawing.Size(160, 25)
+        Me.ucrReceiverTreatmentStructure.strNcFilePath = ""
         Me.ucrReceiverTreatmentStructure.TabIndex = 5
+        Me.ucrReceiverTreatmentStructure.ucrSelector = Nothing
         '
         'ucrReceiverLayout
         '
-        Me.ucrReceiverLayout.Location = New System.Drawing.Point(255, 169)
+        Me.ucrReceiverLayout.frmParent = Me
+        Me.ucrReceiverLayout.Location = New System.Drawing.Point(340, 208)
         Me.ucrReceiverLayout.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverLayout.Name = "ucrReceiverLayout"
         Me.ucrReceiverLayout.Selector = Nothing
-        Me.ucrReceiverLayout.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverLayout.Size = New System.Drawing.Size(160, 25)
+        Me.ucrReceiverLayout.strNcFilePath = ""
         Me.ucrReceiverLayout.TabIndex = 4
+        Me.ucrReceiverLayout.ucrSelector = Nothing
         '
         'ucrSelectorGeneralANOVA
         '
+        Me.ucrSelectorGeneralANOVA.bDropUnusedFilterLevels = False
         Me.ucrSelectorGeneralANOVA.bShowHiddenColumns = False
-        Me.ucrSelectorGeneralANOVA.bUseCurrentFilter = False
-        Me.ucrSelectorGeneralANOVA.Location = New System.Drawing.Point(10, 31)
+        Me.ucrSelectorGeneralANOVA.bUseCurrentFilter = True
+        Me.ucrSelectorGeneralANOVA.Location = New System.Drawing.Point(13, 38)
         Me.ucrSelectorGeneralANOVA.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorGeneralANOVA.Name = "ucrSelectorGeneralANOVA"
-        Me.ucrSelectorGeneralANOVA.Size = New System.Drawing.Size(210, 180)
+        Me.ucrSelectorGeneralANOVA.Size = New System.Drawing.Size(280, 222)
         Me.ucrSelectorGeneralANOVA.TabIndex = 3
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(10, 286)
+        Me.ucrBase.Location = New System.Drawing.Point(13, 352)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 52)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 64)
         Me.ucrBase.TabIndex = 0
         '
         'dlgGeneralANOVA
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(419, 340)
+        Me.ClientSize = New System.Drawing.Size(559, 419)
         Me.Controls.Add(Me.chkSaveModel)
         Me.Controls.Add(Me.ucrModelName)
         Me.Controls.Add(Me.cmdGeneralANOVAOptions)
@@ -199,6 +218,7 @@ Partial Class dlgGeneralANOVA
         Me.Controls.Add(Me.rdoAnalysis)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgGeneralANOVA"

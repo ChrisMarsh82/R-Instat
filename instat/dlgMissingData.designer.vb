@@ -43,18 +43,20 @@ Partial Class dlgMissingData
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(12, 213)
+        Me.ucrBase.Location = New System.Drawing.Point(16, 262)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 63)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 78)
         Me.ucrBase.TabIndex = 0
         '
         'dlgMissingData
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(428, 288)
+        Me.ClientSize = New System.Drawing.Size(571, 355)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgMissingData"

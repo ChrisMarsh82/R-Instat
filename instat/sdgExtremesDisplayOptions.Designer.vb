@@ -43,9 +43,10 @@ Partial Class sdgExtremesDisplayOptions
         '
         Me.rdoHist.AutoSize = True
         Me.rdoHist.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.rdoHist.Location = New System.Drawing.Point(149, 69)
+        Me.rdoHist.Location = New System.Drawing.Point(199, 85)
+        Me.rdoHist.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoHist.Name = "rdoHist"
-        Me.rdoHist.Size = New System.Drawing.Size(64, 17)
+        Me.rdoHist.Size = New System.Drawing.Size(82, 20)
         Me.rdoHist.TabIndex = 8
         Me.rdoHist.Text = "Hist Plot"
         Me.rdoHist.UseVisualStyleBackColor = True
@@ -54,9 +55,10 @@ Partial Class sdgExtremesDisplayOptions
         '
         Me.rdoZPlot.AutoSize = True
         Me.rdoZPlot.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.rdoZPlot.Location = New System.Drawing.Point(149, 46)
+        Me.rdoZPlot.Location = New System.Drawing.Point(199, 57)
+        Me.rdoZPlot.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoZPlot.Name = "rdoZPlot"
-        Me.rdoZPlot.Size = New System.Drawing.Size(70, 17)
+        Me.rdoZPlot.Size = New System.Drawing.Size(89, 20)
         Me.rdoZPlot.TabIndex = 7
         Me.rdoZPlot.Text = "Zplot Plot"
         Me.rdoZPlot.UseVisualStyleBackColor = True
@@ -65,9 +67,10 @@ Partial Class sdgExtremesDisplayOptions
         '
         Me.rdoProbprob.AutoSize = True
         Me.rdoProbprob.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.rdoProbprob.Location = New System.Drawing.Point(13, 69)
+        Me.rdoProbprob.Location = New System.Drawing.Point(17, 85)
+        Me.rdoProbprob.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoProbprob.Name = "rdoProbprob"
-        Me.rdoProbprob.Size = New System.Drawing.Size(92, 17)
+        Me.rdoProbprob.Size = New System.Drawing.Size(120, 20)
         Me.rdoProbprob.TabIndex = 3
         Me.rdoProbprob.Text = "Prob-prob Plot"
         Me.rdoProbprob.UseVisualStyleBackColor = True
@@ -76,9 +79,10 @@ Partial Class sdgExtremesDisplayOptions
         '
         Me.rdoQQPlot.AutoSize = True
         Me.rdoQQPlot.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.rdoQQPlot.Location = New System.Drawing.Point(149, 23)
+        Me.rdoQQPlot.Location = New System.Drawing.Point(199, 28)
+        Me.rdoQQPlot.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoQQPlot.Name = "rdoQQPlot"
-        Me.rdoQQPlot.Size = New System.Drawing.Size(62, 17)
+        Me.rdoQQPlot.Size = New System.Drawing.Size(80, 20)
         Me.rdoQQPlot.TabIndex = 6
         Me.rdoQQPlot.Text = "QQ-Plot"
         Me.rdoQQPlot.UseVisualStyleBackColor = True
@@ -87,9 +91,10 @@ Partial Class sdgExtremesDisplayOptions
         '
         Me.rdoQQ2.AutoSize = True
         Me.rdoQQ2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.rdoQQ2.Location = New System.Drawing.Point(149, 115)
+        Me.rdoQQ2.Location = New System.Drawing.Point(199, 142)
+        Me.rdoQQ2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoQQ2.Name = "rdoQQ2"
-        Me.rdoQQ2.Size = New System.Drawing.Size(68, 17)
+        Me.rdoQQ2.Size = New System.Drawing.Size(86, 20)
         Me.rdoQQ2.TabIndex = 10
         Me.rdoQQ2.Text = "QQ2 Plot"
         Me.rdoQQ2.UseVisualStyleBackColor = True
@@ -98,9 +103,10 @@ Partial Class sdgExtremesDisplayOptions
         '
         Me.rdoPrimary.AutoSize = True
         Me.rdoPrimary.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.rdoPrimary.Location = New System.Drawing.Point(13, 46)
+        Me.rdoPrimary.Location = New System.Drawing.Point(17, 57)
+        Me.rdoPrimary.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoPrimary.Name = "rdoPrimary"
-        Me.rdoPrimary.Size = New System.Drawing.Size(59, 17)
+        Me.rdoPrimary.Size = New System.Drawing.Size(79, 20)
         Me.rdoPrimary.TabIndex = 2
         Me.rdoPrimary.Text = "Primary"
         Me.rdoPrimary.UseVisualStyleBackColor = True
@@ -118,9 +124,11 @@ Partial Class sdgExtremesDisplayOptions
         Me.grpPlots.Controls.Add(Me.rdoQQ2)
         Me.grpPlots.Controls.Add(Me.rdoPrimary)
         Me.grpPlots.Controls.Add(Me.ucrPnlExtreme)
-        Me.grpPlots.Location = New System.Drawing.Point(12, 12)
+        Me.grpPlots.Location = New System.Drawing.Point(16, 15)
+        Me.grpPlots.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpPlots.Name = "grpPlots"
-        Me.grpPlots.Size = New System.Drawing.Size(261, 141)
+        Me.grpPlots.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpPlots.Size = New System.Drawing.Size(348, 174)
         Me.grpPlots.TabIndex = 0
         Me.grpPlots.TabStop = False
         Me.grpPlots.Text = "Plots"
@@ -129,9 +137,10 @@ Partial Class sdgExtremesDisplayOptions
         '
         Me.rdoNoPlot.AutoSize = True
         Me.rdoNoPlot.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.rdoNoPlot.Location = New System.Drawing.Point(13, 23)
+        Me.rdoNoPlot.Location = New System.Drawing.Point(17, 28)
+        Me.rdoNoPlot.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoNoPlot.Name = "rdoNoPlot"
-        Me.rdoNoPlot.Size = New System.Drawing.Size(60, 17)
+        Me.rdoNoPlot.Size = New System.Drawing.Size(77, 20)
         Me.rdoNoPlot.TabIndex = 1
         Me.rdoNoPlot.Text = "No Plot"
         Me.rdoNoPlot.UseVisualStyleBackColor = True
@@ -140,9 +149,10 @@ Partial Class sdgExtremesDisplayOptions
         '
         Me.rdoTrace.AutoSize = True
         Me.rdoTrace.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.rdoTrace.Location = New System.Drawing.Point(13, 115)
+        Me.rdoTrace.Location = New System.Drawing.Point(17, 142)
+        Me.rdoTrace.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoTrace.Name = "rdoTrace"
-        Me.rdoTrace.Size = New System.Drawing.Size(74, 17)
+        Me.rdoTrace.Size = New System.Drawing.Size(95, 20)
         Me.rdoTrace.TabIndex = 5
         Me.rdoTrace.Text = "Trace Plot"
         Me.rdoTrace.UseVisualStyleBackColor = True
@@ -151,9 +161,10 @@ Partial Class sdgExtremesDisplayOptions
         '
         Me.rdoRlplot.AutoSize = True
         Me.rdoRlplot.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.rdoRlplot.Location = New System.Drawing.Point(13, 92)
+        Me.rdoRlplot.Location = New System.Drawing.Point(17, 113)
+        Me.rdoRlplot.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoRlplot.Name = "rdoRlplot"
-        Me.rdoRlplot.Size = New System.Drawing.Size(56, 17)
+        Me.rdoRlplot.Size = New System.Drawing.Size(72, 20)
         Me.rdoRlplot.TabIndex = 4
         Me.rdoRlplot.Text = "Rl Plot"
         Me.rdoRlplot.UseVisualStyleBackColor = True
@@ -162,44 +173,48 @@ Partial Class sdgExtremesDisplayOptions
         '
         Me.rdoDensity.AutoSize = True
         Me.rdoDensity.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.rdoDensity.Location = New System.Drawing.Point(149, 92)
+        Me.rdoDensity.Location = New System.Drawing.Point(199, 113)
+        Me.rdoDensity.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoDensity.Name = "rdoDensity"
-        Me.rdoDensity.Size = New System.Drawing.Size(81, 17)
+        Me.rdoDensity.Size = New System.Drawing.Size(104, 20)
         Me.rdoDensity.TabIndex = 9
         Me.rdoDensity.Text = "Density Plot"
         Me.rdoDensity.UseVisualStyleBackColor = True
         '
         'ucrPnlExtreme
         '
-        Me.ucrPnlExtreme.Location = New System.Drawing.Point(6, 19)
+        Me.ucrPnlExtreme.Location = New System.Drawing.Point(8, 23)
+        Me.ucrPnlExtreme.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrPnlExtreme.Name = "ucrPnlExtreme"
-        Me.ucrPnlExtreme.Size = New System.Drawing.Size(239, 117)
+        Me.ucrPnlExtreme.Size = New System.Drawing.Size(319, 144)
         Me.ucrPnlExtreme.TabIndex = 0
         '
         'ucrSavePlots
         '
-        Me.ucrSavePlots.Location = New System.Drawing.Point(12, 161)
-        Me.ucrSavePlots.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ucrSavePlots.Location = New System.Drawing.Point(16, 198)
+        Me.ucrSavePlots.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.ucrSavePlots.Name = "ucrSavePlots"
-        Me.ucrSavePlots.Size = New System.Drawing.Size(261, 24)
+        Me.ucrSavePlots.Size = New System.Drawing.Size(348, 30)
         Me.ucrSavePlots.TabIndex = 1
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(66, 193)
+        Me.ucrBase.Location = New System.Drawing.Point(88, 238)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(157, 30)
+        Me.ucrBase.Size = New System.Drawing.Size(209, 37)
         Me.ucrBase.TabIndex = 2
         '
         'sdgExtremesDisplayOptions
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(287, 224)
+        Me.ClientSize = New System.Drawing.Size(383, 277)
         Me.Controls.Add(Me.ucrSavePlots)
         Me.Controls.Add(Me.grpPlots)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "sdgExtremesDisplayOptions"

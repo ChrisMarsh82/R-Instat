@@ -37,9 +37,10 @@ Partial Class dlgScript
         'lblPackage
         '
         Me.lblPackage.AutoSize = True
-        Me.lblPackage.Location = New System.Drawing.Point(12, 26)
+        Me.lblPackage.Location = New System.Drawing.Point(16, 32)
+        Me.lblPackage.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPackage.Name = "lblPackage"
-        Me.lblPackage.Size = New System.Drawing.Size(73, 13)
+        Me.lblPackage.Size = New System.Drawing.Size(90, 16)
         Me.lblPackage.TabIndex = 19
         Me.lblPackage.Text = "Get Package:"
         '
@@ -47,9 +48,10 @@ Partial Class dlgScript
         '
         Me.lblNewName.AutoSize = True
         Me.lblNewName.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblNewName.Location = New System.Drawing.Point(9, 134)
+        Me.lblNewName.Location = New System.Drawing.Point(12, 165)
+        Me.lblNewName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblNewName.Name = "lblNewName"
-        Me.lblNewName.Size = New System.Drawing.Size(111, 13)
+        Me.lblNewName.Size = New System.Drawing.Size(136, 16)
         Me.lblNewName.TabIndex = 21
         Me.lblNewName.Tag = ""
         Me.lblNewName.Text = "Write new data frame:"
@@ -57,10 +59,10 @@ Partial Class dlgScript
         'btnAddDataFrame
         '
         Me.btnAddDataFrame.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.btnAddDataFrame.Location = New System.Drawing.Point(182, 93)
-        Me.btnAddDataFrame.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.btnAddDataFrame.Location = New System.Drawing.Point(243, 114)
+        Me.btnAddDataFrame.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnAddDataFrame.Name = "btnAddDataFrame"
-        Me.btnAddDataFrame.Size = New System.Drawing.Size(74, 23)
+        Me.btnAddDataFrame.Size = New System.Drawing.Size(99, 28)
         Me.btnAddDataFrame.TabIndex = 23
         Me.btnAddDataFrame.Text = "Add"
         Me.btnAddDataFrame.UseVisualStyleBackColor = True
@@ -68,10 +70,10 @@ Partial Class dlgScript
         'Button1
         '
         Me.Button1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button1.Location = New System.Drawing.Point(182, 42)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Button1.Location = New System.Drawing.Point(243, 52)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(74, 23)
+        Me.Button1.Size = New System.Drawing.Size(99, 28)
         Me.Button1.TabIndex = 24
         Me.Button1.Text = "Add"
         Me.Button1.UseVisualStyleBackColor = True
@@ -79,10 +81,10 @@ Partial Class dlgScript
         'Button2
         '
         Me.Button2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button2.Location = New System.Drawing.Point(182, 148)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Button2.Location = New System.Drawing.Point(243, 182)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(74, 23)
+        Me.Button2.Size = New System.Drawing.Size(99, 28)
         Me.Button2.TabIndex = 25
         Me.Button2.Text = "Add"
         Me.Button2.UseVisualStyleBackColor = True
@@ -92,9 +94,10 @@ Partial Class dlgScript
         Me.ucrInputNewDataFrameName.AddQuotesIfUnrecognised = True
         Me.ucrInputNewDataFrameName.IsMultiline = False
         Me.ucrInputNewDataFrameName.IsReadOnly = False
-        Me.ucrInputNewDataFrameName.Location = New System.Drawing.Point(9, 150)
+        Me.ucrInputNewDataFrameName.Location = New System.Drawing.Point(12, 185)
+        Me.ucrInputNewDataFrameName.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputNewDataFrameName.Name = "ucrInputNewDataFrameName"
-        Me.ucrInputNewDataFrameName.Size = New System.Drawing.Size(137, 21)
+        Me.ucrInputNewDataFrameName.Size = New System.Drawing.Size(183, 26)
         Me.ucrInputNewDataFrameName.TabIndex = 22
         '
         'ucrInputComboPackage
@@ -102,9 +105,10 @@ Partial Class dlgScript
         Me.ucrInputComboPackage.AddQuotesIfUnrecognised = True
         Me.ucrInputComboPackage.GetSetSelectedIndex = -1
         Me.ucrInputComboPackage.IsReadOnly = False
-        Me.ucrInputComboPackage.Location = New System.Drawing.Point(15, 42)
+        Me.ucrInputComboPackage.Location = New System.Drawing.Point(20, 52)
+        Me.ucrInputComboPackage.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputComboPackage.Name = "ucrInputComboPackage"
-        Me.ucrInputComboPackage.Size = New System.Drawing.Size(137, 21)
+        Me.ucrInputComboPackage.Size = New System.Drawing.Size(183, 26)
         Me.ucrInputComboPackage.TabIndex = 20
         '
         'ucrInputCommand
@@ -112,34 +116,35 @@ Partial Class dlgScript
         Me.ucrInputCommand.AddQuotesIfUnrecognised = True
         Me.ucrInputCommand.IsMultiline = True
         Me.ucrInputCommand.IsReadOnly = False
-        Me.ucrInputCommand.Location = New System.Drawing.Point(295, 11)
+        Me.ucrInputCommand.Location = New System.Drawing.Point(393, 14)
+        Me.ucrInputCommand.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputCommand.Name = "ucrInputCommand"
-        Me.ucrInputCommand.Size = New System.Drawing.Size(443, 418)
+        Me.ucrInputCommand.Size = New System.Drawing.Size(591, 514)
         Me.ucrInputCommand.TabIndex = 18
         '
         'ucrDataFrameCopySheets
         '
         Me.ucrDataFrameCopySheets.bDropUnusedFilterLevels = False
         Me.ucrDataFrameCopySheets.bUseCurrentFilter = True
-        Me.ucrDataFrameCopySheets.Location = New System.Drawing.Point(9, 75)
+        Me.ucrDataFrameCopySheets.Location = New System.Drawing.Point(12, 92)
         Me.ucrDataFrameCopySheets.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrDataFrameCopySheets.Name = "ucrDataFrameCopySheets"
-        Me.ucrDataFrameCopySheets.Size = New System.Drawing.Size(148, 50)
+        Me.ucrDataFrameCopySheets.Size = New System.Drawing.Size(197, 62)
         Me.ucrDataFrameCopySheets.TabIndex = 17
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(112, 437)
-        Me.ucrBase.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ucrBase.Location = New System.Drawing.Point(149, 538)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(416, 57)
+        Me.ucrBase.Size = New System.Drawing.Size(555, 70)
         Me.ucrBase.TabIndex = 16
         '
         'dlgScript
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(750, 501)
+        Me.ClientSize = New System.Drawing.Size(1001, 617)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnAddDataFrame)
@@ -151,6 +156,7 @@ Partial Class dlgScript
         Me.Controls.Add(Me.ucrDataFrameCopySheets)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgScript"

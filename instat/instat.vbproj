@@ -2815,6 +2815,9 @@
       <DependentUpon>dlgBoxPlot.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="dlgBoxplotCountVariable.resx">
+      <DependentUpon>dlgBoxplotCountVariable.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dlgCircular.resx">
       <DependentUpon>dlgCircular.vb</DependentUpon>
     </EmbeddedResource>
@@ -2903,8 +2906,14 @@
     <EmbeddedResource Include="dlgSetupForDataEntry.resx">
       <DependentUpon>dlgSetupForDataEntry.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="dlgSubset.resx">
+      <DependentUpon>dlgSubset.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dlgTaylorDiagram.resx">
       <DependentUpon>dlgTaylorDiagram.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgThreeSummaries.resx">
+      <DependentUpon>dlgThreeSummaries.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="dlgTimeSeriesPlot.resx">
       <DependentUpon>dlgTimeSeriesPlot.vb</DependentUpon>
@@ -2993,9 +3002,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="dlgAddKey.resx">
       <DependentUpon>dlgAddKey.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="dlgAddLink.resx">
       <DependentUpon>dlgAddLink.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="dlgAddLink.sw-KE.resx">
       <DependentUpon>dlgAddLink.vb</DependentUpon>
@@ -4189,6 +4200,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="dlgConvertColumns.resx">
       <DependentUpon>dlgConvertColumns.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="dlgConvertColumns.sw-KE.resx">
       <DependentUpon>dlgConvertColumns.vb</DependentUpon>

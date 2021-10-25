@@ -62,9 +62,11 @@ Partial Class sdgTimeSeries
         Me.grpComparisonSummaries.Controls.Add(Me.ucrChkPBias)
         Me.grpComparisonSummaries.Controls.Add(Me.ucrChkCor)
         Me.grpComparisonSummaries.Controls.Add(Me.ucrChkN)
-        Me.grpComparisonSummaries.Location = New System.Drawing.Point(14, 66)
+        Me.grpComparisonSummaries.Location = New System.Drawing.Point(19, 81)
+        Me.grpComparisonSummaries.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpComparisonSummaries.Name = "grpComparisonSummaries"
-        Me.grpComparisonSummaries.Size = New System.Drawing.Size(294, 95)
+        Me.grpComparisonSummaries.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpComparisonSummaries.Size = New System.Drawing.Size(392, 117)
         Me.grpComparisonSummaries.TabIndex = 0
         Me.grpComparisonSummaries.TabStop = False
         Me.grpComparisonSummaries.Text = "Comparison Summaries"
@@ -72,91 +74,102 @@ Partial Class sdgTimeSeries
         'ucrChkKge
         '
         Me.ucrChkKge.Checked = False
-        Me.ucrChkKge.Location = New System.Drawing.Point(224, 61)
+        Me.ucrChkKge.Location = New System.Drawing.Point(299, 75)
+        Me.ucrChkKge.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkKge.Name = "ucrChkKge"
-        Me.ucrChkKge.Size = New System.Drawing.Size(60, 20)
+        Me.ucrChkKge.Size = New System.Drawing.Size(80, 25)
         Me.ucrChkKge.TabIndex = 10
         '
         'ucrChkRmse
         '
         Me.ucrChkRmse.Checked = False
-        Me.ucrChkRmse.Location = New System.Drawing.Point(153, 61)
+        Me.ucrChkRmse.Location = New System.Drawing.Point(204, 75)
+        Me.ucrChkRmse.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkRmse.Name = "ucrChkRmse"
-        Me.ucrChkRmse.Size = New System.Drawing.Size(60, 20)
+        Me.ucrChkRmse.Size = New System.Drawing.Size(80, 25)
         Me.ucrChkRmse.TabIndex = 9
         '
         'ucrChkMae
         '
         Me.ucrChkMae.Checked = False
-        Me.ucrChkMae.Location = New System.Drawing.Point(82, 61)
+        Me.ucrChkMae.Location = New System.Drawing.Point(109, 75)
+        Me.ucrChkMae.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkMae.Name = "ucrChkMae"
-        Me.ucrChkMae.Size = New System.Drawing.Size(60, 20)
+        Me.ucrChkMae.Size = New System.Drawing.Size(80, 25)
         Me.ucrChkMae.TabIndex = 8
         '
         'ucrChkMe
         '
         Me.ucrChkMe.Checked = False
-        Me.ucrChkMe.Location = New System.Drawing.Point(11, 61)
+        Me.ucrChkMe.Location = New System.Drawing.Point(15, 75)
+        Me.ucrChkMe.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkMe.Name = "ucrChkMe"
-        Me.ucrChkMe.Size = New System.Drawing.Size(60, 20)
+        Me.ucrChkMe.Size = New System.Drawing.Size(80, 25)
         Me.ucrChkMe.TabIndex = 7
         '
         'ucrChkRSd
         '
         Me.ucrChkRSd.Checked = False
-        Me.ucrChkRSd.Location = New System.Drawing.Point(224, 29)
+        Me.ucrChkRSd.Location = New System.Drawing.Point(299, 36)
+        Me.ucrChkRSd.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkRSd.Name = "ucrChkRSd"
-        Me.ucrChkRSd.Size = New System.Drawing.Size(60, 20)
+        Me.ucrChkRSd.Size = New System.Drawing.Size(80, 25)
         Me.ucrChkRSd.TabIndex = 6
         '
         'ucrChkPBias
         '
         Me.ucrChkPBias.Checked = False
-        Me.ucrChkPBias.Location = New System.Drawing.Point(153, 29)
+        Me.ucrChkPBias.Location = New System.Drawing.Point(204, 36)
+        Me.ucrChkPBias.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkPBias.Name = "ucrChkPBias"
-        Me.ucrChkPBias.Size = New System.Drawing.Size(60, 20)
+        Me.ucrChkPBias.Size = New System.Drawing.Size(80, 25)
         Me.ucrChkPBias.TabIndex = 2
         '
         'ucrChkCor
         '
         Me.ucrChkCor.Checked = False
-        Me.ucrChkCor.Location = New System.Drawing.Point(82, 29)
+        Me.ucrChkCor.Location = New System.Drawing.Point(109, 36)
+        Me.ucrChkCor.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkCor.Name = "ucrChkCor"
-        Me.ucrChkCor.Size = New System.Drawing.Size(60, 20)
+        Me.ucrChkCor.Size = New System.Drawing.Size(80, 25)
         Me.ucrChkCor.TabIndex = 1
         '
         'ucrChkN
         '
         Me.ucrChkN.Checked = False
-        Me.ucrChkN.Location = New System.Drawing.Point(11, 29)
+        Me.ucrChkN.Location = New System.Drawing.Point(15, 36)
+        Me.ucrChkN.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkN.Name = "ucrChkN"
-        Me.ucrChkN.Size = New System.Drawing.Size(60, 20)
+        Me.ucrChkN.Size = New System.Drawing.Size(80, 25)
         Me.ucrChkN.TabIndex = 0
         '
         'lblSeparator
         '
         Me.lblSeparator.AutoSize = True
-        Me.lblSeparator.Location = New System.Drawing.Point(11, 177)
+        Me.lblSeparator.Location = New System.Drawing.Point(15, 218)
+        Me.lblSeparator.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSeparator.Name = "lblSeparator"
-        Me.lblSeparator.Size = New System.Drawing.Size(56, 13)
+        Me.lblSeparator.Size = New System.Drawing.Size(71, 16)
         Me.lblSeparator.TabIndex = 2
         Me.lblSeparator.Text = "Separator:"
         '
         'lblPositionReference
         '
         Me.lblPositionReference.AutoSize = True
-        Me.lblPositionReference.Location = New System.Drawing.Point(11, 237)
+        Me.lblPositionReference.Location = New System.Drawing.Point(15, 292)
+        Me.lblPositionReference.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPositionReference.Name = "lblPositionReference"
-        Me.lblPositionReference.Size = New System.Drawing.Size(47, 13)
+        Me.lblPositionReference.Size = New System.Drawing.Size(59, 16)
         Me.lblPositionReference.TabIndex = 3
         Me.lblPositionReference.Text = "Position:"
         '
         'lblFontSize
         '
         Me.lblFontSize.AutoSize = True
-        Me.lblFontSize.Location = New System.Drawing.Point(11, 207)
+        Me.lblFontSize.Location = New System.Drawing.Point(15, 255)
+        Me.lblFontSize.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblFontSize.Name = "lblFontSize"
-        Me.lblFontSize.Size = New System.Drawing.Size(54, 13)
+        Me.lblFontSize.Size = New System.Drawing.Size(66, 16)
         Me.lblFontSize.TabIndex = 4
         Me.lblFontSize.Text = "Font Size:"
         '
@@ -165,17 +178,18 @@ Partial Class sdgTimeSeries
         Me.ucrInputPositionReference.AddQuotesIfUnrecognised = True
         Me.ucrInputPositionReference.GetSetSelectedIndex = -1
         Me.ucrInputPositionReference.IsReadOnly = False
-        Me.ucrInputPositionReference.Location = New System.Drawing.Point(124, 233)
+        Me.ucrInputPositionReference.Location = New System.Drawing.Point(165, 287)
+        Me.ucrInputPositionReference.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputPositionReference.Name = "ucrInputPositionReference"
-        Me.ucrInputPositionReference.Size = New System.Drawing.Size(100, 21)
+        Me.ucrInputPositionReference.Size = New System.Drawing.Size(133, 26)
         Me.ucrInputPositionReference.TabIndex = 5
         '
         'ucrButtonsSummaries
         '
-        Me.ucrButtonsSummaries.Location = New System.Drawing.Point(87, 312)
-        Me.ucrButtonsSummaries.Margin = New System.Windows.Forms.Padding(4)
+        Me.ucrButtonsSummaries.Location = New System.Drawing.Point(116, 384)
+        Me.ucrButtonsSummaries.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrButtonsSummaries.Name = "ucrButtonsSummaries"
-        Me.ucrButtonsSummaries.Size = New System.Drawing.Size(150, 31)
+        Me.ucrButtonsSummaries.Size = New System.Drawing.Size(200, 38)
         Me.ucrButtonsSummaries.TabIndex = 7
         '
         'ucrInputSeparator
@@ -183,9 +197,10 @@ Partial Class sdgTimeSeries
         Me.ucrInputSeparator.AddQuotesIfUnrecognised = True
         Me.ucrInputSeparator.IsMultiline = False
         Me.ucrInputSeparator.IsReadOnly = False
-        Me.ucrInputSeparator.Location = New System.Drawing.Point(124, 173)
+        Me.ucrInputSeparator.Location = New System.Drawing.Point(165, 213)
+        Me.ucrInputSeparator.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputSeparator.Name = "ucrInputSeparator"
-        Me.ucrInputSeparator.Size = New System.Drawing.Size(40, 21)
+        Me.ucrInputSeparator.Size = New System.Drawing.Size(53, 26)
         Me.ucrInputSeparator.TabIndex = 8
         '
         'ucrInputFontSize
@@ -193,9 +208,10 @@ Partial Class sdgTimeSeries
         Me.ucrInputFontSize.AddQuotesIfUnrecognised = True
         Me.ucrInputFontSize.IsMultiline = False
         Me.ucrInputFontSize.IsReadOnly = False
-        Me.ucrInputFontSize.Location = New System.Drawing.Point(124, 203)
+        Me.ucrInputFontSize.Location = New System.Drawing.Point(165, 250)
+        Me.ucrInputFontSize.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputFontSize.Name = "ucrInputFontSize"
-        Me.ucrInputFontSize.Size = New System.Drawing.Size(40, 21)
+        Me.ucrInputFontSize.Size = New System.Drawing.Size(53, 26)
         Me.ucrInputFontSize.TabIndex = 9
         '
         'rdoIndividual
@@ -206,9 +222,10 @@ Partial Class sdgTimeSeries
         Me.rdoIndividual.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ActiveCaption
         Me.rdoIndividual.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.rdoIndividual.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.rdoIndividual.Location = New System.Drawing.Point(161, 14)
+        Me.rdoIndividual.Location = New System.Drawing.Point(215, 17)
+        Me.rdoIndividual.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoIndividual.Name = "rdoIndividual"
-        Me.rdoIndividual.Size = New System.Drawing.Size(110, 27)
+        Me.rdoIndividual.Size = New System.Drawing.Size(147, 33)
         Me.rdoIndividual.TabIndex = 12
         Me.rdoIndividual.TabStop = True
         Me.rdoIndividual.Text = "Individual"
@@ -223,9 +240,10 @@ Partial Class sdgTimeSeries
         Me.rdoComparison.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ActiveCaption
         Me.rdoComparison.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.rdoComparison.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.rdoComparison.Location = New System.Drawing.Point(53, 14)
+        Me.rdoComparison.Location = New System.Drawing.Point(71, 17)
+        Me.rdoComparison.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoComparison.Name = "rdoComparison"
-        Me.rdoComparison.Size = New System.Drawing.Size(110, 27)
+        Me.rdoComparison.Size = New System.Drawing.Size(147, 33)
         Me.rdoComparison.TabIndex = 11
         Me.rdoComparison.TabStop = True
         Me.rdoComparison.Text = "Comparison"
@@ -234,9 +252,10 @@ Partial Class sdgTimeSeries
         '
         'ucrPnlSummaries
         '
-        Me.ucrPnlSummaries.Location = New System.Drawing.Point(40, 11)
+        Me.ucrPnlSummaries.Location = New System.Drawing.Point(53, 14)
+        Me.ucrPnlSummaries.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrPnlSummaries.Name = "ucrPnlSummaries"
-        Me.ucrPnlSummaries.Size = New System.Drawing.Size(244, 35)
+        Me.ucrPnlSummaries.Size = New System.Drawing.Size(325, 43)
         Me.ucrPnlSummaries.TabIndex = 10
         '
         'ucrInputPositionEstimates
@@ -244,17 +263,19 @@ Partial Class sdgTimeSeries
         Me.ucrInputPositionEstimates.AddQuotesIfUnrecognised = True
         Me.ucrInputPositionEstimates.GetSetSelectedIndex = -1
         Me.ucrInputPositionEstimates.IsReadOnly = False
-        Me.ucrInputPositionEstimates.Location = New System.Drawing.Point(124, 263)
+        Me.ucrInputPositionEstimates.Location = New System.Drawing.Point(165, 324)
+        Me.ucrInputPositionEstimates.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputPositionEstimates.Name = "ucrInputPositionEstimates"
-        Me.ucrInputPositionEstimates.Size = New System.Drawing.Size(100, 21)
+        Me.ucrInputPositionEstimates.Size = New System.Drawing.Size(133, 26)
         Me.ucrInputPositionEstimates.TabIndex = 14
         '
         'lblPositionEstimates
         '
         Me.lblPositionEstimates.AutoSize = True
-        Me.lblPositionEstimates.Location = New System.Drawing.Point(11, 267)
+        Me.lblPositionEstimates.Location = New System.Drawing.Point(15, 329)
+        Me.lblPositionEstimates.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPositionEstimates.Name = "lblPositionEstimates"
-        Me.lblPositionEstimates.Size = New System.Drawing.Size(101, 13)
+        Me.lblPositionEstimates.Size = New System.Drawing.Size(128, 16)
         Me.lblPositionEstimates.TabIndex = 13
         Me.lblPositionEstimates.Text = "Position - Estimates:"
         '
@@ -264,9 +285,11 @@ Partial Class sdgTimeSeries
         Me.grpIndividualSummaries.Controls.Add(Me.ucrChkSdIndividual)
         Me.grpIndividualSummaries.Controls.Add(Me.ucrChkMeanIndividual)
         Me.grpIndividualSummaries.Controls.Add(Me.ucrChkNIndividual)
-        Me.grpIndividualSummaries.Location = New System.Drawing.Point(14, 66)
+        Me.grpIndividualSummaries.Location = New System.Drawing.Point(19, 81)
+        Me.grpIndividualSummaries.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpIndividualSummaries.Name = "grpIndividualSummaries"
-        Me.grpIndividualSummaries.Size = New System.Drawing.Size(294, 61)
+        Me.grpIndividualSummaries.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpIndividualSummaries.Size = New System.Drawing.Size(392, 75)
         Me.grpIndividualSummaries.TabIndex = 11
         Me.grpIndividualSummaries.TabStop = False
         Me.grpIndividualSummaries.Text = "Individual Summaries"
@@ -274,40 +297,44 @@ Partial Class sdgTimeSeries
         'ucrChkSlopeIndividual
         '
         Me.ucrChkSlopeIndividual.Checked = False
-        Me.ucrChkSlopeIndividual.Location = New System.Drawing.Point(224, 29)
+        Me.ucrChkSlopeIndividual.Location = New System.Drawing.Point(299, 36)
+        Me.ucrChkSlopeIndividual.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkSlopeIndividual.Name = "ucrChkSlopeIndividual"
-        Me.ucrChkSlopeIndividual.Size = New System.Drawing.Size(60, 20)
+        Me.ucrChkSlopeIndividual.Size = New System.Drawing.Size(80, 25)
         Me.ucrChkSlopeIndividual.TabIndex = 6
         '
         'ucrChkSdIndividual
         '
         Me.ucrChkSdIndividual.Checked = False
-        Me.ucrChkSdIndividual.Location = New System.Drawing.Point(153, 29)
+        Me.ucrChkSdIndividual.Location = New System.Drawing.Point(204, 36)
+        Me.ucrChkSdIndividual.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkSdIndividual.Name = "ucrChkSdIndividual"
-        Me.ucrChkSdIndividual.Size = New System.Drawing.Size(60, 20)
+        Me.ucrChkSdIndividual.Size = New System.Drawing.Size(80, 25)
         Me.ucrChkSdIndividual.TabIndex = 2
         '
         'ucrChkMeanIndividual
         '
         Me.ucrChkMeanIndividual.Checked = False
-        Me.ucrChkMeanIndividual.Location = New System.Drawing.Point(82, 29)
+        Me.ucrChkMeanIndividual.Location = New System.Drawing.Point(109, 36)
+        Me.ucrChkMeanIndividual.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkMeanIndividual.Name = "ucrChkMeanIndividual"
-        Me.ucrChkMeanIndividual.Size = New System.Drawing.Size(60, 20)
+        Me.ucrChkMeanIndividual.Size = New System.Drawing.Size(80, 25)
         Me.ucrChkMeanIndividual.TabIndex = 1
         '
         'ucrChkNIndividual
         '
         Me.ucrChkNIndividual.Checked = False
-        Me.ucrChkNIndividual.Location = New System.Drawing.Point(11, 29)
+        Me.ucrChkNIndividual.Location = New System.Drawing.Point(15, 36)
+        Me.ucrChkNIndividual.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkNIndividual.Name = "ucrChkNIndividual"
-        Me.ucrChkNIndividual.Size = New System.Drawing.Size(60, 20)
+        Me.ucrChkNIndividual.Size = New System.Drawing.Size(80, 25)
         Me.ucrChkNIndividual.TabIndex = 0
         '
         'sdgTimeSeries
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(325, 342)
+        Me.ClientSize = New System.Drawing.Size(433, 422)
         Me.Controls.Add(Me.grpIndividualSummaries)
         Me.Controls.Add(Me.ucrInputPositionEstimates)
         Me.Controls.Add(Me.lblPositionEstimates)
@@ -323,6 +350,7 @@ Partial Class sdgTimeSeries
         Me.Controls.Add(Me.lblSeparator)
         Me.Controls.Add(Me.grpComparisonSummaries)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "sdgTimeSeries"

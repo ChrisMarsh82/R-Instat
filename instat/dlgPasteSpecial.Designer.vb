@@ -28,17 +28,19 @@ Partial Class dlgPasteSpecial
         'UcrCheck1
         '
         Me.UcrCheck1.Checked = False
-        Me.UcrCheck1.Location = New System.Drawing.Point(172, 48)
+        Me.UcrCheck1.Location = New System.Drawing.Point(229, 59)
+        Me.UcrCheck1.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.UcrCheck1.Name = "UcrCheck1"
-        Me.UcrCheck1.Size = New System.Drawing.Size(100, 20)
+        Me.UcrCheck1.Size = New System.Drawing.Size(133, 25)
         Me.UcrCheck1.TabIndex = 0
         '
         'dlgPasteSpecial
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(545, 196)
+        Me.ClientSize = New System.Drawing.Size(727, 242)
         Me.Controls.Add(Me.UcrCheck1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "dlgPasteSpecial"
         Me.Text = "dlgPasteSpecial"
         Me.ResumeLayout(False)

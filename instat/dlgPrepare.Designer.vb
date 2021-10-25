@@ -43,18 +43,20 @@ Partial Class dlgPrepare
         '
         'UcrButtons1
         '
-        Me.UcrButtons1.Location = New System.Drawing.Point(2, 295)
+        Me.UcrButtons1.Location = New System.Drawing.Point(3, 363)
+        Me.UcrButtons1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.UcrButtons1.Name = "UcrButtons1"
-        Me.UcrButtons1.Size = New System.Drawing.Size(410, 32)
+        Me.UcrButtons1.Size = New System.Drawing.Size(547, 39)
         Me.UcrButtons1.TabIndex = 0
         '
         'dlgPrepare
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(414, 328)
+        Me.ClientSize = New System.Drawing.Size(552, 405)
         Me.Controls.Add(Me.UcrButtons1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgPrepare"

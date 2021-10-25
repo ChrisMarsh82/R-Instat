@@ -54,45 +54,48 @@ Partial Class dlgClimaticStationMaps
         '
         'cmdPlotOptions
         '
-        Me.cmdPlotOptions.Location = New System.Drawing.Point(10, 263)
+        Me.cmdPlotOptions.Location = New System.Drawing.Point(13, 324)
+        Me.cmdPlotOptions.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdPlotOptions.Name = "cmdPlotOptions"
-        Me.cmdPlotOptions.Size = New System.Drawing.Size(167, 23)
+        Me.cmdPlotOptions.Size = New System.Drawing.Size(223, 28)
         Me.cmdPlotOptions.TabIndex = 12
         Me.cmdPlotOptions.Text = "Plot Options"
         Me.cmdPlotOptions.UseVisualStyleBackColor = True
         '
         'cmdMapOptions
         '
-        Me.cmdMapOptions.Location = New System.Drawing.Point(10, 322)
+        Me.cmdMapOptions.Location = New System.Drawing.Point(13, 396)
+        Me.cmdMapOptions.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdMapOptions.Name = "cmdMapOptions"
-        Me.cmdMapOptions.Size = New System.Drawing.Size(167, 23)
+        Me.cmdMapOptions.Size = New System.Drawing.Size(223, 28)
         Me.cmdMapOptions.TabIndex = 14
         Me.cmdMapOptions.Text = "Map Options"
         Me.cmdMapOptions.UseVisualStyleBackColor = True
         '
         'cmdSFOptions
         '
-        Me.cmdSFOptions.Location = New System.Drawing.Point(10, 293)
+        Me.cmdSFOptions.Location = New System.Drawing.Point(13, 361)
+        Me.cmdSFOptions.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdSFOptions.Name = "cmdSFOptions"
-        Me.cmdSFOptions.Size = New System.Drawing.Size(167, 23)
+        Me.cmdSFOptions.Size = New System.Drawing.Size(223, 28)
         Me.cmdSFOptions.TabIndex = 13
         Me.cmdSFOptions.Text = "SF Options"
         Me.cmdSFOptions.UseVisualStyleBackColor = True
         '
         'ucrSaveMap
         '
-        Me.ucrSaveMap.Location = New System.Drawing.Point(8, 356)
-        Me.ucrSaveMap.Margin = New System.Windows.Forms.Padding(6, 8, 6, 8)
+        Me.ucrSaveMap.Location = New System.Drawing.Point(11, 438)
+        Me.ucrSaveMap.Margin = New System.Windows.Forms.Padding(8, 10, 8, 10)
         Me.ucrSaveMap.Name = "ucrSaveMap"
-        Me.ucrSaveMap.Size = New System.Drawing.Size(320, 22)
+        Me.ucrSaveMap.Size = New System.Drawing.Size(427, 27)
         Me.ucrSaveMap.TabIndex = 15
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(8, 387)
-        Me.ucrBase.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ucrBase.Location = New System.Drawing.Point(11, 476)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 52)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 64)
         Me.ucrBase.TabIndex = 16
         '
         'grpPoints
@@ -110,9 +113,11 @@ Partial Class dlgClimaticStationMaps
         Me.grpPoints.Controls.Add(Me.ucrReceiverShape)
         Me.grpPoints.Controls.Add(Me.ucrReceiverLatitude)
         Me.grpPoints.Controls.Add(Me.ucrReceiverLongitude)
-        Me.grpPoints.Location = New System.Drawing.Point(373, 8)
+        Me.grpPoints.Location = New System.Drawing.Point(497, 10)
+        Me.grpPoints.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpPoints.Name = "grpPoints"
-        Me.grpPoints.Size = New System.Drawing.Size(371, 292)
+        Me.grpPoints.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpPoints.Size = New System.Drawing.Size(495, 359)
         Me.grpPoints.TabIndex = 21
         Me.grpPoints.TabStop = False
         Me.grpPoints.Text = "Points"
@@ -120,20 +125,21 @@ Partial Class dlgClimaticStationMaps
         'lblLabels
         '
         Me.lblLabels.AutoSize = True
-        Me.lblLabels.Location = New System.Drawing.Point(237, 101)
+        Me.lblLabels.Location = New System.Drawing.Point(316, 124)
+        Me.lblLabels.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblLabels.Name = "lblLabels"
-        Me.lblLabels.Size = New System.Drawing.Size(89, 13)
+        Me.lblLabels.Size = New System.Drawing.Size(113, 16)
         Me.lblLabels.TabIndex = 33
         Me.lblLabels.Text = "Labels (Optional):"
         '
         'ucrReceiverStation
         '
         Me.ucrReceiverStation.frmParent = Me
-        Me.ucrReceiverStation.Location = New System.Drawing.Point(239, 120)
+        Me.ucrReceiverStation.Location = New System.Drawing.Point(319, 148)
         Me.ucrReceiverStation.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverStation.Name = "ucrReceiverStation"
         Me.ucrReceiverStation.Selector = Nothing
-        Me.ucrReceiverStation.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverStation.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverStation.strNcFilePath = ""
         Me.ucrReceiverStation.TabIndex = 32
         Me.ucrReceiverStation.ucrSelector = Nothing
@@ -141,21 +147,20 @@ Partial Class dlgClimaticStationMaps
         'lblFacet
         '
         Me.lblFacet.AutoSize = True
-        Me.lblFacet.Location = New System.Drawing.Point(240, 235)
-        Me.lblFacet.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblFacet.Location = New System.Drawing.Point(320, 289)
         Me.lblFacet.Name = "lblFacet"
-        Me.lblFacet.Size = New System.Drawing.Size(42, 13)
+        Me.lblFacet.Size = New System.Drawing.Size(52, 16)
         Me.lblFacet.TabIndex = 31
         Me.lblFacet.Text = "Facets:"
         '
         'ucrReceiverFacet
         '
         Me.ucrReceiverFacet.frmParent = Me
-        Me.ucrReceiverFacet.Location = New System.Drawing.Point(241, 256)
+        Me.ucrReceiverFacet.Location = New System.Drawing.Point(321, 315)
         Me.ucrReceiverFacet.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverFacet.Name = "ucrReceiverFacet"
         Me.ucrReceiverFacet.Selector = Nothing
-        Me.ucrReceiverFacet.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverFacet.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverFacet.strNcFilePath = ""
         Me.ucrReceiverFacet.TabIndex = 30
         Me.ucrReceiverFacet.ucrSelector = Nothing
@@ -165,50 +170,47 @@ Partial Class dlgClimaticStationMaps
         Me.ucrSelectorStation.bDropUnusedFilterLevels = False
         Me.ucrSelectorStation.bShowHiddenColumns = False
         Me.ucrSelectorStation.bUseCurrentFilter = True
-        Me.ucrSelectorStation.Location = New System.Drawing.Point(8, 16)
+        Me.ucrSelectorStation.Location = New System.Drawing.Point(11, 20)
         Me.ucrSelectorStation.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorStation.Name = "ucrSelectorStation"
-        Me.ucrSelectorStation.Size = New System.Drawing.Size(210, 180)
+        Me.ucrSelectorStation.Size = New System.Drawing.Size(280, 222)
         Me.ucrSelectorStation.TabIndex = 21
         '
         'lblColor
         '
         Me.lblColor.AutoSize = True
-        Me.lblColor.Location = New System.Drawing.Point(238, 190)
-        Me.lblColor.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblColor.Location = New System.Drawing.Point(317, 234)
         Me.lblColor.Name = "lblColor"
-        Me.lblColor.Size = New System.Drawing.Size(82, 13)
+        Me.lblColor.Size = New System.Drawing.Size(104, 16)
         Me.lblColor.TabIndex = 28
         Me.lblColor.Text = "Color (Optional):"
         '
         'lblShape
         '
         Me.lblShape.AutoSize = True
-        Me.lblShape.Location = New System.Drawing.Point(237, 147)
-        Me.lblShape.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblShape.Location = New System.Drawing.Point(316, 181)
         Me.lblShape.Name = "lblShape"
-        Me.lblShape.Size = New System.Drawing.Size(89, 13)
+        Me.lblShape.Size = New System.Drawing.Size(112, 16)
         Me.lblShape.TabIndex = 26
         Me.lblShape.Text = "Shape (Optional):"
         '
         'lbllatitude
         '
         Me.lbllatitude.AutoSize = True
-        Me.lbllatitude.Location = New System.Drawing.Point(237, 55)
-        Me.lbllatitude.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbllatitude.Location = New System.Drawing.Point(316, 68)
         Me.lbllatitude.Name = "lbllatitude"
-        Me.lbllatitude.Size = New System.Drawing.Size(48, 13)
+        Me.lbllatitude.Size = New System.Drawing.Size(58, 16)
         Me.lbllatitude.TabIndex = 24
         Me.lbllatitude.Text = "Latitude:"
         '
         'ucrReceiverColor
         '
         Me.ucrReceiverColor.frmParent = Me
-        Me.ucrReceiverColor.Location = New System.Drawing.Point(240, 209)
+        Me.ucrReceiverColor.Location = New System.Drawing.Point(320, 257)
         Me.ucrReceiverColor.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverColor.Name = "ucrReceiverColor"
         Me.ucrReceiverColor.Selector = Nothing
-        Me.ucrReceiverColor.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverColor.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverColor.strNcFilePath = ""
         Me.ucrReceiverColor.TabIndex = 29
         Me.ucrReceiverColor.ucrSelector = Nothing
@@ -216,21 +218,20 @@ Partial Class dlgClimaticStationMaps
         'lblLongitude
         '
         Me.lblLongitude.AutoSize = True
-        Me.lblLongitude.Location = New System.Drawing.Point(240, 12)
-        Me.lblLongitude.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblLongitude.Location = New System.Drawing.Point(320, 15)
         Me.lblLongitude.Name = "lblLongitude"
-        Me.lblLongitude.Size = New System.Drawing.Size(57, 13)
+        Me.lblLongitude.Size = New System.Drawing.Size(70, 16)
         Me.lblLongitude.TabIndex = 22
         Me.lblLongitude.Text = "Longitude:"
         '
         'ucrReceiverShape
         '
         Me.ucrReceiverShape.frmParent = Me
-        Me.ucrReceiverShape.Location = New System.Drawing.Point(240, 165)
+        Me.ucrReceiverShape.Location = New System.Drawing.Point(320, 203)
         Me.ucrReceiverShape.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverShape.Name = "ucrReceiverShape"
         Me.ucrReceiverShape.Selector = Nothing
-        Me.ucrReceiverShape.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverShape.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverShape.strNcFilePath = ""
         Me.ucrReceiverShape.TabIndex = 27
         Me.ucrReceiverShape.ucrSelector = Nothing
@@ -238,11 +239,11 @@ Partial Class dlgClimaticStationMaps
         'ucrReceiverLatitude
         '
         Me.ucrReceiverLatitude.frmParent = Me
-        Me.ucrReceiverLatitude.Location = New System.Drawing.Point(240, 72)
+        Me.ucrReceiverLatitude.Location = New System.Drawing.Point(320, 89)
         Me.ucrReceiverLatitude.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverLatitude.Name = "ucrReceiverLatitude"
         Me.ucrReceiverLatitude.Selector = Nothing
-        Me.ucrReceiverLatitude.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverLatitude.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverLatitude.strNcFilePath = ""
         Me.ucrReceiverLatitude.TabIndex = 25
         Me.ucrReceiverLatitude.ucrSelector = Nothing
@@ -250,11 +251,11 @@ Partial Class dlgClimaticStationMaps
         'ucrReceiverLongitude
         '
         Me.ucrReceiverLongitude.frmParent = Me
-        Me.ucrReceiverLongitude.Location = New System.Drawing.Point(240, 31)
+        Me.ucrReceiverLongitude.Location = New System.Drawing.Point(320, 38)
         Me.ucrReceiverLongitude.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverLongitude.Name = "ucrReceiverLongitude"
         Me.ucrReceiverLongitude.Selector = Nothing
-        Me.ucrReceiverLongitude.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverLongitude.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverLongitude.strNcFilePath = ""
         Me.ucrReceiverLongitude.TabIndex = 23
         Me.ucrReceiverLongitude.ucrSelector = Nothing
@@ -267,9 +268,11 @@ Partial Class dlgClimaticStationMaps
         Me.grpMapOutline.Controls.Add(Me.lblFill)
         Me.grpMapOutline.Controls.Add(Me.ucrReceiverFill)
         Me.grpMapOutline.Controls.Add(Me.ucrSelectorOutline)
-        Me.grpMapOutline.Location = New System.Drawing.Point(10, 12)
+        Me.grpMapOutline.Location = New System.Drawing.Point(13, 15)
+        Me.grpMapOutline.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpMapOutline.Name = "grpMapOutline"
-        Me.grpMapOutline.Size = New System.Drawing.Size(357, 245)
+        Me.grpMapOutline.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpMapOutline.Size = New System.Drawing.Size(476, 302)
         Me.grpMapOutline.TabIndex = 22
         Me.grpMapOutline.TabStop = False
         Me.grpMapOutline.Text = "Map Outline"
@@ -277,28 +280,30 @@ Partial Class dlgClimaticStationMaps
         'ucrChkAddPoints
         '
         Me.ucrChkAddPoints.Checked = False
-        Me.ucrChkAddPoints.Location = New System.Drawing.Point(231, 107)
+        Me.ucrChkAddPoints.Location = New System.Drawing.Point(308, 132)
+        Me.ucrChkAddPoints.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkAddPoints.Name = "ucrChkAddPoints"
-        Me.ucrChkAddPoints.Size = New System.Drawing.Size(120, 20)
+        Me.ucrChkAddPoints.Size = New System.Drawing.Size(160, 25)
         Me.ucrChkAddPoints.TabIndex = 34
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(231, 12)
+        Me.Label1.Location = New System.Drawing.Point(308, 15)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(52, 13)
+        Me.Label1.Size = New System.Drawing.Size(67, 16)
         Me.Label1.TabIndex = 25
         Me.Label1.Text = "Geometry"
         '
         'ucrReceiverGeometry
         '
         Me.ucrReceiverGeometry.frmParent = Me
-        Me.ucrReceiverGeometry.Location = New System.Drawing.Point(231, 27)
+        Me.ucrReceiverGeometry.Location = New System.Drawing.Point(308, 33)
         Me.ucrReceiverGeometry.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverGeometry.Name = "ucrReceiverGeometry"
         Me.ucrReceiverGeometry.Selector = Nothing
-        Me.ucrReceiverGeometry.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverGeometry.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverGeometry.strNcFilePath = ""
         Me.ucrReceiverGeometry.TabIndex = 24
         Me.ucrReceiverGeometry.ucrSelector = Nothing
@@ -306,20 +311,21 @@ Partial Class dlgClimaticStationMaps
         'lblFill
         '
         Me.lblFill.AutoSize = True
-        Me.lblFill.Location = New System.Drawing.Point(231, 59)
+        Me.lblFill.Location = New System.Drawing.Point(308, 73)
+        Me.lblFill.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblFill.Name = "lblFill"
-        Me.lblFill.Size = New System.Drawing.Size(70, 13)
+        Me.lblFill.Size = New System.Drawing.Size(89, 16)
         Me.lblFill.TabIndex = 4
         Me.lblFill.Text = "Fill (Optional):"
         '
         'ucrReceiverFill
         '
         Me.ucrReceiverFill.frmParent = Me
-        Me.ucrReceiverFill.Location = New System.Drawing.Point(231, 74)
+        Me.ucrReceiverFill.Location = New System.Drawing.Point(308, 91)
         Me.ucrReceiverFill.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverFill.Name = "ucrReceiverFill"
         Me.ucrReceiverFill.Selector = Nothing
-        Me.ucrReceiverFill.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverFill.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverFill.strNcFilePath = ""
         Me.ucrReceiverFill.TabIndex = 5
         Me.ucrReceiverFill.ucrSelector = Nothing
@@ -329,17 +335,17 @@ Partial Class dlgClimaticStationMaps
         Me.ucrSelectorOutline.bDropUnusedFilterLevels = False
         Me.ucrSelectorOutline.bShowHiddenColumns = False
         Me.ucrSelectorOutline.bUseCurrentFilter = True
-        Me.ucrSelectorOutline.Location = New System.Drawing.Point(4, 15)
+        Me.ucrSelectorOutline.Location = New System.Drawing.Point(5, 18)
         Me.ucrSelectorOutline.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorOutline.Name = "ucrSelectorOutline"
-        Me.ucrSelectorOutline.Size = New System.Drawing.Size(220, 189)
+        Me.ucrSelectorOutline.Size = New System.Drawing.Size(293, 233)
         Me.ucrSelectorOutline.TabIndex = 3
         '
         'dlgClimaticStationMaps
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(756, 441)
+        Me.ClientSize = New System.Drawing.Size(1008, 544)
         Me.Controls.Add(Me.grpMapOutline)
         Me.Controls.Add(Me.grpPoints)
         Me.Controls.Add(Me.cmdSFOptions)
@@ -348,6 +354,7 @@ Partial Class dlgClimaticStationMaps
         Me.Controls.Add(Me.ucrSaveMap)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgClimaticStationMaps"

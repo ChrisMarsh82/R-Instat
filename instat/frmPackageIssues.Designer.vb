@@ -34,34 +34,38 @@ Partial Class frmPackageIssues
         'lblPacksNotInstalled
         '
         Me.lblPacksNotInstalled.AutoSize = True
-        Me.lblPacksNotInstalled.Location = New System.Drawing.Point(12, 15)
+        Me.lblPacksNotInstalled.Location = New System.Drawing.Point(16, 18)
+        Me.lblPacksNotInstalled.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPacksNotInstalled.Name = "lblPacksNotInstalled"
-        Me.lblPacksNotInstalled.Size = New System.Drawing.Size(237, 13)
+        Me.lblPacksNotInstalled.Size = New System.Drawing.Size(296, 16)
         Me.lblPacksNotInstalled.TabIndex = 0
         Me.lblPacksNotInstalled.Text = "The following R packages could not be installed:"
         '
         'lblPossibleSolutions
         '
-        Me.lblPossibleSolutions.Location = New System.Drawing.Point(12, 123)
+        Me.lblPossibleSolutions.Location = New System.Drawing.Point(16, 151)
+        Me.lblPossibleSolutions.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPossibleSolutions.Name = "lblPossibleSolutions"
-        Me.lblPossibleSolutions.Size = New System.Drawing.Size(425, 253)
+        Me.lblPossibleSolutions.Size = New System.Drawing.Size(567, 311)
         Me.lblPossibleSolutions.TabIndex = 2
         Me.lblPossibleSolutions.Text = resources.GetString("lblPossibleSolutions.Text")
         '
         'cmdInstallPackages
         '
-        Me.cmdInstallPackages.Location = New System.Drawing.Point(15, 377)
+        Me.cmdInstallPackages.Location = New System.Drawing.Point(20, 464)
+        Me.cmdInstallPackages.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdInstallPackages.Name = "cmdInstallPackages"
-        Me.cmdInstallPackages.Size = New System.Drawing.Size(172, 23)
+        Me.cmdInstallPackages.Size = New System.Drawing.Size(229, 28)
         Me.cmdInstallPackages.TabIndex = 3
         Me.cmdInstallPackages.Text = "Install Missing Packages (Online)"
         Me.cmdInstallPackages.UseVisualStyleBackColor = True
         '
         'cmdClose
         '
-        Me.cmdClose.Location = New System.Drawing.Point(181, 406)
+        Me.cmdClose.Location = New System.Drawing.Point(241, 500)
+        Me.cmdClose.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdClose.Name = "cmdClose"
-        Me.cmdClose.Size = New System.Drawing.Size(80, 23)
+        Me.cmdClose.Size = New System.Drawing.Size(107, 28)
         Me.cmdClose.TabIndex = 4
         Me.cmdClose.Text = "Close"
         Me.cmdClose.UseVisualStyleBackColor = True
@@ -71,25 +75,27 @@ Partial Class frmPackageIssues
         Me.ucrInputPackageNames.AddQuotesIfUnrecognised = True
         Me.ucrInputPackageNames.IsMultiline = False
         Me.ucrInputPackageNames.IsReadOnly = False
-        Me.ucrInputPackageNames.Location = New System.Drawing.Point(15, 42)
+        Me.ucrInputPackageNames.Location = New System.Drawing.Point(20, 52)
+        Me.ucrInputPackageNames.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputPackageNames.Name = "ucrInputPackageNames"
-        Me.ucrInputPackageNames.Size = New System.Drawing.Size(376, 63)
+        Me.ucrInputPackageNames.Size = New System.Drawing.Size(501, 78)
         Me.ucrInputPackageNames.TabIndex = 1
         '
         'cmdCloseRInstat
         '
-        Me.cmdCloseRInstat.Location = New System.Drawing.Point(15, 156)
+        Me.cmdCloseRInstat.Location = New System.Drawing.Point(20, 192)
+        Me.cmdCloseRInstat.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdCloseRInstat.Name = "cmdCloseRInstat"
-        Me.cmdCloseRInstat.Size = New System.Drawing.Size(120, 23)
+        Me.cmdCloseRInstat.Size = New System.Drawing.Size(160, 28)
         Me.cmdCloseRInstat.TabIndex = 5
         Me.cmdCloseRInstat.Text = "Close R-Instat now"
         Me.cmdCloseRInstat.UseVisualStyleBackColor = True
         '
         'frmPackageIssues
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(443, 437)
+        Me.ClientSize = New System.Drawing.Size(591, 539)
         Me.Controls.Add(Me.cmdCloseRInstat)
         Me.Controls.Add(Me.cmdClose)
         Me.Controls.Add(Me.cmdInstallPackages)
@@ -97,6 +103,7 @@ Partial Class frmPackageIssues
         Me.Controls.Add(Me.ucrInputPackageNames)
         Me.Controls.Add(Me.lblPacksNotInstalled)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmPackageIssues"

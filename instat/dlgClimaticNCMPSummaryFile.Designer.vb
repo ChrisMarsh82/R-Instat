@@ -36,18 +36,20 @@ Partial Class dlgClimaticNCMPSummaryFile
         '
         Me.lblSaveFile.AutoSize = True
         Me.lblSaveFile.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblSaveFile.Location = New System.Drawing.Point(7, 191)
+        Me.lblSaveFile.Location = New System.Drawing.Point(9, 235)
+        Me.lblSaveFile.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSaveFile.Name = "lblSaveFile"
-        Me.lblSaveFile.Size = New System.Drawing.Size(74, 13)
+        Me.lblSaveFile.Size = New System.Drawing.Size(92, 16)
         Me.lblSaveFile.TabIndex = 4
         Me.lblSaveFile.Text = "Save file(s) to:"
         '
         'cmdChooseFile
         '
         Me.cmdChooseFile.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.cmdChooseFile.Location = New System.Drawing.Point(336, 187)
+        Me.cmdChooseFile.Location = New System.Drawing.Point(448, 230)
+        Me.cmdChooseFile.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdChooseFile.Name = "cmdChooseFile"
-        Me.cmdChooseFile.Size = New System.Drawing.Size(75, 23)
+        Me.cmdChooseFile.Size = New System.Drawing.Size(100, 28)
         Me.cmdChooseFile.TabIndex = 6
         Me.cmdChooseFile.Text = "Browse"
         Me.cmdChooseFile.UseVisualStyleBackColor = True
@@ -57,61 +59,63 @@ Partial Class dlgClimaticNCMPSummaryFile
         Me.ucrInputFilePath.AddQuotesIfUnrecognised = True
         Me.ucrInputFilePath.IsMultiline = False
         Me.ucrInputFilePath.IsReadOnly = False
-        Me.ucrInputFilePath.Location = New System.Drawing.Point(161, 188)
+        Me.ucrInputFilePath.Location = New System.Drawing.Point(215, 231)
+        Me.ucrInputFilePath.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputFilePath.Name = "ucrInputFilePath"
-        Me.ucrInputFilePath.Size = New System.Drawing.Size(174, 21)
+        Me.ucrInputFilePath.Size = New System.Drawing.Size(232, 26)
         Me.ucrInputFilePath.TabIndex = 5
         '
         'ucrSelectorA6
         '
         Me.ucrSelectorA6.bDropUnusedFilterLevels = False
         Me.ucrSelectorA6.bUseCurrentFilter = True
-        Me.ucrSelectorA6.Location = New System.Drawing.Point(10, 110)
+        Me.ucrSelectorA6.Location = New System.Drawing.Point(13, 135)
         Me.ucrSelectorA6.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorA6.Name = "ucrSelectorA6"
-        Me.ucrSelectorA6.Size = New System.Drawing.Size(148, 50)
+        Me.ucrSelectorA6.Size = New System.Drawing.Size(197, 62)
         Me.ucrSelectorA6.TabIndex = 2
         '
         'ucrSelectorA4
         '
         Me.ucrSelectorA4.bDropUnusedFilterLevels = False
         Me.ucrSelectorA4.bUseCurrentFilter = True
-        Me.ucrSelectorA4.Location = New System.Drawing.Point(10, 60)
+        Me.ucrSelectorA4.Location = New System.Drawing.Point(13, 74)
         Me.ucrSelectorA4.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorA4.Name = "ucrSelectorA4"
-        Me.ucrSelectorA4.Size = New System.Drawing.Size(148, 50)
+        Me.ucrSelectorA4.Size = New System.Drawing.Size(197, 62)
         Me.ucrSelectorA4.TabIndex = 1
         '
         'ucrSelectorA2
         '
         Me.ucrSelectorA2.bDropUnusedFilterLevels = False
         Me.ucrSelectorA2.bUseCurrentFilter = True
-        Me.ucrSelectorA2.Location = New System.Drawing.Point(10, 10)
+        Me.ucrSelectorA2.Location = New System.Drawing.Point(13, 12)
         Me.ucrSelectorA2.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorA2.Name = "ucrSelectorA2"
-        Me.ucrSelectorA2.Size = New System.Drawing.Size(148, 50)
+        Me.ucrSelectorA2.Size = New System.Drawing.Size(197, 62)
         Me.ucrSelectorA2.TabIndex = 0
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(9, 216)
+        Me.ucrBase.Location = New System.Drawing.Point(12, 266)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(405, 52)
+        Me.ucrBase.Size = New System.Drawing.Size(540, 64)
         Me.ucrBase.TabIndex = 7
         '
         'ucrSaveSummary
         '
-        Me.ucrSaveSummary.Location = New System.Drawing.Point(10, 159)
-        Me.ucrSaveSummary.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ucrSaveSummary.Location = New System.Drawing.Point(13, 196)
+        Me.ucrSaveSummary.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.ucrSaveSummary.Name = "ucrSaveSummary"
-        Me.ucrSaveSummary.Size = New System.Drawing.Size(289, 22)
+        Me.ucrSaveSummary.Size = New System.Drawing.Size(385, 27)
         Me.ucrSaveSummary.TabIndex = 3
         '
         'dlgClimaticNCMPSummaryFile
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(416, 273)
+        Me.ClientSize = New System.Drawing.Size(555, 337)
         Me.Controls.Add(Me.ucrSaveSummary)
         Me.Controls.Add(Me.ucrBase)
         Me.Controls.Add(Me.ucrSelectorA6)
@@ -121,6 +125,7 @@ Partial Class dlgClimaticNCMPSummaryFile
         Me.Controls.Add(Me.ucrInputFilePath)
         Me.Controls.Add(Me.lblSaveFile)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgClimaticNCMPSummaryFile"

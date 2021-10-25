@@ -63,36 +63,40 @@ Partial Class dlgGammaDistr
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(12, 295)
+        Me.ucrBase.Location = New System.Drawing.Point(16, 363)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 54)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 66)
         Me.ucrBase.TabIndex = 0
         '
         'ucrAddRemove
         '
         Me.ucrAddRemove.bShowHiddenColumns = False
-        Me.ucrAddRemove.Location = New System.Drawing.Point(12, 44)
+        Me.ucrAddRemove.Location = New System.Drawing.Point(16, 54)
         Me.ucrAddRemove.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrAddRemove.Name = "ucrAddRemove"
-        Me.ucrAddRemove.Size = New System.Drawing.Size(203, 127)
+        Me.ucrAddRemove.Size = New System.Drawing.Size(271, 156)
         Me.ucrAddRemove.TabIndex = 1
         '
         'grpColumns
         '
         Me.grpColumns.Controls.Add(Me.rdoMultipleColumns)
         Me.grpColumns.Controls.Add(Me.rdoSingleColumn)
-        Me.grpColumns.Location = New System.Drawing.Point(12, -1)
+        Me.grpColumns.Location = New System.Drawing.Point(16, -1)
+        Me.grpColumns.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpColumns.Name = "grpColumns"
-        Me.grpColumns.Size = New System.Drawing.Size(392, 39)
+        Me.grpColumns.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpColumns.Size = New System.Drawing.Size(523, 48)
         Me.grpColumns.TabIndex = 2
         Me.grpColumns.TabStop = False
         '
         'rdoMultipleColumns
         '
         Me.rdoMultipleColumns.AutoSize = True
-        Me.rdoMultipleColumns.Location = New System.Drawing.Point(209, 13)
+        Me.rdoMultipleColumns.Location = New System.Drawing.Point(279, 16)
+        Me.rdoMultipleColumns.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoMultipleColumns.Name = "rdoMultipleColumns"
-        Me.rdoMultipleColumns.Size = New System.Drawing.Size(103, 17)
+        Me.rdoMultipleColumns.Size = New System.Drawing.Size(132, 20)
         Me.rdoMultipleColumns.TabIndex = 1
         Me.rdoMultipleColumns.TabStop = True
         Me.rdoMultipleColumns.Tag = "Multiple_columns"
@@ -102,9 +106,10 @@ Partial Class dlgGammaDistr
         'rdoSingleColumn
         '
         Me.rdoSingleColumn.AutoSize = True
-        Me.rdoSingleColumn.Location = New System.Drawing.Point(6, 13)
+        Me.rdoSingleColumn.Location = New System.Drawing.Point(8, 16)
+        Me.rdoSingleColumn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoSingleColumn.Name = "rdoSingleColumn"
-        Me.rdoSingleColumn.Size = New System.Drawing.Size(91, 17)
+        Me.rdoSingleColumn.Size = New System.Drawing.Size(117, 20)
         Me.rdoSingleColumn.TabIndex = 0
         Me.rdoSingleColumn.TabStop = True
         Me.rdoSingleColumn.Tag = "Single_column"
@@ -113,19 +118,23 @@ Partial Class dlgGammaDistr
         '
         'ucrReceiverColumn
         '
-        Me.ucrReceiverColumn.Location = New System.Drawing.Point(221, 60)
+        Me.ucrReceiverColumn.frmParent = Me
+        Me.ucrReceiverColumn.Location = New System.Drawing.Point(295, 74)
         Me.ucrReceiverColumn.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverColumn.Name = "ucrReceiverColumn"
         Me.ucrReceiverColumn.Selector = Nothing
-        Me.ucrReceiverColumn.Size = New System.Drawing.Size(106, 26)
+        Me.ucrReceiverColumn.Size = New System.Drawing.Size(141, 32)
+        Me.ucrReceiverColumn.strNcFilePath = ""
         Me.ucrReceiverColumn.TabIndex = 3
+        Me.ucrReceiverColumn.ucrSelector = Nothing
         '
         'lblSelectedColumn
         '
         Me.lblSelectedColumn.AutoSize = True
-        Me.lblSelectedColumn.Location = New System.Drawing.Point(221, 44)
+        Me.lblSelectedColumn.Location = New System.Drawing.Point(295, 54)
+        Me.lblSelectedColumn.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSelectedColumn.Name = "lblSelectedColumn"
-        Me.lblSelectedColumn.Size = New System.Drawing.Size(86, 13)
+        Me.lblSelectedColumn.Size = New System.Drawing.Size(108, 16)
         Me.lblSelectedColumn.TabIndex = 4
         Me.lblSelectedColumn.Tag = "Selected_column"
         Me.lblSelectedColumn.Text = "Selected column"
@@ -137,9 +146,11 @@ Partial Class dlgGammaDistr
         Me.grpEstimationMethods.Controls.Add(Me.lblSaveEstimates)
         Me.grpEstimationMethods.Controls.Add(Me.chkMethodOfMoments)
         Me.grpEstimationMethods.Controls.Add(Me.chkMaximumLikelihood)
-        Me.grpEstimationMethods.Location = New System.Drawing.Point(18, 177)
+        Me.grpEstimationMethods.Location = New System.Drawing.Point(24, 218)
+        Me.grpEstimationMethods.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpEstimationMethods.Name = "grpEstimationMethods"
-        Me.grpEstimationMethods.Size = New System.Drawing.Size(241, 91)
+        Me.grpEstimationMethods.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpEstimationMethods.Size = New System.Drawing.Size(321, 112)
         Me.grpEstimationMethods.TabIndex = 5
         Me.grpEstimationMethods.TabStop = False
         Me.grpEstimationMethods.Tag = "Estimation_methods"
@@ -148,25 +159,28 @@ Partial Class dlgGammaDistr
         'cboMethodOfMoments
         '
         Me.cboMethodOfMoments.FormattingEnabled = True
-        Me.cboMethodOfMoments.Location = New System.Drawing.Point(147, 65)
+        Me.cboMethodOfMoments.Location = New System.Drawing.Point(196, 80)
+        Me.cboMethodOfMoments.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboMethodOfMoments.Name = "cboMethodOfMoments"
-        Me.cboMethodOfMoments.Size = New System.Drawing.Size(84, 21)
+        Me.cboMethodOfMoments.Size = New System.Drawing.Size(111, 24)
         Me.cboMethodOfMoments.TabIndex = 4
         '
         'cboMaximumLikelihood
         '
         Me.cboMaximumLikelihood.FormattingEnabled = True
-        Me.cboMaximumLikelihood.Location = New System.Drawing.Point(147, 32)
+        Me.cboMaximumLikelihood.Location = New System.Drawing.Point(196, 39)
+        Me.cboMaximumLikelihood.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboMaximumLikelihood.Name = "cboMaximumLikelihood"
-        Me.cboMaximumLikelihood.Size = New System.Drawing.Size(84, 21)
+        Me.cboMaximumLikelihood.Size = New System.Drawing.Size(111, 24)
         Me.cboMaximumLikelihood.TabIndex = 3
         '
         'lblSaveEstimates
         '
         Me.lblSaveEstimates.AutoSize = True
-        Me.lblSaveEstimates.Location = New System.Drawing.Point(144, 16)
+        Me.lblSaveEstimates.Location = New System.Drawing.Point(192, 20)
+        Me.lblSaveEstimates.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSaveEstimates.Name = "lblSaveEstimates"
-        Me.lblSaveEstimates.Size = New System.Drawing.Size(90, 13)
+        Me.lblSaveEstimates.Size = New System.Drawing.Size(114, 16)
         Me.lblSaveEstimates.TabIndex = 2
         Me.lblSaveEstimates.Tag = "Save_estimates_in"
         Me.lblSaveEstimates.Text = "Save estimates in"
@@ -174,9 +188,10 @@ Partial Class dlgGammaDistr
         'chkMethodOfMoments
         '
         Me.chkMethodOfMoments.AutoSize = True
-        Me.chkMethodOfMoments.Location = New System.Drawing.Point(6, 65)
+        Me.chkMethodOfMoments.Location = New System.Drawing.Point(8, 80)
+        Me.chkMethodOfMoments.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkMethodOfMoments.Name = "chkMethodOfMoments"
-        Me.chkMethodOfMoments.Size = New System.Drawing.Size(119, 17)
+        Me.chkMethodOfMoments.Size = New System.Drawing.Size(151, 21)
         Me.chkMethodOfMoments.TabIndex = 1
         Me.chkMethodOfMoments.Tag = "Method_of_moments"
         Me.chkMethodOfMoments.Text = "Method of moments"
@@ -185,9 +200,10 @@ Partial Class dlgGammaDistr
         'chkMaximumLikelihood
         '
         Me.chkMaximumLikelihood.AutoSize = True
-        Me.chkMaximumLikelihood.Location = New System.Drawing.Point(6, 32)
+        Me.chkMaximumLikelihood.Location = New System.Drawing.Point(8, 39)
+        Me.chkMaximumLikelihood.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkMaximumLikelihood.Name = "chkMaximumLikelihood"
-        Me.chkMaximumLikelihood.Size = New System.Drawing.Size(117, 17)
+        Me.chkMaximumLikelihood.Size = New System.Drawing.Size(152, 21)
         Me.chkMaximumLikelihood.TabIndex = 0
         Me.chkMaximumLikelihood.Tag = "Maximum_likelihood_"
         Me.chkMaximumLikelihood.Text = "Maximum likelihood"
@@ -196,9 +212,10 @@ Partial Class dlgGammaDistr
         'chkRestrictValues
         '
         Me.chkRestrictValues.AutoSize = True
-        Me.chkRestrictValues.Location = New System.Drawing.Point(249, 104)
+        Me.chkRestrictValues.Location = New System.Drawing.Point(332, 128)
+        Me.chkRestrictValues.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkRestrictValues.Name = "chkRestrictValues"
-        Me.chkRestrictValues.Size = New System.Drawing.Size(120, 17)
+        Me.chkRestrictValues.Size = New System.Drawing.Size(152, 21)
         Me.chkRestrictValues.TabIndex = 6
         Me.chkRestrictValues.Tag = "Restrict_data_values"
         Me.chkRestrictValues.Text = "Restrict data values"
@@ -207,9 +224,10 @@ Partial Class dlgGammaDistr
         'lblBetween
         '
         Me.lblBetween.AutoSize = True
-        Me.lblBetween.Location = New System.Drawing.Point(259, 132)
+        Me.lblBetween.Location = New System.Drawing.Point(345, 162)
+        Me.lblBetween.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblBetween.Name = "lblBetween"
-        Me.lblBetween.Size = New System.Drawing.Size(48, 13)
+        Me.lblBetween.Size = New System.Drawing.Size(59, 16)
         Me.lblBetween.TabIndex = 7
         Me.lblBetween.Tag = "between"
         Me.lblBetween.Text = "between"
@@ -217,33 +235,37 @@ Partial Class dlgGammaDistr
         'lblAnd
         '
         Me.lblAnd.AutoSize = True
-        Me.lblAnd.Location = New System.Drawing.Point(352, 132)
+        Me.lblAnd.Location = New System.Drawing.Point(469, 162)
+        Me.lblAnd.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblAnd.Name = "lblAnd"
-        Me.lblAnd.Size = New System.Drawing.Size(25, 13)
+        Me.lblAnd.Size = New System.Drawing.Size(31, 16)
         Me.lblAnd.TabIndex = 8
         Me.lblAnd.Tag = "and"
         Me.lblAnd.Text = "and"
         '
         'txtBetween
         '
-        Me.txtBetween.Location = New System.Drawing.Point(313, 129)
+        Me.txtBetween.Location = New System.Drawing.Point(417, 159)
+        Me.txtBetween.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtBetween.Name = "txtBetween"
-        Me.txtBetween.Size = New System.Drawing.Size(33, 20)
+        Me.txtBetween.Size = New System.Drawing.Size(43, 22)
         Me.txtBetween.TabIndex = 9
         '
         'txtAnd
         '
-        Me.txtAnd.Location = New System.Drawing.Point(383, 128)
+        Me.txtAnd.Location = New System.Drawing.Point(511, 158)
+        Me.txtAnd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtAnd.Name = "txtAnd"
-        Me.txtAnd.Size = New System.Drawing.Size(35, 20)
+        Me.txtAnd.Size = New System.Drawing.Size(45, 22)
         Me.txtAnd.TabIndex = 10
         '
         'chkProbabilityPlot
         '
         Me.chkProbabilityPlot.AutoSize = True
-        Me.chkProbabilityPlot.Location = New System.Drawing.Point(279, 193)
+        Me.chkProbabilityPlot.Location = New System.Drawing.Point(372, 238)
+        Me.chkProbabilityPlot.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkProbabilityPlot.Name = "chkProbabilityPlot"
-        Me.chkProbabilityPlot.Size = New System.Drawing.Size(94, 17)
+        Me.chkProbabilityPlot.Size = New System.Drawing.Size(123, 21)
         Me.chkProbabilityPlot.TabIndex = 11
         Me.chkProbabilityPlot.Tag = "Probability_plot"
         Me.chkProbabilityPlot.Text = "Probability plot"
@@ -251,9 +273,9 @@ Partial Class dlgGammaDistr
         '
         'dlgGammaDistr
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(429, 350)
+        Me.ClientSize = New System.Drawing.Size(572, 432)
         Me.Controls.Add(Me.chkProbabilityPlot)
         Me.Controls.Add(Me.txtAnd)
         Me.Controls.Add(Me.txtBetween)
@@ -267,6 +289,7 @@ Partial Class dlgGammaDistr
         Me.Controls.Add(Me.ucrAddRemove)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgGammaDistr"

@@ -119,10 +119,14 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ucrBaseSdg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 115</value>
+    <value>47, 142</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ucrBaseSdg.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrBaseSdg.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 30</value>
+    <value>209, 37</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ucrBaseSdg.TabIndex" type="System.Int32, mscorlib">
@@ -143,8 +147,11 @@
   <data name="nudConfidenceLevel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="nudConfidenceLevel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="nudConfidenceLevel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
+    <value>160, 22</value>
   </data>
   <data name="nudConfidenceLevel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -164,8 +171,11 @@
   <data name="lblConfidenceLevel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="lblConfidenceLevel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
   <data name="lblConfidenceLevel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
+    <value>133, 28</value>
   </data>
   <data name="lblConfidenceLevel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -185,8 +195,11 @@
   <data name="chkConfidenceLimits.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="chkConfidenceLimits.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="chkConfidenceLimits.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 24</value>
+    <value>139, 30</value>
   </data>
   <data name="chkConfidenceLimits.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -206,8 +219,11 @@
   <data name="chkMeans.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="chkMeans.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="chkMeans.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 24</value>
+    <value>139, 30</value>
   </data>
   <data name="chkMeans.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -227,8 +243,14 @@
   <data name="grpMeans.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="grpMeans.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpMeans.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="grpMeans.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 100</value>
+    <value>267, 123</value>
   </data>
   <data name="grpMeans.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -248,8 +270,11 @@
   <data name="chkResiduals.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="chkResiduals.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="chkResiduals.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 24</value>
+    <value>139, 30</value>
   </data>
   <data name="chkResiduals.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -269,8 +294,14 @@
   <data name="grpResiduals.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="grpResiduals.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpResiduals.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="grpResiduals.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 100</value>
+    <value>267, 123</value>
   </data>
   <data name="grpResiduals.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -288,10 +319,13 @@
     <value>1</value>
   </data>
   <data name="tbpGraphics.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tbpGraphics.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tbpGraphics.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 74</value>
+    <value>259, 94</value>
   </data>
   <data name="tbpGraphics.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -311,8 +345,11 @@
   <data name="chkContrasts.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="chkContrasts.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="chkContrasts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 24</value>
+    <value>139, 30</value>
   </data>
   <data name="chkContrasts.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -332,8 +369,11 @@
   <data name="chkStandardErrors.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="chkStandardErrors.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="chkStandardErrors.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 24</value>
+    <value>139, 30</value>
   </data>
   <data name="chkStandardErrors.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -353,8 +393,11 @@
   <data name="chkMeansAndCounts.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="chkMeansAndCounts.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="chkMeansAndCounts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 24</value>
+    <value>139, 30</value>
   </data>
   <data name="chkMeansAndCounts.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -374,8 +417,11 @@
   <data name="chkEstimateValues.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="chkEstimateValues.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="chkEstimateValues.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 24</value>
+    <value>139, 30</value>
   </data>
   <data name="chkEstimateValues.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -395,8 +441,11 @@
   <data name="chkANOVATable.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="chkANOVATable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="chkANOVATable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 24</value>
+    <value>139, 30</value>
   </data>
   <data name="chkANOVATable.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -414,10 +463,13 @@
     <value>4</value>
   </data>
   <data name="tbpDisplay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tbpDisplay.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tbpDisplay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 74</value>
+    <value>259, 94</value>
   </data>
   <data name="tbpDisplay.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -435,10 +487,13 @@
     <value>0</value>
   </data>
   <data name="tbcOptions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 9</value>
+    <value>19, 11</value>
+  </data>
+  <data name="tbcOptions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tbcOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 100</value>
+    <value>267, 123</value>
   </data>
   <data name="tbcOptions.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -459,12 +514,14 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>241, 155</value>
+    <value>321, 192</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
   </data>

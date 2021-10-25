@@ -119,10 +119,14 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ucrGeomWithAes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>4, 4</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ucrGeomWithAes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 7, 9, 7</value>
   </data>
   <data name="ucrGeomWithAes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>467, 399</value>
+    <value>623, 491</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ucrGeomWithAes.TabIndex" type="System.Int32, mscorlib">
@@ -141,14 +145,16 @@
     <value>0</value>
   </data>
   <data name="tbpAesthetics.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tbpAesthetics.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="tbpAesthetics.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tbpAesthetics.Size" type="System.Drawing.Size, System.Drawing">
-    <value>474, 485</value>
+    <value>635, 600</value>
   </data>
   <data name="tbpAesthetics.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -169,10 +175,13 @@
     <value>0</value>
   </data>
   <data name="ucrLayerParameter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>4, 4</value>
+  </data>
+  <data name="ucrLayerParameter.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 7, 9, 7</value>
   </data>
   <data name="ucrLayerParameter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>308, 476</value>
+    <value>411, 586</value>
   </data>
   <data name="ucrLayerParameter.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -190,13 +199,16 @@
     <value>0</value>
   </data>
   <data name="tbpGeomParameters.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tbpGeomParameters.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tbpGeomParameters.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tbpGeomParameters.Size" type="System.Drawing.Size, System.Drawing">
-    <value>474, 485</value>
+    <value>635, 600</value>
   </data>
   <data name="tbpGeomParameters.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -217,10 +229,13 @@
     <value>1</value>
   </data>
   <data name="tbcLayers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 8</value>
+    <value>8, 10</value>
+  </data>
+  <data name="tbcLayers.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tbcLayers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>482, 511</value>
+    <value>643, 629</value>
   </data>
   <data name="tbcLayers.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -238,10 +253,13 @@
     <value>0</value>
   </data>
   <data name="ucrSdgLayerBase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>173, 525</value>
+    <value>231, 646</value>
+  </data>
+  <data name="ucrSdgLayerBase.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrSdgLayerBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 30</value>
+    <value>211, 37</value>
   </data>
   <data name="ucrSdgLayerBase.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -262,10 +280,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>492, 562</value>
+    <value>656, 692</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>

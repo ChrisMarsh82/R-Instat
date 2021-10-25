@@ -119,10 +119,14 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ucrBaseSubdialogue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>344, 621</value>
+    <value>459, 764</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ucrBaseSubdialogue.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrBaseSubdialogue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 30</value>
+    <value>208, 37</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ucrBaseSubdialogue.TabIndex" type="System.Int32, mscorlib">
@@ -141,10 +145,13 @@
     <value>1</value>
   </data>
   <data name="ucrStripsSpaceWrap.Location" type="System.Drawing.Point, System.Drawing">
-    <value>265, 21</value>
+    <value>353, 26</value>
+  </data>
+  <data name="ucrStripsSpaceWrap.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrStripsSpaceWrap.Size" type="System.Drawing.Size, System.Drawing">
-    <value>261, 125</value>
+    <value>348, 154</value>
   </data>
   <data name="ucrStripsSpaceWrap.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -162,10 +169,13 @@
     <value>0</value>
   </data>
   <data name="ucrStripsSpaceGrid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 21</value>
+    <value>8, 26</value>
+  </data>
+  <data name="ucrStripsSpaceGrid.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrStripsSpaceGrid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>258, 119</value>
+    <value>344, 146</value>
   </data>
   <data name="ucrStripsSpaceGrid.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -183,10 +193,16 @@
     <value>1</value>
   </data>
   <data name="grpSpaceBetweenStripsAxes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 268</value>
+    <value>7, 330</value>
+  </data>
+  <data name="grpSpaceBetweenStripsAxes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpSpaceBetweenStripsAxes.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpSpaceBetweenStripsAxes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>531, 150</value>
+    <value>708, 185</value>
   </data>
   <data name="grpSpaceBetweenStripsAxes.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -207,10 +223,13 @@
     <value>0</value>
   </data>
   <data name="ucrStripBackGround.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 21</value>
+    <value>3, 26</value>
+  </data>
+  <data name="ucrStripBackGround.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrStripBackGround.Size" type="System.Drawing.Size, System.Drawing">
-    <value>253, 128</value>
+    <value>337, 158</value>
   </data>
   <data name="ucrStripBackGround.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -228,10 +247,16 @@
     <value>0</value>
   </data>
   <data name="grpFacetBackground.Location" type="System.Drawing.Point, System.Drawing">
-    <value>541, 268</value>
+    <value>721, 330</value>
+  </data>
+  <data name="grpFacetBackground.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpFacetBackground.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpFacetBackground.Size" type="System.Drawing.Size, System.Drawing">
-    <value>263, 148</value>
+    <value>351, 182</value>
   </data>
   <data name="grpFacetBackground.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -252,10 +277,13 @@
     <value>1</value>
   </data>
   <data name="ucrStripTextYAxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>536, 21</value>
+    <value>715, 26</value>
+  </data>
+  <data name="ucrStripTextYAxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrStripTextYAxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 224</value>
+    <value>340, 276</value>
   </data>
   <data name="ucrStripTextYAxis.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -273,10 +301,13 @@
     <value>0</value>
   </data>
   <data name="ucrStripTextXAxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>275, 21</value>
+    <value>367, 26</value>
+  </data>
+  <data name="ucrStripTextXAxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrStripTextXAxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 224</value>
+    <value>340, 276</value>
   </data>
   <data name="ucrStripTextXAxis.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -294,10 +325,13 @@
     <value>1</value>
   </data>
   <data name="ucrStripText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 21</value>
+    <value>19, 26</value>
+  </data>
+  <data name="ucrStripText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrStripText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 224</value>
+    <value>340, 276</value>
   </data>
   <data name="ucrStripText.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -315,10 +349,16 @@
     <value>2</value>
   </data>
   <data name="grpFacetLabels.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+    <value>8, 7</value>
+  </data>
+  <data name="grpFacetLabels.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpFacetLabels.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpFacetLabels.Size" type="System.Drawing.Size, System.Drawing">
-    <value>798, 255</value>
+    <value>1064, 314</value>
   </data>
   <data name="grpFacetLabels.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -339,10 +379,13 @@
     <value>2</value>
   </data>
   <data name="tbThemeFacets.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tbThemeFacets.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tbThemeFacets.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 583</value>
+    <value>1092, 721</value>
   </data>
   <data name="tbThemeFacets.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -363,10 +406,13 @@
     <value>8</value>
   </data>
   <data name="ucrPanelSpacingYAxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>530, 21</value>
+    <value>707, 26</value>
+  </data>
+  <data name="ucrPanelSpacingYAxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrPanelSpacingYAxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>261, 119</value>
+    <value>348, 146</value>
   </data>
   <data name="ucrPanelSpacingYAxis.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -384,10 +430,13 @@
     <value>0</value>
   </data>
   <data name="ucrPanelSpacingXAxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>268, 21</value>
+    <value>357, 26</value>
+  </data>
+  <data name="ucrPanelSpacingXAxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrPanelSpacingXAxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 119</value>
+    <value>349, 146</value>
   </data>
   <data name="ucrPanelSpacingXAxis.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -405,10 +454,13 @@
     <value>1</value>
   </data>
   <data name="ucrPanelSpacing.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 21</value>
+    <value>9, 26</value>
+  </data>
+  <data name="ucrPanelSpacing.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrPanelSpacing.Size" type="System.Drawing.Size, System.Drawing">
-    <value>258, 119</value>
+    <value>344, 146</value>
   </data>
   <data name="ucrPanelSpacing.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -426,10 +478,16 @@
     <value>2</value>
   </data>
   <data name="grpPanelSpacing.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 315</value>
+    <value>5, 388</value>
+  </data>
+  <data name="grpPanelSpacing.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpPanelSpacing.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpPanelSpacing.Size" type="System.Drawing.Size, System.Drawing">
-    <value>800, 150</value>
+    <value>1067, 185</value>
   </data>
   <data name="grpPanelSpacing.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -450,10 +508,13 @@
     <value>0</value>
   </data>
   <data name="ucrPanelBackGround.Location" type="System.Drawing.Point, System.Drawing">
-    <value>275, 21</value>
+    <value>367, 26</value>
+  </data>
+  <data name="ucrPanelBackGround.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrPanelBackGround.Size" type="System.Drawing.Size, System.Drawing">
-    <value>253, 132</value>
+    <value>337, 162</value>
   </data>
   <data name="ucrPanelBackGround.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -471,10 +532,13 @@
     <value>0</value>
   </data>
   <data name="ucrPanelBorder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 21</value>
+    <value>19, 26</value>
+  </data>
+  <data name="ucrPanelBorder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrPanelBorder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>253, 132</value>
+    <value>337, 162</value>
   </data>
   <data name="ucrPanelBorder.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -492,10 +556,16 @@
     <value>1</value>
   </data>
   <data name="grpBorderAndBackground.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 157</value>
+    <value>4, 193</value>
+  </data>
+  <data name="grpBorderAndBackground.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpBorderAndBackground.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpBorderAndBackground.Size" type="System.Drawing.Size, System.Drawing">
-    <value>532, 151</value>
+    <value>709, 186</value>
   </data>
   <data name="grpBorderAndBackground.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -516,10 +586,13 @@
     <value>1</value>
   </data>
   <data name="ucrPanelGridMinor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>527, 15</value>
+    <value>703, 18</value>
+  </data>
+  <data name="ucrPanelGridMinor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrPanelGridMinor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>254, 118</value>
+    <value>339, 145</value>
   </data>
   <data name="ucrPanelGridMinor.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -537,10 +610,13 @@
     <value>0</value>
   </data>
   <data name="ucrPanelGridMajor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>269, 15</value>
+    <value>359, 18</value>
+  </data>
+  <data name="ucrPanelGridMajor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrPanelGridMajor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>254, 118</value>
+    <value>339, 145</value>
   </data>
   <data name="ucrPanelGridMajor.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -558,10 +634,13 @@
     <value>1</value>
   </data>
   <data name="ucrPanelGrid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 15</value>
+    <value>13, 18</value>
+  </data>
+  <data name="ucrPanelGrid.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrPanelGrid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>254, 118</value>
+    <value>339, 145</value>
   </data>
   <data name="ucrPanelGrid.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -579,10 +658,16 @@
     <value>2</value>
   </data>
   <data name="grpPanelGrid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 12</value>
+    <value>5, 15</value>
+  </data>
+  <data name="grpPanelGrid.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpPanelGrid.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpPanelGrid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>786, 139</value>
+    <value>1048, 171</value>
   </data>
   <data name="grpPanelGrid.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -603,10 +688,13 @@
     <value>2</value>
   </data>
   <data name="tbThemePanelAndBackground.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tbThemePanelAndBackground.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tbThemePanelAndBackground.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 583</value>
+    <value>1092, 721</value>
   </data>
   <data name="tbThemePanelAndBackground.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -627,10 +715,13 @@
     <value>6</value>
   </data>
   <data name="ucrLegendKeyWidth.Location" type="System.Drawing.Point, System.Drawing">
-    <value>531, 21</value>
+    <value>708, 26</value>
+  </data>
+  <data name="ucrLegendKeyWidth.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrLegendKeyWidth.Size" type="System.Drawing.Size, System.Drawing">
-    <value>261, 119</value>
+    <value>348, 146</value>
   </data>
   <data name="ucrLegendKeyWidth.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -648,10 +739,13 @@
     <value>0</value>
   </data>
   <data name="ucrLegendKeyHeight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>269, 21</value>
+    <value>359, 26</value>
+  </data>
+  <data name="ucrLegendKeyHeight.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrLegendKeyHeight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>263, 119</value>
+    <value>351, 146</value>
   </data>
   <data name="ucrLegendKeyHeight.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -669,10 +763,13 @@
     <value>1</value>
   </data>
   <data name="ucrLegendKeySize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 21</value>
+    <value>12, 26</value>
+  </data>
+  <data name="ucrLegendKeySize.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrLegendKeySize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>258, 119</value>
+    <value>344, 146</value>
   </data>
   <data name="ucrLegendKeySize.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -690,10 +787,16 @@
     <value>2</value>
   </data>
   <data name="grpLegendKeyAdjustment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 426</value>
+    <value>9, 524</value>
+  </data>
+  <data name="grpLegendKeyAdjustment.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpLegendKeyAdjustment.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpLegendKeyAdjustment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>800, 150</value>
+    <value>1067, 185</value>
   </data>
   <data name="grpLegendKeyAdjustment.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -714,10 +817,13 @@
     <value>0</value>
   </data>
   <data name="ucrLegendText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>275, 21</value>
+    <value>367, 26</value>
+  </data>
+  <data name="ucrLegendText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrLegendText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 224</value>
+    <value>340, 276</value>
   </data>
   <data name="ucrLegendText.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -735,10 +841,13 @@
     <value>0</value>
   </data>
   <data name="ucrLegendTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 21</value>
+    <value>19, 26</value>
+  </data>
+  <data name="ucrLegendTitle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrLegendTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 224</value>
+    <value>340, 276</value>
   </data>
   <data name="ucrLegendTitle.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -756,10 +865,16 @@
     <value>1</value>
   </data>
   <data name="grpLegendTitleAndText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+    <value>8, 7</value>
+  </data>
+  <data name="grpLegendTitleAndText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpLegendTitleAndText.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpLegendTitleAndText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>535, 255</value>
+    <value>713, 314</value>
   </data>
   <data name="grpLegendTitleAndText.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -780,14 +895,13 @@
     <value>1</value>
   </data>
   <data name="ucrInputLegendJustification.Location" type="System.Drawing.Point, System.Drawing">
-    <value>152, 126</value>
+    <value>203, 155</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ucrInputLegendJustification.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>21, 17, 21, 17</value>
+    <value>28, 21, 28, 21</value>
   </data>
   <data name="ucrInputLegendJustification.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 21</value>
+    <value>140, 26</value>
   </data>
   <data name="ucrInputLegendJustification.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -805,13 +919,13 @@
     <value>0</value>
   </data>
   <data name="ucrInputLegendBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>152, 98</value>
+    <value>203, 121</value>
   </data>
   <data name="ucrInputLegendBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>21, 17, 21, 17</value>
+    <value>28, 21, 28, 21</value>
   </data>
   <data name="ucrInputLegendBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 21</value>
+    <value>140, 26</value>
   </data>
   <data name="ucrInputLegendBox.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -829,13 +943,13 @@
     <value>1</value>
   </data>
   <data name="ucrInputLegendPosition.Location" type="System.Drawing.Point, System.Drawing">
-    <value>152, 19</value>
+    <value>203, 23</value>
   </data>
   <data name="ucrInputLegendPosition.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>21, 17, 21, 17</value>
+    <value>28, 21, 28, 21</value>
   </data>
   <data name="ucrInputLegendPosition.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 21</value>
+    <value>140, 26</value>
   </data>
   <data name="ucrInputLegendPosition.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -853,13 +967,13 @@
     <value>2</value>
   </data>
   <data name="ucrInputLegendDirection.Location" type="System.Drawing.Point, System.Drawing">
-    <value>152, 45</value>
+    <value>203, 55</value>
   </data>
   <data name="ucrInputLegendDirection.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>21, 17, 21, 17</value>
+    <value>28, 21, 28, 21</value>
   </data>
   <data name="ucrInputLegendDirection.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 21</value>
+    <value>140, 26</value>
   </data>
   <data name="ucrInputLegendDirection.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -877,13 +991,13 @@
     <value>3</value>
   </data>
   <data name="ucrInputLegendBoxJust.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 71</value>
+    <value>236, 87</value>
   </data>
   <data name="ucrInputLegendBoxJust.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>21, 17, 21, 17</value>
+    <value>28, 21, 28, 21</value>
   </data>
   <data name="ucrInputLegendBoxJust.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 21</value>
+    <value>107, 26</value>
   </data>
   <data name="ucrInputLegendBoxJust.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -901,10 +1015,13 @@
     <value>4</value>
   </data>
   <data name="ucrChkLegendJustification.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 128</value>
+    <value>8, 158</value>
+  </data>
+  <data name="ucrChkLegendJustification.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrChkLegendJustification.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 20</value>
+    <value>196, 25</value>
   </data>
   <data name="ucrChkLegendJustification.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -922,10 +1039,13 @@
     <value>5</value>
   </data>
   <data name="ucrChkLegendBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 100</value>
+    <value>8, 123</value>
+  </data>
+  <data name="ucrChkLegendBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrChkLegendBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 20</value>
+    <value>196, 25</value>
   </data>
   <data name="ucrChkLegendBox.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -943,10 +1063,13 @@
     <value>6</value>
   </data>
   <data name="urChkLegendPosition.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 21</value>
+    <value>8, 26</value>
+  </data>
+  <data name="urChkLegendPosition.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="urChkLegendPosition.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 20</value>
+    <value>196, 25</value>
   </data>
   <data name="urChkLegendPosition.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -964,10 +1087,13 @@
     <value>7</value>
   </data>
   <data name="ucrChkLegendDirection.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 47</value>
+    <value>8, 58</value>
+  </data>
+  <data name="ucrChkLegendDirection.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrChkLegendDirection.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 20</value>
+    <value>196, 25</value>
   </data>
   <data name="ucrChkLegendDirection.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -985,10 +1111,13 @@
     <value>8</value>
   </data>
   <data name="urChkLegendBoxJust.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 73</value>
+    <value>8, 90</value>
+  </data>
+  <data name="urChkLegendBoxJust.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="urChkLegendBoxJust.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 20</value>
+    <value>220, 25</value>
   </data>
   <data name="urChkLegendBoxJust.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1006,10 +1135,16 @@
     <value>9</value>
   </data>
   <data name="grpLegendAdjustments.Location" type="System.Drawing.Point, System.Drawing">
-    <value>550, 6</value>
+    <value>733, 7</value>
+  </data>
+  <data name="grpLegendAdjustments.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpLegendAdjustments.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpLegendAdjustments.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 164</value>
+    <value>347, 202</value>
   </data>
   <data name="grpLegendAdjustments.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1030,10 +1165,13 @@
     <value>2</value>
   </data>
   <data name="ucrLegendBoxBackground.Location" type="System.Drawing.Point, System.Drawing">
-    <value>275, 21</value>
+    <value>367, 26</value>
+  </data>
+  <data name="ucrLegendBoxBackground.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrLegendBoxBackground.Size" type="System.Drawing.Size, System.Drawing">
-    <value>253, 130</value>
+    <value>337, 160</value>
   </data>
   <data name="ucrLegendBoxBackground.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1051,10 +1189,13 @@
     <value>0</value>
   </data>
   <data name="ucrLegendBackground.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 21</value>
+    <value>19, 26</value>
+  </data>
+  <data name="ucrLegendBackground.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrLegendBackground.Size" type="System.Drawing.Size, System.Drawing">
-    <value>253, 130</value>
+    <value>337, 160</value>
   </data>
   <data name="ucrLegendBackground.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1072,10 +1213,13 @@
     <value>1</value>
   </data>
   <data name="ucrLegendKey.Location" type="System.Drawing.Point, System.Drawing">
-    <value>536, 21</value>
+    <value>715, 26</value>
+  </data>
+  <data name="ucrLegendKey.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrLegendKey.Size" type="System.Drawing.Size, System.Drawing">
-    <value>253, 130</value>
+    <value>337, 160</value>
   </data>
   <data name="ucrLegendKey.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1093,10 +1237,16 @@
     <value>2</value>
   </data>
   <data name="grpLegendBackGroundAndKey.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 269</value>
+    <value>8, 331</value>
+  </data>
+  <data name="grpLegendBackGroundAndKey.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpLegendBackGroundAndKey.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpLegendBackGroundAndKey.Size" type="System.Drawing.Size, System.Drawing">
-    <value>801, 150</value>
+    <value>1068, 185</value>
   </data>
   <data name="grpLegendBackGroundAndKey.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1117,13 +1267,16 @@
     <value>3</value>
   </data>
   <data name="tbThemeLegend.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tbThemeLegend.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tbThemeLegend.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tbThemeLegend.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 583</value>
+    <value>1092, 721</value>
   </data>
   <data name="tbThemeLegend.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1144,10 +1297,13 @@
     <value>4</value>
   </data>
   <data name="ucrThemeTitleYRightAxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>275, 21</value>
+    <value>367, 26</value>
+  </data>
+  <data name="ucrThemeTitleYRightAxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrThemeTitleYRightAxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 227</value>
+    <value>349, 279</value>
   </data>
   <data name="ucrThemeTitleYRightAxis.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1165,10 +1321,13 @@
     <value>0</value>
   </data>
   <data name="ucrThemeTitleYAxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 21</value>
+    <value>19, 26</value>
+  </data>
+  <data name="ucrThemeTitleYAxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrThemeTitleYAxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>259, 227</value>
+    <value>345, 279</value>
   </data>
   <data name="ucrThemeTitleYAxis.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1186,10 +1345,16 @@
     <value>1</value>
   </data>
   <data name="grpYAxisTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+    <value>8, 7</value>
+  </data>
+  <data name="grpYAxisTitle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpYAxisTitle.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpYAxisTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>535, 269</value>
+    <value>713, 331</value>
   </data>
   <data name="grpYAxisTitle.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1210,10 +1375,13 @@
     <value>0</value>
   </data>
   <data name="ucrThemeYRightAxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>275, 21</value>
+    <value>367, 26</value>
+  </data>
+  <data name="ucrThemeYRightAxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrThemeYRightAxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 226</value>
+    <value>349, 278</value>
   </data>
   <data name="ucrThemeYRightAxis.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1231,10 +1399,13 @@
     <value>0</value>
   </data>
   <data name="ucrThemeLeftYAxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 21</value>
+    <value>19, 26</value>
+  </data>
+  <data name="ucrThemeLeftYAxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrThemeLeftYAxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>259, 226</value>
+    <value>345, 278</value>
   </data>
   <data name="ucrThemeLeftYAxis.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1252,10 +1423,16 @@
     <value>1</value>
   </data>
   <data name="grpTickMarkLabelsYAxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 277</value>
+    <value>8, 341</value>
+  </data>
+  <data name="grpTickMarkLabelsYAxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpTickMarkLabelsYAxis.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpTickMarkLabelsYAxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>535, 258</value>
+    <value>713, 318</value>
   </data>
   <data name="grpTickMarkLabelsYAxis.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1276,10 +1453,13 @@
     <value>1</value>
   </data>
   <data name="ucrTickMarksYAxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 21</value>
+    <value>5, 26</value>
+  </data>
+  <data name="ucrTickMarksYAxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrTickMarksYAxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 123</value>
+    <value>340, 151</value>
   </data>
   <data name="ucrTickMarksYAxis.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1297,10 +1477,13 @@
     <value>0</value>
   </data>
   <data name="ucrYAxisLines.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 142</value>
+    <value>5, 175</value>
+  </data>
+  <data name="ucrYAxisLines.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrYAxisLines.Size" type="System.Drawing.Size, System.Drawing">
-    <value>254, 124</value>
+    <value>339, 153</value>
   </data>
   <data name="ucrYAxisLines.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1318,10 +1501,16 @@
     <value>1</value>
   </data>
   <data name="grpTickMarkers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>550, 6</value>
+    <value>733, 7</value>
+  </data>
+  <data name="grpTickMarkers.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpTickMarkers.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpTickMarkers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 269</value>
+    <value>347, 331</value>
   </data>
   <data name="grpTickMarkers.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1342,13 +1531,16 @@
     <value>2</value>
   </data>
   <data name="tbThemeYaxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tbThemeYaxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tbThemeYaxis.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tbThemeYaxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 583</value>
+    <value>1092, 721</value>
   </data>
   <data name="tbThemeYaxis.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1369,10 +1561,13 @@
     <value>3</value>
   </data>
   <data name="ucrThemeTopXAxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>275, 21</value>
+    <value>367, 26</value>
+  </data>
+  <data name="ucrThemeTopXAxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrThemeTopXAxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>258, 224</value>
+    <value>344, 276</value>
   </data>
   <data name="ucrThemeTopXAxis.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1390,10 +1585,13 @@
     <value>0</value>
   </data>
   <data name="ucrThemeBottomXAxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 21</value>
+    <value>19, 26</value>
+  </data>
+  <data name="ucrThemeBottomXAxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrThemeBottomXAxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>259, 224</value>
+    <value>345, 276</value>
   </data>
   <data name="ucrThemeBottomXAxis.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1411,10 +1609,16 @@
     <value>1</value>
   </data>
   <data name="grpTickMarkLabelsXAxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 277</value>
+    <value>8, 341</value>
+  </data>
+  <data name="grpTickMarkLabelsXAxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpTickMarkLabelsXAxis.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpTickMarkLabelsXAxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>535, 258</value>
+    <value>713, 318</value>
   </data>
   <data name="grpTickMarkLabelsXAxis.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1435,10 +1639,13 @@
     <value>0</value>
   </data>
   <data name="ucrXAxisLines.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 142</value>
+    <value>5, 175</value>
+  </data>
+  <data name="ucrXAxisLines.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrXAxisLines.Size" type="System.Drawing.Size, System.Drawing">
-    <value>254, 124</value>
+    <value>339, 153</value>
   </data>
   <data name="ucrXAxisLines.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1456,10 +1663,13 @@
     <value>0</value>
   </data>
   <data name="ucrTickMarksXAxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 21</value>
+    <value>5, 26</value>
+  </data>
+  <data name="ucrTickMarksXAxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrTickMarksXAxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>254, 124</value>
+    <value>339, 153</value>
   </data>
   <data name="ucrTickMarksXAxis.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1477,10 +1687,16 @@
     <value>1</value>
   </data>
   <data name="grpTickMarks.Location" type="System.Drawing.Point, System.Drawing">
-    <value>550, 6</value>
+    <value>733, 7</value>
+  </data>
+  <data name="grpTickMarks.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpTickMarks.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpTickMarks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 269</value>
+    <value>347, 331</value>
   </data>
   <data name="grpTickMarks.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1501,10 +1717,13 @@
     <value>1</value>
   </data>
   <data name="ucrThemeTitleXTopAxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>275, 21</value>
+    <value>367, 26</value>
+  </data>
+  <data name="ucrThemeTitleXTopAxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrThemeTitleXTopAxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>252, 230</value>
+    <value>336, 283</value>
   </data>
   <data name="ucrThemeTitleXTopAxis.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1522,10 +1741,13 @@
     <value>0</value>
   </data>
   <data name="ucrThemeTitleXAxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 21</value>
+    <value>19, 26</value>
+  </data>
+  <data name="ucrThemeTitleXAxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrThemeTitleXAxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 231</value>
+    <value>347, 284</value>
   </data>
   <data name="ucrThemeTitleXAxis.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1543,10 +1765,16 @@
     <value>1</value>
   </data>
   <data name="grpXAxisTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+    <value>8, 7</value>
+  </data>
+  <data name="grpXAxisTitle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpXAxisTitle.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpXAxisTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>535, 269</value>
+    <value>713, 331</value>
   </data>
   <data name="grpXAxisTitle.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1567,13 +1795,16 @@
     <value>2</value>
   </data>
   <data name="tbThemeXAxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tbThemeXAxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tbThemeXAxis.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tbThemeXAxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 583</value>
+    <value>1092, 721</value>
   </data>
   <data name="tbThemeXAxis.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1594,10 +1825,13 @@
     <value>2</value>
   </data>
   <data name="ucrTickLength.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 23</value>
+    <value>8, 28</value>
+  </data>
+  <data name="ucrTickLength.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrTickLength.Size" type="System.Drawing.Size, System.Drawing">
-    <value>258, 122</value>
+    <value>344, 150</value>
   </data>
   <data name="ucrTickLength.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1615,10 +1849,16 @@
     <value>0</value>
   </data>
   <data name="grpTickLength.Location" type="System.Drawing.Point, System.Drawing">
-    <value>541, 27</value>
+    <value>721, 33</value>
+  </data>
+  <data name="grpTickLength.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpTickLength.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpTickLength.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 151</value>
+    <value>363, 186</value>
   </data>
   <data name="grpTickLength.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1639,10 +1879,13 @@
     <value>0</value>
   </data>
   <data name="ucrThemeAxesLines.Location" type="System.Drawing.Point, System.Drawing">
-    <value>283, 256</value>
+    <value>377, 315</value>
+  </data>
+  <data name="ucrThemeAxesLines.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrThemeAxesLines.Size" type="System.Drawing.Size, System.Drawing">
-    <value>253, 122</value>
+    <value>337, 150</value>
   </data>
   <data name="ucrThemeAxesLines.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1660,10 +1903,13 @@
     <value>1</value>
   </data>
   <data name="ucrThemeAxesTickLabels.Location" type="System.Drawing.Point, System.Drawing">
-    <value>281, 27</value>
+    <value>375, 33</value>
+  </data>
+  <data name="ucrThemeAxesTickLabels.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrThemeAxesTickLabels.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 228</value>
+    <value>340, 281</value>
   </data>
   <data name="ucrThemeAxesTickLabels.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1681,10 +1927,13 @@
     <value>2</value>
   </data>
   <data name="ucrTickMarksAxes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 256</value>
+    <value>28, 315</value>
+  </data>
+  <data name="ucrTickMarksAxes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrTickMarksAxes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>257, 122</value>
+    <value>343, 150</value>
   </data>
   <data name="ucrTickMarksAxes.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1702,10 +1951,13 @@
     <value>3</value>
   </data>
   <data name="ucrThemeAxesTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 27</value>
+    <value>27, 33</value>
+  </data>
+  <data name="ucrThemeAxesTitle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrThemeAxesTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 228</value>
+    <value>340, 281</value>
   </data>
   <data name="ucrThemeAxesTitle.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1723,10 +1975,13 @@
     <value>4</value>
   </data>
   <data name="tbXYAxes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tbXYAxes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tbXYAxes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 583</value>
+    <value>1092, 721</value>
   </data>
   <data name="tbXYAxes.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1747,10 +2002,13 @@
     <value>1</value>
   </data>
   <data name="ucrPlotMargin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 23</value>
+    <value>7, 28</value>
+  </data>
+  <data name="ucrPlotMargin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrPlotMargin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>257, 123</value>
+    <value>343, 151</value>
   </data>
   <data name="ucrPlotMargin.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1768,10 +2026,16 @@
     <value>0</value>
   </data>
   <data name="grpPlotMargin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>285, 269</value>
+    <value>380, 331</value>
+  </data>
+  <data name="grpPlotMargin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpPlotMargin.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpPlotMargin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>271, 153</value>
+    <value>361, 188</value>
   </data>
   <data name="grpPlotMargin.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1792,10 +2056,13 @@
     <value>0</value>
   </data>
   <data name="ucrPlotBackground.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 21</value>
+    <value>19, 26</value>
+  </data>
+  <data name="ucrPlotBackground.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrPlotBackground.Size" type="System.Drawing.Size, System.Drawing">
-    <value>253, 131</value>
+    <value>337, 161</value>
   </data>
   <data name="ucrPlotBackground.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1813,10 +2080,16 @@
     <value>0</value>
   </data>
   <data name="grpPlotBackground.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 269</value>
+    <value>8, 331</value>
+  </data>
+  <data name="grpPlotBackground.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpPlotBackground.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpPlotBackground.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 153</value>
+    <value>359, 188</value>
   </data>
   <data name="grpPlotBackground.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1837,10 +2110,13 @@
     <value>1</value>
   </data>
   <data name="ucrPlotCaption.Location" type="System.Drawing.Point, System.Drawing">
-    <value>536, 21</value>
+    <value>715, 26</value>
+  </data>
+  <data name="ucrPlotCaption.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrPlotCaption.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 224</value>
+    <value>340, 276</value>
   </data>
   <data name="ucrPlotCaption.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1858,10 +2134,13 @@
     <value>0</value>
   </data>
   <data name="ucrPlotSubTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>275, 21</value>
+    <value>367, 26</value>
+  </data>
+  <data name="ucrPlotSubTitle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrPlotSubTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 224</value>
+    <value>340, 276</value>
   </data>
   <data name="ucrPlotSubTitle.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1879,10 +2158,13 @@
     <value>1</value>
   </data>
   <data name="ucrPlotTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 21</value>
+    <value>19, 26</value>
+  </data>
+  <data name="ucrPlotTitle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrPlotTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 224</value>
+    <value>340, 276</value>
   </data>
   <data name="ucrPlotTitle.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1900,10 +2182,16 @@
     <value>2</value>
   </data>
   <data name="grpPlotTitleAndCaption.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+    <value>8, 7</value>
+  </data>
+  <data name="grpPlotTitleAndCaption.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpPlotTitleAndCaption.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpPlotTitleAndCaption.Size" type="System.Drawing.Size, System.Drawing">
-    <value>804, 255</value>
+    <value>1072, 314</value>
   </data>
   <data name="grpPlotTitleAndCaption.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1924,13 +2212,16 @@
     <value>2</value>
   </data>
   <data name="tbPLot.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tbPLot.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tbPLot.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tbPLot.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 583</value>
+    <value>1092, 721</value>
   </data>
   <data name="tbPLot.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1951,10 +2242,13 @@
     <value>0</value>
   </data>
   <data name="ucrLegendBoxSpacing.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 21</value>
+    <value>5, 26</value>
+  </data>
+  <data name="ucrLegendBoxSpacing.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrLegendBoxSpacing.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 127</value>
+    <value>349, 156</value>
   </data>
   <data name="ucrLegendBoxSpacing.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1972,10 +2266,16 @@
     <value>0</value>
   </data>
   <data name="grpLegendBoxSpacing.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 172</value>
+    <value>8, 212</value>
+  </data>
+  <data name="grpLegendBoxSpacing.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpLegendBoxSpacing.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpLegendBoxSpacing.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 154</value>
+    <value>363, 190</value>
   </data>
   <data name="grpLegendBoxSpacing.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1996,10 +2296,13 @@
     <value>0</value>
   </data>
   <data name="ucrLegendSpacingYAxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>532, 21</value>
+    <value>709, 26</value>
+  </data>
+  <data name="ucrLegendSpacingYAxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrLegendSpacingYAxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 119</value>
+    <value>347, 146</value>
   </data>
   <data name="ucrLegendSpacingYAxis.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2017,10 +2320,13 @@
     <value>0</value>
   </data>
   <data name="ucrLegendSpacingXAxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>268, 21</value>
+    <value>357, 26</value>
+  </data>
+  <data name="ucrLegendSpacingXAxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrLegendSpacingXAxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>261, 119</value>
+    <value>348, 146</value>
   </data>
   <data name="ucrLegendSpacingXAxis.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2038,10 +2344,13 @@
     <value>1</value>
   </data>
   <data name="ucrLegendSpacing.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 21</value>
+    <value>8, 26</value>
+  </data>
+  <data name="ucrLegendSpacing.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrLegendSpacing.Size" type="System.Drawing.Size, System.Drawing">
-    <value>258, 119</value>
+    <value>344, 146</value>
   </data>
   <data name="ucrLegendSpacing.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2059,10 +2368,16 @@
     <value>2</value>
   </data>
   <data name="grpLegendSpacing.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+    <value>8, 7</value>
+  </data>
+  <data name="grpLegendSpacing.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpLegendSpacing.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpLegendSpacing.Size" type="System.Drawing.Size, System.Drawing">
-    <value>798, 150</value>
+    <value>1064, 185</value>
   </data>
   <data name="grpLegendSpacing.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2083,10 +2398,13 @@
     <value>1</value>
   </data>
   <data name="tbThemeLegendMoreOptions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tbThemeLegendMoreOptions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tbThemeLegendMoreOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 583</value>
+    <value>1092, 721</value>
   </data>
   <data name="tbThemeLegendMoreOptions.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -2107,10 +2425,13 @@
     <value>5</value>
   </data>
   <data name="ucrPanelGridMinorYAxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>275, 251</value>
+    <value>367, 309</value>
+  </data>
+  <data name="ucrPanelGridMinorYAxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrPanelGridMinorYAxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>258, 224</value>
+    <value>344, 276</value>
   </data>
   <data name="ucrPanelGridMinorYAxis.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2128,10 +2449,13 @@
     <value>0</value>
   </data>
   <data name="ucrPanelGridMinorXAxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 251</value>
+    <value>19, 309</value>
+  </data>
+  <data name="ucrPanelGridMinorXAxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrPanelGridMinorXAxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>259, 224</value>
+    <value>345, 276</value>
   </data>
   <data name="ucrPanelGridMinorXAxis.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2149,10 +2473,13 @@
     <value>1</value>
   </data>
   <data name="ucrPanelGridMajorYAxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>275, 21</value>
+    <value>367, 26</value>
+  </data>
+  <data name="ucrPanelGridMajorYAxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrPanelGridMajorYAxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>258, 224</value>
+    <value>344, 276</value>
   </data>
   <data name="ucrPanelGridMajorYAxis.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2170,10 +2497,13 @@
     <value>2</value>
   </data>
   <data name="ucrPanelGridMajorXAxis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 21</value>
+    <value>19, 26</value>
+  </data>
+  <data name="ucrPanelGridMajorXAxis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrPanelGridMajorXAxis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>259, 224</value>
+    <value>345, 276</value>
   </data>
   <data name="ucrPanelGridMajorXAxis.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2191,10 +2521,16 @@
     <value>3</value>
   </data>
   <data name="grpPanelGridMajorMinor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+    <value>8, 7</value>
+  </data>
+  <data name="grpPanelGridMajorMinor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpPanelGridMajorMinor.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpPanelGridMajorMinor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>539, 486</value>
+    <value>719, 598</value>
   </data>
   <data name="grpPanelGridMajorMinor.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2215,13 +2551,16 @@
     <value>0</value>
   </data>
   <data name="tbThemePanelMoreOptions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 25</value>
+  </data>
+  <data name="tbThemePanelMoreOptions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tbThemePanelMoreOptions.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tbThemePanelMoreOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 583</value>
+    <value>1092, 721</value>
   </data>
   <data name="tbThemePanelMoreOptions.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -2242,10 +2581,13 @@
     <value>7</value>
   </data>
   <data name="tbLegend.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 8</value>
+    <value>5, 10</value>
+  </data>
+  <data name="tbLegend.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tbLegend.Size" type="System.Drawing.Size, System.Drawing">
-    <value>825, 609</value>
+    <value>1100, 750</value>
   </data>
   <data name="tbLegend.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2266,10 +2608,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>833, 653</value>
+    <value>1111, 805</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

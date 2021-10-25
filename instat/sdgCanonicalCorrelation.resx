@@ -119,10 +119,14 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ucrChkCoefficients.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 46</value>
+    <value>13, 57</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ucrChkCoefficients.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrChkCoefficients.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 20</value>
+    <value>245, 25</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ucrChkCoefficients.TabIndex" type="System.Int32, mscorlib">
@@ -141,10 +145,13 @@
     <value>0</value>
   </data>
   <data name="ucrChkCanonicalCorrelations.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 18</value>
+    <value>13, 22</value>
+  </data>
+  <data name="ucrChkCanonicalCorrelations.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrChkCanonicalCorrelations.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 20</value>
+    <value>245, 25</value>
   </data>
   <data name="ucrChkCanonicalCorrelations.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -162,10 +169,13 @@
     <value>1</value>
   </data>
   <data name="ucrChkPairwisePlot.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 18</value>
+    <value>13, 22</value>
+  </data>
+  <data name="ucrChkPairwisePlot.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrChkPairwisePlot.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 20</value>
+    <value>245, 25</value>
   </data>
   <data name="ucrChkPairwisePlot.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -186,10 +196,13 @@
     <value>True</value>
   </data>
   <data name="rdoYVariables.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 67</value>
+    <value>61, 82</value>
+  </data>
+  <data name="rdoYVariables.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="rdoYVariables.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 17</value>
+    <value>103, 20</value>
   </data>
   <data name="rdoYVariables.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -213,10 +226,13 @@
     <value>True</value>
   </data>
   <data name="rdoXVariables.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 44</value>
+    <value>61, 54</value>
+  </data>
+  <data name="rdoXVariables.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="rdoXVariables.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 17</value>
+    <value>102, 20</value>
   </data>
   <data name="rdoXVariables.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -237,10 +253,13 @@
     <value>2</value>
   </data>
   <data name="ucrPnlVariables.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 36</value>
+    <value>48, 44</value>
+  </data>
+  <data name="ucrPnlVariables.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrPnlVariables.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 58</value>
+    <value>169, 71</value>
   </data>
   <data name="ucrPnlVariables.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -258,10 +277,13 @@
     <value>3</value>
   </data>
   <data name="ucrSdgButtons.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 191</value>
+    <value>39, 235</value>
+  </data>
+  <data name="ucrSdgButtons.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrSdgButtons.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 30</value>
+    <value>205, 37</value>
   </data>
   <data name="ucrSdgButtons.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -279,10 +301,16 @@
     <value>2</value>
   </data>
   <data name="grpDisplay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 7</value>
+    <value>9, 9</value>
+  </data>
+  <data name="grpDisplay.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpDisplay.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpDisplay.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 72</value>
+    <value>267, 89</value>
   </data>
   <data name="grpDisplay.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -303,10 +331,16 @@
     <value>1</value>
   </data>
   <data name="grpGraphics.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 85</value>
+    <value>9, 105</value>
+  </data>
+  <data name="grpGraphics.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpGraphics.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="grpGraphics.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 100</value>
+    <value>267, 123</value>
   </data>
   <data name="grpGraphics.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -330,12 +364,14 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>214, 224</value>
+    <value>285, 277</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
   </data>

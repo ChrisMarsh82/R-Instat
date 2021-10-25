@@ -119,10 +119,14 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ucrBase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 304</value>
+    <value>268, 374</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ucrBase.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 30</value>
+    <value>209, 37</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ucrBase.TabIndex" type="System.Int32, mscorlib">
@@ -141,14 +145,13 @@
     <value>5</value>
   </data>
   <data name="ucrSelectorFiltersFromFactors.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 51</value>
+    <value>12, 63</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ucrSelectorFiltersFromFactors.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrSelectorFiltersFromFactors.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 180</value>
+    <value>280, 222</value>
   </data>
   <data name="ucrSelectorFiltersFromFactors.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -169,16 +172,19 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>545, 337</value>
+    <value>727, 416</value>
   </data>
   <data name="cmdSelectAll.Location" type="System.Drawing.Point, System.Drawing">
-    <value>462, 268</value>
+    <value>616, 330</value>
+  </data>
+  <data name="cmdSelectAll.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="cmdSelectAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>100, 28</value>
   </data>
   <data name="cmdSelectAll.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -202,10 +208,13 @@
     <value>True</value>
   </data>
   <data name="ucrFactorLevels.Location" type="System.Drawing.Point, System.Drawing">
-    <value>267, 57</value>
+    <value>356, 70</value>
+  </data>
+  <data name="ucrFactorLevels.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrFactorLevels.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 208</value>
+    <value>359, 256</value>
   </data>
   <data name="ucrFactorLevels.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -223,10 +232,13 @@
     <value>1</value>
   </data>
   <data name="lblFactors.Location" type="System.Drawing.Point, System.Drawing">
-    <value>267, 17</value>
+    <value>356, 21</value>
+  </data>
+  <data name="lblFactors.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblFactors.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 13</value>
+    <value>76, 16</value>
   </data>
   <data name="lblFactors.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -246,6 +258,9 @@
   <data name="&gt;&gt;lblFactors.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
@@ -259,13 +274,13 @@
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ucrReceiverFactor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>267, 32</value>
+    <value>356, 39</value>
   </data>
   <data name="ucrReceiverFactor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrReceiverFactor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
+    <value>160, 25</value>
   </data>
   <data name="ucrReceiverFactor.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>

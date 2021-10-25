@@ -64,9 +64,10 @@ Partial Class dlgExtremeEvents
         'lblColumnNameExtremeEvent
         '
         Me.lblColumnNameExtremeEvent.AutoSize = True
-        Me.lblColumnNameExtremeEvent.Location = New System.Drawing.Point(12, 18)
+        Me.lblColumnNameExtremeEvent.Location = New System.Drawing.Point(16, 22)
+        Me.lblColumnNameExtremeEvent.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblColumnNameExtremeEvent.Name = "lblColumnNameExtremeEvent"
-        Me.lblColumnNameExtremeEvent.Size = New System.Drawing.Size(145, 13)
+        Me.lblColumnNameExtremeEvent.Size = New System.Drawing.Size(182, 16)
         Me.lblColumnNameExtremeEvent.TabIndex = 2
         Me.lblColumnNameExtremeEvent.Tag = "Column_Name_Extreme_Event"
         Me.lblColumnNameExtremeEvent.Text = "Column Name Extreme Event"
@@ -74,9 +75,10 @@ Partial Class dlgExtremeEvents
         'lblColumNameEventDay
         '
         Me.lblColumNameEventDay.AutoSize = True
-        Me.lblColumNameEventDay.Location = New System.Drawing.Point(12, 45)
+        Me.lblColumNameEventDay.Location = New System.Drawing.Point(16, 55)
+        Me.lblColumNameEventDay.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblColumNameEventDay.Name = "lblColumNameEventDay"
-        Me.lblColumNameEventDay.Size = New System.Drawing.Size(126, 13)
+        Me.lblColumNameEventDay.Size = New System.Drawing.Size(158, 16)
         Me.lblColumNameEventDay.TabIndex = 3
         Me.lblColumNameEventDay.Tag = "Column_Name_Event_Day"
         Me.lblColumNameEventDay.Text = "Column Name Event Day"
@@ -84,9 +86,10 @@ Partial Class dlgExtremeEvents
         'chkRemoveNA
         '
         Me.chkRemoveNA.AutoSize = True
-        Me.chkRemoveNA.Location = New System.Drawing.Point(12, 123)
+        Me.chkRemoveNA.Location = New System.Drawing.Point(16, 151)
+        Me.chkRemoveNA.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkRemoveNA.Name = "chkRemoveNA"
-        Me.chkRemoveNA.Size = New System.Drawing.Size(139, 17)
+        Me.chkRemoveNA.Size = New System.Drawing.Size(180, 21)
         Me.chkRemoveNA.TabIndex = 10
         Me.chkRemoveNA.Tag = "Remove_Missing_Values"
         Me.chkRemoveNA.Text = "Remove Missing Values"
@@ -95,9 +98,10 @@ Partial Class dlgExtremeEvents
         'chkExtremeMax
         '
         Me.chkExtremeMax.AutoSize = True
-        Me.chkExtremeMax.Location = New System.Drawing.Point(12, 100)
+        Me.chkExtremeMax.Location = New System.Drawing.Point(16, 123)
+        Me.chkExtremeMax.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkExtremeMax.Name = "chkExtremeMax"
-        Me.chkExtremeMax.Size = New System.Drawing.Size(111, 17)
+        Me.chkExtremeMax.Size = New System.Drawing.Size(143, 21)
         Me.chkExtremeMax.TabIndex = 11
         Me.chkExtremeMax.Tag = "Extreme_Maximum"
         Me.chkExtremeMax.Text = "Extreme Maximum"
@@ -106,9 +110,10 @@ Partial Class dlgExtremeEvents
         'chkExtremeMin
         '
         Me.chkExtremeMin.AutoSize = True
-        Me.chkExtremeMin.Location = New System.Drawing.Point(130, 100)
+        Me.chkExtremeMin.Location = New System.Drawing.Point(173, 123)
+        Me.chkExtremeMin.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkExtremeMin.Name = "chkExtremeMin"
-        Me.chkExtremeMin.Size = New System.Drawing.Size(108, 17)
+        Me.chkExtremeMin.Size = New System.Drawing.Size(139, 21)
         Me.chkExtremeMin.TabIndex = 12
         Me.chkExtremeMin.Tag = "Extreme_Minimum"
         Me.chkExtremeMin.Text = "Extreme Minimum"
@@ -116,38 +121,42 @@ Partial Class dlgExtremeEvents
         '
         'nudTotalDays
         '
-        Me.nudTotalDays.Location = New System.Drawing.Point(348, 69)
+        Me.nudTotalDays.Location = New System.Drawing.Point(464, 85)
+        Me.nudTotalDays.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudTotalDays.Name = "nudTotalDays"
-        Me.nudTotalDays.Size = New System.Drawing.Size(55, 20)
+        Me.nudTotalDays.Size = New System.Drawing.Size(73, 22)
         Me.nudTotalDays.TabIndex = 5
         Me.nudTotalDays.Tag = "Total_Days"
         '
         'nudThreshold
         '
-        Me.nudThreshold.Location = New System.Drawing.Point(259, 120)
+        Me.nudThreshold.Location = New System.Drawing.Point(345, 148)
+        Me.nudThreshold.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudThreshold.Name = "nudThreshold"
-        Me.nudThreshold.Size = New System.Drawing.Size(55, 20)
+        Me.nudThreshold.Size = New System.Drawing.Size(73, 22)
         Me.nudThreshold.TabIndex = 7
         Me.nudThreshold.Tag = "Threshold"
         '
         'nudEndDay
         '
-        Me.nudEndDay.Location = New System.Drawing.Point(223, 69)
+        Me.nudEndDay.Location = New System.Drawing.Point(297, 85)
+        Me.nudEndDay.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudEndDay.Maximum = New Decimal(New Integer() {366, 0, 0, 0})
         Me.nudEndDay.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nudEndDay.Name = "nudEndDay"
-        Me.nudEndDay.Size = New System.Drawing.Size(55, 20)
+        Me.nudEndDay.Size = New System.Drawing.Size(73, 22)
         Me.nudEndDay.TabIndex = 8
         Me.nudEndDay.Tag = "End_Day"
         Me.nudEndDay.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'nudStartDay
         '
-        Me.nudStartDay.Location = New System.Drawing.Point(83, 69)
+        Me.nudStartDay.Location = New System.Drawing.Point(111, 85)
+        Me.nudStartDay.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudStartDay.Maximum = New Decimal(New Integer() {366, 0, 0, 0})
         Me.nudStartDay.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.nudStartDay.Name = "nudStartDay"
-        Me.nudStartDay.Size = New System.Drawing.Size(55, 20)
+        Me.nudStartDay.Size = New System.Drawing.Size(73, 22)
         Me.nudStartDay.TabIndex = 9
         Me.nudStartDay.Tag = "Start_Day"
         Me.nudStartDay.Value = New Decimal(New Integer() {1, 0, 0, 0})
@@ -155,9 +164,10 @@ Partial Class dlgExtremeEvents
         'lblStartDay
         '
         Me.lblStartDay.AutoSize = True
-        Me.lblStartDay.Location = New System.Drawing.Point(12, 76)
+        Me.lblStartDay.Location = New System.Drawing.Point(16, 94)
+        Me.lblStartDay.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblStartDay.Name = "lblStartDay"
-        Me.lblStartDay.Size = New System.Drawing.Size(51, 13)
+        Me.lblStartDay.Size = New System.Drawing.Size(63, 16)
         Me.lblStartDay.TabIndex = 14
         Me.lblStartDay.Tag = "Start_Day"
         Me.lblStartDay.Text = "Start Day"
@@ -165,9 +175,10 @@ Partial Class dlgExtremeEvents
         'lblTotalDays
         '
         Me.lblTotalDays.AutoSize = True
-        Me.lblTotalDays.Location = New System.Drawing.Point(284, 76)
+        Me.lblTotalDays.Location = New System.Drawing.Point(379, 94)
+        Me.lblTotalDays.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblTotalDays.Name = "lblTotalDays"
-        Me.lblTotalDays.Size = New System.Drawing.Size(58, 13)
+        Me.lblTotalDays.Size = New System.Drawing.Size(74, 16)
         Me.lblTotalDays.TabIndex = 15
         Me.lblTotalDays.Tag = "Total_Days"
         Me.lblTotalDays.Text = "Total Days"
@@ -175,18 +186,20 @@ Partial Class dlgExtremeEvents
         'lblThreshold
         '
         Me.lblThreshold.AutoSize = True
-        Me.lblThreshold.Location = New System.Drawing.Point(177, 313)
+        Me.lblThreshold.Location = New System.Drawing.Point(236, 385)
+        Me.lblThreshold.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblThreshold.Name = "lblThreshold"
-        Me.lblThreshold.Size = New System.Drawing.Size(0, 13)
+        Me.lblThreshold.Size = New System.Drawing.Size(0, 16)
         Me.lblThreshold.TabIndex = 16
         Me.lblThreshold.Tag = "Threshold"
         '
         'lblEndDay
         '
         Me.lblEndDay.AutoSize = True
-        Me.lblEndDay.Location = New System.Drawing.Point(160, 76)
+        Me.lblEndDay.Location = New System.Drawing.Point(213, 94)
+        Me.lblEndDay.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblEndDay.Name = "lblEndDay"
-        Me.lblEndDay.Size = New System.Drawing.Size(48, 13)
+        Me.lblEndDay.Size = New System.Drawing.Size(60, 16)
         Me.lblEndDay.TabIndex = 17
         Me.lblEndDay.Tag = "End_Day"
         Me.lblEndDay.Text = "End Day"
@@ -194,9 +207,10 @@ Partial Class dlgExtremeEvents
         'chkThresholdValue
         '
         Me.chkThresholdValue.AutoSize = True
-        Me.chkThresholdValue.Location = New System.Drawing.Point(180, 123)
+        Me.chkThresholdValue.Location = New System.Drawing.Point(240, 151)
+        Me.chkThresholdValue.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkThresholdValue.Name = "chkThresholdValue"
-        Me.chkThresholdValue.Size = New System.Drawing.Size(73, 17)
+        Me.chkThresholdValue.Size = New System.Drawing.Size(95, 21)
         Me.chkThresholdValue.TabIndex = 19
         Me.chkThresholdValue.Tag = "Threshold"
         Me.chkThresholdValue.Text = "Threshold"
@@ -204,30 +218,39 @@ Partial Class dlgExtremeEvents
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(12, 146)
+        Me.ucrBase.Location = New System.Drawing.Point(16, 180)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 54)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 66)
         Me.ucrBase.TabIndex = 4
         '
         'ucrInputColumnNameExtremeEvents
         '
-        Me.ucrInputColumnNameExtremeEvents.Location = New System.Drawing.Point(183, 10)
+        Me.ucrInputColumnNameExtremeEvents.AddQuotesIfUnrecognised = True
+        Me.ucrInputColumnNameExtremeEvents.IsMultiline = False
+        Me.ucrInputColumnNameExtremeEvents.IsReadOnly = False
+        Me.ucrInputColumnNameExtremeEvents.Location = New System.Drawing.Point(244, 12)
+        Me.ucrInputColumnNameExtremeEvents.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputColumnNameExtremeEvents.Name = "ucrInputColumnNameExtremeEvents"
-        Me.ucrInputColumnNameExtremeEvents.Size = New System.Drawing.Size(142, 21)
+        Me.ucrInputColumnNameExtremeEvents.Size = New System.Drawing.Size(189, 26)
         Me.ucrInputColumnNameExtremeEvents.TabIndex = 20
         '
         'ucrInputColumnNameEventDay
         '
-        Me.ucrInputColumnNameEventDay.Location = New System.Drawing.Point(180, 37)
+        Me.ucrInputColumnNameEventDay.AddQuotesIfUnrecognised = True
+        Me.ucrInputColumnNameEventDay.IsMultiline = False
+        Me.ucrInputColumnNameEventDay.IsReadOnly = False
+        Me.ucrInputColumnNameEventDay.Location = New System.Drawing.Point(240, 46)
+        Me.ucrInputColumnNameEventDay.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputColumnNameEventDay.Name = "ucrInputColumnNameEventDay"
-        Me.ucrInputColumnNameEventDay.Size = New System.Drawing.Size(142, 21)
+        Me.ucrInputColumnNameEventDay.Size = New System.Drawing.Size(189, 26)
         Me.ucrInputColumnNameEventDay.TabIndex = 20
         '
         'dlgExtremeEvents
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(480, 213)
+        Me.ClientSize = New System.Drawing.Size(641, 262)
         Me.Controls.Add(Me.ucrInputColumnNameEventDay)
         Me.Controls.Add(Me.ucrInputColumnNameExtremeEvents)
         Me.Controls.Add(Me.chkThresholdValue)
@@ -246,6 +269,7 @@ Partial Class dlgExtremeEvents
         Me.Controls.Add(Me.lblColumNameEventDay)
         Me.Controls.Add(Me.lblColumnNameExtremeEvent)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgExtremeEvents"

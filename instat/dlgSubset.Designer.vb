@@ -48,9 +48,10 @@ Partial Class dlgSubset
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(40, 247)
+        Me.ucrBase.Location = New System.Drawing.Point(53, 304)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 52)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 64)
         Me.ucrBase.TabIndex = 5
         '
         'ucrDataFrameAddRemove
@@ -58,20 +59,20 @@ Partial Class dlgSubset
         Me.ucrDataFrameAddRemove.bDropUnusedFilterLevels = False
         Me.ucrDataFrameAddRemove.bShowHiddenColumns = False
         Me.ucrDataFrameAddRemove.bUseCurrentFilter = True
-        Me.ucrDataFrameAddRemove.Location = New System.Drawing.Point(33, 55)
+        Me.ucrDataFrameAddRemove.Location = New System.Drawing.Point(44, 68)
         Me.ucrDataFrameAddRemove.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrDataFrameAddRemove.Name = "ucrDataFrameAddRemove"
-        Me.ucrDataFrameAddRemove.Size = New System.Drawing.Size(210, 180)
+        Me.ucrDataFrameAddRemove.Size = New System.Drawing.Size(280, 222)
         Me.ucrDataFrameAddRemove.TabIndex = 4
         '
         'ucrReceiverSubset
         '
         Me.ucrReceiverSubset.frmParent = Me
-        Me.ucrReceiverSubset.Location = New System.Drawing.Point(294, 66)
+        Me.ucrReceiverSubset.Location = New System.Drawing.Point(392, 81)
         Me.ucrReceiverSubset.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverSubset.Name = "ucrReceiverSubset"
         Me.ucrReceiverSubset.Selector = Nothing
-        Me.ucrReceiverSubset.Size = New System.Drawing.Size(120, 100)
+        Me.ucrReceiverSubset.Size = New System.Drawing.Size(160, 123)
         Me.ucrReceiverSubset.strNcFilePath = ""
         Me.ucrReceiverSubset.TabIndex = 3
         Me.ucrReceiverSubset.ucrSelector = Nothing
@@ -79,32 +80,35 @@ Partial Class dlgSubset
         'lblSelectedVariables
         '
         Me.lblSelectedVariables.Location = New System.Drawing.Point(0, 0)
+        Me.lblSelectedVariables.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSelectedVariables.Name = "lblSelectedVariables"
-        Me.lblSelectedVariables.Size = New System.Drawing.Size(100, 23)
+        Me.lblSelectedVariables.Size = New System.Drawing.Size(133, 28)
         Me.lblSelectedVariables.TabIndex = 2
         Me.lblSelectedVariables.Tag = "Selected_variables"
         '
         'lblDrop
         '
         Me.lblDrop.Location = New System.Drawing.Point(0, 0)
+        Me.lblDrop.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDrop.Name = "lblDrop"
-        Me.lblDrop.Size = New System.Drawing.Size(100, 23)
+        Me.lblDrop.Size = New System.Drawing.Size(133, 28)
         Me.lblDrop.TabIndex = 1
         Me.lblDrop.Tag = "Drop"
         '
         'cboDrop
         '
         Me.cboDrop.FormattingEnabled = True
-        Me.cboDrop.Location = New System.Drawing.Point(294, 214)
+        Me.cboDrop.Location = New System.Drawing.Point(392, 263)
+        Me.cboDrop.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboDrop.Name = "cboDrop"
-        Me.cboDrop.Size = New System.Drawing.Size(121, 21)
+        Me.cboDrop.Size = New System.Drawing.Size(160, 24)
         Me.cboDrop.TabIndex = 0
         '
         'dlgSubset
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(462, 334)
+        Me.ClientSize = New System.Drawing.Size(616, 412)
         Me.Controls.Add(Me.cboDrop)
         Me.Controls.Add(Me.lblDrop)
         Me.Controls.Add(Me.lblSelectedVariables)
@@ -112,6 +116,7 @@ Partial Class dlgSubset
         Me.Controls.Add(Me.ucrDataFrameAddRemove)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgSubset"

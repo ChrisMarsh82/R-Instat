@@ -49,39 +49,46 @@ Partial Class dlgFormat
         'lstRequiredFormat
         '
         Me.lstRequiredFormat.FormattingEnabled = True
+        Me.lstRequiredFormat.ItemHeight = 16
         Me.lstRequiredFormat.Items.AddRange(New Object() {"""0"".000E+", "0.0", "0.00", "0.000", "0.0000", "1 sig fig", "2 sig figs", "3 sig figs", "4 sig figs", "Day of year", "Fixed", "General Date", "General Number", "Long Date", "Medium Date", "Percentage", "Scientific", "Short Date", "Standard", "True/False", "Yes/No"})
-        Me.lstRequiredFormat.Location = New System.Drawing.Point(334, 22)
+        Me.lstRequiredFormat.Location = New System.Drawing.Point(445, 27)
+        Me.lstRequiredFormat.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.lstRequiredFormat.Name = "lstRequiredFormat"
         Me.lstRequiredFormat.ScrollAlwaysVisible = True
-        Me.lstRequiredFormat.Size = New System.Drawing.Size(97, 121)
+        Me.lstRequiredFormat.Size = New System.Drawing.Size(128, 148)
         Me.lstRequiredFormat.Sorted = True
         Me.lstRequiredFormat.TabIndex = 1
         '
         'lblRequiredFormat
         '
         Me.lblRequiredFormat.AutoSize = True
-        Me.lblRequiredFormat.Location = New System.Drawing.Point(329, 4)
+        Me.lblRequiredFormat.Location = New System.Drawing.Point(439, 5)
+        Me.lblRequiredFormat.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblRequiredFormat.Name = "lblRequiredFormat"
-        Me.lblRequiredFormat.Size = New System.Drawing.Size(85, 13)
+        Me.lblRequiredFormat.Size = New System.Drawing.Size(109, 16)
         Me.lblRequiredFormat.TabIndex = 2
         Me.lblRequiredFormat.Tag = "Required_Format"
         Me.lblRequiredFormat.Text = "Required Format"
         '
         'ucrMultiple
         '
-        Me.ucrMultiple.Location = New System.Drawing.Point(211, 19)
+        Me.ucrMultiple.frmParent = Me
+        Me.ucrMultiple.Location = New System.Drawing.Point(281, 23)
         Me.ucrMultiple.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrMultiple.Name = "ucrMultiple"
         Me.ucrMultiple.Selector = Nothing
-        Me.ucrMultiple.Size = New System.Drawing.Size(121, 131)
+        Me.ucrMultiple.Size = New System.Drawing.Size(161, 161)
+        Me.ucrMultiple.strNcFilePath = ""
         Me.ucrMultiple.TabIndex = 3
+        Me.ucrMultiple.ucrSelector = Nothing
         '
         'lblSelectedColumns
         '
         Me.lblSelectedColumns.AutoSize = True
-        Me.lblSelectedColumns.Location = New System.Drawing.Point(205, 3)
+        Me.lblSelectedColumns.Location = New System.Drawing.Point(273, 4)
+        Me.lblSelectedColumns.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSelectedColumns.Name = "lblSelectedColumns"
-        Me.lblSelectedColumns.Size = New System.Drawing.Size(124, 13)
+        Me.lblSelectedColumns.Size = New System.Drawing.Size(155, 16)
         Me.lblSelectedColumns.TabIndex = 4
         Me.lblSelectedColumns.Tag = "Selected_Columns"
         Me.lblSelectedColumns.Text = "Columns to be formatted "
@@ -93,21 +100,22 @@ Partial Class dlgFormat
         Me.ucrAddRemove.Location = New System.Drawing.Point(0, 0)
         Me.ucrAddRemove.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrAddRemove.Name = "ucrAddRemove"
-        Me.ucrAddRemove.Size = New System.Drawing.Size(205, 214)
+        Me.ucrAddRemove.Size = New System.Drawing.Size(273, 264)
         Me.ucrAddRemove.TabIndex = 5
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(13, 156)
+        Me.ucrBase.Location = New System.Drawing.Point(17, 192)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 53)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 65)
         Me.ucrBase.TabIndex = 6
         '
         'dlgFormat
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(435, 214)
+        Me.ClientSize = New System.Drawing.Size(580, 264)
         Me.Controls.Add(Me.ucrBase)
         Me.Controls.Add(Me.ucrAddRemove)
         Me.Controls.Add(Me.lblSelectedColumns)
@@ -115,6 +123,7 @@ Partial Class dlgFormat
         Me.Controls.Add(Me.lblRequiredFormat)
         Me.Controls.Add(Me.lstRequiredFormat)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgFormat"

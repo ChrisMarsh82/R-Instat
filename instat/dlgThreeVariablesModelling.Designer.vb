@@ -64,9 +64,10 @@ Partial Class dlgThreeVariableModelling
         '
         Me.lblFirstExplanatoryVariable.AutoSize = True
         Me.lblFirstExplanatoryVariable.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblFirstExplanatoryVariable.Location = New System.Drawing.Point(252, 73)
+        Me.lblFirstExplanatoryVariable.Location = New System.Drawing.Point(336, 90)
+        Me.lblFirstExplanatoryVariable.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblFirstExplanatoryVariable.Name = "lblFirstExplanatoryVariable"
-        Me.lblFirstExplanatoryVariable.Size = New System.Drawing.Size(125, 13)
+        Me.lblFirstExplanatoryVariable.Size = New System.Drawing.Size(161, 16)
         Me.lblFirstExplanatoryVariable.TabIndex = 4
         Me.lblFirstExplanatoryVariable.Tag = "First_Explanatory_Variable"
         Me.lblFirstExplanatoryVariable.Text = "First Explanatory Variable"
@@ -75,9 +76,10 @@ Partial Class dlgThreeVariableModelling
         '
         Me.lblResponse.AutoSize = True
         Me.lblResponse.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblResponse.Location = New System.Drawing.Point(252, 25)
+        Me.lblResponse.Location = New System.Drawing.Point(336, 31)
+        Me.lblResponse.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblResponse.Name = "lblResponse"
-        Me.lblResponse.Size = New System.Drawing.Size(99, 13)
+        Me.lblResponse.Size = New System.Drawing.Size(128, 16)
         Me.lblResponse.TabIndex = 1
         Me.lblResponse.Tag = "Response_Variable"
         Me.lblResponse.Text = "Response Variable:"
@@ -86,18 +88,20 @@ Partial Class dlgThreeVariableModelling
         '
         Me.lblSecondExplanatoryVariable.AutoSize = True
         Me.lblSecondExplanatoryVariable.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblSecondExplanatoryVariable.Location = New System.Drawing.Point(252, 156)
+        Me.lblSecondExplanatoryVariable.Location = New System.Drawing.Point(336, 192)
+        Me.lblSecondExplanatoryVariable.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSecondExplanatoryVariable.Name = "lblSecondExplanatoryVariable"
-        Me.lblSecondExplanatoryVariable.Size = New System.Drawing.Size(143, 13)
+        Me.lblSecondExplanatoryVariable.Size = New System.Drawing.Size(183, 16)
         Me.lblSecondExplanatoryVariable.TabIndex = 8
         Me.lblSecondExplanatoryVariable.Tag = "Second_Explanatory_Variable"
         Me.lblSecondExplanatoryVariable.Text = "Second Explanatory Variable"
         '
         'cmdDisplayOptions
         '
-        Me.cmdDisplayOptions.Location = New System.Drawing.Point(357, 220)
+        Me.cmdDisplayOptions.Location = New System.Drawing.Point(476, 271)
+        Me.cmdDisplayOptions.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdDisplayOptions.Name = "cmdDisplayOptions"
-        Me.cmdDisplayOptions.Size = New System.Drawing.Size(122, 23)
+        Me.cmdDisplayOptions.Size = New System.Drawing.Size(163, 28)
         Me.cmdDisplayOptions.TabIndex = 16
         Me.cmdDisplayOptions.Tag = "Display_Options"
         Me.cmdDisplayOptions.Text = "Display Options..."
@@ -106,18 +110,20 @@ Partial Class dlgThreeVariableModelling
         'lblModelPreview
         '
         Me.lblModelPreview.AutoSize = True
-        Me.lblModelPreview.Location = New System.Drawing.Point(7, 271)
+        Me.lblModelPreview.Location = New System.Drawing.Point(9, 334)
+        Me.lblModelPreview.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblModelPreview.Name = "lblModelPreview"
-        Me.lblModelPreview.Size = New System.Drawing.Size(80, 13)
+        Me.lblModelPreview.Size = New System.Drawing.Size(100, 16)
         Me.lblModelPreview.TabIndex = 10
         Me.lblModelPreview.Tag = "Model_Preview"
         Me.lblModelPreview.Text = "Model Preview:"
         '
         'cmdModelOptions
         '
-        Me.cmdModelOptions.Location = New System.Drawing.Point(229, 220)
+        Me.cmdModelOptions.Location = New System.Drawing.Point(305, 271)
+        Me.cmdModelOptions.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdModelOptions.Name = "cmdModelOptions"
-        Me.cmdModelOptions.Size = New System.Drawing.Size(122, 23)
+        Me.cmdModelOptions.Size = New System.Drawing.Size(163, 28)
         Me.cmdModelOptions.TabIndex = 13
         Me.cmdModelOptions.Tag = "Model_Options"
         Me.cmdModelOptions.Text = "Model Options..."
@@ -126,55 +132,59 @@ Partial Class dlgThreeVariableModelling
         'lblModelOperator
         '
         Me.lblModelOperator.AutoSize = True
-        Me.lblModelOperator.Location = New System.Drawing.Point(252, 125)
+        Me.lblModelOperator.Location = New System.Drawing.Point(336, 154)
+        Me.lblModelOperator.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblModelOperator.Name = "lblModelOperator"
-        Me.lblModelOperator.Size = New System.Drawing.Size(83, 13)
+        Me.lblModelOperator.Size = New System.Drawing.Size(105, 16)
         Me.lblModelOperator.TabIndex = 21
         Me.lblModelOperator.Text = "Model Operator:"
         '
         'cmdFirstExplanatoryFunction
         '
-        Me.cmdFirstExplanatoryFunction.Location = New System.Drawing.Point(383, 86)
+        Me.cmdFirstExplanatoryFunction.Location = New System.Drawing.Point(511, 106)
+        Me.cmdFirstExplanatoryFunction.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdFirstExplanatoryFunction.Name = "cmdFirstExplanatoryFunction"
-        Me.cmdFirstExplanatoryFunction.Size = New System.Drawing.Size(67, 20)
+        Me.cmdFirstExplanatoryFunction.Size = New System.Drawing.Size(89, 25)
         Me.cmdFirstExplanatoryFunction.TabIndex = 31
         Me.cmdFirstExplanatoryFunction.Text = "Function..."
         Me.cmdFirstExplanatoryFunction.UseVisualStyleBackColor = True
         '
         'cmdSecondExplanatoryFunction
         '
-        Me.cmdSecondExplanatoryFunction.Location = New System.Drawing.Point(382, 169)
+        Me.cmdSecondExplanatoryFunction.Location = New System.Drawing.Point(509, 208)
+        Me.cmdSecondExplanatoryFunction.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdSecondExplanatoryFunction.Name = "cmdSecondExplanatoryFunction"
-        Me.cmdSecondExplanatoryFunction.Size = New System.Drawing.Size(67, 20)
+        Me.cmdSecondExplanatoryFunction.Size = New System.Drawing.Size(89, 25)
         Me.cmdSecondExplanatoryFunction.TabIndex = 32
         Me.cmdSecondExplanatoryFunction.Text = "Function..."
         Me.cmdSecondExplanatoryFunction.UseVisualStyleBackColor = True
         '
         'cmdResponseFunction
         '
-        Me.cmdResponseFunction.Location = New System.Drawing.Point(382, 38)
+        Me.cmdResponseFunction.Location = New System.Drawing.Point(509, 47)
+        Me.cmdResponseFunction.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdResponseFunction.Name = "cmdResponseFunction"
-        Me.cmdResponseFunction.Size = New System.Drawing.Size(67, 20)
+        Me.cmdResponseFunction.Size = New System.Drawing.Size(89, 25)
         Me.cmdResponseFunction.TabIndex = 33
         Me.cmdResponseFunction.Text = "Function..."
         Me.cmdResponseFunction.UseVisualStyleBackColor = True
         '
         'ucrSaveModel
         '
-        Me.ucrSaveModel.Location = New System.Drawing.Point(10, 298)
-        Me.ucrSaveModel.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ucrSaveModel.Location = New System.Drawing.Point(13, 367)
+        Me.ucrSaveModel.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.ucrSaveModel.Name = "ucrSaveModel"
-        Me.ucrSaveModel.Size = New System.Drawing.Size(313, 24)
+        Me.ucrSaveModel.Size = New System.Drawing.Size(417, 30)
         Me.ucrSaveModel.TabIndex = 30
         '
         'ucrReceiverSecondExplanatory
         '
         Me.ucrReceiverSecondExplanatory.frmParent = Me
-        Me.ucrReceiverSecondExplanatory.Location = New System.Drawing.Point(254, 169)
+        Me.ucrReceiverSecondExplanatory.Location = New System.Drawing.Point(339, 208)
         Me.ucrReceiverSecondExplanatory.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverSecondExplanatory.Name = "ucrReceiverSecondExplanatory"
         Me.ucrReceiverSecondExplanatory.Selector = Nothing
-        Me.ucrReceiverSecondExplanatory.Size = New System.Drawing.Size(121, 20)
+        Me.ucrReceiverSecondExplanatory.Size = New System.Drawing.Size(161, 25)
         Me.ucrReceiverSecondExplanatory.strNcFilePath = ""
         Me.ucrReceiverSecondExplanatory.TabIndex = 28
         Me.ucrReceiverSecondExplanatory.ucrSelector = Nothing
@@ -182,11 +192,11 @@ Partial Class dlgThreeVariableModelling
         'ucrReceiverFirstExplanatory
         '
         Me.ucrReceiverFirstExplanatory.frmParent = Me
-        Me.ucrReceiverFirstExplanatory.Location = New System.Drawing.Point(255, 86)
+        Me.ucrReceiverFirstExplanatory.Location = New System.Drawing.Point(340, 106)
         Me.ucrReceiverFirstExplanatory.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverFirstExplanatory.Name = "ucrReceiverFirstExplanatory"
         Me.ucrReceiverFirstExplanatory.Selector = Nothing
-        Me.ucrReceiverFirstExplanatory.Size = New System.Drawing.Size(121, 20)
+        Me.ucrReceiverFirstExplanatory.Size = New System.Drawing.Size(161, 25)
         Me.ucrReceiverFirstExplanatory.strNcFilePath = ""
         Me.ucrReceiverFirstExplanatory.TabIndex = 26
         Me.ucrReceiverFirstExplanatory.ucrSelector = Nothing
@@ -194,19 +204,20 @@ Partial Class dlgThreeVariableModelling
         'ucrChkConvertToNumeric
         '
         Me.ucrChkConvertToNumeric.Checked = False
-        Me.ucrChkConvertToNumeric.Location = New System.Drawing.Point(384, 38)
+        Me.ucrChkConvertToNumeric.Location = New System.Drawing.Point(512, 47)
+        Me.ucrChkConvertToNumeric.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkConvertToNumeric.Name = "ucrChkConvertToNumeric"
-        Me.ucrChkConvertToNumeric.Size = New System.Drawing.Size(155, 20)
+        Me.ucrChkConvertToNumeric.Size = New System.Drawing.Size(207, 25)
         Me.ucrChkConvertToNumeric.TabIndex = 25
         '
         'ucrReceiverResponse
         '
         Me.ucrReceiverResponse.frmParent = Me
-        Me.ucrReceiverResponse.Location = New System.Drawing.Point(255, 38)
+        Me.ucrReceiverResponse.Location = New System.Drawing.Point(340, 47)
         Me.ucrReceiverResponse.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverResponse.Name = "ucrReceiverResponse"
         Me.ucrReceiverResponse.Selector = Nothing
-        Me.ucrReceiverResponse.Size = New System.Drawing.Size(121, 20)
+        Me.ucrReceiverResponse.Size = New System.Drawing.Size(161, 25)
         Me.ucrReceiverResponse.strNcFilePath = ""
         Me.ucrReceiverResponse.TabIndex = 23
         Me.ucrReceiverResponse.ucrSelector = Nothing
@@ -216,9 +227,10 @@ Partial Class dlgThreeVariableModelling
         Me.ucrInputModelOperator.AddQuotesIfUnrecognised = True
         Me.ucrInputModelOperator.GetSetSelectedIndex = -1
         Me.ucrInputModelOperator.IsReadOnly = False
-        Me.ucrInputModelOperator.Location = New System.Drawing.Point(384, 125)
+        Me.ucrInputModelOperator.Location = New System.Drawing.Point(512, 154)
+        Me.ucrInputModelOperator.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputModelOperator.Name = "ucrInputModelOperator"
-        Me.ucrInputModelOperator.Size = New System.Drawing.Size(39, 21)
+        Me.ucrInputModelOperator.Size = New System.Drawing.Size(52, 26)
         Me.ucrInputModelOperator.TabIndex = 20
         '
         'ucrModelPreview
@@ -226,16 +238,18 @@ Partial Class dlgThreeVariableModelling
         Me.ucrModelPreview.AddQuotesIfUnrecognised = True
         Me.ucrModelPreview.IsMultiline = False
         Me.ucrModelPreview.IsReadOnly = False
-        Me.ucrModelPreview.Location = New System.Drawing.Point(158, 263)
+        Me.ucrModelPreview.Location = New System.Drawing.Point(211, 324)
+        Me.ucrModelPreview.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrModelPreview.Name = "ucrModelPreview"
-        Me.ucrModelPreview.Size = New System.Drawing.Size(321, 21)
+        Me.ucrModelPreview.Size = New System.Drawing.Size(428, 26)
         Me.ucrModelPreview.TabIndex = 11
         '
         'ucrDistributionChoice
         '
-        Me.ucrDistributionChoice.Location = New System.Drawing.Point(10, 218)
+        Me.ucrDistributionChoice.Location = New System.Drawing.Point(13, 268)
+        Me.ucrDistributionChoice.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrDistributionChoice.Name = "ucrDistributionChoice"
-        Me.ucrDistributionChoice.Size = New System.Drawing.Size(225, 43)
+        Me.ucrDistributionChoice.Size = New System.Drawing.Size(300, 53)
         Me.ucrDistributionChoice.TabIndex = 12
         '
         'ucrSelectorThreeVariableModelling
@@ -243,24 +257,25 @@ Partial Class dlgThreeVariableModelling
         Me.ucrSelectorThreeVariableModelling.bDropUnusedFilterLevels = False
         Me.ucrSelectorThreeVariableModelling.bShowHiddenColumns = False
         Me.ucrSelectorThreeVariableModelling.bUseCurrentFilter = True
-        Me.ucrSelectorThreeVariableModelling.Location = New System.Drawing.Point(10, 9)
+        Me.ucrSelectorThreeVariableModelling.Location = New System.Drawing.Point(13, 11)
         Me.ucrSelectorThreeVariableModelling.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorThreeVariableModelling.Name = "ucrSelectorThreeVariableModelling"
-        Me.ucrSelectorThreeVariableModelling.Size = New System.Drawing.Size(214, 185)
+        Me.ucrSelectorThreeVariableModelling.Size = New System.Drawing.Size(285, 228)
         Me.ucrSelectorThreeVariableModelling.TabIndex = 0
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(10, 328)
+        Me.ucrBase.Location = New System.Drawing.Point(13, 404)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(404, 54)
+        Me.ucrBase.Size = New System.Drawing.Size(539, 66)
         Me.ucrBase.TabIndex = 17
         '
         'dlgThreeVariableModelling
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(543, 386)
+        Me.ClientSize = New System.Drawing.Size(724, 476)
         Me.Controls.Add(Me.cmdResponseFunction)
         Me.Controls.Add(Me.cmdSecondExplanatoryFunction)
         Me.Controls.Add(Me.cmdFirstExplanatoryFunction)
@@ -282,6 +297,7 @@ Partial Class dlgThreeVariableModelling
         Me.Controls.Add(Me.ucrSelectorThreeVariableModelling)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgThreeVariableModelling"

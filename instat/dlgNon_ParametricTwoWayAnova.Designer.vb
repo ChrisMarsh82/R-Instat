@@ -51,9 +51,10 @@ Partial Class dlgNon_ParametricTwoWayAnova
         'lblDataColumn
         '
         Me.lblDataColumn.AutoSize = True
-        Me.lblDataColumn.Location = New System.Drawing.Point(240, 38)
+        Me.lblDataColumn.Location = New System.Drawing.Point(320, 47)
+        Me.lblDataColumn.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDataColumn.Name = "lblDataColumn"
-        Me.lblDataColumn.Size = New System.Drawing.Size(71, 13)
+        Me.lblDataColumn.Size = New System.Drawing.Size(88, 16)
         Me.lblDataColumn.TabIndex = 5
         Me.lblDataColumn.Tag = "Data_Column:"
         Me.lblDataColumn.Text = "Data Column:"
@@ -61,9 +62,10 @@ Partial Class dlgNon_ParametricTwoWayAnova
         'lblFirstFactor
         '
         Me.lblFirstFactor.AutoSize = True
-        Me.lblFirstFactor.Location = New System.Drawing.Point(241, 91)
+        Me.lblFirstFactor.Location = New System.Drawing.Point(321, 112)
+        Me.lblFirstFactor.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblFirstFactor.Name = "lblFirstFactor"
-        Me.lblFirstFactor.Size = New System.Drawing.Size(62, 13)
+        Me.lblFirstFactor.Size = New System.Drawing.Size(77, 16)
         Me.lblFirstFactor.TabIndex = 6
         Me.lblFirstFactor.Tag = "First_Factor:"
         Me.lblFirstFactor.Text = "First Factor:"
@@ -71,62 +73,74 @@ Partial Class dlgNon_ParametricTwoWayAnova
         'lblSecondFactor
         '
         Me.lblSecondFactor.AutoSize = True
-        Me.lblSecondFactor.Location = New System.Drawing.Point(240, 144)
+        Me.lblSecondFactor.Location = New System.Drawing.Point(320, 177)
+        Me.lblSecondFactor.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSecondFactor.Name = "lblSecondFactor"
-        Me.lblSecondFactor.Size = New System.Drawing.Size(80, 13)
+        Me.lblSecondFactor.Size = New System.Drawing.Size(99, 16)
         Me.lblSecondFactor.TabIndex = 7
         Me.lblSecondFactor.Tag = "Second_Factor:"
         Me.lblSecondFactor.Text = "Second Factor:"
         '
         'ucrSelectorDataFrameAndVars
         '
+        Me.ucrSelectorDataFrameAndVars.bDropUnusedFilterLevels = False
         Me.ucrSelectorDataFrameAndVars.bShowHiddenColumns = False
         Me.ucrSelectorDataFrameAndVars.bUseCurrentFilter = True
-        Me.ucrSelectorDataFrameAndVars.Location = New System.Drawing.Point(10, 10)
+        Me.ucrSelectorDataFrameAndVars.Location = New System.Drawing.Point(13, 12)
         Me.ucrSelectorDataFrameAndVars.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorDataFrameAndVars.Name = "ucrSelectorDataFrameAndVars"
-        Me.ucrSelectorDataFrameAndVars.Size = New System.Drawing.Size(210, 180)
+        Me.ucrSelectorDataFrameAndVars.Size = New System.Drawing.Size(280, 222)
         Me.ucrSelectorDataFrameAndVars.TabIndex = 8
         '
         'ucrReceiverSecondFactor
         '
-        Me.ucrReceiverSecondFactor.Location = New System.Drawing.Point(240, 159)
+        Me.ucrReceiverSecondFactor.frmParent = Me
+        Me.ucrReceiverSecondFactor.Location = New System.Drawing.Point(320, 196)
         Me.ucrReceiverSecondFactor.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverSecondFactor.Name = "ucrReceiverSecondFactor"
         Me.ucrReceiverSecondFactor.Selector = Nothing
-        Me.ucrReceiverSecondFactor.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverSecondFactor.Size = New System.Drawing.Size(160, 25)
+        Me.ucrReceiverSecondFactor.strNcFilePath = ""
         Me.ucrReceiverSecondFactor.TabIndex = 4
+        Me.ucrReceiverSecondFactor.ucrSelector = Nothing
         '
         'ucrReceiverFirstFactor
         '
-        Me.ucrReceiverFirstFactor.Location = New System.Drawing.Point(240, 106)
+        Me.ucrReceiverFirstFactor.frmParent = Me
+        Me.ucrReceiverFirstFactor.Location = New System.Drawing.Point(320, 130)
         Me.ucrReceiverFirstFactor.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverFirstFactor.Name = "ucrReceiverFirstFactor"
         Me.ucrReceiverFirstFactor.Selector = Nothing
-        Me.ucrReceiverFirstFactor.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverFirstFactor.Size = New System.Drawing.Size(160, 25)
+        Me.ucrReceiverFirstFactor.strNcFilePath = ""
         Me.ucrReceiverFirstFactor.TabIndex = 3
+        Me.ucrReceiverFirstFactor.ucrSelector = Nothing
         '
         'ucrReceiverDataColumn
         '
-        Me.ucrReceiverDataColumn.Location = New System.Drawing.Point(240, 53)
+        Me.ucrReceiverDataColumn.frmParent = Me
+        Me.ucrReceiverDataColumn.Location = New System.Drawing.Point(320, 65)
         Me.ucrReceiverDataColumn.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverDataColumn.Name = "ucrReceiverDataColumn"
         Me.ucrReceiverDataColumn.Selector = Nothing
-        Me.ucrReceiverDataColumn.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverDataColumn.Size = New System.Drawing.Size(160, 25)
+        Me.ucrReceiverDataColumn.strNcFilePath = ""
         Me.ucrReceiverDataColumn.TabIndex = 2
+        Me.ucrReceiverDataColumn.ucrSelector = Nothing
         '
         'ucrBaseNPTwoWayANOVA
         '
-        Me.ucrBaseNPTwoWayANOVA.Location = New System.Drawing.Point(10, 208)
+        Me.ucrBaseNPTwoWayANOVA.Location = New System.Drawing.Point(13, 256)
+        Me.ucrBaseNPTwoWayANOVA.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBaseNPTwoWayANOVA.Name = "ucrBaseNPTwoWayANOVA"
-        Me.ucrBaseNPTwoWayANOVA.Size = New System.Drawing.Size(410, 52)
+        Me.ucrBaseNPTwoWayANOVA.Size = New System.Drawing.Size(547, 64)
         Me.ucrBaseNPTwoWayANOVA.TabIndex = 0
         '
         'dlgNon_ParametricTwoWayAnova
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(419, 262)
+        Me.ClientSize = New System.Drawing.Size(560, 322)
         Me.Controls.Add(Me.ucrSelectorDataFrameAndVars)
         Me.Controls.Add(Me.lblSecondFactor)
         Me.Controls.Add(Me.lblFirstFactor)
@@ -136,6 +150,7 @@ Partial Class dlgNon_ParametricTwoWayAnova
         Me.Controls.Add(Me.ucrReceiverDataColumn)
         Me.Controls.Add(Me.ucrBaseNPTwoWayANOVA)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgNon_ParametricTwoWayAnova"

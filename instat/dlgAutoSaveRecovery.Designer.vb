@@ -67,8 +67,9 @@ Partial Class dlgAutoSaveRecovery
         Me.lblAutoRecoverMessage.Dock = System.Windows.Forms.DockStyle.Top
         Me.lblAutoRecoverMessage.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAutoRecoverMessage.Location = New System.Drawing.Point(0, 0)
+        Me.lblAutoRecoverMessage.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblAutoRecoverMessage.Name = "lblAutoRecoverMessage"
-        Me.lblAutoRecoverMessage.Size = New System.Drawing.Size(762, 91)
+        Me.lblAutoRecoverMessage.Size = New System.Drawing.Size(1016, 112)
         Me.lblAutoRecoverMessage.TabIndex = 0
         Me.lblAutoRecoverMessage.Text = "We have detected that R-Instat may have closed unexpectedly." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Below are your auto" &
     " recovery options."
@@ -76,27 +77,30 @@ Partial Class dlgAutoSaveRecovery
         '
         'cmdRunLog
         '
-        Me.cmdRunLog.Location = New System.Drawing.Point(39, 24)
+        Me.cmdRunLog.Location = New System.Drawing.Point(52, 30)
+        Me.cmdRunLog.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdRunLog.Name = "cmdRunLog"
-        Me.cmdRunLog.Size = New System.Drawing.Size(131, 29)
+        Me.cmdRunLog.Size = New System.Drawing.Size(175, 36)
         Me.cmdRunLog.TabIndex = 1
         Me.cmdRunLog.Text = "Run Backup Log"
         Me.cmdRunLog.UseVisualStyleBackColor = True
         '
         'cmdNewSession
         '
-        Me.cmdNewSession.Location = New System.Drawing.Point(341, 24)
+        Me.cmdNewSession.Location = New System.Drawing.Point(455, 30)
+        Me.cmdNewSession.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdNewSession.Name = "cmdNewSession"
-        Me.cmdNewSession.Size = New System.Drawing.Size(131, 29)
+        Me.cmdNewSession.Size = New System.Drawing.Size(175, 36)
         Me.cmdNewSession.TabIndex = 2
         Me.cmdNewSession.Text = "Start New Session"
         Me.cmdNewSession.UseVisualStyleBackColor = True
         '
         'cmdLoadData
         '
-        Me.cmdLoadData.Location = New System.Drawing.Point(190, 24)
+        Me.cmdLoadData.Location = New System.Drawing.Point(253, 30)
+        Me.cmdLoadData.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdLoadData.Name = "cmdLoadData"
-        Me.cmdLoadData.Size = New System.Drawing.Size(131, 29)
+        Me.cmdLoadData.Size = New System.Drawing.Size(175, 36)
         Me.cmdLoadData.TabIndex = 3
         Me.cmdLoadData.Text = "Load Backup Data"
         Me.cmdLoadData.UseVisualStyleBackColor = True
@@ -104,26 +108,29 @@ Partial Class dlgAutoSaveRecovery
         'lblBackupLogDetected
         '
         Me.lblBackupLogDetected.AutoSize = True
-        Me.lblBackupLogDetected.Location = New System.Drawing.Point(11, 76)
+        Me.lblBackupLogDetected.Location = New System.Drawing.Point(15, 94)
+        Me.lblBackupLogDetected.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblBackupLogDetected.Name = "lblBackupLogDetected"
-        Me.lblBackupLogDetected.Size = New System.Drawing.Size(131, 13)
+        Me.lblBackupLogDetected.Size = New System.Drawing.Size(163, 16)
         Me.lblBackupLogDetected.TabIndex = 4
         Me.lblBackupLogDetected.Text = "Backup Log File Detected"
         '
         'cmdSaveLog
         '
-        Me.cmdSaveLog.Location = New System.Drawing.Point(203, 68)
+        Me.cmdSaveLog.Location = New System.Drawing.Point(271, 84)
+        Me.cmdSaveLog.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdSaveLog.Name = "cmdSaveLog"
-        Me.cmdSaveLog.Size = New System.Drawing.Size(176, 29)
+        Me.cmdSaveLog.Size = New System.Drawing.Size(235, 36)
         Me.cmdSaveLog.TabIndex = 5
         Me.cmdSaveLog.Text = "Save Backup Log..."
         Me.cmdSaveLog.UseVisualStyleBackColor = True
         '
         'cmdSaveInternalLog
         '
-        Me.cmdSaveInternalLog.Location = New System.Drawing.Point(203, 115)
+        Me.cmdSaveInternalLog.Location = New System.Drawing.Point(271, 142)
+        Me.cmdSaveInternalLog.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdSaveInternalLog.Name = "cmdSaveInternalLog"
-        Me.cmdSaveInternalLog.Size = New System.Drawing.Size(176, 29)
+        Me.cmdSaveInternalLog.Size = New System.Drawing.Size(235, 36)
         Me.cmdSaveInternalLog.TabIndex = 7
         Me.cmdSaveInternalLog.Text = "Save Backup Internal Log..."
         Me.cmdSaveInternalLog.UseVisualStyleBackColor = True
@@ -131,17 +138,19 @@ Partial Class dlgAutoSaveRecovery
         'lblBackupInternalLogDetected
         '
         Me.lblBackupInternalLogDetected.AutoSize = True
-        Me.lblBackupInternalLogDetected.Location = New System.Drawing.Point(11, 123)
+        Me.lblBackupInternalLogDetected.Location = New System.Drawing.Point(15, 151)
+        Me.lblBackupInternalLogDetected.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblBackupInternalLogDetected.Name = "lblBackupInternalLogDetected"
-        Me.lblBackupInternalLogDetected.Size = New System.Drawing.Size(169, 13)
+        Me.lblBackupInternalLogDetected.Size = New System.Drawing.Size(209, 16)
         Me.lblBackupInternalLogDetected.TabIndex = 6
         Me.lblBackupInternalLogDetected.Text = "Backup Internal Log File Detected"
         '
         'cmdSaveData
         '
-        Me.cmdSaveData.Location = New System.Drawing.Point(203, 21)
+        Me.cmdSaveData.Location = New System.Drawing.Point(271, 26)
+        Me.cmdSaveData.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdSaveData.Name = "cmdSaveData"
-        Me.cmdSaveData.Size = New System.Drawing.Size(176, 29)
+        Me.cmdSaveData.Size = New System.Drawing.Size(235, 36)
         Me.cmdSaveData.TabIndex = 9
         Me.cmdSaveData.Text = "Save Backup Data..."
         Me.cmdSaveData.UseVisualStyleBackColor = True
@@ -149,18 +158,20 @@ Partial Class dlgAutoSaveRecovery
         'lblBackupDataDetected
         '
         Me.lblBackupDataDetected.AutoSize = True
-        Me.lblBackupDataDetected.Location = New System.Drawing.Point(11, 29)
+        Me.lblBackupDataDetected.Location = New System.Drawing.Point(15, 36)
+        Me.lblBackupDataDetected.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblBackupDataDetected.Name = "lblBackupDataDetected"
-        Me.lblBackupDataDetected.Size = New System.Drawing.Size(136, 13)
+        Me.lblBackupDataDetected.Size = New System.Drawing.Size(169, 16)
         Me.lblBackupDataDetected.TabIndex = 8
         Me.lblBackupDataDetected.Text = "Backup Data File Detected"
         '
         'lblDataSavedTo
         '
         Me.lblDataSavedTo.AutoSize = True
-        Me.lblDataSavedTo.Location = New System.Drawing.Point(398, 29)
+        Me.lblDataSavedTo.Location = New System.Drawing.Point(531, 36)
+        Me.lblDataSavedTo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDataSavedTo.Name = "lblDataSavedTo"
-        Me.lblDataSavedTo.Size = New System.Drawing.Size(55, 13)
+        Me.lblDataSavedTo.Size = New System.Drawing.Size(67, 16)
         Me.lblDataSavedTo.TabIndex = 11
         Me.lblDataSavedTo.Text = "Saving at:"
         '
@@ -169,9 +180,10 @@ Partial Class dlgAutoSaveRecovery
         Me.ucrInputSavedPathData.AddQuotesIfUnrecognised = True
         Me.ucrInputSavedPathData.IsMultiline = False
         Me.ucrInputSavedPathData.IsReadOnly = False
-        Me.ucrInputSavedPathData.Location = New System.Drawing.Point(468, 27)
+        Me.ucrInputSavedPathData.Location = New System.Drawing.Point(624, 33)
+        Me.ucrInputSavedPathData.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputSavedPathData.Name = "ucrInputSavedPathData"
-        Me.ucrInputSavedPathData.Size = New System.Drawing.Size(258, 21)
+        Me.ucrInputSavedPathData.Size = New System.Drawing.Size(344, 26)
         Me.ucrInputSavedPathData.TabIndex = 12
         '
         'ucrInputSavedPathLog
@@ -179,17 +191,19 @@ Partial Class dlgAutoSaveRecovery
         Me.ucrInputSavedPathLog.AddQuotesIfUnrecognised = True
         Me.ucrInputSavedPathLog.IsMultiline = False
         Me.ucrInputSavedPathLog.IsReadOnly = False
-        Me.ucrInputSavedPathLog.Location = New System.Drawing.Point(468, 76)
+        Me.ucrInputSavedPathLog.Location = New System.Drawing.Point(624, 94)
+        Me.ucrInputSavedPathLog.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputSavedPathLog.Name = "ucrInputSavedPathLog"
-        Me.ucrInputSavedPathLog.Size = New System.Drawing.Size(258, 21)
+        Me.ucrInputSavedPathLog.Size = New System.Drawing.Size(344, 26)
         Me.ucrInputSavedPathLog.TabIndex = 14
         '
         'lblLogSavedTo
         '
         Me.lblLogSavedTo.AutoSize = True
-        Me.lblLogSavedTo.Location = New System.Drawing.Point(398, 78)
+        Me.lblLogSavedTo.Location = New System.Drawing.Point(531, 96)
+        Me.lblLogSavedTo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblLogSavedTo.Name = "lblLogSavedTo"
-        Me.lblLogSavedTo.Size = New System.Drawing.Size(55, 13)
+        Me.lblLogSavedTo.Size = New System.Drawing.Size(67, 16)
         Me.lblLogSavedTo.TabIndex = 13
         Me.lblLogSavedTo.Text = "Saving at:"
         '
@@ -198,33 +212,37 @@ Partial Class dlgAutoSaveRecovery
         Me.ucrInputSavedPathInternalLog.AddQuotesIfUnrecognised = True
         Me.ucrInputSavedPathInternalLog.IsMultiline = False
         Me.ucrInputSavedPathInternalLog.IsReadOnly = False
-        Me.ucrInputSavedPathInternalLog.Location = New System.Drawing.Point(468, 123)
+        Me.ucrInputSavedPathInternalLog.Location = New System.Drawing.Point(624, 151)
+        Me.ucrInputSavedPathInternalLog.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputSavedPathInternalLog.Name = "ucrInputSavedPathInternalLog"
-        Me.ucrInputSavedPathInternalLog.Size = New System.Drawing.Size(258, 21)
+        Me.ucrInputSavedPathInternalLog.Size = New System.Drawing.Size(344, 26)
         Me.ucrInputSavedPathInternalLog.TabIndex = 16
         '
         'lblInternalLogSavedTo
         '
         Me.lblInternalLogSavedTo.AutoSize = True
-        Me.lblInternalLogSavedTo.Location = New System.Drawing.Point(398, 125)
+        Me.lblInternalLogSavedTo.Location = New System.Drawing.Point(531, 154)
+        Me.lblInternalLogSavedTo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblInternalLogSavedTo.Name = "lblInternalLogSavedTo"
-        Me.lblInternalLogSavedTo.Size = New System.Drawing.Size(55, 13)
+        Me.lblInternalLogSavedTo.Size = New System.Drawing.Size(67, 16)
         Me.lblInternalLogSavedTo.TabIndex = 15
         Me.lblInternalLogSavedTo.Text = "Saving at:"
         '
         'ucrChkSendInternalLog
         '
         Me.ucrChkSendInternalLog.Checked = False
-        Me.ucrChkSendInternalLog.Location = New System.Drawing.Point(12, 254)
+        Me.ucrChkSendInternalLog.Location = New System.Drawing.Point(16, 313)
+        Me.ucrChkSendInternalLog.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkSendInternalLog.Name = "ucrChkSendInternalLog"
-        Me.ucrChkSendInternalLog.Size = New System.Drawing.Size(266, 20)
+        Me.ucrChkSendInternalLog.Size = New System.Drawing.Size(355, 25)
         Me.ucrChkSendInternalLog.TabIndex = 17
         '
         'cmdHelp
         '
-        Me.cmdHelp.Location = New System.Drawing.Point(660, 254)
+        Me.cmdHelp.Location = New System.Drawing.Point(880, 313)
+        Me.cmdHelp.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdHelp.Name = "cmdHelp"
-        Me.cmdHelp.Size = New System.Drawing.Size(78, 29)
+        Me.cmdHelp.Size = New System.Drawing.Size(104, 36)
         Me.cmdHelp.TabIndex = 18
         Me.cmdHelp.Text = "Help"
         Me.cmdHelp.UseVisualStyleBackColor = True
@@ -243,9 +261,11 @@ Partial Class dlgAutoSaveRecovery
         Me.grpSavingOptions.Controls.Add(Me.lblLogSavedTo)
         Me.grpSavingOptions.Controls.Add(Me.lblDataSavedTo)
         Me.grpSavingOptions.Controls.Add(Me.ucrInputSavedPathData)
-        Me.grpSavingOptions.Location = New System.Drawing.Point(12, 85)
+        Me.grpSavingOptions.Location = New System.Drawing.Point(16, 105)
+        Me.grpSavingOptions.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpSavingOptions.Name = "grpSavingOptions"
-        Me.grpSavingOptions.Size = New System.Drawing.Size(738, 154)
+        Me.grpSavingOptions.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpSavingOptions.Size = New System.Drawing.Size(984, 190)
         Me.grpSavingOptions.TabIndex = 19
         Me.grpSavingOptions.TabStop = False
         Me.grpSavingOptions.Text = "Saving Options"
@@ -255,24 +275,27 @@ Partial Class dlgAutoSaveRecovery
         Me.grpEndChoice.Controls.Add(Me.cmdRunLog)
         Me.grpEndChoice.Controls.Add(Me.cmdNewSession)
         Me.grpEndChoice.Controls.Add(Me.cmdLoadData)
-        Me.grpEndChoice.Location = New System.Drawing.Point(124, 294)
+        Me.grpEndChoice.Location = New System.Drawing.Point(165, 362)
+        Me.grpEndChoice.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpEndChoice.Name = "grpEndChoice"
-        Me.grpEndChoice.Size = New System.Drawing.Size(509, 66)
+        Me.grpEndChoice.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpEndChoice.Size = New System.Drawing.Size(679, 81)
         Me.grpEndChoice.TabIndex = 20
         Me.grpEndChoice.TabStop = False
         Me.grpEndChoice.Text = "Choose one of the following to proceed"
         '
         'dlgAutoSaveRecovery
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(762, 371)
+        Me.ClientSize = New System.Drawing.Size(1016, 458)
         Me.Controls.Add(Me.grpEndChoice)
         Me.Controls.Add(Me.grpSavingOptions)
         Me.Controls.Add(Me.cmdHelp)
         Me.Controls.Add(Me.ucrChkSendInternalLog)
         Me.Controls.Add(Me.lblAutoRecoverMessage)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgAutoSaveRecovery"

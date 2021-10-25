@@ -132,7 +132,7 @@ Partial Class sdgCombineGraphOptions
         Me.grdLayout.SheetTabContextMenuStrip = Nothing
         Me.grdLayout.SheetTabNewButtonVisible = True
         Me.grdLayout.SheetTabVisible = True
-        Me.grdLayout.SheetTabWidth = 60
+        Me.grdLayout.SheetTabWidth = 80
         Me.grdLayout.ShowScrollEndSpacing = True
         '
         'lblSelectedgrpahs

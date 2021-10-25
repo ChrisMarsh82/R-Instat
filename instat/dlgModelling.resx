@@ -127,13 +127,10 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblModel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 17</value>
-  </data>
-  <data name="lblModel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>13, 21</value>
   </data>
   <data name="lblModel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 13</value>
+    <value>49, 16</value>
   </data>
   <data name="lblModel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -157,13 +154,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdspline.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 72</value>
+    <value>187, 89</value>
   </data>
   <data name="cmdspline.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdspline.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdspline.TabIndex" type="System.Int32, mscorlib">
     <value>164</value>
@@ -187,13 +184,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdarima.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 14</value>
+    <value>187, 17</value>
   </data>
   <data name="cmdarima.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdarima.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdarima.TabIndex" type="System.Int32, mscorlib">
     <value>153</value>
@@ -217,13 +214,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdloglin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 72</value>
+    <value>5, 89</value>
   </data>
   <data name="cmdloglin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdloglin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdloglin.TabIndex" type="System.Int32, mscorlib">
     <value>151</value>
@@ -247,13 +244,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdloess.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 43</value>
+    <value>187, 53</value>
   </data>
   <data name="cmdloess.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdloess.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdloess.TabIndex" type="System.Int32, mscorlib">
     <value>150</value>
@@ -277,13 +274,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdlowess.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 72</value>
+    <value>96, 89</value>
   </data>
   <data name="cmdlowess.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdlowess.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdlowess.TabIndex" type="System.Int32, mscorlib">
     <value>148</value>
@@ -307,13 +304,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdglm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 43</value>
+    <value>5, 53</value>
   </data>
   <data name="cmdglm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdglm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdglm.TabIndex" type="System.Int32, mscorlib">
     <value>158</value>
@@ -337,13 +334,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 14</value>
+    <value>96, 17</value>
   </data>
   <data name="cmdar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdar.TabIndex" type="System.Int32, mscorlib">
     <value>126</value>
@@ -367,13 +364,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdaov.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 14</value>
+    <value>5, 17</value>
   </data>
   <data name="cmdaov.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdaov.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdaov.TabIndex" type="System.Int32, mscorlib">
     <value>124</value>
@@ -397,13 +394,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdlm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 43</value>
+    <value>96, 53</value>
   </data>
   <data name="cmdlm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdlm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdlm.TabIndex" type="System.Int32, mscorlib">
     <value>121</value>
@@ -423,83 +420,17 @@
   <data name="&gt;&gt;cmdlm.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;cmdprincomp.Name" xml:space="preserve">
-    <value>cmdprincomp</value>
-  </data>
-  <data name="&gt;&gt;cmdprincomp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmdprincomp.Parent" xml:space="preserve">
-    <value>grpStats</value>
-  </data>
-  <data name="&gt;&gt;cmdprincomp.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;cmdppr.Name" xml:space="preserve">
-    <value>cmdppr</value>
-  </data>
-  <data name="&gt;&gt;cmdppr.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmdppr.Parent" xml:space="preserve">
-    <value>grpStats</value>
-  </data>
-  <data name="&gt;&gt;cmdppr.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;cmdnls.Name" xml:space="preserve">
-    <value>cmdnls</value>
-  </data>
-  <data name="&gt;&gt;cmdnls.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmdnls.Parent" xml:space="preserve">
-    <value>grpStats</value>
-  </data>
-  <data name="&gt;&gt;cmdnls.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="grpStats.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 68</value>
-  </data>
-  <data name="grpStats.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="grpStats.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="grpStats.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 135</value>
-  </data>
-  <data name="grpStats.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="grpStats.Text" xml:space="preserve">
-    <value>stats</value>
-  </data>
-  <data name="&gt;&gt;grpStats.Name" xml:space="preserve">
-    <value>grpStats</value>
-  </data>
-  <data name="&gt;&gt;grpStats.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grpStats.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;grpStats.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
   <data name="cmdprincomp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="cmdprincomp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 101</value>
+    <value>187, 124</value>
   </data>
   <data name="cmdprincomp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdprincomp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdprincomp.TabIndex" type="System.Int32, mscorlib">
     <value>167</value>
@@ -523,13 +454,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdppr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 101</value>
+    <value>96, 124</value>
   </data>
   <data name="cmdppr.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdppr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdppr.TabIndex" type="System.Int32, mscorlib">
     <value>166</value>
@@ -553,13 +484,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdnls.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 101</value>
+    <value>5, 124</value>
   </data>
   <data name="cmdnls.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdnls.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdnls.TabIndex" type="System.Int32, mscorlib">
     <value>165</value>
@@ -579,6 +510,36 @@
   <data name="&gt;&gt;cmdnls.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="grpStats.Location" type="System.Drawing.Point, System.Drawing">
+    <value>389, 84</value>
+  </data>
+  <data name="grpStats.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="grpStats.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="grpStats.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 166</value>
+  </data>
+  <data name="grpStats.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="grpStats.Text" xml:space="preserve">
+    <value>stats</value>
+  </data>
+  <data name="&gt;&gt;grpStats.Name" xml:space="preserve">
+    <value>grpStats</value>
+  </data>
+  <data name="&gt;&gt;grpStats.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpStats.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpStats.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
   <data name="cmdMultiply.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
@@ -586,13 +547,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdMultiply.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 10</value>
+    <value>79, 12</value>
   </data>
   <data name="cmdMultiply.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdMultiply.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 30</value>
+    <value>39, 37</value>
   </data>
   <data name="cmdMultiply.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -619,13 +580,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdColon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 10</value>
+    <value>41, 12</value>
   </data>
   <data name="cmdColon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdColon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 30</value>
+    <value>39, 37</value>
   </data>
   <data name="cmdColon.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -652,13 +613,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdPlus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 10</value>
+    <value>4, 12</value>
   </data>
   <data name="cmdPlus.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdPlus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 30</value>
+    <value>39, 37</value>
   </data>
   <data name="cmdPlus.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -685,13 +646,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdPower.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 39</value>
+    <value>116, 48</value>
   </data>
   <data name="cmdPower.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdPower.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 32</value>
+    <value>39, 39</value>
   </data>
   <data name="cmdPower.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -718,13 +679,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdClosingBracket.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 39</value>
+    <value>79, 48</value>
   </data>
   <data name="cmdClosingBracket.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdClosingBracket.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 32</value>
+    <value>39, 39</value>
   </data>
   <data name="cmdClosingBracket.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -751,13 +712,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdOpeningBracket.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 39</value>
+    <value>41, 48</value>
   </data>
   <data name="cmdOpeningBracket.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdOpeningBracket.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 32</value>
+    <value>39, 39</value>
   </data>
   <data name="cmdOpeningBracket.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -784,13 +745,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdDiv.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 10</value>
+    <value>116, 12</value>
   </data>
   <data name="cmdDiv.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdDiv.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 30</value>
+    <value>39, 37</value>
   </data>
   <data name="cmdDiv.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -817,13 +778,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdDoubleBracket.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 39</value>
+    <value>4, 48</value>
   </data>
   <data name="cmdDoubleBracket.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdDoubleBracket.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 32</value>
+    <value>39, 39</value>
   </data>
   <data name="cmdDoubleBracket.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -847,13 +808,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdClear.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 251</value>
+    <value>556, 309</value>
   </data>
   <data name="cmdClear.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdClear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 30</value>
+    <value>76, 37</value>
   </data>
   <data name="cmdClear.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -880,13 +841,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdSquareBrackets.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 70</value>
+    <value>41, 86</value>
   </data>
   <data name="cmdSquareBrackets.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdSquareBrackets.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 30</value>
+    <value>39, 37</value>
   </data>
   <data name="cmdSquareBrackets.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -913,13 +874,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdMinus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 70</value>
+    <value>4, 86</value>
   </data>
   <data name="cmdMinus.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdMinus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 30</value>
+    <value>39, 37</value>
   </data>
   <data name="cmdMinus.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -939,39 +900,6 @@
   <data name="&gt;&gt;cmdMinus.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="&gt;&gt;cmdTilda.Name" xml:space="preserve">
-    <value>cmdTilda</value>
-  </data>
-  <data name="&gt;&gt;cmdTilda.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmdTilda.Parent" xml:space="preserve">
-    <value>grpFirstCalc</value>
-  </data>
-  <data name="&gt;&gt;cmdTilda.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="grpFirstCalc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>293, 205</value>
-  </data>
-  <data name="grpFirstCalc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 103</value>
-  </data>
-  <data name="grpFirstCalc.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;grpFirstCalc.Name" xml:space="preserve">
-    <value>grpFirstCalc</value>
-  </data>
-  <data name="&gt;&gt;grpFirstCalc.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grpFirstCalc.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;grpFirstCalc.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
   <data name="cmdTilda.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt</value>
   </data>
@@ -979,13 +907,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdTilda.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 70</value>
+    <value>79, 86</value>
   </data>
   <data name="cmdTilda.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdTilda.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 30</value>
+    <value>76, 37</value>
   </data>
   <data name="cmdTilda.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -1005,14 +933,44 @@
   <data name="&gt;&gt;cmdTilda.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="grpFirstCalc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 252</value>
+  </data>
+  <data name="grpFirstCalc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpFirstCalc.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpFirstCalc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 127</value>
+  </data>
+  <data name="grpFirstCalc.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;grpFirstCalc.Name" xml:space="preserve">
+    <value>grpFirstCalc</value>
+  </data>
+  <data name="&gt;&gt;grpFirstCalc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpFirstCalc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpFirstCalc.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
   <data name="cmdDisplayOptions.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="cmdDisplayOptions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>287, 354</value>
+    <value>383, 436</value>
+  </data>
+  <data name="cmdDisplayOptions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="cmdDisplayOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 23</value>
+    <value>167, 28</value>
   </data>
   <data name="cmdDisplayOptions.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -1039,10 +997,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdPredict.Location" type="System.Drawing.Point, System.Drawing">
-    <value>418, 355</value>
+    <value>557, 437</value>
+  </data>
+  <data name="cmdPredict.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="cmdPredict.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 23</value>
+    <value>140, 28</value>
   </data>
   <data name="cmdPredict.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -1062,65 +1023,17 @@
   <data name="&gt;&gt;cmdPredict.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;cmdfevd.Name" xml:space="preserve">
-    <value>cmdfevd</value>
-  </data>
-  <data name="&gt;&gt;cmdfevd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmdfevd.Parent" xml:space="preserve">
-    <value>grpextRemes</value>
-  </data>
-  <data name="&gt;&gt;cmdfevd.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;cmdlevd.Name" xml:space="preserve">
-    <value>cmdlevd</value>
-  </data>
-  <data name="&gt;&gt;cmdlevd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmdlevd.Parent" xml:space="preserve">
-    <value>grpextRemes</value>
-  </data>
-  <data name="&gt;&gt;cmdlevd.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="grpextRemes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 68</value>
-  </data>
-  <data name="grpextRemes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 49</value>
-  </data>
-  <data name="grpextRemes.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="grpextRemes.Text" xml:space="preserve">
-    <value>extRemes</value>
-  </data>
-  <data name="&gt;&gt;grpextRemes.Name" xml:space="preserve">
-    <value>grpextRemes</value>
-  </data>
-  <data name="&gt;&gt;grpextRemes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grpextRemes.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;grpextRemes.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="cmdfevd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="cmdfevd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 14</value>
+    <value>5, 17</value>
   </data>
   <data name="cmdfevd.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdfevd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdfevd.TabIndex" type="System.Int32, mscorlib">
     <value>169</value>
@@ -1144,13 +1057,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdlevd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 14</value>
+    <value>96, 17</value>
   </data>
   <data name="cmdlevd.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdlevd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdlevd.TabIndex" type="System.Int32, mscorlib">
     <value>129</value>
@@ -1170,17 +1083,47 @@
   <data name="&gt;&gt;cmdlevd.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="grpextRemes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>389, 84</value>
+  </data>
+  <data name="grpextRemes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpextRemes.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="grpextRemes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 60</value>
+  </data>
+  <data name="grpextRemes.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="grpextRemes.Text" xml:space="preserve">
+    <value>extRemes</value>
+  </data>
+  <data name="&gt;&gt;grpextRemes.Name" xml:space="preserve">
+    <value>grpextRemes</value>
+  </data>
+  <data name="&gt;&gt;grpextRemes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpextRemes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpextRemes.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="cmdnlmer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="cmdnlmer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 14</value>
+    <value>187, 17</value>
   </data>
   <data name="cmdnlmer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdnlmer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdnlmer.TabIndex" type="System.Int32, mscorlib">
     <value>153</value>
@@ -1204,13 +1147,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdlmer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 14</value>
+    <value>96, 17</value>
   </data>
   <data name="cmdlmer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdlmer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdlmer.TabIndex" type="System.Int32, mscorlib">
     <value>126</value>
@@ -1234,13 +1177,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdglmer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 14</value>
+    <value>5, 17</value>
   </data>
   <data name="cmdglmer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdglmer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdglmer.TabIndex" type="System.Int32, mscorlib">
     <value>124</value>
@@ -1261,16 +1204,16 @@
     <value>1</value>
   </data>
   <data name="grplme4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 68</value>
+    <value>389, 84</value>
   </data>
   <data name="grplme4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="grplme4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="grplme4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 47</value>
+    <value>284, 58</value>
   </data>
   <data name="grplme4.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1294,13 +1237,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdloglm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 14</value>
+    <value>187, 17</value>
   </data>
   <data name="cmdloglm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdloglm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdloglm.TabIndex" type="System.Int32, mscorlib">
     <value>153</value>
@@ -1324,13 +1267,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdpolr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 43</value>
+    <value>5, 53</value>
   </data>
   <data name="cmdpolr.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdpolr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdpolr.TabIndex" type="System.Int32, mscorlib">
     <value>158</value>
@@ -1354,13 +1297,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdglmmPQL.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 14</value>
+    <value>96, 17</value>
   </data>
   <data name="cmdglmmPQL.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdglmmPQL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdglmmPQL.TabIndex" type="System.Int32, mscorlib">
     <value>126</value>
@@ -1384,13 +1327,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdglmnb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 14</value>
+    <value>5, 17</value>
   </data>
   <data name="cmdglmnb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdglmnb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdglmnb.TabIndex" type="System.Int32, mscorlib">
     <value>124</value>
@@ -1414,13 +1357,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdrlm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 43</value>
+    <value>96, 53</value>
   </data>
   <data name="cmdrlm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdrlm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdrlm.TabIndex" type="System.Int32, mscorlib">
     <value>121</value>
@@ -1440,95 +1383,17 @@
   <data name="&gt;&gt;cmdrlm.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;cmdqda.Name" xml:space="preserve">
-    <value>cmdqda</value>
-  </data>
-  <data name="&gt;&gt;cmdqda.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmdqda.Parent" xml:space="preserve">
-    <value>grpMASS</value>
-  </data>
-  <data name="&gt;&gt;cmdqda.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;cmdmca.Name" xml:space="preserve">
-    <value>cmdmca</value>
-  </data>
-  <data name="&gt;&gt;cmdmca.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmdmca.Parent" xml:space="preserve">
-    <value>grpMASS</value>
-  </data>
-  <data name="&gt;&gt;cmdmca.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;cmdlqs.Name" xml:space="preserve">
-    <value>cmdlqs</value>
-  </data>
-  <data name="&gt;&gt;cmdlqs.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmdlqs.Parent" xml:space="preserve">
-    <value>grpMASS</value>
-  </data>
-  <data name="&gt;&gt;cmdlqs.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;cmdlda.Name" xml:space="preserve">
-    <value>cmdlda</value>
-  </data>
-  <data name="&gt;&gt;cmdlda.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmdlda.Parent" xml:space="preserve">
-    <value>grpMASS</value>
-  </data>
-  <data name="&gt;&gt;cmdlda.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="grpMASS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 68</value>
-  </data>
-  <data name="grpMASS.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="grpMASS.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
-  </data>
-  <data name="grpMASS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 106</value>
-  </data>
-  <data name="grpMASS.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="grpMASS.Text" xml:space="preserve">
-    <value>MASS</value>
-  </data>
-  <data name="&gt;&gt;grpMASS.Name" xml:space="preserve">
-    <value>grpMASS</value>
-  </data>
-  <data name="&gt;&gt;grpMASS.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grpMASS.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;grpMASS.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="cmdqda.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="cmdqda.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 72</value>
+    <value>187, 89</value>
   </data>
   <data name="cmdqda.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdqda.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdqda.TabIndex" type="System.Int32, mscorlib">
     <value>166</value>
@@ -1552,13 +1417,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdmca.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 72</value>
+    <value>5, 89</value>
   </data>
   <data name="cmdmca.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdmca.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdmca.TabIndex" type="System.Int32, mscorlib">
     <value>161</value>
@@ -1582,13 +1447,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdlqs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 72</value>
+    <value>96, 89</value>
   </data>
   <data name="cmdlqs.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdlqs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdlqs.TabIndex" type="System.Int32, mscorlib">
     <value>160</value>
@@ -1612,13 +1477,13 @@
     <value>NoControl</value>
   </data>
   <data name="cmdlda.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 43</value>
+    <value>187, 53</value>
   </data>
   <data name="cmdlda.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cmdlda.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
+    <value>92, 37</value>
   </data>
   <data name="cmdlda.TabIndex" type="System.Int32, mscorlib">
     <value>159</value>
@@ -1638,14 +1503,47 @@
   <data name="&gt;&gt;cmdlda.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="grpMASS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>389, 84</value>
+  </data>
+  <data name="grpMASS.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="grpMASS.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="grpMASS.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 130</value>
+  </data>
+  <data name="grpMASS.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="grpMASS.Text" xml:space="preserve">
+    <value>MASS</value>
+  </data>
+  <data name="&gt;&gt;grpMASS.Name" xml:space="preserve">
+    <value>grpMASS</value>
+  </data>
+  <data name="&gt;&gt;grpMASS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpMASS.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpMASS.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="cmdHelp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="cmdHelp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>493, 38</value>
+    <value>657, 47</value>
+  </data>
+  <data name="cmdHelp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="cmdHelp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 23</value>
+    <value>80, 28</value>
   </data>
   <data name="cmdHelp.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1672,10 +1570,13 @@
     <value>NoControl</value>
   </data>
   <data name="lblRpackage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 43</value>
+    <value>389, 53</value>
+  </data>
+  <data name="lblRpackage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblRpackage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 13</value>
+    <value>78, 16</value>
   </data>
   <data name="lblRpackage.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1696,10 +1597,13 @@
     <value>5</value>
   </data>
   <data name="ucrTryModelling.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 314</value>
+    <value>5, 386</value>
+  </data>
+  <data name="ucrTryModelling.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrTryModelling.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 33</value>
+    <value>640, 41</value>
   </data>
   <data name="ucrTryModelling.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -1717,10 +1621,13 @@
     <value>0</value>
   </data>
   <data name="ucrChkIncludeArguments.Location" type="System.Drawing.Point, System.Drawing">
-    <value>442, 13</value>
+    <value>589, 16</value>
+  </data>
+  <data name="ucrChkIncludeArguments.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 6, 7, 6</value>
   </data>
   <data name="ucrChkIncludeArguments.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 20</value>
+    <value>175, 25</value>
   </data>
   <data name="ucrChkIncludeArguments.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1738,13 +1645,13 @@
     <value>4</value>
   </data>
   <data name="ucrSaveResult.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 355</value>
+    <value>17, 437</value>
   </data>
   <data name="ucrSaveResult.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+    <value>5, 6, 5, 6</value>
   </data>
   <data name="ucrSaveResult.Size" type="System.Drawing.Size, System.Drawing">
-    <value>267, 24</value>
+    <value>356, 30</value>
   </data>
   <data name="ucrSaveResult.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -1762,10 +1669,13 @@
     <value>10</value>
   </data>
   <data name="ucrInputComboRPackage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>364, 39</value>
+    <value>485, 48</value>
+  </data>
+  <data name="ucrInputComboRPackage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 7, 9, 7</value>
   </data>
   <data name="ucrInputComboRPackage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 21</value>
+    <value>164, 26</value>
   </data>
   <data name="ucrInputComboRPackage.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1786,19 +1696,19 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>566, 442</value>
+    <value>755, 545</value>
   </data>
   <data name="ucrSelectorModelling.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 66</value>
+    <value>13, 81</value>
   </data>
   <data name="ucrSelectorModelling.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrSelectorModelling.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 180</value>
+    <value>280, 222</value>
   </data>
   <data name="ucrSelectorModelling.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1816,10 +1726,13 @@
     <value>15</value>
   </data>
   <data name="ucrBase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 387</value>
+    <value>17, 476</value>
+  </data>
+  <data name="ucrBase.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>410, 52</value>
+    <value>547, 64</value>
   </data>
   <data name="ucrBase.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -1836,6 +1749,9 @@
   <data name="&gt;&gt;ucrBase.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
@@ -1849,13 +1765,13 @@
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ucrReceiverForTestColumn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>63, 13</value>
+    <value>84, 16</value>
   </data>
   <data name="ucrReceiverForTestColumn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 3, 2, 3</value>
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="ucrReceiverForTestColumn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>368, 27</value>
+    <value>491, 33</value>
   </data>
   <data name="ucrReceiverForTestColumn.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>

@@ -54,55 +54,62 @@ Partial Class dlgInventoryMethod
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(24, 205)
+        Me.ucrBase.Location = New System.Drawing.Point(32, 252)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 32)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 39)
         Me.ucrBase.TabIndex = 0
         '
         'lblTitle
         '
         Me.lblTitle.AutoSize = True
-        Me.lblTitle.Location = New System.Drawing.Point(21, 32)
+        Me.lblTitle.Location = New System.Drawing.Point(28, 39)
+        Me.lblTitle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(39, 13)
+        Me.lblTitle.Size = New System.Drawing.Size(49, 16)
         Me.lblTitle.TabIndex = 1
         Me.lblTitle.Tag = "Title"
         Me.lblTitle.Text = "Label1"
         '
         'txtTitle
         '
-        Me.txtTitle.Location = New System.Drawing.Point(137, 32)
+        Me.txtTitle.Location = New System.Drawing.Point(183, 39)
+        Me.txtTitle.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtTitle.Name = "txtTitle"
-        Me.txtTitle.Size = New System.Drawing.Size(100, 20)
+        Me.txtTitle.Size = New System.Drawing.Size(132, 22)
         Me.txtTitle.TabIndex = 2
         '
         'txtYLabel
         '
-        Me.txtYLabel.Location = New System.Drawing.Point(137, 108)
+        Me.txtYLabel.Location = New System.Drawing.Point(183, 133)
+        Me.txtYLabel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtYLabel.Name = "txtYLabel"
-        Me.txtYLabel.Size = New System.Drawing.Size(100, 20)
+        Me.txtYLabel.Size = New System.Drawing.Size(132, 22)
         Me.txtYLabel.TabIndex = 3
         '
         'txtColour
         '
-        Me.txtColour.Location = New System.Drawing.Point(137, 84)
+        Me.txtColour.Location = New System.Drawing.Point(183, 103)
+        Me.txtColour.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtColour.Name = "txtColour"
-        Me.txtColour.Size = New System.Drawing.Size(100, 20)
+        Me.txtColour.Size = New System.Drawing.Size(132, 22)
         Me.txtColour.TabIndex = 4
         '
         'txtVariableLabel
         '
-        Me.txtVariableLabel.Location = New System.Drawing.Point(137, 58)
+        Me.txtVariableLabel.Location = New System.Drawing.Point(183, 71)
+        Me.txtVariableLabel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtVariableLabel.Name = "txtVariableLabel"
-        Me.txtVariableLabel.Size = New System.Drawing.Size(100, 20)
+        Me.txtVariableLabel.Size = New System.Drawing.Size(132, 22)
         Me.txtVariableLabel.TabIndex = 5
         '
         'chkRemoveNA
         '
         Me.chkRemoveNA.AutoSize = True
-        Me.chkRemoveNA.Location = New System.Drawing.Point(309, 159)
+        Me.chkRemoveNA.Location = New System.Drawing.Point(412, 196)
+        Me.chkRemoveNA.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkRemoveNA.Name = "chkRemoveNA"
-        Me.chkRemoveNA.Size = New System.Drawing.Size(81, 17)
+        Me.chkRemoveNA.Size = New System.Drawing.Size(102, 21)
         Me.chkRemoveNA.TabIndex = 7
         Me.chkRemoveNA.Tag = "Remove_NA"
         Me.chkRemoveNA.Text = "CheckBox1"
@@ -111,9 +118,10 @@ Partial Class dlgInventoryMethod
         'chkSort
         '
         Me.chkSort.AutoSize = True
-        Me.chkSort.Location = New System.Drawing.Point(137, 159)
+        Me.chkSort.Location = New System.Drawing.Point(183, 196)
+        Me.chkSort.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkSort.Name = "chkSort"
-        Me.chkSort.Size = New System.Drawing.Size(81, 17)
+        Me.chkSort.Size = New System.Drawing.Size(102, 21)
         Me.chkSort.TabIndex = 8
         Me.chkSort.Tag = "Sort"
         Me.chkSort.Text = "CheckBox2"
@@ -122,9 +130,10 @@ Partial Class dlgInventoryMethod
         'lblVariableLabel
         '
         Me.lblVariableLabel.AutoSize = True
-        Me.lblVariableLabel.Location = New System.Drawing.Point(21, 61)
+        Me.lblVariableLabel.Location = New System.Drawing.Point(28, 75)
+        Me.lblVariableLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblVariableLabel.Name = "lblVariableLabel"
-        Me.lblVariableLabel.Size = New System.Drawing.Size(39, 13)
+        Me.lblVariableLabel.Size = New System.Drawing.Size(49, 16)
         Me.lblVariableLabel.TabIndex = 9
         Me.lblVariableLabel.Tag = "Variable_Label"
         Me.lblVariableLabel.Text = "Label2"
@@ -132,9 +141,10 @@ Partial Class dlgInventoryMethod
         'lblColour
         '
         Me.lblColour.AutoSize = True
-        Me.lblColour.Location = New System.Drawing.Point(21, 84)
+        Me.lblColour.Location = New System.Drawing.Point(28, 103)
+        Me.lblColour.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblColour.Name = "lblColour"
-        Me.lblColour.Size = New System.Drawing.Size(39, 13)
+        Me.lblColour.Size = New System.Drawing.Size(49, 16)
         Me.lblColour.TabIndex = 10
         Me.lblColour.Tag = "Colour"
         Me.lblColour.Text = "Label3"
@@ -142,9 +152,10 @@ Partial Class dlgInventoryMethod
         'lblYLabel
         '
         Me.lblYLabel.AutoSize = True
-        Me.lblYLabel.Location = New System.Drawing.Point(21, 108)
+        Me.lblYLabel.Location = New System.Drawing.Point(28, 133)
+        Me.lblYLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblYLabel.Name = "lblYLabel"
-        Me.lblYLabel.Size = New System.Drawing.Size(39, 13)
+        Me.lblYLabel.Size = New System.Drawing.Size(49, 16)
         Me.lblYLabel.TabIndex = 11
         Me.lblYLabel.Tag = "Y_Label"
         Me.lblYLabel.Text = "Label4"
@@ -152,17 +163,18 @@ Partial Class dlgInventoryMethod
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(94, 9)
+        Me.Label1.Location = New System.Drawing.Point(125, 11)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(125, 13)
+        Me.Label1.Size = New System.Drawing.Size(158, 16)
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "Data list not implemented"
         '
         'dlgInventoryMethod
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(454, 238)
+        Me.ClientSize = New System.Drawing.Size(605, 294)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblYLabel)
         Me.Controls.Add(Me.lblColour)
@@ -176,6 +188,7 @@ Partial Class dlgInventoryMethod
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgInventoryMethod"

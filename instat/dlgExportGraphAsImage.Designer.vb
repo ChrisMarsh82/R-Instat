@@ -77,13 +77,15 @@ Partial Class dlgExportGraphAsImage
         '
         Me.ucrFilePath.DefaultFileSuggestionName = ""
         Me.ucrFilePath.FilePath = ""
-        Me.ucrFilePath.FilePathBrowseText = "Browse"
+        Me.ucrFilePath.FilePathBrowseText = resources.GetString("ucrFilePath.FilePathBrowseText")
         Me.ucrFilePath.FilePathDialogFilter = "JPEG (*.jpeg)|*.jpeg|PNG(*.png)|*.png|BitMaP(*.bmp)|*.bmp|EPS(*.eps)|*.eps|PostSc" &
     "ript(*.ps)|*.ps|SVG(*.svg)|*.svg|WMF(*.wmf)|*.wmf|PDF(*.pdf)|*.pdf"
         Me.ucrFilePath.FilePathDialogTitle = "Save Graph As Image"
-        Me.ucrFilePath.FilePathLabel = "Export File:"
+        Me.ucrFilePath.FilePathLabel = resources.GetString("ucrFilePath.FilePathLabel")
+        Me.ucrFilePath.FolderBrowse = False
         resources.ApplyResources(Me.ucrFilePath, "ucrFilePath")
         Me.ucrFilePath.Name = "ucrFilePath"
+        Me.ucrFilePath.SelectedFileFilterIndex = 1
         '
         'dlgExportGraphAsImage
         '

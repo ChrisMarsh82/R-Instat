@@ -50,36 +50,40 @@ Partial Class dlgLockUnlock
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(9, 235)
+        Me.ucrBase.Location = New System.Drawing.Point(12, 289)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(443, 79)
+        Me.ucrBase.Size = New System.Drawing.Size(591, 97)
         Me.ucrBase.TabIndex = 0
         '
         'ucrAddRemove
         '
         Me.ucrAddRemove.bShowHiddenColumns = False
-        Me.ucrAddRemove.Location = New System.Drawing.Point(9, 39)
+        Me.ucrAddRemove.Location = New System.Drawing.Point(12, 48)
         Me.ucrAddRemove.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrAddRemove.Name = "ucrAddRemove"
-        Me.ucrAddRemove.Size = New System.Drawing.Size(203, 155)
+        Me.ucrAddRemove.Size = New System.Drawing.Size(271, 191)
         Me.ucrAddRemove.TabIndex = 1
         '
         'ucrReceiverLockUnlock
         '
         Me.ucrReceiverLockUnlock.frmParent = Me
-        Me.ucrReceiverLockUnlock.Location = New System.Drawing.Point(260, 39)
+        Me.ucrReceiverLockUnlock.Location = New System.Drawing.Point(347, 48)
         Me.ucrReceiverLockUnlock.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverLockUnlock.Name = "ucrReceiverLockUnlock"
         Me.ucrReceiverLockUnlock.Selector = Nothing
-        Me.ucrReceiverLockUnlock.Size = New System.Drawing.Size(121, 134)
+        Me.ucrReceiverLockUnlock.Size = New System.Drawing.Size(161, 165)
+        Me.ucrReceiverLockUnlock.strNcFilePath = ""
         Me.ucrReceiverLockUnlock.TabIndex = 2
+        Me.ucrReceiverLockUnlock.ucrSelector = Nothing
         '
         'lblSelectedColumns
         '
         Me.lblSelectedColumns.AutoSize = True
-        Me.lblSelectedColumns.Location = New System.Drawing.Point(260, 24)
+        Me.lblSelectedColumns.Location = New System.Drawing.Point(347, 30)
+        Me.lblSelectedColumns.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSelectedColumns.Name = "lblSelectedColumns"
-        Me.lblSelectedColumns.Size = New System.Drawing.Size(98, 13)
+        Me.lblSelectedColumns.Size = New System.Drawing.Size(126, 16)
         Me.lblSelectedColumns.TabIndex = 3
         Me.lblSelectedColumns.Tag = "Selected_Variables:"
         Me.lblSelectedColumns.Text = "Selected Variables:"
@@ -87,9 +91,10 @@ Partial Class dlgLockUnlock
         'rdoLock
         '
         Me.rdoLock.AutoSize = True
-        Me.rdoLock.Location = New System.Drawing.Point(12, 197)
+        Me.rdoLock.Location = New System.Drawing.Point(16, 242)
+        Me.rdoLock.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoLock.Name = "rdoLock"
-        Me.rdoLock.Size = New System.Drawing.Size(49, 17)
+        Me.rdoLock.Size = New System.Drawing.Size(62, 20)
         Me.rdoLock.TabIndex = 4
         Me.rdoLock.TabStop = True
         Me.rdoLock.Tag = "Lock"
@@ -99,9 +104,10 @@ Partial Class dlgLockUnlock
         'rdoUnlock
         '
         Me.rdoUnlock.AutoSize = True
-        Me.rdoUnlock.Location = New System.Drawing.Point(85, 197)
+        Me.rdoUnlock.Location = New System.Drawing.Point(113, 242)
+        Me.rdoUnlock.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoUnlock.Name = "rdoUnlock"
-        Me.rdoUnlock.Size = New System.Drawing.Size(59, 17)
+        Me.rdoUnlock.Size = New System.Drawing.Size(75, 20)
         Me.rdoUnlock.TabIndex = 5
         Me.rdoUnlock.TabStop = True
         Me.rdoUnlock.Tag = "Unlock"
@@ -110,24 +116,26 @@ Partial Class dlgLockUnlock
         '
         'ucrPnlLock
         '
-        Me.ucrPnlLock.Location = New System.Drawing.Point(6, 189)
+        Me.ucrPnlLock.Location = New System.Drawing.Point(8, 233)
+        Me.ucrPnlLock.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrPnlLock.Name = "ucrPnlLock"
-        Me.ucrPnlLock.Size = New System.Drawing.Size(163, 33)
+        Me.ucrPnlLock.Size = New System.Drawing.Size(217, 41)
         Me.ucrPnlLock.TabIndex = 7
         '
         'ucrChkReserveFreeSpace
         '
         Me.ucrChkReserveFreeSpace.Checked = False
-        Me.ucrChkReserveFreeSpace.Location = New System.Drawing.Point(188, 197)
+        Me.ucrChkReserveFreeSpace.Location = New System.Drawing.Point(251, 242)
+        Me.ucrChkReserveFreeSpace.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkReserveFreeSpace.Name = "ucrChkReserveFreeSpace"
-        Me.ucrChkReserveFreeSpace.Size = New System.Drawing.Size(204, 20)
+        Me.ucrChkReserveFreeSpace.Size = New System.Drawing.Size(272, 25)
         Me.ucrChkReserveFreeSpace.TabIndex = 8
         '
         'dlgLockUnlock
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(453, 308)
+        Me.ClientSize = New System.Drawing.Size(604, 380)
         Me.Controls.Add(Me.ucrChkReserveFreeSpace)
         Me.Controls.Add(Me.rdoUnlock)
         Me.Controls.Add(Me.rdoLock)
@@ -137,6 +145,7 @@ Partial Class dlgLockUnlock
         Me.Controls.Add(Me.ucrBase)
         Me.Controls.Add(Me.ucrPnlLock)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgLockUnlock"

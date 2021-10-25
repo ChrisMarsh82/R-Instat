@@ -48,58 +48,64 @@ Partial Class dlgOutputforCPT
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(14, 227)
+        Me.ucrBase.Location = New System.Drawing.Point(19, 279)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 32)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 39)
         Me.ucrBase.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(50, 9)
+        Me.Label1.Location = New System.Drawing.Point(67, 11)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(125, 13)
+        Me.Label1.Size = New System.Drawing.Size(158, 16)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Data list not implemented"
         '
         'lblFilename
         '
         Me.lblFilename.AutoSize = True
-        Me.lblFilename.Location = New System.Drawing.Point(12, 58)
+        Me.lblFilename.Location = New System.Drawing.Point(16, 71)
+        Me.lblFilename.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblFilename.Name = "lblFilename"
-        Me.lblFilename.Size = New System.Drawing.Size(39, 13)
+        Me.lblFilename.Size = New System.Drawing.Size(49, 16)
         Me.lblFilename.TabIndex = 2
         Me.lblFilename.Tag = "Filename"
         Me.lblFilename.Text = "Label2"
         '
         'txtFilename
         '
-        Me.txtFilename.Location = New System.Drawing.Point(121, 55)
+        Me.txtFilename.Location = New System.Drawing.Point(161, 68)
+        Me.txtFilename.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtFilename.Name = "txtFilename"
-        Me.txtFilename.Size = New System.Drawing.Size(221, 20)
+        Me.txtFilename.Size = New System.Drawing.Size(293, 22)
         Me.txtFilename.TabIndex = 5
         '
         'txtInterestedVariable
         '
-        Me.txtInterestedVariable.Location = New System.Drawing.Point(121, 109)
+        Me.txtInterestedVariable.Location = New System.Drawing.Point(161, 134)
+        Me.txtInterestedVariable.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtInterestedVariable.Name = "txtInterestedVariable"
-        Me.txtInterestedVariable.Size = New System.Drawing.Size(221, 20)
+        Me.txtInterestedVariable.Size = New System.Drawing.Size(293, 22)
         Me.txtInterestedVariable.TabIndex = 6
         '
         'lblInterestedVariable
         '
         Me.lblInterestedVariable.AutoSize = True
-        Me.lblInterestedVariable.Location = New System.Drawing.Point(12, 116)
+        Me.lblInterestedVariable.Location = New System.Drawing.Point(16, 143)
+        Me.lblInterestedVariable.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblInterestedVariable.Name = "lblInterestedVariable"
-        Me.lblInterestedVariable.Size = New System.Drawing.Size(39, 13)
+        Me.lblInterestedVariable.Size = New System.Drawing.Size(49, 16)
         Me.lblInterestedVariable.TabIndex = 7
         Me.lblInterestedVariable.Text = "Label3"
         '
         'dlgOutputforCPT
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(436, 262)
+        Me.ClientSize = New System.Drawing.Size(581, 322)
         Me.Controls.Add(Me.lblInterestedVariable)
         Me.Controls.Add(Me.txtInterestedVariable)
         Me.Controls.Add(Me.txtFilename)
@@ -107,6 +113,7 @@ Partial Class dlgOutputforCPT
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgOutputforCPT"

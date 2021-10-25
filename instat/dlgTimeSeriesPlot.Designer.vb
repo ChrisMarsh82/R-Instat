@@ -44,44 +44,49 @@ Partial Class dlgTimeSeriesPlot
         'lblReferenceValues
         '
         Me.lblReferenceValues.AutoSize = True
-        Me.lblReferenceValues.Location = New System.Drawing.Point(286, 24)
+        Me.lblReferenceValues.Location = New System.Drawing.Point(381, 30)
+        Me.lblReferenceValues.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblReferenceValues.Name = "lblReferenceValues"
-        Me.lblReferenceValues.Size = New System.Drawing.Size(95, 13)
+        Me.lblReferenceValues.Size = New System.Drawing.Size(119, 16)
         Me.lblReferenceValues.TabIndex = 1
         Me.lblReferenceValues.Text = "Reference Values:"
         '
         'lblEstimates
         '
         Me.lblEstimates.AutoSize = True
-        Me.lblEstimates.Location = New System.Drawing.Point(286, 71)
+        Me.lblEstimates.Location = New System.Drawing.Point(381, 87)
+        Me.lblEstimates.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblEstimates.Name = "lblEstimates"
-        Me.lblEstimates.Size = New System.Drawing.Size(55, 13)
+        Me.lblEstimates.Size = New System.Drawing.Size(70, 16)
         Me.lblEstimates.TabIndex = 3
         Me.lblEstimates.Text = "Estimates:"
         '
         'lblTime
         '
         Me.lblTime.AutoSize = True
-        Me.lblTime.Location = New System.Drawing.Point(286, 118)
+        Me.lblTime.Location = New System.Drawing.Point(381, 145)
+        Me.lblTime.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblTime.Name = "lblTime"
-        Me.lblTime.Size = New System.Drawing.Size(70, 13)
+        Me.lblTime.Size = New System.Drawing.Size(88, 16)
         Me.lblTime.TabIndex = 5
         Me.lblTime.Text = "Time (X axis):"
         '
         'lblStation
         '
         Me.lblStation.AutoSize = True
-        Me.lblStation.Location = New System.Drawing.Point(286, 165)
+        Me.lblStation.Location = New System.Drawing.Point(381, 203)
+        Me.lblStation.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblStation.Name = "lblStation"
-        Me.lblStation.Size = New System.Drawing.Size(94, 13)
+        Me.lblStation.Size = New System.Drawing.Size(116, 16)
         Me.lblStation.TabIndex = 7
         Me.lblStation.Text = "Facet By (Station):"
         '
         'cmdSummaries
         '
-        Me.cmdSummaries.Location = New System.Drawing.Point(286, 354)
+        Me.cmdSummaries.Location = New System.Drawing.Point(381, 436)
+        Me.cmdSummaries.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdSummaries.Name = "cmdSummaries"
-        Me.cmdSummaries.Size = New System.Drawing.Size(120, 23)
+        Me.cmdSummaries.Size = New System.Drawing.Size(160, 28)
         Me.cmdSummaries.TabIndex = 12
         Me.cmdSummaries.Text = "Summary Annotations"
         Me.cmdSummaries.UseVisualStyleBackColor = True
@@ -89,59 +94,64 @@ Partial Class dlgTimeSeriesPlot
         'ucrChkIncludePoints
         '
         Me.ucrChkIncludePoints.Checked = False
-        Me.ucrChkIncludePoints.Location = New System.Drawing.Point(10, 253)
+        Me.ucrChkIncludePoints.Location = New System.Drawing.Point(13, 311)
+        Me.ucrChkIncludePoints.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkIncludePoints.Name = "ucrChkIncludePoints"
-        Me.ucrChkIncludePoints.Size = New System.Drawing.Size(272, 20)
+        Me.ucrChkIncludePoints.Size = New System.Drawing.Size(363, 25)
         Me.ucrChkIncludePoints.TabIndex = 10
         '
         'ucrChkIncludeMeanLines
         '
         Me.ucrChkIncludeMeanLines.Checked = False
-        Me.ucrChkIncludeMeanLines.Location = New System.Drawing.Point(10, 290)
+        Me.ucrChkIncludeMeanLines.Location = New System.Drawing.Point(13, 357)
+        Me.ucrChkIncludeMeanLines.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkIncludeMeanLines.Name = "ucrChkIncludeMeanLines"
-        Me.ucrChkIncludeMeanLines.Size = New System.Drawing.Size(272, 20)
+        Me.ucrChkIncludeMeanLines.Size = New System.Drawing.Size(363, 25)
         Me.ucrChkIncludeMeanLines.TabIndex = 11
         '
         'ucrChkNAValues
         '
         Me.ucrChkNAValues.Checked = False
-        Me.ucrChkNAValues.Location = New System.Drawing.Point(10, 216)
+        Me.ucrChkNAValues.Location = New System.Drawing.Point(13, 266)
+        Me.ucrChkNAValues.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkNAValues.Name = "ucrChkNAValues"
-        Me.ucrChkNAValues.Size = New System.Drawing.Size(272, 20)
+        Me.ucrChkNAValues.Size = New System.Drawing.Size(363, 25)
         Me.ucrChkNAValues.TabIndex = 9
         '
         'ucrChkIncludeLineOfBestFit
         '
         Me.ucrChkIncludeLineOfBestFit.Checked = False
-        Me.ucrChkIncludeLineOfBestFit.Location = New System.Drawing.Point(10, 327)
+        Me.ucrChkIncludeLineOfBestFit.Location = New System.Drawing.Point(13, 402)
+        Me.ucrChkIncludeLineOfBestFit.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkIncludeLineOfBestFit.Name = "ucrChkIncludeLineOfBestFit"
-        Me.ucrChkIncludeLineOfBestFit.Size = New System.Drawing.Size(260, 20)
+        Me.ucrChkIncludeLineOfBestFit.Size = New System.Drawing.Size(347, 25)
         Me.ucrChkIncludeLineOfBestFit.TabIndex = 16
         '
         'ucrChkWithSE
         '
         Me.ucrChkWithSE.Checked = False
-        Me.ucrChkWithSE.Location = New System.Drawing.Point(276, 327)
+        Me.ucrChkWithSE.Location = New System.Drawing.Point(368, 402)
+        Me.ucrChkWithSE.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkWithSE.Name = "ucrChkWithSE"
-        Me.ucrChkWithSE.Size = New System.Drawing.Size(135, 20)
+        Me.ucrChkWithSE.Size = New System.Drawing.Size(180, 25)
         Me.ucrChkWithSE.TabIndex = 17
         '
         'ucrSavePlot
         '
-        Me.ucrSavePlot.Location = New System.Drawing.Point(10, 385)
-        Me.ucrSavePlot.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ucrSavePlot.Location = New System.Drawing.Point(13, 474)
+        Me.ucrSavePlot.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.ucrSavePlot.Name = "ucrSavePlot"
-        Me.ucrSavePlot.Size = New System.Drawing.Size(320, 24)
+        Me.ucrSavePlot.Size = New System.Drawing.Size(427, 30)
         Me.ucrSavePlot.TabIndex = 15
         '
         'ucrReceiverFacetBy
         '
         Me.ucrReceiverFacetBy.frmParent = Me
-        Me.ucrReceiverFacetBy.Location = New System.Drawing.Point(286, 180)
+        Me.ucrReceiverFacetBy.Location = New System.Drawing.Point(381, 222)
         Me.ucrReceiverFacetBy.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverFacetBy.Name = "ucrReceiverFacetBy"
         Me.ucrReceiverFacetBy.Selector = Nothing
-        Me.ucrReceiverFacetBy.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverFacetBy.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverFacetBy.strNcFilePath = ""
         Me.ucrReceiverFacetBy.TabIndex = 8
         Me.ucrReceiverFacetBy.ucrSelector = Nothing
@@ -149,11 +159,11 @@ Partial Class dlgTimeSeriesPlot
         'ucrReceiverTime
         '
         Me.ucrReceiverTime.frmParent = Me
-        Me.ucrReceiverTime.Location = New System.Drawing.Point(286, 133)
+        Me.ucrReceiverTime.Location = New System.Drawing.Point(381, 164)
         Me.ucrReceiverTime.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverTime.Name = "ucrReceiverTime"
         Me.ucrReceiverTime.Selector = Nothing
-        Me.ucrReceiverTime.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverTime.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverTime.strNcFilePath = ""
         Me.ucrReceiverTime.TabIndex = 6
         Me.ucrReceiverTime.ucrSelector = Nothing
@@ -161,11 +171,11 @@ Partial Class dlgTimeSeriesPlot
         'ucrReceiverEstimates
         '
         Me.ucrReceiverEstimates.frmParent = Me
-        Me.ucrReceiverEstimates.Location = New System.Drawing.Point(286, 86)
+        Me.ucrReceiverEstimates.Location = New System.Drawing.Point(381, 106)
         Me.ucrReceiverEstimates.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverEstimates.Name = "ucrReceiverEstimates"
         Me.ucrReceiverEstimates.Selector = Nothing
-        Me.ucrReceiverEstimates.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverEstimates.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverEstimates.strNcFilePath = ""
         Me.ucrReceiverEstimates.TabIndex = 4
         Me.ucrReceiverEstimates.ucrSelector = Nothing
@@ -173,11 +183,11 @@ Partial Class dlgTimeSeriesPlot
         'ucrReceiverReference
         '
         Me.ucrReceiverReference.frmParent = Me
-        Me.ucrReceiverReference.Location = New System.Drawing.Point(286, 39)
+        Me.ucrReceiverReference.Location = New System.Drawing.Point(381, 48)
         Me.ucrReceiverReference.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverReference.Name = "ucrReceiverReference"
         Me.ucrReceiverReference.Selector = Nothing
-        Me.ucrReceiverReference.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverReference.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverReference.strNcFilePath = ""
         Me.ucrReceiverReference.TabIndex = 2
         Me.ucrReceiverReference.ucrSelector = Nothing
@@ -187,24 +197,25 @@ Partial Class dlgTimeSeriesPlot
         Me.ucrSelectorTimeSeriesPlots.bDropUnusedFilterLevels = False
         Me.ucrSelectorTimeSeriesPlots.bShowHiddenColumns = False
         Me.ucrSelectorTimeSeriesPlots.bUseCurrentFilter = True
-        Me.ucrSelectorTimeSeriesPlots.Location = New System.Drawing.Point(12, 9)
+        Me.ucrSelectorTimeSeriesPlots.Location = New System.Drawing.Point(16, 11)
         Me.ucrSelectorTimeSeriesPlots.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorTimeSeriesPlots.Name = "ucrSelectorTimeSeriesPlots"
-        Me.ucrSelectorTimeSeriesPlots.Size = New System.Drawing.Size(218, 180)
+        Me.ucrSelectorTimeSeriesPlots.Size = New System.Drawing.Size(291, 222)
         Me.ucrSelectorTimeSeriesPlots.TabIndex = 0
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(10, 428)
+        Me.ucrBase.Location = New System.Drawing.Point(13, 527)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 52)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 64)
         Me.ucrBase.TabIndex = 14
         '
         'dlgTimeSeriesPlot
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(422, 482)
+        Me.ClientSize = New System.Drawing.Size(563, 594)
         Me.Controls.Add(Me.ucrChkWithSE)
         Me.Controls.Add(Me.ucrChkIncludeLineOfBestFit)
         Me.Controls.Add(Me.ucrSavePlot)
@@ -223,6 +234,7 @@ Partial Class dlgTimeSeriesPlot
         Me.Controls.Add(Me.ucrSelectorTimeSeriesPlots)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgTimeSeriesPlot"

@@ -47,9 +47,10 @@ Partial Class sdgDoyRange
         'rdoFromFixed
         '
         Me.rdoFromFixed.AutoSize = True
-        Me.rdoFromFixed.Location = New System.Drawing.Point(36, 26)
+        Me.rdoFromFixed.Location = New System.Drawing.Point(48, 32)
+        Me.rdoFromFixed.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoFromFixed.Name = "rdoFromFixed"
-        Me.rdoFromFixed.Size = New System.Drawing.Size(72, 17)
+        Me.rdoFromFixed.Size = New System.Drawing.Size(94, 20)
         Me.rdoFromFixed.TabIndex = 1
         Me.rdoFromFixed.TabStop = True
         Me.rdoFromFixed.Text = "Fixed Day"
@@ -58,9 +59,10 @@ Partial Class sdgDoyRange
         'rdoFromVariable
         '
         Me.rdoFromVariable.AutoSize = True
-        Me.rdoFromVariable.Location = New System.Drawing.Point(120, 26)
+        Me.rdoFromVariable.Location = New System.Drawing.Point(160, 32)
+        Me.rdoFromVariable.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoFromVariable.Name = "rdoFromVariable"
-        Me.rdoFromVariable.Size = New System.Drawing.Size(85, 17)
+        Me.rdoFromVariable.Size = New System.Drawing.Size(112, 20)
         Me.rdoFromVariable.TabIndex = 2
         Me.rdoFromVariable.TabStop = True
         Me.rdoFromVariable.Text = "Variable Day"
@@ -73,9 +75,11 @@ Partial Class sdgDoyRange
         Me.grpFrom.Controls.Add(Me.rdoFromVariable)
         Me.grpFrom.Controls.Add(Me.rdoFromFixed)
         Me.grpFrom.Controls.Add(Me.ucrPnlFrom)
-        Me.grpFrom.Location = New System.Drawing.Point(10, 206)
+        Me.grpFrom.Location = New System.Drawing.Point(13, 254)
+        Me.grpFrom.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpFrom.Name = "grpFrom"
-        Me.grpFrom.Size = New System.Drawing.Size(254, 103)
+        Me.grpFrom.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpFrom.Size = New System.Drawing.Size(339, 127)
         Me.grpFrom.TabIndex = 1
         Me.grpFrom.TabStop = False
         Me.grpFrom.Text = "From"
@@ -83,27 +87,29 @@ Partial Class sdgDoyRange
         'ucrReceiverFrom
         '
         Me.ucrReceiverFrom.frmParent = Me
-        Me.ucrReceiverFrom.Location = New System.Drawing.Point(36, 68)
+        Me.ucrReceiverFrom.Location = New System.Drawing.Point(48, 84)
         Me.ucrReceiverFrom.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverFrom.Name = "ucrReceiverFrom"
         Me.ucrReceiverFrom.Selector = Nothing
-        Me.ucrReceiverFrom.Size = New System.Drawing.Size(124, 20)
+        Me.ucrReceiverFrom.Size = New System.Drawing.Size(165, 25)
         Me.ucrReceiverFrom.strNcFilePath = ""
         Me.ucrReceiverFrom.TabIndex = 5
         Me.ucrReceiverFrom.ucrSelector = Nothing
         '
         'ucrDoyFrom
         '
-        Me.ucrDoyFrom.Location = New System.Drawing.Point(36, 67)
+        Me.ucrDoyFrom.Location = New System.Drawing.Point(48, 82)
+        Me.ucrDoyFrom.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrDoyFrom.Name = "ucrDoyFrom"
-        Me.ucrDoyFrom.Size = New System.Drawing.Size(209, 21)
+        Me.ucrDoyFrom.Size = New System.Drawing.Size(279, 26)
         Me.ucrDoyFrom.TabIndex = 5
         '
         'ucrPnlFrom
         '
-        Me.ucrPnlFrom.Location = New System.Drawing.Point(28, 17)
+        Me.ucrPnlFrom.Location = New System.Drawing.Point(37, 21)
+        Me.ucrPnlFrom.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrPnlFrom.Name = "ucrPnlFrom"
-        Me.ucrPnlFrom.Size = New System.Drawing.Size(186, 36)
+        Me.ucrPnlFrom.Size = New System.Drawing.Size(248, 44)
         Me.ucrPnlFrom.TabIndex = 3
         '
         'grpTo
@@ -117,9 +123,11 @@ Partial Class sdgDoyRange
         Me.grpTo.Controls.Add(Me.rdoToVariable)
         Me.grpTo.Controls.Add(Me.rdoToFixed)
         Me.grpTo.Controls.Add(Me.ucrPnlTo)
-        Me.grpTo.Location = New System.Drawing.Point(269, 206)
+        Me.grpTo.Location = New System.Drawing.Point(359, 254)
+        Me.grpTo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.grpTo.Name = "grpTo"
-        Me.grpTo.Size = New System.Drawing.Size(314, 103)
+        Me.grpTo.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpTo.Size = New System.Drawing.Size(419, 127)
         Me.grpTo.TabIndex = 2
         Me.grpTo.TabStop = False
         Me.grpTo.Text = "To"
@@ -128,9 +136,10 @@ Partial Class sdgDoyRange
         '
         Me.lblToDays.AutoSize = True
         Me.lblToDays.BackColor = System.Drawing.Color.Transparent
-        Me.lblToDays.Location = New System.Drawing.Point(102, 72)
+        Me.lblToDays.Location = New System.Drawing.Point(136, 89)
+        Me.lblToDays.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblToDays.Name = "lblToDays"
-        Me.lblToDays.Size = New System.Drawing.Size(29, 13)
+        Me.lblToDays.Size = New System.Drawing.Size(38, 16)
         Me.lblToDays.TabIndex = 9
         Me.lblToDays.Text = "days"
         '
@@ -138,11 +147,12 @@ Partial Class sdgDoyRange
         '
         Me.ucrNudToDiff.DecimalPlaces = New Decimal(New Integer() {0, 0, 0, 0})
         Me.ucrNudToDiff.Increment = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.ucrNudToDiff.Location = New System.Drawing.Point(50, 68)
+        Me.ucrNudToDiff.Location = New System.Drawing.Point(67, 84)
+        Me.ucrNudToDiff.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrNudToDiff.Maximum = New Decimal(New Integer() {100, 0, 0, 0})
         Me.ucrNudToDiff.Minimum = New Decimal(New Integer() {0, 0, 0, 0})
         Me.ucrNudToDiff.Name = "ucrNudToDiff"
-        Me.ucrNudToDiff.Size = New System.Drawing.Size(50, 20)
+        Me.ucrNudToDiff.Size = New System.Drawing.Size(67, 25)
         Me.ucrNudToDiff.TabIndex = 7
         Me.ucrNudToDiff.Value = New Decimal(New Integer() {0, 0, 0, 0})
         '
@@ -150,18 +160,20 @@ Partial Class sdgDoyRange
         '
         Me.lblToPlus.AutoSize = True
         Me.lblToPlus.BackColor = System.Drawing.Color.Transparent
-        Me.lblToPlus.Location = New System.Drawing.Point(16, 72)
+        Me.lblToPlus.Location = New System.Drawing.Point(21, 89)
+        Me.lblToPlus.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblToPlus.Name = "lblToPlus"
-        Me.lblToPlus.Size = New System.Drawing.Size(30, 13)
+        Me.lblToPlus.Size = New System.Drawing.Size(37, 16)
         Me.lblToPlus.TabIndex = 8
         Me.lblToPlus.Text = "Plus:"
         '
         'rdoLength
         '
         Me.rdoLength.AutoSize = True
-        Me.rdoLength.Location = New System.Drawing.Point(189, 28)
+        Me.rdoLength.Location = New System.Drawing.Point(252, 34)
+        Me.rdoLength.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoLength.Name = "rdoLength"
-        Me.rdoLength.Size = New System.Drawing.Size(58, 17)
+        Me.rdoLength.Size = New System.Drawing.Size(73, 20)
         Me.rdoLength.TabIndex = 6
         Me.rdoLength.TabStop = True
         Me.rdoLength.Text = "Length"
@@ -170,28 +182,30 @@ Partial Class sdgDoyRange
         'ucrReceiverTo
         '
         Me.ucrReceiverTo.frmParent = Me
-        Me.ucrReceiverTo.Location = New System.Drawing.Point(14, 67)
+        Me.ucrReceiverTo.Location = New System.Drawing.Point(19, 82)
         Me.ucrReceiverTo.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverTo.Name = "ucrReceiverTo"
         Me.ucrReceiverTo.Selector = Nothing
-        Me.ucrReceiverTo.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverTo.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverTo.strNcFilePath = ""
         Me.ucrReceiverTo.TabIndex = 5
         Me.ucrReceiverTo.ucrSelector = Nothing
         '
         'ucrDoyTo
         '
-        Me.ucrDoyTo.Location = New System.Drawing.Point(16, 67)
+        Me.ucrDoyTo.Location = New System.Drawing.Point(21, 82)
+        Me.ucrDoyTo.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrDoyTo.Name = "ucrDoyTo"
-        Me.ucrDoyTo.Size = New System.Drawing.Size(209, 21)
+        Me.ucrDoyTo.Size = New System.Drawing.Size(279, 26)
         Me.ucrDoyTo.TabIndex = 5
         '
         'rdoToVariable
         '
         Me.rdoToVariable.AutoSize = True
-        Me.rdoToVariable.Location = New System.Drawing.Point(98, 28)
+        Me.rdoToVariable.Location = New System.Drawing.Point(131, 34)
+        Me.rdoToVariable.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoToVariable.Name = "rdoToVariable"
-        Me.rdoToVariable.Size = New System.Drawing.Size(85, 17)
+        Me.rdoToVariable.Size = New System.Drawing.Size(112, 20)
         Me.rdoToVariable.TabIndex = 2
         Me.rdoToVariable.TabStop = True
         Me.rdoToVariable.Text = "Variable Day"
@@ -200,9 +214,10 @@ Partial Class sdgDoyRange
         'rdoToFixed
         '
         Me.rdoToFixed.AutoSize = True
-        Me.rdoToFixed.Location = New System.Drawing.Point(16, 28)
+        Me.rdoToFixed.Location = New System.Drawing.Point(21, 34)
+        Me.rdoToFixed.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoToFixed.Name = "rdoToFixed"
-        Me.rdoToFixed.Size = New System.Drawing.Size(72, 17)
+        Me.rdoToFixed.Size = New System.Drawing.Size(94, 20)
         Me.rdoToFixed.TabIndex = 1
         Me.rdoToFixed.TabStop = True
         Me.rdoToFixed.Text = "Fixed Day"
@@ -210,9 +225,10 @@ Partial Class sdgDoyRange
         '
         'ucrPnlTo
         '
-        Me.ucrPnlTo.Location = New System.Drawing.Point(6, 17)
+        Me.ucrPnlTo.Location = New System.Drawing.Point(8, 21)
+        Me.ucrPnlTo.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrPnlTo.Name = "ucrPnlTo"
-        Me.ucrPnlTo.Size = New System.Drawing.Size(295, 36)
+        Me.ucrPnlTo.Size = New System.Drawing.Size(393, 44)
         Me.ucrPnlTo.TabIndex = 3
         '
         'ucrSelectorDoy
@@ -220,29 +236,31 @@ Partial Class sdgDoyRange
         Me.ucrSelectorDoy.bDropUnusedFilterLevels = False
         Me.ucrSelectorDoy.bShowHiddenColumns = False
         Me.ucrSelectorDoy.bUseCurrentFilter = True
-        Me.ucrSelectorDoy.Location = New System.Drawing.Point(10, 9)
+        Me.ucrSelectorDoy.Location = New System.Drawing.Point(13, 11)
         Me.ucrSelectorDoy.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorDoy.Name = "ucrSelectorDoy"
-        Me.ucrSelectorDoy.Size = New System.Drawing.Size(210, 180)
+        Me.ucrSelectorDoy.Size = New System.Drawing.Size(280, 222)
         Me.ucrSelectorDoy.TabIndex = 0
         '
         'ucrBaseSub
         '
-        Me.ucrBaseSub.Location = New System.Drawing.Point(213, 324)
+        Me.ucrBaseSub.Location = New System.Drawing.Point(284, 399)
+        Me.ucrBaseSub.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBaseSub.Name = "ucrBaseSub"
-        Me.ucrBaseSub.Size = New System.Drawing.Size(156, 30)
+        Me.ucrBaseSub.Size = New System.Drawing.Size(208, 37)
         Me.ucrBaseSub.TabIndex = 3
         '
         'sdgDoyRange
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(587, 357)
+        Me.ClientSize = New System.Drawing.Size(783, 440)
         Me.Controls.Add(Me.grpTo)
         Me.Controls.Add(Me.ucrSelectorDoy)
         Me.Controls.Add(Me.grpFrom)
         Me.Controls.Add(Me.ucrBaseSub)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "sdgDoyRange"

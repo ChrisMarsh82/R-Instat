@@ -127,10 +127,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblConfirm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>96, 40</value>
+    <value>128, 49</value>
+  </data>
+  <data name="lblConfirm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblConfirm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 13</value>
+    <value>171, 16</value>
   </data>
   <data name="lblConfirm.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -151,13 +154,13 @@
     <value>1</value>
   </data>
   <data name="ucrBase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 63</value>
+    <value>13, 78</value>
   </data>
   <data name="ucrBase.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+    <value>5, 6, 5, 6</value>
   </data>
   <data name="ucrBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>410, 53</value>
+    <value>547, 65</value>
   </data>
   <data name="ucrBase.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -177,18 +180,23 @@
   <data name="ucrFilePath.FilePathBrowseText" xml:space="preserve">
     <value>Unable to load DLL 'SQLite.Interop.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)
 A problem occured attempting to translate string 'Unable to load DLL 'SQLite.Interop.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)
-A problem occured attempting to translate string 'Browse' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\translations\rInstatTranslations.db.' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\translations\rInstatTranslations.db.</value>
+A problem occured attempting to translate string 'Unable to load DLL 'SQLite.Interop.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)
+A problem occured attempting to translate string 'Browse' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\translations\rInstatTranslations.db.' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\translations\rInstatTranslations.db.' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE/translations\rInstatTranslations.db.</value>
   </data>
   <data name="ucrFilePath.FilePathLabel" xml:space="preserve">
     <value>Unable to load DLL 'SQLite.Interop.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)
 A problem occured attempting to translate string 'Unable to load DLL 'SQLite.Interop.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)
-A problem occured attempting to translate string 'Save Data To:' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\translations\rInstatTranslations.db.' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\translations\rInstatTranslations.db.</value>
+A problem occured attempting to translate string 'Unable to load DLL 'SQLite.Interop.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)
+A problem occured attempting to translate string 'Save Data To:' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\translations\rInstatTranslations.db.' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\translations\rInstatTranslations.db.' to language en using database C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE/translations\rInstatTranslations.db.</value>
   </data>
   <data name="ucrFilePath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 11</value>
+    <value>1, 14</value>
+  </data>
+  <data name="ucrFilePath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="ucrFilePath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 26</value>
+    <value>572, 32</value>
   </data>
   <data name="ucrFilePath.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -209,10 +217,13 @@ A problem occured attempting to translate string 'Save Data To:' to language en 
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>434, 124</value>
+    <value>579, 154</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

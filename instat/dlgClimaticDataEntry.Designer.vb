@@ -64,9 +64,10 @@ Partial Class dlgClimaticDataEntry
         Me.rdoAdd.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ActiveCaption
         Me.rdoAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.rdoAdd.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.rdoAdd.Location = New System.Drawing.Point(96, 12)
+        Me.rdoAdd.Location = New System.Drawing.Point(128, 15)
+        Me.rdoAdd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoAdd.Name = "rdoAdd"
-        Me.rdoAdd.Size = New System.Drawing.Size(110, 27)
+        Me.rdoAdd.Size = New System.Drawing.Size(147, 33)
         Me.rdoAdd.TabIndex = 1
         Me.rdoAdd.Text = "Add/Edit"
         Me.rdoAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -81,9 +82,10 @@ Partial Class dlgClimaticDataEntry
         Me.rdoEdit.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ActiveCaption
         Me.rdoEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.rdoEdit.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.rdoEdit.Location = New System.Drawing.Point(206, 12)
+        Me.rdoEdit.Location = New System.Drawing.Point(275, 15)
+        Me.rdoEdit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rdoEdit.Name = "rdoEdit"
-        Me.rdoEdit.Size = New System.Drawing.Size(110, 27)
+        Me.rdoEdit.Size = New System.Drawing.Size(147, 33)
         Me.rdoEdit.TabIndex = 2
         Me.rdoEdit.Text = "Correct"
         Me.rdoEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -93,9 +95,10 @@ Partial Class dlgClimaticDataEntry
         '
         Me.Label1.AutoSize = True
         Me.Label1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label1.Location = New System.Drawing.Point(274, 111)
+        Me.Label1.Location = New System.Drawing.Point(365, 137)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(76, 13)
+        Me.Label1.Size = New System.Drawing.Size(93, 16)
         Me.Label1.TabIndex = 8
         Me.Label1.Text = "Select Station:"
         '
@@ -103,9 +106,10 @@ Partial Class dlgClimaticDataEntry
         '
         Me.lblElement.AutoSize = True
         Me.lblElement.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblElement.Location = New System.Drawing.Point(274, 195)
+        Me.lblElement.Location = New System.Drawing.Point(365, 240)
+        Me.lblElement.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblElement.Name = "lblElement"
-        Me.lblElement.Size = New System.Drawing.Size(86, 13)
+        Me.lblElement.Size = New System.Drawing.Size(107, 16)
         Me.lblElement.TabIndex = 12
         Me.lblElement.Text = "Elements to Edit:"
         '
@@ -113,9 +117,10 @@ Partial Class dlgClimaticDataEntry
         '
         Me.lblDate.AutoSize = True
         Me.lblDate.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblDate.Location = New System.Drawing.Point(274, 153)
+        Me.lblDate.Location = New System.Drawing.Point(365, 188)
+        Me.lblDate.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDate.Name = "lblDate"
-        Me.lblDate.Size = New System.Drawing.Size(33, 13)
+        Me.lblDate.Size = New System.Drawing.Size(40, 16)
         Me.lblDate.TabIndex = 10
         Me.lblDate.Text = "Date:"
         '
@@ -123,9 +128,10 @@ Partial Class dlgClimaticDataEntry
         '
         Me.lblStation.AutoSize = True
         Me.lblStation.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblStation.Location = New System.Drawing.Point(274, 68)
+        Me.lblStation.Location = New System.Drawing.Point(365, 84)
+        Me.lblStation.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblStation.Name = "lblStation"
-        Me.lblStation.Size = New System.Drawing.Size(43, 13)
+        Me.lblStation.Size = New System.Drawing.Size(52, 16)
         Me.lblStation.TabIndex = 6
         Me.lblStation.Text = "Station:"
         '
@@ -134,9 +140,10 @@ Partial Class dlgClimaticDataEntry
         Me.lblStartingDate.AutoSize = True
         Me.lblStartingDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.lblStartingDate.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblStartingDate.Location = New System.Drawing.Point(7, 278)
+        Me.lblStartingDate.Location = New System.Drawing.Point(9, 342)
+        Me.lblStartingDate.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblStartingDate.Name = "lblStartingDate"
-        Me.lblStartingDate.Size = New System.Drawing.Size(58, 13)
+        Me.lblStartingDate.Size = New System.Drawing.Size(91, 20)
         Me.lblStartingDate.TabIndex = 16
         Me.lblStartingDate.Tag = ""
         Me.lblStartingDate.Text = "Start Date:"
@@ -144,9 +151,10 @@ Partial Class dlgClimaticDataEntry
         'cmdEnterData
         '
         Me.cmdEnterData.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.cmdEnterData.Location = New System.Drawing.Point(7, 370)
+        Me.cmdEnterData.Location = New System.Drawing.Point(9, 455)
+        Me.cmdEnterData.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdEnterData.Name = "cmdEnterData"
-        Me.cmdEnterData.Size = New System.Drawing.Size(106, 24)
+        Me.cmdEnterData.Size = New System.Drawing.Size(141, 30)
         Me.cmdEnterData.TabIndex = 20
         Me.cmdEnterData.Text = "Enter Data"
         Me.cmdEnterData.UseVisualStyleBackColor = True
@@ -155,9 +163,10 @@ Partial Class dlgClimaticDataEntry
         '
         Me.Label2.AutoSize = True
         Me.Label2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label2.Location = New System.Drawing.Point(274, 320)
+        Me.Label2.Location = New System.Drawing.Point(365, 394)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(91, 13)
+        Me.Label2.Size = New System.Drawing.Size(115, 16)
         Me.Label2.TabIndex = 14
         Me.Label2.Text = "Variables to View:"
         '
@@ -165,9 +174,10 @@ Partial Class dlgClimaticDataEntry
         '
         Me.lblPeriod.AutoSize = True
         Me.lblPeriod.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblPeriod.Location = New System.Drawing.Point(7, 247)
+        Me.lblPeriod.Location = New System.Drawing.Point(9, 304)
+        Me.lblPeriod.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPeriod.Name = "lblPeriod"
-        Me.lblPeriod.Size = New System.Drawing.Size(40, 13)
+        Me.lblPeriod.Size = New System.Drawing.Size(51, 16)
         Me.lblPeriod.TabIndex = 4
         Me.lblPeriod.Text = "Period:"
         '
@@ -176,9 +186,10 @@ Partial Class dlgClimaticDataEntry
         Me.lblEndingDate.AutoSize = True
         Me.lblEndingDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.lblEndingDate.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblEndingDate.Location = New System.Drawing.Point(7, 308)
+        Me.lblEndingDate.Location = New System.Drawing.Point(9, 379)
+        Me.lblEndingDate.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblEndingDate.Name = "lblEndingDate"
-        Me.lblEndingDate.Size = New System.Drawing.Size(55, 13)
+        Me.lblEndingDate.Size = New System.Drawing.Size(84, 20)
         Me.lblEndingDate.TabIndex = 18
         Me.lblEndingDate.Tag = ""
         Me.lblEndingDate.Text = "End Date:"
@@ -186,9 +197,10 @@ Partial Class dlgClimaticDataEntry
         'cmdCheckData
         '
         Me.cmdCheckData.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.cmdCheckData.Location = New System.Drawing.Point(137, 370)
+        Me.cmdCheckData.Location = New System.Drawing.Point(183, 455)
+        Me.cmdCheckData.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdCheckData.Name = "cmdCheckData"
-        Me.cmdCheckData.Size = New System.Drawing.Size(72, 24)
+        Me.cmdCheckData.Size = New System.Drawing.Size(96, 30)
         Me.cmdCheckData.TabIndex = 21
         Me.cmdCheckData.Text = "Check Data"
         Me.cmdCheckData.UseVisualStyleBackColor = True
@@ -209,22 +221,24 @@ Partial Class dlgClimaticDataEntry
         '
         Me.ucrEndDate.DateValue = New Date(2021, 3, 27, 16, 14, 1, 560)
         Me.ucrEndDate.Format = "dd MMM yyyy"
-        Me.ucrEndDate.Location = New System.Drawing.Point(92, 305)
+        Me.ucrEndDate.Location = New System.Drawing.Point(123, 375)
+        Me.ucrEndDate.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrEndDate.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.ucrEndDate.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.ucrEndDate.Name = "ucrEndDate"
-        Me.ucrEndDate.Size = New System.Drawing.Size(132, 21)
+        Me.ucrEndDate.Size = New System.Drawing.Size(176, 26)
         Me.ucrEndDate.TabIndex = 28
         '
         'ucrStartDate
         '
         Me.ucrStartDate.DateValue = New Date(2021, 3, 27, 16, 14, 1, 567)
         Me.ucrStartDate.Format = "dd MMM yyyy"
-        Me.ucrStartDate.Location = New System.Drawing.Point(92, 276)
+        Me.ucrStartDate.Location = New System.Drawing.Point(123, 340)
+        Me.ucrStartDate.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrStartDate.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.ucrStartDate.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.ucrStartDate.Name = "ucrStartDate"
-        Me.ucrStartDate.Size = New System.Drawing.Size(132, 21)
+        Me.ucrStartDate.Size = New System.Drawing.Size(176, 26)
         Me.ucrStartDate.TabIndex = 27
         '
         'ucrInputType
@@ -232,19 +246,20 @@ Partial Class dlgClimaticDataEntry
         Me.ucrInputType.AddQuotesIfUnrecognised = True
         Me.ucrInputType.GetSetSelectedIndex = -1
         Me.ucrInputType.IsReadOnly = False
-        Me.ucrInputType.Location = New System.Drawing.Point(92, 244)
+        Me.ucrInputType.Location = New System.Drawing.Point(123, 300)
+        Me.ucrInputType.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputType.Name = "ucrInputType"
-        Me.ucrInputType.Size = New System.Drawing.Size(132, 21)
+        Me.ucrInputType.Size = New System.Drawing.Size(176, 26)
         Me.ucrInputType.TabIndex = 5
         '
         'ucrReceiverViewVariables
         '
         Me.ucrReceiverViewVariables.frmParent = Me
-        Me.ucrReceiverViewVariables.Location = New System.Drawing.Point(273, 337)
+        Me.ucrReceiverViewVariables.Location = New System.Drawing.Point(364, 415)
         Me.ucrReceiverViewVariables.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverViewVariables.Name = "ucrReceiverViewVariables"
         Me.ucrReceiverViewVariables.Selector = Nothing
-        Me.ucrReceiverViewVariables.Size = New System.Drawing.Size(120, 100)
+        Me.ucrReceiverViewVariables.Size = New System.Drawing.Size(160, 123)
         Me.ucrReceiverViewVariables.strNcFilePath = ""
         Me.ucrReceiverViewVariables.TabIndex = 15
         Me.ucrReceiverViewVariables.ucrSelector = Nothing
@@ -254,20 +269,20 @@ Partial Class dlgClimaticDataEntry
         Me.ucrSelectorClimaticDataEntry.bDropUnusedFilterLevels = False
         Me.ucrSelectorClimaticDataEntry.bShowHiddenColumns = False
         Me.ucrSelectorClimaticDataEntry.bUseCurrentFilter = True
-        Me.ucrSelectorClimaticDataEntry.Location = New System.Drawing.Point(7, 48)
+        Me.ucrSelectorClimaticDataEntry.Location = New System.Drawing.Point(9, 59)
         Me.ucrSelectorClimaticDataEntry.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorClimaticDataEntry.Name = "ucrSelectorClimaticDataEntry"
-        Me.ucrSelectorClimaticDataEntry.Size = New System.Drawing.Size(210, 180)
+        Me.ucrSelectorClimaticDataEntry.Size = New System.Drawing.Size(280, 222)
         Me.ucrSelectorClimaticDataEntry.TabIndex = 3
         '
         'ucrReceiverStation
         '
         Me.ucrReceiverStation.frmParent = Me
-        Me.ucrReceiverStation.Location = New System.Drawing.Point(273, 84)
+        Me.ucrReceiverStation.Location = New System.Drawing.Point(364, 103)
         Me.ucrReceiverStation.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverStation.Name = "ucrReceiverStation"
         Me.ucrReceiverStation.Selector = Nothing
-        Me.ucrReceiverStation.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverStation.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverStation.strNcFilePath = ""
         Me.ucrReceiverStation.TabIndex = 7
         Me.ucrReceiverStation.ucrSelector = Nothing
@@ -275,11 +290,11 @@ Partial Class dlgClimaticDataEntry
         'ucrReceiverDate
         '
         Me.ucrReceiverDate.frmParent = Me
-        Me.ucrReceiverDate.Location = New System.Drawing.Point(273, 169)
+        Me.ucrReceiverDate.Location = New System.Drawing.Point(364, 208)
         Me.ucrReceiverDate.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverDate.Name = "ucrReceiverDate"
         Me.ucrReceiverDate.Selector = Nothing
-        Me.ucrReceiverDate.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverDate.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverDate.strNcFilePath = ""
         Me.ucrReceiverDate.TabIndex = 11
         Me.ucrReceiverDate.ucrSelector = Nothing
@@ -287,44 +302,48 @@ Partial Class dlgClimaticDataEntry
         'ucrReceiverElements
         '
         Me.ucrReceiverElements.frmParent = Me
-        Me.ucrReceiverElements.Location = New System.Drawing.Point(273, 212)
+        Me.ucrReceiverElements.Location = New System.Drawing.Point(364, 261)
         Me.ucrReceiverElements.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverElements.Name = "ucrReceiverElements"
         Me.ucrReceiverElements.Selector = Nothing
-        Me.ucrReceiverElements.Size = New System.Drawing.Size(120, 100)
+        Me.ucrReceiverElements.Size = New System.Drawing.Size(160, 123)
         Me.ucrReceiverElements.strNcFilePath = ""
         Me.ucrReceiverElements.TabIndex = 13
         Me.ucrReceiverElements.ucrSelector = Nothing
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(7, 466)
+        Me.ucrBase.Location = New System.Drawing.Point(9, 574)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(404, 52)
+        Me.ucrBase.Size = New System.Drawing.Size(539, 64)
         Me.ucrBase.TabIndex = 22
         '
         'ucrPnlOptions
         '
-        Me.ucrPnlOptions.Location = New System.Drawing.Point(66, 8)
+        Me.ucrPnlOptions.Location = New System.Drawing.Point(88, 10)
+        Me.ucrPnlOptions.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrPnlOptions.Name = "ucrPnlOptions"
-        Me.ucrPnlOptions.Size = New System.Drawing.Size(278, 35)
+        Me.ucrPnlOptions.Size = New System.Drawing.Size(371, 43)
         Me.ucrPnlOptions.TabIndex = 26
         '
         'lblNbRowsChanged
         '
         Me.lblNbRowsChanged.AutoSize = True
-        Me.lblNbRowsChanged.Location = New System.Drawing.Point(253, -57)
+        Me.lblNbRowsChanged.Location = New System.Drawing.Point(337, -70)
+        Me.lblNbRowsChanged.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblNbRowsChanged.Name = "lblNbRowsChanged"
-        Me.lblNbRowsChanged.Size = New System.Drawing.Size(39, 13)
+        Me.lblNbRowsChanged.Size = New System.Drawing.Size(49, 16)
         Me.lblNbRowsChanged.TabIndex = 88
         Me.lblNbRowsChanged.Text = "Label3"
         '
         'cmdOptions
         '
         Me.cmdOptions.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.cmdOptions.Location = New System.Drawing.Point(7, 337)
+        Me.cmdOptions.Location = New System.Drawing.Point(9, 415)
+        Me.cmdOptions.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmdOptions.Name = "cmdOptions"
-        Me.cmdOptions.Size = New System.Drawing.Size(106, 24)
+        Me.cmdOptions.Size = New System.Drawing.Size(141, 30)
         Me.cmdOptions.TabIndex = 89
         Me.cmdOptions.Text = "Options"
         Me.cmdOptions.UseVisualStyleBackColor = True
@@ -332,9 +351,10 @@ Partial Class dlgClimaticDataEntry
         'lblNbRowsChanged1
         '
         Me.lblNbRowsChanged1.AutoSize = True
-        Me.lblNbRowsChanged1.Location = New System.Drawing.Point(7, 405)
+        Me.lblNbRowsChanged1.Location = New System.Drawing.Point(9, 498)
+        Me.lblNbRowsChanged1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblNbRowsChanged1.Name = "lblNbRowsChanged1"
-        Me.lblNbRowsChanged1.Size = New System.Drawing.Size(39, 13)
+        Me.lblNbRowsChanged1.Size = New System.Drawing.Size(49, 16)
         Me.lblNbRowsChanged1.TabIndex = 90
         Me.lblNbRowsChanged1.Text = "Label3"
         '
@@ -343,25 +363,27 @@ Partial Class dlgClimaticDataEntry
         Me.ucrInputSelectStation.AddQuotesIfUnrecognised = True
         Me.ucrInputSelectStation.GetSetSelectedIndex = -1
         Me.ucrInputSelectStation.IsReadOnly = False
-        Me.ucrInputSelectStation.Location = New System.Drawing.Point(273, 127)
+        Me.ucrInputSelectStation.Location = New System.Drawing.Point(364, 156)
+        Me.ucrInputSelectStation.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputSelectStation.Name = "ucrInputSelectStation"
-        Me.ucrInputSelectStation.Size = New System.Drawing.Size(126, 21)
+        Me.ucrInputSelectStation.Size = New System.Drawing.Size(168, 26)
         Me.ucrInputSelectStation.TabIndex = 91
         '
         'lblNbCommentEntered
         '
         Me.lblNbCommentEntered.AutoSize = True
-        Me.lblNbCommentEntered.Location = New System.Drawing.Point(7, 429)
+        Me.lblNbCommentEntered.Location = New System.Drawing.Point(9, 528)
+        Me.lblNbCommentEntered.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblNbCommentEntered.Name = "lblNbCommentEntered"
-        Me.lblNbCommentEntered.Size = New System.Drawing.Size(39, 13)
+        Me.lblNbCommentEntered.Size = New System.Drawing.Size(49, 16)
         Me.lblNbCommentEntered.TabIndex = 92
         Me.lblNbCommentEntered.Text = "Label4"
         '
         'dlgClimaticDataEntry
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(411, 520)
+        Me.ClientSize = New System.Drawing.Size(548, 641)
         Me.Controls.Add(Me.lblNbCommentEntered)
         Me.Controls.Add(Me.ucrInputSelectStation)
         Me.Controls.Add(Me.lblNbRowsChanged1)
@@ -390,6 +412,7 @@ Partial Class dlgClimaticDataEntry
         Me.Controls.Add(Me.rdoEdit)
         Me.Controls.Add(Me.ucrPnlOptions)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "dlgClimaticDataEntry"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Daily Data Entry"

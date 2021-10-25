@@ -64,71 +64,80 @@ Partial Class dlgBoxplotMethod
         'lblDataList
         '
         Me.lblDataList.AutoSize = True
-        Me.lblDataList.Location = New System.Drawing.Point(146, 9)
+        Me.lblDataList.Location = New System.Drawing.Point(195, 11)
+        Me.lblDataList.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDataList.Name = "lblDataList"
-        Me.lblDataList.Size = New System.Drawing.Size(125, 13)
+        Me.lblDataList.Size = New System.Drawing.Size(158, 16)
         Me.lblDataList.TabIndex = 1
         Me.lblDataList.Text = "Data list not implemented"
         '
         'lblTitle
         '
         Me.lblTitle.AutoSize = True
-        Me.lblTitle.Location = New System.Drawing.Point(12, 49)
+        Me.lblTitle.Location = New System.Drawing.Point(16, 60)
+        Me.lblTitle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(27, 13)
+        Me.lblTitle.Size = New System.Drawing.Size(34, 16)
         Me.lblTitle.TabIndex = 2
         Me.lblTitle.Tag = "Title"
         Me.lblTitle.Text = "Title"
         '
         'txtInterestedVariable
         '
-        Me.txtInterestedVariable.Location = New System.Drawing.Point(137, 168)
+        Me.txtInterestedVariable.Location = New System.Drawing.Point(183, 207)
+        Me.txtInterestedVariable.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtInterestedVariable.Name = "txtInterestedVariable"
-        Me.txtInterestedVariable.Size = New System.Drawing.Size(100, 20)
+        Me.txtInterestedVariable.Size = New System.Drawing.Size(132, 22)
         Me.txtInterestedVariable.TabIndex = 3
         '
         'txtFactor
         '
-        Me.txtFactor.Location = New System.Drawing.Point(137, 142)
+        Me.txtFactor.Location = New System.Drawing.Point(183, 175)
+        Me.txtFactor.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtFactor.Name = "txtFactor"
-        Me.txtFactor.Size = New System.Drawing.Size(100, 20)
+        Me.txtFactor.Size = New System.Drawing.Size(132, 22)
         Me.txtFactor.TabIndex = 4
         '
         'txtXLabel
         '
-        Me.txtXLabel.Location = New System.Drawing.Point(137, 116)
+        Me.txtXLabel.Location = New System.Drawing.Point(183, 143)
+        Me.txtXLabel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtXLabel.Name = "txtXLabel"
-        Me.txtXLabel.Size = New System.Drawing.Size(100, 20)
+        Me.txtXLabel.Size = New System.Drawing.Size(132, 22)
         Me.txtXLabel.TabIndex = 5
         '
         'txtYLabel
         '
-        Me.txtYLabel.Location = New System.Drawing.Point(137, 90)
+        Me.txtYLabel.Location = New System.Drawing.Point(183, 111)
+        Me.txtYLabel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtYLabel.Name = "txtYLabel"
-        Me.txtYLabel.Size = New System.Drawing.Size(100, 20)
+        Me.txtYLabel.Size = New System.Drawing.Size(132, 22)
         Me.txtYLabel.TabIndex = 6
         Me.txtYLabel.Tag = "YLabel"
         '
         'txtFillColour
         '
-        Me.txtFillColour.Location = New System.Drawing.Point(137, 64)
+        Me.txtFillColour.Location = New System.Drawing.Point(183, 79)
+        Me.txtFillColour.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtFillColour.Name = "txtFillColour"
-        Me.txtFillColour.Size = New System.Drawing.Size(100, 20)
+        Me.txtFillColour.Size = New System.Drawing.Size(132, 22)
         Me.txtFillColour.TabIndex = 7
         '
         'txtTitle
         '
-        Me.txtTitle.Location = New System.Drawing.Point(137, 41)
+        Me.txtTitle.Location = New System.Drawing.Point(183, 50)
+        Me.txtTitle.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtTitle.Name = "txtTitle"
-        Me.txtTitle.Size = New System.Drawing.Size(100, 20)
+        Me.txtTitle.Size = New System.Drawing.Size(132, 22)
         Me.txtTitle.TabIndex = 8
         '
         'chkConvert
         '
         Me.chkConvert.AutoSize = True
-        Me.chkConvert.Location = New System.Drawing.Point(364, 187)
+        Me.chkConvert.Location = New System.Drawing.Point(485, 230)
+        Me.chkConvert.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkConvert.Name = "chkConvert"
-        Me.chkConvert.Size = New System.Drawing.Size(63, 17)
+        Me.chkConvert.Size = New System.Drawing.Size(80, 21)
         Me.chkConvert.TabIndex = 9
         Me.chkConvert.Tag = "Convert"
         Me.chkConvert.Text = "Convert"
@@ -137,9 +146,10 @@ Partial Class dlgBoxplotMethod
         'chkHorizontal
         '
         Me.chkHorizontal.AutoSize = True
-        Me.chkHorizontal.Location = New System.Drawing.Point(364, 221)
+        Me.chkHorizontal.Location = New System.Drawing.Point(485, 272)
+        Me.chkHorizontal.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkHorizontal.Name = "chkHorizontal"
-        Me.chkHorizontal.Size = New System.Drawing.Size(73, 17)
+        Me.chkHorizontal.Size = New System.Drawing.Size(94, 21)
         Me.chkHorizontal.TabIndex = 10
         Me.chkHorizontal.Tag = "Horizontal"
         Me.chkHorizontal.Text = "Horizontal"
@@ -147,17 +157,19 @@ Partial Class dlgBoxplotMethod
         '
         'nudWhisklty
         '
-        Me.nudWhisklty.Location = New System.Drawing.Point(137, 220)
+        Me.nudWhisklty.Location = New System.Drawing.Point(183, 271)
+        Me.nudWhisklty.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.nudWhisklty.Name = "nudWhisklty"
-        Me.nudWhisklty.Size = New System.Drawing.Size(66, 20)
+        Me.nudWhisklty.Size = New System.Drawing.Size(88, 22)
         Me.nudWhisklty.TabIndex = 11
         '
         'lblFillColour
         '
         Me.lblFillColour.AutoSize = True
-        Me.lblFillColour.Location = New System.Drawing.Point(12, 70)
+        Me.lblFillColour.Location = New System.Drawing.Point(16, 86)
+        Me.lblFillColour.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblFillColour.Name = "lblFillColour"
-        Me.lblFillColour.Size = New System.Drawing.Size(46, 13)
+        Me.lblFillColour.Size = New System.Drawing.Size(60, 16)
         Me.lblFillColour.TabIndex = 12
         Me.lblFillColour.Tag = "Fill_Colour"
         Me.lblFillColour.Text = "Fill Color"
@@ -165,9 +177,10 @@ Partial Class dlgBoxplotMethod
         'lblYLabel
         '
         Me.lblYLabel.AutoSize = True
-        Me.lblYLabel.Location = New System.Drawing.Point(12, 93)
+        Me.lblYLabel.Location = New System.Drawing.Point(16, 114)
+        Me.lblYLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblYLabel.Name = "lblYLabel"
-        Me.lblYLabel.Size = New System.Drawing.Size(43, 13)
+        Me.lblYLabel.Size = New System.Drawing.Size(54, 16)
         Me.lblYLabel.TabIndex = 14
         Me.lblYLabel.Tag = "Y_Label"
         Me.lblYLabel.Text = "Y Label"
@@ -175,9 +188,10 @@ Partial Class dlgBoxplotMethod
         'lblXLabel
         '
         Me.lblXLabel.AutoSize = True
-        Me.lblXLabel.Location = New System.Drawing.Point(12, 123)
+        Me.lblXLabel.Location = New System.Drawing.Point(16, 151)
+        Me.lblXLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblXLabel.Name = "lblXLabel"
-        Me.lblXLabel.Size = New System.Drawing.Size(43, 13)
+        Me.lblXLabel.Size = New System.Drawing.Size(53, 16)
         Me.lblXLabel.TabIndex = 15
         Me.lblXLabel.Tag = "X_Label"
         Me.lblXLabel.Text = "X Label"
@@ -185,9 +199,10 @@ Partial Class dlgBoxplotMethod
         'lblFactor
         '
         Me.lblFactor.AutoSize = True
-        Me.lblFactor.Location = New System.Drawing.Point(12, 149)
+        Me.lblFactor.Location = New System.Drawing.Point(16, 183)
+        Me.lblFactor.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblFactor.Name = "lblFactor"
-        Me.lblFactor.Size = New System.Drawing.Size(37, 13)
+        Me.lblFactor.Size = New System.Drawing.Size(46, 16)
         Me.lblFactor.TabIndex = 16
         Me.lblFactor.Tag = "Factor"
         Me.lblFactor.Text = "Factor"
@@ -195,10 +210,11 @@ Partial Class dlgBoxplotMethod
         'lblInterestedVariable
         '
         Me.lblInterestedVariable.AutoSize = True
-        Me.lblInterestedVariable.Location = New System.Drawing.Point(12, 175)
+        Me.lblInterestedVariable.Location = New System.Drawing.Point(16, 215)
+        Me.lblInterestedVariable.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblInterestedVariable.Name = "lblInterestedVariable"
         Me.lblInterestedVariable.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lblInterestedVariable.Size = New System.Drawing.Size(95, 13)
+        Me.lblInterestedVariable.Size = New System.Drawing.Size(121, 16)
         Me.lblInterestedVariable.TabIndex = 17
         Me.lblInterestedVariable.Tag = "Interested_Variable"
         Me.lblInterestedVariable.Text = "Interested Variable"
@@ -206,41 +222,45 @@ Partial Class dlgBoxplotMethod
         'lblWhisklty
         '
         Me.lblWhisklty.AutoSize = True
-        Me.lblWhisklty.Location = New System.Drawing.Point(12, 220)
+        Me.lblWhisklty.Location = New System.Drawing.Point(16, 271)
+        Me.lblWhisklty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblWhisklty.Name = "lblWhisklty"
-        Me.lblWhisklty.Size = New System.Drawing.Size(47, 13)
+        Me.lblWhisklty.Size = New System.Drawing.Size(58, 16)
         Me.lblWhisklty.TabIndex = 18
         Me.lblWhisklty.Text = "Whisklty"
         '
         'lblDataPeriodLabel
         '
         Me.lblDataPeriodLabel.AutoSize = True
-        Me.lblDataPeriodLabel.Location = New System.Drawing.Point(12, 194)
+        Me.lblDataPeriodLabel.Location = New System.Drawing.Point(16, 239)
+        Me.lblDataPeriodLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDataPeriodLabel.Name = "lblDataPeriodLabel"
-        Me.lblDataPeriodLabel.Size = New System.Drawing.Size(63, 13)
+        Me.lblDataPeriodLabel.Size = New System.Drawing.Size(80, 16)
         Me.lblDataPeriodLabel.TabIndex = 19
         Me.lblDataPeriodLabel.Tag = "Period_Label"
         Me.lblDataPeriodLabel.Text = "Data Period"
         '
         'txtDataPeriodLabel
         '
-        Me.txtDataPeriodLabel.Location = New System.Drawing.Point(137, 194)
+        Me.txtDataPeriodLabel.Location = New System.Drawing.Point(183, 239)
+        Me.txtDataPeriodLabel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtDataPeriodLabel.Name = "txtDataPeriodLabel"
-        Me.txtDataPeriodLabel.Size = New System.Drawing.Size(100, 20)
+        Me.txtDataPeriodLabel.Size = New System.Drawing.Size(132, 22)
         Me.txtDataPeriodLabel.TabIndex = 20
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(35, 282)
+        Me.ucrBase.Location = New System.Drawing.Point(47, 347)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 53)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 65)
         Me.ucrBase.TabIndex = 0
         '
         'dlgBoxplotMethod
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(489, 336)
+        Me.ClientSize = New System.Drawing.Size(652, 415)
         Me.Controls.Add(Me.txtDataPeriodLabel)
         Me.Controls.Add(Me.lblDataPeriodLabel)
         Me.Controls.Add(Me.lblWhisklty)
@@ -262,6 +282,7 @@ Partial Class dlgBoxplotMethod
         Me.Controls.Add(Me.lblDataList)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgBoxplotMethod"

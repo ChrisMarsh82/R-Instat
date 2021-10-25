@@ -41,53 +41,59 @@ Partial Class dlgClimaticLengthOfSeason
         'lblStartofRains
         '
         Me.lblStartofRains.AutoSize = True
-        Me.lblStartofRains.Location = New System.Drawing.Point(281, 31)
+        Me.lblStartofRains.Location = New System.Drawing.Point(375, 38)
+        Me.lblStartofRains.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblStartofRains.Name = "lblStartofRains"
-        Me.lblStartofRains.Size = New System.Drawing.Size(32, 13)
+        Me.lblStartofRains.Size = New System.Drawing.Size(38, 16)
         Me.lblStartofRains.TabIndex = 1
         Me.lblStartofRains.Text = "Start:"
         '
         'lblStartofRainsLogical
         '
         Me.lblStartofRainsLogical.AutoSize = True
-        Me.lblStartofRainsLogical.Location = New System.Drawing.Point(281, 86)
+        Me.lblStartofRainsLogical.Location = New System.Drawing.Point(375, 106)
+        Me.lblStartofRainsLogical.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblStartofRainsLogical.Name = "lblStartofRainsLogical"
-        Me.lblStartofRainsLogical.Size = New System.Drawing.Size(44, 13)
+        Me.lblStartofRainsLogical.Size = New System.Drawing.Size(53, 16)
         Me.lblStartofRainsLogical.TabIndex = 3
         Me.lblStartofRainsLogical.Text = "Start(L):"
         '
         'lblEndofRains
         '
         Me.lblEndofRains.AutoSize = True
-        Me.lblEndofRains.Location = New System.Drawing.Point(280, 136)
+        Me.lblEndofRains.Location = New System.Drawing.Point(373, 167)
+        Me.lblEndofRains.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblEndofRains.Name = "lblEndofRains"
-        Me.lblEndofRains.Size = New System.Drawing.Size(29, 13)
+        Me.lblEndofRains.Size = New System.Drawing.Size(35, 16)
         Me.lblEndofRains.TabIndex = 5
         Me.lblEndofRains.Text = "End:"
         '
         'lblEndofRainsLogical
         '
         Me.lblEndofRainsLogical.AutoSize = True
-        Me.lblEndofRainsLogical.Location = New System.Drawing.Point(280, 182)
+        Me.lblEndofRainsLogical.Location = New System.Drawing.Point(373, 224)
+        Me.lblEndofRainsLogical.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblEndofRainsLogical.Name = "lblEndofRainsLogical"
-        Me.lblEndofRainsLogical.Size = New System.Drawing.Size(41, 13)
+        Me.lblEndofRainsLogical.Size = New System.Drawing.Size(50, 16)
         Me.lblEndofRainsLogical.TabIndex = 7
         Me.lblEndofRainsLogical.Text = "End(L):"
         '
         'ucrChkType
         '
         Me.ucrChkType.Checked = False
-        Me.ucrChkType.Location = New System.Drawing.Point(5, 285)
+        Me.ucrChkType.Location = New System.Drawing.Point(7, 351)
+        Me.ucrChkType.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkType.Name = "ucrChkType"
-        Me.ucrChkType.Size = New System.Drawing.Size(87, 20)
+        Me.ucrChkType.Size = New System.Drawing.Size(116, 25)
         Me.ucrChkType.TabIndex = 11
         '
         'ucrChkLengthofSeason
         '
         Me.ucrChkLengthofSeason.Checked = False
-        Me.ucrChkLengthofSeason.Location = New System.Drawing.Point(5, 247)
+        Me.ucrChkLengthofSeason.Location = New System.Drawing.Point(7, 304)
+        Me.ucrChkLengthofSeason.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
         Me.ucrChkLengthofSeason.Name = "ucrChkLengthofSeason"
-        Me.ucrChkLengthofSeason.Size = New System.Drawing.Size(143, 20)
+        Me.ucrChkLengthofSeason.Size = New System.Drawing.Size(191, 25)
         Me.ucrChkLengthofSeason.TabIndex = 9
         '
         'ucrInputTextType
@@ -95,9 +101,10 @@ Partial Class dlgClimaticLengthOfSeason
         Me.ucrInputTextType.AddQuotesIfUnrecognised = True
         Me.ucrInputTextType.IsMultiline = False
         Me.ucrInputTextType.IsReadOnly = False
-        Me.ucrInputTextType.Location = New System.Drawing.Point(97, 284)
+        Me.ucrInputTextType.Location = New System.Drawing.Point(129, 350)
+        Me.ucrInputTextType.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputTextType.Name = "ucrInputTextType"
-        Me.ucrInputTextType.Size = New System.Drawing.Size(137, 21)
+        Me.ucrInputTextType.Size = New System.Drawing.Size(183, 26)
         Me.ucrInputTextType.TabIndex = 12
         '
         'ucrInputLengthofSeason
@@ -105,19 +112,20 @@ Partial Class dlgClimaticLengthOfSeason
         Me.ucrInputLengthofSeason.AddQuotesIfUnrecognised = True
         Me.ucrInputLengthofSeason.IsMultiline = False
         Me.ucrInputLengthofSeason.IsReadOnly = False
-        Me.ucrInputLengthofSeason.Location = New System.Drawing.Point(149, 246)
+        Me.ucrInputLengthofSeason.Location = New System.Drawing.Point(199, 303)
+        Me.ucrInputLengthofSeason.Margin = New System.Windows.Forms.Padding(9, 7, 9, 7)
         Me.ucrInputLengthofSeason.Name = "ucrInputLengthofSeason"
-        Me.ucrInputLengthofSeason.Size = New System.Drawing.Size(137, 21)
+        Me.ucrInputLengthofSeason.Size = New System.Drawing.Size(183, 26)
         Me.ucrInputLengthofSeason.TabIndex = 10
         '
         'ucrReceiverStartofRainsLogical
         '
         Me.ucrReceiverStartofRainsLogical.frmParent = Me
-        Me.ucrReceiverStartofRainsLogical.Location = New System.Drawing.Point(283, 103)
+        Me.ucrReceiverStartofRainsLogical.Location = New System.Drawing.Point(377, 127)
         Me.ucrReceiverStartofRainsLogical.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverStartofRainsLogical.Name = "ucrReceiverStartofRainsLogical"
         Me.ucrReceiverStartofRainsLogical.Selector = Nothing
-        Me.ucrReceiverStartofRainsLogical.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverStartofRainsLogical.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverStartofRainsLogical.strNcFilePath = ""
         Me.ucrReceiverStartofRainsLogical.TabIndex = 4
         Me.ucrReceiverStartofRainsLogical.ucrSelector = Nothing
@@ -125,11 +133,11 @@ Partial Class dlgClimaticLengthOfSeason
         'ucrReceiverEndofRainsLogical
         '
         Me.ucrReceiverEndofRainsLogical.frmParent = Me
-        Me.ucrReceiverEndofRainsLogical.Location = New System.Drawing.Point(283, 198)
+        Me.ucrReceiverEndofRainsLogical.Location = New System.Drawing.Point(377, 244)
         Me.ucrReceiverEndofRainsLogical.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverEndofRainsLogical.Name = "ucrReceiverEndofRainsLogical"
         Me.ucrReceiverEndofRainsLogical.Selector = Nothing
-        Me.ucrReceiverEndofRainsLogical.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverEndofRainsLogical.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverEndofRainsLogical.strNcFilePath = ""
         Me.ucrReceiverEndofRainsLogical.TabIndex = 8
         Me.ucrReceiverEndofRainsLogical.ucrSelector = Nothing
@@ -137,11 +145,11 @@ Partial Class dlgClimaticLengthOfSeason
         'ucrReceiverEndofRains
         '
         Me.ucrReceiverEndofRains.frmParent = Me
-        Me.ucrReceiverEndofRains.Location = New System.Drawing.Point(283, 152)
+        Me.ucrReceiverEndofRains.Location = New System.Drawing.Point(377, 187)
         Me.ucrReceiverEndofRains.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverEndofRains.Name = "ucrReceiverEndofRains"
         Me.ucrReceiverEndofRains.Selector = Nothing
-        Me.ucrReceiverEndofRains.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverEndofRains.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverEndofRains.strNcFilePath = ""
         Me.ucrReceiverEndofRains.TabIndex = 6
         Me.ucrReceiverEndofRains.ucrSelector = Nothing
@@ -149,11 +157,11 @@ Partial Class dlgClimaticLengthOfSeason
         'ucrReceiverStartofRains
         '
         Me.ucrReceiverStartofRains.frmParent = Me
-        Me.ucrReceiverStartofRains.Location = New System.Drawing.Point(283, 47)
+        Me.ucrReceiverStartofRains.Location = New System.Drawing.Point(377, 58)
         Me.ucrReceiverStartofRains.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverStartofRains.Name = "ucrReceiverStartofRains"
         Me.ucrReceiverStartofRains.Selector = Nothing
-        Me.ucrReceiverStartofRains.Size = New System.Drawing.Size(120, 20)
+        Me.ucrReceiverStartofRains.Size = New System.Drawing.Size(160, 25)
         Me.ucrReceiverStartofRains.strNcFilePath = ""
         Me.ucrReceiverStartofRains.TabIndex = 2
         Me.ucrReceiverStartofRains.ucrSelector = Nothing
@@ -163,24 +171,25 @@ Partial Class dlgClimaticLengthOfSeason
         Me.ucrSelectorLengthofSeason.bDropUnusedFilterLevels = False
         Me.ucrSelectorLengthofSeason.bShowHiddenColumns = False
         Me.ucrSelectorLengthofSeason.bUseCurrentFilter = True
-        Me.ucrSelectorLengthofSeason.Location = New System.Drawing.Point(5, 33)
+        Me.ucrSelectorLengthofSeason.Location = New System.Drawing.Point(7, 41)
         Me.ucrSelectorLengthofSeason.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorLengthofSeason.Name = "ucrSelectorLengthofSeason"
-        Me.ucrSelectorLengthofSeason.Size = New System.Drawing.Size(210, 180)
+        Me.ucrSelectorLengthofSeason.Size = New System.Drawing.Size(280, 222)
         Me.ucrSelectorLengthofSeason.TabIndex = 0
         '
         'ucrBase
         '
-        Me.ucrBase.Location = New System.Drawing.Point(5, 311)
+        Me.ucrBase.Location = New System.Drawing.Point(7, 383)
+        Me.ucrBase.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.ucrBase.Name = "ucrBase"
-        Me.ucrBase.Size = New System.Drawing.Size(410, 52)
+        Me.ucrBase.Size = New System.Drawing.Size(547, 64)
         Me.ucrBase.TabIndex = 13
         '
         'dlgClimaticLengthOfSeason
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(416, 365)
+        Me.ClientSize = New System.Drawing.Size(555, 450)
         Me.Controls.Add(Me.ucrChkType)
         Me.Controls.Add(Me.ucrChkLengthofSeason)
         Me.Controls.Add(Me.ucrInputTextType)
@@ -196,6 +205,7 @@ Partial Class dlgClimaticLengthOfSeason
         Me.Controls.Add(Me.ucrSelectorLengthofSeason)
         Me.Controls.Add(Me.ucrBase)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "dlgClimaticLengthOfSeason"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Length of Season"
