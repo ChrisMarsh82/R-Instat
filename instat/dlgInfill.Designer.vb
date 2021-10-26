@@ -186,6 +186,7 @@ Partial Class dlgInfill
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange
         Me.Controls.Add(Me.lblByFactors)
         Me.Controls.Add(Me.lblDate)
         Me.Controls.Add(Me.ucrReceiverFactors)

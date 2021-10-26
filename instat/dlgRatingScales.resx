@@ -121,16 +121,16 @@
   <data name="lblOrderedFactor.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblOrderedFactor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblOrderedFactor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 103</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lblOrderedFactor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>262, 84</value>
   </data>
   <data name="lblOrderedFactor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 16</value>
+    <value>81, 13</value>
   </data>
   <data name="lblOrderedFactor.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -148,19 +148,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblOrderedFactor.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="rdoHighDescendingLikert.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="rdoHighDescendingLikert.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 142</value>
+  <data name="rdoHighDescendingLikert.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="rdoHighDescendingLikert.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="rdoHighDescendingLikert.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 115</value>
   </data>
   <data name="rdoHighDescendingLikert.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 20</value>
+    <value>107, 17</value>
   </data>
   <data name="rdoHighDescendingLikert.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -183,14 +183,14 @@
   <data name="rdoLowDescendingLikert.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="rdoLowDescendingLikert.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 82</value>
+  <data name="rdoLowDescendingLikert.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="rdoLowDescendingLikert.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="rdoLowDescendingLikert.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 67</value>
   </data>
   <data name="rdoLowDescendingLikert.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 20</value>
+    <value>105, 17</value>
   </data>
   <data name="rdoLowDescendingLikert.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -213,14 +213,14 @@
   <data name="rdoLowAscendingLikert.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="rdoLowAscendingLikert.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 53</value>
+  <data name="rdoLowAscendingLikert.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="rdoLowAscendingLikert.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="rdoLowAscendingLikert.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 43</value>
   </data>
   <data name="rdoLowAscendingLikert.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 20</value>
+    <value>98, 17</value>
   </data>
   <data name="rdoLowAscendingLikert.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -243,14 +243,14 @@
   <data name="rdoNoneLikert.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="rdoNoneLikert.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 23</value>
+  <data name="rdoNoneLikert.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="rdoNoneLikert.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="rdoNoneLikert.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 19</value>
   </data>
   <data name="rdoNoneLikert.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 20</value>
+    <value>51, 17</value>
   </data>
   <data name="rdoNoneLikert.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -273,14 +273,14 @@
   <data name="rdoHighAscendingLikert.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="rdoHighAscendingLikert.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 112</value>
+  <data name="rdoHighAscendingLikert.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="rdoHighAscendingLikert.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="rdoHighAscendingLikert.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 91</value>
   </data>
   <data name="rdoHighAscendingLikert.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 20</value>
+    <value>100, 17</value>
   </data>
   <data name="rdoHighAscendingLikert.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -300,41 +300,32 @@
   <data name="&gt;&gt;rdoHighAscendingLikert.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="ucrPnlSjpLikert.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 17</value>
+  <data name="ucrPnlLikertOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 19</value>
   </data>
-  <data name="ucrPnlSjpLikert.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>7, 6, 7, 6</value>
+  <data name="ucrPnlLikertOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 119</value>
   </data>
-  <data name="ucrPnlSjpLikert.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 156</value>
+  <data name="ucrPnlLikertOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="ucrPnlSjpLikert.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="&gt;&gt;ucrPnlLikertOptions.Name" xml:space="preserve">
+    <value>ucrPnlLikertOptions</value>
   </data>
-  <data name="&gt;&gt;ucrPnlSjpLikert.Name" xml:space="preserve">
-    <value>ucrPnlSjpLikert</value>
-  </data>
-  <data name="&gt;&gt;ucrPnlSjpLikert.Type" xml:space="preserve">
+  <data name="&gt;&gt;ucrPnlLikertOptions.Type" xml:space="preserve">
     <value>instat.UcrPanel, instat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;ucrPnlSjpLikert.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ucrPnlLikertOptions.Parent" xml:space="preserve">
     <value>grpSort</value>
   </data>
-  <data name="&gt;&gt;ucrPnlSjpLikert.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ucrPnlLikertOptions.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="grpSort.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 252</value>
-  </data>
-  <data name="grpSort.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="grpSort.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>262, 205</value>
   </data>
   <data name="grpSort.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 183</value>
+    <value>135, 149</value>
   </data>
   <data name="grpSort.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -352,118 +343,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;grpSort.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="ucrChkNumberOfCategories.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 32</value>
-  </data>
-  <data name="ucrChkNumberOfCategories.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>7, 6, 7, 6</value>
-  </data>
-  <data name="ucrChkNumberOfCategories.Size" type="System.Drawing.Size, System.Drawing">
-    <value>283, 25</value>
-  </data>
-  <data name="ucrChkNumberOfCategories.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ucrChkNumberOfCategories.Name" xml:space="preserve">
-    <value>ucrChkNumberOfCategories</value>
-  </data>
-  <data name="&gt;&gt;ucrChkNumberOfCategories.Type" xml:space="preserve">
-    <value>instat.ucrCheck, instat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ucrChkNumberOfCategories.Parent" xml:space="preserve">
-    <value>grpLikertType</value>
-  </data>
-  <data name="&gt;&gt;ucrChkNumberOfCategories.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="ucrNudNeutralLevel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 64</value>
-  </data>
-  <data name="ucrNudNeutralLevel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>7, 6, 7, 6</value>
-  </data>
-  <data name="ucrNudNeutralLevel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 25</value>
-  </data>
-  <data name="ucrNudNeutralLevel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;ucrNudNeutralLevel.Name" xml:space="preserve">
-    <value>ucrNudNeutralLevel</value>
-  </data>
-  <data name="&gt;&gt;ucrNudNeutralLevel.Type" xml:space="preserve">
-    <value>instat.ucrNud, instat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ucrNudNeutralLevel.Parent" xml:space="preserve">
-    <value>grpLikertType</value>
-  </data>
-  <data name="&gt;&gt;ucrNudNeutralLevel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lblNeutralLevel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblNeutralLevel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 69</value>
-  </data>
-  <data name="lblNeutralLevel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="lblNeutralLevel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 20</value>
-  </data>
-  <data name="lblNeutralLevel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="lblNeutralLevel.Text" xml:space="preserve">
-    <value>Neutral Level:</value>
-  </data>
-  <data name="&gt;&gt;lblNeutralLevel.Name" xml:space="preserve">
-    <value>lblNeutralLevel</value>
-  </data>
-  <data name="&gt;&gt;lblNeutralLevel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblNeutralLevel.Parent" xml:space="preserve">
-    <value>grpLikertType</value>
-  </data>
-  <data name="&gt;&gt;lblNeutralLevel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="grpLikertType.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="grpLikertType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 366</value>
-  </data>
-  <data name="grpLikertType.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="grpLikertType.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="grpLikertType.Size" type="System.Drawing.Size, System.Drawing">
-    <value>299, 98</value>
-  </data>
-  <data name="grpLikertType.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="grpLikertType.Text" xml:space="preserve">
-    <value>Likert Options</value>
-  </data>
-  <data name="&gt;&gt;grpLikertType.Name" xml:space="preserve">
-    <value>grpLikertType</value>
-  </data>
-  <data name="&gt;&gt;grpLikertType.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grpLikertType.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;grpLikertType.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>9</value>
   </data>
   <data name="rdoStacked.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -471,14 +351,14 @@
   <data name="rdoStacked.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="rdoStacked.Location" type="System.Drawing.Point, System.Drawing">
-    <value>216, 12</value>
+  <data name="rdoStacked.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="rdoStacked.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="rdoStacked.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 10</value>
   </data>
   <data name="rdoStacked.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 34</value>
+    <value>100, 28</value>
   </data>
   <data name="rdoStacked.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -499,7 +379,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;rdoStacked.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="rdoLikert.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -507,14 +387,14 @@
   <data name="rdoLikert.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="rdoLikert.Location" type="System.Drawing.Point, System.Drawing">
-    <value>347, 12</value>
+  <data name="rdoLikert.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="rdoLikert.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="rdoLikert.Location" type="System.Drawing.Point, System.Drawing">
+    <value>260, 10</value>
   </data>
   <data name="rdoLikert.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 34</value>
+    <value>100, 28</value>
   </data>
   <data name="rdoLikert.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -535,7 +415,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;rdoLikert.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="rdoTable.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -543,14 +423,14 @@
   <data name="rdoTable.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="rdoTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 12</value>
+  <data name="rdoTable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="rdoTable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="rdoTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 10</value>
   </data>
   <data name="rdoTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 34</value>
+    <value>100, 28</value>
   </data>
   <data name="rdoTable.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -571,16 +451,253 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;rdoTable.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="rdoHighDescendingTable.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdoHighDescendingTable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rdoHighDescendingTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 115</value>
+  </data>
+  <data name="rdoHighDescendingTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 17</value>
+  </data>
+  <data name="rdoHighDescendingTable.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdoHighDescendingTable.Text" xml:space="preserve">
+    <value>High Descending</value>
+  </data>
+  <data name="&gt;&gt;rdoHighDescendingTable.Name" xml:space="preserve">
+    <value>rdoHighDescendingTable</value>
+  </data>
+  <data name="&gt;&gt;rdoHighDescendingTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rdoHighDescendingTable.Parent" xml:space="preserve">
+    <value>grpSortTable</value>
+  </data>
+  <data name="&gt;&gt;rdoHighDescendingTable.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rdoLowAscendingTable.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdoLowAscendingTable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rdoLowAscendingTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 43</value>
+  </data>
+  <data name="rdoLowAscendingTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 17</value>
+  </data>
+  <data name="rdoLowAscendingTable.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="rdoLowAscendingTable.Text" xml:space="preserve">
+    <value>Low Ascending</value>
+  </data>
+  <data name="&gt;&gt;rdoLowAscendingTable.Name" xml:space="preserve">
+    <value>rdoLowAscendingTable</value>
+  </data>
+  <data name="&gt;&gt;rdoLowAscendingTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rdoLowAscendingTable.Parent" xml:space="preserve">
+    <value>grpSortTable</value>
+  </data>
+  <data name="&gt;&gt;rdoLowAscendingTable.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rdoHighAscendingTable.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdoHighAscendingTable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rdoHighAscendingTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 91</value>
+  </data>
+  <data name="rdoHighAscendingTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="rdoHighAscendingTable.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="rdoHighAscendingTable.Text" xml:space="preserve">
+    <value>High Ascending</value>
+  </data>
+  <data name="&gt;&gt;rdoHighAscendingTable.Name" xml:space="preserve">
+    <value>rdoHighAscendingTable</value>
+  </data>
+  <data name="&gt;&gt;rdoHighAscendingTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rdoHighAscendingTable.Parent" xml:space="preserve">
+    <value>grpSortTable</value>
+  </data>
+  <data name="&gt;&gt;rdoHighAscendingTable.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="rdoLowDescendingTable.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdoLowDescendingTable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rdoLowDescendingTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 67</value>
+  </data>
+  <data name="rdoLowDescendingTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 17</value>
+  </data>
+  <data name="rdoLowDescendingTable.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
+  <data name="rdoLowDescendingTable.Text" xml:space="preserve">
+    <value>Low Descending</value>
+  </data>
+  <data name="&gt;&gt;rdoLowDescendingTable.Name" xml:space="preserve">
+    <value>rdoLowDescendingTable</value>
+  </data>
+  <data name="&gt;&gt;rdoLowDescendingTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rdoLowDescendingTable.Parent" xml:space="preserve">
+    <value>grpSortTable</value>
+  </data>
+  <data name="&gt;&gt;rdoLowDescendingTable.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="rdoNoneTable.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdoNoneTable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rdoNoneTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 19</value>
+  </data>
+  <data name="rdoNoneTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 17</value>
+  </data>
+  <data name="rdoNoneTable.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="rdoNoneTable.Text" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;rdoNoneTable.Name" xml:space="preserve">
+    <value>rdoNoneTable</value>
+  </data>
+  <data name="&gt;&gt;rdoNoneTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rdoNoneTable.Parent" xml:space="preserve">
+    <value>grpSortTable</value>
+  </data>
+  <data name="&gt;&gt;rdoNoneTable.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ucrPnlTableOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 19</value>
+  </data>
+  <data name="ucrPnlTableOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 124</value>
+  </data>
+  <data name="ucrPnlTableOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;ucrPnlTableOptions.Name" xml:space="preserve">
+    <value>ucrPnlTableOptions</value>
+  </data>
+  <data name="&gt;&gt;ucrPnlTableOptions.Type" xml:space="preserve">
+    <value>instat.UcrPanel, instat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ucrPnlTableOptions.Parent" xml:space="preserve">
+    <value>grpSortTable</value>
+  </data>
+  <data name="&gt;&gt;ucrPnlTableOptions.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="grpSortTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>262, 205</value>
+  </data>
+  <data name="grpSortTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 149</value>
+  </data>
+  <data name="grpSortTable.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="grpSortTable.Text" xml:space="preserve">
+    <value>Sort</value>
+  </data>
+  <data name="&gt;&gt;grpSortTable.Name" xml:space="preserve">
+    <value>grpSortTable</value>
+  </data>
+  <data name="&gt;&gt;grpSortTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpSortTable.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpSortTable.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ucrNudNeutralLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 297</value>
+  </data>
+  <data name="ucrNudNeutralLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="ucrNudNeutralLevel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ucrNudNeutralLevel.Name" xml:space="preserve">
+    <value>ucrNudNeutralLevel</value>
+  </data>
+  <data name="&gt;&gt;ucrNudNeutralLevel.Type" xml:space="preserve">
+    <value>instat.ucrNud, instat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ucrNudNeutralLevel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ucrNudNeutralLevel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ucrChkNumberOfCategories.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 299</value>
+  </data>
+  <data name="ucrChkNumberOfCategories.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 20</value>
+  </data>
+  <data name="ucrChkNumberOfCategories.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ucrChkNumberOfCategories.Name" xml:space="preserve">
+    <value>ucrChkNumberOfCategories</value>
+  </data>
+  <data name="&gt;&gt;ucrChkNumberOfCategories.Type" xml:space="preserve">
+    <value>instat.ucrCheck, instat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ucrChkNumberOfCategories.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ucrChkNumberOfCategories.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="ucrSaveGraph.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 471</value>
+    <value>10, 383</value>
   </data>
   <data name="ucrSaveGraph.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>7, 7, 7, 7</value>
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="ucrSaveGraph.Size" type="System.Drawing.Size, System.Drawing">
-    <value>340, 30</value>
+    <value>301, 24</value>
   </data>
   <data name="ucrSaveGraph.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -595,16 +712,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ucrSaveGraph.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="ucrPnlGraphType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 10</value>
-  </data>
-  <data name="ucrPnlGraphType.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>7, 6, 7, 6</value>
+    <value>53, 8</value>
   </data>
   <data name="ucrPnlGraphType.Size" type="System.Drawing.Size, System.Drawing">
-    <value>420, 43</value>
+    <value>315, 35</value>
   </data>
   <data name="ucrPnlGraphType.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -619,16 +733,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ucrPnlGraphType.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="ucrChkFlip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 334</value>
-  </data>
-  <data name="ucrChkFlip.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>7, 6, 7, 6</value>
+    <value>12, 272</value>
   </data>
   <data name="ucrChkFlip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>299, 25</value>
+    <value>224, 20</value>
   </data>
   <data name="ucrChkFlip.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -643,49 +754,22 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ucrChkFlip.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>559, 579</value>
-  </data>
-  <data name="UcrDialogDisabled1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 236</value>
-  </data>
-  <data name="UcrDialogDisabled1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="UcrDialogDisabled1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>319, 61</value>
-  </data>
-  <data name="UcrDialogDisabled1.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;UcrDialogDisabled1.Name" xml:space="preserve">
-    <value>UcrDialogDisabled1</value>
-  </data>
-  <data name="&gt;&gt;UcrDialogDisabled1.Type" xml:space="preserve">
-    <value>instat.ucrDialogDisabled, instat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;UcrDialogDisabled1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;UcrDialogDisabled1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>419, 470</value>
   </data>
   <data name="ucrChkWeights.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 302</value>
-  </data>
-  <data name="ucrChkWeights.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>7, 6, 7, 6</value>
+    <value>12, 245</value>
   </data>
   <data name="ucrChkWeights.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 25</value>
+    <value>100, 20</value>
   </data>
   <data name="ucrChkWeights.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -700,16 +784,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ucrChkWeights.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="ucrReceiverOrderedFactors.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 122</value>
+    <value>262, 99</value>
   </data>
   <data name="ucrReceiverOrderedFactors.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrReceiverOrderedFactors.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 123</value>
+    <value>119, 100</value>
   </data>
   <data name="ucrReceiverOrderedFactors.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -724,16 +808,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ucrReceiverOrderedFactors.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="ucrBase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 508</value>
-  </data>
-  <data name="ucrBase.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
+    <value>10, 413</value>
   </data>
   <data name="ucrBase.Size" type="System.Drawing.Size, System.Drawing">
-    <value>547, 64</value>
+    <value>410, 52</value>
   </data>
   <data name="ucrBase.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -748,16 +829,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ucrBase.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="ucrSelectorRatingScale.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 60</value>
+    <value>10, 49</value>
   </data>
   <data name="ucrSelectorRatingScale.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrSelectorRatingScale.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 222</value>
+    <value>210, 180</value>
   </data>
   <data name="ucrSelectorRatingScale.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -772,10 +853,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ucrSelectorRatingScale.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>15</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -790,13 +868,13 @@
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ucrReceiverWeights.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 302</value>
+    <value>115, 245</value>
   </data>
   <data name="ucrReceiverWeights.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ucrReceiverWeights.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 25</value>
+    <value>120, 20</value>
   </data>
   <data name="ucrReceiverWeights.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -811,6 +889,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ucrReceiverWeights.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
 </root>

@@ -43,11 +43,9 @@ Partial Class sdgSaveColumnPosition
         Me.grpColumnPosition.Controls.Add(Me.rdoBefore)
         Me.grpColumnPosition.Controls.Add(Me.rdoStart)
         Me.grpColumnPosition.Controls.Add(Me.ucrPnlColumnPosition)
-        Me.grpColumnPosition.Location = New System.Drawing.Point(12, 11)
-        Me.grpColumnPosition.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.grpColumnPosition.Location = New System.Drawing.Point(9, 9)
         Me.grpColumnPosition.Name = "grpColumnPosition"
-        Me.grpColumnPosition.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.grpColumnPosition.Size = New System.Drawing.Size(395, 71)
+        Me.grpColumnPosition.Size = New System.Drawing.Size(296, 58)
         Me.grpColumnPosition.TabIndex = 12
         Me.grpColumnPosition.TabStop = False
         Me.grpColumnPosition.Text = "New column will be at:"
@@ -56,10 +54,9 @@ Partial Class sdgSaveColumnPosition
         '
         Me.rdoEnd.AutoSize = True
         Me.rdoEnd.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.rdoEnd.Location = New System.Drawing.Point(95, 33)
-        Me.rdoEnd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.rdoEnd.Location = New System.Drawing.Point(71, 27)
         Me.rdoEnd.Name = "rdoEnd"
-        Me.rdoEnd.Size = New System.Drawing.Size(57, 20)
+        Me.rdoEnd.Size = New System.Drawing.Size(44, 17)
         Me.rdoEnd.TabIndex = 2
         Me.rdoEnd.Text = "End"
         Me.rdoEnd.UseVisualStyleBackColor = True
@@ -69,10 +66,9 @@ Partial Class sdgSaveColumnPosition
         Me.rdoAfter.AutoSize = True
         Me.rdoAfter.Checked = True
         Me.rdoAfter.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.rdoAfter.Location = New System.Drawing.Point(267, 33)
-        Me.rdoAfter.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.rdoAfter.Location = New System.Drawing.Point(200, 27)
         Me.rdoAfter.Name = "rdoAfter"
-        Me.rdoAfter.Size = New System.Drawing.Size(60, 20)
+        Me.rdoAfter.Size = New System.Drawing.Size(47, 17)
         Me.rdoAfter.TabIndex = 4
         Me.rdoAfter.TabStop = True
         Me.rdoAfter.Text = "After"
@@ -82,10 +78,9 @@ Partial Class sdgSaveColumnPosition
         '
         Me.rdoBefore.AutoSize = True
         Me.rdoBefore.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.rdoBefore.Location = New System.Drawing.Point(172, 33)
-        Me.rdoBefore.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.rdoBefore.Location = New System.Drawing.Point(129, 27)
         Me.rdoBefore.Name = "rdoBefore"
-        Me.rdoBefore.Size = New System.Drawing.Size(73, 20)
+        Me.rdoBefore.Size = New System.Drawing.Size(56, 17)
         Me.rdoBefore.TabIndex = 3
         Me.rdoBefore.Text = "Before"
         Me.rdoBefore.UseVisualStyleBackColor = True
@@ -94,41 +89,39 @@ Partial Class sdgSaveColumnPosition
         '
         Me.rdoStart.AutoSize = True
         Me.rdoStart.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.rdoStart.Location = New System.Drawing.Point(12, 33)
-        Me.rdoStart.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.rdoStart.Location = New System.Drawing.Point(9, 27)
         Me.rdoStart.Name = "rdoStart"
-        Me.rdoStart.Size = New System.Drawing.Size(60, 20)
+        Me.rdoStart.Size = New System.Drawing.Size(47, 17)
         Me.rdoStart.TabIndex = 1
         Me.rdoStart.Text = "Start"
         Me.rdoStart.UseVisualStyleBackColor = True
         '
         'ucrPnlColumnPosition
         '
-        Me.ucrPnlColumnPosition.Location = New System.Drawing.Point(8, 23)
-        Me.ucrPnlColumnPosition.Margin = New System.Windows.Forms.Padding(8, 10, 8, 10)
+        Me.ucrPnlColumnPosition.Location = New System.Drawing.Point(6, 19)
+        Me.ucrPnlColumnPosition.Margin = New System.Windows.Forms.Padding(6, 8, 6, 8)
         Me.ucrPnlColumnPosition.Name = "ucrPnlColumnPosition"
-        Me.ucrPnlColumnPosition.Size = New System.Drawing.Size(352, 38)
+        Me.ucrPnlColumnPosition.Size = New System.Drawing.Size(264, 31)
         Me.ucrPnlColumnPosition.TabIndex = 0
         '
         'lblColumns
         '
         Me.lblColumns.AutoSize = True
         Me.lblColumns.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.lblColumns.Location = New System.Drawing.Point(299, 130)
-        Me.lblColumns.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblColumns.Location = New System.Drawing.Point(224, 106)
         Me.lblColumns.Name = "lblColumns"
-        Me.lblColumns.Size = New System.Drawing.Size(59, 16)
+        Me.lblColumns.Size = New System.Drawing.Size(45, 13)
         Me.lblColumns.TabIndex = 14
-        Me.lblColumns.Text = "Column :"
+        Me.lblColumns.Text = "Column:"
         '
         'ucrReceiverColumn
         '
         Me.ucrReceiverColumn.frmParent = Me
-        Me.ucrReceiverColumn.Location = New System.Drawing.Point(299, 149)
+        Me.ucrReceiverColumn.Location = New System.Drawing.Point(224, 121)
         Me.ucrReceiverColumn.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrReceiverColumn.Name = "ucrReceiverColumn"
         Me.ucrReceiverColumn.Selector = Nothing
-        Me.ucrReceiverColumn.Size = New System.Drawing.Size(172, 25)
+        Me.ucrReceiverColumn.Size = New System.Drawing.Size(129, 20)
         Me.ucrReceiverColumn.strNcFilePath = ""
         Me.ucrReceiverColumn.TabIndex = 15
         Me.ucrReceiverColumn.ucrSelector = Nothing
@@ -138,34 +131,33 @@ Partial Class sdgSaveColumnPosition
         Me.ucrSelectorColumns.bDropUnusedFilterLevels = False
         Me.ucrSelectorColumns.bShowHiddenColumns = False
         Me.ucrSelectorColumns.bUseCurrentFilter = True
-        Me.ucrSelectorColumns.Location = New System.Drawing.Point(12, 87)
+        Me.ucrSelectorColumns.Location = New System.Drawing.Point(9, 71)
         Me.ucrSelectorColumns.Margin = New System.Windows.Forms.Padding(0)
         Me.ucrSelectorColumns.Name = "ucrSelectorColumns"
-        Me.ucrSelectorColumns.Size = New System.Drawing.Size(283, 222)
+        Me.ucrSelectorColumns.Size = New System.Drawing.Size(212, 180)
         Me.ucrSelectorColumns.TabIndex = 13
         '
         'ucrBaseSubdialog
         '
-        Me.ucrBaseSubdialog.Location = New System.Drawing.Point(137, 332)
-        Me.ucrBaseSubdialog.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
+        Me.ucrBaseSubdialog.Location = New System.Drawing.Point(103, 270)
+        Me.ucrBaseSubdialog.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.ucrBaseSubdialog.Name = "ucrBaseSubdialog"
-        Me.ucrBaseSubdialog.Size = New System.Drawing.Size(204, 37)
+        Me.ucrBaseSubdialog.Size = New System.Drawing.Size(153, 30)
         Me.ucrBaseSubdialog.TabIndex = 7
         '
         'ucrChkKeepExistingPos
         '
         Me.ucrChkKeepExistingPos.Checked = False
-        Me.ucrChkKeepExistingPos.Location = New System.Drawing.Point(303, 191)
-        Me.ucrChkKeepExistingPos.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
+        Me.ucrChkKeepExistingPos.Location = New System.Drawing.Point(227, 155)
         Me.ucrChkKeepExistingPos.Name = "ucrChkKeepExistingPos"
-        Me.ucrChkKeepExistingPos.Size = New System.Drawing.Size(168, 25)
+        Me.ucrChkKeepExistingPos.Size = New System.Drawing.Size(126, 20)
         Me.ucrChkKeepExistingPos.TabIndex = 16
         '
         'sdgSaveColumnPosition
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(481, 371)
+        Me.ClientSize = New System.Drawing.Size(361, 301)
         Me.Controls.Add(Me.ucrChkKeepExistingPos)
         Me.Controls.Add(Me.ucrReceiverColumn)
         Me.Controls.Add(Me.ucrSelectorColumns)
@@ -173,7 +165,6 @@ Partial Class sdgSaveColumnPosition
         Me.Controls.Add(Me.grpColumnPosition)
         Me.Controls.Add(Me.ucrBaseSubdialog)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "sdgSaveColumnPosition"

@@ -40,13 +40,13 @@ Partial Class dlgTransformText
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(dlgTransformText))
         Me.lblColumnToTransform = New System.Windows.Forms.Label()
-        Me.ucrPnlOperation = New instat.UcrPanel()
         Me.lblToSubstring = New System.Windows.Forms.Label()
         Me.lblFrom = New System.Windows.Forms.Label()
         Me.lblSeparator = New System.Windows.Forms.Label()
         Me.lblLastWord = New System.Windows.Forms.Label()
         Me.lblFirstWord = New System.Windows.Forms.Label()
         Me.grpParameters = New System.Windows.Forms.GroupBox()
+        Me.rdoSquish = New System.Windows.Forms.RadioButton()
         Me.ucrInputSeparator = New instat.ucrInputComboBox()
         Me.ucrChkLastOr = New instat.ucrCheck()
         Me.ucrChkFirstOr = New instat.ucrCheck()
@@ -66,16 +66,21 @@ Partial Class dlgTransformText
         Me.lblTo = New System.Windows.Forms.Label()
         Me.ucrNudFirstWord = New instat.ucrNud()
         Me.ucrNudTo = New instat.ucrNud()
-        Me.ucrReceiverTransformText = New instat.ucrReceiverSingle()
-        Me.ucrBase = New instat.ucrButtons()
-        Me.ucrNewColName = New instat.ucrSave()
-        Me.ucrSelectorForTransformText = New instat.ucrSelectorByDataFrameAddRemove()
         Me.rdoConvertCase = New System.Windows.Forms.RadioButton()
         Me.rdoLength = New System.Windows.Forms.RadioButton()
         Me.rdoPad = New System.Windows.Forms.RadioButton()
         Me.rdoSubstring = New System.Windows.Forms.RadioButton()
         Me.rdoWords = New System.Windows.Forms.RadioButton()
         Me.rdoTrim = New System.Windows.Forms.RadioButton()
+        Me.ucrNewColName = New instat.ucrSave()
+        Me.ucrReceiverTransformText = New instat.ucrReceiverSingle()
+        Me.ucrSelectorForTransformText = New instat.ucrSelectorByDataFrameAddRemove()
+        Me.ucrBase = New instat.ucrButtons()
+        Me.ucrPnlOperation = New instat.UcrPanel()
+        Me.ucrPnlSide = New instat.UcrPanel()
+        Me.rdoLeftSide = New System.Windows.Forms.RadioButton()
+        Me.rdoRightSide = New System.Windows.Forms.RadioButton()
+        Me.rdoBothSide = New System.Windows.Forms.RadioButton()
         Me.grpParameters.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -83,11 +88,6 @@ Partial Class dlgTransformText
         '
         resources.ApplyResources(Me.lblColumnToTransform, "lblColumnToTransform")
         Me.lblColumnToTransform.Name = "lblColumnToTransform"
-        '
-        'ucrPnlOperation
-        '
-        resources.ApplyResources(Me.ucrPnlOperation, "ucrPnlOperation")
-        Me.ucrPnlOperation.Name = "ucrPnlOperation"
         '
         'lblToSubstring
         '
@@ -116,6 +116,11 @@ Partial Class dlgTransformText
         '
         'grpParameters
         '
+        Me.grpParameters.Controls.Add(Me.rdoBothSide)
+        Me.grpParameters.Controls.Add(Me.rdoRightSide)
+        Me.grpParameters.Controls.Add(Me.rdoLeftSide)
+        Me.grpParameters.Controls.Add(Me.ucrPnlSide)
+        Me.grpParameters.Controls.Add(Me.rdoSquish)
         Me.grpParameters.Controls.Add(Me.ucrInputSeparator)
         Me.grpParameters.Controls.Add(Me.ucrChkLastOr)
         Me.grpParameters.Controls.Add(Me.ucrChkFirstOr)
@@ -142,6 +147,13 @@ Partial Class dlgTransformText
         resources.ApplyResources(Me.grpParameters, "grpParameters")
         Me.grpParameters.Name = "grpParameters"
         Me.grpParameters.TabStop = False
+        '
+        'rdoSquish
+        '
+        resources.ApplyResources(Me.rdoSquish, "rdoSquish")
+        Me.rdoSquish.Name = "rdoSquish"
+        Me.rdoSquish.TabStop = True
+        Me.rdoSquish.UseVisualStyleBackColor = True
         '
         'ucrInputSeparator
         '
@@ -288,33 +300,6 @@ Partial Class dlgTransformText
         Me.ucrNudTo.Name = "ucrNudTo"
         Me.ucrNudTo.Value = New Decimal(New Integer() {0, 0, 0, 0})
         '
-        'ucrReceiverTransformText
-        '
-        Me.ucrReceiverTransformText.frmParent = Me
-        resources.ApplyResources(Me.ucrReceiverTransformText, "ucrReceiverTransformText")
-        Me.ucrReceiverTransformText.Name = "ucrReceiverTransformText"
-        Me.ucrReceiverTransformText.Selector = Nothing
-        Me.ucrReceiverTransformText.strNcFilePath = ""
-        Me.ucrReceiverTransformText.ucrSelector = Nothing
-        '
-        'ucrBase
-        '
-        resources.ApplyResources(Me.ucrBase, "ucrBase")
-        Me.ucrBase.Name = "ucrBase"
-        '
-        'ucrNewColName
-        '
-        resources.ApplyResources(Me.ucrNewColName, "ucrNewColName")
-        Me.ucrNewColName.Name = "ucrNewColName"
-        '
-        'ucrSelectorForTransformText
-        '
-        Me.ucrSelectorForTransformText.bDropUnusedFilterLevels = False
-        Me.ucrSelectorForTransformText.bShowHiddenColumns = False
-        Me.ucrSelectorForTransformText.bUseCurrentFilter = True
-        resources.ApplyResources(Me.ucrSelectorForTransformText, "ucrSelectorForTransformText")
-        Me.ucrSelectorForTransformText.Name = "ucrSelectorForTransformText"
-        '
         'rdoConvertCase
         '
         resources.ApplyResources(Me.rdoConvertCase, "rdoConvertCase")
@@ -374,6 +359,64 @@ Partial Class dlgTransformText
         Me.rdoTrim.Name = "rdoTrim"
         Me.rdoTrim.TabStop = True
         Me.rdoTrim.UseVisualStyleBackColor = True
+        '
+        'ucrNewColName
+        '
+        resources.ApplyResources(Me.ucrNewColName, "ucrNewColName")
+        Me.ucrNewColName.Name = "ucrNewColName"
+        '
+        'ucrReceiverTransformText
+        '
+        Me.ucrReceiverTransformText.frmParent = Me
+        resources.ApplyResources(Me.ucrReceiverTransformText, "ucrReceiverTransformText")
+        Me.ucrReceiverTransformText.Name = "ucrReceiverTransformText"
+        Me.ucrReceiverTransformText.Selector = Nothing
+        Me.ucrReceiverTransformText.strNcFilePath = ""
+        Me.ucrReceiverTransformText.ucrSelector = Nothing
+        '
+        'ucrSelectorForTransformText
+        '
+        Me.ucrSelectorForTransformText.bDropUnusedFilterLevels = False
+        Me.ucrSelectorForTransformText.bShowHiddenColumns = False
+        Me.ucrSelectorForTransformText.bUseCurrentFilter = True
+        resources.ApplyResources(Me.ucrSelectorForTransformText, "ucrSelectorForTransformText")
+        Me.ucrSelectorForTransformText.Name = "ucrSelectorForTransformText"
+        '
+        'ucrBase
+        '
+        resources.ApplyResources(Me.ucrBase, "ucrBase")
+        Me.ucrBase.Name = "ucrBase"
+        '
+        'ucrPnlOperation
+        '
+        resources.ApplyResources(Me.ucrPnlOperation, "ucrPnlOperation")
+        Me.ucrPnlOperation.Name = "ucrPnlOperation"
+        '
+        'ucrPnlSide
+        '
+        resources.ApplyResources(Me.ucrPnlSide, "ucrPnlSide")
+        Me.ucrPnlSide.Name = "ucrPnlSide"
+        '
+        'rdoLeftSide
+        '
+        resources.ApplyResources(Me.rdoLeftSide, "rdoLeftSide")
+        Me.rdoLeftSide.Name = "rdoLeftSide"
+        Me.rdoLeftSide.TabStop = True
+        Me.rdoLeftSide.UseVisualStyleBackColor = True
+        '
+        'rdoRightSide
+        '
+        resources.ApplyResources(Me.rdoRightSide, "rdoRightSide")
+        Me.rdoRightSide.Name = "rdoRightSide"
+        Me.rdoRightSide.TabStop = True
+        Me.rdoRightSide.UseVisualStyleBackColor = True
+        '
+        'rdoBothSide
+        '
+        resources.ApplyResources(Me.rdoBothSide, "rdoBothSide")
+        Me.rdoBothSide.Name = "rdoBothSide"
+        Me.rdoBothSide.TabStop = True
+        Me.rdoBothSide.UseVisualStyleBackColor = True
         '
         'dlgTransformText
         '
@@ -441,4 +484,9 @@ Partial Class dlgTransformText
     Friend WithEvents rdoSubstring As RadioButton
     Friend WithEvents rdoPad As RadioButton
     Friend WithEvents rdoLength As RadioButton
+    Friend WithEvents rdoSquish As RadioButton
+    Friend WithEvents rdoBothSide As RadioButton
+    Friend WithEvents rdoRightSide As RadioButton
+    Friend WithEvents rdoLeftSide As RadioButton
+    Friend WithEvents ucrPnlSide As UcrPanel
 End Class
