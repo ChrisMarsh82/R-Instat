@@ -284,12 +284,12 @@ Imports RDotNet
 
     Public Sub SetMaxRows(iRows As Integer)
         iMaxRows = iRows
-        frmMain.clsGrids.SetMaxRows(iMaxRows)
+        frmMain.UpdateAllGrids()
     End Sub
 
     Public Sub SetMaxCols(iCols As Integer)
         iMaxCols = iCols
-        frmMain.clsGrids.SetMaxCols(iMaxCols)
+        frmMain.UpdateAllGrids()
     End Sub
 
     Public Sub SetFormatOutput(fntNew As Font, clrNew As Color)
@@ -341,7 +341,7 @@ Imports RDotNet
     Public Sub SetFormatEditor(fntNew As Font, clrNew As Color)
         fntEditor = fntNew
         clrEditor = clrNew
-        frmMain.clsGrids.SetFormatDataView(fntEditor, clrEditor)
+        frmMain.UpdateFontsOnlyOnAllGrids()
     End Sub
 
     Public Sub SetPreviewRows(intlines As Integer)

@@ -39,6 +39,7 @@ Public Class frmMain
     Private ctrActive As Control
     Private WithEvents timer As New System.Windows.Forms.Timer
     Private iAutoSaveDataMilliseconds As Integer
+    Private clsDataBook As clsDataBook
 
     Public strAutoSaveDataFolderPath As String = Path.Combine(Path.GetTempPath, "R-Instat_data_auto_save")
     Public strAutoSaveLogFolderPath As String = Path.Combine(Path.GetTempPath, "R-Instat_log_auto_save")
@@ -98,9 +99,12 @@ Public Class frmMain
         Thread.CurrentThread.CurrentCulture = New CultureInfo("en-GB")
 
         ucrDataViewer.StartupMenuItemsVisibility(False)
-        clsGrids.SetDataViewer(ucrDataViewer)
-        clsGrids.SetMetadata(ucrDataFrameMeta.grdMetaData)
-        clsGrids.SetVariablesMetadata(ucrColumnMeta.grdVariables)
+        InitialiseOutputWindow()
+        clsDataBook = New clsDataBook(clsRLink)
+
+        ucrDataViewer.DataBook = clsDataBook
+        ucrColumnMeta.DataBook = clsDataBook
+        ucrDataFrameMeta.DataBook = clsDataBook
 
         clsRLink.SetLog(ucrLogWindow.txtLog)
 
@@ -182,6 +186,24 @@ Public Class frmMain
 
         ucrOutput.SetInstatOptions(clsInstatOptions)
         isMaximised = True 'Need to get the windowstate when the application is loaded
+    End Sub
+
+    ''' <summary>
+    ''' Updates data view, column meta and data frame meta grids.
+    ''' </summary>
+    Public Sub UpdateAllGrids()
+        ucrDataViewer.RefreshGridData()
+        ucrColumnMeta.RefreshGridData()
+        ucrDataFrameMeta.RefreshGridData()
+    End Sub
+
+    ''' <summary>
+    ''' Updates styles on data view, column meta and data frame meta grids.
+    ''' </summary>
+    Public Sub UpdateFontsOnlyOnAllGrids()
+        ucrDataViewer.UpdateAllWorksheetStyles()
+        ucrColumnMeta.UpdateAllWorksheetStyles()
+        ucrDataFrameMeta.UpdateAllWorksheetStyles()
     End Sub
 
     ' TODO This is used instead of autoTranslate so that split container isn't shifted
