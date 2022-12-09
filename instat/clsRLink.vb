@@ -19,6 +19,8 @@ Imports RDotNet
 Imports unvell.ReoGrid
 Imports System.IO
 Imports RScript
+Imports R_Link
+Imports System.Threading
 
 '''--------------------------------------------------------------------------------------------
 ''' <summary>   An object of this class represents an R interface. 
@@ -50,8 +52,10 @@ Imports RScript
 '''--------------------------------------------------------------------------------------------
 Public Class RLink
 
+    Private _rEngine As ScriptRunner
+
     ''' <summary>   Full pathname of the climate object file. </summary>
-    Dim strClimateObjectPath As String = "/ClimateObject/R" 'TODO SJL 23/04/20 Not used. Delete?
+  '  Dim strClimateObjectPath As String = "/ClimateObject/R" 'TODO SJL 23/04/20 Not used. Delete?
 
     ''' <summary>   The name of the climate object. </summary>
     Public strClimateObject As String = "ClimateObject" 'TODO SJL 23/04/20 make constant?
@@ -70,10 +74,10 @@ Public Class RLink
 
 
     ''' <summary>   True if no R code has been executed yet. </summary>
-    Private bFirstRCode As Boolean = True
+   ' Private bFirstRCode As Boolean = True
 
     ''' <summary>   If true then write executed R script to the debug log file. </summary>
-    Private bDebugLogExists As Boolean = False
+  '  Private bDebugLogExists As Boolean = False
 
     ''' <summary>   If true then write executed R script to the save log file. </summary>
     Private bAutoSaveLogExists As Boolean = False
@@ -93,7 +97,7 @@ Public Class RLink
 
 
     ''' <summary>   The link to the R environment. </summary>
-    Public clsEngine As REngine 'TODO SJL 23/04/20 Make private?
+   ' Public clsEngine As REngine 'TODO SJL 23/04/20 Make private?
 
     ''' <summary>   True if the link to the R environment is initialised. </summary>
     Public bREngineInitialised As Boolean = False
@@ -133,7 +137,7 @@ Public Class RLink
     Private bShowWaitDialog As Boolean = True
 
     ''' The time in seconds to wait before showing the waiting dialog
-    Private iWaitDelay As Integer = 2
+  '  Private iWaitDelay As Integer = 2
 
 
     ''' <summary>   The R version major required. </summary>
@@ -143,10 +147,10 @@ Public Class RLink
     Private strRVersionMinorRequired As String = "1"
 
     ''' <summary>   The R version required. </summary>
-    Private strRVersionRequired As String = strRVersionMajorRequired & "." & strRVersionMinorRequired & ".0"
+  '  Private strRVersionRequired As String = strRVersionMajorRequired & "." & strRVersionMinorRequired & ".0"
 
     ''' <summary>   The R bundled version. </summary>
-    Private strRBundledVersion As String = "4.1.2"
+ '   Private strRBundledVersion As String = "4.1.2"
 
     Private clsOutputLogger As clsOutputLogger
 
@@ -157,152 +161,77 @@ Public Class RLink
     ''' <param name="outputLogger"></param>
     Public Sub New(outputLogger As clsOutputLogger)
         clsOutputLogger = outputLogger
+        _rEngine = New ScriptRunner
     End Sub
 
-    '''--------------------------------------------------------------------------------------------
-    ''' <summary>   Initialises the connection with the R environment:
-    ''' <list type="bullet">
-    '''     <item><description>
-    '''             Ensures that a suitable version of R is installed
-    '''     </description></item><item><description>
-    '''             Sets the necessary environment variables
-    '''     </description></item><item><description>
-    '''             Creates and initializes the REngine (which enacpsulates the R environment)
-    '''     </description></item><item><description>
-    '''             Sets the working directory
-    '''     </description></item><item><description>
-    '''             Loads the R packages, and displays information about any missing packages 
-    '''     </description></item>
-    ''' </list></summary>
-    '''
-    ''' <param name="strScript">        (Optional) The R setup script to execute. If "" then 
-    '''                                 a default setup script is used. </param>
-    ''' <param name="iCallType">        (Optional) How to display the output from the setup script:
-    ''' <list type="bullet">
-    '''     <item>
-    '''        <description>0 Executes <paramref name="strScript"/> and ignores the result.</description>
-    '''     </item>
-    '''     <item>
-    '''        <description>1 Executes <paramref name="strScript"/>, stores the result in a
-    '''        temporary R variable, and then outputs the variable's value as text.</description>
-    '''     </item>
-    '''     <item>
-    '''        <description>2 Executes <paramref name="strScript"/> and if successful shows the
-    '''        result as text.</description>
-    '''     </item>
-    '''     <item>
-    '''        <description>3 Executes <paramref name="strScript"/> and if successful shows the
-    '''        result as a graph.</description>
-    '''     </item>
-    '''     <item>
-    '''        <description>4 Executes <paramref name="strScript"/>, stores the result in a
-    '''        temporary R variable, and then outputs the variable's value in a web browser.</description>
-    '''     </item>
-    ''' </list>
-    '''                                 Note: If a script line contains "$get_graphs" then call 
-    '''                                 type is set to 3 just for that line.</param>
-    ''' <param name="strComment">       (Optional) The comment to display before the first line of
-    '''                                 <paramref name="strScript"/>.
-    '''                                 If <paramref name="strScript"/> is not defined then a
-    '''                                 default comment is used. </param>
-    ''' <param name="bSeparateThread">  (Optional) If true then execute the R script in a new 
-    '''                                 thread. </param>
-    '''
-    ''' <returns>   True if it succeeds, false if it fails. </returns>
-    '''--------------------------------------------------------------------------------------------
-    Public Function StartREngine(Optional strScript As String = "", Optional iCallType As Integer = 0, Optional strComment As String = "", Optional bSeparateThread As Boolean = True) As Boolean
-        Dim strMissingPackages() As String
-        Dim expTemp As SymbolicExpression
-        Dim strMajor As String = ""
-        Dim strMinor As String = ""
-        Dim iCurrentCallType As Integer
-        Dim bClose As Boolean = False
-        Dim strStaticPath = Path.GetFullPath("static")
-        Dim rHome = Path.Combine(strStaticPath, "R-" & strRBundledVersion)
-        Dim cpuArchitectureFolder = "i386"
 
-        Try
-            ' Get R .NET to use bundled R in static folder
-            ' This static folder is added as a part of the install process as described in 
-            ' installer/Installer_Generation_Guide.md
-            ' 
-            If Environment.Is64BitProcess Then
-                cpuArchitectureFolder = "x64"
-            End If
-            Dim rPath = Path.Combine(rHome, "bin", cpuArchitectureFolder)
-            Console.WriteLine("R Home: " & rHome)
-            Console.WriteLine("R Path: " & rPath)
-
-            ' Use bundled R if included
-            If Directory.Exists(rHome) And Directory.Exists(rPath) Then
-                Console.WriteLine("Using bundled R")
-                REngine.SetEnvironmentVariables(rPath, rHome)
-            Else
-                ' Use normal process for finding local R if bundled version not included
-                REngine.SetEnvironmentVariables()
-            End If
-
-            clsEngine = REngine.GetInstance()
-            clsEngine.Initialize()
-        Catch ex As Exception
-            ' Modified message since currently we recommend use of same R version as bundled version
-            MsgBox(ex.Message & Environment.NewLine & "Could not establish connection to R." & vbNewLine & "R-Instat requires version " & strRVersionRequired & " of R." & vbNewLine & "Note that R-Instat does not work with R below 3.5.0. We recommend using R " & strRBundledVersion & ".  Try reruning the installation to install R " & strRBundledVersion & " or download R " & strRBundledVersion & " from https://cran.r-project.org/bin/windows/base/old/" & strRBundledVersion & "/ and restart R-Instat." & vbNewLine & ex.Message, MsgBoxStyle.Critical, "Cannot initialise R connection.")
-            Application.Exit()
-            Environment.Exit(0)
-        End Try
-        Try
-            expTemp = RunInternalScriptGetValue("R.Version()$major", bSilent:=True)
-            If expTemp IsNot Nothing AndAlso expTemp.Type <> Internals.SymbolicExpressionType.Null Then
-                strMajor = expTemp.AsCharacter(0)
-            End If
-            expTemp = RunInternalScriptGetValue("R.Version()$minor", bSilent:=True)
-            If expTemp IsNot Nothing AndAlso expTemp.Type <> Internals.SymbolicExpressionType.Null Then
-                strMinor = expTemp.AsCharacter(0)
-            End If
-            Dim strRVersionRunning = strMajor & "." & strMinor
-            If strMinor.Count >= 3 Then
-                If Not (strMajor = strRVersionMajorRequired AndAlso strMinor.Count > 0 AndAlso strMinor(0) >= strRVersionMinorRequired) Then
-                    MsgBox("Your current version of R is outdated. You are currently running R version: " & strRVersionRunning & vbNewLine &
-                           "R-Instat requires at least version " & strRVersionRequired & " or greater." &
-                           vbNewLine & "Try reruning the installation to install an updated version of R or download R from " &
-                           "https://cran.r-project.org/bin/windows/base/" & strRVersionRequired & "and restart R-Instat.", MsgBoxStyle.Critical, "R Version not supported.")
-                    Application.Exit()
-                    Environment.Exit(0)
-                End If
-            Else
-                MsgBox("Could not determine version of R installed on your machine. R-Instat requires version: " & strRVersionRequired & vbNewLine &
-                       "Try uninstalling any versions of R and rerun the installation to install R " & strRVersionRequired & " or download R " &
-                       strRVersionRequired & "From https://cran.r-project.org/bin/windows/base/old/" & strRVersionRequired &
-                       "And restart R-Instat.", MsgBoxStyle.Critical, "R Version error.")
-                Application.Exit()
-                Environment.Exit(0)
-            End If
-        Catch ex As Exception
-            MsgBox(ex.Message & Environment.NewLine & "Could not determine the version of R installed on your machine. We recommend rerunning the installation to install an updated version of R or download the latest version from https://cran.r-project.org/ and restart R-Instat.", MsgBoxStyle.Critical, "Cannot determine R version.")
-
-            Application.Exit()
-            Environment.Exit(0)
-        End Try
-        bREngineInitialised = True
-        If strScript = "" Then
-            strScript = GetRSetupScript()
-            iCallType = 0
-            strComment = "Setting working directory, sourcing R code and loading R packages"
-
-            bSeparateThread = True
+    Private Function GetcpuArchitectureFolder() As String
+        If Environment.Is64BitProcess Then
+            Return "x64"
+        Else
+            Return "i386"
         End If
-        For Each strLine As String In strScript.Split(Environment.NewLine)
-            If strLine.Trim(vbLf).Count > 0 Then
-                If strLine.Contains(strInstatDataObject & "$get_graphs") Then
-                    iCurrentCallType = 3
-                Else
-                    iCurrentCallType = iCallType
-                End If
-                RunScript(strScript:=strLine.Trim(vbLf), iCallType:=iCurrentCallType, strComment:=strComment, bSeparateThread:=bSeparateThread, bSilent:=True)
+    End Function
+
+    Private Function veryLongTask() As String
+        MsgBox("Start Of Thread")
+        Threading.Thread.Sleep(5000)
+        MsgBox("From the thread")
+        Return "it worked"
+
+    End Function
+
+    Private CancellationTokenSource As CancellationTokenSource
+
+    Private Async Function Simplethread(CancellationToken As CancellationToken) As Task
+        ' Await Task.Run(Function() veryLongTask())
+
+        Await Task.Run(Sub() ShowLoadingScreenAndWait(CancellationToken), CancellationToken)
+    End Function
+
+
+
+
+    Private Function ShowLoadingScreenAndWait(CancellationToken As CancellationToken) As Task
+        frmSetupLoading.Show()
+        Dim t As New Stopwatch
+        t.Start()
+        While t.ElapsedMilliseconds < (50000 * 1000)
+            Threading.Thread.Sleep(5)
+            'ToDo Not sure how this will work
+            Application.DoEvents()
+            If CancellationToken.IsCancellationRequested Then
+                Exit While
             End If
-            strComment = ""
-        Next
-        strMissingPackages = GetPackagesNotInstalled()
+        End While
+        frmSetupLoading.Close()
+    End Function
+
+
+
+    Public Function StartREngine(Optional strScript As String = "", Optional iCallType As Integer = 0, Optional strComment As String = "", Optional bSeparateThread As Boolean = True) As Boolean
+        bInstatObjectExists = True
+        frmSetupLoading.ShowLoadingScreen()
+
+        'Note - taken out version path as we will bundle this as R
+        Dim rHome = Path.Combine(Path.GetFullPath("static"), "R")
+        Dim rPath = Path.Combine(rHome, "bin", GetcpuArchitectureFolder)
+        _rEngine.SetEnviromentVariables(rPath, rHome)
+
+        Dim isConnected As Boolean = _rEngine.ConnectAndCheckVersion(strRVersionMajorRequired, strRVersionMinorRequired)
+
+        Dim strMissingPackages() As String
+        Dim bClose As Boolean = False
+
+        Dim rSetupPath As String = Path.Combine(frmMain.strStaticPath.Replace("\", "/") & strInstatObjectPath)
+        _rEngine.HelperFunctions.SetWorkingDirectory(rSetupPath, strScript, iCallType, strComment, bSeparateThread)
+
+
+        'ToDo remove this - this should be a sepertate call from frmMain.AutoRecoverAndStartREngine
+        'No reference to this form should be done in here
+        strMissingPackages = _rEngine.HelperFunctions.GetPackagesNotInstalled()
+
+        frmSetupLoading.HideLoadingScreen()
         If strMissingPackages IsNot Nothing AndAlso strMissingPackages.Count > 0 Then
             frmPackageIssues.SetMissingPackages(strMissingPackages)
             frmPackageIssues.ShowDialog()
@@ -310,6 +239,7 @@ Public Class RLink
         End If
         bInstatObjectExists = True
         Return bClose
+
     End Function
 
     '''--------------------------------------------------------------------------------------------
@@ -332,58 +262,10 @@ Public Class RLink
     '''           </returns>
     '''--------------------------------------------------------------------------------------------
     Public Function RunScriptFromWindow(strNewScript As String, strNewComment As String) As String
-        Dim strScriptCmd As String = ""
-
-
-        'for each line in script
-        For Each strScriptLine As String In strNewScript.Split(Environment.NewLine)
-            'remove any comments (character '#' and anything after)
-            Dim iCommentPos As Integer = strScriptLine.IndexOf("#")
-            Select Case iCommentPos
-                Case 0      'a normal comment line (starts with '#')
-                    Continue For
-                Case Is > 0 ' a line with an appended comment (e.g. 'x <- 1 # generate data' converted to 'x <- 1 ')
-                    strScriptLine = strScriptLine.Substring(0, iCommentPos - 1)
-            End Select
-
-            'if line is empty or only whitespace then ignore line
-            Dim strTrimmedLine As String = strScriptLine.Trim(vbLf).Trim()
-            If strTrimmedLine.Length <= 0 Then
-                Continue For
-            End If
-
-            'else append line of script to command
-            strScriptCmd &= strScriptLine
-
-            'if line ends in a '+', ',', or '%>%'; or there are open curly braces; or open quotations, 
-            '    then assume command is not complete
-            Dim cLastChar As Char = strTrimmedLine.Last
-            Dim strLast3Chars As String = ""
-            Dim iNumOpenRound As Integer = strScriptCmd.Where(Function(c) c = "("c).Count
-            Dim iNumClosedRound As Integer = strScriptCmd.Where(Function(c) c = ")"c).Count
-            Dim iNumOpenCurlies As Integer = strScriptCmd.Where(Function(c) c = "{"c).Count
-            Dim iNumClosedCurlies As Integer = strScriptCmd.Where(Function(c) c = "}"c).Count
-            Dim iNumDoubleQuotes As Integer = strScriptCmd.Where(Function(c) c = """"c).Count
-            If strTrimmedLine.Length >= 3 Then
-                strLast3Chars = strTrimmedLine.Substring(strTrimmedLine.Length - 3)
-            End If
-            If cLastChar = "+" OrElse cLastChar = "," OrElse strLast3Chars = "%>%" _
-                    OrElse iNumOpenRound <> iNumClosedRound _
-                    OrElse iNumOpenCurlies <> iNumClosedCurlies _
-                    OrElse iNumDoubleQuotes Mod 2 Then
-                Continue For
-            End If
-
-            'else execute command
-            Dim iCallType As Integer = 5
-            If strScriptCmd.Contains(strInstatDataObject & "$get_graphs") Then
-                iCallType = 3
-            End If
-            RunScript(strScriptCmd.Trim(vbLf), iCallType:=iCallType, strComment:=strNewComment, bSeparateThread:=False, bSilent:=False)
-            strScriptCmd = ""
-            strNewComment = ""
-        Next
-        Return strScriptCmd
+        frmSetupLoading.ShowLoadingScreen()
+        Dim Result = _rEngine.RunUnvalidatedScript(strNewScript, strNewComment)
+        frmSetupLoading.HideLoadingScreen()
+        Return Result
     End Function
 
     ''' <summary>
@@ -462,13 +344,7 @@ Public Class RLink
 
     ''' <summary>   Closes down the R engine (which encapsulates the R environment). </summary>
     Public Sub CloseREngine()
-        If clsEngine IsNot Nothing Then
-            Try
-                clsEngine.Dispose()
-            Catch ex As Exception
-                MsgBox("Could not dispose for the connection to R" & Environment.NewLine & ex.Message, MsgBoxStyle.Exclamation, "Cannot close R connection.")
-            End Try
-        End If
+        _rEngine.Diconnect()
     End Sub
 
     '''--------------------------------------------------------------------------------------------
@@ -477,18 +353,7 @@ Public Class RLink
     ''' <returns>   The packages not installed. </returns>
     '''--------------------------------------------------------------------------------------------
     Public Function GetPackagesNotInstalled() As String()
-        Dim chrPackagesNotInstalled As CharacterVector
-        Dim clsPackagesNotInstalled As New RFunction
-        Dim expTemp As SymbolicExpression
-
-        clsPackagesNotInstalled.SetRCommand("packages_not_installed")
-        expTemp = RunInternalScriptGetValue(clsPackagesNotInstalled.ToScript(), bSilent:=True)
-        If expTemp IsNot Nothing AndAlso expTemp.Type <> Internals.SymbolicExpressionType.Null Then
-            chrPackagesNotInstalled = expTemp.AsCharacter
-            Return chrPackagesNotInstalled.ToArray
-        Else
-            Return Nothing
-        End If
+        Return _rEngine.HelperFunctions.GetPackagesNotInstalled()
     End Function
 
     '''--------------------------------------------------------------------------------------------
@@ -534,16 +399,7 @@ Public Class RLink
         bInstatObjectExists = True
     End Sub
 
-    '''--------------------------------------------------------------------------------------------
-    ''' <summary>   Sets the current grid (the worksheet that appears similar to a spreadsheet
-    '''             on the left-hand side of the display). </summary>
-    '''
-    ''' <param name="grdNewDataGrid">   The current grid. </param>
-    '''--------------------------------------------------------------------------------------------
-    Public Sub SetDataViewGrid(grdNewDataGrid As ReoGridControl)
-        'TODO SJL 19/04/20 Never used, remove?
-        grdDataView = grdNewDataGrid
-    End Sub
+
 
 
     '''--------------------------------------------------------------------------------------------
@@ -562,20 +418,7 @@ Public Class RLink
     ''' <returns>   The data frame names. </returns>
     '''--------------------------------------------------------------------------------------------
     Public Function GetDataFrameNames() As List(Of String)
-        Dim chrDataFrameNames As CharacterVector = Nothing
-        Dim lstDataFrameNames As New List(Of String)
-        Dim clsGetDataNames As New RFunction
-        Dim expNames As SymbolicExpression
-
-        clsGetDataNames.SetRCommand(frmMain.clsRLink.strInstatDataObject & "$get_data_names") 'TODO SJL 20/04/20 move to inside if statement?
-        If bInstatObjectExists Then
-            expNames = RunInternalScriptGetValue(clsGetDataNames.ToScript(), bSilent:=True)
-            If expNames IsNot Nothing AndAlso Not expNames.Type = Internals.SymbolicExpressionType.Null Then
-                chrDataFrameNames = expNames.AsCharacter
-                lstDataFrameNames.AddRange(chrDataFrameNames)
-            End If
-        End If
-        Return lstDataFrameNames
+        Return _rEngine.HelperFunctions.GetDataFrameNames()
     End Function
 
     '''--------------------------------------------------------------------------------------------
@@ -588,26 +431,7 @@ Public Class RLink
     ''' <returns>   The data names linked to <paramref name="strDataName"/>. </returns>
     '''--------------------------------------------------------------------------------------------
     Public Function GetLinkedToDataFrameNames(strDataName As String, Optional bIncludeSelf As Boolean = True) As List(Of String)
-        Dim chrDataFrameNames As CharacterVector = Nothing
-        Dim lstDataFrameNames As New List(Of String)
-        Dim clsGetDataNames As New RFunction
-        Dim expNames As SymbolicExpression
-
-        clsGetDataNames.SetRCommand(frmMain.clsRLink.strInstatDataObject & "$get_linked_to_data_name")
-        clsGetDataNames.AddParameter("from_data_frame", Chr(34) & strDataName & Chr(34), iPosition:=0)
-        If bIncludeSelf Then
-            clsGetDataNames.AddParameter("include_self", "TRUE", iPosition:=2)
-        Else
-            clsGetDataNames.AddParameter("include_self", "FALSE", iPosition:=2)
-        End If
-        If bInstatObjectExists Then
-            expNames = RunInternalScriptGetValue(clsGetDataNames.ToScript(), bSilent:=True)
-            If expNames IsNot Nothing AndAlso Not expNames.Type = Internals.SymbolicExpressionType.Null Then
-                chrDataFrameNames = expNames.AsCharacter
-                lstDataFrameNames.AddRange(chrDataFrameNames)
-            End If
-        End If
-        Return lstDataFrameNames
+        Return _rEngine.HelperFunctions.GetLinkedToDataFrameNames(strDataName, bIncludeSelf)
     End Function
 
     '''--------------------------------------------------------------------------------------------
@@ -620,24 +444,7 @@ Public Class RLink
     ''' <returns>   The column names. </returns>
     '''--------------------------------------------------------------------------------------------
     Public Function GetColumnNames(strDataFrameName As String, Optional bIncludeHiddenColumns As Boolean = True) As List(Of String)
-        Dim chrCurrColumns As CharacterVector = Nothing
-        Dim lstCurrColumns As New List(Of String)
-        Dim clsGetColumnNames As New RFunction
-        Dim expNames As SymbolicExpression
-
-        If strDataFrameName <> "" AndAlso DataFrameExists(strDataFrameName) Then
-            clsGetColumnNames.SetRCommand(strInstatDataObject & "$get_column_names")
-            clsGetColumnNames.AddParameter("data_name", Chr(34) & strDataFrameName & Chr(34))
-            If Not bIncludeHiddenColumns Then
-                clsGetColumnNames.AddParameter("exclude", "list(Is_Hidden = TRUE)")
-            End If
-            expNames = RunInternalScriptGetValue(clsGetColumnNames.ToScript(), bSilent:=True)
-            If expNames IsNot Nothing AndAlso Not expNames.Type = Internals.SymbolicExpressionType.Null Then
-                chrCurrColumns = expNames.AsCharacter
-                lstCurrColumns.AddRange(chrCurrColumns)
-            End If
-        End If
-        Return lstCurrColumns
+        Return _rEngine.HelperFunctions.GetColumnNames(strDataFrameName, bIncludeHiddenColumns)
     End Function
 
     '''--------------------------------------------------------------------------------------------
@@ -688,15 +495,7 @@ Public Class RLink
     ''' <returns>   The default column names. </returns>
     '''--------------------------------------------------------------------------------------------
     Public Function GetDefaultColumnNames(strPrefix As String, strDataFrameName As String) As String
-        Dim strNextDefault As String = ""
-        Dim clsGetNextDefault As New RFunction
-        clsGetNextDefault.SetRCommand(strInstatDataObject & "$get_next_default_column_name")
-        clsGetNextDefault.AddParameter("prefix", Chr(34) & strPrefix & Chr(34))
-        clsGetNextDefault.AddParameter("data_name", Chr(34) & strDataFrameName & Chr(34))
-        If strDataFrameName <> "" AndAlso DataFrameExists(strDataFrameName) Then
-            strNextDefault = RunInternalScriptGetValue(clsGetNextDefault.ToScript()).AsCharacter(0)
-        End If
-        Return strNextDefault
+        Return _rEngine.HelperFunctions.GetDefaultColumnNames(strPrefix, strDataFrameName)
     End Function
 
     '''--------------------------------------------------------------------------------------------
@@ -712,24 +511,7 @@ Public Class RLink
     '''             returns "".</returns>
     '''--------------------------------------------------------------------------------------------
     Public Function GetNextDefault(strPrefix As String, lstItems As List(Of String)) As String
-        Dim strNextDefault As String
-        Dim clsGetDefault As New RFunction
-        Dim strExistingNames As String
-        Dim expPrefix As SymbolicExpression
-
-        clsGetDefault.SetRCommand("next_default_item")
-        clsGetDefault.AddParameter("prefix", Chr(34) & strPrefix & Chr(34))
-        strExistingNames = GetListAsRString(lstItems)
-        If strExistingNames <> "" Then
-            clsGetDefault.AddParameter("existing_names", GetListAsRString(lstItems))
-        End If
-        expPrefix = RunInternalScriptGetValue(clsGetDefault.ToScript())
-        If expPrefix IsNot Nothing AndAlso Not expPrefix.Type = Internals.SymbolicExpressionType.Null Then
-            strNextDefault = expPrefix.AsCharacter(0)
-        Else
-            strNextDefault = ""
-        End If
-        Return strNextDefault
+        Return _rEngine.HelperFunctions.GetNextDefault(strPrefix, lstItems)
     End Function
 
     '''--------------------------------------------------------------------------------------------
@@ -813,18 +595,29 @@ Public Class RLink
     ''' <param name="bSilent"> if false and an exception is raised then open a message box that 
     ''' displays the exception message.</param>
     '''--------------------------------------------------------------------------------------------
-    Public Sub RunScript(strScript As String, Optional iCallType As Integer = 0, Optional strComment As String = "", Optional bSeparateThread As Boolean = True, Optional bShowWaitDialogOverride As Nullable(Of Boolean) = Nothing, Optional bUpdateGrids As Boolean = True, Optional bSilent As Boolean = False)
-        Dim strCapturedScript As String
-        Dim expTemp As RDotNet.SymbolicExpression
-        Dim strTemp As String = ""
-        Dim strOutput As String
+    Public Sub RunScript(strScript As String, Optional iCallType As Integer = 0, Optional strComment As String = "",
+                         Optional bSeparateThread As Boolean = True, Optional bShowWaitDialogOverride As Nullable(Of Boolean) = Nothing,
+                         Optional bUpdateGrids As Boolean = True, Optional bSilent As Boolean = False)
+
         Dim strScriptWithComment As String
-        Dim strSplitScript As String
+        Dim returnType As R_ReturnType = R_ReturnType.IgnoreResult
+        Dim strOutput As String = ""
         Dim strTempGraphsDirectory As String
-        Dim clsPNGFunction As New RFunction
-        Dim strTempAssignTo As String = ".temp_val"
-        Dim bSuccess As Boolean
-        Dim bError As Boolean = False
+
+        If iCallType = 0 Then
+            returnType = R_ReturnType.IgnoreResult
+        ElseIf iCallType = 1 Then
+            returnType = R_ReturnType.ResultAsTemporaryVariable
+        ElseIf iCallType = 2 Then
+            returnType = R_ReturnType.ResultAsText
+        ElseIf iCallType = 3 Then
+            returnType = R_ReturnType.ResultAsImage
+        ElseIf iCallType = 4 Then
+            returnType = R_ReturnType.ResultAsWebControl
+        Else
+            'ToDo raise exception
+        End If
+
 
         ' set temp folder for graphs, e.g. to "C:\Users\myName\Temp\R_Instat_Temp_Graphs"
         strTempGraphsDirectory = System.IO.Path.Combine(System.IO.Path.GetTempPath() & "R_Instat_Temp_Graphs")
@@ -851,134 +644,31 @@ Public Class RLink
             clsOutputLogger.AddRScript(strScriptWithComment)
         End If
 
-        'TODO SJL 20/04/20 - is the commented out check below needed?
-        'If strScript.Length > 2000 Then
-        '    MsgBox("The following command cannot be run because it exceeds the character limit of 2000 characters for a command in R-Instat." & Environment.NewLine & strScript & Environment.NewLine & Environment.NewLine & "It may be possible to run the command directly in R.", MsgBoxStyle.Critical, "Cannot run command")
+        strScriptWithComment = GetFormattedComment(strComment) & Environment.NewLine & strScript
 
-        ' if script output should be ignored, or returned as a graph
-        If iCallType = 0 OrElse iCallType = 3 Then
-            Try
-                'if output should be returned as a graph
-                If iCallType = 3 Then
-                    If strGraphDisplayOption = "view_output_window" OrElse strGraphDisplayOption = "view_separate_window" Then
-                        clsPNGFunction.SetPackageName("grDevices")
-                        clsPNGFunction.SetRCommand("png")
-                        clsPNGFunction.AddParameter("filename", Chr(34) & System.IO.Path.Combine(strTempGraphsDirectory & "/Graph.png").Replace("\", "/") & Chr(34))
-                        'TODO make these options
-                        clsPNGFunction.AddParameter("width", 4000)
-                        clsPNGFunction.AddParameter("height", 4000)
-                        clsPNGFunction.AddParameter("res", 500)
-                        bSuccess = Evaluate(clsPNGFunction.ToScript(), bSilent:=True, bSeparateThread:=bSeparateThread, bShowWaitDialogOverride:=bShowWaitDialogOverride)
-                        ' Temporary solution to being unable to save graphs in a temporary location for display.
-                        ' This can occur if System.IO.Path.GetTempPath() returns a path that is not writable.
-                        If Not bSuccess Then
-                            Evaluate("graphics.off()", bSilent:=bSilent, bSeparateThread:=bSeparateThread, bShowWaitDialogOverride:=bShowWaitDialogOverride)
-                            strGraphDisplayOption = "view_R_viewer"
-                            MsgBox("A problem occured saving graphs in the temporary location " & strTempGraphsDirectory & vbNewLine & vbNewLine & "To ensure graphs can still be viewed, graphs will now appear in a pop up R viewer." & vbNewLine & "Restarting R-Instat and/or your machine usually resolves this. You can change this setting back in Tools > Options: 'Graph Display' if this later becomes resolved.", MsgBoxStyle.Exclamation)
+        Select Case returnType
+            Case R_ReturnType.IgnoreResult
+                _rEngine.RunScriptNoResult(strScript)
+            Case R_ReturnType.ResultAsTemporaryVariable
+                clsOutputLogger.AddStringOutput(_rEngine.RunScriptGetTemporaryVariable(strScript))
+            Case R_ReturnType.ResultAsText
+                clsOutputLogger.AddStringOutput(_rEngine.RunScriptGetText(strScript))
+            Case R_ReturnType.ResultAsImage
+                Dim images As List(Of Image)
+                images = _rEngine.RunScriptGetImages(strGraphDisplayOption, strScript)
+                For Each image In images
+                    If strGraphDisplayOption = "view_output_window" Then
+                        clsOutputLogger.AddImageOutput(image)
+                    ElseIf strGraphDisplayOption = "view_separate_window" Then
+                        frmMain.AddGraphForm(image)
+                    End If
+                Next
+            Case R_ReturnType.ResultAsWebControl
+                '  strOutput = _rEngine.RunScriptAndShowInWeb(strScript, bSeparateThread, bShowWaitDialogOverride, bSilent)
+            Case Else
+                MsgBox("Unable to find a valid return type, Return Type: {0}" + returnType.ToString(), MsgBoxStyle.Critical)
+        End Select
 
-                        End If
-                        'need to boost resolution of the devices, it's not as good as with ggsave.
-                    End If
-                End If
-                If iCallType = 3 AndAlso strGraphDisplayOption = "view_R_viewer" Then
-                    Evaluate(strScript, bSilent:=bSilent, bSeparateThread:=False, bShowWaitDialogOverride:=bShowWaitDialogOverride)
-                Else 'TODO SJL this is the only line executed if iCallType is 0. Move outside if block to simplify logic?
-                    Evaluate(strScript, bSilent:=bSilent, bSeparateThread:=bSeparateThread, bShowWaitDialogOverride:=bShowWaitDialogOverride)
-                End If
-                If iCallType = 3 Then
-                    If strGraphDisplayOption = "view_output_window" OrElse strGraphDisplayOption = "view_separate_window" Then
-                        'add an R script (maybe in the form of one of our methods) that copies divices to the temp directory, using the default device production... use dev.list() and dev.copy() with arguments device = the devices in the list and which = jpeg devices with different paths leading to the temp directory, using a paste() method to find different names for the files
-                        Evaluate("graphics.off()", bSilent:=bSilent, bSeparateThread:=bSeparateThread, bShowWaitDialogOverride:=bShowWaitDialogOverride) 'not quite sure if this would work, otherwise find the right way to close the appropriate devices.
-                        'clsEngine.Evaluate("ggsave(" & Chr(34) & strTempGraphsDirectory.Replace("\", "/") & "Graph.jpg" & Chr(34) & ")")
-                        'This sub is used to display graphics in the output window when necessary.
-                        'This sub is checking the temp directory "R_Instat_Temp_Graphs", created during setup to see if there are any graphs to display. If there are some, then it sends them to the output window, and removes them from the directory.
-                        'It is called from RLink at the end of RunScript.
-                        Dim lstTempGraphFiles As ObjectModel.ReadOnlyCollection(Of String)
-                        Dim iNumberOfFiles As Integer = -1
-                        strTempGraphsDirectory = System.IO.Path.Combine(System.IO.Path.GetTempPath(), "R_Instat_Temp_Graphs")
-                        Try
-                            lstTempGraphFiles = FileIO.FileSystem.GetFiles(strTempGraphsDirectory)
-                        Catch e As Exception
-                            lstTempGraphFiles = Nothing
-                            MsgBox(e.Message & Environment.NewLine & "A problem occured in getting the content of the temporary graphs directory: " & strTempGraphsDirectory & " Possible exceptions are described here: https://msdn.microsoft.com/en-us/library/kf41fdf4.aspx", MsgBoxStyle.Critical)
-                        End Try
-                        If lstTempGraphFiles IsNot Nothing Then
-                            iNumberOfFiles = CStr(lstTempGraphFiles.Count)
-                        End If
-                        If iNumberOfFiles > 0 Then
-                            For Each strFileName As String In lstTempGraphFiles
-                                If strGraphDisplayOption = "view_output_window" Then
-                                    clsOutputLogger.AddImageOutput(strFileName)
-                                ElseIf strGraphDisplayOption = "view_separate_window" Then
-                                    frmMain.AddGraphForm(strFileName)
-                                End If
-                                Try
-                                    My.Computer.FileSystem.DeleteFile(strFileName)
-                                Catch e As Exception
-                                    MsgBox(e.Message & Environment.NewLine & "A problem occured in attempting to delete the temporary file: " & strFileName & " The possible exceptions are described here: https://msdn.microsoft.com/en-us/library/tdx72k4b.aspx", MsgBoxStyle.Critical)
-                                End Try
-                            Next
-                        End If
-                    End If
-                End If
-            Catch e As Exception
-                MsgBox(e.Message & Environment.NewLine & "The error occurred in attempting to run the following R command(s):" & Environment.NewLine & strScript, MsgBoxStyle.Critical, "Error running R command(s)")
-            End Try
-        ElseIf iCallType = 1 OrElse iCallType = 4 Then 'else if script output should be stored in a temp variable
-            ' TODO SJL In RInstat, iCallType only seems to be 0, 2 or 3. Are call types 1 and 4 used?
-            Try
-                'TODO check this is valid syntax in all cases
-                '     i.e. this is potentially: x <- y <- 1
-                Evaluate(strTempAssignTo & " <- " & strScript, bSilent:=bSilent, bSeparateThread:=bSeparateThread, bShowWaitDialogOverride:=bShowWaitDialogOverride)
-                expTemp = GetSymbol(strTempAssignTo)
-                If expTemp IsNot Nothing Then
-                    strTemp = String.Join(Environment.NewLine, expTemp.AsCharacter())
-                    strOutput = strOutput & strTemp & Environment.NewLine
-                End If
-            Catch e As Exception
-                MsgBox(e.Message & Environment.NewLine & "The error occurred in attempting to run the following R command(s):" & Environment.NewLine & strScript, MsgBoxStyle.Critical, "Error running R command(s)")
-            End Try
-        Else ' else if script output should not be ignored, not stored in a graph and not stored in a variable
-            'if script comes from script window, or else script is a single line
-            If iCallType = 5 OrElse strScript.Trim(Environment.NewLine.ToCharArray).LastIndexOf(Environment.NewLine.ToCharArray) = -1 Then
-                'wrap the whole script in 'capture.output'
-                '  'capture.output' returns the result of the R command as a string.
-                '  This string can be displayed later in the output window.
-                strCapturedScript = "capture.output(" & strScript & ")"
-            Else 'else if script is multi-line
-                'execute all lines apart from the final line
-                strSplitScript = Left(strScript, strScript.Trim(Environment.NewLine.ToCharArray).LastIndexOf(Environment.NewLine.ToCharArray))
-                If strSplitScript <> "" Then
-                    Try
-                        bError = Not Evaluate(strSplitScript, bSilent:=bSilent, bSeparateThread:=bSeparateThread, bShowWaitDialogOverride:=bShowWaitDialogOverride)
-                    Catch e As Exception
-                        MsgBox(e.Message & Environment.NewLine & "The error occurred in attempting to run the following R command(s):" & Environment.NewLine & strScript, MsgBoxStyle.Critical, "Error running R command(s)")
-                    End Try
-                End If
-                'ensure that the final line of the script will be executed next
-                strSplitScript = Right(strScript, strScript.Length - strScript.Trim(Environment.NewLine.ToCharArray).LastIndexOf(Environment.NewLine.ToCharArray) - 2)
-                'wrap the final line in 'capture.output' so that when it's executed, the result can be displayed in the output window
-                strCapturedScript = "capture.output(" & strSplitScript & ")"
-            End If
-            Try
-                If Not bError Then
-                    'execute the script and assign the result to a temporary variable
-                    If Evaluate(strTempAssignTo & " <- " & strCapturedScript, bSilent:=bSilent, bSeparateThread:=bSeparateThread, bShowWaitDialogOverride:=bShowWaitDialogOverride) Then
-                        expTemp = GetSymbol(strTempAssignTo)
-                        Evaluate("rm(" & strTempAssignTo & ")", bSilent:=True)
-                        If expTemp IsNot Nothing Then
-                            strTemp = String.Join(Environment.NewLine, expTemp.AsCharacter())
-                            If strTemp <> "" Then
-                                'ensure that the data returned from the script will be displayed in the output window
-                                strOutput = strOutput & strTemp & Environment.NewLine
-                            End If
-                        End If
-                    End If
-                End If
-            Catch e As Exception
-                MsgBox(e.Message & Environment.NewLine & "The error occurred in attempting to run the following R command(s):" & Environment.NewLine & strScript, MsgBoxStyle.Critical, "Error running R command(s)")
-            End Try
-        End If
 
         ' if output window is defined, and there's something to output
         If bOutput AndAlso strOutput IsNot Nothing AndAlso strOutput <> "" Then
@@ -994,7 +684,91 @@ Public Class RLink
         If bUpdateGrids Then
             frmMain.UpdateAllGrids()
         End If
+        Exit Sub
     End Sub
+
+    'Private Function RunREngineFunctionInAThread(REngineFunction As Action(Of )
+    '    'ToDo bShowWaitDialogOverride what is this used for?
+
+
+    '    Dim thrRScript As Threading.Thread
+    '    Dim thrDelay As Threading.Thread
+    '    Dim thrWaitDisplay As Threading.Thread
+    '    Dim evtWaitHandleWaitDisplayDone As New System.Threading.AutoResetEvent(False)
+    '    Dim evtWaitHandleDelayDone As New System.Threading.AutoResetEvent(False)
+    '    Dim bReturn As Boolean = True
+    '    Dim i As Integer = 1
+    '    Dim strTempError As String = ""
+    '    Dim strTempFile As String
+    '    Dim bErrorMessageOpen As Boolean = False
+    '    Dim bCurrentShowWaiting As Boolean
+
+    '    Dim iWaitDelay = 2
+    '    ' loop until any currently running R code has completed
+    '    While bRCodeRunning
+    '        Threading.Thread.Sleep(5)
+    '    End While
+    '    bRCodeRunning = True
+    '    ' if R engine defined
+
+
+    '    Try
+
+    '        thrRScript = New Threading.Thread(Sub() REngineFunction(), maxStackSize:=25000000) With {
+    '            .IsBackground = True
+    '        }
+    '        thrDelay = New Threading.Thread(Sub()
+    '                                            Dim t As New Stopwatch
+    '                                            t.Start()
+    '                                            While t.ElapsedMilliseconds < (iWaitDelay * 1000) AndAlso thrRScript.IsAlive
+    '                                                Threading.Thread.Sleep(5)
+    '                                            End While
+    '                                            evtWaitHandleDelayDone.Set()
+    '                                        End Sub) With {
+    '            .IsBackground = True
+    '                                        }
+    '        thrWaitDisplay = New Threading.Thread(Sub()
+    '                                                  If bCurrentShowWaiting Then
+    '                                                      If Not RuntimeInformation.IsOSPlatform(OSPlatform.Linux) Then
+    '                                                          frmSetupLoading.Show()
+    '                                                      End If
+    '                                                  End If
+    '                                                  While thrRScript.IsAlive
+    '                                                      If bErrorMessageOpen Then
+    '                                                          If Not RuntimeInformation.IsOSPlatform(OSPlatform.Linux) Then
+    '                                                              frmSetupLoading.Close()
+    '                                                          End If
+    '                                                      End If
+    '                                                      Threading.Thread.Sleep(5)
+    '                                                      Application.DoEvents()
+    '                                                  End While
+    '                                                  If Not RuntimeInformation.IsOSPlatform(OSPlatform.Linux) Then
+    '                                                      frmSetupLoading.Close()
+    '                                                  End If
+    '                                                  evtWaitHandleWaitDisplayDone.Set()
+    '                                              End Sub) With {
+    '            .IsBackground = True
+    '                                              }
+    '        thrRScript.Start()
+    '        thrDelay.Start()
+    '        evtWaitHandleDelayDone.WaitOne()
+    '        If thrRScript.IsAlive Then
+    '            thrWaitDisplay.Start()
+    '            evtWaitHandleWaitDisplayDone.WaitOne()
+    '        End If
+
+    '    Catch ex As Exception
+    '        ' If Not bSilent Then
+    '        ' MsgBox(ex.Message & Environment.NewLine & "The error occurred in attempting to run the following R command(s):" & Environment.NewLine & strScript, MsgBoxStyle.Critical, "Error running R command(s)")
+    '        ' End If
+    '        strTempError = ex.Message
+    '        bReturn = False
+    '    End Try
+
+    '    Return bReturn
+
+    'End Function
+
 
     '''--------------------------------------------------------------------------------------------
     ''' <summary>   Executes the the <paramref name="strScript"/> R script and returns the result 
@@ -1019,20 +793,36 @@ Public Class RLink
     '''             If an exception is raised then returns 'Nothing'. </returns>
     '''--------------------------------------------------------------------------------------------
     Public Function RunInternalScriptGetValue(strScript As String, Optional strVariableName As String = ".temp_value", Optional bSilent As Boolean = False, Optional bSeparateThread As Boolean = True, Optional bShowWaitDialogOverride As Nullable(Of Boolean) = Nothing, Optional ByRef strError As String = "") As SymbolicExpression
-        Dim expTemp As SymbolicExpression
-        Dim strCommand As String
+        Dim thrRScript As Threading.Thread
+        Dim thrDelay As Threading.Thread
+        Dim thrWaitDisplay As Threading.Thread
+        Dim evtWaitHandleWaitDisplayDone As New System.Threading.AutoResetEvent(False)
+        Dim evtWaitHandleDelayDone As New System.Threading.AutoResetEvent(False)
+        Dim bReturn As Boolean = True
+        Dim i As Integer = 1
+        Dim strTempError As String = ""
+        Dim bErrorMessageOpen As Boolean = False
+        Dim bCurrentShowWaiting As Boolean
 
-        expTemp = Nothing
-        'TODO Legacy - Bug here if strScript is multiple lines. Wrong value will be returned
-        strCommand = strVariableName & " <- " & strScript
-        If clsEngine IsNot Nothing Then
-            Evaluate(strCommand, bSilent:=bSilent, bSeparateThread:=bSeparateThread, bShowWaitDialogOverride:=bShowWaitDialogOverride, strError:=strError)
-            expTemp = GetSymbol(strVariableName, bSilent:=True)
-            'Very important to remove the variable after getting it otherwise could be returning wrong variable later if a command gives an error
-            Evaluate("rm(" & strVariableName & ")", bSilent:=bSilent, bSeparateThread:=bSeparateThread)
-        End If
-        Return expTemp
+
+        ' loop until any currently running R code has completed
+        'ToDo - could be infinete loop
+        'While _codeRunning
+        '    Threading.Thread.Sleep(5)
+        'End While
+        '_codeRunning = True
+
+        'Dim test As Action(Of (String, String, Boolean, Boolean, Boolean?, String), SymbolicExpression) = AddressOf _rEngine.RunInternalScriptGetValue(strScript, strVariableName, bSilent, bSeparateThread, bShowWaitDialogOverride, strError)
+
+        '  RunREngineFunctionInAThread(AddressOf _rEngine.RunInternalScriptGetValue(strScript, strVariableName, bSilent, bSeparateThread, bShowWaitDialogOverride, strError))
+
+        'Return test
+
+        Return _rEngine.RunInternalScriptGetValue(strScript, strVariableName)
+
     End Function
+
+
 
     '''--------------------------------------------------------------------------------------------
     ''' <summary>   Executes the the <paramref name="strScript"/> R script and returns the result 
@@ -1055,19 +845,7 @@ Public Class RLink
     ''' <returns>   The result of the script execution as a collection of strings. </returns>
     '''--------------------------------------------------------------------------------------------
     Public Function RunInternalScriptGetOutput(strScript As String, Optional bSilent As Boolean = False, Optional bSeparateThread As Boolean = True, Optional bShowWaitDialogOverride As Nullable(Of Boolean) = Nothing, Optional ByRef strError As String = "") As CharacterVector
-        Dim chrTemp As CharacterVector
-        Dim expTemp As SymbolicExpression
-
-        expTemp = RunInternalScriptGetValue("capture.output(" & strScript & ")", bSilent:=bSilent, bSeparateThread:=bSeparateThread, bShowWaitDialogOverride:=bShowWaitDialogOverride, strError:=strError)
-        Try
-            chrTemp = expTemp.AsCharacter()
-        Catch ex As Exception
-            If Not bSilent Then
-                MsgBox(ex.Message & Environment.NewLine & "The error occurred in attempting to run the following R command(s):" & Environment.NewLine & strScript, MsgBoxStyle.Critical, "Error running R command(s)")
-            End If
-            chrTemp = Nothing
-        End Try
-        Return chrTemp
+        Return _rEngine.RunInternalScriptGetOutput(strScript)
     End Function
 
     '''--------------------------------------------------------------------------------------------
@@ -1091,45 +869,6 @@ Public Class RLink
     '''             else returns false. </returns>
     '''--------------------------------------------------------------------------------------------
     Public Function RunInternalScript(strScript As String, Optional strVariableName As String = "", Optional bSilent As Boolean = False, Optional bSeparateThread As Boolean = True, Optional bShowWaitDialogOverride As Nullable(Of Boolean) = Nothing) As Boolean
-        Dim strCommand As String
-        Dim bReturn As Boolean
-
-        If strVariableName <> "" Then
-            strCommand = strVariableName & "<-" & strScript
-        Else
-            strCommand = strScript
-        End If
-        If clsEngine IsNot Nothing Then
-            bReturn = Evaluate(strCommand, bSilent:=bSilent, bSeparateThread:=bSeparateThread, bShowWaitDialogOverride:=bShowWaitDialogOverride)
-            Return bReturn
-        Else
-            Return False
-        End If
-    End Function
-
-    '''--------------------------------------------------------------------------------------------
-    ''' <summary>   Executes the <paramref name="strScript"/> R script and returns true if 
-    '''             execution was successful. </summary>
-    '''
-    ''' <param name="strScript">                The R script to execute. </param>
-    ''' <param name="bSilent">                  (Optional) If false and an exception is raised then
-    '''                                         open a message box that displays the exception
-    '''                                         message. </param>
-    ''' <param name="bSeparateThread">          (Optional) If true then execute the R script in a new
-    '''                                         thread. </param>
-    ''' <param name="bShowWaitDialogOverride">  (Optional) If true and
-    '''                                         <paramref name="bSeparateThread"/> is also true then
-    '''                                         display a waiting dialog while the R script is
-    '''                                         executing. </param>
-    ''' <param name="strError">                 [in,out] (Optional) The error message of the caught 
-    '''                                         error. If no error is caught then is an empty
-    '''                                         string. 
-    '''                                         Note that the input value is ignored. </param>
-    '''
-    ''' <returns>   True if <paramref name="strScript"/> executes without raising an exception, 
-    '''             else returns false. </returns>
-    '''--------------------------------------------------------------------------------------------
-    Private Function Evaluate(strScript As String, Optional bSilent As Boolean = False, Optional bSeparateThread As Boolean = True, Optional bShowWaitDialogOverride As Nullable(Of Boolean) = Nothing, Optional ByRef strError As String = "") As Boolean
         Dim thrRScript As Threading.Thread
         Dim thrDelay As Threading.Thread
         Dim thrWaitDisplay As Threading.Thread
@@ -1138,197 +877,72 @@ Public Class RLink
         Dim bReturn As Boolean = True
         Dim i As Integer = 1
         Dim strTempError As String = ""
-        Dim strTempFile As String
         Dim bErrorMessageOpen As Boolean = False
         Dim bCurrentShowWaiting As Boolean
 
-        ' if there is an override for the wait dialog, then use the override
-        If bShowWaitDialogOverride.HasValue Then
-            bCurrentShowWaiting = bShowWaitDialogOverride
-        Else ' else use the current setting for the wait dialog
-            bCurrentShowWaiting = bShowWaitDialog
-        End If
+
+
         ' loop until any currently running R code has completed
-        While bRCodeRunning
-            Threading.Thread.Sleep(5)
-        End While
+        'ToDo - could be infinete loop
+        'While _codeRunning
+        '    Threading.Thread.Sleep(5)
+        'End While
+        '_codeRunning = True
         bRCodeRunning = True
-        ' if R engine defined
-        If clsEngine IsNot Nothing Then
-            ' if this is the first R code executed, then open and initialise log file
-            If bFirstRCode Then
-                Try
-                    If Not Directory.Exists(frmMain.strAutoSaveInternalLogFolderPath) Then
-                        Directory.CreateDirectory(frmMain.strAutoSaveInternalLogFolderPath)
-                    End If
-                    strTempFile = "debug_log.R"
-                    While File.Exists(Path.Combine(frmMain.strAutoSaveInternalLogFolderPath, strTempFile))
-                        i = i + 1
-                        strTempFile = "debug_log" & i & ".R"
-                    End While
-                    strAutoSaveDebugLogFilePath = Path.Combine(frmMain.strAutoSaveInternalLogFolderPath, strTempFile)
-                    File.WriteAllText(strAutoSaveDebugLogFilePath, "")
-                    Using w As StreamWriter = File.AppendText(strAutoSaveDebugLogFilePath)
-                        w.WriteLine("# ****************************")
-                        w.WriteLine("# R-Instat debugging log file")
-                        w.WriteLine("# ****************************")
-                        w.WriteLine("# Version: " & My.Application.Info.Version.ToString())
-                        w.WriteLine("# ****************************")
-                        w.WriteLine("# Created on: " & DateTime.Now)
-                        w.WriteLine("# User: " & Environment.UserName)
-                        w.WriteLine("# ****************************")
-                    End Using
-                    bDebugLogExists = True
-                Catch ex As Exception
-                    MsgBox("Could not create debug log file at:" & strAutoSaveDebugLogFilePath & Environment.NewLine & ex.Message, MsgBoxStyle.Exclamation, "Debug Log File")
-                    bDebugLogExists = False
-                Finally
-                    bFirstRCode = False
-                End Try
-            End If
-            ' append script to log file
-            Try
-                If bDebugLogExists Then
-                    Dim ts As New Stopwatch ' TODO SJL 20/04/20 what is the purpose of the stopwatch?
-                    ts.Start()
-                    Using w As StreamWriter = File.AppendText(strAutoSaveDebugLogFilePath)
-                        w.WriteLine(strScript)
-                    End Using
-                    ts.Stop()
-                End If
-            Catch ex As Exception
-                MsgBox("Could not add text to debug log file at:" & strAutoSaveDebugLogFilePath & Environment.NewLine & ex.Message, MsgBoxStyle.Exclamation, "Debug Log File")
-            End Try
-            Try
-                ' if script should run in a separate thread
-                ' Fixed thread stack size i.e maxStackSize = 25000000 (25MB) because this may returns an overflow exception when large datasets are used. For example when producing a declustered plot on extremes dialog using Ghana dataset.
-                If bSeparateThread Then
-                    thrRScript = New Threading.Thread(Sub()
-                                                          Try
-                                                              clsEngine.Evaluate(strScript)
-                                                          Catch ex As Exception
-                                                              If Not bSilent Then
-                                                                  bErrorMessageOpen = True
-                                                                  MsgBox(ex.Message & Environment.NewLine & "The error occurred in attempting to run the following R command(s):" & Environment.NewLine & strScript, MsgBoxStyle.Critical, "Error running R command(s)")
-                                                                  bErrorMessageOpen = False
-                                                              End If
-                                                              strTempError = ex.Message
-                                                              bReturn = False
-                                                          End Try
-                                                      End Sub, maxStackSize:=25000000)
-                    thrRScript.IsBackground = True
-                    thrDelay = New Threading.Thread(Sub()
-                                                        Dim t As New Stopwatch
-                                                        t.Start()
-                                                        While t.ElapsedMilliseconds < (iWaitDelay * 1000) AndAlso thrRScript.IsAlive
-                                                            Threading.Thread.Sleep(5)
-                                                        End While
-                                                        evtWaitHandleDelayDone.Set()
-                                                    End Sub)
-                    thrDelay.IsBackground = True
-                    thrWaitDisplay = New Threading.Thread(Sub()
-                                                              If bCurrentShowWaiting Then
-                                                                  If Not RuntimeInformation.IsOSPlatform(OSPlatform.Linux) Then
-                                                                      frmSetupLoading.Show()
-                                                                  End If
-                                                              End If
-                                                                  While thrRScript.IsAlive
-                                                                  If bErrorMessageOpen Then
-                                                                      If Not RuntimeInformation.IsOSPlatform(OSPlatform.Linux) Then
-                                                                          frmSetupLoading.Close()
-                                                                      End If
-                                                                  End If
-                                                                  Threading.Thread.Sleep(5)
-                                                                  Application.DoEvents()
-                                                              End While
-                                                              If Not RuntimeInformation.IsOSPlatform(OSPlatform.Linux) Then
-                                                                  frmSetupLoading.Close()
-                                                              End If
-                                                              evtWaitHandleWaitDisplayDone.Set()
-                                                          End Sub)
-                    thrWaitDisplay.IsBackground = True
-                    thrRScript.Start()
-                    thrDelay.Start()
-                    evtWaitHandleDelayDone.WaitOne()
-                    If thrRScript.IsAlive Then
-                        thrWaitDisplay.Start()
-                        evtWaitHandleWaitDisplayDone.WaitOne()
-                    End If
-                Else 'else if script does NOT need to run in a separate thread
-                    clsEngine.Evaluate(strScript)
-                End If
-            Catch ex As Exception
-                If Not bSilent Then
-                    MsgBox(ex.Message & Environment.NewLine & "The error occurred in attempting to run the following R command(s):" & Environment.NewLine & strScript, MsgBoxStyle.Critical, "Error running R command(s)")
-                End If
-                strTempError = ex.Message
-                bReturn = False
-            End Try
-        Else
-            bReturn = False
-        End If
+        Dim temp = True
+        'temp = JustATest(strScript, strVariableName, bSilent, bSeparateThread, bShowWaitDialogOverride).Result
+        '  DisplayLoading()
+        ' _rEngine.RunInternalScript(strScript, strVariableName, bSilent, bSeparateThread, bShowWaitDialogOverride)
+        '  temp = JustATest(strScript, strVariableName, bSilent, bSeparateThread, bShowWaitDialogOverride).Result
+        'Threading.Thread.Sleep(500)
         bRCodeRunning = False
-        strError = strTempError
-        Return bReturn 'return if script executed without raising an exception
+        ' temp = JustATest(strScript, strVariableName, bSilent, bSeparateThread, bShowWaitDialogOverride).Result
+        _rEngine.RunInternalScript(strScript, strVariableName)
+        Return temp
+
+        'thrDelay = New Threading.Thread(Sub()
+        '                                    Dim t As New Stopwatch
+        '                                    t.Start()
+        '                                    While t.ElapsedMilliseconds < (2 * 1000) AndAlso _rEngine.ScriptRunning
+        '                                        Threading.Thread.Sleep(5)
+        '                                    End While
+        '                                    evtWaitHandleDelayDone.Set()
+        '                                End Sub)
+        'thrDelay.IsBackground = True
+        'thrWaitDisplay = New Threading.Thread(Sub()
+        '                                          If bCurrentShowWaiting Then
+        '                                              If Not RuntimeInformation.IsOSPlatform(OSPlatform.Linux) Then
+        '                                                  frmSetupLoading.Show()
+        '                                              End If
+        '                                          End If
+        '                                          While _rEngine.ScriptRunning
+        '                                              If bErrorMessageOpen Then
+        '                                                  If Not RuntimeInformation.IsOSPlatform(OSPlatform.Linux) Then
+        '                                                      frmSetupLoading.Close()
+        '                                                  End If
+        '                                              End If
+        '                                              Threading.Thread.Sleep(5)
+        '                                              'ToDo Not sure how this will work
+        '                                              ' Application.DoEvents()
+        '                                          End While
+        '                                          If Not RuntimeInformation.IsOSPlatform(OSPlatform.Linux) Then
+        '                                              frmSetupLoading.Close()
+        '                                          End If
+        '                                          evtWaitHandleWaitDisplayDone.Set()
+        '                                      End Sub)
+        'thrWaitDisplay.IsBackground = True
+        'thrDelay.Start()
+        'evtWaitHandleDelayDone.WaitOne()
+        'If _rEngine.ScriptRunning Then
+        '    thrWaitDisplay.Start()
+        '    evtWaitHandleWaitDisplayDone.WaitOne()
+        'End If
+
+        Return True
     End Function
 
-    '''--------------------------------------------------------------------------------------------
-    ''' <summary>   Gets the symbol named <paramref name="strSymbol"/>. </summary>
-    '''
-    ''' <param name="strSymbol">    The name of the symbol to return. </param>
-    ''' <param name="bSilent">      (Optional) If false and an exception is raised then open a
-    '''                             message box that displays the exception message. </param>
-    '''
-    ''' <returns>   The symbol named <paramref name="strSymbol"/>. </returns>
-    '''--------------------------------------------------------------------------------------------
-    Private Function GetSymbol(strSymbol As String, Optional bSilent As Boolean = False) As SymbolicExpression
-        Dim expTemp As SymbolicExpression = Nothing
 
-        If clsEngine IsNot Nothing Then
-            Try
-                expTemp = clsEngine.GetSymbol(strSymbol)
-            Catch ex As Exception
-                If Not bSilent Then
-                    MsgBox(ex.Message & Environment.NewLine & "The error occurred in attempting to retrieve:" & strSymbol, MsgBoxStyle.Critical, "Error retrieving R variable")
-                End If
-            End Try
-        End If
-        Return expTemp
-    End Function
 
-    '''--------------------------------------------------------------------------------------------
-    ''' <summary>   Gets the next default data frame name. </summary>
-    '''
-    ''' <param name="strPrefix">        The value for the R 'prefix' parameter. </param>
-    ''' <param name="iStartIndex">      (Optional) The value for the R 'start_index' parameter. </param>
-    ''' <param name="bIncludeIndex">    (Optional) The value for the R 'include_index' parameter. </param>
-    '''
-    ''' <returns>   The next default data frame name. </returns>
-    '''--------------------------------------------------------------------------------------------
-    Public Function GetDefaultDataFrameName(strPrefix As String, Optional iStartIndex As Integer = 1, Optional bIncludeIndex As Boolean = True) As String
-        Dim strTemp As String
-        Dim clsGetNextDataName As New RFunction
-        Dim expName As SymbolicExpression
-
-        clsGetNextDataName.SetRCommand(strInstatDataObject & "$get_next_default_dataframe_name")
-        clsGetNextDataName.AddParameter("prefix", Chr(34) & strPrefix & Chr(34))
-        clsGetNextDataName.AddParameter("start_index", iStartIndex)
-        If Not bInstatObjectExists Then
-            CreateNewInstatObject()
-        End If
-        If bIncludeIndex Then
-            clsGetNextDataName.AddParameter("include_index", "TRUE")
-        Else
-            clsGetNextDataName.AddParameter("include_index", "FALSE")
-        End If
-        expName = RunInternalScriptGetValue(clsGetNextDataName.ToScript(), bSilent:=True)
-        If expName IsNot Nothing AndAlso Not expName.Type = Internals.SymbolicExpressionType.Null Then
-            strTemp = expName.AsCharacter(0)
-        Else
-            strTemp = ""
-        End If
-        Return strTemp
-    End Function
 
     '''--------------------------------------------------------------------------------------------
     ''' <summary>   Gets the R setup script.</summary>
@@ -1659,19 +1273,7 @@ Public Class RLink
     ''' <returns>   True if <paramref name="strDataFrameName"/> data frame exists, else false. </returns>
     '''--------------------------------------------------------------------------------------------
     Public Function DataFrameExists(strDataFrameName As String) As Boolean
-        Dim bExists As Boolean
-        Dim clsDataFrameExists As New RFunction
-        Dim expExists As SymbolicExpression
-
-        clsDataFrameExists.SetRCommand(strInstatDataObject & "$data_frame_exists")
-        clsDataFrameExists.AddParameter("data_name", Chr(34) & strDataFrameName & Chr(34))
-        expExists = RunInternalScriptGetValue(clsDataFrameExists.ToScript(), bSilent:=True)
-        If expExists IsNot Nothing AndAlso Not expExists.Type = Internals.SymbolicExpressionType.Null Then
-            bExists = expExists.AsLogical(0)
-        Else
-            bExists = False
-        End If
-        Return bExists
+        Return _rEngine.HelperFunctions.DataFrameExists(strDataFrameName)
     End Function
 
     '''--------------------------------------------------------------------------------------------
@@ -2181,7 +1783,8 @@ Public Class RLink
             MsgBox("Wait time must be a positive integer. Resetting to default of 2 seconds.", MsgBoxStyle.Exclamation, "Invalid value")
             iTimeInSeconds = 2
         End If
-        iWaitDelay = iTimeInSeconds
+        ' _rEngine._waitDelay = iTimeInSeconds
+        '  iWaitDelay = iTimeInSeconds
     End Sub
 
     ''' <summary>   Closes the current instat data object, and opens a new one. </summary>
@@ -2280,7 +1883,7 @@ Public Class RLink
         'Note: this function is not currently called but it will be used in future
         '      functionality to populate dialogs from script.
         '      Please do not delete this function. (@lloyddewit 24/11/21)
-        
+
         'temporary object that retrieves the output from the environment
         Dim strTempAssignTo As String = ".temp_func"
         Dim expTemp As SymbolicExpression
@@ -2304,12 +1907,15 @@ Public Class RLink
 
         'TODO check that the fuction name provided has no pening and closing brackets at the end
         '?QUESTION /CLARIFICATION Parameters value fror the function  ?gt::cols_merge() are being split into different parts
-        If Not Evaluate(strTempAssignTo & " <- " & "capture.output(" & clsAsListFunction.ToScript() & ")", bSilent:=True) Then
-            'Error getting the parameters either the function name provided is incorrect/package containing the function isn't loaded 
-            Return Nothing
-        End If
-        expTemp = GetSymbol(strTempAssignTo)
-        Evaluate("rm(" & strTempAssignTo & ")", bSilent:=True)
+        'TODO code removed in order seperate RLink
+        'If Not Evaluate(strTempAssignTo & " <- " & "capture.output(" & clsAsListFunction.ToScript() & ")", bSilent:=True) Then
+        '    'Error getting the parameters either the function name provided is incorrect/package containing the function isn't loaded 
+        '    Return Nothing
+        'End If
+        'expTemp = GetSymbol(strTempAssignTo)
+        'Evaluate("rm(" & strTempAssignTo & ")", bSilent:=True)
+
+
         If expTemp Is Nothing Then
             Return Nothing
         End If

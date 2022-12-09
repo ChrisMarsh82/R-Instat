@@ -1512,6 +1512,7 @@
     <Compile Include="dlgUseModel.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="static\clsDisplayLoading.vb" />
     <Compile Include="ucrAxes.Designer.vb">
       <DependentUpon>ucrAxes.vb</DependentUpon>
     </Compile>
@@ -5591,6 +5592,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="obj\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\R_Link\R_Link.vbproj">
+      <Project>{70477c13-474d-4275-80f3-658874ebfd9e}</Project>
+      <Name>R_Link</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />

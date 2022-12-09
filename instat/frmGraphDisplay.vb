@@ -28,4 +28,8 @@ Public Class frmGraphDisplay
         pctGraph.Image = imgTemp
         fsTemp.Close()
     End Sub
+
+    Public Sub SetImage(image As Image)
+        pctGraph.Image = image
+    End Sub
 End Class

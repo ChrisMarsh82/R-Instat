@@ -13,10 +13,44 @@
 '
 ' You should have received a copy of the GNU General Public License 
 ' along with this program.  If not, see <http://www.gnu.org/licenses/>.
+Imports System.Threading
 
 Public Class frmSetupLoading
     Private dctMessagesLinks As Dictionary(Of String, String)
     Private iSelectedMessage As Integer
+
+    Private Shared CancellationTokenSource As CancellationTokenSource
+    Public Shared Sub ShowLoadingScreen()
+        If CancellationTokenSource Is Nothing Then
+            HideLoadingScreen()
+        End If
+        CancellationTokenSource = New CancellationTokenSource
+        'Ignore the warning - we only want to keep this dialog responsive
+        ShowLoadingScreenAsync(CancellationTokenSource.Token)
+    End Sub
+    Public Shared Sub HideLoadingScreen()
+        If CancellationTokenSource IsNot Nothing Then
+            CancellationTokenSource.Cancel()
+            CancellationTokenSource.Dispose()
+            CancellationTokenSource = Nothing
+        End If
+    End Sub
+    Private Shared Async Function ShowLoadingScreenAsync(CancellationToken As CancellationToken) As Task
+        Await Task.Run(Sub() ShowLoadingScreenAndWait(CancellationToken), CancellationToken)
+    End Function
+    Private Shared Sub ShowLoadingScreenAndWait(CancellationToken As CancellationToken)
+        frmSetupLoading.Show()
+        Dim t As New Stopwatch
+        t.Start()
+        'Wait before showing loading screen
+        Thread.Sleep(2000)
+        'Break out just in case
+        While (Not CancellationToken.IsCancellationRequested) And t.ElapsedMilliseconds < (50000 * 1000)
+            Threading.Thread.Sleep(5)
+            Application.DoEvents()
+        End While
+        frmSetupLoading.Close()
+    End Sub
 
     Private Sub frmSetupLoading_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         dctMessagesLinks = New Dictionary(Of String, String)

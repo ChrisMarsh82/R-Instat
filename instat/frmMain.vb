@@ -382,10 +382,10 @@ Public Class frmMain
         End Try
     End Sub
 
-    Public Sub AddGraphForm(strFilePath As String)
+    Public Sub AddGraphForm(image As Image)
         Dim frmNewGraph As New frmGraphDisplay
 
-        frmNewGraph.SetImageFromFile(strFilePath)
+        frmNewGraph.SetImage(image)
         frmNewGraph.Show()
         frmNewGraph.BringToFront()
     End Sub

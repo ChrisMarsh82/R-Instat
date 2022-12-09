@@ -73,15 +73,29 @@ Public Class clsOutputLogger
     ''' Adds image to be displayed within the output
     ''' </summary>
     ''' <param name="strFilename"></param>
-    Public Sub AddImageOutput(strFilename As String)
-        Dim image As Bitmap
+    'Public Sub AddImageOutput(strFilename As String)
+    '    Dim image As Bitmap
+    '    'Note this is always takes the last script added as corresponding script
+    '    If _lastScriptElement Is Nothing Then
+    '        Throw New Exception("Cannot find script to attach output to.")
+    '    Else
+    '        Using fs As New IO.FileStream(strFilename, IO.FileMode.Open)
+    '            image = New Bitmap(Drawing.Image.FromStream(fs))
+    '        End Using
+    '        Dim outputElement As New clsOutputElement
+    '        outputElement.AddImageOutputFromR(image, _lastScriptElement.FormatedRScript)
+    '        _output.Add(outputElement)
+    '        RaiseEvent NewOutputAdded(outputElement)
+    '    End If
+
+    'End Sub
+
+    Public Sub AddImageOutput(image As Image)
+        ' Dim image As Bitmap
         'Note this is always takes the last script added as corresponding script
         If _lastScriptElement Is Nothing Then
             Throw New Exception("Cannot find script to attach output to.")
         Else
-            Using fs As New IO.FileStream(strFilename, IO.FileMode.Open)
-                image = New Bitmap(Drawing.Image.FromStream(fs))
-            End Using
             Dim outputElement As New clsOutputElement
             outputElement.AddImageOutputFromR(image, _lastScriptElement.FormatedRScript)
             _output.Add(outputElement)
