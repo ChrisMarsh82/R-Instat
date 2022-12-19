@@ -239,6 +239,11 @@
     </Compile>
     <Compile Include="Enum\RObjectFormat.vb" />
     <Compile Include="Enum\RObjectTypeLabel.vb" />
+    <Compile Include="FormBuilder\BaseButtonsBuilder.vb" />
+    <Compile Include="FormBuilder\BaseDialog.vb" />
+    <Compile Include="FormBuilder\DialogBuilder.vb" />
+    <Compile Include="FormBuilder\OneVariableGraph.vb" />
+    <Compile Include="FormBuilder\ParameterControl.vb" />
     <Compile Include="sdgSummaryThemes.Designer.vb">
       <DependentUpon>sdgSummaryThemes.vb</DependentUpon>
     </Compile>
