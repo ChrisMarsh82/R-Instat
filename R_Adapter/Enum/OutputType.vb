@@ -9,4 +9,12 @@
         'todo. add the <Flags()> attribute?
     End Enum
 
+    Public Enum ExpectedOutput
+        ignoreresult = 0
+        tempVariable = 1
+        text = 2
+        graph = 3
+        webBrowser = 4
+    End Enum
+
 End Namespace

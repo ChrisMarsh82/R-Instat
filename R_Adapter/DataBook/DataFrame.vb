@@ -17,6 +17,7 @@
 Imports System.Drawing
 Imports R_Adapter2.R_Adapter.Constant
 Imports R_Adapter2.R_Adapter.RLink
+Imports R_Adapter2.R_Adapter.ScriptBuilder
 
 ''' <summary>
 ''' Holds data for the dataframe so that it can be displayed.
@@ -155,7 +156,7 @@ Namespace R_Adapter.DataBook
         Private Function HasDataChanged() As Boolean
             Dim clsDataChanged As New RFunction
 
-            clsDataChanged.SetRCommand(RCodeConstant.DataBookName & "$get_data_changed")
+            clsDataChanged.SetDataBookCommand("get_data_changed")
             clsDataChanged.AddParameter("data_name", Chr(34) & _strDataFrameName & Chr(34))
             Return _scriptRunner.RunInternalScriptGetBoolean(clsDataChanged.ToScript())
         End Function
@@ -188,7 +189,7 @@ Namespace R_Adapter.DataBook
 
         Private Sub ResetDataFramesChanged()
             Dim clsSetDataFramesChanged As New RFunction
-            clsSetDataFramesChanged.SetRCommand(RCodeConstant.DataBookName & "$set_data_frames_changed")
+            clsSetDataFramesChanged.SetDataBookCommand("set_data_frames_changed")
             clsSetDataFramesChanged.AddParameter("data_name", Chr(34) & _strDataFrameName & Chr(34))
             clsSetDataFramesChanged.AddParameter("new_val", "FALSE")
             _scriptRunner.RunInternalScript(clsSetDataFramesChanged.ToScript())

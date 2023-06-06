@@ -17,6 +17,7 @@
 Imports System.Drawing
 Imports R_Adapter2.R_Adapter.Constant
 Imports R_Adapter2.R_Adapter.RLink
+Imports R_Adapter2.R_Adapter.ScriptBuilder
 
 ''' <summary>
 ''' Holds a subset dataset of an R dataframe.
@@ -208,7 +209,7 @@ Namespace R_Adapter.DataBook
         Private Function GetDataFrameFromRCommand() As RDotNet.DataFrame
             Dim clsGetDataFrameRFunction As New RFunction
             _hasChanged = True
-            clsGetDataFrameRFunction.SetRCommand(RCodeConstant.DataBookName & "$get_data_frame")
+            clsGetDataFrameRFunction.SetDataBookCommand("get_data_frame")
             clsGetDataFrameRFunction.AddParameter("convert_to_character", "TRUE")
             clsGetDataFrameRFunction.AddParameter("use_current_filter", "TRUE")
             clsGetDataFrameRFunction.AddParameter("use_column_selection", "TRUE")
@@ -222,7 +223,7 @@ Namespace R_Adapter.DataBook
 
         Private Function GetColumnDataTypes() As String()
             Dim clsRFunction As New RFunction
-            clsRFunction.SetRCommand(RCodeConstant.DataBookName & "$get_column_data_types")
+            clsRFunction.SetDataBookCommand("get_column_data_types")
             clsRFunction.AddParameter("data_name", Chr(34) & _strDataFrameName & Chr(34))
             clsRFunction.AddParameter("columns", _scriptRunner.ConvertListToRString(_clsRDotNetDataFrame.ColumnNames.ToList))
             Return _scriptRunner.RunInternalScriptGetStringArray(clsRFunction.ToScript())
@@ -230,7 +231,7 @@ Namespace R_Adapter.DataBook
 
         Private Function GetColumnBackgroundColours() As Integer()
             Dim clsRFunction As New RFunction
-            clsRFunction.SetRCommand(RCodeConstant.DataBookName & "$get_variables_metadata")
+            clsRFunction.SetDataBookCommand("get_variables_metadata")
             clsRFunction.AddParameter("data_name", Chr(34) & _strDataFrameName & Chr(34))
             clsRFunction.AddParameter("property", "colour_label")
             clsRFunction.AddParameter("column", _scriptRunner.ConvertListToRString(_clsRDotNetDataFrame.ColumnNames.ToList))
@@ -239,8 +240,7 @@ Namespace R_Adapter.DataBook
 
         Private Function GetHasColumnColours() As Boolean
             Dim clsRFunction As New RFunction
-            clsRFunction.ClearParameters()
-            clsRFunction.SetRCommand(RCodeConstant.DataBookName & "$has_colours")
+            clsRFunction.SetDataBookCommand("has_colours")
             clsRFunction.AddParameter("data_name", Chr(34) & _strDataFrameName & Chr(34))
             clsRFunction.AddParameter("columns", _scriptRunner.ConvertListToRString(_clsRDotNetDataFrame.ColumnNames.ToList))
             Return _scriptRunner.RunInternalScriptGetBoolean(clsRFunction.ToScript())

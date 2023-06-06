@@ -17,6 +17,7 @@
 Imports System.Drawing
 Imports R_Adapter2.R_Adapter.Constant
 Imports R_Adapter2.R_Adapter.RLink
+Imports R_Adapter2.R_Adapter.ScriptBuilder
 
 ''' <summary>
 ''' Holds the dataframes and metadata.
@@ -35,6 +36,21 @@ Namespace R_Adapter.DataBook
         'ToDo the colourPalette should not be passed like this
         Private _colourPalette As List(Of Color)
 
+
+        Private Shared ReadOnly padlock As Object = New Object()
+        Private Shared instance As DataBook = Nothing
+
+        Public Shared ReadOnly Property SingletonInstance As DataBook
+            Get
+
+                SyncLock padlock
+                    If instance Is Nothing Then
+                        instance = New DataBook(Nothing)
+                    End If
+                    Return instance
+                End SyncLock
+            End Get
+        End Property
         ''' <summary>
         ''' Holds all the dataframes within the databook
         ''' </summary>
@@ -47,6 +63,8 @@ Namespace R_Adapter.DataBook
                 _lstDataFrames = value
             End Set
         End Property
+
+
 
         ''' <summary>
         ''' Holds the MetaData at a dataframe level.
@@ -76,7 +94,7 @@ Namespace R_Adapter.DataBook
             'If Not _RLink.bInstatObjectExists Then
             ' Return False
             'End If
-            clsDataChanged.SetRCommand(RCodeConstant.DataBookName & "$get_data_changed")
+            clsDataChanged.SetDataBookCommand("get_data_changed")
             Return _scriptRunner.RunInternalScriptGetBoolean(clsDataChanged.ToScript())
         End Function
 
@@ -86,7 +104,7 @@ Namespace R_Adapter.DataBook
         ''' <param name="strDataFrameName"></param>
         Public Sub HideDataFrame(strDataFrameName As String)
             Dim clsHideDataFrame As New RFunction
-            clsHideDataFrame.SetRCommand(RCodeConstant.DataBookName & "$append_to_dataframe_metadata")
+            clsHideDataFrame.SetDataBookCommand("append_to_dataframe_metadata")
             clsHideDataFrame.AddParameter("data_name", Chr(34) & strDataFrameName & Chr(34))
             clsHideDataFrame.AddParameter("property", "is_hidden_label")
             clsHideDataFrame.AddParameter("new_val", "TRUE")
@@ -189,7 +207,7 @@ Namespace R_Adapter.DataBook
             Dim dataframeNames As String()
             Dim listOfDataFrames As New List(Of String)
 
-            clsGetDataFrameNames.SetRCommand(RCodeConstant.DataBookName & "$get_data_names")
+            clsGetDataFrameNames.SetDataBookCommand("get_data_names")
             clsGetDataFrameNames.AddParameter("include_hidden", "FALSE")
 
             dataframeNames = _scriptRunner.RunInternalScriptGetStringArray(clsGetDataFrameNames.ToScript())

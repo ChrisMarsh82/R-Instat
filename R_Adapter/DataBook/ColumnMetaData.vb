@@ -16,6 +16,7 @@
 
 Imports R_Adapter2.R_Adapter.Constant
 Imports R_Adapter2.R_Adapter.RLink
+Imports R_Adapter2.R_Adapter.ScriptBuilder
 Imports RDotNet
 
 ''' <summary>
@@ -115,7 +116,7 @@ Namespace R_Adapter.DataBook
 
         Private Function HasDataChanged() As Boolean
             Dim clsVariablesMetadataChanged As New RFunction
-            clsVariablesMetadataChanged.SetRCommand(RCodeConstant.DataBookName & "$get_variables_metadata_changed")
+            clsVariablesMetadataChanged.SetDataBookCommand("get_variables_metadata_changed")
             clsVariablesMetadataChanged.AddParameter("data_name", Chr(34) & _strDataFrameName & Chr(34))
             Return _scriptRunner.RunInternalScriptGetBoolean(clsVariablesMetadataChanged.ToScript())
         End Function
@@ -142,7 +143,7 @@ Namespace R_Adapter.DataBook
             Dim clsGetVariablesMetadata As New RFunction
             Dim expTemp As SymbolicExpression
             _hasChanged = True
-            clsGetVariablesMetadata.SetRCommand(RCodeConstant.DataBookName & "$get_variables_metadata")
+            clsGetVariablesMetadata.SetDataBookCommand("get_variables_metadata")
             clsGetVariablesMetadata.AddParameter("convert_to_character", "TRUE")
             clsGetVariablesMetadata.AddParameter("data_name", Chr(34) & _strDataFrameName & Chr(34))
             Return _scriptRunner.RunInternalScriptGetDataFrame(clsGetVariablesMetadata.ToScript())
@@ -150,7 +151,7 @@ Namespace R_Adapter.DataBook
 
         Private Sub SetColsMetadataToNotChangedInR()
             Dim clsSetVariablesMetadataChanged As New RFunction
-            clsSetVariablesMetadataChanged.SetRCommand(RCodeConstant.DataBookName & "$set_variables_metadata_changed")
+            clsSetVariablesMetadataChanged.SetDataBookCommand("set_variables_metadata_changed")
             clsSetVariablesMetadataChanged.AddParameter("data_name", Chr(34) & _strDataFrameName & Chr(34))
             clsSetVariablesMetadataChanged.AddParameter("new_val", "FALSE")
             _scriptRunner.RunInternalScript(clsSetVariablesMetadataChanged.ToScript())

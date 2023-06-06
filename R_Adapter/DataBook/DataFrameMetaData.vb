@@ -16,6 +16,7 @@
 
 Imports R_Adapter2.R_Adapter.Constant
 Imports R_Adapter2.R_Adapter.RLink
+Imports R_Adapter2.R_Adapter.ScriptBuilder
 
 Namespace R_Adapter.DataBook
 
@@ -58,7 +59,7 @@ Namespace R_Adapter.DataBook
 
         Private Function HasDataChanged() As Boolean
             Dim clsMetadataChanged As New RFunction
-            clsMetadataChanged.SetRCommand(RCodeConstant.DataBookName & "$get_metadata_changed")
+            clsMetadataChanged.SetDataBookCommand("get_metadata_changed")
             Return _scriptRunner.RunInternalScriptGetBoolean(clsMetadataChanged.ToScript())
         End Function
 
@@ -72,14 +73,14 @@ Namespace R_Adapter.DataBook
         Private Function GetDataFrameFromRCommand() As RDotNet.DataFrame
             Dim clsGetCombinedMetadata As New RFunction
 
-            clsGetCombinedMetadata.SetRCommand(RCodeConstant.DataBookName & "$get_combined_metadata")
+            clsGetCombinedMetadata.SetDataBookCommand("get_combined_metadata")
             clsGetCombinedMetadata.AddParameter("convert_to_character", "TRUE")
             Return _scriptRunner.RunInternalScriptGetDataFrame(clsGetCombinedMetadata.ToScript())
         End Function
 
         Private Sub ResetDataFramesChanged()
             Dim clsSetMetadataChanged As New RFunction
-            clsSetMetadataChanged.SetRCommand(RCodeConstant.DataBookName & "$set_metadata_changed")
+            clsSetMetadataChanged.SetDataBookCommand("set_metadata_changed")
             clsSetMetadataChanged.AddParameter("new_val", "FALSE")
             _scriptRunner.RunInternalScript(clsSetMetadataChanged.ToScript())
         End Sub

@@ -1,4 +1,5 @@
 ﻿Imports R_Adapter2.R_Adapter.Constant
+Imports R_Adapter2.R_Adapter.ScriptBuilder
 Imports RDotNet
 
 Namespace R_Adapter.RLink
@@ -36,6 +37,13 @@ Namespace R_Adapter.RLink
             SetEnviromentVariables(rSetupOptions.RPath, rSetupOptions.RHome)
             Connect()
         End Sub
+
+
+
+
+
+
+
 
         Public Function RunUnvalidatedScript(ByVal strNewScript As String, ByVal strNewComment As String) As String
             Dim strScriptCmd As String = ""
@@ -354,7 +362,7 @@ Namespace R_Adapter.RLink
             Dim clsGetColumnType As New RFunction
             Dim expDateType As SymbolicExpression
 
-            clsGetColumnType.SetRCommand(RCodeConstant.DataBookName & "$get_column_data_types")
+            clsGetColumnType.SetDataBookCommand("get_column_data_types")
             clsGetColumnType.AddParameter("data_name", Chr(34) & strDataName & Chr(34))
             clsGetColumnType.AddParameter("columns", Chr(34) & strColumnName & Chr(34))
             expDateType = RunInternalScriptGetValue(clsGetColumnType.ToScript())
@@ -377,13 +385,10 @@ Namespace R_Adapter.RLink
             Dim clsDataFrameLength As New RFunction
             Dim expLength As SymbolicExpression
 
-            clsDataFrameLength.SetRCommand(RCodeConstant.DataBookName & "$get_data_frame_length")
+            clsDataFrameLength.SetDataBookCommand("get_data_frame_length")
             clsDataFrameLength.AddParameter("data_name", Chr(34) & strDataFrameName & Chr(34))
-            If bUseCurrentFilter Then
-                clsDataFrameLength.AddParameter("use_current_filter", "TRUE")
-            Else
-                clsDataFrameLength.AddParameter("use_current_filter", "FALSE")
-            End If
+            clsDataFrameLength.AddParameter("use_current_filter", bUseCurrentFilter.ToString())
+
             expLength = RunInternalScriptGetValue(clsDataFrameLength.ToScript())
             If expLength IsNot Nothing AndAlso Not expLength.Type = Internals.SymbolicExpressionType.Null Then
                 iLength = expLength.AsInteger(0)
@@ -398,7 +403,7 @@ Namespace R_Adapter.RLink
             Dim clsDataFrameColCount As New RFunction
             Dim expCount As SymbolicExpression
 
-            clsDataFrameColCount.SetRCommand(RCodeConstant.DataBookName & "$get_column_count")
+            clsDataFrameColCount.SetDataBookCommand("get_column_count")
             clsDataFrameColCount.AddParameter("data_name", Chr(34) & strDataFrameName & Chr(34))
             expCount = RunInternalScriptGetValue(clsDataFrameColCount.ToScript())
             If expCount IsNot Nothing AndAlso Not expCount.Type = Internals.SymbolicExpressionType.Null Then

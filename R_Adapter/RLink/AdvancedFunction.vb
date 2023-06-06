@@ -1,4 +1,5 @@
 ﻿Imports R_Adapter2.R_Adapter.Constant
+Imports R_Adapter2.R_Adapter.ScriptBuilder
 
 Namespace R_Adapter.RLink
 
@@ -6,38 +7,40 @@ Namespace R_Adapter.RLink
         Private ReadOnly _scriptRunner As ScriptRunner
 
         Public Function GetRSetupScript() As String
-            Dim clsSetWd = New RFunction()
-            Dim clsSource = New RFunction()
-            Dim clsCreateIO = New ROperator()
-            Dim clsDplyrOption = New RFunction()
-            Dim strScript As String = ""
-            clsSetWd.SetRCommand("setwd")
-            clsSource.SetRCommand("source")
-            clsSource.AddParameter("file", """"c & "Rsetup.R" & """"c)
-            clsCreateIO.SetOperation("<-")
-            clsCreateIO.AddParameter("left", RCodeConstant.DataBookName, iPosition:=0)
-            clsCreateIO.AddParameter("right", RCodeConstant.DataBookClassName & "$new()", iPosition:=1)
-            clsDplyrOption.SetRCommand("options")
-            clsDplyrOption.AddParameter("dplyr.summarise.inform", "FALSE", iPosition:=0)
-            strScript = ""
-            strScript = strScript & clsSetWd.ToScript() & Environment.NewLine
-            strScript = strScript & clsSource.ToScript() & Environment.NewLine
-            strScript = strScript & clsCreateIO.ToScript() & Environment.NewLine
-            strScript = strScript & clsDplyrOption.ToScript()
-            Return strScript
+            'ToDo do not delete - this will need to be split up
+            'no need to use ROperator all can be done through RFunction
+            'Dim clsSetWd = New RFunction()
+            'Dim clsSource = New RFunction()
+            'Dim clsCreateIO = New ROperator()
+            'Dim clsDplyrOption = New RFunction()
+            'Dim strScript As String = ""
+            'clsSetWd.SetRCommand("setwd")
+            'clsSource.SetRCommand("source")
+            'clsSource.AddParameter("file", """"c & "Rsetup.R" & """"c)
+            'clsCreateIO.SetOperation("<-")
+            'clsCreateIO.AddParameter("left", RCodeConstant.DataBookName, iPosition:=0)
+            'clsCreateIO.AddParameter("right", RCodeConstant.DataBookClassName & "$new()", iPosition:=1)
+            'clsDplyrOption.SetRCommand("options")
+            'clsDplyrOption.AddParameter("dplyr.summarise.inform", "FALSE", iPosition:=0)
+            'strScript = ""
+            'strScript = strScript & clsSetWd.ToScript() & Environment.NewLine
+            'strScript = strScript & clsSource.ToScript() & Environment.NewLine
+            'strScript = strScript & clsCreateIO.ToScript() & Environment.NewLine
+            'strScript = strScript & clsDplyrOption.ToScript()
+            'Return strScript
         End Function
 
         Public Function GetDataFrameNames() As List(Of String)
             Dim lstDataFrameNames As List(Of String) = New List(Of String)()
             Dim clsGetDataNames As RFunction = New RFunction()
-            clsGetDataNames.SetRCommand(RCodeConstant.DataBookName & "$get_data_names")
+            clsGetDataNames.SetDataBookCommand("get_data_names")
             lstDataFrameNames.AddRange(_scriptRunner.RunInternalScriptGetStringArray(clsGetDataNames.ToScript()))
             Return lstDataFrameNames
         End Function
 
         Public Function DataFrameExists(ByVal strDataFrameName As String) As Boolean
             Dim clsDataFrameExists As RFunction = New RFunction()
-            clsDataFrameExists.SetRCommand(RCodeConstant.DataBookName & "$data_frame_exists")
+            clsDataFrameExists.SetDataBookCommand("data_frame_exists")
             clsDataFrameExists.AddParameter("data_name", Strings.Chr(34) & strDataFrameName + Strings.Chr(34))
             Return _scriptRunner.RunInternalScriptGetBoolean(clsDataFrameExists.ToScript())
         End Function
@@ -47,7 +50,7 @@ Namespace R_Adapter.RLink
             Dim clsGetColumnNames As RFunction = New RFunction()
 
             If strDataFrameName <> "" AndAlso DataFrameExists(strDataFrameName) Then
-                clsGetColumnNames.SetRCommand(RCodeConstant.DataBookName & "$get_column_names")
+                clsGetColumnNames.SetDataBookCommand("get_column_names")
                 clsGetColumnNames.AddParameter("data_name", Strings.Chr(34) & strDataFrameName + Strings.Chr(34))
                 If Not bIncludeHiddenColumns Then clsGetColumnNames.AddParameter("exclude", "list(Is_Hidden = TRUE)")
                 lstCurrColumns.AddRange(_scriptRunner.RunInternalScriptGetStringArray(clsGetColumnNames.ToScript()))
@@ -59,22 +62,22 @@ Namespace R_Adapter.RLink
         Public Function GetDefaultColumnNames(ByVal strPrefix As String, ByVal strDataFrameName As String) As String
             Dim strNextDefault As String = ""
             Dim clsGetNextDefault As RFunction = New RFunction()
-            clsGetNextDefault.SetRCommand(RCodeConstant.DataBookName & "$get_next_default_column_name")
+            clsGetNextDefault.SetDataBookCommand("get_next_default_column_name")
             clsGetNextDefault.AddParameter("prefix", Strings.Chr(34) & strPrefix + Strings.Chr(34))
             clsGetNextDefault.AddParameter("data_name", Strings.Chr(34) & strDataFrameName + Strings.Chr(34))
             If strDataFrameName <> "" AndAlso DataFrameExists(strDataFrameName) Then strNextDefault = _scriptRunner.RunInternalScriptGetString(clsGetNextDefault.ToScript())
             Return strNextDefault
         End Function
 
-        Public Function GetNextDefault(ByVal strPrefix As String, ByVal lstItems As List(Of String)) As String
-            Dim clsGetDefault As RFunction = New RFunction()
-            Dim strExistingNames As String
-            clsGetDefault.SetRCommand("next_default_item")
-            clsGetDefault.AddParameter("prefix", Strings.Chr(34) & strPrefix + Strings.Chr(34))
-            strExistingNames = GetListAsRString(lstItems)
-            If strExistingNames <> "" Then clsGetDefault.AddParameter("existing_names", GetListAsRString(lstItems))
-            Return _scriptRunner.RunInternalScriptGetString(clsGetDefault.ToScript())
-        End Function
+        'Public Function GetNextDefault(ByVal strPrefix As String, ByVal lstItems As List(Of String)) As String
+        '    Dim clsGetDefault As RFunction = New RFunction()
+        '    Dim strExistingNames As String
+        '    clsGetDefault.SetRCommand("next_default_item")
+        '    clsGetDefault.AddParameter("prefix", Strings.Chr(34) & strPrefix + Strings.Chr(34))
+        '    strExistingNames = GetListAsRString(lstItems)
+        '    If strExistingNames <> "" Then clsGetDefault.AddParameter("existing_names", GetListAsRString(lstItems))
+        '    Return _scriptRunner.RunInternalScriptGetString(clsGetDefault.ToScript())
+        'End Function
 
         Public Function GetListAsRString(ByVal lstStrings As List(Of String), ByVal Optional bWithQuotes As Boolean = True) As String
             Dim strTemp As String = ""
@@ -110,47 +113,67 @@ Namespace R_Adapter.RLink
         End Function
 
         Public Function GetLinkedToDataFrameNames(ByVal strDataName As String, ByVal Optional bIncludeSelf As Boolean = True) As List(Of String)
-            Dim lstDataFrameNames As List(Of String) = New List(Of String)()
-            Dim clsGetDataNames As RFunction = New RFunction()
-            clsGetDataNames.SetRCommand(RCodeConstant.DataBookName & "$get_linked_to_data_name")
-            clsGetDataNames.AddParameter("from_data_frame", Strings.Chr(34) & strDataName + Strings.Chr(34), iPosition:=0)
+            'ToDO no reference
+            'Dim lstDataFrameNames As List(Of String) = New List(Of String)()
+            'Dim clsGetDataNames As RFunction = New RFunction()
+            'clsGetDataNames.SetRCommand(RCodeConstant.DataBookName & "$get_linked_to_data_name")
+            'clsGetDataNames.AddParameter("from_data_frame", Strings.Chr(34) & strDataName + Strings.Chr(34), iPosition:=0)
 
-            If bIncludeSelf Then
-                clsGetDataNames.AddParameter("include_self", "TRUE", iPosition:=2)
-            Else
-                clsGetDataNames.AddParameter("include_self", "FALSE", iPosition:=2)
-            End If
+            'If bIncludeSelf Then
+            '    clsGetDataNames.AddParameter("include_self", "TRUE", iPosition:=2)
+            'Else
+            '    clsGetDataNames.AddParameter("include_self", "FALSE", iPosition:=2)
+            'End If
 
-            lstDataFrameNames.AddRange(_scriptRunner.RunInternalScriptGetStringArray(clsGetDataNames.ToScript()))
-            Return lstDataFrameNames
+            'lstDataFrameNames.AddRange(_scriptRunner.RunInternalScriptGetStringArray(clsGetDataNames.ToScript()))
+            'Return lstDataFrameNames
         End Function
 
         Public Function GetPackagesNotInstalled() As String()
-            Dim clsPackagesNotInstalled As RFunction = New RFunction()
-            clsPackagesNotInstalled.SetRCommand("packages_not_installed")
-            Return _scriptRunner.RunInternalScriptGetStringArray(clsPackagesNotInstalled.ToScript())
+            'ToDo
+            'Dim clsPackagesNotInstalled As RFunction = New RFunction()
+            'clsPackagesNotInstalled.SetRCommand("packages_not_installed")
+            'Return _scriptRunner.RunInternalScriptGetStringArray(clsPackagesNotInstalled.ToScript())
+        End Function
+
+
+        Private Function GetSetWorkingDirectoryFunction(rSetupPath As String) As RFunction
+            Dim clsSetWd As New RFunction()
+            clsSetWd.SetBasicRCommand("setwd")
+            clsSetWd.AddParameter("dir", Strings.Chr(34) & rSetupPath + Strings.Chr(34))
+            Return clsSetWd
+        End Function
+
+        Private Function GetSourceFunction() As RFunction
+            Dim clsSource As New RFunction()
+            clsSource.SetBasicRCommand("source")
+            clsSource.AddParameter("file", Strings.Chr(34) & "Rsetup.R" + Strings.Chr(34))
+            Return clsSource
+        End Function
+
+        Private Function GetDatabookFunction() As RFunction
+            Dim clsCreateIO As New RFunction()
+            clsCreateIO.SetAssignTo(RCodeConstant.DataBookName)
+            'This is strange need some comment to explain
+            clsCreateIO.SetPackageRCommand(RCodeConstant.DataBookClassName, "new")
+            Return clsCreateIO
+        End Function
+
+        Private Function GetOptionsFunction() As RFunction
+            Dim clsDplyrOption As RFunction = New RFunction()
+            clsDplyrOption.SetBasicRCommand("options")
+            clsDplyrOption.AddParameter("dplyr.summarise.inform", "FALSE")
+            Return clsDplyrOption
         End Function
 
         Public Function GetRSetupScript(ByVal rSetupPath As String) As String
-            Dim clsSetWd As RFunction = New RFunction()
-            Dim clsSource As RFunction = New RFunction()
-            Dim clsCreateIO As ROperator = New ROperator()
-            Dim clsDplyrOption As RFunction = New RFunction()
+            'ToDo - These should run seperatly - not bunddled together - maybe - maybe should be run as one big set up script
             Dim strScript As String = ""
-            clsSetWd.SetRCommand("setwd")
-            clsSetWd.AddParameter("dir", Strings.Chr(34) & rSetupPath + Strings.Chr(34))
-            clsSource.SetRCommand("source")
-            clsSource.AddParameter("file", Strings.Chr(34) & "Rsetup.R" + Strings.Chr(34))
-            clsCreateIO.SetOperation("<-")
-            clsCreateIO.AddParameter("left", RCodeConstant.DataBookName, iPosition:=0)
-            clsCreateIO.AddParameter("right", RCodeConstant.DataBookClassName & "$new()", iPosition:=1)
-            clsDplyrOption.SetRCommand("options")
-            clsDplyrOption.AddParameter("dplyr.summarise.inform", "FALSE", iPosition:=0)
             strScript = ""
-            strScript = strScript & clsSetWd.ToScript() & Environment.NewLine
-            strScript = strScript & clsSource.ToScript() & Environment.NewLine
-            strScript = strScript & clsCreateIO.ToScript() & Environment.NewLine
-            strScript = strScript & clsDplyrOption.ToScript()
+            strScript = strScript & GetSetWorkingDirectoryFunction(rSetupPath).ToScript() & Environment.NewLine
+            strScript = strScript & GetSourceFunction().ToScript() & Environment.NewLine
+            strScript = strScript & GetDatabookFunction().ToScript() & Environment.NewLine
+            strScript = strScript & GetOptionsFunction().ToScript()
             Return strScript
         End Function
 

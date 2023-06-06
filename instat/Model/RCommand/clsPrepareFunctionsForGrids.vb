@@ -15,6 +15,7 @@
 ' along with this program.  If not, see <http://www.gnu.org/licenses/>.
 Imports R_Adapter2.R_Adapter.Constant
 Imports R_Adapter2.R_Adapter.RLink
+Imports R_Adapter2.R_Adapter.ScriptBuilder
 ''' <summary>
 ''' Class for holding any prepare functions that can be called from within the dataview grid, column metadata grid
 ''' and, meta data grid. 
@@ -40,7 +41,7 @@ Public Class clsPrepareFunctionsForGrids
     ''' </summary>
     ''' <param name="lstColumnNames"></param>
     Public Sub DeleteColumn(strDataFrame As String, lstColumnNames As List(Of String))
-        Dim clsDeleteColumns As New RFunction
+        Dim clsDeleteColumns As New RFunction()
         clsDeleteColumns.SetRCommand(RCodeConstant.DataBookName & "$remove_columns_in_data")
         clsDeleteColumns.AddParameter("data_name", Chr(34) & strDataFrame & Chr(34))
         clsDeleteColumns.AddParameter("cols", _scriptRunner.HelperFunctions.GetListAsRString(lstColumnNames))
@@ -171,18 +172,34 @@ Public Class clsPrepareFunctionsForGrids
     ''' View dataframe the whole dataframe within a pop up
     ''' </summary>
     Public Sub ViewDataFrame(strDataFrame As String)
-        Dim clsGetDataFrame As New RFunction
-        Dim clsViewDataFrame As New RFunction
-        Dim strScript As String = ""
-        Dim strTemp As String
-        clsGetDataFrame.SetRCommand(RCodeConstant.DataBookName & "$get_data_frame")
-        clsGetDataFrame.AddParameter("data_name", Chr(34) & strDataFrame & Chr(34), iPosition:=0)
-        clsViewDataFrame.SetRCommand("View")
-        clsViewDataFrame.AddParameter("x", clsRFunctionParameter:=clsGetDataFrame)
-        clsGetDataFrame.SetAssignTo(strDataFrame)
-        strTemp = clsViewDataFrame.ToScript(strScript)
-        'Although this shows the grid in a new window we don't need to process the result
-        _scriptRunner.RunScriptNoResult(strScript & strTemp, "Right click menu: View R Data Frame")
+        'Dim clsGetDataFrame As New R_Adapter2.R_Adapter.ScriptBuilder.DataBookFunction.Get_data_frame With {
+        '    .data_name = strDataFrame
+        '}
+        'Dim clsViewDataFrame As New R_Adapter2.R_Adapter.ScriptBuilder.RFunction
+        'Dim strScript As String = ""
+        'Dim strTemp As String
+        'clsViewDataFrame.SetRCommand("View")
+        'clsViewDataFrame.AddParameter("x", clsRFunctionParameter:=clsGetDataFrame)
+        'clsGetDataFrame.SetAssignTo(strDataFrame)
+        'strTemp = clsViewDataFrame.ToScript(strScript)
+        ''Although this shows the grid in a new window we don't need to process the result
+        '_scriptRunner.RunScriptNoResult(strScript & strTemp, "Right click menu: View R Data Frame")
+
+
+
+        'Dim clsGetDataFrame As New R_Adapter2.R_Adapter.ScriptBuilder.RFunction
+        'Dim clsViewDataFrame As New R_Adapter2.R_Adapter.ScriptBuilder.RFunction
+        'Dim strScript As String = ""
+        'Dim strTemp As String
+        'clsGetDataFrame.SetRCommand(RCodeConstant.DataBookName & "$get_data_frame")
+        'clsGetDataFrame.AddParameter("data_name", Chr(34) & strDataFrame & Chr(34), iPosition:=0)
+        'clsViewDataFrame.SetRCommand("View")
+        'clsViewDataFrame.AddParameter("x", clsRFunctionParameter:=clsGetDataFrame)
+        'clsGetDataFrame.SetAssignTo(strDataFrame)
+        'strTemp = clsViewDataFrame.ToScript(strScript)
+        ''Although this shows the grid in a new window we don't need to process the result
+        '_scriptRunner.RunScriptNoResult(strScript & strTemp, "Right click menu: View R Data Frame")
+
     End Sub
     ''' <summary>
     ''' insert new rows

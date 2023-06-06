@@ -16,6 +16,7 @@
 
 Imports R_Adapter2.R_Adapter.Constant
 Imports R_Adapter2.R_Adapter.RLink
+Imports R_Adapter2.R_Adapter.ScriptBuilder
 
 Namespace R_Adapter.DataBook
 
@@ -75,28 +76,28 @@ Namespace R_Adapter.DataBook
 
         Private Function GetFilterNameFromRCommand() As String
             Dim clsGetCurrentFilterName As New RFunction
-            clsGetCurrentFilterName.SetRCommand(RCodeConstant.DataBookName & "$get_current_filter_name")
-            clsGetCurrentFilterName.AddParameter("data_name", Chr(34) & _strDataFrameName & Chr(34), iPosition:=0)
+            clsGetCurrentFilterName.SetDataBookCommand("get_current_filter_name")
+            clsGetCurrentFilterName.AddParameter("data_name", Chr(34) & _strDataFrameName & Chr(34))
             Return _scriptRunner.RunInternalScriptGetString(clsGetCurrentFilterName.ToScript())
         End Function
 
         Private Function GetSelectionNameFromRCommand() As String
             Dim clsGetCurrentFilterName As New RFunction
-            clsGetCurrentFilterName.SetRCommand(RCodeConstant.DataBookName & "$get_current_column_selection")
-            clsGetCurrentFilterName.AddParameter("data_name", Chr(34) & _strDataFrameName & Chr(34), iPosition:=0)
+            clsGetCurrentFilterName.SetDataBookCommand("get_current_column_selection")
+            clsGetCurrentFilterName.AddParameter("data_name", Chr(34) & _strDataFrameName & Chr(34))
             Return _scriptRunner.RunInternalScriptGetString(clsGetCurrentFilterName.ToScript())
         End Function
 
         Private Function GetFilterAppliedFromRCommand() As Boolean
             Dim clsFilterApplied As New RFunction
-            clsFilterApplied.SetRCommand(RCodeConstant.DataBookName & "$filter_applied")
+            clsFilterApplied.SetDataBookCommand("filter_applied")
             clsFilterApplied.AddParameter("data_name", Chr(34) & _strDataFrameName & Chr(34))
             Return _scriptRunner.RunInternalScriptGetBoolean(clsFilterApplied.ToScript())
         End Function
 
         Private Function GetColumnSelectionAppliedFromRCommand() As Boolean
             Dim clsColumnSelectionApplied As New RFunction
-            clsColumnSelectionApplied.SetRCommand(RCodeConstant.DataBookName & "$column_selection_applied")
+            clsColumnSelectionApplied.SetDataBookCommand("column_selection_applied")
             clsColumnSelectionApplied.AddParameter("data_name", Chr(34) & _strDataFrameName & Chr(34))
             Return _scriptRunner.RunInternalScriptGetBoolean(clsColumnSelectionApplied.ToScript())
         End Function

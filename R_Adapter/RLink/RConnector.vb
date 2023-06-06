@@ -37,7 +37,7 @@ Namespace R_Adapter.RLink
                     _rEngine.Dispose()
                     log.Info("Succesfully disposed the connection to R")
                 Catch ex As Exception
-                    log.[Error](ex, "Could not dispose for the connection to R")
+                    log.Error(ex, "Could not dispose for the connection to R")
                     Return False
                 End Try
             End If
@@ -59,7 +59,7 @@ Namespace R_Adapter.RLink
         End Sub
 
         'ToDo should be protected
-        Public Function GetSymbol(ByVal strSymbol As String, ByVal Optional bSilent As Boolean = False) As SymbolicExpression
+        Public Function GetSymbol(strSymbol As String, Optional bSilent As Boolean = False) As SymbolicExpression
             Dim expTemp As SymbolicExpression = Nothing
             log.Trace("Start: Getting symbol: " & strSymbol)
             If _rEngine IsNot Nothing Then
