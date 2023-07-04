@@ -9,6 +9,7 @@ Public Class ColumnSelector
 
     Public Sub New(dataframeselector As DataFrameSelector)
         _dataframeSelector = dataframeselector
+        _columns = dataframeselector.GetColumns
         AddHandler _dataframeSelector.SelectedDataFrameChanged, AddressOf UpdateColumns
     End Sub
 

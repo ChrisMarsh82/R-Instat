@@ -90,6 +90,21 @@ Namespace R_Adapter.RLink
             Return strScriptCmd
         End Function
 
+
+
+
+        Public Sub RunRWorkflow(rWorkflow As RWorkFlow)
+            For Each script In rWorkflow.GetAllScripts
+                Evaluate(script)
+                RaiseEvent OutputAdded(script, "", False, False)
+            Next
+            RaiseEvent DatabookRefresh()
+        End Sub
+
+        Public Sub ScriptRWorkflow(rWorkflow As RWorkFlow)
+
+        End Sub
+
         Private Function GetFormattedComment(ByVal strComment As String) As String
             Dim strReconstructedComment As String = ""
             Dim arrCommentParts As String()

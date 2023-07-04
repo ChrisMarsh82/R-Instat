@@ -8,18 +8,60 @@ Namespace R_Adapter.ScriptBuilder
         Private _command = "command not assigned"
         Private _parameters = ""
 
-        Public Sub AddParameter(param As String, value As String)
-            If _parameters <> "" Then
-                _parameters = _parameters & ", "
+
+        Public Function GetAssigned() As String
+            Return _assignment
+        End Function
+
+        Public Sub AddParameter(param As String, value As String, Optional addQuotes As Boolean = False)
+            If value <> "" Then
+                If _parameters <> "" Then
+                    _parameters &= ", "
+                End If
+                If addQuotes Then
+                    value = """" & value & """"
+                End If
+                _parameters &= param & "=" & value
             End If
-            _parameters = _parameters & param & "=" & value
+        End Sub
+
+        Public Sub AddParameter(param As String, values As List(Of String), Optional addQuotes As Boolean = False)
+            Dim stringValue As String = ""
+            Dim first As Boolean = True
+            If values.Count > 1 Then
+                stringValue = "c("
+                For Each value In values
+                    If Not first Then
+                        stringValue &= ", "
+                    End If
+                    If addQuotes Then
+                        stringValue = stringValue & """" & value & """"
+                    Else
+                        stringValue &= value
+                    End If
+                    first = False
+                Next
+                stringValue &= ")"
+            Else
+                If addQuotes Then
+                    stringValue = """" & values(0) & """"
+                Else
+                    stringValue = values(0)
+                End If
+            End If
+            AddParameter(param, stringValue)
         End Sub
 
         Public Sub AddParameter(param As String, rFunction As RFunction)
-            If _parameters <> "" Then
-                _parameters = _parameters & ", "
-            End If
-            _parameters = _parameters & param & "=" & rFunction.ToScript()
+            AddParameter(param, rFunction.ToScript())
+        End Sub
+
+        Public Sub AddParameter(param As String, value As Boolean)
+            AddParameter(param, value.ToString)
+        End Sub
+
+        Public Sub AddParameter(param As String, value As Integer)
+            AddParameter(param, value.ToString)
         End Sub
 
         Public Sub SetBasicRCommand(command As String)
@@ -35,18 +77,18 @@ Namespace R_Adapter.ScriptBuilder
         End Sub
 
         Public Sub SetAssignTo(assign As String)
-            _assignment = assign & " <- "
+            _assignment = assign
         End Sub
 
         Public Sub AddParameterAsPlus()
 
         End Sub
 
-        Public Sub AddParameterAsPreScript()
-
-        End Sub
 
         Public Function ToScript() As String
+            If _assignment <> "" Then
+                _assignment &= " <- "
+            End If
             Return _assignment & _command & "(" & _parameters & ")"
         End Function
     End Class

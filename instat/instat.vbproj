@@ -216,6 +216,55 @@
     <Compile Include="ApplicationEvents.vb" />
     <Compile Include="clsBlockReader.vb" />
     <Compile Include="clsFileUrlUtilities.vb" />
+    <Compile Include="Dialog\Control\checkboxControl.Designer.vb">
+      <DependentUpon>checkboxControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Control\checkboxControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialog\Control\columnSelectorControl.Designer.vb">
+      <DependentUpon>columnSelectorControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Control\columnSelectorControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialog\Control\dataframeSelectorControl.Designer.vb">
+      <DependentUpon>dataframeSelectorControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Control\dataframeSelectorControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialog\Control\numberSelectorControl.Designer.vb">
+      <DependentUpon>numberSelectorControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Control\numberSelectorControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialog\Control\textControl.Designer.vb">
+      <DependentUpon>textControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Control\textControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialog\Describe\OneVariableSummariseControl.Designer.vb">
+      <DependentUpon>OneVariableSummariseControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Describe\OneVariableSummariseControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialog\DialogCreator\DialogCreator.vb" />
+    <Compile Include="Dialog\DialogCreator\DialogTemplate.Designer.vb">
+      <DependentUpon>DialogTemplate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\DialogCreator\DialogTemplate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\DialogCreator\SubDialogTemplate.Designer.vb">
+      <DependentUpon>SubDialogTemplate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\DialogCreator\SubDialogTemplate.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="dlgApsimx.Designer.vb">
       <DependentUpon>dlgApsimx.vb</DependentUpon>
     </Compile>
@@ -2192,10 +2241,10 @@
     <Compile Include="dlgDayMonth.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dlgOneVariableSummarise.Designer.vb">
+    <Compile Include="Dialog\Old\dlgOneVariableSummarise.Designer.vb">
       <DependentUpon>dlgOneVariableSummarise.vb</DependentUpon>
     </Compile>
-    <Compile Include="dlgOneVariableSummarise.vb">
+    <Compile Include="Dialog\Old\dlgOneVariableSummarise.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="dlgDotPlot.designer.vb">
@@ -2953,6 +3002,27 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Dialog\Control\checkboxControl.resx">
+      <DependentUpon>checkboxControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\Control\columnSelectorControl.resx">
+      <DependentUpon>columnSelectorControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\Control\dataframeSelectorControl.resx">
+      <DependentUpon>dataframeSelectorControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\Control\numberSelectorControl.resx">
+      <DependentUpon>numberSelectorControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\Control\textControl.resx">
+      <DependentUpon>textControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\Describe\OneVariableSummariseControl.resx">
+      <DependentUpon>OneVariableSummariseControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\DialogCreator\DialogTemplate.resx">
+      <DependentUpon>DialogTemplate.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dlgApsimx.resx">
       <DependentUpon>dlgApsimx.vb</DependentUpon>
     </EmbeddedResource>
@@ -4414,10 +4484,10 @@
     <EmbeddedResource Include="dlgDayMonth.sw-KE.resx">
       <DependentUpon>dlgDayMonth.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dlgOneVariableSummarise.resx">
+    <EmbeddedResource Include="Dialog\Old\dlgOneVariableSummarise.resx">
       <DependentUpon>dlgOneVariableSummarise.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dlgOneVariableSummarise.sw-KE.resx">
+    <EmbeddedResource Include="Dialog\Old\dlgOneVariableSummarise.sw-KE.resx">
       <DependentUpon>dlgOneVariableSummarise.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="dlgDotPlot.resx">
@@ -5223,6 +5293,7 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include="My Project\DataSources\R_Dialogs.DataFrameSelector.datasource" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
@@ -5625,6 +5696,10 @@
     <Folder Include="obj\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\R-Dialogs\R-Control.vbproj">
+      <Project>{DD45E6D1-B878-4330-B2EF-063279E58D3C}</Project>
+      <Name>R-Control</Name>
+    </ProjectReference>
     <ProjectReference Include="..\R_Adapter\R_Adapter.vbproj">
       <Project>{7c682a32-468e-4aee-84b5-55e807ff6e73}</Project>
       <Name>R_Adapter</Name>

@@ -108,7 +108,7 @@ Public Class frmMain
         Thread.CurrentThread.CurrentCulture = New CultureInfo("en-GB")
 
         ucrDataViewer.StartupMenuItemsVisibility(False)
-        clsDataBook = New DataBook(Nothing)
+        clsDataBook = DataBook.SingletonInstance() 'New DataBook(Nothing)
 
         ucrDataViewer.DataBook = clsDataBook
         ucrColumnMeta.DataBook = clsDataBook
@@ -854,7 +854,11 @@ Public Class frmMain
     End Sub
 
     Private Sub mnuDescribeOneVariableSummarise_Click(sender As Object, e As EventArgs) Handles mnuDescribeOneVariableSummarise.Click
-        dlgOneVariableSummarise.ShowDialog()
+        Dim dialogCreator As New DialogCreator
+        '  Dim frm As Form
+        dialogCreator.Test()
+
+        ' dlgOneVariableSummarise.ShowDialog()
     End Sub
 
     Private Sub mnuDescribeOneVariableGraph_Click(sender As Object, e As EventArgs) Handles mnuDescribeOneVariableGraph.Click

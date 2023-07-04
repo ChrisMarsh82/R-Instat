@@ -28,6 +28,8 @@ Public Class DataFrameSelector
         For Each DataFrame In _databook.DataFrames
             _dataFrames.Add(DataFrame.strName)
         Next
+        _selected = _dataFrames(0) 'ToDo this is the wrong dataframe
+        RaiseEvent SelectedDataFrameChanged(GetColumns)
     End Sub
 
     Public ReadOnly Property DataFrames() As List(Of String)
@@ -36,7 +38,7 @@ Public Class DataFrameSelector
         End Get
     End Property
 
-    Private Function GetColumns() As List(Of String)
+    Public Function GetColumns() As List(Of String)
         Dim column As New List(Of String)
         For i = 0 To _databook.GetDataFrame(_selected).clsColumnMetaData.iColumnCount - 1
             column.Add(_databook.GetDataFrame(_selected).clsColumnMetaData.strColumnName(i))

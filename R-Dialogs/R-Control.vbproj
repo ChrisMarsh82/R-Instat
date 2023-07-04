@@ -69,10 +69,13 @@
     <Compile Include="FunctionControl\BaseFunctionControl.vb" />
     <Compile Include="FunctionControl\DataFrame\ColumnSelector.vb" />
     <Compile Include="FunctionControl\DataFrame\DataFrameSelector.vb" />
+    <Compile Include="FunctionControl\DataFrame\SummariesSelector.vb" />
     <Compile Include="FunctionControl\MultiElementControl.vb" />
     <Compile Include="FunctionControl\SingleElementControl.vb" />
     <Compile Include="Interface\IControl.vb" />
     <Compile Include="Interface\IRFunctionControl.vb" />
+    <Compile Include="TextControl\CheckboxListSelector.vb" />
+    <Compile Include="TextControl\CheckboxSelector.vb" />
     <Compile Include="TextControl\NumberSelector.vb" />
     <Compile Include="TextControl\TextSelector.vb" />
     <Compile Include="WorkFlowControl\BaseDialog.vb" />
